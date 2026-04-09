@@ -7,7 +7,7 @@
 
 **Deterministic tool-schema compiler that reduces LLM tool-definition overhead by 50--72% while *improving* accuracy.**
 
-1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 27.7KB bundle.
+1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 34.7KB bundle (11.7KB gzipped).
 
 ## The Problem
 
@@ -120,7 +120,7 @@ result.metrics.perTool                   // { name, originalTokens, compressedTo
 ```typescript
 compress(tools, {
   model: 'claude-sonnet',   // Target model: 'claude-sonnet' | 'gpt-4o' | 'gpt-4' | ...
-  profile: 'balanced',      // Profile: 'minimal' | 'balanced' | 'max_compress' | 'max_accuracy' | 'full'
+  profile: 'balanced',      // Profile: 'conservative' | 'balanced' | 'aggressive'
 });
 ```
 
@@ -172,7 +172,7 @@ import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 | Dependencies | **None** | GPU + ML framework | API calls |
 | Deterministic | **Yes** | No | No |
 | Formal guarantees | **>=51% savings** | None | None |
-| Bundle size | **27.7KB** | Requires PyTorch | Full stack |
+| Bundle size | **34.7KB** | Requires PyTorch | Full stack |
 | Works offline | **Yes** | GPU required | API required |
 
 ## Who Benefits
