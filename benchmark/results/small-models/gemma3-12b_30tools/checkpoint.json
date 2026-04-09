@@ -1,0 +1,3839 @@
+[
+  {
+    "result_id": "78c0c5f8-10b6-4f5e-b741-3a03433e742d",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 35,
+      "total_latency_ms": 2337,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:42.218Z"
+  },
+  {
+    "result_id": "53fcd715-f128-413d-bd8c-99bf8624e273",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6982,
+      "output_tokens": 40,
+      "total_latency_ms": 2405,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:44.685Z"
+  },
+  {
+    "result_id": "93c61ce3-f5ab-45d0-ab07-ae55230bd476",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 29,
+      "total_latency_ms": 2259,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:47.012Z"
+  },
+  {
+    "result_id": "3fbc5a86-6848-409e-8a97-d53e815340f7",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7004,
+      "output_tokens": 37,
+      "total_latency_ms": 2363,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:49.430Z"
+  },
+  {
+    "result_id": "14a9e6b3-fc58-4674-b052-56080711416e",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 29,
+      "total_latency_ms": 2252,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:51.744Z"
+  },
+  {
+    "result_id": "eac328db-496d-47e2-bdfe-124c9484c205",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6995,
+      "output_tokens": 31,
+      "total_latency_ms": 2286,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:54.089Z"
+  },
+  {
+    "result_id": "fe4146c1-4b48-4f34-bdf4-2a6b7d17ed39",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6996,
+      "output_tokens": 27,
+      "total_latency_ms": 2240,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:56.385Z"
+  },
+  {
+    "result_id": "161996c3-b2cf-4a70-b816-7e82b8002f09",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6998,
+      "output_tokens": 29,
+      "total_latency_ms": 2270,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:09:58.723Z"
+  },
+  {
+    "result_id": "49511857-749a-497e-b373-13090f29b273",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7002,
+      "output_tokens": 46,
+      "total_latency_ms": 2531,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:01.322Z"
+  },
+  {
+    "result_id": "4bc94060-a7ec-4d80-af14-2c54ea74936a",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7012,
+      "output_tokens": 59,
+      "total_latency_ms": 2691,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:04.080Z"
+  },
+  {
+    "result_id": "7351099d-2315-42dc-a62c-e9dca5b21fb0",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7017,
+      "output_tokens": 72,
+      "total_latency_ms": 2854,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:07.003Z"
+  },
+  {
+    "result_id": "d6fe8a36-c467-4772-9a79-5aef3691f9f2",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7056,
+      "output_tokens": 111,
+      "total_latency_ms": 3375,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:10.440Z"
+  },
+  {
+    "result_id": "14ef6653-94fc-44a0-9d32-48734c6415df",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6981,
+      "output_tokens": 27,
+      "total_latency_ms": 2246,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:12.747Z"
+  },
+  {
+    "result_id": "1f550540-9d77-4bef-8c8b-55e7e2f95e5e",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 33,
+      "total_latency_ms": 2320,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:15.131Z"
+  },
+  {
+    "result_id": "bb85e4d4-0a65-4e9f-bf8b-ced43dc8e113",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7022,
+      "output_tokens": 55,
+      "total_latency_ms": 2618,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:17.811Z"
+  },
+  {
+    "result_id": "630b861b-37e0-41d2-9a5e-0077a9a1bfc5",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7024,
+      "output_tokens": 55,
+      "total_latency_ms": 2621,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:20.502Z"
+  },
+  {
+    "result_id": "3a0dec22-8806-492c-a307-3db382bc0760",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "While electric vehicles (EVs) are rapidly gaining popularity and offer numerous advantages, it's unlikely they will *completely* replace gas cars in the foreseeable future. Here's a breakdown of why, considering various factors:\n\n**Arguments for eventual dominance of EVs:**\n\n*   **Environmental Concerns:** Growing awareness of climate change and air pollution is a major driver for EV adoption.\n*   **Government Regulations:** Many governments are implementing stricter emissions standards and offering incentives for EVs, which will accelerate the transition.\n*   **Technological Advancements:** Battery technology is constantly improving, leading to longer ranges, faster charging times, and lower costs.\n*   **Lower Running Costs:** EVs generally have lower fuel and maintenance costs compared to gas cars.\n*   **Improved Performance:** Many EVs offer impressive acceleration and a quiet, smooth driving experience.\n\n**Reasons why gas cars will likely persist:**\n\n*   **Infrastructure Limitations:** While charging infrastructure is expanding, it's still not as readily available as gas stations, especially in rural areas.\n*   **Charging Time:** Even with fast charging, refueling an EV takes longer than filling a gas tank.\n*   **Purchase Price:** EVs typically have a higher upfront cost than comparable gas cars, although this gap is narrowing.\n*   **Range Anxiety:** Some consumers worry about the limited range of EVs and the potential for running out of charge.\n*   **Battery Replacement Costs:** Replacing an EV battery is a significant expense, although battery lifespans are increasing.\n*   **Existing Gas Car Fleet:** There's a massive existing fleet of gas-powered vehicles that will take decades to be replaced.\n*   **Specialized Use Cases:** Gas cars may remain preferable for certain applications, such as long-haul trucking or off-roading, where range, refueling speed, and payload capacity are critical.\n*   **Synthetic Fuels:** Advancements in synthetic fuels (e-fuels) could allow internal combustion engines to operate with significantly reduced emissions, potentially extending their lifespan.\n\n\n\n**Likely Scenario:**\n\nA more realistic scenario is a gradual transition where EVs become increasingly dominant, but gas cars continue to exist in niche markets for a long time. We might see a mix of EVs, hybrids, and vehicles powered by synthetic fuels for decades to come. A complete replacement seems improbable due to the complex interplay of technological, economic, and logistical factors.\n\nDo you want me to elaborate on any of these points?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6978,
+      "output_tokens": 504,
+      "total_latency_ms": 8580,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:29.139Z"
+  },
+  {
+    "result_id": "6c7e990f-84fa-46cf-9b81-0263aa7c9fb0",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Leonardo da Vinci painted the Mona Lisa.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 9,
+      "total_latency_ms": 1988,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:31.191Z"
+  },
+  {
+    "result_id": "d71a38ea-2ca5-49f9-9579-49af8695a10c",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"all\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "search": "all"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6980,
+      "output_tokens": 25,
+      "total_latency_ms": 2207,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:33.454Z"
+  },
+  {
+    "result_id": "76e89d3e-7eaa-4c7b-baa5-8bb873e8b639",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll break it down into eras.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Clay Tablets (30,000 BC - 2000 BC):**  The earliest forms of data storage were visual representations and markings on durable materials. Cave paintings recorded events and stories. Clay tablets, used by civilizations like Sumerians, were inscribed with cuneiform writing for record-keeping.\n*   **Papyrus & Parchment (3000 BC - 1050 AD):**  These materials allowed for more portable and easily written records than clay.  Papyrus (from Egypt) and parchment (made from animal skins) became the primary media for books and documents.\n*   **Printing Press (1440 AD):** Gutenberg's printing press revolutionized the dissemination of information, allowing for mass production of written materials. This dramatically increased the *accessibility* of stored information, though the storage medium itself (paper) remained the same.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (Early 1800s):** Joseph Marie Jacquard's loom used punched cards to control weaving patterns. This concept was later adopted by Charles Babbage for his Analytical Engine (a conceptual precursor to the computer) to store instructions. Herman Hollerith used punched cards for the 1890 US Census, significantly speeding up the process.\n*   **Punched Tape (1840s):** Samuel Morse's telegraph system used punched paper tape to transmit messages.\n*   **Magnetic Tape (1920s):** Initially developed for audio recording, magnetic tape offered a more compact and flexible storage medium than earlier methods.\n\n**3. Early Electronic Era (Mid 1900s - 1970s):**\n\n*   **Williams Tube (1946):** One of the earliest forms of computer memory, using a cathode ray tube to store data as electrical charges.  Volatile (data lost when power is off).\n*   **Magnetic Drum Memory (1950):**  A rotating cylinder coated with magnetic material. Faster than Williams Tube, but still relatively slow and bulky.\n*   **Magnetic Core Memory (1951):**  Used tiny magnetic rings to store data.  Dominant form of RAM for several decades.  Relatively expensive.\n*   **Floppy Disks (1960s):**  Initially 8-inch, then 5.25-inch, and later 3.5-inch.  Removable and portable, but with limited capacity.\n*   **Magnetic Tape (Continued):** Used for backup and archival storage.\n\n**4. The Semiconductor Era (1970s - 1990s):**\n\n*   **Semiconductor Memory (RAM) (1970s):**  Solid-state memory began to replace core memory, offering faster access times and smaller size.\n*   **Hard Disk Drives (HDDs) (1956 - Present):**  Developed initially for mainframe computers, HDDs became increasingly common in personal computers.  Capacity increased exponentially over time.\n*   **Optical Discs (CD-ROM, DVD, Blu-ray) (1980s - Present):**  Used lasers to read and write data on a reflective surface.  Offered higher capacity than floppy disks.\n\n**5. The Modern Era (1990s - Present):**\n\n*   **Flash Memory (1980s - Present):**  Non-volatile solid-state memory.  Initially used in EEPROMs, it became widespread in USB drives, SD cards, and SSDs.\n*   **Solid State Drives (SSDs) (1990s - Present):**  Use flash memory to store data, offering significantly faster access times and greater durability than HDDs.\n*   **Cloud Storage (2000s - Present):**  Data is stored on remote servers and accessed over the internet.  Provides scalability, accessibility, and often redundancy. (e.g., Google Drive, Dropbox, AWS S3)\n*   **DNA Storage (2010s - Present):**  Emerging technology that uses DNA molecules to store data.  Offers extremely high density and long-term stability, but is currently expensive and slow.\n*   **Glass Storage (2010s - Present):**  Data is etched into glass, offering potential for extremely long-term storage (potentially thousands of years).\n\n**Key Trends:**\n\n*   **Increasing",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6974,
+      "output_tokens": 1024,
+      "total_latency_ms": 15588,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:49.104Z"
+  },
+  {
+    "result_id": "8a5bce2e-02c7-4554-bbe4-bbfdcbb274c4",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 35,
+      "total_latency_ms": 2349,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:51.510Z"
+  },
+  {
+    "result_id": "8dd9b35a-977f-479d-b1f8-e645c0cd8bb6",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6982,
+      "output_tokens": 40,
+      "total_latency_ms": 2416,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:53.988Z"
+  },
+  {
+    "result_id": "06614b1a-8be9-43c0-81a6-1f0351b8af7f",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 29,
+      "total_latency_ms": 2267,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:56.311Z"
+  },
+  {
+    "result_id": "36fa239a-1e6b-43a3-aebe-8a5c023c746a",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7004,
+      "output_tokens": 37,
+      "total_latency_ms": 2376,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:10:58.747Z"
+  },
+  {
+    "result_id": "7f0eb0b7-0319-4954-a25c-79ba84c95396",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 29,
+      "total_latency_ms": 2279,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:01.090Z"
+  },
+  {
+    "result_id": "fc56eaf7-df95-4747-bfe9-e5e2fbd7bf1e",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6995,
+      "output_tokens": 31,
+      "total_latency_ms": 2305,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:03.464Z"
+  },
+  {
+    "result_id": "6eb92d2f-183f-4e23-ba36-ab59df4744fb",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6996,
+      "output_tokens": 27,
+      "total_latency_ms": 2235,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:05.767Z"
+  },
+  {
+    "result_id": "c8a2bfbb-ec00-4d4a-a3ab-f51bbbdc72b8",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6998,
+      "output_tokens": 29,
+      "total_latency_ms": 2264,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:08.088Z"
+  },
+  {
+    "result_id": "007fa168-cb30-47f2-aa08-6618f9a999e4",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7002,
+      "output_tokens": 46,
+      "total_latency_ms": 2497,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:10.648Z"
+  },
+  {
+    "result_id": "8b37b947-90b4-4472-8988-f0a1a787e6ac",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7012,
+      "output_tokens": 59,
+      "total_latency_ms": 2681,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:13.395Z"
+  },
+  {
+    "result_id": "5e56e40d-d4e2-493e-8588-ba41f70f35ed",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7017,
+      "output_tokens": 72,
+      "total_latency_ms": 2850,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:16.316Z"
+  },
+  {
+    "result_id": "59af6942-ffd6-4016-8fb2-47fac6f341df",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7056,
+      "output_tokens": 111,
+      "total_latency_ms": 3385,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:19.769Z"
+  },
+  {
+    "result_id": "a575012e-e1ba-447a-872b-ab17c80b9028",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6981,
+      "output_tokens": 27,
+      "total_latency_ms": 2249,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:22.075Z"
+  },
+  {
+    "result_id": "a113e3bb-531c-4957-bbb7-9bd3f3065af1",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 33,
+      "total_latency_ms": 2326,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:24.470Z"
+  },
+  {
+    "result_id": "f0215f99-0c96-46aa-98de-df55c2f5d805",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7022,
+      "output_tokens": 55,
+      "total_latency_ms": 2625,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:27.156Z"
+  },
+  {
+    "result_id": "813c2fab-ef26-480d-9602-6e2b4e80c6fa",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7024,
+      "output_tokens": 55,
+      "total_latency_ms": 2623,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:29.839Z"
+  },
+  {
+    "result_id": "36570d54-1f0f-4ce5-9992-a3ec61a475de",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "While electric vehicles (EVs) are rapidly gaining popularity and offer numerous advantages, it's unlikely they will *completely* replace gas cars in the foreseeable future. Here's a breakdown of why, considering various factors:\n\n**Arguments for eventual dominance of EVs:**\n\n*   **Environmental Concerns:** Growing awareness of climate change and air pollution is a major driver for EV adoption.\n*   **Government Regulations:** Many governments are implementing stricter emissions standards and offering incentives for EVs, which will accelerate the transition.\n*   **Technological Advancements:** Battery technology is constantly improving, leading to longer ranges, faster charging times, and lower costs.\n*   **Lower Running Costs:** EVs generally have lower fuel and maintenance costs compared to gas cars.\n*   **Improved Performance:** Many EVs offer impressive acceleration and a quiet, smooth driving experience.\n\n**Reasons why gas cars will likely persist:**\n\n*   **Infrastructure Limitations:** While charging infrastructure is expanding, it's still not as readily available as gas stations, especially in rural areas.\n*   **Charging Time:** Even with fast charging, refueling an EV takes longer than filling a gas tank.\n*   **Purchase Price:** EVs typically have a higher upfront cost than comparable gas cars, although this gap is narrowing.\n*   **Range Anxiety:** Some consumers worry about the limited range of EVs and the potential for running out of charge.\n*   **Battery Replacement Costs:** Replacing an EV battery is a significant expense, although battery lifespans are increasing.\n*   **Existing Gas Car Fleet:** There's a massive existing fleet of gas-powered vehicles that will take decades to be replaced.\n*   **Specialized Use Cases:** Gas cars may remain preferable for certain applications, such as long-haul trucking or off-roading, where range, refueling speed, and payload capacity are critical.\n*   **Synthetic Fuels:** Advancements in synthetic fuels (e-fuels) could allow internal combustion engines to operate with significantly reduced emissions, potentially extending their lifespan.\n\n\n\n**Likely Scenario:**\n\nA more realistic scenario is a gradual transition where EVs become increasingly dominant, but gas cars continue to exist in niche markets for a long time. We might see a mix of EVs, hybrids, and vehicles powered by synthetic fuels for decades to come. A complete replacement seems improbable due to the complex interplay of technological, economic, and logistical factors.\n\nDo you want me to elaborate on any of these points?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6978,
+      "output_tokens": 504,
+      "total_latency_ms": 8583,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:38.485Z"
+  },
+  {
+    "result_id": "36c07209-e3c4-4727-8a52-a198c47bec95",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Leonardo da Vinci painted the Mona Lisa.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 9,
+      "total_latency_ms": 1987,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:40.531Z"
+  },
+  {
+    "result_id": "3000de94-25c4-4796-a984-6548c22946d8",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"all\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "search": "all"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6980,
+      "output_tokens": 25,
+      "total_latency_ms": 2214,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:42.804Z"
+  },
+  {
+    "result_id": "defa6f8c-c70f-4502-9518-0cb0ed73a4f1",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll break it down into eras.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Clay Tablets (30,000 BC - 2000 BC):**  The earliest forms of data storage were visual representations and markings on durable materials. Cave paintings recorded events and stories. Clay tablets, used by civilizations like Sumerians, were inscribed with cuneiform writing for record-keeping.\n*   **Papyrus & Parchment (3000 BC - 1050 AD):**  These materials allowed for more portable and easily written records than clay.  Papyrus (from Egypt) and parchment (made from animal skins) became the primary media for books and documents.\n*   **Printing Press (1440 AD):** Gutenberg's printing press revolutionized the dissemination of information, allowing for mass production of written materials. This dramatically increased the *accessibility* of stored information, though the storage medium itself (paper) remained the same.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (Early 1800s):** Joseph Marie Jacquard's loom used punched cards to control weaving patterns. This concept was later adopted by Charles Babbage for his Analytical Engine (a conceptual precursor to the computer) to store instructions. Herman Hollerith used punched cards for the 1890 US Census, significantly speeding up the process.\n*   **Punched Tape (1840s):** Samuel Morse's telegraph system used punched paper tape to transmit messages.\n*   **Magnetic Tape (1920s):** Initially developed for audio recording, magnetic tape offered a more compact and flexible storage medium than earlier methods.\n\n**3. Early Electronic Era (Mid 1900s - 1970s):**\n\n*   **Williams Tube (1946):** One of the earliest forms of computer memory, using a cathode ray tube to store data as electrical charges.  Volatile (data lost when power is off).\n*   **Magnetic Drum Memory (1950):**  A rotating cylinder coated with magnetic material. Faster than Williams Tube, but still relatively slow and bulky.\n*   **Magnetic Core Memory (1951):**  Used tiny magnetic rings to store data.  Dominant form of RAM for several decades.  Relatively expensive.\n*   **Floppy Disks (1960s):**  Initially 8-inch, then 5.25-inch, and later 3.5-inch.  Removable and portable, but with limited capacity.\n*   **Magnetic Tape (Continued):** Used for backup and archival storage.\n\n**4. The Semiconductor Era (1970s - 1990s):**\n\n*   **Semiconductor Memory (RAM) (1970s):**  Solid-state memory began to replace core memory, offering faster access times and smaller size.\n*   **Hard Disk Drives (HDDs) (1956 - Present):**  Developed initially for mainframe computers, HDDs became increasingly common in personal computers.  Capacity increased exponentially over time.\n*   **Optical Discs (CD-ROM, DVD, Blu-ray) (1980s - Present):**  Used lasers to read and write data on a reflective surface.  Offered higher capacity than floppy disks.\n\n**5. The Modern Era (1990s - Present):**\n\n*   **Flash Memory (1980s - Present):**  Non-volatile solid-state memory.  Initially used in EEPROMs, it became widespread in USB drives, SD cards, and SSDs.\n*   **Solid State Drives (SSDs) (1990s - Present):**  Use flash memory to store data, offering significantly faster access times and greater durability than HDDs.\n*   **Cloud Storage (2000s - Present):**  Data is stored on remote servers and accessed over the internet.  Provides scalability, accessibility, and often redundancy. (e.g., Google Drive, Dropbox, AWS S3)\n*   **DNA Storage (2010s - Present):**  Emerging technology that uses DNA molecules to store data.  Offers extremely high density and long-term stability, but is currently expensive and slow.\n*   **Glass Storage (2010s - Present):**  Data is etched into glass, offering potential for extremely long-term storage (potentially thousands of years).\n\n**Key Trends:**\n\n*   **Increasing",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6974,
+      "output_tokens": 1024,
+      "total_latency_ms": 15481,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:11:58.344Z"
+  },
+  {
+    "result_id": "2203327c-fd12-440a-95ee-84bf59fccf9f",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 35,
+      "total_latency_ms": 2338,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:00.754Z"
+  },
+  {
+    "result_id": "c68f2b5d-b469-4618-8d44-b8ccc2c5327c",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6982,
+      "output_tokens": 40,
+      "total_latency_ms": 2418,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:03.236Z"
+  },
+  {
+    "result_id": "28c85a91-b017-4797-b2db-acab9f5d55fe",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 29,
+      "total_latency_ms": 2270,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:05.572Z"
+  },
+  {
+    "result_id": "b330cde2-b111-4a25-9981-c3095b03307b",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7004,
+      "output_tokens": 37,
+      "total_latency_ms": 2387,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:08.020Z"
+  },
+  {
+    "result_id": "26bd0cb6-3636-46fd-8de5-aacfe58c54e6",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 29,
+      "total_latency_ms": 2263,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:10.345Z"
+  },
+  {
+    "result_id": "1a655711-2e29-48b7-acaa-333e879ff32a",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6995,
+      "output_tokens": 31,
+      "total_latency_ms": 2296,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:12.702Z"
+  },
+  {
+    "result_id": "94898589-24e5-42fb-a7a8-78f1272ba5d1",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6996,
+      "output_tokens": 27,
+      "total_latency_ms": 2257,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:15.018Z"
+  },
+  {
+    "result_id": "7942f281-f38e-4704-9be0-080f5fa2cfbe",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6998,
+      "output_tokens": 29,
+      "total_latency_ms": 2267,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:17.353Z"
+  },
+  {
+    "result_id": "0e35eccc-5c9d-4b60-a03b-9c5a18b7f633",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7002,
+      "output_tokens": 46,
+      "total_latency_ms": 2495,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:19.907Z"
+  },
+  {
+    "result_id": "3d3086f8-f8a2-4608-9940-414b6d059b73",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7012,
+      "output_tokens": 59,
+      "total_latency_ms": 2665,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:22.641Z"
+  },
+  {
+    "result_id": "d4912ede-4991-4e00-b5b6-af588cb14d8d",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7017,
+      "output_tokens": 72,
+      "total_latency_ms": 2845,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:25.557Z"
+  },
+  {
+    "result_id": "7bb1f92a-a974-470f-88bf-5164a59aa811",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7056,
+      "output_tokens": 111,
+      "total_latency_ms": 3376,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:28.989Z"
+  },
+  {
+    "result_id": "196d6b3a-6911-4f48-a03b-b11d23eebd8c",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6981,
+      "output_tokens": 27,
+      "total_latency_ms": 2230,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:31.283Z"
+  },
+  {
+    "result_id": "c27ee7ce-3e64-4e0e-8037-674b7f55a7d3",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 33,
+      "total_latency_ms": 2311,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:33.649Z"
+  },
+  {
+    "result_id": "f788372c-aa7d-4259-b8dc-deb8d91e65a9",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7022,
+      "output_tokens": 55,
+      "total_latency_ms": 2640,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:36.345Z"
+  },
+  {
+    "result_id": "4e137375-42cf-446d-81c3-c98d288f5ce2",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7024,
+      "output_tokens": 55,
+      "total_latency_ms": 2617,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:39.026Z"
+  },
+  {
+    "result_id": "aaaebab4-ca27-470c-98c7-54fa85b2560f",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "While electric vehicles (EVs) are rapidly gaining popularity and offer numerous advantages, it's unlikely they will *completely* replace gas cars in the foreseeable future. Here's a breakdown of why, considering various factors:\n\n**Arguments for eventual dominance of EVs:**\n\n*   **Environmental Concerns:** Growing awareness of climate change and air pollution is a major driver for EV adoption.\n*   **Government Regulations:** Many governments are implementing stricter emissions standards and offering incentives for EVs, which will accelerate the transition.\n*   **Technological Advancements:** Battery technology is constantly improving, leading to longer ranges, faster charging times, and lower costs.\n*   **Lower Running Costs:** EVs generally have lower fuel and maintenance costs compared to gas cars.\n*   **Improved Performance:** Many EVs offer impressive acceleration and a quiet, smooth driving experience.\n\n**Reasons why gas cars will likely persist:**\n\n*   **Infrastructure Limitations:** While charging infrastructure is expanding, it's still not as readily available as gas stations, especially in rural areas.\n*   **Charging Time:** Even with fast charging, refueling an EV takes longer than filling a gas tank.\n*   **Purchase Price:** EVs typically have a higher upfront cost than comparable gas cars, although this gap is narrowing.\n*   **Range Anxiety:** Some consumers worry about the limited range of EVs and the potential for running out of charge.\n*   **Battery Replacement Costs:** Replacing an EV battery is a significant expense, although battery lifespans are increasing.\n*   **Existing Gas Car Fleet:** There's a massive existing fleet of gas-powered vehicles that will take decades to be replaced.\n*   **Specialized Use Cases:** Gas cars may remain preferable for certain applications, such as long-haul trucking or off-roading, where range, refueling speed, and payload capacity are critical.\n*   **Synthetic Fuels:** Advancements in synthetic fuels (e-fuels) could allow internal combustion engines to operate with significantly reduced emissions, potentially extending their lifespan.\n\n\n\n**Likely Scenario:**\n\nA more realistic scenario is a gradual transition where EVs become increasingly dominant, but gas cars continue to exist in niche markets for a long time. We might see a mix of EVs, hybrids, and vehicles powered by synthetic fuels for decades to come. A complete replacement seems improbable due to the complex interplay of technological, economic, and logistical factors.\n\nDo you want me to elaborate on any of these points?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6978,
+      "output_tokens": 504,
+      "total_latency_ms": 8624,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:47.704Z"
+  },
+  {
+    "result_id": "0da40192-bd12-422e-b0ac-4e45b40c633d",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Leonardo da Vinci painted the Mona Lisa.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 9,
+      "total_latency_ms": 1997,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:49.758Z"
+  },
+  {
+    "result_id": "a8a18091-a383-42f7-9926-f2172da8d598",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"all\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "search": "all"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6980,
+      "output_tokens": 25,
+      "total_latency_ms": 2213,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:12:52.029Z"
+  },
+  {
+    "result_id": "a4b96d30-c333-41c1-8670-74dbd21f3570",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll break it down into eras.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Clay Tablets (30,000 BC - 2000 BC):**  The earliest forms of data storage were visual representations and markings on durable materials. Cave paintings recorded events and stories. Clay tablets, used by civilizations like Sumerians, were inscribed with cuneiform writing for record-keeping.\n*   **Papyrus & Parchment (3000 BC - 1050 AD):**  These materials allowed for more portable and easily written records than clay.  Papyrus (from Egypt) and parchment (made from animal skins) became the primary media for books and documents.\n*   **Printing Press (1440 AD):** Gutenberg's printing press revolutionized the dissemination of information, allowing for mass production of written materials. This dramatically increased the *accessibility* of stored information, though the storage medium itself (paper) remained the same.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (Early 1800s):** Joseph Marie Jacquard's loom used punched cards to control weaving patterns. This concept was later adopted by Charles Babbage for his Analytical Engine (a conceptual precursor to the computer) to store instructions. Herman Hollerith used punched cards for the 1890 US Census, significantly speeding up the process.\n*   **Punched Tape (1840s):** Samuel Morse's telegraph system used punched paper tape to transmit messages.\n*   **Magnetic Tape (1920s):** Initially developed for audio recording, magnetic tape offered a more compact and flexible storage medium than earlier methods.\n\n**3. Early Electronic Era (Mid 1900s - 1970s):**\n\n*   **Williams Tube (1946):** One of the earliest forms of computer memory, using a cathode ray tube to store data as electrical charges.  Volatile (data lost when power is off).\n*   **Magnetic Drum Memory (1950):**  A rotating cylinder coated with magnetic material. Faster than Williams Tube, but still relatively slow and bulky.\n*   **Magnetic Core Memory (1951):**  Used tiny magnetic rings to store data.  Dominant form of RAM for several decades.  Relatively expensive.\n*   **Floppy Disks (1960s):**  Initially 8-inch, then 5.25-inch, and later 3.5-inch.  Removable and portable, but with limited capacity.\n*   **Magnetic Tape (Continued):** Used for backup and archival storage.\n\n**4. The Semiconductor Era (1970s - 1990s):**\n\n*   **Semiconductor Memory (RAM) (1970s):**  Solid-state memory began to replace core memory, offering faster access times and smaller size.\n*   **Hard Disk Drives (HDDs) (1956 - Present):**  Developed initially for mainframe computers, HDDs became increasingly common in personal computers.  Capacity increased exponentially over time.\n*   **Optical Discs (CD-ROM, DVD, Blu-ray) (1980s - Present):**  Used lasers to read and write data on a reflective surface.  Offered higher capacity than floppy disks.\n\n**5. The Modern Era (1990s - Present):**\n\n*   **Flash Memory (1980s - Present):**  Non-volatile solid-state memory.  Initially used in EEPROMs, it became widespread in USB drives, SD cards, and SSDs.\n*   **Solid State Drives (SSDs) (1990s - Present):**  Use flash memory to store data, offering significantly faster access times and greater durability than HDDs.\n*   **Cloud Storage (2000s - Present):**  Data is stored on remote servers and accessed over the internet.  Provides scalability, accessibility, and often redundancy. (e.g., Google Drive, Dropbox, AWS S3)\n*   **DNA Storage (2010s - Present):**  Emerging technology that uses DNA molecules to store data.  Offers extremely high density and long-term stability, but is currently expensive and slow.\n*   **Glass Storage (2010s - Present):**  Data is etched into glass, offering potential for extremely long-term storage (potentially thousands of years).\n\n**Key Trends:**\n\n*   **Increasing",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6974,
+      "output_tokens": 1024,
+      "total_latency_ms": 15478,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:07.566Z"
+  },
+  {
+    "result_id": "8e932423-a3aa-47d8-b6be-9bc70a0f8e81",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 30,
+      "total_latency_ms": 1113,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:08.738Z"
+  },
+  {
+    "result_id": "113fc1ef-ba05-485f-9ed2-cbfaab9e7c89",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": null, \"bucket\": \"my-bucket\", \"max_results\": 10}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": null,
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2338,
+      "output_tokens": 36,
+      "total_latency_ms": 1188,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:09.982Z"
+  },
+  {
+    "result_id": "d58b8395-b946-4685-8e0c-69c680946d1c",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 24,
+      "total_latency_ms": 1038,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:11.090Z"
+  },
+  {
+    "result_id": "03d2bd6b-181c-43c6-8faa-1f5793b760f2",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\", \"method\": \"bank_transfer\", \"reference\": \"payment_reference\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value",
+          "method": "bank_transfer",
+          "reference": "payment_reference"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7499999999999999,
+      "overall": 0.8999999999999999
+    },
+    "metrics": {
+      "input_tokens": 2360,
+      "output_tokens": 53,
+      "total_latency_ms": 1406,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:12.558Z"
+  },
+  {
+    "result_id": "dcce44ec-aa00-47ea-a25f-ccea0450ba7d",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 24,
+      "total_latency_ms": 1036,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:13.660Z"
+  },
+  {
+    "result_id": "9b6f4465-5e42-4501-98c1-5118acfc4954",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2351,
+      "output_tokens": 26,
+      "total_latency_ms": 1074,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:14.798Z"
+  },
+  {
+    "result_id": "eeedd010-813c-4872-ad6f-c0587b323ebe",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2352,
+      "output_tokens": 33,
+      "total_latency_ms": 1149,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:16.010Z"
+  },
+  {
+    "result_id": "4a6cb29d-7306-4b43-867b-7c66d9378d26",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2354,
+      "output_tokens": 38,
+      "total_latency_ms": 1223,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:17.291Z"
+  },
+  {
+    "result_id": "984f9a8f-8e53-4674-a22c-61cfd5ae19e1",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2358,
+      "output_tokens": 46,
+      "total_latency_ms": 1319,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:18.677Z"
+  },
+  {
+    "result_id": "15b3bc52-7a4d-45b1-a238-9e72ed4a9993",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2368,
+      "output_tokens": 59,
+      "total_latency_ms": 1497,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:20.235Z"
+  },
+  {
+    "result_id": "6b76bedb-5927-4764-806d-15dc239589ec",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2373,
+      "output_tokens": 72,
+      "total_latency_ms": 1657,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:21.961Z"
+  },
+  {
+    "result_id": "8c45278e-fecf-4040-bd7c-517595170255",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2412,
+      "output_tokens": 111,
+      "total_latency_ms": 2193,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:24.213Z"
+  },
+  {
+    "result_id": "7404bd1e-5e35-4316-9ee6-08c75dc496db",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2337,
+      "output_tokens": 22,
+      "total_latency_ms": 1019,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:25.287Z"
+  },
+  {
+    "result_id": "a91d6ae0-f73f-4f95-a85a-b1ff893462ca",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 28,
+      "total_latency_ms": 1082,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:26.429Z"
+  },
+  {
+    "result_id": "e90cd540-660c-4acc-a949-fcb19e580575",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2378,
+      "output_tokens": 50,
+      "total_latency_ms": 1374,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:27.864Z"
+  },
+  {
+    "result_id": "1e669533-b05f-48a4-aa79-6fbd2e895893",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2380,
+      "output_tokens": 55,
+      "total_latency_ms": 1433,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:29.357Z"
+  },
+  {
+    "result_id": "9bd2fff4-4698-4d45-8aa0-02e613195fad",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "That's a complex question with a lot of factors at play! While electric vehicles (EVs) are rapidly gaining popularity and technological advancements are making them increasingly attractive, a complete replacement of gas cars seems unlikely in the foreseeable future. Here's a breakdown of why, and what a more realistic scenario might look like:\n\n**Arguments for eventual EV dominance:**\n\n*   **Environmental Concerns:** Growing awareness of climate change and air pollution is a major driver for EV adoption.\n*   **Government Regulations:** Many governments are implementing stricter emissions standards and offering incentives for EVs, which will accelerate the transition.\n*   **Technological Advancements:** Battery technology is constantly improving, leading to longer ranges, faster charging times, and lower costs.\n*   **Total Cost of Ownership:** EVs often have lower running costs (electricity vs. gasoline, reduced maintenance) which can make them more economical over their lifespan.\n*   **Performance:** EVs offer instant torque and a quiet, smooth driving experience that many find appealing.\n\n**Challenges to complete replacement:**\n\n*   **Infrastructure:** The availability of charging stations, especially fast-charging stations, is still a limiting factor, particularly in rural areas.\n*   **Cost:** While EV prices are decreasing, they are still generally higher than comparable gas cars, although this gap is narrowing.\n*   **Range Anxiety:** Some consumers worry about the limited range of EVs and the potential for running out of charge.\n*   **Charging Time:** Even with fast charging, refueling an EV takes longer than filling a gas tank.\n*   **Battery Production & Sustainability:** Concerns exist about the environmental impact of mining materials for batteries and the sustainability of battery production and recycling.\n*   **Legacy Infrastructure & Industry:** The existing gas car industry is massive, with established supply chains, manufacturing plants, and jobs. A complete shift would require significant economic and social adjustments.\n*   **Specific Use Cases:** For certain applications (e.g., long-haul trucking, heavy-duty vehicles), electric alternatives are still in early stages of development or not economically viable.\n*   **Consumer Preference:** Some drivers simply prefer the feel and sound of a gas-powered engine.\n\n**Likely Scenario:**\n\nA more realistic scenario is a gradual transition where EVs become increasingly dominant, but gas cars continue to exist for a longer period. We might see:\n\n*   **Hybrid Vehicles:** Plug-in hybrid electric vehicles (PHEVs) could serve as a bridge between gas and fully electric vehicles.\n*   **Synthetic Fuels:** Research into synthetic fuels (e-fuels) that can be used in existing gas engines could offer a lower-emission alternative.\n*   **Niche Gas Car Markets:** Gas cars might remain popular for specific use cases or in regions where EV adoption is slower.\n\n\n\nDo you want me to elaborate on any of these points, or perhaps explore a specific aspect of the EV transition?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2334,
+      "output_tokens": 599,
+      "total_latency_ms": 8409,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:37.826Z"
+  },
+  {
+    "result_id": "9f61110a-b1db-43fd-b5f6-037142e95175",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"Leonardo da Vinci\", \"exchange\": \"NYSE\", \"include_history\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_stock_price",
+        "arguments": {
+          "ticker": "Leonardo da Vinci",
+          "exchange": "NYSE",
+          "include_history": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 42,
+      "total_latency_ms": 1249,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:39.134Z"
+  },
+  {
+    "result_id": "97cfa6bc-49ed-4d6d-b804-70990ee91226",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "auth_list_users\n",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2336,
+      "output_tokens": 7,
+      "total_latency_ms": 794,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:39.994Z"
+  },
+  {
+    "result_id": "73fcd11d-e893-4831-8bde-c58f15bdf204",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll try to hit the key milestones.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Petroglyphs (30,000+ BCE):**  The earliest forms of recording information.  Not storage in the modern sense, but a way to preserve knowledge and stories.\n*   **Clay Tablets (3000 BCE):** Used in Mesopotamia for record-keeping (taxes, laws, literature). Durable but bulky.\n*   **Papyrus Scrolls (2500 BCE):**  Developed in Egypt, lighter and more portable than clay.  Became the primary medium for written information for centuries.\n*   **Parchment & Vellum (2nd Century BCE):**  Made from animal skins, more durable and longer-lasting than papyrus.\n*   **Codex (1st Century CE):**  The ancestor of the modern book – pages bound together.  A significant improvement over scrolls for ease of use and referencing.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (1801):** Joseph Marie Jacquard invented a loom controlled by punched cards, demonstrating a way to encode information mechanically.  This was a crucial precursor to computer programming.\n*   **Hollerith's Punched Card Tabulating Machine (1890):**  Used for the US Census, significantly speeding up data processing. Herman Hollerith's company later became IBM.\n*   **Paper Tape (Early 1900s):** Used for early telecommunications and data transmission.\n*   **Magnetic Tape (1928):** Initially developed for audio recording, it was quickly adapted for data storage.  Early computers used magnetic tape for sequential data access.\n\n**3. Early Electronic Era (Mid 1900s - 1970s):**\n\n*   **Williams Tube (1946):** One of the earliest forms of computer memory, using a cathode ray tube to store data as electrical charges.  Volatile (data lost when power is off).\n*   **Magnetic Drum Memory (1950):**  Faster than magnetic tape, but still sequential access.\n*   **Magnetic Core Memory (1951):**  The dominant form of RAM for several decades.  Non-volatile, relatively fast, and reliable.\n*   **Floppy Disks (1969):**  Introduced by IBM, offering removable storage and a significant improvement in portability. Initially 8-inch, then 5.25-inch, and later 3.5-inch.\n*   **Magnetic Disk Drives (1956):**  IBM introduced the first hard disk drive (HDD), providing random access to data.  Initially very large and expensive.\n\n**4. The Rise of Modern Storage (1970s - 2000s):**\n\n*   **Solid State Drives (SSDs) (1970s - but widespread adoption much later):**  First developed in the 1970s, but early SSDs were expensive and had limited capacity.\n*   **Laser Discs (1978):**  High-capacity optical storage, but bulky and not widely adopted for general data storage.\n*   **CD-ROMs (1982):**  Revolutionized music and data distribution.\n*   **DVDs (1995):**  Higher capacity than CDs, used for video and data.\n*   **USB Flash Drives (2000):**  Small, portable, and convenient for data transfer.\n*   **Blu-ray Discs (2006):**  Even higher capacity than DVDs, primarily for high-definition video.\n\n**5. The Cloud and Beyond (2000s - Present):**\n\n*   **Network Attached Storage (NAS) (Early 2000s):**  Centralized storage accessible over a network.\n*   **Cloud Storage (Mid 2000s - Present):**  Services like Amazon S3, Google Drive, Dropbox, and Microsoft OneDrive have transformed data storage, offering scalability, accessibility, and redundancy.\n*   **NVMe SSDs (2010s):**  Significantly faster SSDs using the NVMe protocol.\n*   **3D NAND Flash Memory (2010s):**  Increased SSD capacity and reduced costs.\n*   **Persistent Memory (Emerging):** Technologies like Intel Optane aim to bridge the gap between RAM and storage, offering non",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2330,
+      "output_tokens": 1024,
+      "total_latency_ms": 13697,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:53.760Z"
+  },
+  {
+    "result_id": "accd5da4-e22a-4c50-be28-e580e9005755",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 30,
+      "total_latency_ms": 1099,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:54.922Z"
+  },
+  {
+    "result_id": "b1e175e4-7359-419b-8088-a07bc3232774",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": null, \"bucket\": \"my-bucket\", \"max_results\": 10}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": null,
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2338,
+      "output_tokens": 36,
+      "total_latency_ms": 1178,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:56.160Z"
+  },
+  {
+    "result_id": "f812bafb-f4e6-44e0-be14-7a9564d63669",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 24,
+      "total_latency_ms": 1018,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:57.239Z"
+  },
+  {
+    "result_id": "0fb1617a-a794-4d9a-8f70-6f64c637567a",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\", \"method\": \"bank_transfer\", \"reference\": \"payment_reference\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value",
+          "method": "bank_transfer",
+          "reference": "payment_reference"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7499999999999999,
+      "overall": 0.8999999999999999
+    },
+    "metrics": {
+      "input_tokens": 2360,
+      "output_tokens": 53,
+      "total_latency_ms": 1396,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:58.696Z"
+  },
+  {
+    "result_id": "29972c95-63b9-40a8-b3b3-2e200aac008a",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 24,
+      "total_latency_ms": 1027,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:13:59.785Z"
+  },
+  {
+    "result_id": "bab80ea9-baff-4bba-9f34-5d451256c2cd",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2351,
+      "output_tokens": 26,
+      "total_latency_ms": 1059,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:00.909Z"
+  },
+  {
+    "result_id": "6fb49f85-5cce-48e1-8550-da5a64344ed9",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2352,
+      "output_tokens": 33,
+      "total_latency_ms": 1144,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:02.122Z"
+  },
+  {
+    "result_id": "8fe0dc74-3ae0-4bca-8771-52d70c758959",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2354,
+      "output_tokens": 38,
+      "total_latency_ms": 1208,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:03.389Z"
+  },
+  {
+    "result_id": "44fd6f82-27cd-4b5d-a81f-09c0ad55b8db",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2358,
+      "output_tokens": 46,
+      "total_latency_ms": 1305,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:04.754Z"
+  },
+  {
+    "result_id": "41cc6205-9407-4e3e-add7-decdec95a5ff",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2368,
+      "output_tokens": 59,
+      "total_latency_ms": 1473,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:06.293Z"
+  },
+  {
+    "result_id": "3fbb99af-5999-4081-81c7-2884ab8d96ba",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2373,
+      "output_tokens": 72,
+      "total_latency_ms": 1668,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:08.024Z"
+  },
+  {
+    "result_id": "d82145b4-97e1-4b0c-84cb-5f2c37a9e8b8",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2412,
+      "output_tokens": 111,
+      "total_latency_ms": 2177,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:10.262Z"
+  },
+  {
+    "result_id": "3f3cb6e1-5fb9-43e5-aeca-6c1d72a1b058",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2337,
+      "output_tokens": 22,
+      "total_latency_ms": 1005,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:11.323Z"
+  },
+  {
+    "result_id": "25e50f90-ebed-4e12-84f2-a3cfeeb2d180",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 28,
+      "total_latency_ms": 1087,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:12.466Z"
+  },
+  {
+    "result_id": "9a3aceef-6a90-40f9-8921-94b39d9be1b4",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2378,
+      "output_tokens": 50,
+      "total_latency_ms": 1380,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:13.903Z"
+  },
+  {
+    "result_id": "d6372cec-9509-4956-bc0a-769e1e08a0ff",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2380,
+      "output_tokens": 55,
+      "total_latency_ms": 1441,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:15.410Z"
+  },
+  {
+    "result_id": "6d420fef-af84-42dd-ad64-6d1ecfeafdb8",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "That's a complex question with a lot of factors at play! While electric vehicles (EVs) are rapidly gaining popularity and technological advancements are making them increasingly attractive, a complete replacement of gas cars seems unlikely in the foreseeable future. Here's a breakdown of why, and what a more realistic scenario might look like:\n\n**Arguments for eventual EV dominance:**\n\n*   **Environmental Concerns:** Growing awareness of climate change and air pollution is a major driver for EV adoption.\n*   **Government Regulations:** Many governments are implementing stricter emissions standards and offering incentives for EVs, which will accelerate the transition.\n*   **Technological Advancements:** Battery technology is constantly improving, leading to longer ranges, faster charging times, and lower costs.\n*   **Total Cost of Ownership:** EVs often have lower running costs (electricity vs. gasoline, reduced maintenance) which can make them more economical over their lifespan.\n*   **Performance:** EVs offer instant torque and a quiet, smooth driving experience that many find appealing.\n\n**Challenges to complete replacement:**\n\n*   **Infrastructure:** The availability of charging stations, especially fast-charging stations, is still a limiting factor, particularly in rural areas.\n*   **Cost:** While EV prices are decreasing, they are still generally higher than comparable gas cars, although this gap is narrowing.\n*   **Range Anxiety:** Some consumers worry about the limited range of EVs and the potential for running out of charge.\n*   **Charging Time:** Even with fast charging, refueling an EV takes longer than filling a gas tank.\n*   **Battery Production & Sustainability:** Concerns exist about the environmental impact of mining materials for batteries and the sustainability of battery production and recycling.\n*   **Legacy Infrastructure & Industry:** The existing gas car industry is massive, with established supply chains, manufacturing plants, and jobs. A complete shift would require significant economic and social adjustments.\n*   **Specific Use Cases:** For certain applications (e.g., long-haul trucking, heavy-duty vehicles), electric alternatives are still in early stages of development or not economically viable.\n*   **Consumer Preference:** Some drivers simply prefer the feel and sound of a gas-powered engine.\n\n**Likely Scenario:**\n\nA more realistic scenario is a gradual transition where EVs become increasingly dominant, but gas cars continue to exist for a longer period. We might see:\n\n*   **Hybrid Vehicles:** Plug-in hybrid electric vehicles (PHEVs) could serve as a bridge between gas and fully electric vehicles.\n*   **Synthetic Fuels:** Research into synthetic fuels (e-fuels) that can be used in existing gas engines could offer a lower-emission alternative.\n*   **Niche Gas Car Markets:** Gas cars might remain popular for specific use cases or in regions where EV adoption is slower.\n\n\n\nDo you want me to elaborate on any of these points, or perhaps explore a specific aspect of the EV transition?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2334,
+      "output_tokens": 599,
+      "total_latency_ms": 8486,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:23.954Z"
+  },
+  {
+    "result_id": "0f065821-ad74-429a-8fdc-38e01f5c5ea5",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"Leonardo da Vinci\", \"exchange\": \"NYSE\", \"include_history\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_stock_price",
+        "arguments": {
+          "ticker": "Leonardo da Vinci",
+          "exchange": "NYSE",
+          "include_history": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 42,
+      "total_latency_ms": 1253,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:25.264Z"
+  },
+  {
+    "result_id": "a5f1d25e-17a1-4ae5-982b-8be9dab9f30b",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "auth_list_users\n",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2336,
+      "output_tokens": 7,
+      "total_latency_ms": 803,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:26.126Z"
+  },
+  {
+    "result_id": "9e8a7a21-5eee-4284-99bf-0d1b82c04d50",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll try to hit the key milestones.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Petroglyphs (30,000+ BCE):**  The earliest forms of recording information.  Not storage in the modern sense, but a way to preserve knowledge and stories.\n*   **Clay Tablets (3000 BCE):** Used in Mesopotamia for record-keeping (taxes, laws, literature). Durable but bulky.\n*   **Papyrus Scrolls (2500 BCE):**  Developed in Egypt, lighter and more portable than clay.  Became the primary medium for written information for centuries.\n*   **Parchment & Vellum (2nd Century BCE):**  Made from animal skins, more durable and longer-lasting than papyrus.\n*   **Codex (1st Century CE):**  The ancestor of the modern book – pages bound together.  A significant improvement over scrolls for ease of use and referencing.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (1801):** Joseph Marie Jacquard invented a loom controlled by punched cards, demonstrating a way to encode information mechanically.  This was a crucial precursor to computer programming.\n*   **Hollerith's Punched Card Tabulating Machine (1890):**  Used for the US Census, significantly speeding up data processing. Herman Hollerith's company later became IBM.\n*   **Paper Tape (Early 1900s):** Used for early telecommunications and data transmission.\n*   **Magnetic Tape (1928):** Initially developed for audio recording, it was quickly adapted for data storage.  Early computers used magnetic tape for sequential data access.\n\n**3. Early Electronic Era (Mid 1900s - 1970s):**\n\n*   **Williams Tube (1946):** One of the earliest forms of computer memory, using a cathode ray tube to store data as electrical charges.  Volatile (data lost when power is off).\n*   **Magnetic Drum Memory (1950):**  Faster than magnetic tape, but still sequential access.\n*   **Magnetic Core Memory (1951):**  The dominant form of RAM for several decades.  Non-volatile, relatively fast, and reliable.\n*   **Floppy Disks (1969):**  Introduced by IBM, offering removable storage and a significant improvement in portability. Initially 8-inch, then 5.25-inch, and later 3.5-inch.\n*   **Magnetic Disk Drives (1956):**  IBM introduced the first hard disk drive (HDD), providing random access to data.  Initially very large and expensive.\n\n**4. The Rise of Modern Storage (1970s - 2000s):**\n\n*   **Solid State Drives (SSDs) (1970s - but widespread adoption much later):**  First developed in the 1970s, but early SSDs were expensive and had limited capacity.\n*   **Laser Discs (1978):**  High-capacity optical storage, but bulky and not widely adopted for general data storage.\n*   **CD-ROMs (1982):**  Revolutionized music and data distribution.\n*   **DVDs (1995):**  Higher capacity than CDs, used for video and data.\n*   **USB Flash Drives (2000):**  Small, portable, and convenient for data transfer.\n*   **Blu-ray Discs (2006):**  Even higher capacity than DVDs, primarily for high-definition video.\n\n**5. The Cloud and Beyond (2000s - Present):**\n\n*   **Network Attached Storage (NAS) (Early 2000s):**  Centralized storage accessible over a network.\n*   **Cloud Storage (Mid 2000s - Present):**  Services like Amazon S3, Google Drive, Dropbox, and Microsoft OneDrive have transformed data storage, offering scalability, accessibility, and redundancy.\n*   **NVMe SSDs (2010s):**  Significantly faster SSDs using the NVMe protocol.\n*   **3D NAND Flash Memory (2010s):**  Increased SSD capacity and reduced costs.\n*   **Persistent Memory (Emerging):** Technologies like Intel Optane aim to bridge the gap between RAM and storage, offering non",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2330,
+      "output_tokens": 1024,
+      "total_latency_ms": 14010,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:40.201Z"
+  },
+  {
+    "result_id": "3998f821-f46d-4c92-8bba-a49319ec4a98",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 30,
+      "total_latency_ms": 1116,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:41.377Z"
+  },
+  {
+    "result_id": "bc7be882-bfdc-49e8-a193-e7d321dc5154",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": null, \"bucket\": \"my-bucket\", \"max_results\": 10}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": null,
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2338,
+      "output_tokens": 36,
+      "total_latency_ms": 1186,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:42.631Z"
+  },
+  {
+    "result_id": "c6e7c018-de27-497f-a4c2-b0f0dca0d7b6",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 24,
+      "total_latency_ms": 1029,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:43.720Z"
+  },
+  {
+    "result_id": "ace9775b-3ccb-49b4-b1a5-d2ce9fa552ba",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\", \"method\": \"bank_transfer\", \"reference\": \"payment_reference\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value",
+          "method": "bank_transfer",
+          "reference": "payment_reference"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7499999999999999,
+      "overall": 0.8999999999999999
+    },
+    "metrics": {
+      "input_tokens": 2360,
+      "output_tokens": 53,
+      "total_latency_ms": 1410,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:45.197Z"
+  },
+  {
+    "result_id": "de7ebaea-aabf-4ac9-8d78-80ba90c39735",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 24,
+      "total_latency_ms": 1043,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:46.298Z"
+  },
+  {
+    "result_id": "cdc8f793-67f8-487a-9b2d-5921523ea47d",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2351,
+      "output_tokens": 26,
+      "total_latency_ms": 1065,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:47.419Z"
+  },
+  {
+    "result_id": "a28a338a-f244-42b8-9708-e35f77f1108a",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2352,
+      "output_tokens": 33,
+      "total_latency_ms": 1162,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:48.636Z"
+  },
+  {
+    "result_id": "0e4cf93d-fc77-4ae1-b465-b4b58b23e962",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2354,
+      "output_tokens": 38,
+      "total_latency_ms": 1218,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:49.910Z"
+  },
+  {
+    "result_id": "f98e21f2-7007-46b2-a20c-57a69a7eafab",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2358,
+      "output_tokens": 46,
+      "total_latency_ms": 1322,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:51.287Z"
+  },
+  {
+    "result_id": "3f2c1a1e-2b94-40aa-ade3-3bf83e3b107c",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2368,
+      "output_tokens": 59,
+      "total_latency_ms": 1493,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:52.836Z"
+  },
+  {
+    "result_id": "47949a9f-14b7-4660-810e-358baefcbf0d",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2373,
+      "output_tokens": 72,
+      "total_latency_ms": 1660,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:54.562Z"
+  },
+  {
+    "result_id": "8b7b1973-67d8-4f67-b21e-e07a9aabbc3d",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2412,
+      "output_tokens": 111,
+      "total_latency_ms": 2179,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:56.801Z"
+  },
+  {
+    "result_id": "c158ae7f-6407-4d93-bd50-0abc2f1dcfd5",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2337,
+      "output_tokens": 22,
+      "total_latency_ms": 1015,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:57.877Z"
+  },
+  {
+    "result_id": "bc76a804-dac5-4901-a4b6-19f283925bbb",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 28,
+      "total_latency_ms": 1080,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:14:59.013Z"
+  },
+  {
+    "result_id": "a4667120-71e9-41d6-8997-9a796a7032f7",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2378,
+      "output_tokens": 50,
+      "total_latency_ms": 1385,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:00.459Z"
+  },
+  {
+    "result_id": "89571f09-de78-4c39-bb3b-faa0f0985c45",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2380,
+      "output_tokens": 55,
+      "total_latency_ms": 1440,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:01.954Z"
+  },
+  {
+    "result_id": "a232468e-d7e3-4bea-9d9c-4fa07bfd926b",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "That's a complex question with a lot of factors at play! While electric vehicles (EVs) are rapidly gaining popularity and technological advancements are making them increasingly attractive, a complete replacement of gas cars seems unlikely in the foreseeable future. Here's a breakdown of why, and what a more realistic scenario might look like:\n\n**Arguments for eventual EV dominance:**\n\n*   **Environmental Concerns:** Growing awareness of climate change and air pollution is a major driver for EV adoption.\n*   **Government Regulations:** Many governments are implementing stricter emissions standards and offering incentives for EVs, which will accelerate the transition.\n*   **Technological Advancements:** Battery technology is constantly improving, leading to longer ranges, faster charging times, and lower costs.\n*   **Total Cost of Ownership:** EVs often have lower running costs (electricity vs. gasoline, reduced maintenance) which can make them more economical over their lifespan.\n*   **Performance:** EVs offer instant torque and a quiet, smooth driving experience that many find appealing.\n\n**Challenges to complete replacement:**\n\n*   **Infrastructure:** The availability of charging stations, especially fast-charging stations, is still a limiting factor, particularly in rural areas.\n*   **Cost:** While EV prices are decreasing, they are still generally higher than comparable gas cars, although this gap is narrowing.\n*   **Range Anxiety:** Some consumers worry about the limited range of EVs and the potential for running out of charge.\n*   **Charging Time:** Even with fast charging, refueling an EV takes longer than filling a gas tank.\n*   **Battery Production & Sustainability:** Concerns exist about the environmental impact of mining materials for batteries and the sustainability of battery production and recycling.\n*   **Legacy Infrastructure & Industry:** The existing gas car industry is massive, with established supply chains, manufacturing plants, and jobs. A complete shift would require significant economic and social adjustments.\n*   **Specific Use Cases:** For certain applications (e.g., long-haul trucking, heavy-duty vehicles), electric alternatives are still in early stages of development or not economically viable.\n*   **Consumer Preference:** Some drivers simply prefer the feel and sound of a gas-powered engine.\n\n**Likely Scenario:**\n\nA more realistic scenario is a gradual transition where EVs become increasingly dominant, but gas cars continue to exist for a longer period. We might see:\n\n*   **Hybrid Vehicles:** Plug-in hybrid electric vehicles (PHEVs) could serve as a bridge between gas and fully electric vehicles.\n*   **Synthetic Fuels:** Research into synthetic fuels (e-fuels) that can be used in existing gas engines could offer a lower-emission alternative.\n*   **Niche Gas Car Markets:** Gas cars might remain popular for specific use cases or in regions where EV adoption is slower.\n\n\n\nDo you want me to elaborate on any of these points, or perhaps explore a specific aspect of the EV transition?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2334,
+      "output_tokens": 599,
+      "total_latency_ms": 8453,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:10.463Z"
+  },
+  {
+    "result_id": "1be57c03-b21e-48e6-8be7-300ab1bd5bb2",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"Leonardo da Vinci\", \"exchange\": \"NYSE\", \"include_history\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_stock_price",
+        "arguments": {
+          "ticker": "Leonardo da Vinci",
+          "exchange": "NYSE",
+          "include_history": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 42,
+      "total_latency_ms": 1256,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:11.777Z"
+  },
+  {
+    "result_id": "12efd51f-5441-4a28-92f4-50d20f0443d4",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "auth_list_users\n",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2336,
+      "output_tokens": 7,
+      "total_latency_ms": 797,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:12.632Z"
+  },
+  {
+    "result_id": "e0eb0f7d-75fb-4edf-b425-97164fc74740",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll try to hit the key milestones.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Petroglyphs (30,000+ BCE):**  The earliest forms of recording information.  Not storage in the modern sense, but a way to preserve knowledge and stories.\n*   **Clay Tablets (3000 BCE):** Used in Mesopotamia for record-keeping (taxes, laws, literature). Durable but bulky.\n*   **Papyrus Scrolls (2500 BCE):**  Developed in Egypt, lighter and more portable than clay.  Became the primary medium for written information for centuries.\n*   **Parchment & Vellum (2nd Century BCE):**  Made from animal skins, more durable and longer-lasting than papyrus.\n*   **Codex (1st Century CE):**  The ancestor of the modern book – pages bound together.  A significant improvement over scrolls for ease of use and referencing.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (1801):** Joseph Marie Jacquard invented a loom controlled by punched cards, demonstrating a way to encode information mechanically.  This was a crucial precursor to computer programming.\n*   **Hollerith's Punched Card Tabulating Machine (1890):**  Used for the US Census, significantly speeding up data processing. Herman Hollerith's company later became IBM.\n*   **Paper Tape (Early 1900s):** Used for early telecommunications and data transmission.\n*   **Magnetic Tape (1928):** Initially developed for audio recording, it was quickly adapted for data storage.  Early computers used magnetic tape for sequential data access.\n\n**3. Early Electronic Era (Mid 1900s - 1970s):**\n\n*   **Williams Tube (1946):** One of the earliest forms of computer memory, using a cathode ray tube to store data as electrical charges.  Volatile (data lost when power is off).\n*   **Magnetic Drum Memory (1950):**  Faster than magnetic tape, but still sequential access.\n*   **Magnetic Core Memory (1951):**  The dominant form of RAM for several decades.  Non-volatile, relatively fast, and reliable.\n*   **Floppy Disks (1969):**  Introduced by IBM, offering removable storage and a significant improvement in portability. Initially 8-inch, then 5.25-inch, and later 3.5-inch.\n*   **Magnetic Disk Drives (1956):**  IBM introduced the first hard disk drive (HDD), providing random access to data.  Initially very large and expensive.\n\n**4. The Rise of Modern Storage (1970s - 2000s):**\n\n*   **Solid State Drives (SSDs) (1970s - but widespread adoption much later):**  First developed in the 1970s, but early SSDs were expensive and had limited capacity.\n*   **Laser Discs (1978):**  High-capacity optical storage, but bulky and not widely adopted for general data storage.\n*   **CD-ROMs (1982):**  Revolutionized music and data distribution.\n*   **DVDs (1995):**  Higher capacity than CDs, used for video and data.\n*   **USB Flash Drives (2000):**  Small, portable, and convenient for data transfer.\n*   **Blu-ray Discs (2006):**  Even higher capacity than DVDs, primarily for high-definition video.\n\n**5. The Cloud and Beyond (2000s - Present):**\n\n*   **Network Attached Storage (NAS) (Early 2000s):**  Centralized storage accessible over a network.\n*   **Cloud Storage (Mid 2000s - Present):**  Services like Amazon S3, Google Drive, Dropbox, and Microsoft OneDrive have transformed data storage, offering scalability, accessibility, and redundancy.\n*   **NVMe SSDs (2010s):**  Significantly faster SSDs using the NVMe protocol.\n*   **3D NAND Flash Memory (2010s):**  Increased SSD capacity and reduced costs.\n*   **Persistent Memory (Emerging):** Technologies like Intel Optane aim to bridge the gap between RAM and storage, offering non",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2330,
+      "output_tokens": 1024,
+      "total_latency_ms": 13905,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:26.601Z"
+  }
+]

@@ -1,0 +1,3941 @@
+[
+  {
+    "result_id": "8e28132e-7f1a-4dde-8f78-9f28e62aefbb",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1829,
+      "output_tokens": 18,
+      "total_latency_ms": 12355,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:03.299Z"
+  },
+  {
+    "result_id": "e6acc0fb-5c23-45ad-adfd-0d817acbb5d1",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 1833,
+      "output_tokens": 41,
+      "total_latency_ms": 397,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:03.761Z"
+  },
+  {
+    "result_id": "4b3ec155-d9f6-4c93-90ef-b0b3e3c2126c",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value",
+          "include_history": false,
+          "locale": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1835,
+      "output_tokens": 31,
+      "total_latency_ms": 328,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:04.148Z"
+  },
+  {
+    "result_id": "02d63cbb-5281-44b5-b3f4-514b624c80be",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1834,
+      "output_tokens": 20,
+      "total_latency_ms": 237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:04.448Z"
+  },
+  {
+    "result_id": "17cce9fb-8d65-4a07-b5bb-3de3109664d3",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1838,
+      "output_tokens": 20,
+      "total_latency_ms": 238,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:04.748Z"
+  },
+  {
+    "result_id": "1f30ff60-3ee0-4df4-af5d-145e8b095958",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1841,
+      "output_tokens": 26,
+      "total_latency_ms": 285,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:05.091Z"
+  },
+  {
+    "result_id": "6dc8e73f-b39f-4f20-be21-bb2fb141b290",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_generate_thumbnail",
+        "arguments": {
+          "input_path": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1841,
+      "output_tokens": 20,
+      "total_latency_ms": 285,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:05.435Z"
+  },
+  {
+    "result_id": "3932e6ce-c300-4444-8198-4c2391db37b6",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": \"[\\\"item1\\\",\\\"item2\\\"]\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": "[\"item1\",\"item2\"]"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1849,
+      "output_tokens": 31,
+      "total_latency_ms": 317,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:05.811Z"
+  },
+  {
+    "result_id": "281fe6b2-d903-46b7-8235-e7ab0d29be7a",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}} \n\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"\", \"max_results\": 10}}",
+      "parsed_sequence": [
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "",
+            "max_results": 10
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 1844,
+      "output_tokens": 53,
+      "total_latency_ms": 485,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:06.355Z"
+  },
+  {
+    "result_id": "eb12996a-1506-4a25-a374-f9d404945a0d",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}} \n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1843,
+      "output_tokens": 40,
+      "total_latency_ms": 387,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:06.803Z"
+  },
+  {
+    "result_id": "300b70a7-9db0-4824-ab3a-e62c7a0759b0",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"include_history\": false, \"locale\": \"\", \"order_id\": \"example_value\"}} \n\n{\"name\": \"comm_send_message\", \"arguments\": {\"message\": \"example_value\", \"priority\": \"normal\", \"recipient\": \"example_value\", \"thread_id\": \"\"}} \n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"include_pollutants\": false, \"location\": \"example_value\", \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "include_history": false,
+            "locale": "",
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "message": "example_value",
+            "priority": "normal",
+            "recipient": "example_value",
+            "thread_id": ""
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "include_pollutants": false,
+            "location": "example_value",
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 1856,
+      "output_tokens": 102,
+      "total_latency_ms": 1092,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:07.960Z"
+  },
+  {
+    "result_id": "d9a6810d-9b44-4229-ac8a-e7b8904f7e4b",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}} \n\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109}} \n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 109
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8333333333333334,
+      "overall": 0.8333333333333334
+    },
+    "metrics": {
+      "input_tokens": 1864,
+      "output_tokens": 80,
+      "total_latency_ms": 702,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:08.717Z"
+  },
+  {
+    "result_id": "060deb04-6d0a-4a5c-b02c-d74eb85a3905",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest",
+          "status": "suspended"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1838,
+      "output_tokens": 25,
+      "total_latency_ms": 274,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:09.057Z"
+  },
+  {
+    "result_id": "5d33b43f-1f42-42fa-88bd-75b57c590ed8",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45, \"height\": null, \"quality\": null}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "config.json",
+          "width": 174.45,
+          "height": null,
+          "quality": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 1834,
+      "output_tokens": 38,
+      "total_latency_ms": 368,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:09.480Z"
+  },
+  {
+    "result_id": "a621aceb-574a-4959-850f-c403e4213a3f",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {
+            "key": "value"
+          },
+          "user_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1848,
+      "output_tokens": 36,
+      "total_latency_ms": 362,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:09.897Z"
+  },
+  {
+    "result_id": "da7922a8-5177-4a54-be2c-e2b149e562f1",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "user@example.com",
+          "include_pollutants": false,
+          "offset": 929.49
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1849,
+      "output_tokens": 37,
+      "total_latency_ms": 367,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:10.327Z"
+  },
+  {
+    "result_id": "2c9e1e73-6779-4ec1-9bc3-7ac7b63b4a10",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "To find out how many eggs remain, we need to subtract the number of eggs used (7) from the total number of eggs (36).\n\n36 - 7 = 29\n\nSo, there are 29 eggs remaining.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 1830,
+      "output_tokens": 47,
+      "total_latency_ms": 440,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:10.824Z"
+  },
+  {
+    "result_id": "364a7bdd-a98a-4178-8214-94ae6affea8d",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"math_sqrt\", \"arguments\": {\"x\": \"144\"}}",
+      "parsed_tool_call": {
+        "name": "math_sqrt",
+        "arguments": {
+          "x": "144"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1823,
+      "output_tokens": 17,
+      "total_latency_ms": 216,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:11.096Z"
+  },
+  {
+    "result_id": "2994bed0-0296-4496-bcf2-80be65b89506",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_compare_approaches\", \"arguments\": {\"approach1\": \"Google Analytics\", \"approach2\": \"Mixpanel\", \"approach3\": \"Matomo\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_compare_approaches",
+        "arguments": {
+          "approach1": "Google Analytics",
+          "approach2": "Mixpanel",
+          "approach3": "Matomo"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1824,
+      "output_tokens": 40,
+      "total_latency_ms": 383,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:11.543Z"
+  },
+  {
+    "result_id": "f3a3e2ad-dd78-4ae6-a9b9-0a1f4b112239",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"compare_software_architecture_approaches\", \"arguments\": {\"approach1\": \"Microservices\", \"approach2\": \"Monolithic\", \"approach3\": \"Event-Driven\"}}",
+      "parsed_tool_call": {
+        "name": "compare_software_architecture_approaches",
+        "arguments": {
+          "approach1": "Microservices",
+          "approach2": "Monolithic",
+          "approach3": "Event-Driven"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1825,
+      "output_tokens": 44,
+      "total_latency_ms": 421,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:12.028Z"
+  },
+  {
+    "result_id": "1f565d91-5980-4092-a273-13af5b9595fb",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1829,
+      "output_tokens": 18,
+      "total_latency_ms": 220,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:12.310Z"
+  },
+  {
+    "result_id": "501101dc-3871-4f53-aec9-c572349bbf7c",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 1833,
+      "output_tokens": 41,
+      "total_latency_ms": 394,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:12.767Z"
+  },
+  {
+    "result_id": "8bb7137b-22d9-4f1a-8629-81a78552e6bc",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value",
+          "include_history": false,
+          "locale": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1835,
+      "output_tokens": 31,
+      "total_latency_ms": 321,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:13.144Z"
+  },
+  {
+    "result_id": "17b748b5-5943-4e76-9900-0432ca467ca8",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1834,
+      "output_tokens": 20,
+      "total_latency_ms": 234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:13.433Z"
+  },
+  {
+    "result_id": "c57a5bcb-66ca-4b4f-9a9a-e1a491bc74a4",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1838,
+      "output_tokens": 20,
+      "total_latency_ms": 235,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:13.730Z"
+  },
+  {
+    "result_id": "2a3c5193-1f46-46e2-8f75-e828de17c4d1",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1841,
+      "output_tokens": 26,
+      "total_latency_ms": 279,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:14.072Z"
+  },
+  {
+    "result_id": "ff9965ac-0bef-4c87-bb97-48c132ad6185",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_generate_thumbnail",
+        "arguments": {
+          "input_path": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1841,
+      "output_tokens": 20,
+      "total_latency_ms": 236,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:14.371Z"
+  },
+  {
+    "result_id": "a0afbacc-95ce-4bef-a2bd-5846781f9f07",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": \"[\\\"item1\\\",\\\"item2\\\"]\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": "[\"item1\",\"item2\"]"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1849,
+      "output_tokens": 31,
+      "total_latency_ms": 323,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:14.757Z"
+  },
+  {
+    "result_id": "7399307f-649f-431d-8f2b-5cfa42e18e85",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}} \n\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"\", \"max_results\": 10}}",
+      "parsed_sequence": [
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "",
+            "max_results": 10
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 1844,
+      "output_tokens": 53,
+      "total_latency_ms": 493,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:15.315Z"
+  },
+  {
+    "result_id": "ccb0d0d3-7bb2-442d-9449-d9f579f50443",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}} \n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1843,
+      "output_tokens": 40,
+      "total_latency_ms": 393,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:15.779Z"
+  },
+  {
+    "result_id": "00499de1-aeb3-4e08-a867-29cbcec4e8b0",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"include_history\": false, \"locale\": \"\", \"order_id\": \"example_value\"}} \n\n{\"name\": \"comm_send_message\", \"arguments\": {\"message\": \"example_value\", \"priority\": \"normal\", \"recipient\": \"example_value\", \"thread_id\": \"\"}} \n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"include_pollutants\": false, \"location\": \"example_value\", \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "include_history": false,
+            "locale": "",
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "message": "example_value",
+            "priority": "normal",
+            "recipient": "example_value",
+            "thread_id": ""
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "include_pollutants": false,
+            "location": "example_value",
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 1856,
+      "output_tokens": 102,
+      "total_latency_ms": 953,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:16.803Z"
+  },
+  {
+    "result_id": "da2fc344-377f-4582-aab8-b466f7d5275d",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}} \n\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109}} \n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 109
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8333333333333334,
+      "overall": 0.8333333333333334
+    },
+    "metrics": {
+      "input_tokens": 1864,
+      "output_tokens": 80,
+      "total_latency_ms": 740,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:17.611Z"
+  },
+  {
+    "result_id": "060454e7-bea6-44f4-882a-c01a48601b70",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest",
+          "status": "suspended"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1838,
+      "output_tokens": 25,
+      "total_latency_ms": 338,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:18.016Z"
+  },
+  {
+    "result_id": "cc545109-8a1b-4600-8899-a894cd3197bd",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45, \"height\": null, \"quality\": null}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "config.json",
+          "width": 174.45,
+          "height": null,
+          "quality": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 1834,
+      "output_tokens": 38,
+      "total_latency_ms": 522,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:18.608Z"
+  },
+  {
+    "result_id": "a4e03d5e-ee95-4eb8-abb0-00beea3d1f1c",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {
+            "key": "value"
+          },
+          "user_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1848,
+      "output_tokens": 36,
+      "total_latency_ms": 357,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:19.021Z"
+  },
+  {
+    "result_id": "bbf88cb3-86cf-4fe8-b200-4d39304f6847",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "user@example.com",
+          "include_pollutants": false,
+          "offset": 929.49
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1849,
+      "output_tokens": 37,
+      "total_latency_ms": 577,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:19.665Z"
+  },
+  {
+    "result_id": "17ca4937-27f9-432b-87c6-4086c0108b65",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "To find out how many eggs remain, we need to subtract the number of eggs used (7) from the total number of eggs (36).\n\n36 - 7 = 29\n\nSo, there are 29 eggs remaining.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 1830,
+      "output_tokens": 47,
+      "total_latency_ms": 699,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:20.425Z"
+  },
+  {
+    "result_id": "8c6ac869-d404-4a25-be18-b7fb622e697e",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"math_sqrt\", \"arguments\": {\"x\": \"144\"}}",
+      "parsed_tool_call": {
+        "name": "math_sqrt",
+        "arguments": {
+          "x": "144"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1823,
+      "output_tokens": 17,
+      "total_latency_ms": 309,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:20.798Z"
+  },
+  {
+    "result_id": "624e61d0-7da9-4530-a38f-c551d67ada79",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_compare_approaches\", \"arguments\": {\"approach1\": \"Google Analytics\", \"approach2\": \"Mixpanel\", \"approach3\": \"Matomo\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_compare_approaches",
+        "arguments": {
+          "approach1": "Google Analytics",
+          "approach2": "Mixpanel",
+          "approach3": "Matomo"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1824,
+      "output_tokens": 40,
+      "total_latency_ms": 605,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:21.469Z"
+  },
+  {
+    "result_id": "b7401a6a-1cdc-4ee4-99cb-a98a393d2647",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"compare_software_architecture_approaches\", \"arguments\": {\"approach1\": \"Microservices\", \"approach2\": \"Monolithic\", \"approach3\": \"Event-Driven\"}}",
+      "parsed_tool_call": {
+        "name": "compare_software_architecture_approaches",
+        "arguments": {
+          "approach1": "Microservices",
+          "approach2": "Monolithic",
+          "approach3": "Event-Driven"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1825,
+      "output_tokens": 44,
+      "total_latency_ms": 670,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:22.204Z"
+  },
+  {
+    "result_id": "d685194e-5ba4-4c1c-bbc4-85ccf7a35444",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1829,
+      "output_tokens": 18,
+      "total_latency_ms": 332,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:22.603Z"
+  },
+  {
+    "result_id": "aed2d524-28ca-4b0f-a18c-e93901e282f2",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 1833,
+      "output_tokens": 41,
+      "total_latency_ms": 625,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:23.286Z"
+  },
+  {
+    "result_id": "19040350-2fd8-4ce3-ba8c-c66996136eb1",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value",
+          "include_history": false,
+          "locale": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1835,
+      "output_tokens": 31,
+      "total_latency_ms": 487,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:23.835Z"
+  },
+  {
+    "result_id": "f44420d2-9d82-4065-9c2d-95cbadd7ae65",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1834,
+      "output_tokens": 20,
+      "total_latency_ms": 348,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:24.242Z"
+  },
+  {
+    "result_id": "20816e85-6e32-439a-a222-20b957b65308",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1838,
+      "output_tokens": 20,
+      "total_latency_ms": 348,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:24.648Z"
+  },
+  {
+    "result_id": "182e6fbf-8cb3-43cb-bce1-28ec773261f8",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1841,
+      "output_tokens": 26,
+      "total_latency_ms": 424,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:25.129Z"
+  },
+  {
+    "result_id": "601f53fd-ab23-4643-9e94-883b9c9ca66f",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_generate_thumbnail",
+        "arguments": {
+          "input_path": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1841,
+      "output_tokens": 20,
+      "total_latency_ms": 347,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:25.533Z"
+  },
+  {
+    "result_id": "8b954767-9afa-4111-a492-ebe27dc690d7",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": \"[\\\"item1\\\",\\\"item2\\\"]\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": "[\"item1\",\"item2\"]"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1849,
+      "output_tokens": 31,
+      "total_latency_ms": 505,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:26.096Z"
+  },
+  {
+    "result_id": "2466aaca-64ca-4df4-9d0a-1f2cb9015057",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}} \n\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"\", \"max_results\": 10}}",
+      "parsed_sequence": [
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "",
+            "max_results": 10
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 1844,
+      "output_tokens": 53,
+      "total_latency_ms": 794,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:26.947Z"
+  },
+  {
+    "result_id": "a72f5033-51bc-4d65-a590-d28a3da7aba3",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}} \n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1843,
+      "output_tokens": 40,
+      "total_latency_ms": 609,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:27.621Z"
+  },
+  {
+    "result_id": "bbbca67a-dd5c-4a97-b1eb-74569a5c5922",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"include_history\": false, \"locale\": \"\", \"order_id\": \"example_value\"}} \n\n{\"name\": \"comm_send_message\", \"arguments\": {\"message\": \"example_value\", \"priority\": \"normal\", \"recipient\": \"example_value\", \"thread_id\": \"\"}} \n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"include_pollutants\": false, \"location\": \"example_value\", \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "include_history": false,
+            "locale": "",
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "message": "example_value",
+            "priority": "normal",
+            "recipient": "example_value",
+            "thread_id": ""
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "include_pollutants": false,
+            "location": "example_value",
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 1856,
+      "output_tokens": 102,
+      "total_latency_ms": 1313,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:28.996Z"
+  },
+  {
+    "result_id": "eb8335a9-73ad-46b4-b1c0-15381f786669",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}} \n\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109}} \n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 109
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8333333333333334,
+      "overall": 0.8333333333333334
+    },
+    "metrics": {
+      "input_tokens": 1864,
+      "output_tokens": 80,
+      "total_latency_ms": 1178,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:30.233Z"
+  },
+  {
+    "result_id": "42d692b7-d591-4287-87f7-f0d4f2fb16b1",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest",
+          "status": "suspended"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1838,
+      "output_tokens": 25,
+      "total_latency_ms": 416,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:30.718Z"
+  },
+  {
+    "result_id": "fffe6e04-6620-4889-ba21-dbd342361b7a",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45, \"height\": null, \"quality\": null}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "config.json",
+          "width": 174.45,
+          "height": null,
+          "quality": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 1834,
+      "output_tokens": 38,
+      "total_latency_ms": 584,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:31.369Z"
+  },
+  {
+    "result_id": "9a25ac6c-325a-48df-999f-7877fc2da44b",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {
+            "key": "value"
+          },
+          "user_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1848,
+      "output_tokens": 36,
+      "total_latency_ms": 553,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:31.990Z"
+  },
+  {
+    "result_id": "f95f9530-97d1-41b3-9893-b5c202223858",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "user@example.com",
+          "include_pollutants": false,
+          "offset": 929.49
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1849,
+      "output_tokens": 37,
+      "total_latency_ms": 581,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:32.641Z"
+  },
+  {
+    "result_id": "116f4ceb-a8ab-48ab-add2-59cf3a0b000a",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "To find out how many eggs remain, we need to subtract the number of eggs used (7) from the total number of eggs (36).\n\n36 - 7 = 29\n\nSo, there are 29 eggs remaining.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 1830,
+      "output_tokens": 47,
+      "total_latency_ms": 703,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:33.403Z"
+  },
+  {
+    "result_id": "348aae72-928f-46a5-a5b6-f1d5b62ca2e7",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"math_sqrt\", \"arguments\": {\"x\": \"144\"}}",
+      "parsed_tool_call": {
+        "name": "math_sqrt",
+        "arguments": {
+          "x": "144"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1823,
+      "output_tokens": 17,
+      "total_latency_ms": 316,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:33.781Z"
+  },
+  {
+    "result_id": "9eaa2eb5-da84-49c6-b75a-0f0053dd3ca2",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_compare_approaches\", \"arguments\": {\"approach1\": \"Google Analytics\", \"approach2\": \"Mixpanel\", \"approach3\": \"Matomo\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_compare_approaches",
+        "arguments": {
+          "approach1": "Google Analytics",
+          "approach2": "Mixpanel",
+          "approach3": "Matomo"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1824,
+      "output_tokens": 40,
+      "total_latency_ms": 607,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:34.447Z"
+  },
+  {
+    "result_id": "33a7187b-3abe-4865-8cdc-08e920041d2b",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"compare_software_architecture_approaches\", \"arguments\": {\"approach1\": \"Microservices\", \"approach2\": \"Monolithic\", \"approach3\": \"Event-Driven\"}}",
+      "parsed_tool_call": {
+        "name": "compare_software_architecture_approaches",
+        "arguments": {
+          "approach1": "Microservices",
+          "approach2": "Monolithic",
+          "approach3": "Event-Driven"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1825,
+      "output_tokens": 44,
+      "total_latency_ms": 663,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:35.171Z"
+  },
+  {
+    "result_id": "ad814d47-4f97-453a-b747-95114ec4a5bc",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 712,
+      "output_tokens": 18,
+      "total_latency_ms": 245,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:39.836Z"
+  },
+  {
+    "result_id": "43ae6cef-81d4-4f06-a342-3494225149c0",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 716,
+      "output_tokens": 20,
+      "total_latency_ms": 403,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:40.298Z"
+  },
+  {
+    "result_id": "432706ae-b2e8-4cf8-b542-a96be59a3d53",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value",
+          "include_history": false,
+          "locale": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 718,
+      "output_tokens": 31,
+      "total_latency_ms": 920,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:41.282Z"
+  },
+  {
+    "result_id": "aadad29e-2653-4285-8e6c-ad7d6f574a09",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 717,
+      "output_tokens": 20,
+      "total_latency_ms": 839,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:42.188Z"
+  },
+  {
+    "result_id": "3351d1fe-60e9-415b-8712-b1717b5dc5cd",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true,
+          "offset": 0
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 721,
+      "output_tokens": 34,
+      "total_latency_ms": 384,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:42.642Z"
+  },
+  {
+    "result_id": "8d42bc68-bdc7-4e9d-9aa7-a4af0ae59101",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 724,
+      "output_tokens": 26,
+      "total_latency_ms": 346,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:43.058Z"
+  },
+  {
+    "result_id": "50004642-f2df-47e1-b169-e87f724ba294",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_generate_thumbnail",
+        "arguments": {
+          "input_path": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 724,
+      "output_tokens": 20,
+      "total_latency_ms": 377,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:43.494Z"
+  },
+  {
+    "result_id": "12a82bea-a03b-42cb-bb64-46eee2883c37",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": \"[\\\"item1\\\",\\\"item2\\\"]\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": "[\"item1\",\"item2\"]"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 732,
+      "output_tokens": 31,
+      "total_latency_ms": 451,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:44.006Z"
+  },
+  {
+    "result_id": "56ff1689-56f3-4954-a73d-6bee33394cc2",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}} \n\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"\", \"max_results\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "",
+            "max_results": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 727,
+      "output_tokens": 53,
+      "total_latency_ms": 916,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:44.986Z"
+  },
+  {
+    "result_id": "61dc5ab0-54ca-4e5d-8c7b-1c227c72e238",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}} \n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 726,
+      "output_tokens": 40,
+      "total_latency_ms": 398,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:45.454Z"
+  },
+  {
+    "result_id": "41e8f0fd-73fe-4dba-bd79-2df98638aaa9",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\", \"thread_id\": \"\", \"priority\": \"normal\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": false,
+            "locale": ""
+          }
+        },
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value",
+            "thread_id": "",
+            "priority": "normal"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 739,
+      "output_tokens": 100,
+      "total_latency_ms": 950,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:46.473Z"
+  },
+  {
+    "result_id": "55984772-9137-4442-9398-fa65d65f51d3",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"\", \"width\": 0}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109, \"height\": 0, \"quality\": 100}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "",
+            "width": 0
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 109,
+            "height": 0,
+            "quality": 100
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 747,
+      "output_tokens": 100,
+      "total_latency_ms": 936,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:47.477Z"
+  },
+  {
+    "result_id": "0989da92-f817-43d0-baf7-25d5e2b48de4",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest",
+          "status": "suspended"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 721,
+      "output_tokens": 25,
+      "total_latency_ms": 271,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:47.812Z"
+  },
+  {
+    "result_id": "594e5521-388b-43b4-b303-1f3c5a3626f0",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "config.json",
+          "width": 174.45
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 717,
+      "output_tokens": 28,
+      "total_latency_ms": 320,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:48.188Z"
+  },
+  {
+    "result_id": "b9dbb0cd-ae2f-478b-9dfa-7575dac391ea",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {
+            "key": "value"
+          },
+          "user_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 731,
+      "output_tokens": 36,
+      "total_latency_ms": 444,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:48.702Z"
+  },
+  {
+    "result_id": "27d2499f-b8e2-4c98-9bd9-f25e80fb8702",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": \"false\", \"offset\": \"929\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "user@example.com",
+          "include_pollutants": "false",
+          "offset": "929"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 732,
+      "output_tokens": 36,
+      "total_latency_ms": 372,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:49.134Z"
+  },
+  {
+    "result_id": "0fe231a4-8ebe-40c7-9fc4-51a4d552770b",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "To find the number of eggs remaining, we need to subtract the number used from the total.\n\nA dozen is equal to 12, so 3 dozen eggs would be:\n\n3 x 12 = 36 eggs\n\nIf you used 7 eggs, we can subtract that from the total:\n\n36 - 7 = 29 eggs\n\nSo, there are 29 eggs remaining.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 713,
+      "output_tokens": 78,
+      "total_latency_ms": 780,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:49.979Z"
+  },
+  {
+    "result_id": "6bdcb2fd-5b7a-4a6a-b193-f594ce786236",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"math_calculate\", \"arguments\": {\"expr\": \"sqrt(144)\"}}",
+      "parsed_tool_call": {
+        "name": "math_calculate",
+        "arguments": {
+          "expr": "sqrt(144)"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 706,
+      "output_tokens": 21,
+      "total_latency_ms": 305,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:50.346Z"
+  },
+  {
+    "result_id": "49bca717-2258-4b6f-98b0-24660e78cad7",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"Analytics Approach Comparison\", \"properties\": {\"approach\": \"GA vs Tealium\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "Analytics Approach Comparison",
+          "properties": {
+            "approach": "GA vs Tealium"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 707,
+      "output_tokens": 36,
+      "total_latency_ms": 364,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:50.780Z"
+  },
+  {
+    "result_id": "e6746541-f28c-4fec-9bbc-8c4cc67bbdee",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"software-architecture-comparison\", \"date_range\": \"last_30d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "software-architecture-comparison",
+          "date_range": "last_30d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 708,
+      "output_tokens": 33,
+      "total_latency_ms": 434,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:51.269Z"
+  },
+  {
+    "result_id": "131dbb1a-df5c-4007-b928-a16060bad20a",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 712,
+      "output_tokens": 18,
+      "total_latency_ms": 481,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:51.814Z"
+  },
+  {
+    "result_id": "ee00ff35-46b7-4a9a-9056-eb6a84e36f77",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 716,
+      "output_tokens": 20,
+      "total_latency_ms": 391,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:52.274Z"
+  },
+  {
+    "result_id": "06ebd8f8-0684-4d57-aea0-8734715575a8",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value",
+          "include_history": false,
+          "locale": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 718,
+      "output_tokens": 31,
+      "total_latency_ms": 922,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:53.257Z"
+  },
+  {
+    "result_id": "5bd72bcb-d2e4-4809-b35a-7da32b56eeda",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 717,
+      "output_tokens": 20,
+      "total_latency_ms": 848,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:54.165Z"
+  },
+  {
+    "result_id": "c474de9f-680a-4d78-b828-4bc2c4078eda",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true,
+          "offset": 0
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 721,
+      "output_tokens": 34,
+      "total_latency_ms": 393,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:54.619Z"
+  },
+  {
+    "result_id": "e87e5188-b030-420b-aac7-104064e6e99b",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 724,
+      "output_tokens": 26,
+      "total_latency_ms": 355,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:55.036Z"
+  },
+  {
+    "result_id": "41f33004-4b88-4f3a-a283-40ceda0e4fde",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_generate_thumbnail",
+        "arguments": {
+          "input_path": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 724,
+      "output_tokens": 20,
+      "total_latency_ms": 368,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:55.470Z"
+  },
+  {
+    "result_id": "7be6e709-0ff8-4540-9740-ea2ac703eaca",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": \"[\\\"item1\\\",\\\"item2\\\"]\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": "[\"item1\",\"item2\"]"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 732,
+      "output_tokens": 31,
+      "total_latency_ms": 448,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:55.986Z"
+  },
+  {
+    "result_id": "292e0ccf-110c-4f03-9fc8-3cb9bf92d38a",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}} \n\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"\", \"max_results\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "",
+            "max_results": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 727,
+      "output_tokens": 53,
+      "total_latency_ms": 918,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:56.973Z"
+  },
+  {
+    "result_id": "d3865ab7-1bf4-4695-ba5e-f9990bd3e2f6",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}} \n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 726,
+      "output_tokens": 40,
+      "total_latency_ms": 406,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:57.445Z"
+  },
+  {
+    "result_id": "cede69bf-451f-4004-b266-43b5d541b3c4",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\", \"thread_id\": \"\", \"priority\": \"normal\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": false,
+            "locale": ""
+          }
+        },
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value",
+            "thread_id": "",
+            "priority": "normal"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 739,
+      "output_tokens": 100,
+      "total_latency_ms": 957,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:58.463Z"
+  },
+  {
+    "result_id": "a503ebbd-f216-4070-b063-beb522a12b76",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"\", \"width\": 0}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109, \"height\": 0, \"quality\": 100}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "",
+            "width": 0
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 109,
+            "height": 0,
+            "quality": 100
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 747,
+      "output_tokens": 100,
+      "total_latency_ms": 951,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:59.475Z"
+  },
+  {
+    "result_id": "9d666479-7f3d-4d7f-bb23-05bbc29a9e9a",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest",
+          "status": "suspended"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 721,
+      "output_tokens": 25,
+      "total_latency_ms": 267,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:19:59.810Z"
+  },
+  {
+    "result_id": "928f3567-266e-4fd3-ae7e-5d0d261b4732",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "config.json",
+          "width": 174.45
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 717,
+      "output_tokens": 28,
+      "total_latency_ms": 312,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:00.185Z"
+  },
+  {
+    "result_id": "e474662a-15c7-4977-b1bd-f597eec231bc",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {
+            "key": "value"
+          },
+          "user_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 731,
+      "output_tokens": 36,
+      "total_latency_ms": 453,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:00.700Z"
+  },
+  {
+    "result_id": "86e2b87d-b1cc-4daf-928b-75f662e2680b",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": \"false\", \"offset\": \"929\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "user@example.com",
+          "include_pollutants": "false",
+          "offset": "929"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 732,
+      "output_tokens": 36,
+      "total_latency_ms": 375,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:01.135Z"
+  },
+  {
+    "result_id": "b89e5fb0-942c-4674-a8bf-f662800b22fd",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "To find the number of eggs remaining, we need to subtract the number used from the total.\n\nA dozen is equal to 12, so 3 dozen eggs would be:\n\n3 x 12 = 36 eggs\n\nIf you used 7 eggs, we can subtract that from the total:\n\n36 - 7 = 29 eggs\n\nSo, there are 29 eggs remaining.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 713,
+      "output_tokens": 78,
+      "total_latency_ms": 772,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:01.977Z"
+  },
+  {
+    "result_id": "ca316b94-abfa-4ce1-bf55-5f3d608c0d80",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"math_calculate\", \"arguments\": {\"expr\": \"sqrt(144)\"}}",
+      "parsed_tool_call": {
+        "name": "math_calculate",
+        "arguments": {
+          "expr": "sqrt(144)"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 706,
+      "output_tokens": 21,
+      "total_latency_ms": 312,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:02.344Z"
+  },
+  {
+    "result_id": "0f347ac0-697a-4aea-988b-d6b650c861ad",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"Analytics Approach Comparison\", \"properties\": {\"approach\": \"GA vs Tealium\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "Analytics Approach Comparison",
+          "properties": {
+            "approach": "GA vs Tealium"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 707,
+      "output_tokens": 36,
+      "total_latency_ms": 368,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:02.774Z"
+  },
+  {
+    "result_id": "aa17103b-1f0d-451c-a688-fdba6ffa8e98",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"software-architecture-comparison\", \"date_range\": \"last_30d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "software-architecture-comparison",
+          "date_range": "last_30d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 708,
+      "output_tokens": 33,
+      "total_latency_ms": 434,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:03.264Z"
+  },
+  {
+    "result_id": "88057d1b-d8c9-4d18-b552-f6e952ebe38a",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 712,
+      "output_tokens": 18,
+      "total_latency_ms": 483,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:03.811Z"
+  },
+  {
+    "result_id": "a2cfcd18-05e7-48cb-ae1a-a112557fb25c",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 716,
+      "output_tokens": 20,
+      "total_latency_ms": 401,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:04.274Z"
+  },
+  {
+    "result_id": "59e3615a-0cad-474d-b9e6-ab7237d82ec3",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value",
+          "include_history": false,
+          "locale": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 718,
+      "output_tokens": 31,
+      "total_latency_ms": 917,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:05.258Z"
+  },
+  {
+    "result_id": "bfa8a225-d577-47d6-84b0-0f57d444e293",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 717,
+      "output_tokens": 20,
+      "total_latency_ms": 845,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:06.169Z"
+  },
+  {
+    "result_id": "a2c8c868-659e-48c9-87e3-780294858c64",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true,
+          "offset": 0
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 721,
+      "output_tokens": 34,
+      "total_latency_ms": 396,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:06.626Z"
+  },
+  {
+    "result_id": "b1e1df94-7604-4433-a6e6-568b06acf1e0",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 724,
+      "output_tokens": 26,
+      "total_latency_ms": 361,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:07.043Z"
+  },
+  {
+    "result_id": "e9e3ef28-6cc2-4533-ae1e-72766b372fe5",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_generate_thumbnail",
+        "arguments": {
+          "input_path": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 724,
+      "output_tokens": 20,
+      "total_latency_ms": 371,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:07.477Z"
+  },
+  {
+    "result_id": "137e00c0-ba9d-441c-824c-8896a3e1525d",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": \"[\\\"item1\\\",\\\"item2\\\"]\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": "[\"item1\",\"item2\"]"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 732,
+      "output_tokens": 31,
+      "total_latency_ms": 449,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:07.993Z"
+  },
+  {
+    "result_id": "562135e1-bdda-4538-9ac6-6334cc3cd272",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}} \n\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"\", \"max_results\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "",
+            "max_results": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 727,
+      "output_tokens": 53,
+      "total_latency_ms": 912,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:08.972Z"
+  },
+  {
+    "result_id": "b306da42-b9fa-4a5f-b73d-93ddb19ff6c6",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}} \n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 726,
+      "output_tokens": 40,
+      "total_latency_ms": 407,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:09.440Z"
+  },
+  {
+    "result_id": "feb00f2e-8257-4ac5-a7db-05027356cfd0",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\", \"thread_id\": \"\", \"priority\": \"normal\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": false,
+            "locale": ""
+          }
+        },
+        {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value",
+            "thread_id": "",
+            "priority": "normal"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 739,
+      "output_tokens": 100,
+      "total_latency_ms": 955,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:10.459Z"
+  },
+  {
+    "result_id": "29fe83b7-3494-47fe-aaf1-34b7ec3054ee",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"\", \"width\": 0}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109, \"height\": 0, \"quality\": 100}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parsed_sequence": [
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "",
+            "width": 0
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 109,
+            "height": 0,
+            "quality": 100
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5555555555555555,
+      "overall": 0.5555555555555555
+    },
+    "metrics": {
+      "input_tokens": 747,
+      "output_tokens": 100,
+      "total_latency_ms": 941,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:11.460Z"
+  },
+  {
+    "result_id": "326e1e95-83ff-4ace-a323-14cf12da1ef0",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest",
+          "status": "suspended"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 721,
+      "output_tokens": 25,
+      "total_latency_ms": 262,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:11.781Z"
+  },
+  {
+    "result_id": "251df298-b840-4c85-a16f-a909f107ca66",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "config.json",
+          "width": 174.45
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 717,
+      "output_tokens": 28,
+      "total_latency_ms": 284,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:12.132Z"
+  },
+  {
+    "result_id": "34c54c27-5bc2-4a50-a80c-93a3baea2680",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {
+            "key": "value"
+          },
+          "user_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 731,
+      "output_tokens": 36,
+      "total_latency_ms": 344,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:12.538Z"
+  },
+  {
+    "result_id": "218fd639-6a1b-466c-b71f-5349dbf748f9",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": \"false\", \"offset\": \"929\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "user@example.com",
+          "include_pollutants": "false",
+          "offset": "929"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 732,
+      "output_tokens": 36,
+      "total_latency_ms": 345,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:12.943Z"
+  },
+  {
+    "result_id": "8062582f-30a5-490e-ac14-55ddc43e0d4a",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "To find the number of eggs remaining, we need to subtract the number used from the total.\n\nA dozen is equal to 12, so 3 dozen eggs would be:\n\n3 x 12 = 36 eggs\n\nIf you used 7 eggs, we can subtract that from the total:\n\n36 - 7 = 29 eggs\n\nSo, there are 29 eggs remaining.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 713,
+      "output_tokens": 78,
+      "total_latency_ms": 659,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:13.664Z"
+  },
+  {
+    "result_id": "003bf658-80f4-44fa-afa2-8e6307a432f4",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"math_calculate\", \"arguments\": {\"expr\": \"sqrt(144)\"}}",
+      "parsed_tool_call": {
+        "name": "math_calculate",
+        "arguments": {
+          "expr": "sqrt(144)"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 706,
+      "output_tokens": 21,
+      "total_latency_ms": 234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:13.960Z"
+  },
+  {
+    "result_id": "3adc7871-183c-4535-a3a3-bf21a19765d2",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"Analytics Approach Comparison\", \"properties\": {\"approach\": \"GA vs Tealium\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "Analytics Approach Comparison",
+          "properties": {
+            "approach": "GA vs Tealium"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 707,
+      "output_tokens": 36,
+      "total_latency_ms": 340,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:14.361Z"
+  },
+  {
+    "result_id": "c7bf3d02-2151-4372-b03e-48dd43b47cca",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"software-architecture-comparison\", \"date_range\": \"last_30d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "software-architecture-comparison",
+          "date_range": "last_30d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 708,
+      "output_tokens": 33,
+      "total_latency_ms": 321,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T08:20:14.738Z"
+  }
+]

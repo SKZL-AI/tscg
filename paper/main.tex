@@ -1,0 +1,286 @@
+\pdfoutput=1
+% TSCG: Token-Context Semantic Grammar for Causal Prompt Optimization in LLMs
+% ============================================================================
+% To compile: pdflatex main && bibtex main && pdflatex main && pdflatex main
+%
+% Required style files (download from https://github.com/acl-org/acl-style-files):
+%   - acl.sty
+%   - acl_natbib.bst
+% Place both in this directory before compiling.
+% ============================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc,patterns,decorations.pathreplacing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+% xcolor already loaded by acl.sty
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{cleveref}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{pifont}
+\usepackage{amsthm}
+
+% Theorem-like environments
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{hypothesis}{Hypothesis}[section]
+
+% Check and cross marks for tables
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+% Custom colors
+\definecolor{tscgblue}{RGB}{41,98,168}
+\definecolor{tscggreen}{RGB}{56,142,60}
+\definecolor{tscgred}{RGB}{183,28,28}
+\definecolor{tscgorange}{RGB}{230,126,34}
+\definecolor{tscggray}{RGB}{117,117,117}
+\definecolor{tscgpurple}{RGB}{128,0,128}
+\definecolor{tscgteal}{RGB}{0,128,128}
+
+% Custom commands
+\newcommand{\tscg}{\textsc{Tscg}}
+\newcommand{\principle}[1]{\textsc{#1}}
+\newcommand{\fragility}{\mathcal{F}}
+\newcommand{\density}{\mathcal{D}}
+\newcommand{\attn}{\mathrm{Attn}}
+\newcommand{\pos}{\mathrm{pos}}
+\newcommand{\tok}{\mathrm{tok}}
+\newcommand{\sem}{\mathrm{sem}}
+\newcommand{\placeholder}[1]{\textcolor{tscgorange}{#1}}
+
+\title{TSCG: Token-Context Semantic Grammar for Causal Prompt Optimization\\in Large Language Models}
+
+\author{Furkan Sakizli \\
+  Independent Researcher \\
+  \texttt{furkan.sakizli@gmail.com}}
+
+\begin{document}
+\maketitle
+
+\input{tables/tab-benchmark}
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related-work}
+\input{sections/framework}
+\input{sections/theoretical}
+\input{sections/experiments}
+% \input{sections/results}  % Merged into experiments.tex; Pre-TAB → Appendix A
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+% \input{sections/deployment}  % Relocated to Appendix F
+
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+\appendix
+
+% ============================================================================
+% Appendix A: Pre-TAB Evaluation
+% ============================================================================
+\section{Pre-TAB Evaluation}
+\label{app:pre-tab}
+
+The pre-TAB evaluation comprised 19 core tasks across 7 categories (Factual $n{=}4$, Reasoning $n{=}4$, Classification $n{=}2$, Extraction $n{=}1$, OptFirst $n{=}3$, Complex $n{=}2$, NearDup $n{=}3$), 6 compression strategies, 11 independent runs on Claude Sonnet~4, and domain-specific benchmarks across 4 phases. This evaluation established TSCG's baseline effectiveness before the multi-model TAB benchmark. Full results are available in the supplementary materials.
+
+% ============================================================================
+% Appendix B: GSM8K-Under-Load
+% ============================================================================
+\section{GSM8K-Under-Load}
+\label{app:gsm8k}
+
+Tool-schema overhead does not degrade reasoning: Claude Sonnet~4 maintains ${\sim}$81\% GSM8K accuracy across 0--50 irrelevant tool definitions (${\sim}$400 calls). TSCG provides a consistent ${\sim}$4.5\,pp advantage over natural schemas, suggesting that reduced schema overhead frees attention capacity for mathematical reasoning. The effect is statistically significant ($+$4.5\,pp, $p = 0.020$) but practically small (Cohen's $d = 0.11$).
+
+% ============================================================================
+% Appendix C: SDM Ablation Detail
+% ============================================================================
+\section{SDM Ablation Detail}
+\label{app:sdm-detail}
+
+Conservative SDM (filler removal only) is compared with Balanced (full structural compression) on Qwen3-14B (180~calls, N3 corrected re-run at sizes 10/20/50):
+
+\begin{itemize}[noitemsep]
+    \item Balanced TSCG degrades accuracy by $-$6.6\,pp mean (90.2\%$\to$84.1\% at 20 tools, 94.6\%$\to$89.6\% at 50 tools).
+    \item Conservative SDM \emph{improves} accuracy by $+$4.4\,pp mean (90.2\%$\to$99.3\% at 20 tools, 94.6\%$\to$95.0\% at 50 tools).
+    \item CAS reordering and bracket elision---not SDM filler removal---trigger the degradation.
+\end{itemize}
+
+\noindent Practical recommendation: Conservative SDM for all models ${<}$10B and all Qwen architectures (including Qwen2.5-Coder~32B, confirmed by N1); Balanced for frontier models where genuine compression persists.
+
+% ============================================================================
+% Appendix D: Predictive Model + LOO + R² Robustness
+% ============================================================================
+\section{Predictive Model and LOO Cross-Validation}
+\label{app:loo-details}
+
+Table~\ref{tab:r2-robustness} reports robustness checks on the predictive regression (Equation~\ref{eq:correlation}).
+
+\begin{table}[h]
+\centering
+\small
+\caption{R\textsuperscript{2} robustness checks for the accuracy-gap regression.}
+\label{tab:r2-robustness}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Configuration} & $n$ & $R^2$ & \textbf{95\% CI} & $p$ \\
+\midrule
+7-model full set & 49 & 0.885 & $[0.78,\; 0.93]$ & $< 10^{-20}$ \\
+7-model sans Phi-4 & 42 & 0.813 & $[0.58,\; 0.94]$ & $< 10^{-10}$ \\
+Model-level (7 means) & 7 & 0.951 & $[0.62,\; 1.00]$ & $< 0.001$ \\
+Text baseline (E4) & 49 & 0.028 & --- & 0.24 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Phi-4~14B is the strongest leverage point ($\Delta R^2 = -0.07$ when removed), but $R^2$ remains above 0.80 without it. The linear relationship holds at the model level ($R^2 = 0.95$). LOO cross-validation (holding out one model, refitting on remaining six) yields RMSE~=~12.8\,pp---adequate for deployment triage but insufficient for precise predictions. Qwen3~4B is the only model where the prediction direction is wrong (predicted positive, actual negative), reflecting its volatile behavior.
+
+% ============================================================================
+% Appendix E: Theorem Proofs
+% ============================================================================
+\section{Theorem Proofs}
+\label{app:proofs}
+
+\begin{proof}[Proof of Theorem~\ref{thm:compression}]
+Each token-reducing operator $T_i \in \mathcal{T}_R$ acts on a disjoint subset of tokens:
+\begin{itemize}[noitemsep]
+    \item \textbf{SDM}: filler patterns (104+ curated, non-overlapping with delimiters/tokenizer targets).
+    \item \textbf{DRO}: verbose delimiter phrases (structural role markers).
+    \item \textbf{TAS}: suboptimal tokenizer splits (multi-token $\to$ single-token Unicode).
+    \item \textbf{CFL}: positional relocation of output constraint to position~0.
+\end{itemize}
+Disjoint action $\implies$ additive composition. $\mathcal{T}_S$ preserves count; $B{=}0$ excludes expansion:
+\[
+    |\tok(\Pi(S))| \;\leq\; |\tok(S)| \cdot \Bigl(1 - \sum_{T_i \in \mathcal{T}_R} r_i \cdot f_i(S)\Bigr). \qedhere
+\]
+\end{proof}
+
+% ============================================================================
+% Appendix F: Implementation Details
+% ============================================================================
+\section{Implementation and Deployment}
+\label{app:deployment}
+
+TSCG is implemented as ${\sim}$1{,}200 lines of TypeScript with zero external dependencies. Three deployment modes: CLI (npm), Chrome Extension (Manifest~V3), and Web Application (React + Vite). Production bundle: 27.7\,KB (10\,KB gzipped). Sub-millisecond execution for prompts under 4{,}096 tokens. Five optimization profiles (Table~\ref{tab:profiles}):
+
+\begin{table}[h]
+\centering
+\small
+\caption{TSCG optimization profiles.}
+\label{tab:profiles}
+\begin{tabular}{@{}lp{5cm}@{}}
+\toprule
+\textbf{Profile} & \textbf{Active Principles} \\
+\midrule
+\texttt{minimal} & SDM, CFL \\
+\texttt{balanced} & SDM, DRO, CFL, CFO, TAS \\
+\texttt{max\_compress} & SDM, DRO, CFL, CFO, TAS \\
+\texttt{max\_accuracy} & SDM, CFL, DRO, TAS, CCP, SAD-F \\
+\texttt{full} & All 8 principles \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================================
+% Appendix G: 21-System Prior-Art Table
+% ============================================================================
+\section{Extended Prior-Art Comparison}
+\label{app:prior-art}
+
+\input{tables/prior-art}
+
+% ============================================================================
+% Appendix H: Benchmark Configurations + Statistical Detail
+% ============================================================================
+\section{Benchmark Configurations and Statistical Detail}
+\label{app:configs}
+
+Table~\ref{tab:run-configs} documents configuration parameters for all benchmark runs.
+
+\begin{table}[h]
+\centering
+\small
+\caption{Experimental configurations.}
+\label{tab:run-configs}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Parameter} & \textbf{Core/Domain} & \textbf{TAB} & \textbf{Ollama} \\
+\midrule
+Temperature & 0 & 0 & 0 \\
+Seed & N/A & 42 & 42 \\
+Max tokens & 4096 & 1024 & 1024 \\
+Mode & Text + FC & Text-mode & Text-mode \\
+SDM profile & full & balanced & balanced \\
+API provider & Anthropic/OpenAI & Anthropic & Ollama (local) \\
+Eval. method & Automated & TABEvaluator & TABEvaluator \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Holm-Bonferroni Correction}
+\label{app:holm-bonferroni}
+
+107 pairwise McNemar tests, family-wise $\alpha = 0.05$. 9/107 achieve significance (Table~\ref{tab:holm-bonferroni}), all from Scenario~D with weak JSON baselines.
+
+\begin{table}[h]
+\centering
+\small
+\caption{Significant comparisons after Holm-Bonferroni ($\alpha = 0.05$, 107 tests).}
+\label{tab:holm-bonferroni}
+\begin{tabular}{@{}llcrr@{}}
+\toprule
+\textbf{Model} & \textbf{Tools} & \textbf{$\Delta$pp} & \textbf{$p_{\mathrm{adj}}$} & \textbf{$d$} \\
+\midrule
+Phi-4 14B    & 5/10/15 & $+$95.0 & 0.003 & 6.11 \\
+Phi-4 14B    & 20 & $+$84.4 & 0.003 & 4.21 \\
+Phi-4 14B    & 30 & $+$80.0 & 0.011 & 2.81 \\
+Phi-4 14B    & 50 & $+$90.3 & 0.003 & 6.11 \\
+Gemma 3 4B   & 3  & $+$85.0 & 0.007 & 3.34 \\
+Gemma 3 4B   & 50 & $+$63.1 & 0.004 & 1.68 \\
+Gemma 3 4B   & 50\textsuperscript{c} & $+$65.0 & 0.004 & 1.73 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Bootstrap Confidence Intervals}
+\label{app:bootstrap-ci}
+
+\begin{table}[h]
+\centering
+\small
+\caption{Bootstrap 95\% CIs for key deltas (1{,}000 resamples, seed=42).}
+\label{tab:bootstrap-ci}
+\begin{tabular}{@{}llrrl@{}}
+\toprule
+\textbf{Scenario} & \textbf{Model} & \textbf{$\Delta$pp} & \textbf{95\% CI} & \textbf{$p$} \\
+\midrule
+A (16 tools) & Claude Sonnet 4 & $+$10.0 & [0.6, 18.3] & 0.200 \\
+A (16 tools) & GPT-5.2 & $+$29.7 & [16.1, 42.2] & 0.004 \\
+B (43 tools) & Claude Sonnet 4 & $+$5.3 & [$-$0.3, 11.3] & 0.063 \\
+D (50 tools) & Phi-4 14B & $+$90.3 & --- & $<$0.001 \\
+D (50 tools) & Gemma 3 4B & $+$63.1 & [45.0, 80.0] & $<$0.001 \\
+GSM8K (50)   & Claude Sonnet 4 & $+$4.5 & [0.5, 8.5] & 0.020 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

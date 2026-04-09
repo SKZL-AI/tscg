@@ -1,0 +1,3529 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Mistral 7B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-02T20:39:55.485Z",
+    "end_time": "2026-03-02T20:41:54.038Z",
+    "duration_ms": 118553
+  },
+  "results": [
+    {
+      "result_id": "5fe75983-9e6e-471b-9570-0cf88787c5c9",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\n  \"user_id\": \"user_identifier\",\n  \"role\": \"new_role\",\n  \"resources\": [\"resource1\", \"resource2\"]\n}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "user_identifier",
+            "role": "new_role",
+            "resources": [
+              "resource1",
+              "resource2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 7084,
+        "output_tokens": 53,
+        "total_latency_ms": 5628,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:02.032Z"
+    },
+    {
+      "result_id": "e4974902-4e86-48b8-a137-621017c20cf3",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"store_list_files\"]}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7081,
+        "output_tokens": 12,
+        "total_latency_ms": 136,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:02.279Z"
+    },
+    {
+      "result_id": "1108f7a4-522d-47c2-84cb-9d52abfc8bd3",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"file_to_access\", \"expiry_seconds\": 300, \"method\": \"GET\"}}",
+        "parsed_tool_call": {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "file_to_access",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 7083,
+        "output_tokens": 45,
+        "total_latency_ms": 387,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:02.776Z"
+    },
+    {
+      "result_id": "d1db6d5d-2c9c-4fe9-a782-3dad9671ccff",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 100, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 100,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 7109,
+        "output_tokens": 41,
+        "total_latency_ms": 369,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:03.246Z"
+    },
+    {
+      "result_id": "e3c96945-f426-4f31-a168-c3ce784de3b9",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\"}}",
+        "parsed_tool_call": {
+          "name": "cal_update_event",
+          "arguments": {
+            "event_id": "example_value",
+            "title": "Updated Event Title"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 7097,
+        "output_tokens": 33,
+        "total_latency_ms": 296,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:03.646Z"
+    },
+    {
+      "result_id": "f87fdd92-0062-4adc-9aa8-f9879943692e",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_get_account_balance",
+          "arguments": {
+            "account_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7098,
+        "output_tokens": 27,
+        "total_latency_ms": 254,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:04.008Z"
+    },
+    {
+      "result_id": "9140058e-0873-4cec-9b6e-903c73c9e141",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7101,
+        "output_tokens": 23,
+        "total_latency_ms": 219,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:04.328Z"
+    },
+    {
+      "result_id": "45eae363-06f7-4d68-b84a-58a8d46c1f0b",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7104,
+        "output_tokens": 26,
+        "total_latency_ms": 244,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:04.682Z"
+    },
+    {
+      "result_id": "adc94c03-39d8-43dc-975e-31e6c3795fa5",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To first revoke an active access or refresh token to terminate a session, we'll use the `auth_revoke_token` tool:\n\n```json\n{\"name\": \"auth_revoke_token\"}\n```\n\nAfter receiving the result from the above call, we can proceed with extracting audio from a video file using the `media_extract_audio` tool.\n\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"<video_file_path>\"}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7092,
+        "output_tokens": 120,
+        "total_latency_ms": 968,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:05.752Z"
+    },
+    {
+      "result_id": "6f8615be-7df8-4b89-8046-fc394ff24e7c",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To convert text into spoken audio using neural text-to-speech synthesis and then create an invoice with line items, we can first call the `media_text_to_speech` tool to generate the audio file. After that, we'll create an invoice with the generated audio as a line item.\n\nHere is the JSON response for the initial step:\n\n```json\n[\n  {\"name\": \"media_text_to_speech\", \"arguments\": {\n    \"text\": \"Your text to convert into speech\",\n    \"voice\": \"alloy\",\n    \"language\": \"en-US\"\n  }}\n]\n```\n\nOnce you receive the audio file, you can create an invoice with it as a line item using the `fin_create_invoice` tool. Here's the JSON response for creating the invoice:\n\n```json\n{\n  \"name\": \"fin_create_invoice\",\n  \"arguments\": {\n    \"customer_id\": \"Customer account identifier\",\n    \"items\": [\n      {\n        \"description\": \"Audio file description\",\n        \"quantity\": 1,\n        \"unit_price\": \"Audio file price\"\n      }\n    ],\n    \"currency\": \"Invoice currency code\",\n    \"due_days\": \"Payment due in N days from issue date\"\n  }\n}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7096,
+        "output_tokens": 311,
+        "total_latency_ms": 2435,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:08.306Z"
+    },
+    {
+      "result_id": "c66a2397-96fc-487e-8c3c-4c95de287366",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"shop_track_order\", \"arguments\": {\n    \"order_id\": \"your_order_id\"\n  }},\n  {\"name\": \"media_extract_audio\", \"arguments\": {\n    \"input_path\": \"$output_of_shop_track_order\",\n    \"output_format\": \"mp3\"\n  }},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"your_city\"\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7098,
+        "output_tokens": 118,
+        "total_latency_ms": 955,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:09.380Z"
+    },
+    {
+      "result_id": "68b57aba-1829-411f-8b10-fe3fa7f4938a",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To start, let's first get the stock price for a specific ticker symbol using `fin_get_stock_price`.\n\n```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\"}}\n```\n\nAfter getting the stock price, we can use the output to query service metrics (CPU) for a specific time window.\n\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"my-service\", \"metric\": \"cpu\", \"window\": \"1h\"}}\n```\n\nFinally, we can use the collected information to find free time for scheduling a meeting using `cal_find_free_time`.\n\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\n  \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n  \"duration_minutes\": 30,\n  \"start_date\": \"2022-09-01T00:00:00Z\",\n  \"end_date\": \"2022-09-07T00:00:00Z\"\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7106,
+        "output_tokens": 282,
+        "total_latency_ms": 2217,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:11.713Z"
+    },
+    {
+      "result_id": "c42da442-6b5e-4a3f-b99e-1db92a6f201f",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"date_range\": \"last_7d\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "Berlin",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 7085,
+        "output_tokens": 42,
+        "total_latency_ms": 368,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:12.197Z"
+    },
+    {
+      "result_id": "7b8fd0e8-33e2-4c66-af0b-3b1fb6e0fa90",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "main",
+            "name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7091,
+        "output_tokens": 29,
+        "total_latency_ms": 266,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:12.564Z"
+    },
+    {
+      "result_id": "3909f8fd-bcd9-4a51-b71c-535fe3398e35",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "Berlin",
+            "output_format": "mp4",
+            "resolution": "4k",
+            "bitrate": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7127,
+        "output_tokens": 53,
+        "total_latency_ms": 462,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:13.126Z"
+    },
+    {
+      "result_id": "605cd5d2-c7ec-4b1d-8a87-a09f3812dadc",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To create a calendar event, you can use the `cal_create_event` tool with the provided parameters:\n\n```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "production",
+            "end": "main",
+            "location": "quarterly-report",
+            "attendees": [
+              "value1"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7131,
+        "output_tokens": 111,
+        "total_latency_ms": 901,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:14.136Z"
+    },
+    {
+      "result_id": "a4a29f21-f76b-455a-8d99-080797a6c45f",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To answer your question, I don't have the ability to predict future events or trends. However, I can help you find data and insights that might be useful in making an informed decision about this topic. Here's a tool call for running an analytics report on electric vehicle adoption rates:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"electric_vehicle_adoption\",\n      \"date_range\": \"last_5y\",\n      \"format\": \"csv\"\n    }\n  }\n]\n```\n\nThis report should provide you with data on electric vehicle adoption rates over the past five years, which could help inform your analysis of whether or not electric cars will completely replace gas cars in the future.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "electric_vehicle_adoption",
+            "date_range": "last_5y",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 7081,
+        "output_tokens": 179,
+        "total_latency_ms": 1415,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:15.655Z"
+    },
+    {
+      "result_id": "dcea1e29-73b4-4232-808a-71985821c902",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"art_history_question\", \"properties\": {\"painter\": \"Leonardo da Vinci\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "art_history_question",
+            "properties": {
+              "painter": "Leonardo da Vinci"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 7077,
+        "output_tokens": 44,
+        "total_latency_ms": 413,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:16.170Z"
+    },
+    {
+      "result_id": "4ec62e2d-c8d0-4dc0-8e79-32aa0664b4e9",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To get started with the authentication tools, you can explore the following functions:\n\n1. `auth_create_user`: This function allows creating a new user account with email, name, and role assignment. You can use this function to manage user accounts in your system.\n\n```json\n{\"name\": \"auth_create_user\"}\n```\n\n2. `auth_list_users`: With this function, you can list all user accounts with optional filtering by role and status. This is useful for managing existing users and checking their account details.\n\n```json\n{\"name\": \"auth_list_users\"}\n```\n\n3. `auth_update_permissions`: Use this function to update role-based permissions for a user or group. You can modify the permissions of specific users or groups as needed.\n\n```json\n{\"name\": \"auth_update_permissions\"}\n```\n\n4. `auth_revoke_token`: This function allows you to revoke an active access or refresh token to terminate a session. It's useful for handling security concerns and managing user sessions.\n\n```json\n{\"name\": \"auth_revoke_token\"}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 7083,
+        "output_tokens": 266,
+        "total_latency_ms": 2090,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:18.362Z"
+    },
+    {
+      "result_id": "48af3c04-b634-4f0f-946b-8a59f5665c09",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To get the history of a specific storage object, you can use the `store_list_objects` function with a prefix filter to limit the results to the desired object's directory. Then, you can call `store_get_object` for each returned object ID to retrieve its metadata and version history.\n\nHere is an example of how to get the history of a specific storage object:\n\n```json\n[\n  {\"name\": \"store_list_objects\", \"arguments\": {\n    \"prefix\": \"path/to/your/object\",\n    \"bucket\": \"your-storage-bucket\"\n  }},\n  {\"name\": \"store_get_object\", \"arguments\": {\n    \"key\": \"returned_object_id_1\",\n    \"bucket\": \"your-storage-bucket\"\n  }}\n]\n```\n\nIn the example above, replace `path/to/your/object` with the path to your desired storage object's directory and `your-storage-bucket` with the name of your cloud storage bucket. The returned object IDs can be passed as arguments to the `store_get_object` function to retrieve their metadata and version history.\n\nYou may need to iterate through multiple pages of results if the number of objects exceeds the maximum limit per request. In that case, you can use the `offset` parameter in the `store_list_objects` call to paginate through the results.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 7077,
+        "output_tokens": 314,
+        "total_latency_ms": 2460,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:20.924Z"
+    },
+    {
+      "result_id": "fee80bf2-4b56-4fe4-a9bd-eb41ad8d4155",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\n  \"user_id\": \"user_identifier\",\n  \"role\": \"new_role\",\n  \"resources\": [\"resource1\", \"resource2\"]\n}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "user_identifier",
+            "role": "new_role",
+            "resources": [
+              "resource1",
+              "resource2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 7084,
+        "output_tokens": 53,
+        "total_latency_ms": 451,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:21.484Z"
+    },
+    {
+      "result_id": "af1276c9-1bf9-4880-b500-1aa66753c119",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"store_list_files\"]}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7081,
+        "output_tokens": 12,
+        "total_latency_ms": 139,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:21.729Z"
+    },
+    {
+      "result_id": "449c4046-1d9b-4d68-a6d4-5819f6fbdcc6",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"file_to_access\", \"expiry_seconds\": 300, \"method\": \"GET\"}}",
+        "parsed_tool_call": {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "file_to_access",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 7083,
+        "output_tokens": 45,
+        "total_latency_ms": 387,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:22.220Z"
+    },
+    {
+      "result_id": "b67666e7-2b9a-4f4f-8d93-19bc391d6713",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 100, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 100,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 7109,
+        "output_tokens": 41,
+        "total_latency_ms": 360,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:22.695Z"
+    },
+    {
+      "result_id": "09f7c998-1a5e-4c85-8d73-5fe8466a4a30",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\"}}",
+        "parsed_tool_call": {
+          "name": "cal_update_event",
+          "arguments": {
+            "event_id": "example_value",
+            "title": "Updated Event Title"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 7097,
+        "output_tokens": 33,
+        "total_latency_ms": 298,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:23.105Z"
+    },
+    {
+      "result_id": "656b98fb-4c18-47c3-86cc-46bf5edf1b82",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_get_account_balance",
+          "arguments": {
+            "account_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7098,
+        "output_tokens": 27,
+        "total_latency_ms": 249,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:23.469Z"
+    },
+    {
+      "result_id": "2c4a195f-3b59-4b8b-8402-a890d5df000b",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7101,
+        "output_tokens": 23,
+        "total_latency_ms": 220,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:23.800Z"
+    },
+    {
+      "result_id": "15ce55c9-7b44-4f6a-9ae4-4fd2fa060ffc",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7104,
+        "output_tokens": 26,
+        "total_latency_ms": 247,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:24.151Z"
+    },
+    {
+      "result_id": "3e4817ca-e48b-4a84-8603-36f22ed67cfe",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To first revoke an active access or refresh token to terminate a session, we'll use the `auth_revoke_token` tool:\n\n```json\n{\"name\": \"auth_revoke_token\"}\n```\n\nAfter receiving the result from the above call, we can proceed with extracting audio from a video file using the `media_extract_audio` tool.\n\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"<video_file_path>\"}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7092,
+        "output_tokens": 120,
+        "total_latency_ms": 974,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:25.227Z"
+    },
+    {
+      "result_id": "9c75b248-5461-4e4c-ac1c-75139d97ced4",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To convert text into spoken audio using neural text-to-speech synthesis and then create an invoice with line items, we can first call the `media_text_to_speech` tool to generate the audio file. After that, we'll create an invoice with the generated audio as a line item.\n\nHere is the JSON response for the initial step:\n\n```json\n[\n  {\"name\": \"media_text_to_speech\", \"arguments\": {\n    \"text\": \"Your text to convert into speech\",\n    \"voice\": \"alloy\",\n    \"language\": \"en-US\"\n  }}\n]\n```\n\nOnce you receive the audio file, you can create an invoice with it as a line item using the `fin_create_invoice` tool. Here's the JSON response for creating the invoice:\n\n```json\n{\n  \"name\": \"fin_create_invoice\",\n  \"arguments\": {\n    \"customer_id\": \"Customer account identifier\",\n    \"items\": [\n      {\n        \"description\": \"Audio file description\",\n        \"quantity\": 1,\n        \"unit_price\": \"Audio file price\"\n      }\n    ],\n    \"currency\": \"Invoice currency code\",\n    \"due_days\": \"Payment due in N days from issue date\"\n  }\n}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7096,
+        "output_tokens": 311,
+        "total_latency_ms": 2452,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:27.779Z"
+    },
+    {
+      "result_id": "706d1bc6-c836-45e6-9c73-a649845dd174",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"shop_track_order\", \"arguments\": {\n    \"order_id\": \"your_order_id\"\n  }},\n  {\"name\": \"media_extract_audio\", \"arguments\": {\n    \"input_path\": \"$output_of_shop_track_order\",\n    \"output_format\": \"mp3\"\n  }},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"your_city\"\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7098,
+        "output_tokens": 118,
+        "total_latency_ms": 955,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:28.849Z"
+    },
+    {
+      "result_id": "9620ff13-ceed-4cd3-8bfe-80d6b40b6ded",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To start, let's first get the stock price for a specific ticker symbol using `fin_get_stock_price`.\n\n```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\"}}\n```\n\nAfter getting the stock price, we can use the output to query service metrics (CPU) for a specific time window.\n\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"my-service\", \"metric\": \"cpu\", \"window\": \"1h\"}}\n```\n\nFinally, we can use the collected information to find free time for scheduling a meeting using `cal_find_free_time`.\n\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\n  \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n  \"duration_minutes\": 30,\n  \"start_date\": \"2022-09-01T00:00:00Z\",\n  \"end_date\": \"2022-09-07T00:00:00Z\"\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7106,
+        "output_tokens": 282,
+        "total_latency_ms": 2216,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:31.176Z"
+    },
+    {
+      "result_id": "ec12c2bc-de06-4fd8-95c0-ae0eb36bb760",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"date_range\": \"last_7d\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "Berlin",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 7085,
+        "output_tokens": 42,
+        "total_latency_ms": 367,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:31.649Z"
+    },
+    {
+      "result_id": "d02cd977-e89e-4054-ab2d-7886f28e1e3b",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "main",
+            "name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7091,
+        "output_tokens": 29,
+        "total_latency_ms": 268,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:32.026Z"
+    },
+    {
+      "result_id": "826ac09f-1f60-4495-964e-b15687178078",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "Berlin",
+            "output_format": "mp4",
+            "resolution": "4k",
+            "bitrate": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7127,
+        "output_tokens": 53,
+        "total_latency_ms": 460,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:32.606Z"
+    },
+    {
+      "result_id": "e74f3c6f-7653-410f-a564-c24e726a5d7f",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To create a calendar event, you can use the `cal_create_event` tool with the provided parameters:\n\n```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "production",
+            "end": "main",
+            "location": "quarterly-report",
+            "attendees": [
+              "value1"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7131,
+        "output_tokens": 111,
+        "total_latency_ms": 909,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:33.618Z"
+    },
+    {
+      "result_id": "4b3cf002-c2de-45dc-9ae8-bae6876743ea",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To answer your question, I don't have the ability to predict future events or trends. However, I can help you find data and insights that might be useful in making an informed decision about this topic. Here's a tool call for running an analytics report on electric vehicle adoption rates:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"electric_vehicle_adoption\",\n      \"date_range\": \"last_5y\",\n      \"format\": \"csv\"\n    }\n  }\n]\n```\n\nThis report should provide you with data on electric vehicle adoption rates over the past five years, which could help inform your analysis of whether or not electric cars will completely replace gas cars in the future.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "electric_vehicle_adoption",
+            "date_range": "last_5y",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 7081,
+        "output_tokens": 179,
+        "total_latency_ms": 1427,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:35.151Z"
+    },
+    {
+      "result_id": "4fa3af0c-3043-43b2-866c-18e6eca2cdc9",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"art_history_question\", \"properties\": {\"painter\": \"Leonardo da Vinci\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "art_history_question",
+            "properties": {
+              "painter": "Leonardo da Vinci"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 7077,
+        "output_tokens": 44,
+        "total_latency_ms": 381,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:35.637Z"
+    },
+    {
+      "result_id": "962c4603-d704-4875-b4da-ccf6e7fd1bc7",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To get started with the authentication tools, you can explore the following functions:\n\n1. `auth_create_user`: This function allows creating a new user account with email, name, and role assignment. You can use this function to manage user accounts in your system.\n\n```json\n{\"name\": \"auth_create_user\"}\n```\n\n2. `auth_list_users`: With this function, you can list all user accounts with optional filtering by role and status. This is useful for managing existing users and checking their account details.\n\n```json\n{\"name\": \"auth_list_users\"}\n```\n\n3. `auth_update_permissions`: Use this function to update role-based permissions for a user or group. You can modify the permissions of specific users or groups as needed.\n\n```json\n{\"name\": \"auth_update_permissions\"}\n```\n\n4. `auth_revoke_token`: This function allows you to revoke an active access or refresh token to terminate a session. It's useful for handling security concerns and managing user sessions.\n\n```json\n{\"name\": \"auth_revoke_token\"}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 7083,
+        "output_tokens": 266,
+        "total_latency_ms": 2104,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:37.844Z"
+    },
+    {
+      "result_id": "6e55c0ea-3eb5-4165-84b4-04074904724c",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To get the history of a specific storage object, you can use the `store_list_objects` function with a prefix filter to limit the results to the desired object's directory. Then, you can call `store_get_object` for each returned object ID to retrieve its metadata and version history.\n\nHere is an example of how to get the history of a specific storage object:\n\n```json\n[\n  {\"name\": \"store_list_objects\", \"arguments\": {\n    \"prefix\": \"path/to/your/object\",\n    \"bucket\": \"your-storage-bucket\"\n  }},\n  {\"name\": \"store_get_object\", \"arguments\": {\n    \"key\": \"returned_object_id_1\",\n    \"bucket\": \"your-storage-bucket\"\n  }}\n]\n```\n\nIn the example above, replace `path/to/your/object` with the path to your desired storage object's directory and `your-storage-bucket` with the name of your cloud storage bucket. The returned object IDs can be passed as arguments to the `store_get_object` function to retrieve their metadata and version history.\n\nYou may need to iterate through multiple pages of results if the number of objects exceeds the maximum limit per request. In that case, you can use the `offset` parameter in the `store_list_objects` call to paginate through the results.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 7077,
+        "output_tokens": 314,
+        "total_latency_ms": 2465,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:40.419Z"
+    },
+    {
+      "result_id": "54f3fed0-4599-4eee-81b6-3d8418704f26",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\n  \"user_id\": \"user_identifier\",\n  \"role\": \"new_role\",\n  \"resources\": [\"resource1\", \"resource2\"]\n}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "user_identifier",
+            "role": "new_role",
+            "resources": [
+              "resource1",
+              "resource2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 7084,
+        "output_tokens": 53,
+        "total_latency_ms": 453,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:40.981Z"
+    },
+    {
+      "result_id": "7c5b793a-2055-44fe-a9e0-301bd9e5a829",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"store_list_files\"]}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7081,
+        "output_tokens": 12,
+        "total_latency_ms": 134,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:41.235Z"
+    },
+    {
+      "result_id": "9ece69f4-bca0-47bc-8662-66d410378f1e",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"file_to_access\", \"expiry_seconds\": 300, \"method\": \"GET\"}}",
+        "parsed_tool_call": {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "file_to_access",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 7083,
+        "output_tokens": 45,
+        "total_latency_ms": 387,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:41.729Z"
+    },
+    {
+      "result_id": "f8425680-18e8-4b70-86e8-eb9979e43986",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 100, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 100,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 7109,
+        "output_tokens": 41,
+        "total_latency_ms": 368,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:42.198Z"
+    },
+    {
+      "result_id": "e5b93339-f44c-4134-a57c-c16e9524e214",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\"}}",
+        "parsed_tool_call": {
+          "name": "cal_update_event",
+          "arguments": {
+            "event_id": "example_value",
+            "title": "Updated Event Title"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 7097,
+        "output_tokens": 33,
+        "total_latency_ms": 300,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:42.599Z"
+    },
+    {
+      "result_id": "32e49a02-3e2e-42b5-8246-e89bee7abd77",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_get_account_balance",
+          "arguments": {
+            "account_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7098,
+        "output_tokens": 27,
+        "total_latency_ms": 249,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:42.961Z"
+    },
+    {
+      "result_id": "b39a5645-2e6a-4e4a-9f68-392ca517b932",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7101,
+        "output_tokens": 23,
+        "total_latency_ms": 227,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:43.297Z"
+    },
+    {
+      "result_id": "060cbd42-29c1-4926-b7c9-704b84f88259",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7104,
+        "output_tokens": 26,
+        "total_latency_ms": 244,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:43.651Z"
+    },
+    {
+      "result_id": "1e69238c-fa37-443e-9ebc-6a0a7cd64572",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To first revoke an active access or refresh token to terminate a session, we'll use the `auth_revoke_token` tool:\n\n```json\n{\"name\": \"auth_revoke_token\"}\n```\n\nAfter receiving the result from the above call, we can proceed with extracting audio from a video file using the `media_extract_audio` tool.\n\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"<video_file_path>\"}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7092,
+        "output_tokens": 120,
+        "total_latency_ms": 965,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:44.731Z"
+    },
+    {
+      "result_id": "5cfc3363-51e6-43cb-a254-37b415b41ba3",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To convert text into spoken audio using neural text-to-speech synthesis and then create an invoice with line items, we can first call the `media_text_to_speech` tool to generate the audio file. After that, we'll create an invoice with the generated audio as a line item.\n\nHere is the JSON response for the initial step:\n\n```json\n[\n  {\"name\": \"media_text_to_speech\", \"arguments\": {\n    \"text\": \"Your text to convert into speech\",\n    \"voice\": \"alloy\",\n    \"language\": \"en-US\"\n  }}\n]\n```\n\nOnce you receive the audio file, you can create an invoice with it as a line item using the `fin_create_invoice` tool. Here's the JSON response for creating the invoice:\n\n```json\n{\n  \"name\": \"fin_create_invoice\",\n  \"arguments\": {\n    \"customer_id\": \"Customer account identifier\",\n    \"items\": [\n      {\n        \"description\": \"Audio file description\",\n        \"quantity\": 1,\n        \"unit_price\": \"Audio file price\"\n      }\n    ],\n    \"currency\": \"Invoice currency code\",\n    \"due_days\": \"Payment due in N days from issue date\"\n  }\n}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7096,
+        "output_tokens": 311,
+        "total_latency_ms": 2434,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:47.269Z"
+    },
+    {
+      "result_id": "2df538ae-ed2c-4ffb-a33f-45da5b0dc4ee",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"shop_track_order\", \"arguments\": {\n    \"order_id\": \"your_order_id\"\n  }},\n  {\"name\": \"media_extract_audio\", \"arguments\": {\n    \"input_path\": \"$output_of_shop_track_order\",\n    \"output_format\": \"mp3\"\n  }},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"your_city\"\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7098,
+        "output_tokens": 118,
+        "total_latency_ms": 963,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:48.347Z"
+    },
+    {
+      "result_id": "d4d600b1-fd2b-4439-bedc-f476037bb863",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To start, let's first get the stock price for a specific ticker symbol using `fin_get_stock_price`.\n\n```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\"}}\n```\n\nAfter getting the stock price, we can use the output to query service metrics (CPU) for a specific time window.\n\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"my-service\", \"metric\": \"cpu\", \"window\": \"1h\"}}\n```\n\nFinally, we can use the collected information to find free time for scheduling a meeting using `cal_find_free_time`.\n\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\n  \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n  \"duration_minutes\": 30,\n  \"start_date\": \"2022-09-01T00:00:00Z\",\n  \"end_date\": \"2022-09-07T00:00:00Z\"\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 7106,
+        "output_tokens": 282,
+        "total_latency_ms": 2211,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:50.667Z"
+    },
+    {
+      "result_id": "bc260ef0-71ca-42ef-b43c-9b8b1045a5c6",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"date_range\": \"last_7d\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "Berlin",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 7085,
+        "output_tokens": 42,
+        "total_latency_ms": 367,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:51.138Z"
+    },
+    {
+      "result_id": "abade6d6-a5d7-462d-98f8-8f910ac6024f",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "main",
+            "name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7091,
+        "output_tokens": 29,
+        "total_latency_ms": 264,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:51.518Z"
+    },
+    {
+      "result_id": "3a71cad3-4ae5-40d8-89f0-d2b20af859a2",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "Berlin",
+            "output_format": "mp4",
+            "resolution": "4k",
+            "bitrate": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7127,
+        "output_tokens": 53,
+        "total_latency_ms": 457,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:52.087Z"
+    },
+    {
+      "result_id": "e10505a1-f74d-425c-9891-498fbe4ab452",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To create a calendar event, you can use the `cal_create_event` tool with the provided parameters:\n\n```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "production",
+            "end": "main",
+            "location": "quarterly-report",
+            "attendees": [
+              "value1"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 7131,
+        "output_tokens": 111,
+        "total_latency_ms": 904,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:53.097Z"
+    },
+    {
+      "result_id": "8375ddca-70ae-4f84-b38c-c0e3479f0403",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To answer your question, I don't have the ability to predict future events or trends. However, I can help you find data and insights that might be useful in making an informed decision about this topic. Here's a tool call for running an analytics report on electric vehicle adoption rates:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"electric_vehicle_adoption\",\n      \"date_range\": \"last_5y\",\n      \"format\": \"csv\"\n    }\n  }\n]\n```\n\nThis report should provide you with data on electric vehicle adoption rates over the past five years, which could help inform your analysis of whether or not electric cars will completely replace gas cars in the future.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "electric_vehicle_adoption",
+            "date_range": "last_5y",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 7081,
+        "output_tokens": 179,
+        "total_latency_ms": 1415,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:54.619Z"
+    },
+    {
+      "result_id": "7dab9d0a-9c93-4ad0-9bee-56a5ef1b1001",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"art_history_question\", \"properties\": {\"painter\": \"Leonardo da Vinci\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "art_history_question",
+            "properties": {
+              "painter": "Leonardo da Vinci"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 7077,
+        "output_tokens": 44,
+        "total_latency_ms": 380,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:55.102Z"
+    },
+    {
+      "result_id": "08c24e53-934f-476f-b95e-690ac5c435ce",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To get started with the authentication tools, you can explore the following functions:\n\n1. `auth_create_user`: This function allows creating a new user account with email, name, and role assignment. You can use this function to manage user accounts in your system.\n\n```json\n{\"name\": \"auth_create_user\"}\n```\n\n2. `auth_list_users`: With this function, you can list all user accounts with optional filtering by role and status. This is useful for managing existing users and checking their account details.\n\n```json\n{\"name\": \"auth_list_users\"}\n```\n\n3. `auth_update_permissions`: Use this function to update role-based permissions for a user or group. You can modify the permissions of specific users or groups as needed.\n\n```json\n{\"name\": \"auth_update_permissions\"}\n```\n\n4. `auth_revoke_token`: This function allows you to revoke an active access or refresh token to terminate a session. It's useful for handling security concerns and managing user sessions.\n\n```json\n{\"name\": \"auth_revoke_token\"}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 7083,
+        "output_tokens": 266,
+        "total_latency_ms": 2087,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:57.299Z"
+    },
+    {
+      "result_id": "bee471cd-58a2-4579-892b-5f34d0996268",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To get the history of a specific storage object, you can use the `store_list_objects` function with a prefix filter to limit the results to the desired object's directory. Then, you can call `store_get_object` for each returned object ID to retrieve its metadata and version history.\n\nHere is an example of how to get the history of a specific storage object:\n\n```json\n[\n  {\"name\": \"store_list_objects\", \"arguments\": {\n    \"prefix\": \"path/to/your/object\",\n    \"bucket\": \"your-storage-bucket\"\n  }},\n  {\"name\": \"store_get_object\", \"arguments\": {\n    \"key\": \"returned_object_id_1\",\n    \"bucket\": \"your-storage-bucket\"\n  }}\n]\n```\n\nIn the example above, replace `path/to/your/object` with the path to your desired storage object's directory and `your-storage-bucket` with the name of your cloud storage bucket. The returned object IDs can be passed as arguments to the `store_get_object` function to retrieve their metadata and version history.\n\nYou may need to iterate through multiple pages of results if the number of objects exceeds the maximum limit per request. In that case, you can use the `offset` parameter in the `store_list_objects` call to paginate through the results.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 7077,
+        "output_tokens": 314,
+        "total_latency_ms": 2457,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:40:59.868Z"
+    },
+    {
+      "result_id": "e3f5d907-1bf7-4a21-8572-f808b29f830a",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\n  \"user_id\": \"<user_identifier>\",\n  \"role\": \"<new_role>\",\n  \"resources\": [\"<resource_scope_1>\", \"<resource_scope_2>\"]\n}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "<user_identifier>",
+            "role": "<new_role>",
+            "resources": [
+              "<resource_scope_1>",
+              "<resource_scope_2>"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2435,
+        "output_tokens": 61,
+        "total_latency_ms": 805,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:00.784Z"
+    },
+    {
+      "result_id": "5e635aea-d509-4f90-8ead-dec9e101ab0b",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"<directory_prefix>\", \"bucket\": \"<storage_bucket>\"}}",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "<directory_prefix>",
+            "bucket": "<storage_bucket>"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2432,
+        "output_tokens": 31,
+        "total_latency_ms": 244,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:01.141Z"
+    },
+    {
+      "result_id": "28769a3d-030c-4320-85a7-242f773f06d2",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"/my-directory/file.txt\", \"expiry_seconds\": 300, \"method\": \"GET\"}}",
+        "parsed_tool_call": {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "/my-directory/file.txt",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2434,
+        "output_tokens": 47,
+        "total_latency_ms": 355,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:01.610Z"
+    },
+    {
+      "result_id": "fbd47d07-efe3-4042-a4d8-234f65c1b74a",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"fin_process_payment\"], \"arguments\": {\"amount\": 100, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2460,
+        "output_tokens": 41,
+        "total_latency_ms": 317,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:02.031Z"
+    },
+    {
+      "result_id": "4739c440-a301-4fb9-88d5-4bbe2cd674de",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\"}}",
+        "parsed_tool_call": {
+          "name": "cal_update_event",
+          "arguments": {
+            "event_id": "example_value",
+            "title": "Updated Event Title"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2448,
+        "output_tokens": 33,
+        "total_latency_ms": 262,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:02.396Z"
+    },
+    {
+      "result_id": "c718d64a-1c86-433b-85fb-7e244f8e7e79",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_get_account_balance",
+          "arguments": {
+            "account_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2449,
+        "output_tokens": 27,
+        "total_latency_ms": 219,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:02.716Z"
+    },
+    {
+      "result_id": "301cac93-1d77-42b7-82de-c11259194c4d",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2452,
+        "output_tokens": 23,
+        "total_latency_ms": 195,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:03.034Z"
+    },
+    {
+      "result_id": "36527ced-e4a6-44fa-9928-2c152ef4a406",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"shimmer\", \"language\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value",
+            "voice": "shimmer",
+            "language": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 2455,
+        "output_tokens": 41,
+        "total_latency_ms": 315,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:03.452Z"
+    },
+    {
+      "result_id": "ec9c64d4-12f9-4c75-b32e-cfd1714a06cd",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To first revoke an active access token and then extract the audio from a video file, we'll need to make two separate calls:\n\n1. auth_revoke_token:\n```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"your_token\"}}\n```\n\n2. After receiving the revoked token response, use media_extract_audio to extract audio from a video file:\n\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"path/to/video.mp4\", \"output_format\": \"wav\"}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2443,
+        "output_tokens": 144,
+        "total_latency_ms": 1027,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:04.580Z"
+    },
+    {
+      "result_id": "4c4e8cfe-8062-4ea4-9fa6-c7fe0993cc76",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To convert text into spoken audio and then create an invoice with line items, we can first use the `media_text_to_speech` tool to generate the audio file, and then use the `fin_create_invoice` tool to create the invoice with the generated audio as a line item.\n\nHere's how you can achieve this:\n\n1. Convert text into spoken audio using neural text-to-speech synthesis:\n\n```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\n  \"text\": \"Your text to convert to speech\",\n  \"voice\": \"alloy\",\n  \"language\": \"en-US\"\n}}\n```\n\nLet's assume the output of this tool call is an audio file named `output.mp3`.\n\n2. Create a new invoice with line items, including the generated audio as a line item:\n\n```json\n{\"name\": \"fin_create_invoice\", \"arguments\": {\n  \"customer_id\": \"CUSTOMER_ID\",\n  \"items\": [\n    {\n      \"description\": \"Speech Audio File\",\n      \"quantity\": 1,\n      \"unit_price\": \"AMOUNT\"\n    }\n  ],\n  \"currency\": \"CURRENCY\",\n  \"due_days\": DUE_DAYS\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2447,
+        "output_tokens": 313,
+        "total_latency_ms": 2213,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:06.898Z"
+    },
+    {
+      "result_id": "553587d7-1797-40e8-8897-4d54df86bd3d",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"shop_track_order\", \"arguments\": {\n    \"order_id\": \"1234567890\",\n    \"include_history\": true,\n    \"locale\": \"en-US\"\n  }},\n  {\"name\": \"media_extract_audio\", \"arguments\": {\n    \"input_path\": \"/path/to/video.mp4\",\n    \"output_format\": \"wav\"\n  }},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\",\n    \"include_pollutants\": true\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2449,
+        "output_tokens": 151,
+        "total_latency_ms": 1077,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:08.082Z"
+    },
+    {
+      "result_id": "340e4be5-f201-4b9e-ad11-b75faaabc3e9",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To achieve this, we'll first need to get the current stock price for a specific ticker symbol using `fin_get_stock_price`. Then, we'll utilize the obtained data to query service metrics (CPU) using `ops_get_metrics`, and finally find free time slots for scheduling a meeting with `cal_find_free_time`. Here's how it can be done:\n\n1. Get stock price:\n```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\", \"exchange\": \"NYSE\", \"include_history\": false}}\n```\n\n2. Query service metrics (CPU):\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"<service_name>\", \"metric\": \"cpu\", \"window\": \"1h\"}}\n```\nReplace `<service_name>` with the name of your service.\n\n3. Find free time slots:\nAssuming you have obtained the required data from the previous steps, let's find free time slots for scheduling a meeting using `cal_find_free_time`.\n\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\n    \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n    \"duration_minutes\": 30,\n    \"start_date\": \"2022-09-01T00:00:00Z\",\n    \"end_date\": \"2022-09-07T00:00:00Z\",\n    \"verbose\": true\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2457,
+        "output_tokens": 381,
+        "total_latency_ms": 2680,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:10.876Z"
+    },
+    {
+      "result_id": "b1fc701d-56ea-48c4-9ce0-d05ef2a82e71",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "Berlin",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2436,
+        "output_tokens": 31,
+        "total_latency_ms": 245,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:11.228Z"
+    },
+    {
+      "result_id": "c02549aa-db14-41f4-8209-09fcca4dcefa",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"password\": \"secure_password\", \"limit\": 1}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "main",
+            "name": "config.json",
+            "role": "viewer",
+            "password": "secure_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 2442,
+        "output_tokens": 49,
+        "total_latency_ms": 371,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:11.713Z"
+    },
+    {
+      "result_id": "8311ff19-8486-4663-bd67-4bddeb30cbd5",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"media_transcode_video\"], \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2478,
+        "output_tokens": 53,
+        "total_latency_ms": 406,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:12.230Z"
+    },
+    {
+      "result_id": "67bf57b9-cb28-4b4e-8964-62a12a8dbac5",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To create a calendar event with the specified details, you can use the `cal_create_event` tool. Here's the JSON representation of the request:\n\n```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "production",
+            "end": "main",
+            "location": "quarterly-report",
+            "attendees": [
+              "value1"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2482,
+        "output_tokens": 121,
+        "total_latency_ms": 872,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:13.205Z"
+    },
+    {
+      "result_id": "7a432b5f-fcf3-43d4-84eb-ae03774ae9c8",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To analyze the data and provide an informed response, we can use the analytics tools available:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"electric_vs_gas_cars\",\n      \"date_range\": \"last_5y\",\n      \"filters\": {\n        \"industry\": [\"automobile\"],\n        \"product_category\": [\"cars\"]\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\nThis command will run a pre-defined analytics report comparing electric and gas cars over the last five years, focusing on the automotive industry. The results will be returned in JSON format. Based on the data provided by this analysis, we can then make an informed prediction about whether electric cars will completely replace gas cars.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "electric_vs_gas_cars",
+            "date_range": "last_5y",
+            "filters": {
+              "industry": [
+                "automobile"
+              ],
+              "product_category": [
+                "cars"
+              ]
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2432,
+        "output_tokens": 193,
+        "total_latency_ms": 1369,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:14.675Z"
+    },
+    {
+      "result_id": "b8b60791-b867-4b76-9b4a-41b8170907ef",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"art_history_facts\", \"date_range\": \"last_7d\", \"filters\": {\"question\": [\"Who painted the Mona Lisa?\"]}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "art_history_facts",
+            "date_range": "last_7d",
+            "filters": {
+              "question": [
+                "Who painted the Mona Lisa?"
+              ]
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2428,
+        "output_tokens": 55,
+        "total_latency_ms": 418,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:15.211Z"
+    },
+    {
+      "result_id": "38718204-f68e-48e5-8f59-f344d433bbfa",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To get started with the authentication tools, you can explore the following functions:\n\n1. `auth_create_user`: This function allows creating a new user account with email, name, and role assignment. You can use this tool to create users for your application or service.\n   Tool call: {\"name\": \"analytics_create_user\"}\n\n2. `auth_list_users`: Use this function to list all user accounts with optional filtering by role and status. This can help you manage existing users in your system.\n   Tool call: {\"name\": \"auth_list_users\"}\n\n3. `auth_revoke_token`: Revoke an active access or refresh token to terminate a session. This is useful for handling user logouts or revoking tokens when necessary.\n   Tool call: {\"name\": \"auth_revoke_token\"}\n\n4. `auth_update_permissions`: Update role-based permissions for a user or group. You can use this tool to modify access levels for users in your system.\n   Tool call: {\"name\": \"auth_update_permissions\"}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2434,
+        "output_tokens": 243,
+        "total_latency_ms": 1716,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:17.043Z"
+    },
+    {
+      "result_id": "24998c0f-ba10-4bd3-93f8-1c7fcb67211f",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To get the history of storage usage, you can use the analytics tool to run a pre-defined report that tracks storage usage over time. Here's an example JSON call:\n\n```json\n[\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"storage_usage\",\n    \"date_range\": \"last_30d\",\n    \"format\": \"csv\"\n  }}\n]\n```\n\nThis call will return a CSV report containing the storage usage data for the last 30 days. You can adjust the date range and format as needed to suit your requirements.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "storage_usage",
+            "date_range": "last_30d",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2428,
+        "output_tokens": 141,
+        "total_latency_ms": 1008,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:18.163Z"
+    },
+    {
+      "result_id": "b4b882bd-7a44-4315-8d6f-72ce9d53fbfe",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\n  \"user_id\": \"<user_identifier>\",\n  \"role\": \"<new_role>\",\n  \"resources\": \"<specific_resource_scopes>\"\n}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "<user_identifier>",
+            "role": "<new_role>",
+            "resources": "<specific_resource_scopes>"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2435,
+        "output_tokens": 53,
+        "total_latency_ms": 396,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:18.664Z"
+    },
+    {
+      "result_id": "5723cb07-8835-4693-b367-6efe52c6acf2",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"<directory_prefix>\", \"bucket\": \"<storage_bucket>\"}}",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "<directory_prefix>",
+            "bucket": "<storage_bucket>"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2432,
+        "output_tokens": 31,
+        "total_latency_ms": 247,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:19.020Z"
+    },
+    {
+      "result_id": "a561bd6b-d5bd-46be-bba6-83b013ab67c0",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"/my-directory/file.txt\", \"expiry_seconds\": 300, \"method\": \"GET\"}}",
+        "parsed_tool_call": {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "/my-directory/file.txt",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2434,
+        "output_tokens": 47,
+        "total_latency_ms": 354,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:19.480Z"
+    },
+    {
+      "result_id": "f2472e9f-63d6-4870-9068-5a765f1ec965",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"fin_process_payment\"], \"arguments\": {\"amount\": 100, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2460,
+        "output_tokens": 41,
+        "total_latency_ms": 315,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:19.904Z"
+    },
+    {
+      "result_id": "10a15060-fe7e-415d-833e-a342f002ee17",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\"}}",
+        "parsed_tool_call": {
+          "name": "cal_update_event",
+          "arguments": {
+            "event_id": "example_value",
+            "title": "Updated Event Title"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2448,
+        "output_tokens": 33,
+        "total_latency_ms": 260,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:20.272Z"
+    },
+    {
+      "result_id": "38b6f829-dc28-47bd-90ec-1ab727c8e122",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_get_account_balance",
+          "arguments": {
+            "account_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2449,
+        "output_tokens": 27,
+        "total_latency_ms": 220,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:20.605Z"
+    },
+    {
+      "result_id": "44136e35-307e-4fd7-bb09-b9ca8470faa2",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2452,
+        "output_tokens": 23,
+        "total_latency_ms": 192,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:20.902Z"
+    },
+    {
+      "result_id": "5d7ffe07-9110-4c0f-8235-ba5d385c2b4a",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"shimmer\", \"language\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value",
+            "voice": "shimmer",
+            "language": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 2455,
+        "output_tokens": 41,
+        "total_latency_ms": 316,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:21.326Z"
+    },
+    {
+      "result_id": "432f0986-de87-4e48-a2e6-0558a6192b83",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To first revoke an active access token and then extract the audio from a video file, we'll need to make two separate calls:\n\n1. auth_revoke_token:\n```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"your_token\"}}\n```\n\n2. After receiving the revoked token response, use media_extract_audio to extract audio from a video file:\n\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"path/to/video.mp4\", \"output_format\": \"wav\"}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2443,
+        "output_tokens": 144,
+        "total_latency_ms": 1028,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:22.456Z"
+    },
+    {
+      "result_id": "b8984222-e55e-463e-b487-e06181b1fa93",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To convert text into spoken audio and then create an invoice with line items, we can first use the `media_text_to_speech` tool to generate the audio file, and then use the `fin_create_invoice` tool to create the invoice with the generated audio as a line item.\n\nHere's how you can achieve this:\n\n1. Convert text into spoken audio using neural text-to-speech synthesis:\n\n```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\n  \"text\": \"Your text to convert to speech\",\n  \"voice\": \"alloy\",\n  \"language\": \"en-US\"\n}}\n```\n\nLet's assume the output of this tool call is an audio file named `output.mp3`.\n\n2. Create a new invoice with line items, including the generated audio as a line item:\n\n```json\n{\"name\": \"fin_create_invoice\", \"arguments\": {\n  \"customer_id\": \"CUSTOMER_ID\",\n  \"items\": [\n    {\n      \"description\": \"Speech Audio File\",\n      \"quantity\": 1,\n      \"unit_price\": \"AMOUNT\"\n    }\n  ],\n  \"currency\": \"CURRENCY\",\n  \"due_days\": DUE_DAYS\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2447,
+        "output_tokens": 313,
+        "total_latency_ms": 2215,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:24.776Z"
+    },
+    {
+      "result_id": "b556b374-0fe2-42d2-80ac-c322ba2eb96b",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"shop_track_order\", \"arguments\": {\n    \"order_id\": \"1234567890\",\n    \"include_history\": true,\n    \"locale\": \"en-US\"\n  }},\n  {\"name\": \"media_extract_audio\", \"arguments\": {\n    \"input_path\": \"/path/to/video.mp4\",\n    \"output_format\": \"wav\"\n  }},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\",\n    \"include_pollutants\": true\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2449,
+        "output_tokens": 151,
+        "total_latency_ms": 1080,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:25.965Z"
+    },
+    {
+      "result_id": "92852814-1525-421d-b630-f383cd4be44d",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To achieve this, we'll first need to get the current stock price for a specific ticker symbol using `fin_get_stock_price`. Then, we'll utilize the obtained data to query service metrics (CPU) using `ops_get_metrics`, and finally find free time slots for scheduling a meeting with `cal_find_free_time`. Here's how it can be done:\n\n1. Get stock price:\n```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\", \"exchange\": \"NYSE\", \"include_history\": false}}\n```\n\n2. Query service metrics (CPU):\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"<service_name>\", \"metric\": \"cpu\", \"window\": \"1h\"}}\n```\nReplace `<service_name>` with the name of your service.\n\n3. Find free time slots:\nAssuming you have obtained the required data from the previous steps, let's find free time slots for scheduling a meeting using `cal_find_free_time`.\n\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\n    \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n    \"duration_minutes\": 30,\n    \"start_date\": \"2022-09-01T00:00:00Z\",\n    \"end_date\": \"2022-09-07T00:00:00Z\",\n    \"verbose\": true\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2457,
+        "output_tokens": 381,
+        "total_latency_ms": 2683,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:28.756Z"
+    },
+    {
+      "result_id": "9fd2fad1-06ed-424a-821c-511e680534a8",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "Berlin",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2436,
+        "output_tokens": 31,
+        "total_latency_ms": 244,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:29.105Z"
+    },
+    {
+      "result_id": "683e6e13-ba90-4902-9d37-d77e8c2d7b81",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"password\": \"secure_password\", \"limit\": 1}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "main",
+            "name": "config.json",
+            "role": "viewer",
+            "password": "secure_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 2442,
+        "output_tokens": 49,
+        "total_latency_ms": 368,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:29.587Z"
+    },
+    {
+      "result_id": "66231e9d-9740-49fc-9bf2-198383c85160",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"media_transcode_video\"], \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2478,
+        "output_tokens": 53,
+        "total_latency_ms": 404,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:30.097Z"
+    },
+    {
+      "result_id": "8a60b1e9-2b01-41f0-ab64-d30537062a52",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To create a calendar event with the specified details, you can use the `cal_create_event` tool. Here's the JSON representation of the request:\n\n```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "production",
+            "end": "main",
+            "location": "quarterly-report",
+            "attendees": [
+              "value1"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2482,
+        "output_tokens": 121,
+        "total_latency_ms": 873,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:31.072Z"
+    },
+    {
+      "result_id": "0315700f-bcf3-48ff-b600-ae725cb6f81f",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To analyze the data and provide an informed response, we can use the analytics tools available:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"electric_vs_gas_cars\",\n      \"date_range\": \"last_5y\",\n      \"filters\": {\n        \"industry\": [\"automobile\"],\n        \"product_category\": [\"cars\"]\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\nThis command will run a pre-defined analytics report comparing electric and gas cars over the last five years, focusing on the automotive industry. The results will be returned in JSON format. Based on the data provided by this analysis, we can then make an informed prediction about whether electric cars will completely replace gas cars.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "electric_vs_gas_cars",
+            "date_range": "last_5y",
+            "filters": {
+              "industry": [
+                "automobile"
+              ],
+              "product_category": [
+                "cars"
+              ]
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2432,
+        "output_tokens": 193,
+        "total_latency_ms": 1371,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:32.551Z"
+    },
+    {
+      "result_id": "35556fd2-c8f0-4713-9825-3ce32e7a1bf7",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"art_history_facts\", \"date_range\": \"last_7d\", \"filters\": {\"question\": [\"Who painted the Mona Lisa?\"]}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "art_history_facts",
+            "date_range": "last_7d",
+            "filters": {
+              "question": [
+                "Who painted the Mona Lisa?"
+              ]
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2428,
+        "output_tokens": 55,
+        "total_latency_ms": 417,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:33.072Z"
+    },
+    {
+      "result_id": "093a6e13-de32-42e6-9544-98fedab4da80",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To get started with the authentication tools, you can explore the following functions:\n\n1. `auth_create_user`: This function allows creating a new user account with email, name, and role assignment. You can use this tool to create users for your application or service.\n   Tool call: {\"name\": \"analytics_create_user\"}\n\n2. `auth_list_users`: Use this function to list all user accounts with optional filtering by role and status. This can help you manage existing users in your system.\n   Tool call: {\"name\": \"auth_list_users\"}\n\n3. `auth_revoke_token`: Revoke an active access or refresh token to terminate a session. This is useful for handling user logouts or revoking tokens when necessary.\n   Tool call: {\"name\": \"auth_revoke_token\"}\n\n4. `auth_update_permissions`: Update role-based permissions for a user or group. You can use this tool to modify access levels for users in your system.\n   Tool call: {\"name\": \"auth_update_permissions\"}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2434,
+        "output_tokens": 243,
+        "total_latency_ms": 1722,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:34.901Z"
+    },
+    {
+      "result_id": "b93c0608-c0c3-475b-8b2b-ac00089e0ab1",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To get the history of storage usage, you can use the analytics tool to run a pre-defined report that tracks storage usage over time. Here's an example JSON call:\n\n```json\n[\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"storage_usage\",\n    \"date_range\": \"last_30d\",\n    \"format\": \"csv\"\n  }}\n]\n```\n\nThis call will return a CSV report containing the storage usage data for the last 30 days. You can adjust the date range and format as needed to suit your requirements.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "storage_usage",
+            "date_range": "last_30d",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2428,
+        "output_tokens": 141,
+        "total_latency_ms": 1011,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:36.013Z"
+    },
+    {
+      "result_id": "b62cef92-e86a-486a-bd36-03f976f9432e",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\n  \"user_id\": \"<user_identifier>\",\n  \"role\": \"<new_role>\",\n  \"resources\": \"<specific_resource_scopes>\"\n}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "<user_identifier>",
+            "role": "<new_role>",
+            "resources": "<specific_resource_scopes>"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2435,
+        "output_tokens": 53,
+        "total_latency_ms": 395,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:36.515Z"
+    },
+    {
+      "result_id": "0e379fb3-c8a3-496d-ad49-b9cedf963bb1",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"<directory_prefix>\", \"bucket\": \"<storage_bucket>\"}}",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "<directory_prefix>",
+            "bucket": "<storage_bucket>"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2432,
+        "output_tokens": 31,
+        "total_latency_ms": 245,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:36.873Z"
+    },
+    {
+      "result_id": "c0ea339e-3f6a-4fc1-a356-23a83902ae41",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"/my-directory/file.txt\", \"expiry_seconds\": 300, \"method\": \"GET\"}}",
+        "parsed_tool_call": {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "/my-directory/file.txt",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2434,
+        "output_tokens": 47,
+        "total_latency_ms": 355,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:37.329Z"
+    },
+    {
+      "result_id": "c0ee6326-f83c-4c43-a5b1-7b5ed39f1b38",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"fin_process_payment\"], \"arguments\": {\"amount\": 100, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2460,
+        "output_tokens": 41,
+        "total_latency_ms": 317,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:37.759Z"
+    },
+    {
+      "result_id": "c8672995-df5f-4f3d-8710-f03070e6ad51",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\"}}",
+        "parsed_tool_call": {
+          "name": "cal_update_event",
+          "arguments": {
+            "event_id": "example_value",
+            "title": "Updated Event Title"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2448,
+        "output_tokens": 33,
+        "total_latency_ms": 263,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:38.132Z"
+    },
+    {
+      "result_id": "a59d01bc-8045-4337-969e-0cd052181057",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "fin_get_account_balance",
+          "arguments": {
+            "account_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2449,
+        "output_tokens": 27,
+        "total_latency_ms": 218,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:38.467Z"
+    },
+    {
+      "result_id": "4356ecca-a725-458a-9271-dced5af82a31",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2452,
+        "output_tokens": 23,
+        "total_latency_ms": 195,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:38.769Z"
+    },
+    {
+      "result_id": "0d178a29-0aab-4216-8860-86cec3314886",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"shimmer\", \"language\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value",
+            "voice": "shimmer",
+            "language": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 2455,
+        "output_tokens": 41,
+        "total_latency_ms": 321,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:39.205Z"
+    },
+    {
+      "result_id": "c300e855-cfbf-4204-af05-d25d065edcea",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To first revoke an active access token and then extract the audio from a video file, we'll need to make two separate calls:\n\n1. auth_revoke_token:\n```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"your_token\"}}\n```\n\n2. After receiving the revoked token response, use media_extract_audio to extract audio from a video file:\n\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"path/to/video.mp4\", \"output_format\": \"wav\"}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2443,
+        "output_tokens": 144,
+        "total_latency_ms": 1028,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:40.346Z"
+    },
+    {
+      "result_id": "a5e961f7-2594-4405-ac8c-046ce61647eb",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To convert text into spoken audio and then create an invoice with line items, we can first use the `media_text_to_speech` tool to generate the audio file, and then use the `fin_create_invoice` tool to create the invoice with the generated audio as a line item.\n\nHere's how you can achieve this:\n\n1. Convert text into spoken audio using neural text-to-speech synthesis:\n\n```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\n  \"text\": \"Your text to convert to speech\",\n  \"voice\": \"alloy\",\n  \"language\": \"en-US\"\n}}\n```\n\nLet's assume the output of this tool call is an audio file named `output.mp3`.\n\n2. Create a new invoice with line items, including the generated audio as a line item:\n\n```json\n{\"name\": \"fin_create_invoice\", \"arguments\": {\n  \"customer_id\": \"CUSTOMER_ID\",\n  \"items\": [\n    {\n      \"description\": \"Speech Audio File\",\n      \"quantity\": 1,\n      \"unit_price\": \"AMOUNT\"\n    }\n  ],\n  \"currency\": \"CURRENCY\",\n  \"due_days\": DUE_DAYS\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2447,
+        "output_tokens": 313,
+        "total_latency_ms": 2204,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:42.651Z"
+    },
+    {
+      "result_id": "3a80e627-55a2-4b55-9f0a-b53564e784da",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"shop_track_order\", \"arguments\": {\n    \"order_id\": \"1234567890\",\n    \"include_history\": true,\n    \"locale\": \"en-US\"\n  }},\n  {\"name\": \"media_extract_audio\", \"arguments\": {\n    \"input_path\": \"/path/to/video.mp4\",\n    \"output_format\": \"wav\"\n  }},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\",\n    \"include_pollutants\": true\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2449,
+        "output_tokens": 151,
+        "total_latency_ms": 1083,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:43.846Z"
+    },
+    {
+      "result_id": "52395f00-b532-4c7a-99a9-d0030bde99d1",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To achieve this, we'll first need to get the current stock price for a specific ticker symbol using `fin_get_stock_price`. Then, we'll utilize the obtained data to query service metrics (CPU) using `ops_get_metrics`, and finally find free time slots for scheduling a meeting with `cal_find_free_time`. Here's how it can be done:\n\n1. Get stock price:\n```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\", \"exchange\": \"NYSE\", \"include_history\": false}}\n```\n\n2. Query service metrics (CPU):\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"<service_name>\", \"metric\": \"cpu\", \"window\": \"1h\"}}\n```\nReplace `<service_name>` with the name of your service.\n\n3. Find free time slots:\nAssuming you have obtained the required data from the previous steps, let's find free time slots for scheduling a meeting using `cal_find_free_time`.\n\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\n    \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n    \"duration_minutes\": 30,\n    \"start_date\": \"2022-09-01T00:00:00Z\",\n    \"end_date\": \"2022-09-07T00:00:00Z\",\n    \"verbose\": true\n}}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2457,
+        "output_tokens": 381,
+        "total_latency_ms": 2688,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:46.636Z"
+    },
+    {
+      "result_id": "68cacea2-51b6-423a-8c4b-22c407644d67",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "Berlin",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2436,
+        "output_tokens": 31,
+        "total_latency_ms": 247,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:46.999Z"
+    },
+    {
+      "result_id": "c971d149-d27d-43c3-b633-1b8662dc4da8",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"password\": \"secure_password\", \"limit\": 1}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "main",
+            "name": "config.json",
+            "role": "viewer",
+            "password": "secure_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 2442,
+        "output_tokens": 49,
+        "total_latency_ms": 373,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:47.474Z"
+    },
+    {
+      "result_id": "4ee5e465-b5bd-47e8-ba9c-b202c2966d60",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"media_transcode_video\"], \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2478,
+        "output_tokens": 53,
+        "total_latency_ms": 404,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:47.989Z"
+    },
+    {
+      "result_id": "6c454f01-9a31-4f5a-a411-61e15b215270",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To create a calendar event with the specified details, you can use the `cal_create_event` tool. Here's the JSON representation of the request:\n\n```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "production",
+            "end": "main",
+            "location": "quarterly-report",
+            "attendees": [
+              "value1"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2482,
+        "output_tokens": 121,
+        "total_latency_ms": 875,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:48.968Z"
+    },
+    {
+      "result_id": "fc1c7afd-d88b-42c6-a041-f77017357730",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To analyze the data and provide an informed response, we can use the analytics tools available:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"electric_vs_gas_cars\",\n      \"date_range\": \"last_5y\",\n      \"filters\": {\n        \"industry\": [\"automobile\"],\n        \"product_category\": [\"cars\"]\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\nThis command will run a pre-defined analytics report comparing electric and gas cars over the last five years, focusing on the automotive industry. The results will be returned in JSON format. Based on the data provided by this analysis, we can then make an informed prediction about whether electric cars will completely replace gas cars.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "electric_vs_gas_cars",
+            "date_range": "last_5y",
+            "filters": {
+              "industry": [
+                "automobile"
+              ],
+              "product_category": [
+                "cars"
+              ]
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2432,
+        "output_tokens": 193,
+        "total_latency_ms": 1369,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:50.450Z"
+    },
+    {
+      "result_id": "cef1b1f0-95d8-40d2-90f8-83c07880c9fb",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"art_history_facts\", \"date_range\": \"last_7d\", \"filters\": {\"question\": [\"Who painted the Mona Lisa?\"]}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "art_history_facts",
+            "date_range": "last_7d",
+            "filters": {
+              "question": [
+                "Who painted the Mona Lisa?"
+              ]
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2428,
+        "output_tokens": 55,
+        "total_latency_ms": 414,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:50.973Z"
+    },
+    {
+      "result_id": "fb521965-9dd5-4b63-98a0-600a7b29581e",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To get started with the authentication tools, you can explore the following functions:\n\n1. `auth_create_user`: This function allows creating a new user account with email, name, and role assignment. You can use this tool to create users for your application or service.\n   Tool call: {\"name\": \"analytics_create_user\"}\n\n2. `auth_list_users`: Use this function to list all user accounts with optional filtering by role and status. This can help you manage existing users in your system.\n   Tool call: {\"name\": \"auth_list_users\"}\n\n3. `auth_revoke_token`: Revoke an active access or refresh token to terminate a session. This is useful for handling user logouts or revoking tokens when necessary.\n   Tool call: {\"name\": \"auth_revoke_token\"}\n\n4. `auth_update_permissions`: Update role-based permissions for a user or group. You can use this tool to modify access levels for users in your system.\n   Tool call: {\"name\": \"auth_update_permissions\"}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2434,
+        "output_tokens": 243,
+        "total_latency_ms": 1721,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:52.807Z"
+    },
+    {
+      "result_id": "50b7d9e7-256f-4ae5-8bce-dc083ad23778",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To get the history of storage usage, you can use the analytics tool to run a pre-defined report that tracks storage usage over time. Here's an example JSON call:\n\n```json\n[\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"storage_usage\",\n    \"date_range\": \"last_30d\",\n    \"format\": \"csv\"\n  }}\n]\n```\n\nThis call will return a CSV report containing the storage usage data for the last 30 days. You can adjust the date range and format as needed to suit your requirements.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "storage_usage",
+            "date_range": "last_30d",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2428,
+        "output_tokens": 141,
+        "total_latency_ms": 1017,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:41:53.927Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5866666666666667,
+        "ci95": [
+          0.5236238380947751,
+          0.7583239827618451
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.65,
+        "ci95": [
+          0.5236238380947751,
+          0.7583239827618451
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.49166666666666664,
+        "ci95": [
+          0.42491714548981496,
+          0.6690654614623918
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.45809523809523817,
+        "ci95": [
+          0.42491714548981496,
+          0.6690654614623918
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.55,
+        "ci95": [
+          0.42491714548981496,
+          0.6690654614623918
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.32023809523809527,
+        "ci95": [
+          0.2856930300376551,
+          0.5263417560579315
+        ]
+      },
+      "arr": 0.780844155844156,
+      "token_savings_pct": 65.52455585231958,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

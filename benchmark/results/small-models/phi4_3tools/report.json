@@ -1,0 +1,3841 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Phi-4"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-03T07:25:27.801Z",
+    "end_time": "2026-03-03T07:28:52.614Z",
+    "duration_ms": 204813
+  },
+  "results": [
+    {
+      "result_id": "2080f784-530b-41df-b9b8-aa8e0b3f9a50",
+      "task_id": "tab-D-ts-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 655,
+        "output_tokens": 34,
+        "total_latency_ms": 9124,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:39.071Z"
+    },
+    {
+      "result_id": "65b86d05-3894-4ea0-8eec-942bf13fc8aa",
+      "task_id": "tab-D-ts-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 658,
+        "output_tokens": 20,
+        "total_latency_ms": 308,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:39.444Z"
+    },
+    {
+      "result_id": "3bfd6fe8-1395-4ef0-b47b-cd806d81719d",
+      "task_id": "tab-D-ts-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 655,
+        "output_tokens": 20,
+        "total_latency_ms": 659,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:40.173Z"
+    },
+    {
+      "result_id": "5e228167-2201-4831-af20-5cfaf0ff3659",
+      "task_id": "tab-D-ts-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 667,
+        "output_tokens": 34,
+        "total_latency_ms": 485,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:40.718Z"
+    },
+    {
+      "result_id": "90052974-8336-46fb-974a-fdccbd686c6a",
+      "task_id": "tab-D-ts-005",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 668,
+        "output_tokens": 20,
+        "total_latency_ms": 309,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:41.096Z"
+    },
+    {
+      "result_id": "74b380b7-221f-41b9-875a-8131d172119d",
+      "task_id": "tab-D-ts-006",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 659,
+        "output_tokens": 20,
+        "total_latency_ms": 313,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:41.465Z"
+    },
+    {
+      "result_id": "b6cd1493-6fcb-43c3-9017-bffca1b7dc2d",
+      "task_id": "tab-D-ts-007",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 666,
+        "output_tokens": 34,
+        "total_latency_ms": 491,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:42.017Z"
+    },
+    {
+      "result_id": "83293303-9bcb-4797-bea5-0e7910342d31",
+      "task_id": "tab-D-ts-008",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 667,
+        "output_tokens": 40,
+        "total_latency_ms": 559,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:42.645Z"
+    },
+    {
+      "result_id": "8a637ae9-90b4-4506-a63f-cfccf8c7bec2",
+      "task_id": "tab-D-mt-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 666,
+        "output_tokens": 40,
+        "total_latency_ms": 560,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:43.265Z"
+    },
+    {
+      "result_id": "bafb9097-296d-4725-9637-d8269c0868c5",
+      "task_id": "tab-D-mt-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 669,
+        "output_tokens": 40,
+        "total_latency_ms": 561,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:43.892Z"
+    },
+    {
+      "result_id": "61493ef4-6587-4ec5-91e6-917b7c3127e6",
+      "task_id": "tab-D-mt-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"\", \"filters\": {}, \"format\": \"json\"}}\n```\n\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {},
+              "user_id": ""
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value",
+              "date_range": "",
+              "filters": {},
+              "format": "json"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": true,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4666666666666666,
+        "overall": 0.4666666666666666
+      },
+      "metrics": {
+        "input_tokens": 683,
+        "output_tokens": 111,
+        "total_latency_ms": 1468,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:45.429Z"
+    },
+    {
+      "result_id": "e5f8bbdb-e61f-4f1f-8370-ab85bcc35f42",
+      "task_id": "tab-D-mt-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}\n```\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value",
+              "date_range": "last_7d",
+              "filters": {},
+              "format": "json"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {},
+              "user_id": ""
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6333333333333333,
+        "overall": 0.6333333333333333
+      },
+      "metrics": {
+        "input_tokens": 683,
+        "output_tokens": 102,
+        "total_latency_ms": 1349,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:46.848Z"
+    },
+    {
+      "result_id": "0b14795b-56a2-4908-809f-6b4214433b6c",
+      "task_id": "tab-D-pe-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 657,
+        "output_tokens": 20,
+        "total_latency_ms": 305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:47.214Z"
+    },
+    {
+      "result_id": "933284b6-8a7c-4a76-b8f1-380f7b080532",
+      "task_id": "tab-D-pe-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 658,
+        "output_tokens": 21,
+        "total_latency_ms": 321,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:47.605Z"
+    },
+    {
+      "result_id": "e5adc5db-9b23-4bc6-9956-d96a560be9ca",
+      "task_id": "tab-D-pe-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 675,
+        "output_tokens": 39,
+        "total_latency_ms": 548,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:48.223Z"
+    },
+    {
+      "result_id": "46ee5eea-f071-4509-b565-f44f45194089",
+      "task_id": "tab-D-pe-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 674,
+        "output_tokens": 44,
+        "total_latency_ms": 614,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:48.898Z"
+    },
+    {
+      "result_id": "dfc76a6b-e6ab-4b20-b2d9-c5786af1f15e",
+      "task_id": "tab-D-nt-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The square root of 144 is 12.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 646,
+        "output_tokens": 11,
+        "total_latency_ms": 193,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:49.156Z"
+    },
+    {
+      "result_id": "a015133a-1e8b-4da4-a0ac-3de189ebfa15",
+      "task_id": "tab-D-nt-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The boiling point of water in Celsius is 100 degrees at standard atmospheric pressure (1 atmosphere or 101.3 kPa).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 647,
+        "output_tokens": 27,
+        "total_latency_ms": 397,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:49.607Z"
+    },
+    {
+      "result_id": "9ed7afb2-f088-4fb1-8695-a14efd94b05d",
+      "task_id": "tab-D-nt-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "When comparing different analytics approaches, it's important to consider various factors such as data sources, methodologies, tools used, and the specific goals of the analysis. Here are some common analytics approaches along with their pros and cons:\n\n### 1. Descriptive Analytics\n\n**Pros:**\n- **Simplicity:** Easy to understand and implement.\n- **Historical Insight:** Provides a clear picture of past performance.\n- **Quick Insights:** Useful for generating reports and dashboards.\n\n**Cons:**\n- **Limited Predictive Power:** Does not predict future trends or behaviors.\n- **Reactive Nature:** Focuses on what has happened rather than why it happened.\n\n### 2. Diagnostic Analytics\n\n**Pros:**\n- **Deeper Understanding:** Helps identify the reasons behind past performance.\n- **Problem Solving:** Useful for troubleshooting and identifying root causes.\n\n**Cons:**\n- **Complexity:** Requires more sophisticated tools and techniques.\n- **Time-Consuming:** Can be resource-intensive to analyze data deeply.\n\n### 3. Predictive Analytics\n\n**Pros:**\n- **Future Insights:** Helps forecast future trends and behaviors.\n- **Proactive Decision Making:** Enables businesses to anticipate changes and act accordingly.\n\n**Cons:**\n- **Data Dependency:** Requires large amounts of high-quality data.\n- **Complex Models:** Involves complex algorithms and statistical models.\n\n### 4. Prescriptive Analytics\n\n**Pros:**\n- **Actionable Recommendations:** Provides specific recommendations for decision-making.\n- **Optimization:** Helps in optimizing processes and strategies.\n\n**Cons:**\n- **High Complexity:** Requires advanced analytics capabilities and expertise.\n- **Implementation Challenges:** Can be difficult to implement and integrate into existing systems.\n\n### 5. Real-Time Analytics\n\n**Pros:**\n- **Immediate Insights:** Provides up-to-the-minute data analysis.\n- **Responsive Actions:** Enables quick responses to changing conditions.\n\n**Cons:**\n- **Technical Demands:** Requires robust infrastructure and technology.\n- **Data Overload:** Can lead to information overload if not managed properly.\n\n### 6. Big Data Analytics\n\n**Pros:**\n- **Comprehensive Analysis:** Handles vast amounts of structured and unstructured data.\n- **Enhanced Insights:** Provides deeper insights through advanced analytics techniques.\n\n**Cons:**\n- **Resource Intensive:** Requires significant computational power and storage.\n- **Complexity in Management:** Managing and processing large datasets can be challenging.\n\n### 7. Machine Learning Analytics\n\n**Pros:**\n- **Automation:** Automates data analysis processes.\n- **Adaptive Models:** Continuously improves with more data.\n\n**Cons:**\n- **Skill Requirement:** Requires expertise in machine learning techniques.\n- **Data Quality Sensitivity:** Highly dependent on the quality of input data.\n\nEach approach has its own strengths and weaknesses, and the choice depends on the specific needs and goals of the organization. Often, a combination of these approaches is used to achieve comprehensive analytics solutions.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 647,
+        "output_tokens": 593,
+        "total_latency_ms": 7542,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:25:57.216Z"
+    },
+    {
+      "result_id": "3291ca20-5b42-49a7-b27c-19a5c3e7a99f",
+      "task_id": "tab-D-nt-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Code reviews are a critical part of software development, ensuring code quality, knowledge sharing, and team collaboration. Here’s a comparison of some common code review approaches:\n\n### 1. **Pair Programming**\n**Pros:**\n- Immediate feedback as code is written.\n- High level of collaboration and knowledge transfer.\n- Reduces the likelihood of bugs since two developers are involved.\n\n**Cons:**\n- Can be resource-intensive, requiring two developers for one task.\n- May lead to dependency on a specific pair, reducing flexibility.\n- Not always feasible for large teams or complex projects.\n\n### 2. **Pull Request (PR) Reviews**\n**Pros:**\n- Asynchronous process allows reviewers to provide feedback at their convenience.\n- Facilitates code review across distributed teams.\n- Integrates well with version control systems like GitHub and GitLab.\n\n**Cons:**\n- Can lead to bottlenecks if not managed properly, delaying merges.\n- Risk of superficial reviews due to time constraints or reviewer fatigue.\n- May result in fragmented feedback if multiple reviewers are involved.\n\n### 3. **Over-the-Shoulder Reviews**\n**Pros:**\n- Informal and quick, allowing for immediate feedback.\n- Encourages open communication and mentorship within the team.\n- Can be less intimidating than formal reviews.\n\n**Cons:**\n- May lack structure, leading to inconsistent review quality.\n- Can be disruptive if not scheduled properly.\n- Limited documentation of feedback compared to PRs.\n\n### 4. **Automated Code Review Tools**\n**Pros:**\n- Provides consistent and objective analysis of code quality.\n- Can catch issues that humans might overlook, such as security vulnerabilities.\n- Saves time by automating repetitive checks.\n\n**Cons:**\n- May produce false positives or miss context-specific nuances.\n- Requires initial setup and configuration to align with project standards.\n- Cannot replace the need for human judgment in complex scenarios.\n\n### 5. **Formal Code Review Meetings**\n**Pros:**\n- Structured environment ensures thorough review of code.\n- Encourages detailed discussion and consensus-building.\n- Provides a platform for knowledge sharing and team alignment.\n\n**Cons:**\n- Time-consuming, requiring scheduling and coordination.\n- Can be intimidating for junior developers or those less confident in their skills.\n- May lead to groupthink if not managed with diverse perspectives.\n\nEach approach has its strengths and weaknesses, and the best choice often depends on the team’s size, culture, and specific project needs. Combining multiple approaches can also provide a balanced solution, leveraging the benefits of each while mitigating their drawbacks.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 648,
+        "output_tokens": 519,
+        "total_latency_ms": 6663,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:03.944Z"
+    },
+    {
+      "result_id": "6ccda8f5-eae0-410a-abee-dda24767cd90",
+      "task_id": "tab-D-ts-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 655,
+        "output_tokens": 34,
+        "total_latency_ms": 480,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:04.489Z"
+    },
+    {
+      "result_id": "c85ce7f9-8a98-44df-956f-96f22e5b3179",
+      "task_id": "tab-D-ts-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 658,
+        "output_tokens": 20,
+        "total_latency_ms": 304,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:04.859Z"
+    },
+    {
+      "result_id": "24ccc90d-fcc6-4f70-a43c-d652a3c3a277",
+      "task_id": "tab-D-ts-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 655,
+        "output_tokens": 20,
+        "total_latency_ms": 305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:05.230Z"
+    },
+    {
+      "result_id": "6440cafc-db3a-4eab-9878-6e2b7cbb082d",
+      "task_id": "tab-D-ts-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 667,
+        "output_tokens": 34,
+        "total_latency_ms": 486,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:05.783Z"
+    },
+    {
+      "result_id": "f3203919-37e8-4f5f-8076-a8e1bbac6259",
+      "task_id": "tab-D-ts-005",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 668,
+        "output_tokens": 20,
+        "total_latency_ms": 305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:06.151Z"
+    },
+    {
+      "result_id": "a050658a-3228-4957-a606-1f45824e8a4d",
+      "task_id": "tab-D-ts-006",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 659,
+        "output_tokens": 20,
+        "total_latency_ms": 305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:06.518Z"
+    },
+    {
+      "result_id": "f5b708cd-04f5-40ca-8d61-836d6761ba20",
+      "task_id": "tab-D-ts-007",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 666,
+        "output_tokens": 34,
+        "total_latency_ms": 487,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:07.060Z"
+    },
+    {
+      "result_id": "4ed8209a-0594-4c93-bf21-999e27cd8bfd",
+      "task_id": "tab-D-ts-008",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 667,
+        "output_tokens": 40,
+        "total_latency_ms": 559,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:07.677Z"
+    },
+    {
+      "result_id": "869cd5ef-907a-4fa6-94cf-1b729e57fce6",
+      "task_id": "tab-D-mt-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 666,
+        "output_tokens": 40,
+        "total_latency_ms": 559,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:08.297Z"
+    },
+    {
+      "result_id": "a009d0b6-514f-4da1-92f1-eebc20a1f616",
+      "task_id": "tab-D-mt-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 669,
+        "output_tokens": 40,
+        "total_latency_ms": 558,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:08.923Z"
+    },
+    {
+      "result_id": "dd1c91dd-7c21-415a-8098-c2e93916e1bc",
+      "task_id": "tab-D-mt-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"\", \"filters\": {}, \"format\": \"json\"}}\n```\n\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {},
+              "user_id": ""
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value",
+              "date_range": "",
+              "filters": {},
+              "format": "json"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": true,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4666666666666666,
+        "overall": 0.4666666666666666
+      },
+      "metrics": {
+        "input_tokens": 683,
+        "output_tokens": 111,
+        "total_latency_ms": 1455,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:10.447Z"
+    },
+    {
+      "result_id": "cd239333-def6-4a8d-ad59-4921a02a4185",
+      "task_id": "tab-D-mt-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}\n```\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value",
+              "date_range": "last_7d",
+              "filters": {},
+              "format": "json"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {},
+              "user_id": ""
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6333333333333333,
+        "overall": 0.6333333333333333
+      },
+      "metrics": {
+        "input_tokens": 683,
+        "output_tokens": 102,
+        "total_latency_ms": 1363,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:11.878Z"
+    },
+    {
+      "result_id": "7168f3ea-5361-4ee6-98ac-52b517b0cdbd",
+      "task_id": "tab-D-pe-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 657,
+        "output_tokens": 20,
+        "total_latency_ms": 313,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:12.257Z"
+    },
+    {
+      "result_id": "24867b64-8203-4a3f-b409-b87fb23f6a40",
+      "task_id": "tab-D-pe-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 658,
+        "output_tokens": 21,
+        "total_latency_ms": 319,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:12.640Z"
+    },
+    {
+      "result_id": "a2e8529b-8fcc-4865-b7ef-7672924bb045",
+      "task_id": "tab-D-pe-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 675,
+        "output_tokens": 39,
+        "total_latency_ms": 547,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:13.255Z"
+    },
+    {
+      "result_id": "96e22c41-b641-4586-9e4a-440f6825ed0e",
+      "task_id": "tab-D-pe-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 674,
+        "output_tokens": 44,
+        "total_latency_ms": 612,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:13.931Z"
+    },
+    {
+      "result_id": "a1f42ed8-6856-49dc-80ea-cd0a7505b435",
+      "task_id": "tab-D-nt-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The square root of 144 is 12.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 646,
+        "output_tokens": 11,
+        "total_latency_ms": 189,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:14.179Z"
+    },
+    {
+      "result_id": "030caf62-7bec-422e-b9ff-f9f6bb4e23a3",
+      "task_id": "tab-D-nt-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The boiling point of water in Celsius is 100 degrees at standard atmospheric pressure (1 atmosphere or 101.3 kPa).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 647,
+        "output_tokens": 27,
+        "total_latency_ms": 389,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:14.635Z"
+    },
+    {
+      "result_id": "35b0314d-ae3e-4f12-8881-769e9e140b22",
+      "task_id": "tab-D-nt-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "When comparing different analytics approaches, it's important to consider various factors such as data sources, methodologies, tools used, and the specific goals of the analysis. Here are some common analytics approaches along with their pros and cons:\n\n### 1. Descriptive Analytics\n\n**Pros:**\n- **Simplicity:** Easy to understand and implement.\n- **Historical Insight:** Provides a clear picture of past performance.\n- **Quick Insights:** Useful for generating reports and dashboards.\n\n**Cons:**\n- **Limited Predictive Power:** Does not predict future trends or behaviors.\n- **Reactive Nature:** Focuses on what has happened rather than why it happened.\n\n### 2. Diagnostic Analytics\n\n**Pros:**\n- **Deeper Understanding:** Helps identify the reasons behind past performance.\n- **Problem Solving:** Useful for troubleshooting and identifying root causes.\n\n**Cons:**\n- **Complexity:** Requires more sophisticated tools and techniques.\n- **Time-Consuming:** Can be resource-intensive to analyze data deeply.\n\n### 3. Predictive Analytics\n\n**Pros:**\n- **Future Insights:** Helps forecast future trends and behaviors.\n- **Proactive Decision Making:** Enables businesses to anticipate changes and act accordingly.\n\n**Cons:**\n- **Data Dependency:** Requires large amounts of high-quality data.\n- **Complex Models:** Involves complex algorithms and statistical models.\n\n### 4. Prescriptive Analytics\n\n**Pros:**\n- **Actionable Recommendations:** Provides specific recommendations for decision-making.\n- **Optimization:** Helps in optimizing processes and strategies.\n\n**Cons:**\n- **High Complexity:** Requires advanced analytics capabilities and expertise.\n- **Implementation Challenges:** Can be difficult to implement and integrate into existing systems.\n\n### 5. Real-Time Analytics\n\n**Pros:**\n- **Immediate Insights:** Provides up-to-the-minute data analysis.\n- **Responsive Actions:** Enables quick responses to changing conditions.\n\n**Cons:**\n- **Technical Demands:** Requires robust infrastructure and technology.\n- **Data Overload:** Can lead to information overload if not managed properly.\n\n### 6. Big Data Analytics\n\n**Pros:**\n- **Comprehensive Analysis:** Handles vast amounts of structured and unstructured data.\n- **Enhanced Insights:** Provides deeper insights through advanced analytics techniques.\n\n**Cons:**\n- **Resource Intensive:** Requires significant computational power and storage.\n- **Complexity in Management:** Managing and processing large datasets can be challenging.\n\n### 7. Machine Learning Analytics\n\n**Pros:**\n- **Automation:** Automates data analysis processes.\n- **Adaptive Models:** Continuously improves with more data.\n\n**Cons:**\n- **Skill Requirement:** Requires expertise in machine learning techniques.\n- **Data Quality Sensitivity:** Highly dependent on the quality of input data.\n\nEach approach has its own strengths and weaknesses, and the choice depends on the specific needs and goals of the organization. Often, a combination of these approaches is used to achieve comprehensive analytics solutions.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 647,
+        "output_tokens": 593,
+        "total_latency_ms": 7617,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:22.317Z"
+    },
+    {
+      "result_id": "fadacd4c-0bea-4316-8027-88f1a05720b5",
+      "task_id": "tab-D-nt-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Code reviews are a critical part of software development, ensuring code quality, knowledge sharing, and team collaboration. Here’s a comparison of some common code review approaches:\n\n### 1. **Pair Programming**\n**Pros:**\n- Immediate feedback as code is written.\n- High level of collaboration and knowledge transfer.\n- Reduces the likelihood of bugs since two developers are involved.\n\n**Cons:**\n- Can be resource-intensive, requiring two developers for one task.\n- May lead to dependency on a specific pair, reducing flexibility.\n- Not always feasible for large teams or complex projects.\n\n### 2. **Pull Request (PR) Reviews**\n**Pros:**\n- Asynchronous process allows reviewers to provide feedback at their convenience.\n- Facilitates code review across distributed teams.\n- Integrates well with version control systems like GitHub and GitLab.\n\n**Cons:**\n- Can lead to bottlenecks if not managed properly, delaying merges.\n- Risk of superficial reviews due to time constraints or reviewer fatigue.\n- May result in fragmented feedback if multiple reviewers are involved.\n\n### 3. **Over-the-Shoulder Reviews**\n**Pros:**\n- Informal and quick, allowing for immediate feedback.\n- Encourages open communication and mentorship within the team.\n- Can be less intimidating than formal reviews.\n\n**Cons:**\n- May lack structure, leading to inconsistent review quality.\n- Can be disruptive if not scheduled properly.\n- Limited documentation of feedback compared to PRs.\n\n### 4. **Automated Code Review Tools**\n**Pros:**\n- Provides consistent and objective analysis of code quality.\n- Can catch issues that humans might overlook, such as security vulnerabilities.\n- Saves time by automating repetitive checks.\n\n**Cons:**\n- May produce false positives or miss context-specific nuances.\n- Requires initial setup and configuration to align with project standards.\n- Cannot replace the need for human judgment in complex scenarios.\n\n### 5. **Formal Code Review Meetings**\n**Pros:**\n- Structured environment ensures thorough review of code.\n- Encourages detailed discussion and consensus-building.\n- Provides a platform for knowledge sharing and team alignment.\n\n**Cons:**\n- Time-consuming, requiring scheduling and coordination.\n- Can be intimidating for junior developers or those less confident in their skills.\n- May lead to groupthink if not managed with diverse perspectives.\n\nEach approach has its strengths and weaknesses, and the best choice often depends on the team’s size, culture, and specific project needs. Combining multiple approaches can also provide a balanced solution, leveraging the benefits of each while mitigating their drawbacks.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 648,
+        "output_tokens": 519,
+        "total_latency_ms": 6668,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:29.052Z"
+    },
+    {
+      "result_id": "8a3ea62c-b61a-42f9-9bcc-6e0cebaa2dd9",
+      "task_id": "tab-D-ts-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 655,
+        "output_tokens": 34,
+        "total_latency_ms": 488,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:29.603Z"
+    },
+    {
+      "result_id": "414d2c64-467a-4b4d-b5e3-9d391dacc048",
+      "task_id": "tab-D-ts-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 658,
+        "output_tokens": 20,
+        "total_latency_ms": 313,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:29.981Z"
+    },
+    {
+      "result_id": "1fafb9b7-257a-4e6d-b27d-56830ece5a28",
+      "task_id": "tab-D-ts-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 655,
+        "output_tokens": 20,
+        "total_latency_ms": 310,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:30.359Z"
+    },
+    {
+      "result_id": "013fd59d-3add-436a-ae8a-38b5aa0221a9",
+      "task_id": "tab-D-ts-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 667,
+        "output_tokens": 34,
+        "total_latency_ms": 491,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:30.915Z"
+    },
+    {
+      "result_id": "26056198-04df-4881-a633-2eb1e2e1b594",
+      "task_id": "tab-D-ts-005",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 668,
+        "output_tokens": 20,
+        "total_latency_ms": 308,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:31.281Z"
+    },
+    {
+      "result_id": "abae514d-6891-410e-aac0-04d83bc66f75",
+      "task_id": "tab-D-ts-006",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 659,
+        "output_tokens": 20,
+        "total_latency_ms": 311,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:31.661Z"
+    },
+    {
+      "result_id": "c2a697ce-e9ad-43ae-9337-e451617849ff",
+      "task_id": "tab-D-ts-007",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 666,
+        "output_tokens": 34,
+        "total_latency_ms": 494,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:32.221Z"
+    },
+    {
+      "result_id": "417e8059-b023-4f22-bcb6-b9a4b01362da",
+      "task_id": "tab-D-ts-008",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 667,
+        "output_tokens": 40,
+        "total_latency_ms": 573,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:32.849Z"
+    },
+    {
+      "result_id": "66803338-25e2-4e87-8b74-8a85782a0d45",
+      "task_id": "tab-D-mt-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 666,
+        "output_tokens": 40,
+        "total_latency_ms": 572,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:33.476Z"
+    },
+    {
+      "result_id": "bf87dcea-20ee-4cb8-aa65-bad0287f2e38",
+      "task_id": "tab-D-mt-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 669,
+        "output_tokens": 40,
+        "total_latency_ms": 569,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:34.103Z"
+    },
+    {
+      "result_id": "f2e2a472-c5a7-47d5-b474-7fa52c0bf264",
+      "task_id": "tab-D-mt-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"\", \"filters\": {}, \"format\": \"json\"}}\n```\n\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {},
+              "user_id": ""
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value",
+              "date_range": "",
+              "filters": {},
+              "format": "json"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": true,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4666666666666666,
+        "overall": 0.4666666666666666
+      },
+      "metrics": {
+        "input_tokens": 683,
+        "output_tokens": 111,
+        "total_latency_ms": 1469,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:35.642Z"
+    },
+    {
+      "result_id": "a40690fe-8a07-4b2b-854d-d472891a0150",
+      "task_id": "tab-D-mt-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}\n```\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value",
+              "date_range": "last_7d",
+              "filters": {},
+              "format": "json"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {},
+              "user_id": ""
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6333333333333333,
+        "overall": 0.6333333333333333
+      },
+      "metrics": {
+        "input_tokens": 683,
+        "output_tokens": 102,
+        "total_latency_ms": 1355,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:37.055Z"
+    },
+    {
+      "result_id": "2c0e0c61-bde4-410f-bb5b-a69e420d92ac",
+      "task_id": "tab-D-pe-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 657,
+        "output_tokens": 20,
+        "total_latency_ms": 307,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:37.419Z"
+    },
+    {
+      "result_id": "674420f1-8739-4ea7-8e96-a036803716b1",
+      "task_id": "tab-D-pe-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 658,
+        "output_tokens": 21,
+        "total_latency_ms": 318,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:37.795Z"
+    },
+    {
+      "result_id": "945e98b9-ca32-4c36-b1a8-097e7172de8a",
+      "task_id": "tab-D-pe-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 675,
+        "output_tokens": 39,
+        "total_latency_ms": 551,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:38.415Z"
+    },
+    {
+      "result_id": "d9695f4d-61be-4faa-a661-7bbccc76c69d",
+      "task_id": "tab-D-pe-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 674,
+        "output_tokens": 44,
+        "total_latency_ms": 612,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:39.090Z"
+    },
+    {
+      "result_id": "286272d8-6ec2-4a2e-9d82-a28f8cebe218",
+      "task_id": "tab-D-nt-001",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The square root of 144 is 12.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 646,
+        "output_tokens": 11,
+        "total_latency_ms": 199,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:39.357Z"
+    },
+    {
+      "result_id": "79958145-1410-4a6e-b325-1e3eb39b2158",
+      "task_id": "tab-D-nt-002",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The boiling point of water in Celsius is 100 degrees at standard atmospheric pressure (1 atmosphere or 101.3 kPa).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 647,
+        "output_tokens": 27,
+        "total_latency_ms": 396,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:39.820Z"
+    },
+    {
+      "result_id": "dbd427ee-1b89-4623-a0b6-13bdca46f501",
+      "task_id": "tab-D-nt-003",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "When comparing different analytics approaches, it's important to consider various factors such as data sources, methodologies, tools used, and the specific goals of the analysis. Here are some common analytics approaches along with their pros and cons:\n\n### 1. Descriptive Analytics\n\n**Pros:**\n- **Simplicity:** Easy to understand and implement.\n- **Historical Insight:** Provides a clear picture of past performance.\n- **Quick Insights:** Useful for generating reports and dashboards.\n\n**Cons:**\n- **Limited Predictive Power:** Does not predict future trends or behaviors.\n- **Reactive Nature:** Focuses on what has happened rather than why it happened.\n\n### 2. Diagnostic Analytics\n\n**Pros:**\n- **Deeper Understanding:** Helps identify the reasons behind past performance.\n- **Problem Solving:** Useful for troubleshooting and identifying root causes.\n\n**Cons:**\n- **Complexity:** Requires more sophisticated tools and techniques.\n- **Time-Consuming:** Can be resource-intensive to analyze data deeply.\n\n### 3. Predictive Analytics\n\n**Pros:**\n- **Future Insights:** Helps forecast future trends and behaviors.\n- **Proactive Decision Making:** Enables businesses to anticipate changes and act accordingly.\n\n**Cons:**\n- **Data Dependency:** Requires large amounts of high-quality data.\n- **Complex Models:** Involves complex algorithms and statistical models.\n\n### 4. Prescriptive Analytics\n\n**Pros:**\n- **Actionable Recommendations:** Provides specific recommendations for decision-making.\n- **Optimization:** Helps in optimizing processes and strategies.\n\n**Cons:**\n- **High Complexity:** Requires advanced analytics capabilities and expertise.\n- **Implementation Challenges:** Can be difficult to implement and integrate into existing systems.\n\n### 5. Real-Time Analytics\n\n**Pros:**\n- **Immediate Insights:** Provides up-to-the-minute data analysis.\n- **Responsive Actions:** Enables quick responses to changing conditions.\n\n**Cons:**\n- **Technical Demands:** Requires robust infrastructure and technology.\n- **Data Overload:** Can lead to information overload if not managed properly.\n\n### 6. Big Data Analytics\n\n**Pros:**\n- **Comprehensive Analysis:** Handles vast amounts of structured and unstructured data.\n- **Enhanced Insights:** Provides deeper insights through advanced analytics techniques.\n\n**Cons:**\n- **Resource Intensive:** Requires significant computational power and storage.\n- **Complexity in Management:** Managing and processing large datasets can be challenging.\n\n### 7. Machine Learning Analytics\n\n**Pros:**\n- **Automation:** Automates data analysis processes.\n- **Adaptive Models:** Continuously improves with more data.\n\n**Cons:**\n- **Skill Requirement:** Requires expertise in machine learning techniques.\n- **Data Quality Sensitivity:** Highly dependent on the quality of input data.\n\nEach approach has its own strengths and weaknesses, and the choice depends on the specific needs and goals of the organization. Often, a combination of these approaches is used to achieve comprehensive analytics solutions.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 647,
+        "output_tokens": 593,
+        "total_latency_ms": 7602,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:47.486Z"
+    },
+    {
+      "result_id": "8d7ef9f2-ba3e-493f-a461-2b0a8fe9fa4b",
+      "task_id": "tab-D-nt-004",
+      "model": "Phi-4",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Code reviews are a critical part of software development, ensuring code quality, knowledge sharing, and team collaboration. Here’s a comparison of some common code review approaches:\n\n### 1. **Pair Programming**\n**Pros:**\n- Immediate feedback as code is written.\n- High level of collaboration and knowledge transfer.\n- Reduces the likelihood of bugs since two developers are involved.\n\n**Cons:**\n- Can be resource-intensive, requiring two developers for one task.\n- May lead to dependency on a specific pair, reducing flexibility.\n- Not always feasible for large teams or complex projects.\n\n### 2. **Pull Request (PR) Reviews**\n**Pros:**\n- Asynchronous process allows reviewers to provide feedback at their convenience.\n- Facilitates code review across distributed teams.\n- Integrates well with version control systems like GitHub and GitLab.\n\n**Cons:**\n- Can lead to bottlenecks if not managed properly, delaying merges.\n- Risk of superficial reviews due to time constraints or reviewer fatigue.\n- May result in fragmented feedback if multiple reviewers are involved.\n\n### 3. **Over-the-Shoulder Reviews**\n**Pros:**\n- Informal and quick, allowing for immediate feedback.\n- Encourages open communication and mentorship within the team.\n- Can be less intimidating than formal reviews.\n\n**Cons:**\n- May lack structure, leading to inconsistent review quality.\n- Can be disruptive if not scheduled properly.\n- Limited documentation of feedback compared to PRs.\n\n### 4. **Automated Code Review Tools**\n**Pros:**\n- Provides consistent and objective analysis of code quality.\n- Can catch issues that humans might overlook, such as security vulnerabilities.\n- Saves time by automating repetitive checks.\n\n**Cons:**\n- May produce false positives or miss context-specific nuances.\n- Requires initial setup and configuration to align with project standards.\n- Cannot replace the need for human judgment in complex scenarios.\n\n### 5. **Formal Code Review Meetings**\n**Pros:**\n- Structured environment ensures thorough review of code.\n- Encourages detailed discussion and consensus-building.\n- Provides a platform for knowledge sharing and team alignment.\n\n**Cons:**\n- Time-consuming, requiring scheduling and coordination.\n- Can be intimidating for junior developers or those less confident in their skills.\n- May lead to groupthink if not managed with diverse perspectives.\n\nEach approach has its strengths and weaknesses, and the best choice often depends on the team’s size, culture, and specific project needs. Combining multiple approaches can also provide a balanced solution, leveraging the benefits of each while mitigating their drawbacks.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 648,
+        "output_tokens": 519,
+        "total_latency_ms": 6648,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:54.194Z"
+    },
+    {
+      "result_id": "30f40bde-5a1d-47ff-8ad6-9c9e0875122d",
+      "task_id": "tab-D-ts-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 319,
+        "output_tokens": 34,
+        "total_latency_ms": 585,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:54.847Z"
+    },
+    {
+      "result_id": "ca98dfce-bf94-405e-9d31-7d9cc38ce255",
+      "task_id": "tab-D-ts-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 322,
+        "output_tokens": 40,
+        "total_latency_ms": 564,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:55.469Z"
+    },
+    {
+      "result_id": "c1360791-9e3d-4067-8ae5-bcb4113f064e",
+      "task_id": "tab-D-ts-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 319,
+        "output_tokens": 20,
+        "total_latency_ms": 305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:55.830Z"
+    },
+    {
+      "result_id": "c4ca696b-018b-42c6-ad93-649f9c574c9e",
+      "task_id": "tab-D-ts-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 331,
+        "output_tokens": 34,
+        "total_latency_ms": 491,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:56.381Z"
+    },
+    {
+      "result_id": "a9dca2c2-3c21-44df-af90-58869744ba4b",
+      "task_id": "tab-D-ts-005",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 332,
+        "output_tokens": 40,
+        "total_latency_ms": 566,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:57.015Z"
+    },
+    {
+      "result_id": "33c9df9f-a9ff-494d-b5cf-31229eb62307",
+      "task_id": "tab-D-ts-006",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 323,
+        "output_tokens": 24,
+        "total_latency_ms": 361,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:57.436Z"
+    },
+    {
+      "result_id": "fb47a11a-f8ba-4dba-9d63-fb128b1ed550",
+      "task_id": "tab-D-ts-007",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 330,
+        "output_tokens": 34,
+        "total_latency_ms": 484,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:57.988Z"
+    },
+    {
+      "result_id": "1fbae893-84b0-4766-8aa9-7c3460f41cfd",
+      "task_id": "tab-D-ts-008",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 331,
+        "output_tokens": 40,
+        "total_latency_ms": 568,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:58.613Z"
+    },
+    {
+      "result_id": "b270f4df-48df-469f-aef0-533fe8dfc522",
+      "task_id": "tab-D-mt-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 330,
+        "output_tokens": 40,
+        "total_latency_ms": 558,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:26:59.232Z"
+    },
+    {
+      "result_id": "fec9cf6f-3c9b-458e-80a0-8e9944dec5ab",
+      "task_id": "tab-D-mt-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"text\"}}\n```\n\n(Note: The response from the first tool call would determine the specific parameters for the second tool call, which is not included here as it depends on the output of the first call.)",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 333,
+        "output_tokens": 81,
+        "total_latency_ms": 1089,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:00.391Z"
+    },
+    {
+      "result_id": "c4523a13-4076-4962-b888-ca82c04eb342",
+      "task_id": "tab-D-mt-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 347,
+        "output_tokens": 72,
+        "total_latency_ms": 976,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:01.426Z"
+    },
+    {
+      "result_id": "1cdab290-361a-4036-83bd-611351dc8da8",
+      "task_id": "tab-D-mt-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 347,
+        "output_tokens": 72,
+        "total_latency_ms": 965,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:02.461Z"
+    },
+    {
+      "result_id": "3a66b726-5f1c-48c8-9124-7b227409fff0",
+      "task_id": "tab-D-pe-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 321,
+        "output_tokens": 24,
+        "total_latency_ms": 354,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:02.873Z"
+    },
+    {
+      "result_id": "68b5bb9b-3a8d-4966-a453-331069c1156d",
+      "task_id": "tab-D-pe-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 322,
+        "output_tokens": 25,
+        "total_latency_ms": 367,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:03.298Z"
+    },
+    {
+      "result_id": "89d0db4c-7748-4b33-be9d-7dc232cdcdde",
+      "task_id": "tab-D-pe-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 339,
+        "output_tokens": 39,
+        "total_latency_ms": 550,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:03.918Z"
+    },
+    {
+      "result_id": "e9f2b570-8c96-473d-8afd-c5950818dee0",
+      "task_id": "tab-D-pe-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"last_30d\", \"filters\": {\"key\": \"value\"}, \"format\": \"text\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "last_30d",
+            "filters": {
+              "key": "value"
+            },
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 338,
+        "output_tokens": 49,
+        "total_latency_ms": 670,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:04.644Z"
+    },
+    {
+      "result_id": "e88a5326-bf52-4fbe-8e6d-42e00acfca09",
+      "task_id": "tab-D-nt-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The square root of 144 is 12.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 310,
+        "output_tokens": 11,
+        "total_latency_ms": 191,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:04.899Z"
+    },
+    {
+      "result_id": "def64791-2e0d-4134-a940-e9f5a6f4a404",
+      "task_id": "tab-D-nt-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The boiling point of water in Celsius is 100 degrees at standard atmospheric pressure (1 atmosphere or 101.3 kPa).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 311,
+        "output_tokens": 27,
+        "total_latency_ms": 387,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:05.343Z"
+    },
+    {
+      "result_id": "6513b5da-f04a-4507-b52a-66bedc5af098",
+      "task_id": "tab-D-nt-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "When comparing different analytics approaches, it's important to consider various factors such as data sources, methodologies, tools used, scalability, accuracy, cost, and ease of use. Here are some common analytics approaches along with their pros and cons:\n\n1. **Descriptive Analytics**\n   - **Pros:**\n     - Provides a clear understanding of past performance.\n     - Easy to implement using historical data.\n     - Helps in identifying trends and patterns.\n   - **Cons:**\n     - Limited to historical data, so it doesn't predict future outcomes.\n     - May not provide insights into why certain events occurred.\n\n2. **Diagnostic Analytics**\n   - **Pros:**\n     - Helps identify the root causes of past performance issues.\n     - Useful for troubleshooting and understanding anomalies.\n   - **Cons:**\n     - Can be time-consuming to analyze data deeply.\n     - Requires a good understanding of the business context.\n\n3. **Predictive Analytics**\n   - **Pros:**\n     - Uses statistical models and machine learning to forecast future events.\n     - Helps in proactive decision-making.\n   - **Cons:**\n     - Requires large datasets and advanced analytical skills.\n     - Predictions are not always accurate due to model limitations.\n\n4. **Prescriptive Analytics**\n   - **Pros:**\n     - Provides recommendations for actions based on data analysis.\n     - Can optimize decision-making processes.\n   - **Cons:**\n     - Complex to implement and requires sophisticated algorithms.\n     - May require significant computational resources.\n\n5. **Real-time Analytics**\n   - **Pros:**\n     - Offers immediate insights, allowing for quick responses.\n     - Useful in dynamic environments where conditions change rapidly.\n   - **Cons:**\n     - Requires robust infrastructure to handle continuous data streams.\n     - Can be challenging to ensure data accuracy and consistency.\n\n6. **Big Data Analytics**\n   - **Pros:**\n     - Handles large volumes of structured and unstructured data.\n     - Can uncover hidden patterns and insights from diverse data sources.\n   - **Cons:**\n     - Requires specialized tools and technologies.\n     - Data privacy and security can be challenging to manage.\n\n7. **Business Intelligence (BI) Tools**\n   - **Pros:**\n     - User-friendly dashboards and reports for easy interpretation.\n     - Integrates with various data sources for comprehensive analysis.\n   - **Cons:**\n     - May not support advanced analytics capabilities like machine learning.\n     - Can be costly to implement and maintain.\n\nEach approach has its own strengths and weaknesses, and the choice depends on the specific needs and goals of an organization.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 311,
+        "output_tokens": 521,
+        "total_latency_ms": 6649,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:12.053Z"
+    },
+    {
+      "result_id": "78dd5caf-bd85-4961-a169-08cbbdf6a1e0",
+      "task_id": "tab-D-nt-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Code review is a critical part of software development, ensuring code quality, knowledge sharing, and team collaboration. Here are some common code review approaches along with their pros and cons:\n\n### 1. **Pair Programming**\n**Pros:**\n- Immediate feedback as the code is written.\n- High level of collaboration and knowledge transfer between developers.\n- Reduces the likelihood of introducing bugs.\n\n**Cons:**\n- Can be resource-intensive, requiring two developers for one task.\n- May lead to dependency on a specific pair, reducing flexibility in team assignments.\n- Potential for reduced individual productivity due to constant interaction.\n\n### 2. **Pull Request (PR) Reviews**\n**Pros:**\n- Allows asynchronous review, accommodating different schedules and time zones.\n- Provides a documented history of changes and discussions.\n- Facilitates code ownership and accountability.\n\n**Cons:**\n- Can lead to bottlenecks if reviewers are overloaded with requests.\n- May result in delayed feedback compared to real-time methods like pair programming.\n- Risk of superficial reviews due to reviewer fatigue or lack of context.\n\n### 3. **Over-the-Shoulder Reviews**\n**Pros:**\n- Informal and flexible, allowing for spontaneous discussions.\n- Encourages mentorship and knowledge sharing within the team.\n- Can be quick and efficient for small changes.\n\n**Cons:**\n- Lacks a formal record of feedback and decisions.\n- May not cover all aspects of the code thoroughly.\n- Dependent on availability and willingness of reviewers to participate.\n\n### 4. **Automated Code Review Tools**\n**Pros:**\n- Provides consistent and unbiased analysis of code quality.\n- Can quickly identify common issues like syntax errors, style violations, or security vulnerabilities.\n- Reduces manual effort for repetitive checks.\n\n**Cons:**\n- May miss context-specific issues that require human judgment.\n- Can generate false positives/negatives, leading to unnecessary work or overlooked problems.\n- Requires initial setup and maintenance of tool configurations.\n\n### 5. **Formal Code Review Meetings**\n**Pros:**\n- Structured environment for in-depth analysis and discussion.\n- Encourages team-wide involvement and diverse perspectives.\n- Provides a clear record of decisions and action items.\n\n**Cons:**\n- Time-consuming, requiring scheduling and coordination.\n- May lead to groupthink or pressure to conform to majority opinions.\n- Can be intimidating for junior developers, discouraging open feedback.\n\nEach approach has its strengths and weaknesses, and the best choice often depends on the team's size, culture, project requirements, and specific goals. Many teams use a combination of these methods to balance their benefits and mitigate drawbacks.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 312,
+        "output_tokens": 529,
+        "total_latency_ms": 6775,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:18.897Z"
+    },
+    {
+      "result_id": "6c321857-d6ae-4cf1-a6fa-49be802889f7",
+      "task_id": "tab-D-ts-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 319,
+        "output_tokens": 34,
+        "total_latency_ms": 481,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:19.436Z"
+    },
+    {
+      "result_id": "28490e11-518e-4da9-a253-d019f35a57f5",
+      "task_id": "tab-D-ts-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 322,
+        "output_tokens": 40,
+        "total_latency_ms": 554,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:20.046Z"
+    },
+    {
+      "result_id": "6cbad402-9528-47fa-abe7-fddf514f7f36",
+      "task_id": "tab-D-ts-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 319,
+        "output_tokens": 20,
+        "total_latency_ms": 306,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:20.416Z"
+    },
+    {
+      "result_id": "85afc93e-1ba1-4c3e-84f2-8eaae00cfb07",
+      "task_id": "tab-D-ts-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 331,
+        "output_tokens": 34,
+        "total_latency_ms": 482,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:20.964Z"
+    },
+    {
+      "result_id": "1d47bfc1-9953-4a0c-80cc-1f12b5a93d6c",
+      "task_id": "tab-D-ts-005",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 332,
+        "output_tokens": 40,
+        "total_latency_ms": 555,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:21.578Z"
+    },
+    {
+      "result_id": "062c2c10-ef9a-4da2-a419-a81227e1c38e",
+      "task_id": "tab-D-ts-006",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 323,
+        "output_tokens": 24,
+        "total_latency_ms": 357,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:21.992Z"
+    },
+    {
+      "result_id": "d9b73a7e-b2d7-476b-9011-a712c64849f9",
+      "task_id": "tab-D-ts-007",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 330,
+        "output_tokens": 34,
+        "total_latency_ms": 485,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:22.537Z"
+    },
+    {
+      "result_id": "f31a3db1-319c-4265-91fd-0a1208081bb2",
+      "task_id": "tab-D-ts-008",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 331,
+        "output_tokens": 40,
+        "total_latency_ms": 557,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:23.158Z"
+    },
+    {
+      "result_id": "3c5a2edc-36b1-48b2-bd04-58a15f1f48aa",
+      "task_id": "tab-D-mt-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 330,
+        "output_tokens": 40,
+        "total_latency_ms": 562,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:23.789Z"
+    },
+    {
+      "result_id": "1856b6b5-cd54-479e-9cd1-be9d9033c58c",
+      "task_id": "tab-D-mt-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"text\"}}\n```\n\n(Note: The response from the first tool call would determine the specific parameters for the second tool call, which is not included here as it depends on the output of the first call.)",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 333,
+        "output_tokens": 81,
+        "total_latency_ms": 1074,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:24.921Z"
+    },
+    {
+      "result_id": "be660717-c72d-491f-807e-6cb8c336c747",
+      "task_id": "tab-D-mt-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 347,
+        "output_tokens": 72,
+        "total_latency_ms": 957,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:25.940Z"
+    },
+    {
+      "result_id": "8f279633-e9fe-48e7-8e58-d2d022d41d70",
+      "task_id": "tab-D-mt-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 347,
+        "output_tokens": 72,
+        "total_latency_ms": 965,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:26.980Z"
+    },
+    {
+      "result_id": "80849509-6747-4497-8dd2-c64cc98ef64d",
+      "task_id": "tab-D-pe-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 321,
+        "output_tokens": 24,
+        "total_latency_ms": 16730,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:43.779Z"
+    },
+    {
+      "result_id": "309f4683-38c4-46f8-ae3a-1d25c88e6c14",
+      "task_id": "tab-D-pe-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 322,
+        "output_tokens": 25,
+        "total_latency_ms": 362,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:44.208Z"
+    },
+    {
+      "result_id": "d38c437c-a019-4ca1-8943-ae9fd4703a43",
+      "task_id": "tab-D-pe-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 339,
+        "output_tokens": 39,
+        "total_latency_ms": 540,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:44.804Z"
+    },
+    {
+      "result_id": "8e45ed3d-5077-45b9-96f6-2c55a146a33c",
+      "task_id": "tab-D-pe-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"last_30d\", \"filters\": {\"key\": \"value\"}, \"format\": \"text\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "last_30d",
+            "filters": {
+              "key": "value"
+            },
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 338,
+        "output_tokens": 49,
+        "total_latency_ms": 671,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:45.537Z"
+    },
+    {
+      "result_id": "2902b058-d5e7-4296-813d-68d3b29cff86",
+      "task_id": "tab-D-nt-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The square root of 144 is 12.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 310,
+        "output_tokens": 11,
+        "total_latency_ms": 190,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:45.782Z"
+    },
+    {
+      "result_id": "72dd089f-04c3-4a48-bb21-284998f6fbbc",
+      "task_id": "tab-D-nt-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The boiling point of water in Celsius is 100 degrees at standard atmospheric pressure (1 atmosphere or 101.3 kPa).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 311,
+        "output_tokens": 27,
+        "total_latency_ms": 390,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:46.242Z"
+    },
+    {
+      "result_id": "2c276636-9b7a-4981-8761-ff535871fff1",
+      "task_id": "tab-D-nt-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "When comparing different analytics approaches, it's important to consider various factors such as data sources, methodologies, tools used, scalability, accuracy, cost, and ease of use. Here are some common analytics approaches along with their pros and cons:\n\n1. **Descriptive Analytics**\n   - **Pros:**\n     - Provides a clear understanding of past performance.\n     - Easy to implement using historical data.\n     - Helps in identifying trends and patterns.\n   - **Cons:**\n     - Limited to historical data, so it doesn't predict future outcomes.\n     - May not provide insights into why certain events occurred.\n\n2. **Diagnostic Analytics**\n   - **Pros:**\n     - Helps identify the root causes of past performance issues.\n     - Useful for troubleshooting and understanding anomalies.\n   - **Cons:**\n     - Can be time-consuming to analyze data deeply.\n     - Requires a good understanding of the business context.\n\n3. **Predictive Analytics**\n   - **Pros:**\n     - Uses statistical models and machine learning to forecast future events.\n     - Helps in proactive decision-making.\n   - **Cons:**\n     - Requires large datasets and advanced analytical skills.\n     - Predictions are not always accurate due to model limitations.\n\n4. **Prescriptive Analytics**\n   - **Pros:**\n     - Provides recommendations for actions based on data analysis.\n     - Can optimize decision-making processes.\n   - **Cons:**\n     - Complex to implement and requires sophisticated algorithms.\n     - May require significant computational resources.\n\n5. **Real-time Analytics**\n   - **Pros:**\n     - Offers immediate insights, allowing for quick responses.\n     - Useful in dynamic environments where conditions change rapidly.\n   - **Cons:**\n     - Requires robust infrastructure to handle continuous data streams.\n     - Can be challenging to ensure data accuracy and consistency.\n\n6. **Big Data Analytics**\n   - **Pros:**\n     - Handles large volumes of structured and unstructured data.\n     - Can uncover hidden patterns and insights from diverse data sources.\n   - **Cons:**\n     - Requires specialized tools and technologies.\n     - Data privacy and security can be challenging to manage.\n\n7. **Business Intelligence (BI) Tools**\n   - **Pros:**\n     - User-friendly dashboards and reports for easy interpretation.\n     - Integrates with various data sources for comprehensive analysis.\n   - **Cons:**\n     - May not support advanced analytics capabilities like machine learning.\n     - Can be costly to implement and maintain.\n\nEach approach has its own strengths and weaknesses, and the choice depends on the specific needs and goals of an organization.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 311,
+        "output_tokens": 521,
+        "total_latency_ms": 6602,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:27:52.912Z"
+    },
+    {
+      "result_id": "88598c2b-4e6f-4244-a167-84195c5cc118",
+      "task_id": "tab-D-nt-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Code review is a critical part of software development, ensuring code quality, knowledge sharing, and team collaboration. Here are some common code review approaches along with their pros and cons:\n\n### 1. **Pair Programming**\n**Pros:**\n- Immediate feedback as the code is written.\n- High level of collaboration and knowledge transfer between developers.\n- Reduces the likelihood of introducing bugs.\n\n**Cons:**\n- Can be resource-intensive, requiring two developers for one task.\n- May lead to dependency on a specific pair, reducing flexibility in team assignments.\n- Potential for reduced individual productivity due to constant interaction.\n\n### 2. **Pull Request (PR) Reviews**\n**Pros:**\n- Allows asynchronous review, accommodating different schedules and time zones.\n- Provides a documented history of changes and discussions.\n- Facilitates code ownership and accountability.\n\n**Cons:**\n- Can lead to bottlenecks if reviewers are overloaded with requests.\n- May result in delayed feedback compared to real-time methods like pair programming.\n- Risk of superficial reviews due to reviewer fatigue or lack of context.\n\n### 3. **Over-the-Shoulder Reviews**\n**Pros:**\n- Informal and flexible, allowing for spontaneous discussions.\n- Encourages mentorship and knowledge sharing within the team.\n- Can be quick and efficient for small changes.\n\n**Cons:**\n- Lacks a formal record of feedback and decisions.\n- May not cover all aspects of the code thoroughly.\n- Dependent on availability and willingness of reviewers to participate.\n\n### 4. **Automated Code Review Tools**\n**Pros:**\n- Provides consistent and unbiased analysis of code quality.\n- Can quickly identify common issues like syntax errors, style violations, or security vulnerabilities.\n- Reduces manual effort for repetitive checks.\n\n**Cons:**\n- May miss context-specific issues that require human judgment.\n- Can generate false positives/negatives, leading to unnecessary work or overlooked problems.\n- Requires initial setup and maintenance of tool configurations.\n\n### 5. **Formal Code Review Meetings**\n**Pros:**\n- Structured environment for in-depth analysis and discussion.\n- Encourages team-wide involvement and diverse perspectives.\n- Provides a clear record of decisions and action items.\n\n**Cons:**\n- Time-consuming, requiring scheduling and coordination.\n- May lead to groupthink or pressure to conform to majority opinions.\n- Can be intimidating for junior developers, discouraging open feedback.\n\nEach approach has its strengths and weaknesses, and the best choice often depends on the team's size, culture, project requirements, and specific goals. Many teams use a combination of these methods to balance their benefits and mitigate drawbacks.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 312,
+        "output_tokens": 529,
+        "total_latency_ms": 9482,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:02.451Z"
+    },
+    {
+      "result_id": "1942ade0-15e1-49c0-9871-da0cd61fd147",
+      "task_id": "tab-D-ts-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 319,
+        "output_tokens": 34,
+        "total_latency_ms": 26860,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:29.372Z"
+    },
+    {
+      "result_id": "1416e7ee-21fe-43e5-91ba-13d355fdba44",
+      "task_id": "tab-D-ts-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 322,
+        "output_tokens": 40,
+        "total_latency_ms": 564,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:30.004Z"
+    },
+    {
+      "result_id": "31445157-9f35-4154-9ee1-9bce6ac91f4a",
+      "task_id": "tab-D-ts-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 319,
+        "output_tokens": 20,
+        "total_latency_ms": 362,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:30.424Z"
+    },
+    {
+      "result_id": "f9bbdf07-757e-4099-9cb3-8155d1a8385e",
+      "task_id": "tab-D-ts-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 331,
+        "output_tokens": 34,
+        "total_latency_ms": 484,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:30.979Z"
+    },
+    {
+      "result_id": "55fb14f0-9b5e-455f-9b48-92c277c85cf4",
+      "task_id": "tab-D-ts-005",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 332,
+        "output_tokens": 40,
+        "total_latency_ms": 558,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:31.596Z"
+    },
+    {
+      "result_id": "06d59523-11c9-401a-9acd-60fad862557f",
+      "task_id": "tab-D-ts-006",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 323,
+        "output_tokens": 24,
+        "total_latency_ms": 358,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:32.025Z"
+    },
+    {
+      "result_id": "69153876-d6be-4bb7-bdeb-5e8f52e2d5ab",
+      "task_id": "tab-D-ts-007",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 330,
+        "output_tokens": 34,
+        "total_latency_ms": 486,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:32.567Z"
+    },
+    {
+      "result_id": "d87c3c44-3341-4452-9f63-96749d049053",
+      "task_id": "tab-D-ts-008",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 331,
+        "output_tokens": 40,
+        "total_latency_ms": 567,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:33.191Z"
+    },
+    {
+      "result_id": "d6c86f81-3766-4e70-b81c-c5a250b7d263",
+      "task_id": "tab-D-mt-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 330,
+        "output_tokens": 40,
+        "total_latency_ms": 557,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:33.808Z"
+    },
+    {
+      "result_id": "2a28405d-35ec-460f-8096-02f83dfb625c",
+      "task_id": "tab-D-mt-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"text\"}}\n```\n\n(Note: The response from the first tool call would determine the specific parameters for the second tool call, which is not included here as it depends on the output of the first call.)",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 333,
+        "output_tokens": 81,
+        "total_latency_ms": 1071,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:34.949Z"
+    },
+    {
+      "result_id": "125c0c80-9c8d-4382-8015-5800b358bb38",
+      "task_id": "tab-D-mt-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 347,
+        "output_tokens": 60,
+        "total_latency_ms": 816,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:35.823Z"
+    },
+    {
+      "result_id": "49ce11ec-28c6-4433-80ea-01f21df935ca",
+      "task_id": "tab-D-mt-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 347,
+        "output_tokens": 60,
+        "total_latency_ms": 810,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:36.702Z"
+    },
+    {
+      "result_id": "ac981951-82c5-4e2d-90fc-acef067e2083",
+      "task_id": "tab-D-pe-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 321,
+        "output_tokens": 24,
+        "total_latency_ms": 360,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:37.119Z"
+    },
+    {
+      "result_id": "0b97b027-ea90-4bd1-beac-2e55725c0464",
+      "task_id": "tab-D-pe-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 322,
+        "output_tokens": 25,
+        "total_latency_ms": 366,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:37.544Z"
+    },
+    {
+      "result_id": "df4ec70a-8484-4b7c-b802-40d379405f45",
+      "task_id": "tab-D-pe-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 339,
+        "output_tokens": 39,
+        "total_latency_ms": 548,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:38.161Z"
+    },
+    {
+      "result_id": "51341444-58b4-41e3-836e-77ac46e32c1c",
+      "task_id": "tab-D-pe-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"last_30d\", \"filters\": {\"key\": \"value\"}, \"format\": \"text\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "last_30d",
+            "filters": {
+              "key": "value"
+            },
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 338,
+        "output_tokens": 49,
+        "total_latency_ms": 668,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:38.895Z"
+    },
+    {
+      "result_id": "a35ff7e0-cac4-4c08-9a19-d8bb6b17b901",
+      "task_id": "tab-D-nt-001",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The square root of 144 is 12.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 310,
+        "output_tokens": 11,
+        "total_latency_ms": 258,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:39.210Z"
+    },
+    {
+      "result_id": "276f955a-b0fb-4474-ab9e-6d43d48152b0",
+      "task_id": "tab-D-nt-002",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The boiling point of water in Celsius is 100 degrees at standard atmospheric pressure (1 atmosphere or 101.3 kPa).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 311,
+        "output_tokens": 27,
+        "total_latency_ms": 392,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:39.660Z"
+    },
+    {
+      "result_id": "96b907ad-8132-4c42-9629-23f5df4b849c",
+      "task_id": "tab-D-nt-003",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "When comparing different analytics approaches, it's important to consider various factors such as data sources, methodologies, tools used, scalability, accuracy, cost, and ease of use. Here are some common analytics approaches along with their pros and cons:\n\n1. **Descriptive Analytics**\n   - **Pros:**\n     - Provides a clear understanding of past performance.\n     - Easy to implement using historical data.\n     - Helps in identifying trends and patterns.\n   - **Cons:**\n     - Limited to historical data, so it doesn't predict future outcomes.\n     - May not provide insights into why certain events occurred.\n\n2. **Diagnostic Analytics**\n   - **Pros:**\n     - Helps identify the root causes of past performance issues.\n     - Useful for troubleshooting and understanding anomalies.\n   - **Cons:**\n     - Can be time-consuming to analyze data deeply.\n     - Requires a good understanding of the business context.\n\n3. **Predictive Analytics**\n   - **Pros:**\n     - Uses statistical models and machine learning to forecast future events.\n     - Helps in proactive decision-making.\n   - **Cons:**\n     - Requires large datasets and advanced analytical skills.\n     - Predictions are not always accurate due to model limitations.\n\n4. **Prescriptive Analytics**\n   - **Pros:**\n     - Provides recommendations for actions based on data analysis.\n     - Can optimize decision-making processes.\n   - **Cons:**\n     - Complex to implement and requires sophisticated algorithms.\n     - May require significant computational resources.\n\n5. **Real-time Analytics**\n   - **Pros:**\n     - Offers immediate insights, allowing for quick responses.\n     - Useful in dynamic environments where conditions change rapidly.\n   - **Cons:**\n     - Requires robust infrastructure to handle continuous data streams.\n     - Can be challenging to ensure data accuracy and consistency.\n\n6. **Big Data Analytics**\n   - **Pros:**\n     - Handles large volumes of structured and unstructured data.\n     - Can uncover hidden patterns and insights from diverse data sources.\n   - **Cons:**\n     - Requires specialized tools and technologies.\n     - Data privacy and security can be challenging to manage.\n\n7. **Business Intelligence (BI) Tools**\n   - **Pros:**\n     - User-friendly dashboards and reports for easy interpretation.\n     - Integrates with various data sources for comprehensive analysis.\n   - **Cons:**\n     - May not support advanced analytics capabilities like machine learning.\n     - Can be costly to implement and maintain.\n\nEach approach has its own strengths and weaknesses, and the choice depends on the specific needs and goals of an organization.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 311,
+        "output_tokens": 521,
+        "total_latency_ms": 6643,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:46.363Z"
+    },
+    {
+      "result_id": "c577fc46-92d7-498c-8f54-b63fd0a2fd5f",
+      "task_id": "tab-D-nt-004",
+      "model": "Phi-4",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Code review is a critical part of software development, ensuring code quality, knowledge sharing, and catching bugs early in the process. Here are some common code review approaches along with their pros and cons:\n\n### 1. **Pair Programming**\n**Pros:**\n- Immediate feedback as code is written.\n- High level of collaboration and knowledge transfer between developers.\n- Reduces the likelihood of introducing defects.\n\n**Cons:**\n- Can be resource-intensive, requiring two developers for one task.\n- May lead to slower development if not managed well.\n- Potential for personality clashes affecting productivity.\n\n### 2. **Pull Request (PR) Reviews**\n**Pros:**\n- Allows asynchronous review, accommodating different schedules and time zones.\n- Provides a documented history of changes and discussions.\n- Can be integrated with automated tools for additional checks.\n\n**Cons:**\n- May lead to bottlenecks if reviewers are overloaded or unavailable.\n- Risk of superficial reviews due to time constraints.\n- Potential for conflicts if feedback is not constructive.\n\n### 3. **Over-the-Shoulder Reviews**\n**Pros:**\n- Informal and quick, allowing for immediate feedback.\n- Encourages open communication and collaboration.\n- Can be less intimidating than formal review processes.\n\n**Cons:**\n- May lack thoroughness compared to more structured reviews.\n- Relies heavily on the availability of both parties.\n- Risk of missing critical issues due to casual nature.\n\n### 4. **Automated Code Review Tools**\n**Pros:**\n- Provides consistent and unbiased feedback.\n- Can catch common errors and enforce coding standards automatically.\n- Saves time by handling repetitive checks.\n\n**Cons:**\n- May not understand context or intent behind code changes.\n- Can generate false positives, leading to unnecessary work.\n- Requires initial setup and maintenance of rules and configurations.\n\n### 5. **Formal Code Review Meetings**\n**Pros:**\n- Structured environment for in-depth analysis.\n- Encourages thorough discussion and consensus-building.\n- Provides a platform for mentoring and knowledge sharing.\n\n**Cons:**\n- Time-consuming, requiring scheduling and coordination.\n- May lead to groupthink if not managed well.\n- Can be intimidating for junior developers.\n\nEach approach has its own strengths and weaknesses, and the best choice often depends on the team's size, culture, and specific project needs. Combining multiple approaches can also provide a balanced review process.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 312,
+        "output_tokens": 480,
+        "total_latency_ms": 6120,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:28:52.546Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Phi-4",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.9101428571428569,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 1,
+        "ci95": [
+          0.9398260695220669,
+          0.9999999999999999
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.8428571428571427,
+        "ci95": [
+          0.7985030550748896,
+          0.9533578005427642
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Phi-4",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.8754285714285713,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.95,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.7635714285714283,
+        "ci95": [
+          0.6821795390818299,
+          0.8817161026314104
+        ]
+      },
+      "arr": 0.9618584209700205,
+      "token_savings_pct": 50.72463768115942,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+% fig1-scaling.tex -- Accuracy vs. catalog size: Natural (left) vs. TSCG (right)
+% Included via \input{figures/fig1-scaling} from main.tex
+\begin{figure*}[t]
+\centering
+%% ── shared pgfplots style ────────────────────────────────────────────────────
+\pgfplotsset{
+    scaling plot/.style={
+        width=0.50\textwidth,
+        height=6.8cm,
+        xlabel={Number of Tools},
+        ylabel={Accuracy (\%)},
+        xlabel style={font=\small},
+        ylabel style={font=\small},
+        xmin=1, xmax=55,
+        xtick={3,5,10,15,20,30,50},
+        xticklabels={3,5,10,15,20,30,50},
+        ymin=0, ymax=105,
+        ytick={0,20,40,60,80,100},
+        tick label style={font=\scriptsize},
+        grid=major,
+        grid style={dashed, gray!25},
+        legend style={
+            font=\tiny,
+            at={(0.02,0.02)},
+            anchor=south west,
+            draw=gray!40,
+            fill=white,
+            fill opacity=0.85,
+            text opacity=1,
+            rounded corners=1pt,
+            row sep=1pt,
+            /tikz/every even column/.append style={column sep=4pt},
+        },
+        legend cell align=left,
+        clip=true,
+    },
+}
+
+%% ── Left panel: Natural ──────────────────────────────────────────────────────
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    scaling plot,
+    title={\small Natural},
+    title style={yshift=-2pt},
+]
+
+% Mistral 7B -- natural (dashed)
+\addplot[
+    color=tscgblue, mark=square*, mark size=1.8pt,
+    dashed, thick, mark options={solid, fill=tscgblue}
+] coordinates {
+    (3,  69.17)
+    (5,  78.33)
+    (10, 83.50)
+    (15, 77.33)
+    (20, 35.00)
+    (30, 30.00)
+    (50, 30.00)
+};
+\addlegendentry{Mistral 7B}
+
+% Phi-4 14B -- natural (dashed)
+\addplot[
+    color=tscgred, mark=triangle*, mark size=2.2pt,
+    dashed, thick, mark options={solid, fill=tscgred}
+] coordinates {
+    (3,  91.01)
+    (5,   0.00)
+    (10,  0.00)
+    (15,  0.00)
+    (20,  0.00)
+    (30,  0.00)
+    (50,  0.00)
+};
+\addlegendentry{Phi-4 14B}
+
+% Gemma 3 4B -- natural (dashed)
+\addplot[
+    color=tscggreen, mark=diamond*, mark size=2.2pt,
+    dashed, thick, mark options={solid, fill=tscggreen}
+] coordinates {
+    (3,   0.00)
+    (5,  59.60)
+    (10, 69.13)
+    (15, 59.89)
+    (20, 49.90)
+    (30, 36.69)
+    (50, 24.33)
+};
+\addlegendentry{Gemma 3 4B}
+
+% Llama 3.1 8B -- natural (dashed)
+\addplot[
+    color=tscgorange, mark=*, mark size=1.8pt,
+    dashed, thick, mark options={solid, fill=tscgorange}
+] coordinates {
+    (3,  60.21)
+    (5,  63.30)
+    (10, 73.58)
+    (15, 77.72)
+    (20, 78.40)
+    (30, 84.93)
+    (50, 75.13)
+};
+\addlegendentry{Llama 3.1 8B}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Natural (uncompressed) tool schemas.}
+\label{fig:scaling-natural}
+\end{subfigure}%
+\hfill
+%% ── Right panel: TSCG ───────────────────────────────────────────────────────
+\begin{subfigure}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    scaling plot,
+    title={\small TSCG},
+    title style={yshift=-2pt},
+]
+
+% Mistral 7B -- tscg (solid)
+\addplot[
+    color=tscgblue, mark=square*, mark size=1.8pt,
+    solid, thick, mark options={solid, fill=tscgblue}
+] coordinates {
+    (3,  65.55)
+    (5,  77.67)
+    (10, 73.33)
+    (15, 66.73)
+    (20, 80.13)
+    (30, 66.28)
+    (50, 65.00)
+};
+\addlegendentry{Mistral 7B}
+
+% Phi-4 14B -- tscg (solid)
+\addplot[
+    color=tscgred, mark=triangle*, mark size=2.2pt,
+    solid, thick, mark options={solid, fill=tscgred}
+] coordinates {
+    (3,  87.54)
+    (5,  87.47)
+    (10, 89.40)
+    (15, 83.88)
+    (20, 84.41)
+    (30, 75.13)
+    (50, 90.26)
+};
+\addlegendentry{Phi-4 14B}
+
+% Gemma 3 4B -- tscg (solid)
+\addplot[
+    color=tscggreen, mark=diamond*, mark size=2.2pt,
+    solid, thick, mark options={solid, fill=tscggreen}
+] coordinates {
+    (3,  74.89)
+    (5,  72.60)
+    (10, 74.71)
+    (15, 61.01)
+    (20, 67.02)
+    (30, 71.39)
+    (50, 87.44)
+};
+\addlegendentry{Gemma 3 4B}
+
+% Llama 3.1 8B -- tscg (solid)
+\addplot[
+    color=tscgorange, mark=*, mark size=1.8pt,
+    solid, thick, mark options={solid, fill=tscgorange}
+] coordinates {
+    (3,  79.05)
+    (5,  80.33)
+    (10, 72.39)
+    (15, 81.81)
+    (20, 80.97)
+    (30, 84.13)
+    (50, 86.25)
+};
+\addlegendentry{Llama 3.1 8B}
+
+\end{axis}
+\end{tikzpicture}
+\caption{TSCG-compressed tool schemas.}
+\label{fig:scaling-tscg}
+\end{subfigure}
+
+\caption{Accuracy vs.\ tool catalog size for four small language models under natural (left) and TSCG-compressed (right) conditions on BFCL without multi-turn. Natural schemas expose severe scaling fragility: Phi-4 collapses to 0\% beyond 3~tools, Mistral drops from 83.5\% to 30\%, and Gemma degrades monotonically. Under TSCG compression, all four models maintain stable accuracy across the full 3--50 tool range, with Phi-4 recovering to ${\sim}$85--90\% and Gemma sustaining ${\sim}$65--87\%. Dashed lines indicate natural; solid lines indicate TSCG.}
+\label{fig:scaling}
+\end{figure*}

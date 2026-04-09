@@ -1,0 +1,3604 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Gemma 3 4B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-02T19:42:10.722Z",
+    "end_time": "2026-03-02T19:45:01.797Z",
+    "duration_ms": 171075
+  },
+  "results": [
+    {
+      "result_id": "c5f563f2-95e7-4cd0-9b16-281e994243ea",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"auth_list_users\",\n    \"arguments\": {\n      \"role\": \"admin\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "admin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2151,
+        "output_tokens": 44,
+        "total_latency_ms": 8075,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:20.196Z"
+    },
+    {
+      "result_id": "6a69bac5-3319-42a0-a907-35564cf47127",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"daily_active_users\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "daily_active_users",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2153,
+        "output_tokens": 71,
+        "total_latency_ms": 772,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:21.082Z"
+    },
+    {
+      "result_id": "0f5c3d5d-69b8-4794-bdb0-eac468b2ccee",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"shop_track_order\",\n    \"arguments\": {\n      \"order_id\": \"1234567890\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "1234567890"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2151,
+        "output_tokens": 55,
+        "total_latency_ms": 672,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:21.860Z"
+    },
+    {
+      "result_id": "387b4599-be48-43d0-a805-fc9d709fa6f9",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"example_value\",\n    \"properties\": {\n      \"key1\": \"value1\",\n      \"key2\": 123\n    },\n    \"user_id\": \"user123\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {
+              "key1": "value1",
+              "key2": 123
+            },
+            "user_id": "user123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 2166,
+        "output_tokens": 84,
+        "total_latency_ms": 836,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:22.818Z"
+    },
+    {
+      "result_id": "66035fc1-8678-4923-8eeb-e69cbc268939",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"example_value\",\n    \"include_pollutants\": true\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2162,
+        "output_tokens": 52,
+        "total_latency_ms": 653,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:23.579Z"
+    },
+    {
+      "result_id": "b785be26-c071-4e47-a2dd-242adf4a261c",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"comm_send_message\",\n  \"arguments\": {\n    \"recipient\": \"test_input\",\n    \"message\": \"test_input\",\n    \"priority\": \"normal\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "test_input",
+            "message": "test_input",
+            "priority": "normal"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 58,
+        "total_latency_ms": 688,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:24.375Z"
+    },
+    {
+      "result_id": "59e5bde7-1239-4396-87da-89b5c106569a",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"sample_data\",\n    \"timestamp\": \"00:00:00\",\n    \"width\": 128\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "sample_data",
+            "timestamp": "00:00:00",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2170,
+        "output_tokens": 66,
+        "total_latency_ms": 736,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:25.216Z"
+    },
+    {
+      "result_id": "e28bf44d-aac1-4076-b5a5-429ad368cca7",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"sample_data dashboard\",\n    \"widgets\": [\n      \"item1\",\n      \"item2\"\n    ],\n    \"shared\": false\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data dashboard",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 2177,
+        "output_tokens": 68,
+        "total_latency_ms": 738,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:26.065Z"
+    },
+    {
+      "result_id": "34e8a3a4-dc84-4148-805a-2a7b62fe6f6a",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"user_engagement_report\",\n    \"date_range\": \"last_30d\",\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_engagement_report",
+            "date_range": "last_30d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2162,
+        "output_tokens": 66,
+        "total_latency_ms": 731,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:26.911Z"
+    },
+    {
+      "result_id": "2346c319-bf72-4178-8954-00e8f6f66173",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Could you please provide the order ID you'd like me to track?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2160,
+        "output_tokens": 16,
+        "total_latency_ms": 443,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:27.455Z"
+    },
+    {
+      "result_id": "ae770423-614e-4afb-bb88-74da1facfd7b",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Could you please provide the order ID you'd like me to track?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2167,
+        "output_tokens": 16,
+        "total_latency_ms": 441,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:28.002Z"
+    },
+    {
+      "result_id": "9eeb1732-d2d2-417a-bbc0-1ebc9009e3b4",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break this down into a series of steps and use the available tools to achieve the desired outcome.\n\n**Step 1: Generate a Thumbnail**\n\nI'll use `media_generate_thumbnail` to create a thumbnail from a video.  I need a video path and a timestamp.  Since I don't have a video source, I'll use a placeholder video path and timestamp for demonstration.\n\n```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"/path/to/my_video.mp4\",\n    \"timestamp\": \"00:15:00\",\n    \"width\": 128\n  }\n}\n```\n\n**Step 2: Resize the Thumbnail**\n\nNow that we have the generated thumbnail, let's resize it to a larger size.\n\n```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"/path/to/my_video_thumbnail.jpg\",\n    \"width\": 512,\n    \"height\": 512,\n    \"quality\": 80\n  }\n}\n```\n\n**Step 3: Get Air Quality Data**\n\nFinally, let's use `wx_get_air_quality` to retrieve air quality data.  I'll need a location.  I'll use \"London\" as an example.\n\n```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"London\",\n    \"include_pollutants\": true\n  }\n}\n```\n\n**Explanation:**\n\n1.  I started by generating a thumbnail from a video using `media_generate_thumbnail`.\n2.  Then, I resized the thumbnail using `media_resize_image`.\n3.  Finally, I retrieved air quality data for London using `wx_get_air_quality`.\n\nI've provided the JSON calls for each step.  To proceed, you'll need to replace the placeholder values (like `/path/to/my_video.mp4`) with actual values.\n",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2174,
+        "output_tokens": 482,
+        "total_latency_ms": 3120,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:31.223Z"
+    },
+    {
+      "result_id": "c247f6e4-c6cc-46d0-885b-a92a27cd0f84",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"guest\",\n    \"status\": \"suspended\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2164,
+        "output_tokens": 46,
+        "total_latency_ms": 624,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:31.953Z"
+    },
+    {
+      "result_id": "bb4bbe0f-7823-4105-981a-8b95d6c67d4d",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"config.json\",\n    \"width\": 174.45\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2166,
+        "output_tokens": 54,
+        "total_latency_ms": 657,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:32.722Z"
+    },
+    {
+      "result_id": "9af44a93-2c9e-4dba-87cf-db6adc32d658",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"config.json\",\n    \"properties\": {\n      \"key\": \"value\"\n    },\n    \"user_id\": \"Berlin\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2178,
+        "output_tokens": 69,
+        "total_latency_ms": 754,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:33.591Z"
+    },
+    {
+      "result_id": "e1bfacbb-d11a-4a8b-9c9b-0a59517ef371",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"user@example.com\",\n      \"include_pollutants\": false,\n      \"offset\": 929.49\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2186,
+        "output_tokens": 73,
+        "total_latency_ms": 777,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:34.474Z"
+    },
+    {
+      "result_id": "385b472a-c27b-4432-9f19-d67c39974382",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"egg_calculation\", \"properties\": {\"eggs_used\": 7, \"eggs_remaining\": 2}, \"user_id\": \"user_123\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "egg_calculation",
+            "properties": {
+              "eggs_used": 7,
+              "eggs_remaining": 2
+            },
+            "user_id": "user_123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2155,
+        "output_tokens": 56,
+        "total_latency_ms": 681,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:35.256Z"
+    },
+    {
+      "result_id": "0a6454a9-4eae-4dbd-a835-3e64697852ed",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"math_calculate\", \"arguments\": {\"operation\": \"square_root\", \"number\": 144}}",
+        "parsed_tool_call": {
+          "name": "math_calculate",
+          "arguments": {
+            "operation": "square_root",
+            "number": 144
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2150,
+        "output_tokens": 28,
+        "total_latency_ms": 524,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:35.901Z"
+    },
+    {
+      "result_id": "ed76341e-6d1c-40bc-8d63-3217f8dea0fd",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. This is a complex topic, so I'll categorize them for clarity.\n\n**1. Web Analytics (Google Analytics, Adobe Analytics, Matomo)**\n\n* **Description:** These are the most common approaches for tracking website traffic, user behavior, and conversions. They rely on JavaScript tracking code embedded on your website.\n* **Pros:**\n    * **Mature & Established:**  Google Analytics, in particular, has a massive user base and a wealth of documentation and community support.\n    * **Comprehensive Data:** Provides a huge range of metrics – pageviews, bounce rate, session duration, user demographics, device types, traffic sources, conversion rates, etc.\n    * **Real-Time Data:** Offers near real-time insights into website activity.\n    * **Integration:** Integrates well with other marketing tools (Google Ads, Google Search Console, etc.).\n    * **Relatively Easy to Implement:**  Setup is generally straightforward, especially Google Analytics.\n* **Cons:**\n    * **Privacy Concerns:**  Reliance on tracking code raises privacy concerns for users.  GDPR and CCPA compliance requires careful configuration and consent management.\n    * **Data Accuracy:** Can be affected by bots and other non-genuine traffic.\n    * **Limited User-Level Data:**  Often struggles to accurately identify individual users due to privacy restrictions and the use of cookies.\n    * **Cost (for Premium Features):**  While Google Analytics is free, advanced features require a paid subscription.\n    * **Data Ownership:** You don't *own* the data; Google does.\n\n**2. Mobile App Analytics (Firebase Analytics, Amplitude, Mixpanel)**\n\n* **Description:**  These tools track user behavior within mobile applications – screen views, events, user engagement, retention, etc.\n* **Pros:**\n    * **Event-Based Tracking:** Focuses on tracking specific user actions (e.g., button clicks, form submissions, video plays) rather than just pageviews.\n    * **User Segmentation:**  Allows you to segment users based on behavior, demographics, and other criteria.\n    * **Retention Analytics:**  Crucial for understanding how long users continue to use your app.\n    * **Funnel Analysis:**  Helps you identify drop-off points in user flows.\n* **Cons:**\n    * **Technical Complexity:**  Can be more complex to implement than web analytics, especially for custom events.\n    * **Data Volume:** Mobile apps can generate a *lot* of data, requiring robust infrastructure.\n    * **Privacy Considerations:** Similar privacy concerns as web analytics, especially regarding user consent and data collection.\n    * **Cost:**  Many of the more powerful mobile analytics platforms have subscription fees.\n\n**3. CRM Analytics (Salesforce Analytics, HubSpot Analytics)**\n\n* **Description:**  These tools analyze data from your CRM system to provide insights into sales performance, customer behavior, and marketing effectiveness.\n* **Pros:**\n    * **Integrated Data:**  Combines data from your CRM with other business systems (e.g., marketing automation, customer support).\n    * **Sales Performance Insights:**  Identifies top performers, sales trends, and opportunities for improvement.\n    * **Customer Segmentation:**  Segments customers based on purchase history, demographics, and engagement.\n* **Cons:**\n    * **CRM Dependency:**  Relies entirely on the quality and completeness of your CRM data.\n    * **Limited Scope:** Primarily focused on sales and marketing data, not broader website or app analytics.\n    * **Cost:**  CRM analytics platforms are often part of a larger CRM subscription.\n\n**4.  Data Warehousing & Business Intelligence (BI) Tools (Snowflake, Tableau, Power BI)**\n\n* **Description:** These approaches involve collecting data from various sources (web analytics, CRM, marketing automation, etc.) into a central data warehouse and then using BI tools to analyze and visualize the data.\n* **Pros:**\n    * **Centralized Data:** Provides a single source of truth for all your analytics data.\n    * **Advanced Analytics:** Enables complex queries, data blending, and predictive analytics.\n    * **Custom Reporting:** Allows you to create highly customized reports and dashboards.\n* **Cons:**\n    * **High Cost:**  Data warehousing and BI tools can be expensive, especially for large datasets.\n    * **Technical Expertise:** Requires significant technical expertise to set up and maintain.\n    * **Time-Consuming:**  Building a data warehouse and creating complex reports can be a time-consuming process.\n\n**5.  Event Tracking (Segment, Mixpanel - often used in conjunction with others)**\n\n* **Description:**  Focuses on tracking specific user actions (events) within a website or app, regardless of the platform.  Often used to feed data into other analytics tools.\n* **Pros",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2149,
+        "output_tokens": 1024,
+        "total_latency_ms": 6268,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:42.278Z"
+    },
+    {
+      "result_id": "98f44e98-cecc-472a-b20a-f7dcb41555eb",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of various software architecture approaches. This is a complex topic, and the \"best\" choice depends heavily on the specific project's needs. Here's a comparison of some common approaches:\n\n**1. Monolithic Architecture**\n\n* **Description:**  All components of the application are tightly coupled and deployed as a single unit.\n* **Pros:**\n    * **Simple to Develop:** Easier to get started with, especially for smaller projects.  Development, testing, and deployment are straightforward.\n    * **Easy to Deploy:**  Deploying a single unit is simpler than managing multiple services.\n    * **Performance (Initially):** Can be faster for simple operations due to less network overhead.\n* **Cons:**\n    * **Scalability Challenges:** Scaling is difficult – you have to scale the *entire* application, even if only one part needs more resources.\n    * **Deployment Bottlenecks:**  Any change, even a small one, requires redeploying the entire application.\n    * **Technology Lock-in:** Difficult to adopt new technologies or frameworks because the entire codebase is tied to the original choice.\n    * **Complexity Over Time:** As the application grows, the codebase becomes increasingly complex and harder to maintain.\n    * **Single Point of Failure:** A failure in one part of the application can bring down the whole system.\n\n\n**2. Microservices Architecture**\n\n* **Description:** The application is structured as a collection of small, independent services that communicate over a network (typically using APIs).\n* **Pros:**\n    * **Independent Scalability:** Each service can be scaled independently based on its specific needs.\n    * **Technology Diversity:** Different services can be built using different technologies, allowing for optimal choices.\n    * **Faster Development Cycles:** Smaller teams can work on individual services, leading to faster development and deployment.\n    * **Fault Isolation:**  A failure in one service doesn't necessarily bring down the entire application.\n    * **Improved Maintainability:** Smaller codebases are easier to understand and maintain.\n* **Cons:**\n    * **Increased Complexity:** Overall system complexity is higher due to distributed nature, inter-service communication, and managing multiple deployments.\n    * **Operational Overhead:** Requires more sophisticated infrastructure and monitoring.\n    * **Distributed Debugging:** Debugging issues across multiple services can be challenging.\n    * **Data Consistency:** Maintaining data consistency across services can be complex (often requiring eventual consistency models).\n    * **Communication Overhead:** Network calls between services introduce latency.\n\n\n\n**3. Layered Architecture**\n\n* **Description:** The application is divided into distinct layers (e.g., presentation, business logic, data access) with each layer performing a specific function.\n* **Pros:**\n    * **Clear Separation of Concerns:**  Promotes modularity and maintainability.\n    * **Testability:** Easier to test individual layers.\n    * **Commonly Understood:**  A well-established and widely understood architectural pattern.\n* **Cons:**\n    * **Potential for Tight Coupling:** Layers can become tightly coupled if not designed carefully.\n    * **Performance Issues:** Can introduce performance bottlenecks if layers are not optimized.\n    * **Not Ideal for Complex Systems:** Can become unwieldy for very complex applications.\n\n**4. Event-Driven Architecture**\n\n* **Description:** Components communicate through asynchronous events.  Services react to events rather than directly calling each other.\n* **Pros:**\n    * **Loose Coupling:** Services are loosely coupled, making the system more flexible and resilient.\n    * **Scalability:**  Well-suited for handling high volumes of events.\n    * **Real-time Processing:** Enables real-time data processing and responsiveness.\n* **Cons:**\n    * **Complexity:** Can be complex to design and manage, especially with a large number of events.\n    * **Debugging:** Debugging event flows can be challenging.\n    * **Eventual Consistency:** Often relies on eventual consistency models.\n\n\n\n**5. Serverless Architecture**\n\n* **Description:**  Applications are built using individual, stateless functions that are triggered by events.  The cloud provider manages the underlying infrastructure.\n* **Pros:**\n    * **Scalability:** Automatically scales to handle varying workloads.\n    * **Cost-Effective:** Pay-per-use model can be very cost-effective for applications with intermittent traffic.\n    * **Reduced Operational Overhead:** The cloud provider handles infrastructure management.\n* **Cons:**\n    * **Vendor Lock-in:** Can be difficult to migrate to another cloud provider.\n    * **Cold Starts:**  Functions can experience \"cold starts\" (initial latency) when invoked after a period of inactivity.\n    * **Debugging:** Debugging can be more challenging due to the distributed nature.\n\n\n\n**Here's a table summarizing the key differences:**\n\n| Feature           ",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2150,
+        "output_tokens": 1024,
+        "total_latency_ms": 6311,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:48.693Z"
+    },
+    {
+      "result_id": "04ad72cb-672f-4776-8fea-57c9384b3e39",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"auth_list_users\",\n    \"arguments\": {\n      \"role\": \"admin\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "admin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2151,
+        "output_tokens": 44,
+        "total_latency_ms": 605,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:49.406Z"
+    },
+    {
+      "result_id": "5dbaf858-c572-49cd-8436-78cf1bb2bf5f",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"daily_active_users\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "daily_active_users",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2153,
+        "output_tokens": 71,
+        "total_latency_ms": 766,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:50.274Z"
+    },
+    {
+      "result_id": "48919e07-68cf-4783-9432-bc734d0c120a",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"shop_track_order\",\n    \"arguments\": {\n      \"order_id\": \"1234567890\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "1234567890"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2151,
+        "output_tokens": 55,
+        "total_latency_ms": 677,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:51.062Z"
+    },
+    {
+      "result_id": "c4ab5d9e-3fdd-460a-b0b7-ea37f9b5773c",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"example_value\",\n    \"properties\": {\n      \"key1\": \"value1\",\n      \"key2\": 123\n    },\n    \"user_id\": \"user123\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {
+              "key1": "value1",
+              "key2": 123
+            },
+            "user_id": "user123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 2166,
+        "output_tokens": 84,
+        "total_latency_ms": 837,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:52.004Z"
+    },
+    {
+      "result_id": "34abec52-fb9f-44ec-9f55-121089d13ddc",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"example_value\",\n    \"include_pollutants\": true\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2162,
+        "output_tokens": 52,
+        "total_latency_ms": 647,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:52.757Z"
+    },
+    {
+      "result_id": "027f794b-7c9b-40c2-9fa6-6e225ce8c843",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"comm_send_message\",\n  \"arguments\": {\n    \"recipient\": \"test_input\",\n    \"message\": \"test_input\",\n    \"priority\": \"normal\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "test_input",
+            "message": "test_input",
+            "priority": "normal"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 58,
+        "total_latency_ms": 692,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:53.562Z"
+    },
+    {
+      "result_id": "4a59d811-d5eb-4051-a983-2fb5ce806bb9",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"sample_data\",\n    \"timestamp\": \"00:00:00\",\n    \"width\": 128\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "sample_data",
+            "timestamp": "00:00:00",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2170,
+        "output_tokens": 66,
+        "total_latency_ms": 739,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:54.407Z"
+    },
+    {
+      "result_id": "ee6df32f-8897-4830-b042-000f458a8010",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"sample_data dashboard\",\n    \"widgets\": [\n      \"item1\",\n      \"item2\"\n    ],\n    \"shared\": false\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data dashboard",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 2177,
+        "output_tokens": 68,
+        "total_latency_ms": 755,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:55.272Z"
+    },
+    {
+      "result_id": "9163efd0-f146-40b0-bc36-0f11731dd254",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"user_engagement_report\",\n    \"date_range\": \"last_30d\",\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_engagement_report",
+            "date_range": "last_30d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2162,
+        "output_tokens": 66,
+        "total_latency_ms": 737,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:56.126Z"
+    },
+    {
+      "result_id": "adf61b37-c7e3-4a2e-a004-2a75b1e626b8",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Could you please provide the order ID you'd like me to track?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2160,
+        "output_tokens": 16,
+        "total_latency_ms": 446,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:56.690Z"
+    },
+    {
+      "result_id": "ca907c70-ca70-4af3-a3d9-fb0b35cb04aa",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Could you please provide the order ID you'd like me to track?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2167,
+        "output_tokens": 16,
+        "total_latency_ms": 446,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:42:57.250Z"
+    },
+    {
+      "result_id": "6b5eb027-9c05-4adb-8a96-7ce96d6e0774",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break this down into a series of steps and use the available tools to achieve the desired outcome.\n\n**Step 1: Generate a Thumbnail**\n\nI'll use `media_generate_thumbnail` to create a thumbnail from a video.  I need a video path and a timestamp.  Since I don't have a video source, I'll use a placeholder video path and timestamp for demonstration.\n\n```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"/path/to/my_video.mp4\",\n    \"timestamp\": \"00:15:00\",\n    \"width\": 128\n  }\n}\n```\n\n**Step 2: Resize the Thumbnail**\n\nNow that we have the generated thumbnail, let's resize it to a larger size.\n\n```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"/path/to/my_video_thumbnail.jpg\",\n    \"width\": 512,\n    \"height\": 512,\n    \"quality\": 80\n  }\n}\n```\n\n**Step 3: Get Air Quality Data**\n\nFinally, let's use `wx_get_air_quality` to retrieve air quality data.  I'll need a location.  I'll use \"London\" as an example.\n\n```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"London\",\n    \"include_pollutants\": true\n  }\n}\n```\n\n**Explanation:**\n\n1.  I started by generating a thumbnail from a video using `media_generate_thumbnail`.\n2.  Then, I resized the thumbnail using `media_resize_image`.\n3.  Finally, I retrieved air quality data for London using `wx_get_air_quality`.\n\nI've provided the JSON calls for each step.  To proceed, you'll need to replace the placeholder values (like `/path/to/my_video.mp4`) with actual values.\n",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2174,
+        "output_tokens": 482,
+        "total_latency_ms": 3141,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:00.499Z"
+    },
+    {
+      "result_id": "3781b242-5e37-498b-b1be-7edc4f48b680",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"guest\",\n    \"status\": \"suspended\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2164,
+        "output_tokens": 46,
+        "total_latency_ms": 611,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:01.217Z"
+    },
+    {
+      "result_id": "12ecd31d-74e0-4d3f-9360-5f24e2145d8c",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"config.json\",\n    \"width\": 174.45\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2166,
+        "output_tokens": 54,
+        "total_latency_ms": 668,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:01.993Z"
+    },
+    {
+      "result_id": "697f741d-14c2-4fd0-8bae-55918f9aa3c8",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"config.json\",\n    \"properties\": {\n      \"key\": \"value\"\n    },\n    \"user_id\": \"Berlin\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2178,
+        "output_tokens": 69,
+        "total_latency_ms": 751,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:02.855Z"
+    },
+    {
+      "result_id": "aa76bc6c-e74e-41f0-b6ca-4e3594857b74",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"user@example.com\",\n      \"include_pollutants\": false,\n      \"offset\": 929.49\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2186,
+        "output_tokens": 73,
+        "total_latency_ms": 778,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:03.747Z"
+    },
+    {
+      "result_id": "0eb84688-62a0-4a99-b141-3ab56b1d8634",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"egg_calculation\", \"properties\": {\"eggs_used\": 7, \"eggs_remaining\": 2}, \"user_id\": \"user_123\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "egg_calculation",
+            "properties": {
+              "eggs_used": 7,
+              "eggs_remaining": 2
+            },
+            "user_id": "user_123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2155,
+        "output_tokens": 56,
+        "total_latency_ms": 671,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:04.520Z"
+    },
+    {
+      "result_id": "0a6d5202-cf4d-49d8-a686-37b674663cd8",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"math_calculate\", \"arguments\": {\"operation\": \"square_root\", \"number\": 144}}",
+        "parsed_tool_call": {
+          "name": "math_calculate",
+          "arguments": {
+            "operation": "square_root",
+            "number": 144
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2150,
+        "output_tokens": 28,
+        "total_latency_ms": 507,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:05.128Z"
+    },
+    {
+      "result_id": "0b842318-924a-479c-afc1-f77243a7d603",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. This is a complex topic, so I'll categorize them for clarity.\n\n**1. Web Analytics (Google Analytics, Adobe Analytics, Matomo)**\n\n* **Description:** These are the most common approaches for tracking website traffic, user behavior, and conversions. They rely on JavaScript tracking code embedded on your website.\n* **Pros:**\n    * **Mature & Established:**  Google Analytics, in particular, has a massive user base and a wealth of documentation and community support.\n    * **Comprehensive Data:** Provides a huge range of metrics – pageviews, bounce rate, session duration, user demographics, device types, traffic sources, conversion rates, etc.\n    * **Real-Time Data:** Offers near real-time insights into website activity.\n    * **Integration:** Integrates well with other marketing tools (Google Ads, Google Search Console, etc.).\n    * **Relatively Easy to Implement:**  Setup is generally straightforward, especially Google Analytics.\n* **Cons:**\n    * **Privacy Concerns:**  Reliance on tracking code raises privacy concerns for users.  GDPR and CCPA compliance requires careful configuration and consent management.\n    * **Data Accuracy:** Can be affected by bots and other non-genuine traffic.\n    * **Limited User-Level Data:**  Often struggles to accurately identify individual users due to privacy restrictions and the use of cookies.\n    * **Cost (for Premium Features):**  While Google Analytics is free, advanced features require a paid subscription.\n    * **Data Ownership:** You don't *own* the data; Google does.\n\n**2. Mobile App Analytics (Firebase Analytics, Amplitude, Mixpanel)**\n\n* **Description:**  These tools track user behavior within mobile applications – screen views, events, user engagement, retention, etc.\n* **Pros:**\n    * **Event-Based Tracking:** Focuses on tracking specific user actions (e.g., button clicks, form submissions, video plays) rather than just pageviews.\n    * **User Segmentation:**  Allows you to segment users based on behavior, demographics, and other criteria.\n    * **Retention Analytics:**  Crucial for understanding how long users continue to use your app.\n    * **Funnel Analysis:**  Helps you identify drop-off points in user flows.\n* **Cons:**\n    * **Technical Complexity:**  Can be more complex to implement than web analytics, especially for custom events.\n    * **Data Volume:** Mobile apps can generate a *lot* of data, requiring robust infrastructure.\n    * **Privacy Considerations:** Similar privacy concerns as web analytics, especially regarding user consent and data collection.\n    * **Cost:**  Many of the more powerful mobile analytics platforms have subscription fees.\n\n**3. CRM Analytics (Salesforce Analytics, HubSpot Analytics)**\n\n* **Description:**  These tools analyze data from your CRM system to provide insights into sales performance, customer behavior, and marketing effectiveness.\n* **Pros:**\n    * **Integrated Data:**  Combines data from your CRM with other business systems (e.g., marketing automation, customer support).\n    * **Sales Performance Insights:**  Identifies top performers, sales trends, and opportunities for improvement.\n    * **Customer Segmentation:**  Segments customers based on purchase history, demographics, and engagement.\n* **Cons:**\n    * **CRM Dependency:**  Relies entirely on the quality and completeness of your CRM data.\n    * **Limited Scope:** Primarily focused on sales and marketing data, not broader website or app analytics.\n    * **Cost:**  CRM analytics platforms are often part of a larger CRM subscription.\n\n**4.  Data Warehousing & Business Intelligence (BI) Tools (Snowflake, Tableau, Power BI)**\n\n* **Description:** These approaches involve collecting data from various sources (web analytics, CRM, marketing automation, etc.) into a central data warehouse and then using BI tools to analyze and visualize the data.\n* **Pros:**\n    * **Centralized Data:** Provides a single source of truth for all your analytics data.\n    * **Advanced Analytics:** Enables complex queries, data blending, and predictive analytics.\n    * **Custom Reporting:** Allows you to create highly customized reports and dashboards.\n* **Cons:**\n    * **High Cost:**  Data warehousing and BI tools can be expensive, especially for large datasets.\n    * **Technical Expertise:** Requires significant technical expertise to set up and maintain.\n    * **Time-Consuming:**  Building a data warehouse and creating complex reports can be a time-consuming process.\n\n**5.  Event Tracking (Segment, Mixpanel - often used in conjunction with others)**\n\n* **Description:**  Focuses on tracking specific user actions (events) within a website or app, regardless of the platform.  Often used to feed data into other analytics tools.\n* **Pros",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2149,
+        "output_tokens": 1024,
+        "total_latency_ms": 6289,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:11.522Z"
+    },
+    {
+      "result_id": "f7ca1410-7ade-47bd-8201-3e752375d028",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of various software architecture approaches. This is a complex topic, and the \"best\" choice depends heavily on the specific project's needs. Here's a comparison of some common approaches:\n\n**1. Monolithic Architecture**\n\n* **Description:**  All components of the application are tightly coupled and deployed as a single unit.\n* **Pros:**\n    * **Simple to Develop:** Easier to get started with, especially for smaller projects.  Development, testing, and deployment are straightforward.\n    * **Easy to Deploy:**  Deploying a single unit is simpler than managing multiple services.\n    * **Performance (Initially):** Can be faster for simple operations due to less network overhead.\n* **Cons:**\n    * **Scalability Challenges:** Scaling is difficult – you have to scale the *entire* application, even if only one part needs more resources.\n    * **Deployment Bottlenecks:**  Any change, even a small one, requires redeploying the entire application.\n    * **Technology Lock-in:** Difficult to adopt new technologies or frameworks because the entire codebase is tied to the original choice.\n    * **Complexity Over Time:** As the application grows, the codebase becomes increasingly complex and harder to maintain.\n    * **Single Point of Failure:** A failure in one part of the application can bring down the whole system.\n\n\n**2. Microservices Architecture**\n\n* **Description:** The application is structured as a collection of small, independent services that communicate over a network (typically using APIs).\n* **Pros:**\n    * **Independent Scalability:** Each service can be scaled independently based on its specific needs.\n    * **Technology Diversity:** Different services can be built using different technologies, allowing for optimal choices.\n    * **Faster Development Cycles:** Smaller teams can work on individual services, leading to faster development and deployment.\n    * **Fault Isolation:**  A failure in one service doesn't necessarily bring down the entire application.\n    * **Improved Maintainability:** Smaller codebases are easier to understand and maintain.\n* **Cons:**\n    * **Increased Complexity:** Overall system complexity is higher due to distributed nature, inter-service communication, and managing multiple deployments.\n    * **Operational Overhead:** Requires more sophisticated infrastructure and monitoring.\n    * **Distributed Debugging:** Debugging issues across multiple services can be challenging.\n    * **Data Consistency:** Maintaining data consistency across services can be complex (often requiring eventual consistency models).\n    * **Communication Overhead:** Network calls between services introduce latency.\n\n\n\n**3. Layered Architecture**\n\n* **Description:** The application is divided into distinct layers (e.g., presentation, business logic, data access) with each layer performing a specific function.\n* **Pros:**\n    * **Clear Separation of Concerns:**  Promotes modularity and maintainability.\n    * **Testability:** Easier to test individual layers.\n    * **Commonly Understood:**  A well-established and widely understood architectural pattern.\n* **Cons:**\n    * **Potential for Tight Coupling:** Layers can become tightly coupled if not designed carefully.\n    * **Performance Issues:** Can introduce performance bottlenecks if layers are not optimized.\n    * **Not Ideal for Complex Systems:** Can become unwieldy for very complex applications.\n\n**4. Event-Driven Architecture**\n\n* **Description:** Components communicate through asynchronous events.  Services react to events rather than directly calling each other.\n* **Pros:**\n    * **Loose Coupling:** Services are loosely coupled, making the system more flexible and resilient.\n    * **Scalability:**  Well-suited for handling high volumes of events.\n    * **Real-time Processing:** Enables real-time data processing and responsiveness.\n* **Cons:**\n    * **Complexity:** Can be complex to design and manage, especially with a large number of events.\n    * **Debugging:** Debugging event flows can be challenging.\n    * **Eventual Consistency:** Often relies on eventual consistency models.\n\n\n\n**5. Serverless Architecture**\n\n* **Description:**  Applications are built using individual, stateless functions that are triggered by events.  The cloud provider manages the underlying infrastructure.\n* **Pros:**\n    * **Scalability:** Automatically scales to handle varying workloads.\n    * **Cost-Effective:** Pay-per-use model can be very cost-effective for applications with intermittent traffic.\n    * **Reduced Operational Overhead:** The cloud provider handles infrastructure management.\n* **Cons:**\n    * **Vendor Lock-in:** Can be difficult to migrate to another cloud provider.\n    * **Cold Starts:**  Functions can experience \"cold starts\" (initial latency) when invoked after a period of inactivity.\n    * **Debugging:** Debugging can be more challenging due to the distributed nature.\n\n\n\n**Here's a table summarizing the key differences:**\n\n| Feature           ",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2150,
+        "output_tokens": 1024,
+        "total_latency_ms": 6269,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:17.895Z"
+    },
+    {
+      "result_id": "2090c34a-45bd-4666-a0a2-446af41d7413",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"auth_list_users\",\n    \"arguments\": {\n      \"role\": \"admin\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "admin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2151,
+        "output_tokens": 44,
+        "total_latency_ms": 596,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:18.606Z"
+    },
+    {
+      "result_id": "f074f5cf-a52c-4e41-877e-f41747b3f86f",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"daily_active_users\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "daily_active_users",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2153,
+        "output_tokens": 71,
+        "total_latency_ms": 761,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:19.474Z"
+    },
+    {
+      "result_id": "473e6282-a54b-4f10-8b26-ad07141a34c2",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"shop_track_order\",\n    \"arguments\": {\n      \"order_id\": \"1234567890\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "1234567890"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2151,
+        "output_tokens": 55,
+        "total_latency_ms": 660,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:20.248Z"
+    },
+    {
+      "result_id": "828050f1-beee-4fb5-b5f2-53072db43927",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"example_value\",\n    \"properties\": {\n      \"key1\": \"value1\",\n      \"key2\": 123\n    },\n    \"user_id\": \"user123\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {
+              "key1": "value1",
+              "key2": 123
+            },
+            "user_id": "user123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 2166,
+        "output_tokens": 84,
+        "total_latency_ms": 837,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:21.191Z"
+    },
+    {
+      "result_id": "55d64180-3fc5-4920-bd94-50847e11e17c",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"example_value\",\n    \"include_pollutants\": true\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 2162,
+        "output_tokens": 52,
+        "total_latency_ms": 652,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:21.945Z"
+    },
+    {
+      "result_id": "e5961fbe-95f8-4013-aa4b-bfca55e6e934",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"comm_send_message\",\n  \"arguments\": {\n    \"recipient\": \"test_input\",\n    \"message\": \"test_input\",\n    \"priority\": \"normal\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "test_input",
+            "message": "test_input",
+            "priority": "normal"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 58,
+        "total_latency_ms": 690,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:22.741Z"
+    },
+    {
+      "result_id": "ffa0588d-569d-4e2d-8239-b1454dcf734d",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"sample_data\",\n    \"timestamp\": \"00:00:00\",\n    \"width\": 128\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "sample_data",
+            "timestamp": "00:00:00",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 2170,
+        "output_tokens": 66,
+        "total_latency_ms": 744,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:23.589Z"
+    },
+    {
+      "result_id": "eb65439c-f6d1-4806-8d60-9d31c7b0cb75",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"sample_data dashboard\",\n    \"widgets\": [\n      \"item1\",\n      \"item2\"\n    ],\n    \"shared\": false\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data dashboard",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 2177,
+        "output_tokens": 68,
+        "total_latency_ms": 744,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:24.441Z"
+    },
+    {
+      "result_id": "27e352ba-538e-477c-904a-e1baba6e549e",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"user_engagement_report\",\n    \"date_range\": \"last_30d\",\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_engagement_report",
+            "date_range": "last_30d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2162,
+        "output_tokens": 66,
+        "total_latency_ms": 733,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:25.277Z"
+    },
+    {
+      "result_id": "855d9495-3950-4faa-8d77-4a930f8ddf68",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Could you please provide the order ID you'd like me to track?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2160,
+        "output_tokens": 16,
+        "total_latency_ms": 446,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:25.824Z"
+    },
+    {
+      "result_id": "9f3f5354-edbd-435f-87fb-2dd1aea90d83",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Could you please provide the order ID you'd like me to track?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2167,
+        "output_tokens": 16,
+        "total_latency_ms": 448,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:26.375Z"
+    },
+    {
+      "result_id": "8413fcaa-3eb6-4b63-bf19-53b8344807ef",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break this down into a series of steps and use the available tools to achieve the desired outcome.\n\n**Step 1: Generate a Thumbnail**\n\nI'll use `media_generate_thumbnail` to create a thumbnail from a video.  I need a video path and a timestamp.  Since I don't have a video source, I'll use a placeholder video path and timestamp for demonstration.\n\n```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"/path/to/my_video.mp4\",\n    \"timestamp\": \"00:15:00\",\n    \"width\": 128\n  }\n}\n```\n\n**Step 2: Resize the Thumbnail**\n\nNow that we have the generated thumbnail, let's resize it to a larger size.\n\n```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"/path/to/my_video_thumbnail.jpg\",\n    \"width\": 512,\n    \"height\": 512,\n    \"quality\": 80\n  }\n}\n```\n\n**Step 3: Get Air Quality Data**\n\nFinally, let's use `wx_get_air_quality` to retrieve air quality data.  I'll need a location.  I'll use \"London\" as an example.\n\n```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"London\",\n    \"include_pollutants\": true\n  }\n}\n```\n\n**Explanation:**\n\n1.  I started by generating a thumbnail from a video using `media_generate_thumbnail`.\n2.  Then, I resized the thumbnail using `media_resize_image`.\n3.  Finally, I retrieved air quality data for London using `wx_get_air_quality`.\n\nI've provided the JSON calls for each step.  To proceed, you'll need to replace the placeholder values (like `/path/to/my_video.mp4`) with actual values.\n",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 2174,
+        "output_tokens": 482,
+        "total_latency_ms": 3153,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:29.631Z"
+    },
+    {
+      "result_id": "2a430e8c-9d54-45f9-ac5e-6a70acdecae6",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"guest\",\n    \"status\": \"suspended\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2164,
+        "output_tokens": 46,
+        "total_latency_ms": 619,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:30.352Z"
+    },
+    {
+      "result_id": "3b728ed3-ec07-45fd-9ba3-d5300e5195b6",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"config.json\",\n    \"width\": 174.45\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2166,
+        "output_tokens": 54,
+        "total_latency_ms": 671,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:31.124Z"
+    },
+    {
+      "result_id": "1f7e529f-c19b-4b52-a33c-7fa16837b8f7",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"config.json\",\n    \"properties\": {\n      \"key\": \"value\"\n    },\n    \"user_id\": \"Berlin\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2178,
+        "output_tokens": 69,
+        "total_latency_ms": 747,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:31.983Z"
+    },
+    {
+      "result_id": "8a149887-b07a-44db-a0ad-58d0ef71d3ae",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"user@example.com\",\n      \"include_pollutants\": false,\n      \"offset\": 929.49\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2186,
+        "output_tokens": 73,
+        "total_latency_ms": 775,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:32.860Z"
+    },
+    {
+      "result_id": "2c3e81a8-9369-49df-b0b1-124e89dbbad5",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"egg_calculation\", \"properties\": {\"eggs_used\": 7, \"eggs_remaining\": 2}, \"user_id\": \"user_123\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "egg_calculation",
+            "properties": {
+              "eggs_used": 7,
+              "eggs_remaining": 2
+            },
+            "user_id": "user_123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2155,
+        "output_tokens": 56,
+        "total_latency_ms": 676,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:33.638Z"
+    },
+    {
+      "result_id": "f2c91745-254c-458a-af8b-a583d625eaf5",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"math_calculate\", \"arguments\": {\"operation\": \"square_root\", \"number\": 144}}",
+        "parsed_tool_call": {
+          "name": "math_calculate",
+          "arguments": {
+            "operation": "square_root",
+            "number": 144
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 2150,
+        "output_tokens": 28,
+        "total_latency_ms": 508,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:34.249Z"
+    },
+    {
+      "result_id": "b08335ef-98b2-476b-8a36-ab8cd05b40ae",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. This is a complex topic, so I'll categorize them for clarity.\n\n**1. Web Analytics (Google Analytics, Adobe Analytics, Matomo)**\n\n* **Description:** These are the most common approaches for tracking website traffic, user behavior, and conversions. They rely on JavaScript tracking code embedded on your website.\n* **Pros:**\n    * **Mature & Established:**  Google Analytics, in particular, has a massive user base and a wealth of documentation and community support.\n    * **Comprehensive Data:** Provides a huge range of metrics – pageviews, bounce rate, session duration, user demographics, device types, traffic sources, conversion rates, etc.\n    * **Real-Time Data:** Offers near real-time insights into website activity.\n    * **Integration:** Integrates well with other marketing tools (Google Ads, Google Search Console, etc.).\n    * **Relatively Easy to Implement:**  Setup is generally straightforward, especially Google Analytics.\n* **Cons:**\n    * **Privacy Concerns:**  Reliance on tracking code raises privacy concerns for users.  GDPR and CCPA compliance requires careful configuration and consent management.\n    * **Data Accuracy:** Can be affected by bots and other non-genuine traffic.\n    * **Limited User-Level Data:**  Often struggles to accurately identify individual users due to privacy restrictions and the use of cookies.\n    * **Cost (for Premium Features):**  While Google Analytics is free, advanced features require a paid subscription.\n    * **Data Ownership:** You don't *own* the data; Google does.\n\n**2. Mobile App Analytics (Firebase Analytics, Amplitude, Mixpanel)**\n\n* **Description:**  These tools track user behavior within mobile applications – screen views, events, user engagement, retention, etc.\n* **Pros:**\n    * **Event-Based Tracking:** Focuses on tracking specific user actions (e.g., button clicks, form submissions, video plays) rather than just pageviews.\n    * **User Segmentation:**  Allows you to segment users based on behavior, demographics, and other criteria.\n    * **Retention Analytics:**  Crucial for understanding how long users continue to use your app.\n    * **Funnel Analysis:**  Helps you identify drop-off points in user flows.\n* **Cons:**\n    * **Technical Complexity:**  Can be more complex to implement than web analytics, especially for custom events.\n    * **Data Volume:** Mobile apps can generate a *lot* of data, requiring robust infrastructure.\n    * **Privacy Considerations:** Similar privacy concerns as web analytics, especially regarding user consent and data collection.\n    * **Cost:**  Many of the more powerful mobile analytics platforms have subscription fees.\n\n**3. CRM Analytics (Salesforce Analytics, HubSpot Analytics)**\n\n* **Description:**  These tools analyze data from your CRM system to provide insights into sales performance, customer behavior, and marketing effectiveness.\n* **Pros:**\n    * **Integrated Data:**  Combines data from your CRM with other business systems (e.g., marketing automation, customer support).\n    * **Sales Performance Insights:**  Identifies top performers, sales trends, and opportunities for improvement.\n    * **Customer Segmentation:**  Segments customers based on purchase history, demographics, and engagement.\n* **Cons:**\n    * **CRM Dependency:**  Relies entirely on the quality and completeness of your CRM data.\n    * **Limited Scope:** Primarily focused on sales and marketing data, not broader website or app analytics.\n    * **Cost:**  CRM analytics platforms are often part of a larger CRM subscription.\n\n**4.  Data Warehousing & Business Intelligence (BI) Tools (Snowflake, Tableau, Power BI)**\n\n* **Description:** These approaches involve collecting data from various sources (web analytics, CRM, marketing automation, etc.) into a central data warehouse and then using BI tools to analyze and visualize the data.\n* **Pros:**\n    * **Centralized Data:** Provides a single source of truth for all your analytics data.\n    * **Advanced Analytics:** Enables complex queries, data blending, and predictive analytics.\n    * **Custom Reporting:** Allows you to create highly customized reports and dashboards.\n* **Cons:**\n    * **High Cost:**  Data warehousing and BI tools can be expensive, especially for large datasets.\n    * **Technical Expertise:** Requires significant technical expertise to set up and maintain.\n    * **Time-Consuming:**  Building a data warehouse and creating complex reports can be a time-consuming process.\n\n**5.  Event Tracking (Segment, Mixpanel - often used in conjunction with others)**\n\n* **Description:**  Focuses on tracking specific user actions (events) within a website or app, regardless of the platform.  Often used to feed data into other analytics tools.\n* **Pros",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2149,
+        "output_tokens": 1024,
+        "total_latency_ms": 6335,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:40.688Z"
+    },
+    {
+      "result_id": "27154214-8a27-43e3-b580-e04c3d5cee8f",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of various software architecture approaches. This is a complex topic, and the \"best\" choice depends heavily on the specific project's needs. Here's a comparison of some common approaches:\n\n**1. Monolithic Architecture**\n\n* **Description:**  All components of the application are tightly coupled and deployed as a single unit.\n* **Pros:**\n    * **Simple to Develop:** Easier to get started with, especially for smaller projects.  Development, testing, and deployment are straightforward.\n    * **Easy to Deploy:**  Deploying a single unit is simpler than managing multiple services.\n    * **Performance (Initially):** Can be faster for simple operations due to less network overhead.\n* **Cons:**\n    * **Scalability Challenges:** Scaling is difficult – you have to scale the *entire* application, even if only one part needs more resources.\n    * **Deployment Bottlenecks:**  Any change, even a small one, requires redeploying the entire application.\n    * **Technology Lock-in:** Difficult to adopt new technologies or frameworks because the entire codebase is tied to the original choice.\n    * **Complexity Over Time:** As the application grows, the codebase becomes increasingly complex and harder to maintain.\n    * **Single Point of Failure:** A failure in one part of the application can bring down the whole system.\n\n\n**2. Microservices Architecture**\n\n* **Description:** The application is structured as a collection of small, independent services that communicate over a network (typically using APIs).\n* **Pros:**\n    * **Independent Scalability:** Each service can be scaled independently based on its specific needs.\n    * **Technology Diversity:** Different services can be built using different technologies, allowing for optimal choices.\n    * **Faster Development Cycles:** Smaller teams can work on individual services, leading to faster development and deployment.\n    * **Fault Isolation:**  A failure in one service doesn't necessarily bring down the entire application.\n    * **Improved Maintainability:** Smaller codebases are easier to understand and maintain.\n* **Cons:**\n    * **Increased Complexity:** Overall system complexity is higher due to distributed nature, inter-service communication, and managing multiple deployments.\n    * **Operational Overhead:** Requires more sophisticated infrastructure and monitoring.\n    * **Distributed Debugging:** Debugging issues across multiple services can be challenging.\n    * **Data Consistency:** Maintaining data consistency across services can be complex (often requiring eventual consistency models).\n    * **Communication Overhead:** Network calls between services introduce latency.\n\n\n\n**3. Layered Architecture**\n\n* **Description:** The application is divided into distinct layers (e.g., presentation, business logic, data access) with each layer performing a specific function.\n* **Pros:**\n    * **Clear Separation of Concerns:**  Promotes modularity and maintainability.\n    * **Testability:** Easier to test individual layers.\n    * **Commonly Understood:**  A well-established and widely understood architectural pattern.\n* **Cons:**\n    * **Potential for Tight Coupling:** Layers can become tightly coupled if not designed carefully.\n    * **Performance Issues:** Can introduce performance bottlenecks if layers are not optimized.\n    * **Not Ideal for Complex Systems:** Can become unwieldy for very complex applications.\n\n**4. Event-Driven Architecture**\n\n* **Description:** Components communicate through asynchronous events.  Services react to events rather than directly calling each other.\n* **Pros:**\n    * **Loose Coupling:** Services are loosely coupled, making the system more flexible and resilient.\n    * **Scalability:**  Well-suited for handling high volumes of events.\n    * **Real-time Processing:** Enables real-time data processing and responsiveness.\n* **Cons:**\n    * **Complexity:** Can be complex to design and manage, especially with a large number of events.\n    * **Debugging:** Debugging event flows can be challenging.\n    * **Eventual Consistency:** Often relies on eventual consistency models.\n\n\n\n**5. Serverless Architecture**\n\n* **Description:**  Applications are built using individual, stateless functions that are triggered by events.  The cloud provider manages the underlying infrastructure.\n* **Pros:**\n    * **Scalability:** Automatically scales to handle varying workloads.\n    * **Cost-Effective:** Pay-per-use model can be very cost-effective for applications with intermittent traffic.\n    * **Reduced Operational Overhead:** The cloud provider handles infrastructure management.\n* **Cons:**\n    * **Vendor Lock-in:** Can be difficult to migrate to another cloud provider.\n    * **Cold Starts:**  Functions can experience \"cold starts\" (initial latency) when invoked after a period of inactivity.\n    * **Debugging:** Debugging can be more challenging due to the distributed nature.\n\n\n\n**Here's a table summarizing the key differences:**\n\n| Feature           ",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2150,
+        "output_tokens": 1024,
+        "total_latency_ms": 6305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:47.096Z"
+    },
+    {
+      "result_id": "7dcb2125-9691-486d-a5c1-49cb6946a66f",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"auth_list_users\",\n    \"arguments\": {\n      \"role\": null,\n      \"status\": null,\n      \"search\": null\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": null,
+            "status": null,
+            "search": null
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 745,
+        "output_tokens": 56,
+        "total_latency_ms": 543,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:47.741Z"
+    },
+    {
+      "result_id": "82fcfeec-e900-4736-a042-8b2f74864fe0",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"marketing_campaign_performance\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {\n      \"campaign_name\": \"SummerSale2024\"\n    },\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "marketing_campaign_performance",
+            "date_range": "last_30d",
+            "filters": {
+              "campaign_name": "SummerSale2024"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 747,
+        "output_tokens": 90,
+        "total_latency_ms": 698,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:48.543Z"
+    },
+    {
+      "result_id": "316b6d23-4991-4807-ba99-2a6011aca78a",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "I can help with that. Please provide the order ID.\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"12345\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "12345"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 745,
+        "output_tokens": 39,
+        "total_latency_ms": 381,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:49.026Z"
+    },
+    {
+      "result_id": "d059de48-ff89-4b42-9365-ec5bf9e095c3",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 760,
+        "output_tokens": 44,
+        "total_latency_ms": 417,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:49.549Z"
+    },
+    {
+      "result_id": "e7e80d8d-6aed-47d7-8020-c7a7005d5c5d",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 756,
+        "output_tokens": 39,
+        "total_latency_ms": 378,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:50.032Z"
+    },
+    {
+      "result_id": "8fe09b37-9316-4dd7-9179-93b86c8397a8",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"test_input\", \"message\": \"test_input\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "test_input",
+            "message": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 35,
+        "total_latency_ms": 356,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:50.501Z"
+    },
+    {
+      "result_id": "e9bbba59-a233-4242-b707-5e2832fd1d6e",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"sample_data\", \"timestamp\": \"00:00:00\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "sample_data",
+            "timestamp": "00:00:00",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 764,
+        "output_tokens": 45,
+        "total_latency_ms": 418,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:51.025Z"
+    },
+    {
+      "result_id": "18b2f4a1-dafd-4d80-8792-cbcfb45b0dde",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data dashboard\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data dashboard",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 771,
+        "output_tokens": 39,
+        "total_latency_ms": 381,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:51.521Z"
+    },
+    {
+      "result_id": "e28a8087-c807-4003-a4c1-00674d2c6e52",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "I need to know who to send a message to before I can use `comm_send_message`. Please provide the recipient information (user ID, email, or channel name).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 756,
+        "output_tokens": 37,
+        "total_latency_ms": 375,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:51.998Z"
+    },
+    {
+      "result_id": "ca5da705-fcee-4a59-9bd7-57f19ecd6f5c",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, I can do that. First, I'll track the order.\n\n```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-20231026-001\",\n    \"include_history\": true,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "ORD-20231026-001",
+            "include_history": true,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 754,
+        "output_tokens": 89,
+        "total_latency_ms": 678,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:52.783Z"
+    },
+    {
+      "result_id": "ae4cc5c1-2fb1-42fe-9580-23391d5f7233",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's start with tracking an order, then send a message, and finally get air quality data.\n\nFirst, I'll track the order. Could you please provide the `order_id`?\n```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-12345\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 761,
+        "output_tokens": 91,
+        "total_latency_ms": 683,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:53.580Z"
+    },
+    {
+      "result_id": "df7664eb-6942-4018-a2bb-525a0ae43a23",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, I can help you with that. Let's break this down into a series of steps and use the available tools to achieve your goal.\n\n**Step 1: Generate a Thumbnail**\n\nI'll use `media_generate_thumbnail` to create a thumbnail from a video.  I need a video file path and a timestamp.  I'll assume we have a video file named \"tutorial.mp4\" and want a thumbnail at the 60-second mark.\n\n```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"tutorial.mp4\",\n    \"timestamp\": \"00:01:00\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"quality\": 80\n  }\n}\n```\n\n**Step 2: Resize the Thumbnail**\n\nNow that we have the generated thumbnail, let's resize it to a more manageable size. I'll use `media_resize_image` to resize the thumbnail.\n\n```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"thumbnail.jpg\",\n    \"width\": 256,\n    \"height\": 256,\n    \"quality\": 90\n  }\n}\n```\n\n**Step 3: Get Air Quality Data**\n\nFinally, let's use `wx_get_air_quality` to retrieve air quality data. I'll use the resized thumbnail image as a reference point (assuming it's a picture of a polluted area) and a location.\n\n```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"Los Angeles, CA\",\n    \"include_pollutants\": true,\n    \"offset\": 0\n  }\n}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 768,
+        "output_tokens": 427,
+        "total_latency_ms": 2641,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:56.324Z"
+    },
+    {
+      "result_id": "e9cdf502-96a2-4289-bc90-d0ba5e076548",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 758,
+        "output_tokens": 31,
+        "total_latency_ms": 393,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:56.818Z"
+    },
+    {
+      "result_id": "522d2eb5-5e4d-4037-8aa2-8388861c391c",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 760,
+        "output_tokens": 40,
+        "total_latency_ms": 392,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:57.310Z"
+    },
+    {
+      "result_id": "d5339b3e-7af9-4492-93dd-027cd7bc34ba",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 772,
+        "output_tokens": 41,
+        "total_latency_ms": 393,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:57.805Z"
+    },
+    {
+      "result_id": "837d129b-5c22-4ae4-8c4d-7dc1e65621eb",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 780,
+        "output_tokens": 51,
+        "total_latency_ms": 451,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:58.357Z"
+    },
+    {
+      "result_id": "3b70187e-6745-4055-9f3c-4a56fd417429",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "A dozen eggs is 12. So, 3 dozen eggs is 3 * 12 = 36 eggs.\n\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 749,
+        "output_tokens": 51,
+        "total_latency_ms": 455,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:58.918Z"
+    },
+    {
+      "result_id": "d2ee8c0f-e3d5-45ec-a909-8ba9b9c30c0b",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "I cannot directly calculate the square root. However, I can use the `analytics_run_report` tool to generate a report that includes the square root of 144.\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sqrt_report_1\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"text\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sqrt_report_1",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 744,
+        "output_tokens": 90,
+        "total_latency_ms": 673,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:43:59.705Z"
+    },
+    {
+      "result_id": "15e5e419-26e0-4dc8-bcde-7b88d9139f5e",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. Here's a comparison, categorized for clarity:\n\n**1. Web Analytics (Google Analytics, Adobe Analytics)**\n\n*   **Pros:**\n    *   **Ease of Use:** Generally very user-friendly, with intuitive dashboards and reporting.\n    *   **Comprehensive Data:** Tracks a huge range of metrics – page views, bounce rates, session duration, demographics, traffic sources, conversions, etc.\n    *   **Real-Time Data:** Provides near real-time insights into website activity.\n    *   **Integration:** Integrates well with other marketing tools (Google Ads, SEO tools, etc.).\n    *   **Cost-Effective:** Many tiers are free, making it accessible for small businesses.\n*   **Cons:**\n    *   **Data Privacy Concerns:** Increasing scrutiny around data collection and user privacy (GDPR, CCPA).\n    *   **Limited Offline Tracking:** Primarily focused on online behavior; doesn't capture in-store or offline interactions well.\n    *   **Reliance on Cookies:**  Dependent on users accepting cookies, which can impact tracking accuracy.\n    *   **Can Be Overwhelming:** The sheer volume of data can be difficult to interpret without proper analysis skills.\n\n**2. CRM Analytics (Salesforce Analytics, HubSpot Analytics)**\n\n*   **Pros:**\n    *   **Customer-Centric:** Focuses on understanding customer behavior, sales performance, and marketing effectiveness *within* the context of your customer relationships.\n    *   **Integration with CRM:** Seamlessly integrates with your CRM system, providing a 360-degree view of the customer.\n    *   **Sales & Marketing Insights:** Identifies trends in sales cycles, lead generation, and campaign performance.\n    *   **Predictive Analytics:** Some CRMs offer predictive analytics capabilities (e.g., forecasting sales).\n*   **Cons:**\n    *   **Data Quality Dependent:**  Accuracy relies heavily on the quality of data entered into the CRM. “Garbage in, garbage out.”\n    *   **Can Be Complex:**  Advanced features and customization can require specialized training.\n    *   **Cost:**  CRM analytics platforms can be expensive, especially for larger organizations.\n\n**3. Digital Marketing Attribution Analytics (AppsFlyer, Branch)**\n\n*   **Pros:**\n    *   **Granular Attribution:**  Determines which marketing channels and touchpoints are *actually* driving conversions and revenue.\n    *   **Mobile-Focused:**  Specifically designed for mobile app marketing.\n    *   **Multi-Channel Attribution:**  Can track the impact of various channels (social media, paid advertising, email, etc.) across the entire customer journey.\n*   **Cons:**\n    *   **Data Silos:**  Attribution data is often fragmented across different platforms, making it challenging to get a complete picture.\n    *   **Complexity:**  Attribution modeling can be complex and requires a deep understanding of marketing channels and customer behavior.\n    *   **Cost:**  These platforms can be expensive, particularly for smaller businesses.\n\n**4. Custom Analytics (Building Your Own Dashboards & Reports)**\n\n*   **Pros:**\n    *   **Tailored to Specific Needs:**  You can build analytics solutions that precisely address your unique business questions and requirements.\n    *   **Data Control:**  You have complete control over the data sources and analysis methods.\n    *   **Flexibility:**  Can adapt to changing business needs.\n*   **Cons:**\n    *   **High Cost & Time Investment:** Requires significant technical expertise, development time, and ongoing maintenance.\n    *   **Requires Data Engineering:**  You need to extract, transform, and load (ETL) data from various sources.\n    *   **Maintenance Overhead:**  Requires ongoing updates and support.\n\n\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Web Analytics | CRM Analytics | Digital Marketing Attribution | Custom Analytics |\n|--------------------|---------------|---------------|-------------------------------|------------------|\n| **Focus**          | Website Traffic| Customer Relationships | Marketing ROI                | Specific Needs   |\n| **Data Sources**   | Web Data      | CRM Data       | Mobile App Data              | Varied           |\n| **Ease of Use**     | High          | Medium        | Medium                        | Low              |\n| **Cost**           | Low-Medium    | Medium-High   | High                          | High             |\n\nTo help me narrow down the best approach for *your* needs, could you tell me:\n\n*   What kind of data are you primarily interested in analyzing? (e.g., website traffic, customer behavior, marketing campaign performance?)\n*   What is the size of your business and your budget?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 743,
+        "output_tokens": 1010,
+        "total_latency_ms": 5962,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:05.768Z"
+    },
+    {
+      "result_id": "0cd57bd7-3ddc-4699-9602-2cb87e740f86",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. I'll present them in a way that's easy to understand and compare.\n\n**1. Monolithic Architecture**\n\n*   **Description:** All components of the application are tightly coupled and deployed as a single unit.\n*   **Pros:**\n    *   **Simple to Develop:** Easier to get started with, especially for smaller applications.  Development, testing, and deployment are straightforward.\n    *   **Easy to Deploy:** Deploying a single unit is simpler than managing multiple services.\n    *   **Performance (Initially):** Can be faster for simple operations due to less network overhead.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling is difficult – you have to scale the *entire* application, even if only one part needs more resources.\n    *   **Deployment Bottlenecks:** Any change, even a small one, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks because the entire application is built on a single stack.\n    *   **Complexity Over Time:** As the application grows, the codebase becomes increasingly complex and harder to maintain.\n\n**2. Microservices Architecture**\n\n*   **Description:** The application is structured as a collection of small, independent services that communicate over a network (often using APIs).\n*   **Pros:**\n    *   **Independent Scalability:** Each service can be scaled independently based on its specific needs.\n    *   **Faster Development Cycles:** Smaller teams can work on individual services, leading to faster development and deployment.\n    *   **Technology Diversity:** Different services can be built using different technologies best suited for their specific tasks.\n    *   **Fault Isolation:** Failure in one service doesn't necessarily bring down the entire application.\n*   **Cons:**\n    *   **Increased Complexity:** Overall system complexity is higher due to distributed nature, inter-service communication, and managing multiple services.\n    *   **Operational Overhead:** Requires more sophisticated infrastructure and monitoring to manage and operate the services.\n    *   **Data Consistency:** Maintaining data consistency across multiple services can be challenging.\n    *   **Debugging & Testing:** Distributed debugging and testing can be more complex.\n\n**3. Layered Architecture**\n\n*   **Description:** The application is divided into distinct layers (e.g., presentation, business logic, data access) with each layer performing a specific function.\n*   **Pros:**\n    *   **Well-Defined Responsibilities:** Clear separation of concerns makes the code easier to understand and maintain.\n    *   **Testability:** Easier to test individual layers in isolation.\n    *   **Maintainability:** Changes in one layer are less likely to affect other layers.\n*   **Cons:**\n    *   **Potential for Rigidity:** Can lead to tight coupling between layers if not designed carefully.\n    *   **Performance Overhead:** Can introduce performance overhead due to multiple layer transitions.\n    *   **Not Ideal for Complex Systems:**  May not scale well for very complex applications.\n\n**4. Event-Driven Architecture**\n\n*   **Description:** Components communicate through asynchronous events.  Services react to events rather than directly calling each other.\n*   **Pros:**\n    *   **Loose Coupling:** Services are loosely coupled, making the system more flexible and resilient.\n    *   **Scalability:**  Well-suited for handling high volumes of events.\n    *   **Real-time Capabilities:** Enables real-time data processing and updates.\n*   **Cons:**\n    *   **Complexity:** Can be complex to design and debug due to the asynchronous nature.\n    *   **Eventual Consistency:**  Data consistency is often eventual, requiring careful handling of potential inconsistencies.\n    *   **Monitoring:** Requires robust monitoring to track event flows and identify issues.\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Monolithic | Microservices | Layered      | Event-Driven |\n|--------------------|------------|---------------|--------------|--------------|\n| **Coupling**       | Tight       | Loose         | Moderate     | Loose        |\n| **Scalability**     | Poor        | Excellent     | Moderate     | Excellent    |\n| **Complexity**     | Low         | High          | Moderate     | High         |\n| **Deployment**     | Simple      | Complex       | Moderate     | Complex      |\n| **Technology**     | Limited     | Diverse       | Limited     | Diverse      |\n\n\n\n**To help me give you even more tailored information, could you tell me:**\n\n*   What type of application are you considering? (e.g., web application, mobile app, IoT system)\n*   What are the key requirements of the application? (e.g., scalability,",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 744,
+        "output_tokens": 1024,
+        "total_latency_ms": 6160,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:12.042Z"
+    },
+    {
+      "result_id": "73b56dee-36bf-4546-bcc8-231737cf899b",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"auth_list_users\",\n    \"arguments\": {\n      \"role\": null,\n      \"status\": null,\n      \"search\": null\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": null,
+            "status": null,
+            "search": null
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 745,
+        "output_tokens": 56,
+        "total_latency_ms": 545,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:12.691Z"
+    },
+    {
+      "result_id": "c530412c-7dec-4eed-aac9-83ef4b37447e",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"marketing_campaign_performance\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {\n      \"campaign_name\": \"SummerSale2024\"\n    },\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "marketing_campaign_performance",
+            "date_range": "last_30d",
+            "filters": {
+              "campaign_name": "SummerSale2024"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 747,
+        "output_tokens": 90,
+        "total_latency_ms": 678,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:13.470Z"
+    },
+    {
+      "result_id": "0f5aa0c2-c964-48c3-b68b-29f5c6328e98",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "I can help with that. Please provide the order ID.\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"12345\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "12345"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 745,
+        "output_tokens": 39,
+        "total_latency_ms": 386,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:13.957Z"
+    },
+    {
+      "result_id": "f87cd9aa-58a6-4226-bda4-afd45257e64c",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 760,
+        "output_tokens": 44,
+        "total_latency_ms": 414,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:14.487Z"
+    },
+    {
+      "result_id": "32677e6d-c1b9-490c-9d48-7ce691935238",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 756,
+        "output_tokens": 39,
+        "total_latency_ms": 379,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:14.978Z"
+    },
+    {
+      "result_id": "7daba48a-db39-4fd2-8454-ba25a3022f91",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"test_input\", \"message\": \"test_input\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "test_input",
+            "message": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 35,
+        "total_latency_ms": 358,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:15.438Z"
+    },
+    {
+      "result_id": "49bb6d1b-041f-4116-a7e7-289edf240b94",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"sample_data\", \"timestamp\": \"00:00:00\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "sample_data",
+            "timestamp": "00:00:00",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 764,
+        "output_tokens": 45,
+        "total_latency_ms": 422,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:15.961Z"
+    },
+    {
+      "result_id": "a915f904-e67a-409a-843f-2af57c46a657",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data dashboard\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data dashboard",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 771,
+        "output_tokens": 39,
+        "total_latency_ms": 382,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:16.445Z"
+    },
+    {
+      "result_id": "2d15cb2e-2880-411e-80b2-5ec5b3f0d75e",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "I need to know who to send a message to before I can use `comm_send_message`. Please provide the recipient information (user ID, email, or channel name).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 756,
+        "output_tokens": 37,
+        "total_latency_ms": 373,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:16.926Z"
+    },
+    {
+      "result_id": "6d853588-1d34-4bcb-80a3-c426109b6c46",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, I can do that. First, I'll track the order.\n\n```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-20231026-001\",\n    \"include_history\": true,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "ORD-20231026-001",
+            "include_history": true,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 754,
+        "output_tokens": 89,
+        "total_latency_ms": 668,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:17.705Z"
+    },
+    {
+      "result_id": "d8d039be-0df7-47a1-8d53-4664646b1f69",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's start with tracking an order, then send a message, and finally get air quality data.\n\nFirst, I'll track the order. Could you please provide the `order_id`?\n```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-12345\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 761,
+        "output_tokens": 91,
+        "total_latency_ms": 682,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:18.490Z"
+    },
+    {
+      "result_id": "2ce8b422-10b1-43da-bd03-800ca05dc584",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, I can help you with that. Let's break this down into a series of steps and use the available tools to achieve your goal.\n\n**Step 1: Generate a Thumbnail**\n\nI'll use `media_generate_thumbnail` to create a thumbnail from a video.  I need a video file path and a timestamp.  I'll assume we have a video file named \"tutorial.mp4\" and want a thumbnail at the 60-second mark.\n\n```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"tutorial.mp4\",\n    \"timestamp\": \"00:01:00\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"quality\": 80\n  }\n}\n```\n\n**Step 2: Resize the Thumbnail**\n\nNow that we have the generated thumbnail, let's resize it to a more manageable size. I'll use `media_resize_image` to resize the thumbnail.\n\n```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"thumbnail.jpg\",\n    \"width\": 256,\n    \"height\": 256,\n    \"quality\": 90\n  }\n}\n```\n\n**Step 3: Get Air Quality Data**\n\nFinally, let's use `wx_get_air_quality` to retrieve air quality data. I'll use the resized thumbnail image as a reference point (assuming it's a picture of a polluted area) and a location.\n\n```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"Los Angeles, CA\",\n    \"include_pollutants\": true,\n    \"offset\": 0\n  }\n}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 768,
+        "output_tokens": 427,
+        "total_latency_ms": 2639,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:21.237Z"
+    },
+    {
+      "result_id": "7ee0be21-1c3e-4327-9a08-9d5745da21cd",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 758,
+        "output_tokens": 31,
+        "total_latency_ms": 391,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:21.733Z"
+    },
+    {
+      "result_id": "e4115370-30f2-4be5-8f0a-d81757750af4",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 760,
+        "output_tokens": 40,
+        "total_latency_ms": 395,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:22.229Z"
+    },
+    {
+      "result_id": "11f7c5ff-8f6e-411a-844b-dced76f2c9aa",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 772,
+        "output_tokens": 41,
+        "total_latency_ms": 389,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:22.733Z"
+    },
+    {
+      "result_id": "ffb58c95-f3c6-4c06-923e-3bbfad6ee78f",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 780,
+        "output_tokens": 51,
+        "total_latency_ms": 448,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:23.294Z"
+    },
+    {
+      "result_id": "cf661d67-5dec-43d5-b559-98a24cc155ec",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "A dozen eggs is 12. So, 3 dozen eggs is 3 * 12 = 36 eggs.\n\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 749,
+        "output_tokens": 51,
+        "total_latency_ms": 456,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:23.862Z"
+    },
+    {
+      "result_id": "f260cf70-47df-4fcd-8a3c-93cd68b685b7",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "I cannot directly calculate the square root. However, I can use the `analytics_run_report` tool to generate a report that includes the square root of 144.\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sqrt_report_1\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"text\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sqrt_report_1",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 744,
+        "output_tokens": 90,
+        "total_latency_ms": 662,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:24.626Z"
+    },
+    {
+      "result_id": "7255ea90-18be-4963-a9ad-537e8240dc4a",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. Here's a comparison, categorized for clarity:\n\n**1. Web Analytics (Google Analytics, Adobe Analytics)**\n\n*   **Pros:**\n    *   **Ease of Use:** Generally very user-friendly, with intuitive dashboards and reporting.\n    *   **Comprehensive Data:** Tracks a huge range of metrics – page views, bounce rates, session duration, demographics, traffic sources, conversions, etc.\n    *   **Real-Time Data:** Provides near real-time insights into website activity.\n    *   **Integration:** Integrates well with other marketing tools (Google Ads, SEO tools, etc.).\n    *   **Cost-Effective:** Many tiers are free, making it accessible for small businesses.\n*   **Cons:**\n    *   **Data Privacy Concerns:** Increasing scrutiny around data collection and user privacy (GDPR, CCPA).\n    *   **Limited Offline Tracking:** Primarily focused on online behavior; doesn't capture in-store or offline interactions well.\n    *   **Reliance on Cookies:**  Dependent on users accepting cookies, which can impact tracking accuracy.\n    *   **Can Be Overwhelming:** The sheer volume of data can be difficult to interpret without proper analysis skills.\n\n**2. CRM Analytics (Salesforce Analytics, HubSpot Analytics)**\n\n*   **Pros:**\n    *   **Customer-Centric:** Focuses on understanding customer behavior, sales performance, and marketing effectiveness *within* the context of your customer relationships.\n    *   **Integration with CRM:** Seamlessly integrates with your CRM system, providing a 360-degree view of the customer.\n    *   **Sales & Marketing Insights:** Identifies trends in sales cycles, lead generation, and campaign performance.\n    *   **Predictive Analytics:** Some CRMs offer predictive analytics capabilities (e.g., forecasting sales).\n*   **Cons:**\n    *   **Data Quality Dependent:**  Accuracy relies heavily on the quality of data entered into the CRM. “Garbage in, garbage out.”\n    *   **Can Be Complex:**  Advanced features and customization can require specialized training.\n    *   **Cost:**  CRM analytics platforms can be expensive, especially for larger organizations.\n\n**3. Digital Marketing Attribution Analytics (AppsFlyer, Branch)**\n\n*   **Pros:**\n    *   **Granular Attribution:**  Determines which marketing channels and touchpoints are *actually* driving conversions and revenue.\n    *   **Mobile-Focused:**  Specifically designed for mobile app marketing.\n    *   **Multi-Channel Attribution:**  Can track the impact of various channels (social media, paid advertising, email, etc.) across the entire customer journey.\n*   **Cons:**\n    *   **Data Silos:**  Attribution data is often fragmented across different platforms, making it challenging to get a complete picture.\n    *   **Complexity:**  Attribution modeling can be complex and requires a deep understanding of marketing channels and customer behavior.\n    *   **Cost:**  These platforms can be expensive, particularly for smaller businesses.\n\n**4. Custom Analytics (Building Your Own Dashboards & Reports)**\n\n*   **Pros:**\n    *   **Tailored to Specific Needs:**  You can build analytics solutions that precisely address your unique business questions and requirements.\n    *   **Data Control:**  You have complete control over the data sources and analysis methods.\n    *   **Flexibility:**  Can adapt to changing business needs.\n*   **Cons:**\n    *   **High Cost & Time Investment:** Requires significant technical expertise, development time, and ongoing maintenance.\n    *   **Requires Data Engineering:**  You need to extract, transform, and load (ETL) data from various sources.\n    *   **Maintenance Overhead:**  Requires ongoing updates and support.\n\n\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Web Analytics | CRM Analytics | Digital Marketing Attribution | Custom Analytics |\n|--------------------|---------------|---------------|-------------------------------|------------------|\n| **Focus**          | Website Traffic| Customer Relationships | Marketing ROI                | Specific Needs   |\n| **Data Sources**   | Web Data      | CRM Data       | Mobile App Data              | Varied           |\n| **Ease of Use**     | High          | Medium        | Medium                        | Low              |\n| **Cost**           | Low-Medium    | Medium-High   | High                          | High             |\n\nTo help me narrow down the best approach for *your* needs, could you tell me:\n\n*   What kind of data are you primarily interested in analyzing? (e.g., website traffic, customer behavior, marketing campaign performance?)\n*   What is the size of your business and your budget?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 743,
+        "output_tokens": 1010,
+        "total_latency_ms": 5955,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:30.683Z"
+    },
+    {
+      "result_id": "04aa2089-184c-4a8c-ba9c-3c15dd190687",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. I'll present them in a way that's easy to understand and compare.\n\n**1. Monolithic Architecture**\n\n*   **Description:** All components of the application are tightly coupled and deployed as a single unit.\n*   **Pros:**\n    *   **Simple to Develop:** Easier to get started with, especially for smaller applications.  Development, testing, and deployment are straightforward.\n    *   **Easy to Deploy:** Deploying a single unit is simpler than managing multiple services.\n    *   **Performance (Initially):** Can be faster for simple operations due to less network overhead.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling is difficult – you have to scale the *entire* application, even if only one part needs more resources.\n    *   **Deployment Bottlenecks:** Any change, even a small one, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks because the entire application is built on a single stack.\n    *   **Complexity Over Time:** As the application grows, the codebase becomes increasingly complex and harder to maintain.\n\n**2. Microservices Architecture**\n\n*   **Description:** The application is structured as a collection of small, independent services that communicate over a network (often using APIs).\n*   **Pros:**\n    *   **Independent Scalability:** Each service can be scaled independently based on its specific needs.\n    *   **Faster Development Cycles:** Smaller teams can work on individual services, leading to faster development and deployment.\n    *   **Technology Diversity:** Different services can be built using different technologies best suited for their specific tasks.\n    *   **Fault Isolation:** Failure in one service doesn't necessarily bring down the entire application.\n*   **Cons:**\n    *   **Increased Complexity:** Overall system complexity is higher due to distributed nature, inter-service communication, and managing multiple services.\n    *   **Operational Overhead:** Requires more sophisticated infrastructure and monitoring to manage and operate the services.\n    *   **Data Consistency:** Maintaining data consistency across multiple services can be challenging.\n    *   **Debugging & Testing:** Distributed debugging and testing can be more complex.\n\n**3. Layered Architecture**\n\n*   **Description:** The application is divided into distinct layers (e.g., presentation, business logic, data access) with each layer performing a specific function.\n*   **Pros:**\n    *   **Well-Defined Responsibilities:** Clear separation of concerns makes the code easier to understand and maintain.\n    *   **Testability:** Easier to test individual layers in isolation.\n    *   **Maintainability:** Changes in one layer are less likely to affect other layers.\n*   **Cons:**\n    *   **Potential for Rigidity:** Can lead to tight coupling between layers if not designed carefully.\n    *   **Performance Overhead:** Can introduce performance overhead due to multiple layer transitions.\n    *   **Not Ideal for Complex Systems:**  May not scale well for very complex applications.\n\n**4. Event-Driven Architecture**\n\n*   **Description:** Components communicate through asynchronous events.  Services react to events rather than directly calling each other.\n*   **Pros:**\n    *   **Loose Coupling:** Services are loosely coupled, making the system more flexible and resilient.\n    *   **Scalability:**  Well-suited for handling high volumes of events.\n    *   **Real-time Capabilities:** Enables real-time data processing and updates.\n*   **Cons:**\n    *   **Complexity:** Can be complex to design and debug due to the asynchronous nature.\n    *   **Eventual Consistency:**  Data consistency is often eventual, requiring careful handling of potential inconsistencies.\n    *   **Monitoring:** Requires robust monitoring to track event flows and identify issues.\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Monolithic | Microservices | Layered      | Event-Driven |\n|--------------------|------------|---------------|--------------|--------------|\n| **Coupling**       | Tight       | Loose         | Moderate     | Loose        |\n| **Scalability**     | Poor        | Excellent     | Moderate     | Excellent    |\n| **Complexity**     | Low         | High          | Moderate     | High         |\n| **Deployment**     | Simple      | Complex       | Moderate     | Complex      |\n| **Technology**     | Limited     | Diverse       | Limited     | Diverse      |\n\n\n\n**To help me give you even more tailored information, could you tell me:**\n\n*   What type of application are you considering? (e.g., web application, mobile app, IoT system)\n*   What are the key requirements of the application? (e.g., scalability,",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 744,
+        "output_tokens": 1024,
+        "total_latency_ms": 6111,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:36.895Z"
+    },
+    {
+      "result_id": "a6172225-d7a4-430a-8f41-586d61d3a76f",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n[\n  {\n    \"name\": \"auth_list_users\",\n    \"arguments\": {\n      \"role\": null,\n      \"status\": null,\n      \"search\": null\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": null,
+            "status": null,
+            "search": null
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 745,
+        "output_tokens": 56,
+        "total_latency_ms": 536,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:37.535Z"
+    },
+    {
+      "result_id": "9f5db625-e376-4198-b06a-e7da5ec7b6b5",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"marketing_campaign_performance\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {\n      \"campaign_name\": \"SummerSale2024\"\n    },\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "marketing_campaign_performance",
+            "date_range": "last_30d",
+            "filters": {
+              "campaign_name": "SummerSale2024"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 747,
+        "output_tokens": 90,
+        "total_latency_ms": 674,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:38.314Z"
+    },
+    {
+      "result_id": "8e5aebe3-5b75-4de6-92f6-95913472c053",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "I can help with that. Please provide the order ID.\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"12345\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "12345"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 745,
+        "output_tokens": 39,
+        "total_latency_ms": 376,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:38.801Z"
+    },
+    {
+      "result_id": "41a12f51-29b6-4c82-97e5-40bae842e70f",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 760,
+        "output_tokens": 44,
+        "total_latency_ms": 409,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:39.314Z"
+    },
+    {
+      "result_id": "f9918a7f-6fda-4875-bfc4-8571d9b79c03",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 756,
+        "output_tokens": 39,
+        "total_latency_ms": 383,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:39.801Z"
+    },
+    {
+      "result_id": "42d20bfa-054c-4ee3-8612-4534475eb6b8",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"test_input\", \"message\": \"test_input\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "test_input",
+            "message": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 35,
+        "total_latency_ms": 357,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:40.271Z"
+    },
+    {
+      "result_id": "6d3adb1f-1742-4595-a8a5-ba24960f3257",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"sample_data\", \"timestamp\": \"00:00:00\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "sample_data",
+            "timestamp": "00:00:00",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 764,
+        "output_tokens": 45,
+        "total_latency_ms": 416,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:40.796Z"
+    },
+    {
+      "result_id": "6044af6a-cb12-4d2d-a177-d4b4cbb603e3",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data dashboard\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data dashboard",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 771,
+        "output_tokens": 39,
+        "total_latency_ms": 379,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:41.288Z"
+    },
+    {
+      "result_id": "68054fdf-2fd8-40d6-9363-4302bb5122e6",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "I need to know who to send a message to before I can use `comm_send_message`. Please provide the recipient information (user ID, email, or channel name).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 756,
+        "output_tokens": 37,
+        "total_latency_ms": 369,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:41.766Z"
+    },
+    {
+      "result_id": "1d93ccf2-d03b-4773-b9ee-40fd0cf102df",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, I can do that. First, I'll track the order.\n\n```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-20231026-001\",\n    \"include_history\": true,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "ORD-20231026-001",
+            "include_history": true,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 754,
+        "output_tokens": 89,
+        "total_latency_ms": 669,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:42.549Z"
+    },
+    {
+      "result_id": "a79f906c-1808-47e2-a385-cd353a64ba4c",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's start with tracking an order, then send a message, and finally get air quality data.\n\nFirst, I'll track the order. Could you please provide the `order_id`?\n```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-12345\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "ORD-12345"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 761,
+        "output_tokens": 91,
+        "total_latency_ms": 675,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:43.338Z"
+    },
+    {
+      "result_id": "81700ca4-621b-4fe3-a7fe-be605786ede1",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, I can help you with that. Let's break this down into a series of steps and use the available tools to achieve your goal.\n\n**Step 1: Generate a Thumbnail**\n\nI'll use `media_generate_thumbnail` to create a thumbnail from a video.  I need a video file path and a timestamp.  I'll assume we have a video file named \"tutorial.mp4\" and want a thumbnail at the 60-second mark.\n\n```json\n{\n  \"name\": \"media_generate_thumbnail\",\n  \"arguments\": {\n    \"input_path\": \"tutorial.mp4\",\n    \"timestamp\": \"00:01:00\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"quality\": 80\n  }\n}\n```\n\n**Step 2: Resize the Thumbnail**\n\nNow that we have the generated thumbnail, let's resize it to a more manageable size. I'll use `media_resize_image` to resize the thumbnail.\n\n```json\n{\n  \"name\": \"media_resize_image\",\n  \"arguments\": {\n    \"input_path\": \"thumbnail.jpg\",\n    \"width\": 256,\n    \"height\": 256,\n    \"quality\": 90\n  }\n}\n```\n\n**Step 3: Get Air Quality Data**\n\nFinally, let's use `wx_get_air_quality` to retrieve air quality data. I'll use the resized thumbnail image as a reference point (assuming it's a picture of a polluted area) and a location.\n\n```json\n{\n  \"name\": \"wx_get_air_quality\",\n  \"arguments\": {\n    \"location\": \"Los Angeles, CA\",\n    \"include_pollutants\": true,\n    \"offset\": 0\n  }\n}\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 768,
+        "output_tokens": 427,
+        "total_latency_ms": 2585,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:46.029Z"
+    },
+    {
+      "result_id": "543668a2-418a-4dc2-9f53-e57c964f878e",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 758,
+        "output_tokens": 31,
+        "total_latency_ms": 402,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:46.540Z"
+    },
+    {
+      "result_id": "3d0a6e25-0e2f-4904-b6b7-a36d7581dc34",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 760,
+        "output_tokens": 40,
+        "total_latency_ms": 394,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:47.037Z"
+    },
+    {
+      "result_id": "46b8435b-794b-42a1-bf2f-ab3d13b3abbf",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 772,
+        "output_tokens": 41,
+        "total_latency_ms": 393,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:47.545Z"
+    },
+    {
+      "result_id": "dc06ef86-b5ce-481d-b9a4-31e21bbfa488",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 780,
+        "output_tokens": 51,
+        "total_latency_ms": 458,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:48.111Z"
+    },
+    {
+      "result_id": "4121e023-d339-4930-807b-2939b7f437e6",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "A dozen eggs is 12. So, 3 dozen eggs is 3 * 12 = 36 eggs.\n\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 749,
+        "output_tokens": 51,
+        "total_latency_ms": 453,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:48.677Z"
+    },
+    {
+      "result_id": "c30aa81c-d32c-426e-a4c0-7fac54b2f1ff",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "I cannot directly calculate the square root. However, I can use the `analytics_run_report` tool to generate a report that includes the square root of 144.\n\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sqrt_report_1\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"text\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sqrt_report_1",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "text"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 744,
+        "output_tokens": 90,
+        "total_latency_ms": 675,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:49.469Z"
+    },
+    {
+      "result_id": "41377872-ca84-47d7-9ddc-b9081fd58b91",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. Here's a comparison, categorized for clarity:\n\n**1. Web Analytics (Google Analytics, Adobe Analytics)**\n\n*   **Pros:**\n    *   **Ease of Use:** Generally very user-friendly, with intuitive dashboards and reporting.\n    *   **Comprehensive Data:** Tracks a huge range of metrics – page views, bounce rates, session duration, demographics, traffic sources, conversions, etc.\n    *   **Real-Time Data:** Provides near real-time insights into website activity.\n    *   **Integration:** Integrates well with other marketing tools (Google Ads, SEO tools, etc.).\n    *   **Cost-Effective:** Many tiers are free, making it accessible for small businesses.\n*   **Cons:**\n    *   **Data Privacy Concerns:** Increasing scrutiny around data collection and user privacy (GDPR, CCPA).\n    *   **Limited Offline Tracking:** Primarily focused on online behavior; doesn't capture in-store or offline interactions well.\n    *   **Reliance on Cookies:**  Dependent on users accepting cookies, which can impact tracking accuracy.\n    *   **Can Be Overwhelming:** The sheer volume of data can be difficult to interpret without proper analysis skills.\n\n**2. CRM Analytics (Salesforce Analytics, HubSpot Analytics)**\n\n*   **Pros:**\n    *   **Customer-Centric:** Focuses on understanding customer behavior, sales performance, and marketing effectiveness *within* the context of your customer relationships.\n    *   **Integration with CRM:** Seamlessly integrates with your CRM system, providing a 360-degree view of the customer.\n    *   **Sales & Marketing Insights:** Identifies trends in sales cycles, lead generation, and campaign performance.\n    *   **Predictive Analytics:** Some CRMs offer predictive analytics capabilities (e.g., forecasting sales).\n*   **Cons:**\n    *   **Data Quality Dependent:**  Accuracy relies heavily on the quality of data entered into the CRM. “Garbage in, garbage out.”\n    *   **Can Be Complex:**  Advanced features and customization can require specialized training.\n    *   **Cost:**  CRM analytics platforms can be expensive, especially for larger organizations.\n\n**3. Digital Marketing Attribution Analytics (AppsFlyer, Branch)**\n\n*   **Pros:**\n    *   **Granular Attribution:**  Determines which marketing channels and touchpoints are *actually* driving conversions and revenue.\n    *   **Mobile-Focused:**  Specifically designed for mobile app marketing.\n    *   **Multi-Channel Attribution:**  Can track the impact of various channels (social media, paid advertising, email, etc.) across the entire customer journey.\n*   **Cons:**\n    *   **Data Silos:**  Attribution data is often fragmented across different platforms, making it challenging to get a complete picture.\n    *   **Complexity:**  Attribution modeling can be complex and requires a deep understanding of marketing channels and customer behavior.\n    *   **Cost:**  These platforms can be expensive, particularly for smaller businesses.\n\n**4. Custom Analytics (Building Your Own Dashboards & Reports)**\n\n*   **Pros:**\n    *   **Tailored to Specific Needs:**  You can build analytics solutions that precisely address your unique business questions and requirements.\n    *   **Data Control:**  You have complete control over the data sources and analysis methods.\n    *   **Flexibility:**  Can adapt to changing business needs.\n*   **Cons:**\n    *   **High Cost & Time Investment:** Requires significant technical expertise, development time, and ongoing maintenance.\n    *   **Requires Data Engineering:**  You need to extract, transform, and load (ETL) data from various sources.\n    *   **Maintenance Overhead:**  Requires ongoing updates and support.\n\n\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Web Analytics | CRM Analytics | Digital Marketing Attribution | Custom Analytics |\n|--------------------|---------------|---------------|-------------------------------|------------------|\n| **Focus**          | Website Traffic| Customer Relationships | Marketing ROI                | Specific Needs   |\n| **Data Sources**   | Web Data      | CRM Data       | Mobile App Data              | Varied           |\n| **Ease of Use**     | High          | Medium        | Medium                        | Low              |\n| **Cost**           | Low-Medium    | Medium-High   | High                          | High             |\n\nTo help me narrow down the best approach for *your* needs, could you tell me:\n\n*   What kind of data are you primarily interested in analyzing? (e.g., website traffic, customer behavior, marketing campaign performance?)\n*   What is the size of your business and your budget?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 743,
+        "output_tokens": 1010,
+        "total_latency_ms": 5923,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:44:55.504Z"
+    },
+    {
+      "result_id": "7fad98a6-3eb0-4235-ab9f-fe806343fe87",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. I'll present them in a way that's easy to understand and compare.\n\n**1. Monolithic Architecture**\n\n*   **Description:** All components of the application are tightly coupled and deployed as a single unit.\n*   **Pros:**\n    *   **Simple to Develop:** Easier to get started with, especially for smaller applications.  Development, testing, and deployment are straightforward.\n    *   **Easy to Deploy:** Deploying a single unit is simpler than managing multiple services.\n    *   **Performance (Initially):** Can be faster for simple operations due to less network overhead.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling is difficult – you have to scale the *entire* application, even if only one part needs more resources.\n    *   **Deployment Bottlenecks:** Any change, even a small one, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks because the entire application is built on a single stack.\n    *   **Complexity Over Time:** As the application grows, the codebase becomes increasingly complex and harder to maintain.\n\n**2. Microservices Architecture**\n\n*   **Description:** The application is structured as a collection of small, independent services that communicate over a network (often using APIs).\n*   **Pros:**\n    *   **Independent Scalability:** Each service can be scaled independently based on its specific needs.\n    *   **Faster Development Cycles:** Smaller teams can work on individual services, leading to faster development and deployment.\n    *   **Technology Diversity:** Different services can be built using different technologies best suited for their specific tasks.\n    *   **Fault Isolation:** Failure in one service doesn't necessarily bring down the entire application.\n*   **Cons:**\n    *   **Increased Complexity:** Overall system complexity is higher due to distributed nature, inter-service communication, and managing multiple services.\n    *   **Operational Overhead:** Requires more sophisticated infrastructure and monitoring to manage and operate the services.\n    *   **Data Consistency:** Maintaining data consistency across multiple services can be challenging.\n    *   **Debugging & Testing:** Distributed debugging and testing can be more complex.\n\n**3. Layered Architecture**\n\n*   **Description:** The application is divided into distinct layers (e.g., presentation, business logic, data access) with each layer performing a specific function.\n*   **Pros:**\n    *   **Well-Defined Responsibilities:** Clear separation of concerns makes the code easier to understand and maintain.\n    *   **Testability:** Easier to test individual layers in isolation.\n    *   **Maintainability:** Changes in one layer are less likely to affect other layers.\n*   **Cons:**\n    *   **Potential for Rigidity:** Can lead to tight coupling between layers if not designed carefully.\n    *   **Performance Overhead:** Can introduce performance overhead due to multiple layer transitions.\n    *   **Not Ideal for Complex Systems:**  May not scale well for very complex applications.\n\n**4. Event-Driven Architecture**\n\n*   **Description:** Components communicate through asynchronous events.  Services react to events rather than directly calling each other.\n*   **Pros:**\n    *   **Loose Coupling:** Services are loosely coupled, making the system more flexible and resilient.\n    *   **Scalability:**  Well-suited for handling high volumes of events.\n    *   **Real-time Capabilities:** Enables real-time data processing and updates.\n*   **Cons:**\n    *   **Complexity:** Can be complex to design and debug due to the asynchronous nature.\n    *   **Eventual Consistency:**  Data consistency is often eventual, requiring careful handling of potential inconsistencies.\n    *   **Monitoring:** Requires robust monitoring to track event flows and identify issues.\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Monolithic | Microservices | Layered      | Event-Driven |\n|--------------------|------------|---------------|--------------|--------------|\n| **Coupling**       | Tight       | Loose         | Moderate     | Loose        |\n| **Scalability**     | Poor        | Excellent     | Moderate     | Excellent    |\n| **Complexity**     | Low         | High          | Moderate     | High         |\n| **Deployment**     | Simple      | Complex       | Moderate     | Complex      |\n| **Technology**     | Limited     | Diverse       | Limited     | Diverse      |\n\n\n\n**To help me give you even more tailored information, could you tell me:**\n\n*   What type of application are you considering? (e.g., web application, mobile app, IoT system)\n*   What are the key requirements of the application? (e.g., scalability,",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 744,
+        "output_tokens": 1024,
+        "total_latency_ms": 6069,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:45:01.681Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5713333333333336,
+        "ci95": [
+          0.5749105303360957,
+          0.801019897472731
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.7,
+        "ci95": [
+          0.5749105303360957,
+          0.801019897472731
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.3783333333333333,
+        "ci95": [
+          0.2856930300376551,
+          0.5263417560579315
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.6180000000000002,
+        "ci95": [
+          0.6276768905451521,
+          0.8422361442158816
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.75,
+        "ci95": [
+          0.6276768905451521,
+          0.8422361442158816
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.42,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "arr": 1.0816802800466743,
+      "token_savings_pct": 64.98578724781031,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

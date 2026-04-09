@@ -1,0 +1,3820 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Gemma 3 12B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-03T14:53:49.767Z",
+    "end_time": "2026-03-03T14:58:05.013Z",
+    "duration_ms": 255246
+  },
+  "results": [
+    {
+      "result_id": "8a7ead4c-c74f-463b-8fde-ccb6969e4eb1",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2186,
+        "output_tokens": 21,
+        "total_latency_ms": 944,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:52.290Z"
+    },
+    {
+      "result_id": "168a3108-351e-4055-b842-708baada86b2",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2191,
+        "output_tokens": 24,
+        "total_latency_ms": 983,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:53.335Z"
+    },
+    {
+      "result_id": "ed0c4cc6-7b7b-49ca-b8fa-d62e610cdd12",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 29,
+        "total_latency_ms": 1054,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:54.449Z"
+    },
+    {
+      "result_id": "52233cea-6ee3-4b0e-a7fa-99c302f6ff26",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 24,
+        "total_latency_ms": 995,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:55.503Z"
+    },
+    {
+      "result_id": "dc12a850-f54d-4143-a005-e578a0681433",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 24,
+        "total_latency_ms": 988,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:56.547Z"
+    },
+    {
+      "result_id": "4032bd53-1635-4ec0-b78f-22544c0401a6",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2200,
+        "output_tokens": 35,
+        "total_latency_ms": 1133,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:57.735Z"
+    },
+    {
+      "result_id": "b3d7dc05-9163-4eaa-8ce5-03153b6c62dc",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2200,
+        "output_tokens": 24,
+        "total_latency_ms": 987,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:53:58.791Z"
+    },
+    {
+      "result_id": "aff7cb0c-ff62-4971-a0e4-163b0f4cee51",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 2207,
+        "output_tokens": 37,
+        "total_latency_ms": 1162,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:00.013Z"
+    },
+    {
+      "result_id": "fbd29dc9-dda5-4f53-86fa-cddf50a786e3",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```\n```json\n{\"name\": \"store_list_files\", \"arguments\": {}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "store_list_files",
+            "arguments": {}
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2205,
+        "output_tokens": 56,
+        "total_latency_ms": 1420,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:01.488Z"
+    },
+    {
+      "result_id": "a7ef3b20-63d1-41cb-b4b8-94ceb9c72d64",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2206,
+        "output_tokens": 58,
+        "total_latency_ms": 1444,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:02.997Z"
+    },
+    {
+      "result_id": "dfbb36c9-57ed-4851-8eb5-1c93046bf2ea",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2223,
+        "output_tokens": 78,
+        "total_latency_ms": 1701,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:04.761Z"
+    },
+    {
+      "result_id": "5dd75cff-5085-4b29-840c-0cf665bdfffc",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "media_generate_thumbnail",
+            "arguments": {
+              "input_path": "example_value"
+            }
+          },
+          {
+            "name": "media_resize_image",
+            "arguments": {
+              "input_path": "example_value",
+              "width": 109
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2233,
+        "output_tokens": 80,
+        "total_latency_ms": 1743,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:06.563Z"
+    },
+    {
+      "result_id": "dc0c37ce-1837-44b1-9e34-9eecb2266cb0",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2194,
+        "output_tokens": 31,
+        "total_latency_ms": 1105,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:07.728Z"
+    },
+    {
+      "result_id": "c1d50ecf-2455-4a83-a81b-2623c2b457ff",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2196,
+        "output_tokens": 35,
+        "total_latency_ms": 1140,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:08.925Z"
+    },
+    {
+      "result_id": "2f7f0564-7293-4ee0-b8b5-b29bd4b58982",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\":\"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2208,
+        "output_tokens": 40,
+        "total_latency_ms": 1202,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:10.184Z"
+    },
+    {
+      "result_id": "e957cbaa-bfd7-412e-9c88-57ec24f1fdab",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2213,
+        "output_tokens": 51,
+        "total_latency_ms": 1349,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:11.590Z"
+    },
+    {
+      "result_id": "5dce058e-0059-4134-ad78-4dff3c2bbe79",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "3 dozen eggs is 3 * 12 = 36 eggs.\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2185,
+        "output_tokens": 40,
+        "total_latency_ms": 1206,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:12.853Z"
+    },
+    {
+      "result_id": "4b1b7e33-b7ba-4ff8-a22c-14eb3c8da04b",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "12",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 3,
+        "total_latency_ms": 724,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:13.632Z"
+    },
+    {
+      "result_id": "afec5747-0774-4c6c-acca-07a82c522b0f",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. I'll cover a few common ones: Descriptive, Diagnostic, Predictive, and Prescriptive.\n\n**1. Descriptive Analytics**\n\n*   **What it is:** This is the most basic level. It focuses on summarizing past data to understand \"what happened.\" Think reports, dashboards, and basic visualizations.\n*   **Pros:**\n    *   **Easy to implement:** Requires relatively simple tools and techniques.\n    *   **Provides a baseline:** Establishes a foundation for understanding current performance.\n    *   **Accessible:** Results are generally easy to understand and communicate.\n*   **Cons:**\n    *   **Doesn't explain *why*:**  It only describes what occurred, not the underlying causes.\n    *   **Limited insights:** Doesn't offer predictive capabilities or recommendations.\n    *   **Can be reactive:** Relies on past data, potentially missing emerging trends.\n\n**2. Diagnostic Analytics**\n\n*   **What it is:**  This builds on descriptive analytics by trying to determine *why* something happened. It involves techniques like data mining, correlation analysis, and drill-down reporting.\n*   **Pros:**\n    *   **Identifies root causes:** Helps uncover the reasons behind observed trends.\n    *   **Improved understanding:** Provides deeper insights into business processes.\n    *   **Supports decision-making:**  Informs corrective actions and problem-solving.\n*   **Cons:**\n    *   **More complex than descriptive:** Requires more advanced analytical skills and tools.\n    *   **Can be time-consuming:** Investigating potential causes can be a lengthy process.\n    *   **Correlation vs. Causation:**  Care must be taken to distinguish between correlation and true causation.\n\n**3. Predictive Analytics**\n\n*   **What it is:** Uses statistical models and machine learning to forecast future outcomes based on historical data. Examples include sales forecasting, churn prediction, and risk assessment.\n*   **Pros:**\n    *   **Anticipates future trends:** Allows for proactive planning and resource allocation.\n    *   **Improved decision-making:** Enables data-driven decisions based on potential outcomes.\n    *   **Competitive advantage:** Can identify opportunities and mitigate risks before competitors.\n*   **Cons:**\n    *   **Requires significant data:**  Needs large, high-quality datasets for accurate models.\n    *   **Technical expertise:**  Demands skilled data scientists and machine learning engineers.\n    *   **Model accuracy:** Predictions are not always perfect and require ongoing monitoring and refinement.\n    *   **Can be complex to explain:** Models can be \"black boxes,\" making it difficult to understand how predictions are made.\n\n**4. Prescriptive Analytics**\n\n*   **What it is:**  Goes beyond prediction to recommend specific actions to optimize outcomes. It combines predictive analytics with optimization techniques and simulation.\n*   **Pros:**\n    *   **Provides actionable recommendations:**  Offers clear guidance on what to do.\n    *   **Optimizes performance:**  Helps achieve desired outcomes with maximum efficiency.\n    *   **Automates decision-making:**  Can automate routine decisions based on predefined rules.\n*   **Cons:**\n    *   **Most complex and expensive:** Requires advanced analytical skills, sophisticated tools, and significant data.\n    *   **Requires integration with operational systems:**  Recommendations need to be implemented in real-time.\n    *   **Assumptions and constraints:**  Models are based on assumptions that may not always hold true.\n    *   **Resistance to change:**  Implementing prescriptive recommendations can require significant organizational change.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   Are you interested in a specific industry or application?\n*   What level of technical expertise do you have?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2179,
+        "output_tokens": 811,
+        "total_latency_ms": 11105,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:24.799Z"
+    },
+    {
+      "result_id": "33025770-c889-4d61-9975-8add3fd02e64",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. I'll cover Monolithic, Microservices, Service-Oriented Architecture (SOA), Layered, and Event-Driven architectures.  Keep in mind that the \"best\" architecture depends heavily on the specific project's requirements, team size, and long-term goals.\n\n**1. Monolithic Architecture**\n\n*   **Description:** A single, unified codebase. All components are tightly coupled and deployed as a single unit.\n*   **Pros:**\n    *   **Simplicity:** Easier to develop, test, and deploy initially.\n    *   **Performance (potentially):**  Direct function calls within the same process can be faster than inter-service communication.\n    *   **Easier Debugging:** Debugging is simpler as everything runs in one place.\n    *   **Easier to Reason About (initially):**  Smaller teams can grasp the entire system more easily.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling requires scaling the entire application, even if only a small part needs more resources.\n    *   **Deployment Bottlenecks:**  Any change, even small ones, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks.\n    *   **Large Codebase:**  Can become unwieldy and difficult to maintain over time.\n    *   **Slower Development Cycles:** As the codebase grows, development slows down.\n\n**2. Microservices Architecture**\n\n*   **Description:** An application is structured as a collection of small, autonomous services, modeled around a business domain. Each service is independently deployable and can be built with different technologies.\n*   **Pros:**\n    *   **Independent Scalability:**  Individual services can be scaled independently based on demand.\n    *   **Technology Diversity:**  Different services can use different technologies best suited for their purpose.\n    *   **Faster Development Cycles:** Smaller teams can work on individual services with greater agility.\n    *   **Improved Fault Isolation:**  Failure in one service doesn't necessarily bring down the entire application.\n    *   **Easier to Understand:** Smaller codebases are easier to understand and maintain.\n*   **Cons:**\n    *   **Complexity:** Distributed systems are inherently more complex to design, develop, and operate.\n    *   **Increased Operational Overhead:** Requires more sophisticated infrastructure and monitoring.\n    *   **Inter-Service Communication:**  Communication overhead and potential latency.\n    *   **Distributed Debugging:** Debugging across multiple services can be challenging.\n    *   **Data Consistency:** Maintaining data consistency across services can be difficult (eventual consistency is common).\n    *   **Increased Deployment Complexity:** Requires robust deployment pipelines and orchestration tools (e.g., Kubernetes).\n\n**3. Service-Oriented Architecture (SOA)**\n\n*   **Description:**  Similar to microservices, but typically involves larger, more coarse-grained services.  Often uses a centralized Enterprise Service Bus (ESB) for communication.\n*   **Pros:**\n    *   **Reusability:** Services can be reused across multiple applications.\n    *   **Interoperability:**  Services can be built using different technologies and communicate through standardized protocols.\n    *   **Centralized Management (with ESB):**  The ESB can provide centralized routing, transformation, and security.\n*   **Cons:**\n    *   **ESB Bottleneck:** The ESB can become a single point of failure and a performance bottleneck.\n    *   **Tight Coupling (potentially):**  Services can become tightly coupled to the ESB.\n    *   **Complexity:**  SOA implementations can be complex and expensive.\n    *   **Less Agile than Microservices:**  The centralized nature of SOA can make it less agile than microservices.  Microservices have largely superseded SOA in many modern contexts.\n\n**4. Layered Architecture**\n\n*   **Description:**  Organizes the application into horizontal layers (e.g., presentation, business logic, data access). Each layer has a specific responsibility and interacts only with adjacent layers.\n*   **Pros:**\n    *   **Well-Defined Structure:**  Provides a clear separation of concerns.\n    *   **Testability:**  Layers can be tested independently.\n    *   **Maintainability:**  Changes within a layer are less likely to affect other layers.\n*   **Cons:**\n    *   **Rigidity:**  Can become rigid and difficult to change.\n    *   **Performance Overhead:**  Requests may need to pass through multiple layers, potentially impacting performance.\n    *   **\"Big Ball of Mud\" Potential:**  If not carefully designed, layers can become intertwined, defeating the purpose of the architecture.\n\n**5. Event-",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 1024,
+        "total_latency_ms": 13789,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:38.649Z"
+    },
+    {
+      "result_id": "cbf08dd3-b8ca-455d-ae4f-af84119170d5",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2186,
+        "output_tokens": 21,
+        "total_latency_ms": 960,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:39.668Z"
+    },
+    {
+      "result_id": "e9ea8dc4-36e1-423d-ab49-d2e157b2e56f",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2191,
+        "output_tokens": 24,
+        "total_latency_ms": 992,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:40.715Z"
+    },
+    {
+      "result_id": "bb88bdeb-d4c6-445f-9558-d33ac37b1386",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 29,
+        "total_latency_ms": 1064,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:41.848Z"
+    },
+    {
+      "result_id": "a8e09404-b4e1-4171-a3c0-e0b7670b3adb",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 24,
+        "total_latency_ms": 996,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:42.904Z"
+    },
+    {
+      "result_id": "bfff8ddf-222c-4908-aa2e-5dffe8f58c17",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 24,
+        "total_latency_ms": 1002,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:43.968Z"
+    },
+    {
+      "result_id": "f3ec454f-4d53-42c0-a698-5ea9aa97832c",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2200,
+        "output_tokens": 35,
+        "total_latency_ms": 1141,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:45.171Z"
+    },
+    {
+      "result_id": "b157afde-86b1-429f-8d97-3bafe8e29903",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2200,
+        "output_tokens": 24,
+        "total_latency_ms": 995,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:46.222Z"
+    },
+    {
+      "result_id": "f3025f50-3ced-4874-a25c-300ad66e1afe",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 2207,
+        "output_tokens": 37,
+        "total_latency_ms": 1154,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:47.432Z"
+    },
+    {
+      "result_id": "aec6a6df-9594-41e8-a5fa-c8974e3d736a",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```\n```json\n{\"name\": \"store_list_files\", \"arguments\": {}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "store_list_files",
+            "arguments": {}
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2205,
+        "output_tokens": 56,
+        "total_latency_ms": 1417,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:48.905Z"
+    },
+    {
+      "result_id": "422f4286-deea-4e4b-82a3-6931ece29760",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2206,
+        "output_tokens": 58,
+        "total_latency_ms": 1423,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:50.395Z"
+    },
+    {
+      "result_id": "a2b3b23c-f74e-4045-a715-d6c53b5d0942",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2223,
+        "output_tokens": 78,
+        "total_latency_ms": 1686,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:52.139Z"
+    },
+    {
+      "result_id": "32542644-6973-46d1-9bcc-a1c42f33348b",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "media_generate_thumbnail",
+            "arguments": {
+              "input_path": "example_value"
+            }
+          },
+          {
+            "name": "media_resize_image",
+            "arguments": {
+              "input_path": "example_value",
+              "width": 109
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2233,
+        "output_tokens": 80,
+        "total_latency_ms": 1721,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:53.920Z"
+    },
+    {
+      "result_id": "e8730345-a9a0-47f5-8215-25f40c1964bb",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2194,
+        "output_tokens": 31,
+        "total_latency_ms": 1084,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:55.065Z"
+    },
+    {
+      "result_id": "a45bbeff-6bc0-4751-86a9-dcbe4b51929b",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2196,
+        "output_tokens": 35,
+        "total_latency_ms": 1134,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:56.256Z"
+    },
+    {
+      "result_id": "5ccc7578-fa01-4b70-96d4-e7d163f9ba3f",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\":\"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2208,
+        "output_tokens": 40,
+        "total_latency_ms": 1191,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:57.503Z"
+    },
+    {
+      "result_id": "173d2083-3a9d-4ca3-9ee7-70f351b07ea8",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2213,
+        "output_tokens": 51,
+        "total_latency_ms": 1338,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:54:58.902Z"
+    },
+    {
+      "result_id": "5603bd59-8a6a-40e9-b6e2-6b57f3730c9c",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "3 dozen eggs is 3 * 12 = 36 eggs.\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2185,
+        "output_tokens": 40,
+        "total_latency_ms": 1197,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:00.160Z"
+    },
+    {
+      "result_id": "b0d63069-0fbc-4d36-9ffd-520fda895878",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "12",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 3,
+        "total_latency_ms": 713,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:00.935Z"
+    },
+    {
+      "result_id": "a19a1d8c-97be-4d7c-a355-f48e9043fb78",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. I'll cover a few common ones: Descriptive, Diagnostic, Predictive, and Prescriptive.\n\n**1. Descriptive Analytics**\n\n*   **What it is:** This is the most basic level. It focuses on summarizing past data to understand \"what happened.\" Think reports, dashboards, and basic visualizations.\n*   **Pros:**\n    *   **Easy to implement:** Requires relatively simple tools and techniques.\n    *   **Provides a baseline:** Establishes a foundation for understanding current performance.\n    *   **Accessible:** Results are generally easy to understand and communicate.\n*   **Cons:**\n    *   **Doesn't explain *why*:**  It only describes what occurred, not the underlying causes.\n    *   **Limited insights:** Doesn't offer predictive capabilities or recommendations.\n    *   **Can be reactive:** Relies on past data, potentially missing emerging trends.\n\n**2. Diagnostic Analytics**\n\n*   **What it is:**  This builds on descriptive analytics by trying to determine *why* something happened. It involves techniques like data mining, correlation analysis, and drill-down reporting.\n*   **Pros:**\n    *   **Identifies root causes:** Helps uncover the reasons behind observed trends.\n    *   **Improved understanding:** Provides deeper insights into business processes.\n    *   **Supports decision-making:**  Informs corrective actions and problem-solving.\n*   **Cons:**\n    *   **More complex than descriptive:** Requires more advanced analytical skills and tools.\n    *   **Can be time-consuming:** Investigating potential causes can be a lengthy process.\n    *   **Correlation vs. Causation:**  Care must be taken to distinguish between correlation and true causation.\n\n**3. Predictive Analytics**\n\n*   **What it is:** Uses statistical models and machine learning to forecast future outcomes based on historical data. Examples include sales forecasting, churn prediction, and risk assessment.\n*   **Pros:**\n    *   **Anticipates future trends:** Allows for proactive planning and resource allocation.\n    *   **Improved decision-making:** Enables data-driven decisions based on potential outcomes.\n    *   **Competitive advantage:** Can identify opportunities and mitigate risks before competitors.\n*   **Cons:**\n    *   **Requires significant data:**  Needs large, high-quality datasets for accurate models.\n    *   **Technical expertise:**  Demands skilled data scientists and machine learning engineers.\n    *   **Model accuracy:** Predictions are not always perfect and require ongoing monitoring and refinement.\n    *   **Can be complex to explain:** Models can be \"black boxes,\" making it difficult to understand how predictions are made.\n\n**4. Prescriptive Analytics**\n\n*   **What it is:**  Goes beyond prediction to recommend specific actions to optimize outcomes. It combines predictive analytics with optimization techniques and simulation.\n*   **Pros:**\n    *   **Provides actionable recommendations:**  Offers clear guidance on what to do.\n    *   **Optimizes performance:**  Helps achieve desired outcomes with maximum efficiency.\n    *   **Automates decision-making:**  Can automate routine decisions based on predefined rules.\n*   **Cons:**\n    *   **Most complex and expensive:** Requires advanced analytical skills, sophisticated tools, and significant data.\n    *   **Requires integration with operational systems:**  Recommendations need to be implemented in real-time.\n    *   **Assumptions and constraints:**  Models are based on assumptions that may not always hold true.\n    *   **Resistance to change:**  Implementing prescriptive recommendations can require significant organizational change.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   Are you interested in a specific industry or application?\n*   What level of technical expertise do you have?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2179,
+        "output_tokens": 811,
+        "total_latency_ms": 10974,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:11.968Z"
+    },
+    {
+      "result_id": "2abd2a89-8a93-47b3-a4c1-ecdf505ce36c",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. I'll cover Monolithic, Microservices, Service-Oriented Architecture (SOA), Layered, and Event-Driven architectures.  Keep in mind that the \"best\" architecture depends heavily on the specific project's requirements, team size, and long-term goals.\n\n**1. Monolithic Architecture**\n\n*   **Description:** A single, unified codebase. All components are tightly coupled and deployed as a single unit.\n*   **Pros:**\n    *   **Simplicity:** Easier to develop, test, and deploy initially.\n    *   **Performance (potentially):**  Direct function calls within the same process can be faster than inter-service communication.\n    *   **Easier Debugging:** Debugging is simpler as everything runs in one place.\n    *   **Easier to Reason About (initially):**  Smaller teams can grasp the entire system more easily.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling requires scaling the entire application, even if only a small part needs more resources.\n    *   **Deployment Bottlenecks:**  Any change, even small ones, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks.\n    *   **Large Codebase:**  Can become unwieldy and difficult to maintain over time.\n    *   **Slower Development Cycles:** As the codebase grows, development slows down.\n\n**2. Microservices Architecture**\n\n*   **Description:** An application is structured as a collection of small, autonomous services, modeled around a business domain. Each service is independently deployable and can be built with different technologies.\n*   **Pros:**\n    *   **Independent Scalability:**  Individual services can be scaled independently based on demand.\n    *   **Technology Diversity:**  Different services can use different technologies best suited for their purpose.\n    *   **Faster Development Cycles:** Smaller teams can work on individual services with greater agility.\n    *   **Improved Fault Isolation:**  Failure in one service doesn't necessarily bring down the entire application.\n    *   **Easier to Understand:** Smaller codebases are easier to understand and maintain.\n*   **Cons:**\n    *   **Complexity:** Distributed systems are inherently more complex to design, develop, and operate.\n    *   **Increased Operational Overhead:** Requires more sophisticated infrastructure and monitoring.\n    *   **Inter-Service Communication:**  Communication overhead and potential latency.\n    *   **Distributed Debugging:** Debugging across multiple services can be challenging.\n    *   **Data Consistency:** Maintaining data consistency across services can be difficult (eventual consistency is common).\n    *   **Increased Deployment Complexity:** Requires robust deployment pipelines and orchestration tools (e.g., Kubernetes).\n\n**3. Service-Oriented Architecture (SOA)**\n\n*   **Description:**  Similar to microservices, but typically involves larger, more coarse-grained services.  Often uses a centralized Enterprise Service Bus (ESB) for communication.\n*   **Pros:**\n    *   **Reusability:** Services can be reused across multiple applications.\n    *   **Interoperability:**  Services can be built using different technologies and communicate through standardized protocols.\n    *   **Centralized Management (with ESB):**  The ESB can provide centralized routing, transformation, and security.\n*   **Cons:**\n    *   **ESB Bottleneck:** The ESB can become a single point of failure and a performance bottleneck.\n    *   **Tight Coupling (potentially):**  Services can become tightly coupled to the ESB.\n    *   **Complexity:**  SOA implementations can be complex and expensive.\n    *   **Less Agile than Microservices:**  The centralized nature of SOA can make it less agile than microservices.  Microservices have largely superseded SOA in many modern contexts.\n\n**4. Layered Architecture**\n\n*   **Description:**  Organizes the application into horizontal layers (e.g., presentation, business logic, data access). Each layer has a specific responsibility and interacts only with adjacent layers.\n*   **Pros:**\n    *   **Well-Defined Structure:**  Provides a clear separation of concerns.\n    *   **Testability:**  Layers can be tested independently.\n    *   **Maintainability:**  Changes within a layer are less likely to affect other layers.\n*   **Cons:**\n    *   **Rigidity:**  Can become rigid and difficult to change.\n    *   **Performance Overhead:**  Requests may need to pass through multiple layers, potentially impacting performance.\n    *   **\"Big Ball of Mud\" Potential:**  If not carefully designed, layers can become intertwined, defeating the purpose of the architecture.\n\n**5. Event-",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 1024,
+        "total_latency_ms": 13932,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:25.962Z"
+    },
+    {
+      "result_id": "05f59d87-7db3-45c0-b56b-3d88ed8bcfcf",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2186,
+        "output_tokens": 21,
+        "total_latency_ms": 954,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:26.978Z"
+    },
+    {
+      "result_id": "a0b87c62-3588-48cb-8ea6-a39c289db38c",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2191,
+        "output_tokens": 24,
+        "total_latency_ms": 990,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:28.024Z"
+    },
+    {
+      "result_id": "7a49d0a1-3ea3-49f9-bb6d-7d180c6c54ee",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 29,
+        "total_latency_ms": 1058,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:29.137Z"
+    },
+    {
+      "result_id": "2aa413a3-1aea-4278-9483-9ce52434dd42",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 24,
+        "total_latency_ms": 991,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:30.190Z"
+    },
+    {
+      "result_id": "8845a166-4b63-4b3b-b72c-0c3bf5ce9f24",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2193,
+        "output_tokens": 24,
+        "total_latency_ms": 991,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:31.240Z"
+    },
+    {
+      "result_id": "b982f188-8dd2-466f-ae62-a8103b365f53",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2200,
+        "output_tokens": 35,
+        "total_latency_ms": 1137,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:32.437Z"
+    },
+    {
+      "result_id": "03179153-c4c4-4f89-bf29-6811e397e7af",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2200,
+        "output_tokens": 24,
+        "total_latency_ms": 996,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:33.493Z"
+    },
+    {
+      "result_id": "04211779-fad2-4aaf-a6a4-a4bd54e87722",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 2207,
+        "output_tokens": 37,
+        "total_latency_ms": 1166,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:34.726Z"
+    },
+    {
+      "result_id": "4028a37e-7b35-495d-8a7c-1e17aad633f0",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```\n```json\n{\"name\": \"store_list_files\", \"arguments\": {}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "store_list_files",
+            "arguments": {}
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2205,
+        "output_tokens": 56,
+        "total_latency_ms": 1426,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:36.210Z"
+    },
+    {
+      "result_id": "884569a9-0a38-4667-ab7a-e63a681e09ad",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2206,
+        "output_tokens": 58,
+        "total_latency_ms": 1419,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:37.692Z"
+    },
+    {
+      "result_id": "becf9aa5-fba4-4d6c-8969-30eb2429a592",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2223,
+        "output_tokens": 78,
+        "total_latency_ms": 1687,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:39.440Z"
+    },
+    {
+      "result_id": "89cd83e3-0f52-43e0-9e4d-d4adecde6a60",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "media_generate_thumbnail",
+            "arguments": {
+              "input_path": "example_value"
+            }
+          },
+          {
+            "name": "media_resize_image",
+            "arguments": {
+              "input_path": "example_value",
+              "width": 109
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2233,
+        "output_tokens": 80,
+        "total_latency_ms": 1710,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:41.217Z"
+    },
+    {
+      "result_id": "490a825c-943a-48d8-8780-74b2edb148cd",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2194,
+        "output_tokens": 31,
+        "total_latency_ms": 1083,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:42.367Z"
+    },
+    {
+      "result_id": "aca73605-1b3d-4afd-9e9a-685c13322228",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2196,
+        "output_tokens": 35,
+        "total_latency_ms": 1129,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:43.553Z"
+    },
+    {
+      "result_id": "28726941-c56d-4688-bdcc-b25498f0b56d",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\":\"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2208,
+        "output_tokens": 40,
+        "total_latency_ms": 1188,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:44.809Z"
+    },
+    {
+      "result_id": "47a3dcc7-9694-4ff1-8463-a5a0540f62c4",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 2213,
+        "output_tokens": 51,
+        "total_latency_ms": 1341,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:46.207Z"
+    },
+    {
+      "result_id": "40e77e87-5005-4a85-b01e-5e890be1c6a8",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "3 dozen eggs is 3 * 12 = 36 eggs.\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2185,
+        "output_tokens": 40,
+        "total_latency_ms": 1193,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:47.458Z"
+    },
+    {
+      "result_id": "38103767-c379-472d-b3bf-ce6b88c5f1ed",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "12",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 3,
+        "total_latency_ms": 716,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:48.242Z"
+    },
+    {
+      "result_id": "ea8db7cb-ceb8-4c5a-bbe7-1cf3f361fd68",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. I'll cover a few common ones: Descriptive, Diagnostic, Predictive, and Prescriptive.\n\n**1. Descriptive Analytics**\n\n*   **What it is:** This is the most basic level. It focuses on summarizing past data to understand \"what happened.\" Think reports, dashboards, and basic visualizations.\n*   **Pros:**\n    *   **Easy to implement:** Requires relatively simple tools and techniques.\n    *   **Provides a baseline:** Establishes a foundation for understanding current performance.\n    *   **Accessible:** Results are generally easy to understand and communicate.\n*   **Cons:**\n    *   **Doesn't explain *why*:**  It only describes what occurred, not the underlying causes.\n    *   **Limited insights:** Doesn't offer predictive capabilities or recommendations.\n    *   **Can be reactive:** Relies on past data, potentially missing emerging trends.\n\n**2. Diagnostic Analytics**\n\n*   **What it is:**  This builds on descriptive analytics by trying to determine *why* something happened. It involves techniques like data mining, correlation analysis, and drill-down reporting.\n*   **Pros:**\n    *   **Identifies root causes:** Helps uncover the reasons behind observed trends.\n    *   **Improved understanding:** Provides deeper insights into business processes.\n    *   **Supports decision-making:**  Informs corrective actions and problem-solving.\n*   **Cons:**\n    *   **More complex than descriptive:** Requires more advanced analytical skills and tools.\n    *   **Can be time-consuming:** Investigating potential causes can be a lengthy process.\n    *   **Correlation vs. Causation:**  Care must be taken to distinguish between correlation and true causation.\n\n**3. Predictive Analytics**\n\n*   **What it is:** Uses statistical models and machine learning to forecast future outcomes based on historical data. Examples include sales forecasting, churn prediction, and risk assessment.\n*   **Pros:**\n    *   **Anticipates future trends:** Allows for proactive planning and resource allocation.\n    *   **Improved decision-making:** Enables data-driven decisions based on potential outcomes.\n    *   **Competitive advantage:** Can identify opportunities and mitigate risks before competitors.\n*   **Cons:**\n    *   **Requires significant data:**  Needs large, high-quality datasets for accurate models.\n    *   **Technical expertise:**  Demands skilled data scientists and machine learning engineers.\n    *   **Model accuracy:** Predictions are not always perfect and require ongoing monitoring and refinement.\n    *   **Can be complex to explain:** Models can be \"black boxes,\" making it difficult to understand how predictions are made.\n\n**4. Prescriptive Analytics**\n\n*   **What it is:**  Goes beyond prediction to recommend specific actions to optimize outcomes. It combines predictive analytics with optimization techniques and simulation.\n*   **Pros:**\n    *   **Provides actionable recommendations:**  Offers clear guidance on what to do.\n    *   **Optimizes performance:**  Helps achieve desired outcomes with maximum efficiency.\n    *   **Automates decision-making:**  Can automate routine decisions based on predefined rules.\n*   **Cons:**\n    *   **Most complex and expensive:** Requires advanced analytical skills, sophisticated tools, and significant data.\n    *   **Requires integration with operational systems:**  Recommendations need to be implemented in real-time.\n    *   **Assumptions and constraints:**  Models are based on assumptions that may not always hold true.\n    *   **Resistance to change:**  Implementing prescriptive recommendations can require significant organizational change.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   Are you interested in a specific industry or application?\n*   What level of technical expertise do you have?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2179,
+        "output_tokens": 811,
+        "total_latency_ms": 11100,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:55:59.403Z"
+    },
+    {
+      "result_id": "c00759ff-8f21-48a0-a6bc-4e1686f28b82",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. I'll cover Monolithic, Microservices, Service-Oriented Architecture (SOA), Layered, and Event-Driven architectures.  Keep in mind that the \"best\" architecture depends heavily on the specific project's requirements, team size, and long-term goals.\n\n**1. Monolithic Architecture**\n\n*   **Description:** A single, unified codebase. All components are tightly coupled and deployed as a single unit.\n*   **Pros:**\n    *   **Simplicity:** Easier to develop, test, and deploy initially.\n    *   **Performance (potentially):**  Direct function calls within the same process can be faster than inter-service communication.\n    *   **Easier Debugging:** Debugging is simpler as everything runs in one place.\n    *   **Easier to Reason About (initially):**  Smaller teams can grasp the entire system more easily.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling requires scaling the entire application, even if only a small part needs more resources.\n    *   **Deployment Bottlenecks:**  Any change, even small ones, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks.\n    *   **Large Codebase:**  Can become unwieldy and difficult to maintain over time.\n    *   **Slower Development Cycles:** As the codebase grows, development slows down.\n\n**2. Microservices Architecture**\n\n*   **Description:** An application is structured as a collection of small, autonomous services, modeled around a business domain. Each service is independently deployable and can be built with different technologies.\n*   **Pros:**\n    *   **Independent Scalability:**  Individual services can be scaled independently based on demand.\n    *   **Technology Diversity:**  Different services can use different technologies best suited for their purpose.\n    *   **Faster Development Cycles:** Smaller teams can work on individual services with greater agility.\n    *   **Improved Fault Isolation:**  Failure in one service doesn't necessarily bring down the entire application.\n    *   **Easier to Understand:** Smaller codebases are easier to understand and maintain.\n*   **Cons:**\n    *   **Complexity:** Distributed systems are inherently more complex to design, develop, and operate.\n    *   **Increased Operational Overhead:** Requires more sophisticated infrastructure and monitoring.\n    *   **Inter-Service Communication:**  Communication overhead and potential latency.\n    *   **Distributed Debugging:** Debugging across multiple services can be challenging.\n    *   **Data Consistency:** Maintaining data consistency across services can be difficult (eventual consistency is common).\n    *   **Increased Deployment Complexity:** Requires robust deployment pipelines and orchestration tools (e.g., Kubernetes).\n\n**3. Service-Oriented Architecture (SOA)**\n\n*   **Description:**  Similar to microservices, but typically involves larger, more coarse-grained services.  Often uses a centralized Enterprise Service Bus (ESB) for communication.\n*   **Pros:**\n    *   **Reusability:** Services can be reused across multiple applications.\n    *   **Interoperability:**  Services can be built using different technologies and communicate through standardized protocols.\n    *   **Centralized Management (with ESB):**  The ESB can provide centralized routing, transformation, and security.\n*   **Cons:**\n    *   **ESB Bottleneck:** The ESB can become a single point of failure and a performance bottleneck.\n    *   **Tight Coupling (potentially):**  Services can become tightly coupled to the ESB.\n    *   **Complexity:**  SOA implementations can be complex and expensive.\n    *   **Less Agile than Microservices:**  The centralized nature of SOA can make it less agile than microservices.  Microservices have largely superseded SOA in many modern contexts.\n\n**4. Layered Architecture**\n\n*   **Description:**  Organizes the application into horizontal layers (e.g., presentation, business logic, data access). Each layer has a specific responsibility and interacts only with adjacent layers.\n*   **Pros:**\n    *   **Well-Defined Structure:**  Provides a clear separation of concerns.\n    *   **Testability:**  Layers can be tested independently.\n    *   **Maintainability:**  Changes within a layer are less likely to affect other layers.\n*   **Cons:**\n    *   **Rigidity:**  Can become rigid and difficult to change.\n    *   **Performance Overhead:**  Requests may need to pass through multiple layers, potentially impacting performance.\n    *   **\"Big Ball of Mud\" Potential:**  If not carefully designed, layers can become intertwined, defeating the purpose of the architecture.\n\n**5. Event-",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 2180,
+        "output_tokens": 1024,
+        "total_latency_ms": 13824,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:13.289Z"
+    },
+    {
+      "result_id": "e855d090-ef32-4f1c-86b2-bd038513ca7d",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 780,
+        "output_tokens": 16,
+        "total_latency_ms": 539,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:13.885Z"
+    },
+    {
+      "result_id": "39f652d0-b86a-4f49-9c68-faa4e7f2a5f0",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 785,
+        "output_tokens": 24,
+        "total_latency_ms": 462,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:14.407Z"
+    },
+    {
+      "result_id": "f95eb0ed-e2de-4870-9966-4dcb0f314d52",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": false,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 39,
+        "total_latency_ms": 647,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:15.114Z"
+    },
+    {
+      "result_id": "41752187-cee7-428a-ab32-c91eca32c121",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 35,
+        "total_latency_ms": 607,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:15.777Z"
+    },
+    {
+      "result_id": "561bf06f-3bf5-47e5-ad51-c68692d2d37b",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 33,
+        "total_latency_ms": 573,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:16.413Z"
+    },
+    {
+      "result_id": "fe7ae782-ed0f-403d-8942-8bcae89f5d7b",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 794,
+        "output_tokens": 30,
+        "total_latency_ms": 539,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:17.010Z"
+    },
+    {
+      "result_id": "ad8f40e5-c801-4c69-aade-ab6a8cb2083b",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "00:00:10",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 794,
+        "output_tokens": 45,
+        "total_latency_ms": 727,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:17.796Z"
+    },
+    {
+      "result_id": "9d35524e-199d-427a-82be-39e376e08830",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 801,
+        "output_tokens": 37,
+        "total_latency_ms": 623,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:18.487Z"
+    },
+    {
+      "result_id": "d0e3a17e-320b-4d70-9e00-2c994431edef",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 799,
+        "output_tokens": 30,
+        "total_latency_ms": 535,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:19.088Z"
+    },
+    {
+      "result_id": "07f274a2-4b0b-49b1-9784-9cc234fc70ac",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 800,
+        "output_tokens": 48,
+        "total_latency_ms": 760,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:19.918Z"
+    },
+    {
+      "result_id": "8824f483-94f5-4f90-b771-098b54503d6c",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"en-US\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\", \"priority\": \"normal\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value",
+              "include_history": false,
+              "locale": "en-US"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value",
+              "priority": "normal"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": false,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 817,
+        "output_tokens": 114,
+        "total_latency_ms": 1590,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:21.568Z"
+    },
+    {
+      "result_id": "09d67ffd-024e-4a3c-aa49-a2e5e2041c2a",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 100}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109, \"height\": 100, \"quality\": 85}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_sequence": [
+          {
+            "name": "media_generate_thumbnail",
+            "arguments": {
+              "input_path": "example_value",
+              "timestamp": "00:00:10",
+              "width": 100
+            }
+          },
+          {
+            "name": "media_resize_image",
+            "arguments": {
+              "input_path": "example_value",
+              "width": 109,
+              "height": 100,
+              "quality": 85
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": true,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5555555555555555,
+        "overall": 0.5555555555555555
+      },
+      "metrics": {
+        "input_tokens": 827,
+        "output_tokens": 131,
+        "total_latency_ms": 1799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:23.427Z"
+    },
+    {
+      "result_id": "7218006f-9483-4a2d-879b-0de5b3118856",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 788,
+        "output_tokens": 26,
+        "total_latency_ms": 494,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:23.979Z"
+    },
+    {
+      "result_id": "f60fe8c4-18d1-4976-8797-ba74a62fac31",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 790,
+        "output_tokens": 35,
+        "total_latency_ms": 596,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:24.630Z"
+    },
+    {
+      "result_id": "1185cdc7-0851-4a7c-8da4-3f6451280fc8",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 802,
+        "output_tokens": 41,
+        "total_latency_ms": 680,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:25.368Z"
+    },
+    {
+      "result_id": "fb8a3a8c-927e-445a-97db-fceba94345bb",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 807,
+        "output_tokens": 46,
+        "total_latency_ms": 743,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:26.169Z"
+    },
+    {
+      "result_id": "5e40e26f-2ee4-4cd0-b46f-1c689f5d324f",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "3 dozen eggs is 3 * 12 = 36 eggs.\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.\n",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 779,
+        "output_tokens": 41,
+        "total_latency_ms": 676,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:26.902Z"
+    },
+    {
+      "result_id": "8b2a6e68-bf07-495e-8750-2711286ceb07",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "12",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 3,
+        "total_latency_ms": 197,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:27.161Z"
+    },
+    {
+      "result_id": "e6db61ea-76c0-452a-a395-657973c16768",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. I'll cover a few common ones: Descriptive, Diagnostic, Predictive, and Prescriptive.\n\n**1. Descriptive Analytics**\n\n*   **What it is:** This is the most basic level. It focuses on summarizing past data to understand \"what happened.\" Think reports, dashboards, and basic visualizations.\n*   **Pros:**\n    *   **Easy to understand:** Results are straightforward and readily interpretable.\n    *   **Relatively inexpensive:** Requires less sophisticated tools and expertise.\n    *   **Good starting point:** Provides a foundation for further analysis.\n*   **Cons:**\n    *   **Doesn't explain *why*:** It only describes, not explains the underlying causes.\n    *   **Limited insights:** Doesn't predict future trends or suggest actions.\n    *   **Can be overwhelming:** Large datasets can lead to information overload if not presented effectively.\n\n**2. Diagnostic Analytics**\n\n*   **What it is:** This builds on descriptive analytics by trying to understand *why* something happened. It involves techniques like data mining, correlation analysis, and drill-down reporting.\n*   **Pros:**\n    *   **Identifies root causes:** Helps uncover the reasons behind observed trends.\n    *   **Improved decision-making:** Provides context for understanding past performance.\n    *   **More actionable than descriptive:** Can lead to targeted improvements.\n*   **Cons:**\n    *   **Requires more expertise:** Needs skilled analysts to interpret results.\n    *   **Can be time-consuming:** Investigating potential causes can be a lengthy process.\n    *   **Correlation vs. Causation:**  It's crucial to avoid mistaking correlation for causation.\n\n**3. Predictive Analytics**\n\n*   **What it is:** Uses statistical models and machine learning to forecast future outcomes based on historical data. Examples include sales forecasting, churn prediction, and risk assessment.\n*   **Pros:**\n    *   **Anticipates future trends:** Allows for proactive planning and resource allocation.\n    *   **Improved accuracy:** Can provide more precise forecasts than simple extrapolation.\n    *   **Competitive advantage:** Enables businesses to anticipate market changes and customer behavior.\n*   **Cons:**\n    *   **Requires significant data and expertise:** Needs large, clean datasets and skilled data scientists.\n    *   **Model complexity:** Models can be difficult to understand and maintain.\n    *   **Accuracy depends on data quality:** \"Garbage in, garbage out\" applies – inaccurate data leads to inaccurate predictions.\n    *   **Overfitting risk:** Models can become too tailored to historical data and perform poorly on new data.\n\n**4. Prescriptive Analytics**\n\n*   **What it is:** The most advanced level. It goes beyond prediction to recommend specific actions to optimize outcomes. It often combines predictive analytics with optimization techniques.\n*   **Pros:**\n    *   **Provides actionable recommendations:** Directly suggests what to do to achieve desired results.\n    *   **Automates decision-making:** Can automate routine decisions based on predefined rules.\n    *   **Maximizes efficiency:** Optimizes processes and resource allocation.\n*   **Cons:**\n    *   **Highly complex:** Requires advanced modeling and optimization techniques.\n    *   **Requires significant data and expertise:** Needs large, clean datasets, skilled data scientists, and domain expertise.\n    *   **Implementation challenges:** Integrating recommendations into existing workflows can be difficult.\n    *   **Ethical considerations:**  Automated decision-making raises ethical concerns about fairness and transparency.\n\n\n\nDo you want me to elaborate on any of these, or perhaps compare them in a table format?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 773,
+        "output_tokens": 780,
+        "total_latency_ms": 10021,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:37.242Z"
+    },
+    {
+      "result_id": "f48fe07f-67e0-4c74-b19b-a9711d2d2cc7",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. This is a high-level overview; each has nuances and variations.\n\n**1. Monolithic Architecture**\n\n*   **Description:** A single, unified codebase where all components are tightly coupled.\n*   **Pros:**\n    *   **Simplicity:** Easier to develop, deploy, and test initially.\n    *   **Performance (potentially):**  Direct function calls within the same process can be faster than inter-service communication.\n    *   **Easier Debugging (initially):**  Debugging can be simpler in a single codebase.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling requires scaling the entire application, even if only a small part needs more resources.\n    *   **Deployment Bottlenecks:**  Any change, even small, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks.\n    *   **Large Codebase:**  Can become unwieldy and difficult to understand and maintain over time.\n    *   **Slower Development Cycles:** As the codebase grows, development slows down.\n\n**2. Microservices Architecture**\n\n*   **Description:** An application is structured as a collection of small, autonomous services, modeled around a business domain. Each service can be developed, deployed, and scaled independently.\n*   **Pros:**\n    *   **Independent Scalability:**  Scale individual services based on their specific needs.\n    *   **Technology Diversity:**  Use different technologies for different services.\n    *   **Faster Development Cycles:** Smaller codebases and independent deployments lead to faster development.\n    *   **Improved Fault Isolation:**  Failure in one service doesn't necessarily bring down the entire application.\n    *   **Easier to Understand:** Smaller, focused services are easier to understand and maintain.\n*   **Cons:**\n    *   **Complexity:**  Distributed systems are inherently more complex to design, develop, and operate.\n    *   **Inter-Service Communication:**  Requires robust inter-service communication mechanisms (e.g., APIs, message queues).\n    *   **Distributed Debugging:** Debugging across multiple services can be challenging.\n    *   **Increased Operational Overhead:**  Managing a large number of services requires more sophisticated infrastructure and tooling.\n    *   **Data Consistency:** Maintaining data consistency across services can be difficult (eventual consistency is common).\n\n**3. Layered Architecture (N-Tier)**\n\n*   **Description:** Organizes the application into distinct layers (e.g., presentation, business logic, data access). Each layer has a specific responsibility and interacts only with adjacent layers.\n*   **Pros:**\n    *   **Clear Separation of Concerns:**  Promotes modularity and maintainability.\n    *   **Testability:**  Layers can be tested independently.\n    *   **Reusability:**  Layers can be reused in other applications.\n*   **Cons:**\n    *   **Rigidity:**  Can become rigid and difficult to change if layers are too tightly coupled.\n    *   **Performance Overhead:**  Passing data through multiple layers can introduce performance overhead.\n    *   **\"Big Ball of Mud\" Potential:**  If not carefully designed, can devolve into a monolithic application.\n\n**4. Event-Driven Architecture**\n\n*   **Description:** Components communicate through asynchronous events.  Producers emit events, and consumers subscribe to and react to those events.\n*   **Pros:**\n    *   **Decoupling:**  Producers and consumers are loosely coupled.\n    *   **Scalability:**  Easy to scale consumers independently.\n    *   **Real-time Processing:**  Suitable for real-time data processing and reactive systems.\n*   **Cons:**\n    *   **Complexity:**  Can be complex to design and debug, especially with many events and consumers.\n    *   **Eventual Consistency:**  Data consistency can be a challenge.\n    *   **Monitoring and Tracing:**  Difficult to trace the flow of events through the system.\n\n**5. Service-Oriented Architecture (SOA)**\n\n*   **Description:**  Similar to microservices, but services are typically larger and more coarse-grained.  Focuses on exposing functionality as reusable services.\n*   **Pros:**\n    *   **Reusability:** Services can be reused across multiple applications.\n    *   **Interoperability:** Services can be implemented using different technologies.\n*   **Cons:**\n    *   **Complexity:**  Can be complex to design and manage.\n    *   **Performance Overhead:**  Inter-service communication can be slower than in microservices.\n    *   **Governance:** Requires strong governance to ensure service consistency and quality.\n\n**Summary Table**\n\n|",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 1024,
+        "total_latency_ms": 13147,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:50.451Z"
+    },
+    {
+      "result_id": "8034d08c-ce55-4401-ae6b-bddfbb6e10af",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 780,
+        "output_tokens": 16,
+        "total_latency_ms": 538,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:51.049Z"
+    },
+    {
+      "result_id": "1f110ce2-326b-423a-ad62-bb8a85818a7a",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 785,
+        "output_tokens": 24,
+        "total_latency_ms": 460,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:51.569Z"
+    },
+    {
+      "result_id": "14495b53-36d0-4df4-a00c-58dfe186edf1",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": false,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 39,
+        "total_latency_ms": 644,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:52.282Z"
+    },
+    {
+      "result_id": "b825b36a-6563-4632-8d72-59d66572fc8d",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 35,
+        "total_latency_ms": 599,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:52.936Z"
+    },
+    {
+      "result_id": "f3772388-2dee-4c5e-8560-a7b0743e9be0",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 33,
+        "total_latency_ms": 578,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:53.573Z"
+    },
+    {
+      "result_id": "c658ec71-65e1-4c30-b3bf-da8f772dcbc9",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 794,
+        "output_tokens": 30,
+        "total_latency_ms": 534,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:54.169Z"
+    },
+    {
+      "result_id": "d74be525-c652-456b-9fcd-a23a5fb25fdd",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "00:00:10",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 794,
+        "output_tokens": 45,
+        "total_latency_ms": 731,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:54.957Z"
+    },
+    {
+      "result_id": "7b904df3-1f24-4ae5-81bc-18a16e6ae9d8",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 801,
+        "output_tokens": 37,
+        "total_latency_ms": 628,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:55.640Z"
+    },
+    {
+      "result_id": "bba855eb-ca89-48eb-9587-f6d74d51d995",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 799,
+        "output_tokens": 30,
+        "total_latency_ms": 540,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:56.241Z"
+    },
+    {
+      "result_id": "b3f6672e-f078-4e3e-95ef-da944aca08ed",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 800,
+        "output_tokens": 48,
+        "total_latency_ms": 760,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:57.060Z"
+    },
+    {
+      "result_id": "233a0e44-dfa6-4576-a9d0-3bf9cec775b9",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"en-US\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\", \"priority\": \"normal\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value",
+              "include_history": false,
+              "locale": "en-US"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value",
+              "priority": "normal"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": false,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 817,
+        "output_tokens": 114,
+        "total_latency_ms": 1577,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:56:58.698Z"
+    },
+    {
+      "result_id": "0ec4cf29-ce14-4e30-b42a-24d343da3600",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 100}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109, \"height\": 100, \"quality\": 85}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_sequence": [
+          {
+            "name": "media_generate_thumbnail",
+            "arguments": {
+              "input_path": "example_value",
+              "timestamp": "00:00:10",
+              "width": 100
+            }
+          },
+          {
+            "name": "media_resize_image",
+            "arguments": {
+              "input_path": "example_value",
+              "width": 109,
+              "height": 100,
+              "quality": 85
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": true,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5555555555555555,
+        "overall": 0.5555555555555555
+      },
+      "metrics": {
+        "input_tokens": 827,
+        "output_tokens": 131,
+        "total_latency_ms": 1802,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:00.560Z"
+    },
+    {
+      "result_id": "1ce7811a-34fb-4418-b728-add3d9854a9a",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 788,
+        "output_tokens": 26,
+        "total_latency_ms": 494,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:01.115Z"
+    },
+    {
+      "result_id": "b6fb532b-4b48-4a28-9fc1-585168b346ae",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 790,
+        "output_tokens": 35,
+        "total_latency_ms": 597,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:01.776Z"
+    },
+    {
+      "result_id": "018e96bf-b80b-43cc-a560-65a30d2c9a0a",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 802,
+        "output_tokens": 41,
+        "total_latency_ms": 687,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:02.519Z"
+    },
+    {
+      "result_id": "46caedee-ad65-4699-8998-0b54af1c57f1",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 807,
+        "output_tokens": 46,
+        "total_latency_ms": 760,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:03.337Z"
+    },
+    {
+      "result_id": "679b1265-c26a-45cc-afce-4634506c9a5c",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "3 dozen eggs is 3 * 12 = 36 eggs.\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.\n",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 779,
+        "output_tokens": 41,
+        "total_latency_ms": 684,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:04.081Z"
+    },
+    {
+      "result_id": "37317397-2195-4e02-ad35-ee3f8ca798d1",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "12",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 3,
+        "total_latency_ms": 202,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:04.339Z"
+    },
+    {
+      "result_id": "bf8a6a5f-e17d-4d41-bfa3-104e7503e297",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. I'll cover a few common ones: Descriptive, Diagnostic, Predictive, and Prescriptive.\n\n**1. Descriptive Analytics**\n\n*   **What it is:** This is the most basic level. It focuses on summarizing past data to understand \"what happened.\" Think reports, dashboards, and basic visualizations.\n*   **Pros:**\n    *   **Easy to understand:** Results are straightforward and readily interpretable.\n    *   **Relatively inexpensive:** Requires less sophisticated tools and expertise.\n    *   **Good starting point:** Provides a foundation for further analysis.\n*   **Cons:**\n    *   **Doesn't explain *why*:** It only describes, not explains the underlying causes.\n    *   **Limited insights:** Doesn't predict future trends or suggest actions.\n    *   **Can be overwhelming:** Large datasets can lead to information overload if not presented effectively.\n\n**2. Diagnostic Analytics**\n\n*   **What it is:** This builds on descriptive analytics by trying to understand *why* something happened. It involves techniques like data mining, correlation analysis, and drill-down reporting.\n*   **Pros:**\n    *   **Identifies root causes:** Helps uncover the reasons behind observed trends.\n    *   **Improved decision-making:** Provides context for understanding past performance.\n    *   **More actionable than descriptive:** Can lead to targeted improvements.\n*   **Cons:**\n    *   **Requires more expertise:** Needs skilled analysts to interpret results.\n    *   **Can be time-consuming:** Investigating potential causes can be a lengthy process.\n    *   **Correlation vs. Causation:**  It's crucial to avoid mistaking correlation for causation.\n\n**3. Predictive Analytics**\n\n*   **What it is:** Uses statistical models and machine learning to forecast future outcomes based on historical data. Examples include sales forecasting, churn prediction, and risk assessment.\n*   **Pros:**\n    *   **Anticipates future trends:** Allows for proactive planning and resource allocation.\n    *   **Improved accuracy:** Can provide more precise forecasts than simple extrapolation.\n    *   **Competitive advantage:** Enables businesses to anticipate market changes and customer behavior.\n*   **Cons:**\n    *   **Requires significant data and expertise:** Needs large, clean datasets and skilled data scientists.\n    *   **Model complexity:** Models can be difficult to understand and maintain.\n    *   **Accuracy depends on data quality:** \"Garbage in, garbage out\" applies – inaccurate data leads to inaccurate predictions.\n    *   **Overfitting risk:** Models can become too tailored to historical data and perform poorly on new data.\n\n**4. Prescriptive Analytics**\n\n*   **What it is:** The most advanced level. It goes beyond prediction to recommend specific actions to optimize outcomes. It often combines predictive analytics with optimization techniques.\n*   **Pros:**\n    *   **Provides actionable recommendations:** Directly suggests what to do to achieve desired results.\n    *   **Automates decision-making:** Can automate routine decisions based on predefined rules.\n    *   **Maximizes efficiency:** Optimizes processes and resource allocation.\n*   **Cons:**\n    *   **Highly complex:** Requires advanced modeling and optimization techniques.\n    *   **Requires significant data and expertise:** Needs large, clean datasets, skilled data scientists, and domain expertise.\n    *   **Implementation challenges:** Integrating recommendations into existing workflows can be difficult.\n    *   **Ethical considerations:**  Automated decision-making raises ethical concerns about fairness and transparency.\n\n\n\nDo you want me to elaborate on any of these, or perhaps compare them in a table format?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 773,
+        "output_tokens": 780,
+        "total_latency_ms": 10039,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:14.454Z"
+    },
+    {
+      "result_id": "a463fc5d-036c-4853-b736-6d0083962007",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. This is a high-level overview; each has nuances and variations.\n\n**1. Monolithic Architecture**\n\n*   **Description:** A single, unified codebase where all components are tightly coupled.\n*   **Pros:**\n    *   **Simplicity:** Easier to develop, deploy, and test initially.\n    *   **Performance (potentially):**  Direct function calls within the same process can be faster than inter-service communication.\n    *   **Easier Debugging (initially):**  Debugging can be simpler in a single codebase.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling requires scaling the entire application, even if only a small part needs more resources.\n    *   **Deployment Bottlenecks:**  Any change, even small, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks.\n    *   **Large Codebase:**  Can become unwieldy and difficult to understand and maintain over time.\n    *   **Slower Development Cycles:** As the codebase grows, development slows down.\n\n**2. Microservices Architecture**\n\n*   **Description:** An application is structured as a collection of small, autonomous services, modeled around a business domain. Each service can be developed, deployed, and scaled independently.\n*   **Pros:**\n    *   **Independent Scalability:**  Scale individual services based on their specific needs.\n    *   **Technology Diversity:**  Use different technologies for different services.\n    *   **Faster Development Cycles:** Smaller codebases and independent deployments lead to faster development.\n    *   **Improved Fault Isolation:**  Failure in one service doesn't necessarily bring down the entire application.\n    *   **Easier to Understand:** Smaller, focused services are easier to understand and maintain.\n*   **Cons:**\n    *   **Complexity:**  Distributed systems are inherently more complex to design, develop, and operate.\n    *   **Inter-Service Communication:**  Requires robust inter-service communication mechanisms (e.g., APIs, message queues).\n    *   **Distributed Debugging:** Debugging across multiple services can be challenging.\n    *   **Increased Operational Overhead:**  Managing a large number of services requires more sophisticated infrastructure and tooling.\n    *   **Data Consistency:** Maintaining data consistency across services can be difficult (eventual consistency is common).\n\n**3. Layered Architecture (N-Tier)**\n\n*   **Description:** Organizes the application into distinct layers (e.g., presentation, business logic, data access). Each layer has a specific responsibility and interacts only with adjacent layers.\n*   **Pros:**\n    *   **Clear Separation of Concerns:**  Promotes modularity and maintainability.\n    *   **Testability:**  Layers can be tested independently.\n    *   **Reusability:**  Layers can be reused in other applications.\n*   **Cons:**\n    *   **Rigidity:**  Can become rigid and difficult to change if layers are too tightly coupled.\n    *   **Performance Overhead:**  Passing data through multiple layers can introduce performance overhead.\n    *   **\"Big Ball of Mud\" Potential:**  If not carefully designed, can devolve into a monolithic application.\n\n**4. Event-Driven Architecture**\n\n*   **Description:** Components communicate through asynchronous events.  Producers emit events, and consumers subscribe to and react to those events.\n*   **Pros:**\n    *   **Decoupling:**  Producers and consumers are loosely coupled.\n    *   **Scalability:**  Easy to scale consumers independently.\n    *   **Real-time Processing:**  Suitable for real-time data processing and reactive systems.\n*   **Cons:**\n    *   **Complexity:**  Can be complex to design and debug, especially with many events and consumers.\n    *   **Eventual Consistency:**  Data consistency can be a challenge.\n    *   **Monitoring and Tracing:**  Difficult to trace the flow of events through the system.\n\n**5. Service-Oriented Architecture (SOA)**\n\n*   **Description:**  Similar to microservices, but services are typically larger and more coarse-grained.  Focuses on exposing functionality as reusable services.\n*   **Pros:**\n    *   **Reusability:** Services can be reused across multiple applications.\n    *   **Interoperability:** Services can be implemented using different technologies.\n*   **Cons:**\n    *   **Complexity:**  Can be complex to design and manage.\n    *   **Performance Overhead:**  Inter-service communication can be slower than in microservices.\n    *   **Governance:** Requires strong governance to ensure service consistency and quality.\n\n**Summary Table**\n\n|",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 1024,
+        "total_latency_ms": 13322,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:27.833Z"
+    },
+    {
+      "result_id": "b1dcbf5d-b5cc-482b-a2f2-f7c7b8a044bc",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 780,
+        "output_tokens": 16,
+        "total_latency_ms": 533,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:28.436Z"
+    },
+    {
+      "result_id": "2e8210bd-ba2b-4d81-bfeb-80086d66d381",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 785,
+        "output_tokens": 24,
+        "total_latency_ms": 462,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:28.958Z"
+    },
+    {
+      "result_id": "4b562730-b418-4e96-93ff-cb4781e2f726",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": false,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 39,
+        "total_latency_ms": 643,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:29.663Z"
+    },
+    {
+      "result_id": "8c0f46b7-7d05-4e84-97ee-37cbc47a435a",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 35,
+        "total_latency_ms": 609,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:30.329Z"
+    },
+    {
+      "result_id": "1513fdd8-5bed-478c-9854-fbd289177a9c",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 787,
+        "output_tokens": 33,
+        "total_latency_ms": 575,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:30.972Z"
+    },
+    {
+      "result_id": "22a4573d-5ef0-45b3-bd52-3489dd2dc68a",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 794,
+        "output_tokens": 30,
+        "total_latency_ms": 539,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:31.567Z"
+    },
+    {
+      "result_id": "d5ab241e-aace-4ca1-94c6-e01d3d0560ce",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "00:00:10",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 794,
+        "output_tokens": 45,
+        "total_latency_ms": 724,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:32.352Z"
+    },
+    {
+      "result_id": "3d0ab834-0e6f-4c1b-bee9-bc99fb95d88f",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 801,
+        "output_tokens": 37,
+        "total_latency_ms": 621,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:33.037Z"
+    },
+    {
+      "result_id": "cf0a4320-b149-4c48-86f2-67640b1a29d7",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 799,
+        "output_tokens": 30,
+        "total_latency_ms": 544,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:33.639Z"
+    },
+    {
+      "result_id": "35f04e47-9d77-46fd-a510-b2c8418677d3",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 800,
+        "output_tokens": 48,
+        "total_latency_ms": 765,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:34.465Z"
+    },
+    {
+      "result_id": "30cbd797-5e0b-47b0-9ec5-387102d21303",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": false, \"locale\": \"en-US\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\", \"priority\": \"normal\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}",
+        "parsed_sequence": [
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value",
+              "include_history": false,
+              "locale": "en-US"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value",
+              "priority": "normal"
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": false,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 817,
+        "output_tokens": 114,
+        "total_latency_ms": 1591,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:36.120Z"
+    },
+    {
+      "result_id": "bfd2fcb3-702c-4511-945f-f3cfb7ade56f",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 100}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 109, \"height\": 100, \"quality\": 85}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_sequence": [
+          {
+            "name": "media_generate_thumbnail",
+            "arguments": {
+              "input_path": "example_value",
+              "timestamp": "00:00:10",
+              "width": 100
+            }
+          },
+          {
+            "name": "media_resize_image",
+            "arguments": {
+              "input_path": "example_value",
+              "width": 109,
+              "height": 100,
+              "quality": 85
+            }
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value",
+              "include_pollutants": true,
+              "offset": 0
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5555555555555555,
+        "overall": 0.5555555555555555
+      },
+      "metrics": {
+        "input_tokens": 827,
+        "output_tokens": 131,
+        "total_latency_ms": 1789,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:37.967Z"
+    },
+    {
+      "result_id": "7d0e4aca-e33c-407e-a668-68da9065c3c4",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\", \"status\": \"suspended\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "guest",
+            "status": "suspended"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 788,
+        "output_tokens": 26,
+        "total_latency_ms": 485,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:38.513Z"
+    },
+    {
+      "result_id": "69ce805f-5c6b-4ed0-81fb-675598230999",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"config.json\", \"width\": 174.45}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "config.json",
+            "width": 174.45
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 790,
+        "output_tokens": 35,
+        "total_latency_ms": 598,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:39.169Z"
+    },
+    {
+      "result_id": "7a730dc6-0a5f-47fc-a29e-e76930fde70e",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\", \"properties\": {\"key\": \"value\"}, \"user_id\": \"Berlin\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json",
+            "properties": {
+              "key": "value"
+            },
+            "user_id": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 802,
+        "output_tokens": 41,
+        "total_latency_ms": 672,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:39.897Z"
+    },
+    {
+      "result_id": "27435f43-938d-4f01-b762-1a89c952c717",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": false, \"offset\": 929.49}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": false,
+            "offset": 929.49
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 807,
+        "output_tokens": 46,
+        "total_latency_ms": 749,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:40.705Z"
+    },
+    {
+      "result_id": "de4144e7-2dd0-4fbf-9350-aef6f3c6caa1",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "3 dozen eggs is 3 * 12 = 36 eggs.\nIf you use 7 eggs, you have 36 - 7 = 29 eggs remaining.\n",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 779,
+        "output_tokens": 41,
+        "total_latency_ms": 670,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:41.433Z"
+    },
+    {
+      "result_id": "a4119ba1-5f58-41af-816e-259ea52b0f9c",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "12",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 3,
+        "total_latency_ms": 203,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:41.697Z"
+    },
+    {
+      "result_id": "27902c7a-a28c-486e-8772-c62308ec4a94",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of different analytics approaches. I'll cover a few common ones: Descriptive, Diagnostic, Predictive, and Prescriptive.\n\n**1. Descriptive Analytics**\n\n*   **What it is:** This is the most basic level. It focuses on summarizing past data to understand \"what happened.\" Think reports, dashboards, and basic visualizations.\n*   **Pros:**\n    *   **Easy to understand:** Results are straightforward and readily interpretable.\n    *   **Relatively inexpensive:** Requires less sophisticated tools and expertise.\n    *   **Good starting point:** Provides a foundation for further analysis.\n*   **Cons:**\n    *   **Doesn't explain *why*:** It only describes, not explains the underlying causes.\n    *   **Limited insights:** Doesn't predict future trends or suggest actions.\n    *   **Can be overwhelming:** Large datasets can lead to information overload if not presented effectively.\n\n**2. Diagnostic Analytics**\n\n*   **What it is:** This builds on descriptive analytics by trying to understand *why* something happened. It involves techniques like data mining, correlation analysis, and drill-down reporting.\n*   **Pros:**\n    *   **Identifies root causes:** Helps uncover the reasons behind observed trends.\n    *   **Improved decision-making:** Provides context for understanding past performance.\n    *   **More actionable than descriptive:** Can lead to targeted improvements.\n*   **Cons:**\n    *   **Requires more expertise:** Needs skilled analysts to interpret results.\n    *   **Can be time-consuming:** Investigating potential causes can be a lengthy process.\n    *   **Correlation vs. Causation:**  It's crucial to avoid mistaking correlation for causation.\n\n**3. Predictive Analytics**\n\n*   **What it is:** Uses statistical models and machine learning to forecast future outcomes based on historical data. Examples include sales forecasting, churn prediction, and risk assessment.\n*   **Pros:**\n    *   **Anticipates future trends:** Allows for proactive planning and resource allocation.\n    *   **Improved accuracy:** Can provide more precise forecasts than simple extrapolation.\n    *   **Competitive advantage:** Enables businesses to anticipate market changes and customer behavior.\n*   **Cons:**\n    *   **Requires significant data and expertise:** Needs large, clean datasets and skilled data scientists.\n    *   **Model complexity:** Models can be difficult to understand and maintain.\n    *   **Accuracy depends on data quality:** \"Garbage in, garbage out\" applies – inaccurate data leads to inaccurate predictions.\n    *   **Overfitting risk:** Models can become too tailored to historical data and perform poorly on new data.\n\n**4. Prescriptive Analytics**\n\n*   **What it is:** The most advanced level. It goes beyond prediction to recommend specific actions to optimize outcomes. It often combines predictive analytics with optimization techniques.\n*   **Pros:**\n    *   **Provides actionable recommendations:** Directly suggests what to do to achieve desired results.\n    *   **Automates decision-making:** Can automate routine decisions based on predefined rules.\n    *   **Maximizes efficiency:** Optimizes processes and resource allocation.\n*   **Cons:**\n    *   **Highly complex:** Requires advanced modeling and optimization techniques.\n    *   **Requires significant data and expertise:** Needs large, clean datasets, skilled data scientists, and domain expertise.\n    *   **Implementation challenges:** Integrating recommendations into existing workflows can be difficult.\n    *   **Ethical considerations:**  Automated decision-making raises ethical concerns about fairness and transparency.\n\n\n\nDo you want me to elaborate on any of these, or perhaps compare them in a table format?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 773,
+        "output_tokens": 780,
+        "total_latency_ms": 9991,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:57:51.746Z"
+    },
+    {
+      "result_id": "afd7d59a-c4c7-421e-a8f9-ea9679f75d40",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, let's break down the pros and cons of several common software architecture approaches. This is a high-level overview; each has nuances and variations.\n\n**1. Monolithic Architecture**\n\n*   **Description:** A single, unified codebase where all components are tightly coupled.\n*   **Pros:**\n    *   **Simplicity:** Easier to develop, deploy, and test initially.\n    *   **Performance (potentially):**  Direct function calls within the same process can be faster than inter-service communication.\n    *   **Easier Debugging (initially):**  Debugging can be simpler in a single codebase.\n*   **Cons:**\n    *   **Scalability Challenges:** Scaling requires scaling the entire application, even if only a small part needs more resources.\n    *   **Deployment Bottlenecks:**  Any change, even small, requires redeploying the entire application.\n    *   **Technology Lock-in:** Difficult to adopt new technologies or frameworks.\n    *   **Large Codebase:**  Can become unwieldy and difficult to understand and maintain over time.\n    *   **Slower Development Cycles:** As the codebase grows, development slows down.\n\n**2. Microservices Architecture**\n\n*   **Description:** An application is structured as a collection of small, autonomous services, modeled around a business domain. Each service can be developed, deployed, and scaled independently.\n*   **Pros:**\n    *   **Independent Scalability:**  Scale individual services based on their specific needs.\n    *   **Technology Diversity:**  Use different technologies for different services.\n    *   **Faster Development Cycles:** Smaller codebases and independent deployments lead to faster development.\n    *   **Improved Fault Isolation:**  Failure in one service doesn't necessarily bring down the entire application.\n    *   **Easier to Understand:** Smaller, focused services are easier to understand and maintain.\n*   **Cons:**\n    *   **Complexity:**  Distributed systems are inherently more complex to design, develop, and operate.\n    *   **Inter-Service Communication:**  Requires robust inter-service communication mechanisms (e.g., APIs, message queues).\n    *   **Distributed Debugging:** Debugging across multiple services can be challenging.\n    *   **Increased Operational Overhead:**  Managing a large number of services requires more sophisticated infrastructure and tooling.\n    *   **Data Consistency:** Maintaining data consistency across services can be difficult (eventual consistency is common).\n\n**3. Layered Architecture (N-Tier)**\n\n*   **Description:** Organizes the application into distinct layers (e.g., presentation, business logic, data access). Each layer has a specific responsibility and interacts only with adjacent layers.\n*   **Pros:**\n    *   **Clear Separation of Concerns:**  Promotes modularity and maintainability.\n    *   **Testability:**  Layers can be tested independently.\n    *   **Reusability:**  Layers can be reused in other applications.\n*   **Cons:**\n    *   **Rigidity:**  Can become rigid and difficult to change if layers are too tightly coupled.\n    *   **Performance Overhead:**  Passing data through multiple layers can introduce performance overhead.\n    *   **\"Big Ball of Mud\" Potential:**  If not carefully designed, can devolve into a monolithic application.\n\n**4. Event-Driven Architecture**\n\n*   **Description:** Components communicate through asynchronous events.  Producers emit events, and consumers subscribe to and react to those events.\n*   **Pros:**\n    *   **Decoupling:**  Producers and consumers are loosely coupled.\n    *   **Scalability:**  Easy to scale consumers independently.\n    *   **Real-time Processing:**  Suitable for real-time data processing and reactive systems.\n*   **Cons:**\n    *   **Complexity:**  Can be complex to design and debug, especially with many events and consumers.\n    *   **Eventual Consistency:**  Data consistency can be a challenge.\n    *   **Monitoring and Tracing:**  Difficult to trace the flow of events through the system.\n\n**5. Service-Oriented Architecture (SOA)**\n\n*   **Description:**  Similar to microservices, but services are typically larger and more coarse-grained.  Focuses on exposing functionality as reusable services.\n*   **Pros:**\n    *   **Reusability:** Services can be reused across multiple applications.\n    *   **Interoperability:** Services can be implemented using different technologies.\n*   **Cons:**\n    *   **Complexity:**  Can be complex to design and manage.\n    *   **Performance Overhead:**  Inter-service communication can be slower than in microservices.\n    *   **Governance:** Requires strong governance to ensure service consistency and quality.\n\n**Summary Table**\n\n|",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 774,
+        "output_tokens": 1024,
+        "total_latency_ms": 13146,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T14:58:04.952Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.9960000000000001,
+        "ci95": [
+          0.9398260695220669,
+          0.9999999999999999
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 1,
+        "ci95": [
+          0.9398260695220669,
+          0.9999999999999999
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.99,
+        "ci95": [
+          0.9398260695220669,
+          0.9999999999999999
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.8671111111111112,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.95,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.8061111111111111,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "arr": 0.8705934850513163,
+      "token_savings_pct": 63.95996815648811,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

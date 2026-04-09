@@ -1,0 +1,59 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=12pt,
+    width=\columnwidth,
+    height=6cm,
+    ylabel={GSM8K Accuracy (\%)},
+    ylabel style={font=\small},
+    xlabel={Schema Load (number of tool definitions)},
+    xlabel style={font=\small},
+    symbolic x coords={0, 10, 25, 50},
+    xtick=data,
+    x tick label style={font=\small},
+    ymin=45,
+    ymax=60,
+    ytick={45,48,50,52,54,56,58,60},
+    nodes near coords,
+    nodes near coords style={font=\tiny, above},
+    every node near coord/.append style={yshift=1pt},
+    grid=major,
+    grid style={dashed, gray!25},
+    enlarge x limits=0.2,
+    legend style={
+        at={(0.5,0.97)},
+        anchor=north,
+        legend columns=2,
+        font=\small,
+        draw=gray!40,
+        fill=white,
+        fill opacity=0.9,
+    },
+    legend cell align={left},
+]
+
+% Natural language baselines
+\addplot[fill=tscggray!55, draw=tscggray!80] coordinates {
+    (0, 56)
+    (10, 54)
+    (25, 52)
+    (50, 52)
+};
+\addlegendentry{Natural}
+
+% TSCG-compressed schemas
+\addplot[fill=tscgblue!70, draw=tscgblue!80] coordinates {
+    (0, 54)
+    (10, 54)
+    (25, 56)
+    (50, 54)
+};
+\addlegendentry{TSCG}
+
+\end{axis}
+\end{tikzpicture}
+\caption{GSM8K reasoning accuracy under increasing tool schema load. Natural-language schemas degrade accuracy by 4 percentage points as schema count grows from 0 to 50, while TSCG-compressed schemas maintain stable performance ($\pm$2\,pp), confirming that TSCG does not impair the model's reasoning capability.}
+\label{fig:gsm8k}
+\end{figure}

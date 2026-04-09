@@ -1,0 +1,68 @@
+{
+  "name": "tscg",
+  "version": "1.2.0",
+  "description": "Token-Context Semantic Grammar - Deterministic tool-schema compiler for LLM agent frameworks. Reduces tool-definition overhead by ~72%.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/tscg.browser.js",
+  "bin": {
+    "tscg": "./cli/tscg.ts"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/tscg.browser.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:browser": "node esbuild.browser.mjs",
+    "build:all": "tsc && node esbuild.browser.mjs",
+    "tscg": "tsx cli/tscg.ts",
+    "dev": "tsx src/cli/index.ts",
+    "optimize": "tsx src/cli/index.ts optimize",
+    "benchmark": "tsx src/cli/index.ts benchmark",
+    "compile": "tsx src/cli/index.ts compile",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "llm",
+    "prompt-optimization",
+    "token-efficiency",
+    "tool-use",
+    "function-calling",
+    "compression",
+    "agentic-ai",
+    "mcp",
+    "langchain",
+    "schema-compression",
+    "tscg"
+  ],
+  "author": "Furkan Sakizli",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SKZL-AI/tscg"
+  },
+  "homepage": "https://github.com/SKZL-AI/tscg#readme",
+  "bugs": {
+    "url": "https://github.com/SKZL-AI/tscg/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "esbuild": "^0.25.12",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

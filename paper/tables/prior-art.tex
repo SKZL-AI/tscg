@@ -1,0 +1,45 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}l c c c c c c c c@{}}
+\toprule
+\textbf{System} & \textbf{Determ.} & \textbf{Tok-Aware} & \textbf{Causal Th.} & \textbf{Black-Box} & \textbf{Budg. Anch.} & \textbf{Compress.} & \textbf{No Train} & \textbf{Zero-Dep} \\
+\midrule
+\multicolumn{9}{l}{\textit{Compression-Based}} \\
+\cmidrule(r){1-1}
+LLMLingua \cite{jiang2023llmlingua}         & \xmark & \xmark & \xmark & \cmark & \cmark & \cmark & \xmark & \xmark \\
+LLMLingua-2 \cite{pan2024llmlingua2}        & \xmark & \xmark & \xmark & \cmark & \cmark & \cmark & \xmark & \xmark \\
+Selective Context \cite{li2023compressing}   & \cmark & \xmark & \xmark & \cmark & \xmark & \cmark & \cmark & \xmark \\
+LongLLMLingua \cite{jiang2024longllmlingua}  & \xmark & \xmark & \xmark & \cmark & \cmark & \cmark & \xmark & \xmark \\
+Gist Tokens \cite{mu2023learning}            & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark \\
+AutoCompressors \cite{chevalier2023adapting} & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark \\
+LeanContext \cite{arefeen2024leancontext}    & \xmark & \xmark & \xmark & \cmark & \xmark & \cmark & \xmark & \xmark \\
+\midrule
+\multicolumn{9}{l}{\textit{Search-Based}} \\
+\cmidrule(r){1-1}
+DSPy \cite{khattab2023dspy}                  & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+OPRO \cite{yang2024large}                    & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+APE \cite{zhou2023large}                     & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+EvoPrompt \cite{chen2024evoprompt}           & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+PromptBreeder \cite{fernando2024promptbreeder} & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+COSP \cite{wan2024cosp}                      & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+\midrule
+\multicolumn{9}{l}{\textit{Gradient-Based}} \\
+\cmidrule(r){1-1}
+TextGrad \cite{yuksekgonul2024textgrad}      & \xmark & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark & \xmark \\
+ProTeGi \cite{pryzant2023automatically}      & \xmark & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark & \xmark \\
+PromptAgent \cite{wang2023promptagent}       & \xmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+\midrule
+\multicolumn{9}{l}{\textit{Template / Theoretical}} \\
+\cmidrule(r){1-1}
+LangGPT \cite{wang2024langgpt}              & \cmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+SSR++ \cite{wen2024ssr}                      & \cmark & \xmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+CFPO \cite{guo2024cfpo}                      & \xmark & \xmark & \cmark & \cmark & \xmark & \xmark & \cmark & \xmark \\
+\midrule
+\textbf{TSCG (ours)}                         & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of 18 prompt optimization systems and TSCG across eight desiderata. \textbf{Determ.}: deterministic output for the same input. \textbf{Tok-Aware}: optimizes with respect to BPE tokenizer boundaries. \textbf{Causal Th.}: grounded in causal attention theory. \textbf{Black-Box}: requires no access to model weights or gradients. \textbf{Budg. Anch.}: budget-constrained anchor duplication. \textbf{Compress.}: achieves measurable token compression. \textbf{No Train}: requires no model training or fine-tuning. \textbf{Zero-Dep}: zero external runtime dependencies. TSCG is the only system satisfying all eight criteria.}
+\label{tab:prior-art}
+\end{table*}

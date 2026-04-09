@@ -1,0 +1,3926 @@
+[
+  {
+    "result_id": "2a6b72f5-6ce4-49f5-ae14-042e4278548c",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"admin\",\n    \"status\": \"active\",\n    \"search\": \"John Doe\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin",
+          "status": "active",
+          "search": "John Doe"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1169,
+      "output_tokens": 55,
+      "total_latency_ms": 8366,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:25.813Z"
+  },
+  {
+    "result_id": "e54dbcaa-1526-4749-a595-a7c457ba3182",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1178,
+      "output_tokens": 46,
+      "total_latency_ms": 527,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:26.410Z"
+  },
+  {
+    "result_id": "be3ffd07-a3a2-4321-9184-9a1876a44728",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 1180,
+      "output_tokens": 43,
+      "total_latency_ms": 503,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:26.973Z"
+  },
+  {
+    "result_id": "9828a06f-f867-4149-a371-dd30188fed9a",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 1184,
+      "output_tokens": 38,
+      "total_latency_ms": 475,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:27.507Z"
+  },
+  {
+    "result_id": "91c0274e-5607-4e9e-998e-73309f81d796",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value",
+          "properties": {},
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1186,
+      "output_tokens": 44,
+      "total_latency_ms": 509,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:28.086Z"
+  },
+  {
+    "result_id": "4a3c3f30-dc40-456c-a5a8-de66b8d9d8eb",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"admin\",\n    \"status\": \"active\",\n    \"search\": \"John Doe\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin",
+          "status": "active",
+          "search": "John Doe"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1172,
+      "output_tokens": 55,
+      "total_latency_ms": 575,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:28.729Z"
+  },
+  {
+    "result_id": "472498e8-eadf-45b3-beaa-1b05fda46c2b",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1187,
+      "output_tokens": 46,
+      "total_latency_ms": 515,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:29.302Z"
+  },
+  {
+    "result_id": "a3fff655-6d49-4a89-b889-6a567ea65743",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"example_dashboard\",\n    \"widgets\": [\n      {\n        \"type\": \"chart\"\n      },\n      {\n        \"type\": \"table\"\n      }\n    ],\n    \"shared\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_dashboard",
+          "widgets": [
+            {
+              "type": "chart"
+            },
+            {
+              "type": "table"
+            }
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1192,
+      "output_tokens": 83,
+      "total_latency_ms": 723,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:30.085Z"
+  },
+  {
+    "result_id": "8687de71-5edd-4941-b2b3-13e27b87a220",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 1182,
+      "output_tokens": 25,
+      "total_latency_ms": 395,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:30.538Z"
+  },
+  {
+    "result_id": "b51440a7-d715-45cf-9fea-b04bc431cd20",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 1182,
+      "output_tokens": 25,
+      "total_latency_ms": 397,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:30.991Z"
+  },
+  {
+    "result_id": "406b121a-b18b-4ad9-ad55-43926dedc552",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "admin"
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.6666666666666666
+    },
+    "metrics": {
+      "input_tokens": 1209,
+      "output_tokens": 83,
+      "total_latency_ms": 724,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:31.772Z"
+  },
+  {
+    "result_id": "747c1b13-0e6a-4534-968a-9eadc2909830",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false,
+            "offset": 0
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4666666666666666,
+      "overall": 0.4666666666666666
+    },
+    "metrics": {
+      "input_tokens": 1211,
+      "output_tokens": 138,
+      "total_latency_ms": 1052,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:32.883Z"
+  },
+  {
+    "result_id": "6785164c-9c13-40d5-92aa-b1026e2ec8f6",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"main\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1168,
+      "output_tokens": 40,
+      "total_latency_ms": 487,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:33.439Z"
+  },
+  {
+    "result_id": "469755e0-e809-4408-93b5-974c6f89fe06",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"config.json\",\n    \"properties\": {},\n    \"user_id\": \"user123\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {},
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1171,
+      "output_tokens": 61,
+      "total_latency_ms": 597,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:34.095Z"
+  },
+  {
+    "result_id": "a4c5b199-7b0b-4205-b6fe-76038b75ef18",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"viewer\",\n    \"status\": \"pending\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1184,
+      "output_tokens": 46,
+      "total_latency_ms": 519,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:34.669Z"
+  },
+  {
+    "result_id": "44270ce3-aa9a-4f5e-b59f-3c45a822fec0",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": [
+            "value1",
+            "value2",
+            "value3"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1194,
+      "output_tokens": 47,
+      "total_latency_ms": 526,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:35.263Z"
+  },
+  {
+    "result_id": "02095cb0-a604-496c-b2b3-3dc8581fa7be",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I cannot definitively tell you the meaning of life. That's a question that philosophers and individuals have pondered for centuries, and there isn't a single, universally accepted answer. \n\nHowever, I can offer some perspectives based on common human beliefs and philosophical ideas. Here are a few approaches to consider:\n\n*   **Nihilism:** This view suggests that life has no inherent meaning or purpose.\n*   **Existentialism:** Existentialists believe that we are born into a meaningless world and it is up to each individual to create their own meaning and purpose through their choices and actions.\n*   **Hedonism:** This philosophy emphasizes the pursuit of pleasure and avoidance of pain as the primary goal of life.\n*   **Absurdism:** This perspective recognizes the conflict between humanity's search for meaning and the universe's lack of it, suggesting we should embrace the absurdity.\n*   **Religious and Spiritual Beliefs:** Many religions offer answers to the meaning of life, often centered around serving a higher power, following moral codes, and achieving spiritual enlightenment.\n\nUltimately, the meaning of life is often what you make it. It can be found in relationships, creativity, contributing to society, personal growth, or simply experiencing the beauty and wonder of the world.\n\nI can use the `analytics_track_event` tool to record your exploration of this question if you'd like. Would you like me to do that?\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_pondered_meaning_of_life\", \"properties\": {\"user_id\": \"user123\"}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "user_pondered_meaning_of_life",
+          "properties": {
+            "user_id": "user123"
+          },
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1161,
+      "output_tokens": 359,
+      "total_latency_ms": 2296,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:37.625Z"
+  },
+  {
+    "result_id": "931343a0-0659-4715-9d83-7441a3df8210",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"London\", \"include_pollutants\": true}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "London",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1162,
+      "output_tokens": 31,
+      "total_latency_ms": 431,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:38.117Z"
+  },
+  {
+    "result_id": "fd738a59-c613-4ac7-99e6-294ea5cebc1d",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_activity_last_30d\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "user_activity_last_30d",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1164,
+      "output_tokens": 52,
+      "total_latency_ms": 546,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:38.726Z"
+  },
+  {
+    "result_id": "6acb4880-97f0-4361-a365-adc8a50f2df6",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of best practices for code reviews, incorporating different aspects from preparation to follow-up.\n\n**1. Before the Review:**\n\n*   **Small, Focused Changes:** Reviews are *much* more effective when the changes are small and well-defined. Large, monolithic changes are overwhelming and difficult to review thoroughly. Aim for changes that can be understood in 15-30 minutes.\n*   **Self-Review:**  The developer submitting the code should *always* review their own code first. This catches many simple errors and improves the overall quality.\n*   **Clear Commit Messages:**  Write descriptive commit messages that explain *why* the change was made, not just *what* was changed. Use a consistent format (e.g., imperative mood: \"Fix bug in X\").\n*   **Add Context:** Include a brief description of the change in the pull request/merge request itself. Explain the problem being solved, the approach taken, and any relevant background information.\n*   **Tests:** Ensure that the changes have adequate tests (unit, integration, etc.) to verify the functionality and prevent regressions.\n\n**2. During the Review:**\n\n*   **Start with the Big Picture:** Don't immediately dive into line-by-line details. First, understand the overall intent and design of the change. Does it align with the project's goals?\n*   **Focus on Logic and Design:**  Prioritize reviewing the logic, algorithms, and data structures.  Are they correct and efficient? Does the design follow established patterns and principles?\n*   **Readability and Style:**  Check for code style consistency (e.g., indentation, naming conventions).  Is the code easy to read and understand?\n*   **Error Handling:**  Does the code handle potential errors gracefully? Are there appropriate error messages?\n*   **Security:**  Look for potential security vulnerabilities (e.g., SQL injection, cross-site scripting).\n*   **Test Coverage:** Verify that the tests adequately cover the new code and related functionality.\n*   **Ask Questions:** Don't be afraid to ask clarifying questions. It's better to understand the code fully than to make assumptions.\n*   **Be Constructive:** Frame feedback positively and focus on how to improve the code, not on criticizing the author. Use phrases like \"Consider...\" or \"Perhaps...\" instead of \"You should...\".\n*   **Respect the Author:** Remember that the author put time and effort into the code. Be respectful and considerate in your feedback.\n\n**3. Providing Feedback:**\n\n*   **Be Specific:**  Instead of saying \"This code is bad,\" say \"I'm concerned about the complexity of this function. Could we refactor it to be more modular?\"\n*   **Provide Examples:**  If possible, suggest alternative solutions or code snippets.\n*   **Prioritize Issues:**  Clearly indicate the severity of the issues (e.g., critical, major, minor, cosmetic).\n*   **Use a Consistent System:**  Establish a system for tracking and resolving issues (e.g., labels, comments, a dedicated issue tracker).\n\n**4. After the Review:**\n\n*   **Author Response:** The author should respond to the feedback promptly and thoughtfully.\n*   **Iteration:**  The review process is often iterative. The author may need to make changes and resubmit the code for review.\n*   **Confirmation:** Once the changes have been approved, confirm that the code is ready to be merged.\n*   **Follow-up:**  After the code has been merged, consider a brief follow-up with the author to ensure that the changes were implemented correctly and that there are no outstanding issues.\n\n**5. General Principles:**\n\n*   **Culture of Learning:**  Code reviews should be seen as a learning opportunity for everyone involved.\n*   **Consistency:**  Establish clear guidelines and standards for code reviews and consistently apply them.\n*   **Automation:**  Use automated tools (e.g., linters, static analysis tools) to catch common errors and enforce coding standards.\n\nTo help me tailor the advice further, could you tell me:\n\n*   What kind of project are you working on? (e.g., web application, mobile app, library, etc.)\n*   What's the size of your team?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 1163,
+      "output_tokens": 912,
+      "total_latency_ms": 5440,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:44.222Z"
+  },
+  {
+    "result_id": "5e3ccb99-b34f-4a72-8c1f-f76361f96664",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"admin\",\n    \"status\": \"active\",\n    \"search\": \"John Doe\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin",
+          "status": "active",
+          "search": "John Doe"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1169,
+      "output_tokens": 55,
+      "total_latency_ms": 567,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:44.852Z"
+  },
+  {
+    "result_id": "8b83bdff-7ca5-4306-842e-8872aa64dd94",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1178,
+      "output_tokens": 46,
+      "total_latency_ms": 518,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:45.429Z"
+  },
+  {
+    "result_id": "14829960-d15f-4435-af5f-1c9741a3f035",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 1180,
+      "output_tokens": 43,
+      "total_latency_ms": 489,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:45.977Z"
+  },
+  {
+    "result_id": "85a8c427-37fd-4ef9-9499-6d2db45e7c96",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 1184,
+      "output_tokens": 38,
+      "total_latency_ms": 468,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:46.504Z"
+  },
+  {
+    "result_id": "67723305-6f17-450e-be26-e8f7e00c758f",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value",
+          "properties": {},
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1186,
+      "output_tokens": 44,
+      "total_latency_ms": 504,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:47.068Z"
+  },
+  {
+    "result_id": "97633a26-a2c5-482e-bb24-21134b0c16bb",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"admin\",\n    \"status\": \"active\",\n    \"search\": \"John Doe\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin",
+          "status": "active",
+          "search": "John Doe"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1172,
+      "output_tokens": 55,
+      "total_latency_ms": 564,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:47.689Z"
+  },
+  {
+    "result_id": "bf5f1297-3d64-465a-8bcd-90300d823d88",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1187,
+      "output_tokens": 46,
+      "total_latency_ms": 522,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:48.279Z"
+  },
+  {
+    "result_id": "4d92118b-c75f-4288-9018-0d7a75c4871e",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"example_dashboard\",\n    \"widgets\": [\n      {\n        \"type\": \"chart\"\n      },\n      {\n        \"type\": \"table\"\n      }\n    ],\n    \"shared\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_dashboard",
+          "widgets": [
+            {
+              "type": "chart"
+            },
+            {
+              "type": "table"
+            }
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1192,
+      "output_tokens": 83,
+      "total_latency_ms": 724,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:49.071Z"
+  },
+  {
+    "result_id": "ff98bf6c-fc79-4b74-9526-de9f7a014595",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 1182,
+      "output_tokens": 25,
+      "total_latency_ms": 394,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:49.521Z"
+  },
+  {
+    "result_id": "961abef1-f48a-4636-ae71-767f0f7a00b4",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 1182,
+      "output_tokens": 25,
+      "total_latency_ms": 398,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:49.975Z"
+  },
+  {
+    "result_id": "dd45a529-9d18-4d25-a6f1-261ebc493bbc",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "admin"
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.6666666666666666
+    },
+    "metrics": {
+      "input_tokens": 1209,
+      "output_tokens": 83,
+      "total_latency_ms": 729,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:50.774Z"
+  },
+  {
+    "result_id": "0bf440cb-a334-431a-ae1a-22a1bddd714c",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false,
+            "offset": 0
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4666666666666666,
+      "overall": 0.4666666666666666
+    },
+    "metrics": {
+      "input_tokens": 1211,
+      "output_tokens": 138,
+      "total_latency_ms": 1054,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:51.896Z"
+  },
+  {
+    "result_id": "471533cd-cafb-4d59-9456-28bf4ebe1de9",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"main\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1168,
+      "output_tokens": 40,
+      "total_latency_ms": 486,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:52.437Z"
+  },
+  {
+    "result_id": "e85f15c8-0787-46f4-be4a-fbec417c5090",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"config.json\",\n    \"properties\": {},\n    \"user_id\": \"user123\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {},
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1171,
+      "output_tokens": 61,
+      "total_latency_ms": 607,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:53.100Z"
+  },
+  {
+    "result_id": "e2591ce6-63cd-465b-adef-a7544554e3ce",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"viewer\",\n    \"status\": \"pending\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1184,
+      "output_tokens": 46,
+      "total_latency_ms": 524,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:53.684Z"
+  },
+  {
+    "result_id": "e4e7139a-cac5-46db-b6fc-69fb3b3f9bcd",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": [
+            "value1",
+            "value2",
+            "value3"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1194,
+      "output_tokens": 47,
+      "total_latency_ms": 529,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:54.282Z"
+  },
+  {
+    "result_id": "41432518-be10-4f8a-b62b-3d4eb196f41e",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "I cannot definitively tell you the meaning of life. That's a question that philosophers and individuals have pondered for centuries, and there isn't a single, universally accepted answer. \n\nHowever, I can offer some perspectives based on common human beliefs and philosophical ideas. Here are a few approaches to consider:\n\n*   **Nihilism:** This view suggests that life has no inherent meaning or purpose.\n*   **Existentialism:** Existentialists believe that we are born into a meaningless world and it is up to each individual to create their own meaning and purpose through their choices and actions.\n*   **Hedonism:** This philosophy emphasizes the pursuit of pleasure and avoidance of pain as the primary goal of life.\n*   **Absurdism:** This perspective recognizes the conflict between humanity's search for meaning and the universe's lack of it, suggesting we should embrace the absurdity.\n*   **Religious and Spiritual Beliefs:** Many religions offer answers to the meaning of life, often centered around serving a higher power, following moral codes, and achieving spiritual enlightenment.\n\nUltimately, the meaning of life is often what you make it. It can be found in relationships, creativity, contributing to society, personal growth, or simply experiencing the beauty and wonder of the world.\n\nI can use the `analytics_track_event` tool to record your exploration of this question if you'd like. Would you like me to do that?\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_pondered_meaning_of_life\", \"properties\": {\"user_id\": \"user123\"}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "user_pondered_meaning_of_life",
+          "properties": {
+            "user_id": "user123"
+          },
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1161,
+      "output_tokens": 359,
+      "total_latency_ms": 2287,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:56.631Z"
+  },
+  {
+    "result_id": "623d8cf3-f8f3-4816-aad8-be749b535778",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"London\", \"include_pollutants\": true}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "London",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1162,
+      "output_tokens": 31,
+      "total_latency_ms": 436,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:57.127Z"
+  },
+  {
+    "result_id": "68e9c711-8def-4baa-a22d-c5d28df365c8",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_activity_last_30d\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "user_activity_last_30d",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1164,
+      "output_tokens": 52,
+      "total_latency_ms": 555,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:51:57.744Z"
+  },
+  {
+    "result_id": "21297225-802f-42a0-8d68-efeb1a019a7c",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of best practices for code reviews, incorporating different aspects from preparation to follow-up.\n\n**1. Before the Review:**\n\n*   **Small, Focused Changes:** Reviews are *much* more effective when the changes are small and well-defined. Large, monolithic changes are overwhelming and difficult to review thoroughly. Aim for changes that can be understood in 15-30 minutes.\n*   **Self-Review:**  The developer submitting the code should *always* review their own code first. This catches many simple errors and improves the overall quality.\n*   **Clear Commit Messages:**  Write descriptive commit messages that explain *why* the change was made, not just *what* was changed. Use a consistent format (e.g., imperative mood: \"Fix bug in X\").\n*   **Add Context:** Include a brief description of the change in the pull request/merge request itself. Explain the problem being solved, the approach taken, and any relevant background information.\n*   **Tests:** Ensure that the changes have adequate tests (unit, integration, etc.) to verify the functionality and prevent regressions.\n\n**2. During the Review:**\n\n*   **Start with the Big Picture:** Don't immediately dive into line-by-line details. First, understand the overall intent and design of the change. Does it align with the project's goals?\n*   **Focus on Logic and Design:**  Prioritize reviewing the logic, algorithms, and data structures.  Are they correct and efficient? Does the design follow established patterns and principles?\n*   **Readability and Style:**  Check for code style consistency (e.g., indentation, naming conventions).  Is the code easy to read and understand?\n*   **Error Handling:**  Does the code handle potential errors gracefully? Are there appropriate error messages?\n*   **Security:**  Look for potential security vulnerabilities (e.g., SQL injection, cross-site scripting).\n*   **Test Coverage:** Verify that the tests adequately cover the new code and related functionality.\n*   **Ask Questions:** Don't be afraid to ask clarifying questions. It's better to understand the code fully than to make assumptions.\n*   **Be Constructive:** Frame feedback positively and focus on how to improve the code, not on criticizing the author. Use phrases like \"Consider...\" or \"Perhaps...\" instead of \"You should...\".\n*   **Respect the Author:** Remember that the author put time and effort into the code. Be respectful and considerate in your feedback.\n\n**3. Providing Feedback:**\n\n*   **Be Specific:**  Instead of saying \"This code is bad,\" say \"I'm concerned about the complexity of this function. Could we refactor it to be more modular?\"\n*   **Provide Examples:**  If possible, suggest alternative solutions or code snippets.\n*   **Prioritize Issues:**  Clearly indicate the severity of the issues (e.g., critical, major, minor, cosmetic).\n*   **Use a Consistent System:**  Establish a system for tracking and resolving issues (e.g., labels, comments, a dedicated issue tracker).\n\n**4. After the Review:**\n\n*   **Author Response:** The author should respond to the feedback promptly and thoughtfully.\n*   **Iteration:**  The review process is often iterative. The author may need to make changes and resubmit the code for review.\n*   **Confirmation:** Once the changes have been approved, confirm that the code is ready to be merged.\n*   **Follow-up:**  After the code has been merged, consider a brief follow-up with the author to ensure that the changes were implemented correctly and that there are no outstanding issues.\n\n**5. General Principles:**\n\n*   **Culture of Learning:**  Code reviews should be seen as a learning opportunity for everyone involved.\n*   **Consistency:**  Establish clear guidelines and standards for code reviews and consistently apply them.\n*   **Automation:**  Use automated tools (e.g., linters, static analysis tools) to catch common errors and enforce coding standards.\n\nTo help me tailor the advice further, could you tell me:\n\n*   What kind of project are you working on? (e.g., web application, mobile app, library, etc.)\n*   What's the size of your team?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 1163,
+      "output_tokens": 912,
+      "total_latency_ms": 5541,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:03.341Z"
+  },
+  {
+    "result_id": "4b40b53e-b9ed-4890-adf4-7b897b6bd239",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"admin\",\n    \"status\": \"active\",\n    \"search\": \"John Doe\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin",
+          "status": "active",
+          "search": "John Doe"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1169,
+      "output_tokens": 55,
+      "total_latency_ms": 580,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:03.978Z"
+  },
+  {
+    "result_id": "d4311ac6-399c-43d7-8ab0-73f01f1d3835",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1178,
+      "output_tokens": 46,
+      "total_latency_ms": 521,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:04.559Z"
+  },
+  {
+    "result_id": "261430dd-d64c-416e-b5d5-9d22c86e94b1",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 1180,
+      "output_tokens": 43,
+      "total_latency_ms": 516,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:05.131Z"
+  },
+  {
+    "result_id": "4e9d16f3-07eb-44fa-805b-c8dc8f933e3c",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 1184,
+      "output_tokens": 38,
+      "total_latency_ms": 477,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:05.669Z"
+  },
+  {
+    "result_id": "f967ee65-16d2-41e9-a33b-9f3b49b1b927",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value",
+          "properties": {},
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1186,
+      "output_tokens": 44,
+      "total_latency_ms": 522,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:06.249Z"
+  },
+  {
+    "result_id": "8757fa1c-e762-4313-b53f-035bd88acebb",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"admin\",\n    \"status\": \"active\",\n    \"search\": \"John Doe\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin",
+          "status": "active",
+          "search": "John Doe"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1172,
+      "output_tokens": 55,
+      "total_latency_ms": 578,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:06.890Z"
+  },
+  {
+    "result_id": "ba4b2e24-5b54-4b2d-8f46-243e0f30b3cc",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_7d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1187,
+      "output_tokens": 46,
+      "total_latency_ms": 519,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:07.475Z"
+  },
+  {
+    "result_id": "f7bb2f2c-8eec-4041-97ab-f67ae77dfb78",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"example_dashboard\",\n    \"widgets\": [\n      {\n        \"type\": \"chart\"\n      },\n      {\n        \"type\": \"table\"\n      }\n    ],\n    \"shared\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_dashboard",
+          "widgets": [
+            {
+              "type": "chart"
+            },
+            {
+              "type": "table"
+            }
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 1192,
+      "output_tokens": 83,
+      "total_latency_ms": 735,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:08.279Z"
+  },
+  {
+    "result_id": "c591b4b0-ebde-4e67-81fe-bc75899ddf8b",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 1182,
+      "output_tokens": 25,
+      "total_latency_ms": 405,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:08.746Z"
+  },
+  {
+    "result_id": "1a36b984-9f9e-4a14-b28d-533caafe0c53",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "admin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 1182,
+      "output_tokens": 25,
+      "total_latency_ms": 404,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:09.216Z"
+  },
+  {
+    "result_id": "a3c0ab8c-c527-421f-9a93-c1a2fd4022e1",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "admin"
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.6666666666666666
+    },
+    "metrics": {
+      "input_tokens": 1209,
+      "output_tokens": 83,
+      "total_latency_ms": 735,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:10.014Z"
+  },
+  {
+    "result_id": "62c98a5f-794e-4e1a-8d60-39662a2be8b9",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": false, \"offset\": 0}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": false,
+            "offset": 0
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4666666666666666,
+      "overall": 0.4666666666666666
+    },
+    "metrics": {
+      "input_tokens": 1211,
+      "output_tokens": 138,
+      "total_latency_ms": 1057,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:11.134Z"
+  },
+  {
+    "result_id": "571e8a39-a2b3-4ade-9953-46b73a76bc1e",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"main\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1168,
+      "output_tokens": 40,
+      "total_latency_ms": 490,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:11.694Z"
+  },
+  {
+    "result_id": "58f655e3-06d0-4926-9bff-61792899ef03",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"config.json\",\n    \"properties\": {},\n    \"user_id\": \"user123\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json",
+          "properties": {},
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 1171,
+      "output_tokens": 61,
+      "total_latency_ms": 601,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:12.366Z"
+  },
+  {
+    "result_id": "bfc97d6b-d508-4ad1-817f-2a2e5ab23d02",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"viewer\",\n    \"status\": \"pending\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1184,
+      "output_tokens": 46,
+      "total_latency_ms": 517,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:12.952Z"
+  },
+  {
+    "result_id": "a784e519-54ab-4363-955f-8879571e3593",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": [
+            "value1",
+            "value2",
+            "value3"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 1194,
+      "output_tokens": 47,
+      "total_latency_ms": 535,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:13.544Z"
+  },
+  {
+    "result_id": "f424dddc-26a3-41bb-ac38-dcdc7ef0c559",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "I cannot definitively tell you the meaning of life. That's a question that philosophers and individuals have pondered for centuries, and there isn't a single, universally accepted answer. \n\nHowever, I can offer some perspectives based on common human beliefs and philosophical ideas. Here are a few approaches to consider:\n\n*   **Nihilism:** This view suggests that life has no inherent meaning or purpose.\n*   **Existentialism:** Existentialists believe that we are born into a meaningless world and it is up to each individual to create their own meaning and purpose through their choices and actions.\n*   **Hedonism:** This philosophy emphasizes the pursuit of pleasure and avoidance of pain as the primary goal of life.\n*   **Absurdism:** This perspective recognizes the conflict between humanity's search for meaning and the universe's lack of it, suggesting we should embrace the absurdity.\n*   **Religious and Spiritual Beliefs:** Many religions offer answers to the meaning of life, often centered around serving a higher power, following moral codes, and achieving spiritual enlightenment.\n\nUltimately, the meaning of life is often what you make it. It can be found in relationships, creativity, contributing to society, personal growth, or simply experiencing the beauty and wonder of the world.\n\nI can use the `analytics_track_event` tool to record your exploration of this question if you'd like. Would you like me to do that?\n\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_pondered_meaning_of_life\", \"properties\": {\"user_id\": \"user123\"}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "user_pondered_meaning_of_life",
+          "properties": {
+            "user_id": "user123"
+          },
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1161,
+      "output_tokens": 359,
+      "total_latency_ms": 2294,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:15.895Z"
+  },
+  {
+    "result_id": "f057ddd2-6f82-485b-bc55-b48e0aace4f4",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"London\", \"include_pollutants\": true}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "London",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1162,
+      "output_tokens": 31,
+      "total_latency_ms": 432,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:16.387Z"
+  },
+  {
+    "result_id": "3ead7d26-a3b6-4a34-8fe7-d95cecec6d9f",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_activity_last_30d\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "user_activity_last_30d",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 1164,
+      "output_tokens": 52,
+      "total_latency_ms": 560,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:17.013Z"
+  },
+  {
+    "result_id": "7993a353-c2f6-40c4-a022-e2dd56f9f4ce",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of best practices for code reviews, incorporating different aspects from preparation to follow-up.\n\n**1. Before the Review:**\n\n*   **Small, Focused Changes:** Reviews are *much* more effective when the changes are small and well-defined. Large, monolithic changes are overwhelming and difficult to review thoroughly. Aim for changes that can be understood in 15-30 minutes.\n*   **Self-Review:**  The developer submitting the code should *always* review their own code first. This catches many simple errors and improves the overall quality.\n*   **Clear Commit Messages:**  Write descriptive commit messages that explain *why* the change was made, not just *what* was changed. Use a consistent format (e.g., imperative mood: \"Fix bug in X\").\n*   **Add Context:** Include a brief description of the change in the pull request/merge request itself. Explain the problem being solved, the approach taken, and any relevant background information.\n*   **Tests:** Ensure that the changes have adequate tests (unit, integration, etc.) to verify the functionality and prevent regressions.\n\n**2. During the Review:**\n\n*   **Start with the Big Picture:** Don't immediately dive into line-by-line details. First, understand the overall intent and design of the change. Does it align with the project's goals?\n*   **Focus on Logic and Design:**  Prioritize reviewing the logic, algorithms, and data structures.  Are they correct and efficient? Does the design follow established patterns and principles?\n*   **Readability and Style:**  Check for code style consistency (e.g., indentation, naming conventions).  Is the code easy to read and understand?\n*   **Error Handling:**  Does the code handle potential errors gracefully? Are there appropriate error messages?\n*   **Security:**  Look for potential security vulnerabilities (e.g., SQL injection, cross-site scripting).\n*   **Test Coverage:** Verify that the tests adequately cover the new code and related functionality.\n*   **Ask Questions:** Don't be afraid to ask clarifying questions. It's better to understand the code fully than to make assumptions.\n*   **Be Constructive:** Frame feedback positively and focus on how to improve the code, not on criticizing the author. Use phrases like \"Consider...\" or \"Perhaps...\" instead of \"You should...\".\n*   **Respect the Author:** Remember that the author put time and effort into the code. Be respectful and considerate in your feedback.\n\n**3. Providing Feedback:**\n\n*   **Be Specific:**  Instead of saying \"This code is bad,\" say \"I'm concerned about the complexity of this function. Could we refactor it to be more modular?\"\n*   **Provide Examples:**  If possible, suggest alternative solutions or code snippets.\n*   **Prioritize Issues:**  Clearly indicate the severity of the issues (e.g., critical, major, minor, cosmetic).\n*   **Use a Consistent System:**  Establish a system for tracking and resolving issues (e.g., labels, comments, a dedicated issue tracker).\n\n**4. After the Review:**\n\n*   **Author Response:** The author should respond to the feedback promptly and thoughtfully.\n*   **Iteration:**  The review process is often iterative. The author may need to make changes and resubmit the code for review.\n*   **Confirmation:** Once the changes have been approved, confirm that the code is ready to be merged.\n*   **Follow-up:**  After the code has been merged, consider a brief follow-up with the author to ensure that the changes were implemented correctly and that there are no outstanding issues.\n\n**5. General Principles:**\n\n*   **Culture of Learning:**  Code reviews should be seen as a learning opportunity for everyone involved.\n*   **Consistency:**  Establish clear guidelines and standards for code reviews and consistently apply them.\n*   **Automation:**  Use automated tools (e.g., linters, static analysis tools) to catch common errors and enforce coding standards.\n\nTo help me tailor the advice further, could you tell me:\n\n*   What kind of project are you working on? (e.g., web application, mobile app, library, etc.)\n*   What's the size of your team?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 1163,
+      "output_tokens": 912,
+      "total_latency_ms": 5453,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:22.529Z"
+  },
+  {
+    "result_id": "496639d1-d298-412b-b7e6-b00d327a4680",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need some information to use the `auth_list_users` tool. Please tell me what you want to search for. Specifically, I need the `role`, `status`, and/or `search` parameters.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 456,
+      "output_tokens": 46,
+      "total_latency_ms": 452,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:23.043Z"
+  },
+  {
+    "result_id": "51ca0ea1-5ceb-424c-a0ab-f1f11a734898",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 465,
+      "output_tokens": 51,
+      "total_latency_ms": 452,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:23.556Z"
+  },
+  {
+    "result_id": "8744e4ab-02a4-4471-9623-dec5f127b0cd",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 467,
+      "output_tokens": 43,
+      "total_latency_ms": 405,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:24.021Z"
+  },
+  {
+    "result_id": "1d41ce05-cc92-4b84-a2c3-a8ef6d25fa1c",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 471,
+      "output_tokens": 38,
+      "total_latency_ms": 400,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:24.482Z"
+  },
+  {
+    "result_id": "cf8d7edb-ec3b-48df-bf0c-c2622a6a6179",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 473,
+      "output_tokens": 29,
+      "total_latency_ms": 329,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:24.876Z"
+  },
+  {
+    "result_id": "460ae019-9839-45bd-a916-1522a57dbcb5",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 459,
+      "output_tokens": 21,
+      "total_latency_ms": 281,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:25.218Z"
+  },
+  {
+    "result_id": "c33e1876-127b-40f9-8990-ab08a52bcce3",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 474,
+      "output_tokens": 51,
+      "total_latency_ms": 451,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:25.733Z"
+  },
+  {
+    "result_id": "3669c9cd-4dcc-4a6b-84fb-b039e7e3572c",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Example Dashboard\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Example Dashboard",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 479,
+      "output_tokens": 38,
+      "total_latency_ms": 377,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:26.168Z"
+  },
+  {
+    "result_id": "a74f3587-a14d-4efa-ba7b-2473118f2599",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"testuser\"}}\n```\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "testuser"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 469,
+      "output_tokens": 55,
+      "total_latency_ms": 470,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:26.706Z"
+  },
+  {
+    "result_id": "9760357e-f57a-418b-82ae-ed5c593761f8",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"John Doe\"}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "John Doe"
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 469,
+      "output_tokens": 55,
+      "total_latency_ms": 465,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:27.236Z"
+  },
+  {
+    "result_id": "56920663-7d54-43fc-bbf2-9762797b9722",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7333333333333334,
+      "overall": 0.7333333333333334
+    },
+    "metrics": {
+      "input_tokens": 496,
+      "output_tokens": 115,
+      "total_latency_ms": 819,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:28.119Z"
+  },
+  {
+    "result_id": "069d5bf5-8587-4408-a5df-e4eabc7e7552",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4666666666666666,
+      "overall": 0.4666666666666666
+    },
+    "metrics": {
+      "input_tokens": 498,
+      "output_tokens": 139,
+      "total_latency_ms": 948,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:29.136Z"
+  },
+  {
+    "result_id": "20aaff26-6fae-4a61-85a3-07c6c416ef1f",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 455,
+      "output_tokens": 27,
+      "total_latency_ms": 313,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:29.517Z"
+  },
+  {
+    "result_id": "9a4adb3a-0e7c-479a-a251-129e4b162040",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 458,
+      "output_tokens": 29,
+      "total_latency_ms": 324,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:29.897Z"
+  },
+  {
+    "result_id": "0ee612ea-46b2-459a-8947-b9f38c6581c1",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\", \"search\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending",
+          "search": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 471,
+      "output_tokens": 31,
+      "total_latency_ms": 331,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:30.298Z"
+  },
+  {
+    "result_id": "fa758d4b-663d-4413-82ae-81afe5143bb2",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": [
+            "value1",
+            "value2",
+            "value3"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 481,
+      "output_tokens": 47,
+      "total_latency_ms": 421,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:30.778Z"
+  },
+  {
+    "result_id": "2f36bc69-bed9-4bc3-ac62-68f11153f9eb",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I cannot answer that question directly. As an AI, I don't have the capacity to define philosophical concepts like the meaning of life. That's a question that has been pondered by humans for centuries and has no single, definitive answer. \n\nHowever, I can offer you some perspectives that people have explored:\n\n*   **Nihilism:** The belief that life has no inherent meaning.\n*   **Existentialism:** The idea that individuals are responsible for creating their own meaning and purpose.\n*   **Hedonism:** The pursuit of pleasure and happiness as the primary goal of life.\n*   **Religious and Spiritual Beliefs:** Many religions offer answers to the meaning of life, often centered around faith, service, and connection to a higher power.\n\nPerhaps you could tell me what *you* think the meaning of life is, or what kind of perspective you're interested in exploring?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 448,
+      "output_tokens": 189,
+      "total_latency_ms": 1266,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:32.103Z"
+  },
+  {
+    "result_id": "492b2f43-167e-4a2d-af5b-0e4023e2e010",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"chemical_formula_query\", \"properties\": {\"result\": \"H2O\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "chemical_formula_query",
+          "properties": {
+            "result": "H2O"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 449,
+      "output_tokens": 38,
+      "total_latency_ms": 378,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:32.538Z"
+  },
+  {
+    "result_id": "1e16da58-c584-4154-912e-682f489bca5e",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"development_best_practices_report\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"text\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "development_best_practices_report",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "text"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 451,
+      "output_tokens": 55,
+      "total_latency_ms": 468,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:33.064Z"
+  },
+  {
+    "result_id": "5b31ef0d-10b2-4df2-bfc6-ee537046660f",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Here's a breakdown of best practices for code reviews, aiming for quality and collaboration:\n\n**1. Before the Review:**\n\n*   **Small, Focused Changes:** Reviews are much more effective when the changes are small and well-defined. Large, monolithic changes are overwhelming and difficult to review thoroughly. Aim for commits that address a single logical issue or feature.\n*   **Self-Review:** Before submitting for review, the author should review their own code. This catches many simple errors and ensures the code is well-structured and readable.\n*   **Clear Commit Messages:** Write descriptive commit messages that explain *why* the change was made, not just *what* was changed. Use a consistent format (e.g., imperative mood: \"Fix bug in X\").\n*   **Add Tests:** Include unit tests, integration tests, or other relevant tests to demonstrate that the changes work as expected and to prevent regressions.\n*   **Documentation:** If the code introduces new functionality or changes existing behavior, update the relevant documentation.\n\n**2. During the Review:**\n\n*   **Understand the Context:** Before diving into the code, understand the purpose of the change, the problem it solves, and the overall design.\n*   **Start with the Big Picture:** Don't get bogged down in minor details initially. Focus on the overall architecture, design choices, and potential risks.\n*   **Readability:** Is the code easy to understand? Are variable names descriptive? Is the code well-formatted and consistent with the project's style guide?\n*   **Logic and Correctness:** Does the code correctly implement the intended functionality? Are there any potential bugs or edge cases that haven't been considered?\n*   **Test Coverage:** Do the tests adequately cover the changes? Are there any gaps in test coverage?\n*   **Security:** Are there any potential security vulnerabilities? (e.g., SQL injection, cross-site scripting).\n*   **Performance:** Are there any potential performance issues? (e.g., inefficient algorithms, unnecessary database queries).\n*   **Maintainability:** Is the code easy to maintain and extend in the future? Is it modular and well-structured?\n*   **Ask Questions:** Don't hesitate to ask the author questions if something is unclear. This is a collaborative process.\n*   **Be Constructive:** Frame feedback in a positive and constructive manner. Focus on the code, not the person. Use \"I\" statements to express concerns (e.g., \"I'm concerned that this might lead to...\").\n*   **Suggest Improvements:** Offer suggestions for how the code could be improved, even if it's not a critical issue.\n\n**3. After the Review:**\n\n*   **Author Responds:** The author should respond to the feedback, explaining their reasoning or implementing the suggested changes.\n*   **Iterate:** The review process is often iterative. The author may need to make multiple revisions based on the feedback.\n*   **Confirmation:** Once the changes have been reviewed and approved, the reviewer should confirm that the code is ready to be merged.\n\n**Tools & Processes to Support Reviews:**\n\n*   **Code Review Tools:** Utilize tools like GitHub, GitLab, Bitbucket, or dedicated code review tools to streamline the process.\n*   **Checklists:** Use checklists to ensure that all important aspects of the code are reviewed.\n*   **Regular Reviews:** Make code reviews a regular part of the development process.\n\nDo you want me to elaborate on a specific aspect of code review, such as creating a review checklist or discussing how to handle particularly difficult feedback?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 450,
+      "output_tokens": 754,
+      "total_latency_ms": 4441,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:37.564Z"
+  },
+  {
+    "result_id": "b3b0ce65-4bb5-4159-a9dd-b311f66f6a6a",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "I need some information to use the `auth_list_users` tool. Please tell me what you want to search for. Specifically, I need the `role`, `status`, and/or `search` parameters.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 456,
+      "output_tokens": 46,
+      "total_latency_ms": 465,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:38.105Z"
+  },
+  {
+    "result_id": "50700e48-df3a-4db2-99ca-574cc914e6d9",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 465,
+      "output_tokens": 51,
+      "total_latency_ms": 435,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:38.605Z"
+  },
+  {
+    "result_id": "41dde444-e768-41a4-af98-8d130c826a80",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 467,
+      "output_tokens": 43,
+      "total_latency_ms": 411,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:39.082Z"
+  },
+  {
+    "result_id": "14b768f5-528d-43cc-a14a-74ab5e2cdb94",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 471,
+      "output_tokens": 38,
+      "total_latency_ms": 370,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:39.508Z"
+  },
+  {
+    "result_id": "11bb003d-3aed-4fef-9356-0a7637ab0ef8",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 473,
+      "output_tokens": 29,
+      "total_latency_ms": 328,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:39.903Z"
+  },
+  {
+    "result_id": "32e1bb1e-a45e-4301-a00e-97fa1623926f",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 459,
+      "output_tokens": 21,
+      "total_latency_ms": 274,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:40.233Z"
+  },
+  {
+    "result_id": "2ac5431c-70e8-4254-9342-500cc68b5256",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 474,
+      "output_tokens": 51,
+      "total_latency_ms": 448,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:40.747Z"
+  },
+  {
+    "result_id": "1f1f3ca8-cea8-4a47-90ae-92ae5316b9a0",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Example Dashboard\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Example Dashboard",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 479,
+      "output_tokens": 38,
+      "total_latency_ms": 376,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:41.190Z"
+  },
+  {
+    "result_id": "f993cc2a-35d2-42e8-b3b4-cf066dd5ecd7",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"testuser\"}}\n```\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "testuser"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 469,
+      "output_tokens": 55,
+      "total_latency_ms": 470,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:41.720Z"
+  },
+  {
+    "result_id": "a1eb4cbe-920b-408f-84cd-255f9941a53e",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"John Doe\"}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "John Doe"
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 469,
+      "output_tokens": 55,
+      "total_latency_ms": 468,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:42.254Z"
+  },
+  {
+    "result_id": "0fbde5c3-fb34-4a8e-8832-9bd93f8059ec",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7333333333333334,
+      "overall": 0.7333333333333334
+    },
+    "metrics": {
+      "input_tokens": 496,
+      "output_tokens": 115,
+      "total_latency_ms": 814,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:43.129Z"
+  },
+  {
+    "result_id": "cfece131-650d-42d8-b516-f01bb52ca3ff",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4666666666666666,
+      "overall": 0.4666666666666666
+    },
+    "metrics": {
+      "input_tokens": 498,
+      "output_tokens": 139,
+      "total_latency_ms": 949,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:44.134Z"
+  },
+  {
+    "result_id": "868732b5-96a2-4c49-b8e8-79f6a53016cf",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 455,
+      "output_tokens": 27,
+      "total_latency_ms": 310,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:44.514Z"
+  },
+  {
+    "result_id": "21c72f38-3aa4-42fd-bfcd-7c305f5c702e",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 458,
+      "output_tokens": 29,
+      "total_latency_ms": 322,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:44.897Z"
+  },
+  {
+    "result_id": "be527cb5-e67b-4d25-8349-62c064b387e2",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\", \"search\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending",
+          "search": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 471,
+      "output_tokens": 31,
+      "total_latency_ms": 334,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:45.299Z"
+  },
+  {
+    "result_id": "05153f10-6851-4b8e-9fe4-22a19a7ad5ae",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": [
+            "value1",
+            "value2",
+            "value3"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 481,
+      "output_tokens": 47,
+      "total_latency_ms": 429,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:45.784Z"
+  },
+  {
+    "result_id": "f6610f41-417f-4f70-95ba-1be4a6b7fd20",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "I cannot answer that question directly. As an AI, I don't have the capacity to define philosophical concepts like the meaning of life. That's a question that has been pondered by humans for centuries and has no single, definitive answer. \n\nHowever, I can offer you some perspectives that people have explored:\n\n*   **Nihilism:** The belief that life has no inherent meaning.\n*   **Existentialism:** The idea that individuals are responsible for creating their own meaning and purpose.\n*   **Hedonism:** The pursuit of pleasure and happiness as the primary goal of life.\n*   **Religious and Spiritual Beliefs:** Many religions offer answers to the meaning of life, often centered around faith, service, and connection to a higher power.\n\nPerhaps you could tell me what *you* think the meaning of life is, or what kind of perspective you're interested in exploring?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 448,
+      "output_tokens": 189,
+      "total_latency_ms": 1233,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:47.085Z"
+  },
+  {
+    "result_id": "59d550fb-812d-4902-8936-9d8dbc41562d",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"chemical_formula_query\", \"properties\": {\"result\": \"H2O\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "chemical_formula_query",
+          "properties": {
+            "result": "H2O"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 449,
+      "output_tokens": 38,
+      "total_latency_ms": 369,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:47.514Z"
+  },
+  {
+    "result_id": "bde736d1-d0ff-493d-9b83-84c6a062a5a2",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"development_best_practices_report\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"text\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "development_best_practices_report",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "text"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 451,
+      "output_tokens": 55,
+      "total_latency_ms": 465,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:48.042Z"
+  },
+  {
+    "result_id": "3691696d-e6fb-4352-8353-6058fb0976dc",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Here's a breakdown of best practices for code reviews, aiming for quality and collaboration:\n\n**1. Before the Review:**\n\n*   **Small, Focused Changes:** Reviews are much more effective when the changes are small and well-defined. Large, monolithic changes are overwhelming and difficult to review thoroughly. Aim for commits that address a single logical issue or feature.\n*   **Self-Review:** Before submitting for review, the author should review their own code. This catches many simple errors and ensures the code is well-structured and readable.\n*   **Clear Commit Messages:** Write descriptive commit messages that explain *why* the change was made, not just *what* was changed. Use a consistent format (e.g., imperative mood: \"Fix bug in X\").\n*   **Add Tests:** Include unit tests, integration tests, or other relevant tests to demonstrate that the changes work as expected and to prevent regressions.\n*   **Documentation:** If the code introduces new functionality or changes existing behavior, update the relevant documentation.\n\n**2. During the Review:**\n\n*   **Understand the Context:** Before diving into the code, understand the purpose of the change, the problem it solves, and the overall design.\n*   **Start with the Big Picture:** Don't get bogged down in minor details initially. Focus on the overall architecture, design choices, and potential risks.\n*   **Readability:** Is the code easy to understand? Are variable names descriptive? Is the code well-formatted and consistent with the project's style guide?\n*   **Logic and Correctness:** Does the code correctly implement the intended functionality? Are there any potential bugs or edge cases that haven't been considered?\n*   **Test Coverage:** Do the tests adequately cover the changes? Are there any gaps in test coverage?\n*   **Security:** Are there any potential security vulnerabilities? (e.g., SQL injection, cross-site scripting).\n*   **Performance:** Are there any potential performance issues? (e.g., inefficient algorithms, unnecessary database queries).\n*   **Maintainability:** Is the code easy to maintain and extend in the future? Is it modular and well-structured?\n*   **Ask Questions:** Don't hesitate to ask the author questions if something is unclear. This is a collaborative process.\n*   **Be Constructive:** Frame feedback in a positive and constructive manner. Focus on the code, not the person. Use \"I\" statements to express concerns (e.g., \"I'm concerned that this might lead to...\").\n*   **Suggest Improvements:** Offer suggestions for how the code could be improved, even if it's not a critical issue.\n\n**3. After the Review:**\n\n*   **Author Responds:** The author should respond to the feedback, explaining their reasoning or implementing the suggested changes.\n*   **Iterate:** The review process is often iterative. The author may need to make multiple revisions based on the feedback.\n*   **Confirmation:** Once the changes have been reviewed and approved, the reviewer should confirm that the code is ready to be merged.\n\n**Tools & Processes to Support Reviews:**\n\n*   **Code Review Tools:** Utilize tools like GitHub, GitLab, Bitbucket, or dedicated code review tools to streamline the process.\n*   **Checklists:** Use checklists to ensure that all important aspects of the code are reviewed.\n*   **Regular Reviews:** Make code reviews a regular part of the development process.\n\nDo you want me to elaborate on a specific aspect of code review, such as creating a review checklist or discussing how to handle particularly difficult feedback?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 450,
+      "output_tokens": 754,
+      "total_latency_ms": 4414,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:52.525Z"
+  },
+  {
+    "result_id": "633a2c6f-dccb-4b6d-8e4f-c4204dfb8a0f",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "I need some information to use the `auth_list_users` tool. Please tell me what you want to search for. Specifically, I need the `role`, `status`, and/or `search` parameters.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 456,
+      "output_tokens": 46,
+      "total_latency_ms": 711,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:53.829Z"
+  },
+  {
+    "result_id": "aa862ad6-e4f5-47a1-9b6a-3ee63b714357",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 465,
+      "output_tokens": 51,
+      "total_latency_ms": 510,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:54.394Z"
+  },
+  {
+    "result_id": "90554563-7e93-45d6-b06b-1abf2c6f4c2a",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "example_value",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 467,
+      "output_tokens": 43,
+      "total_latency_ms": 429,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:54.879Z"
+  },
+  {
+    "result_id": "1fac1b28-5736-47bf-b7a0-1af8a82590b1",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "example_value",
+          "include_pollutants": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 471,
+      "output_tokens": 38,
+      "total_latency_ms": 373,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:55.308Z"
+  },
+  {
+    "result_id": "48d7e69e-5e4c-4dc0-9b7e-e7c18160b997",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 473,
+      "output_tokens": 29,
+      "total_latency_ms": 316,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:55.693Z"
+  },
+  {
+    "result_id": "0317f08d-3773-45ba-9c98-2e546e2e3bf3",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 459,
+      "output_tokens": 21,
+      "total_latency_ms": 382,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:56.132Z"
+  },
+  {
+    "result_id": "25d1dbb8-93f7-4b2e-8c21-b6040d3d3b0f",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "example_value",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 474,
+      "output_tokens": 51,
+      "total_latency_ms": 547,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:56.746Z"
+  },
+  {
+    "result_id": "8c1e52ef-4def-4265-92bb-560cddff9725",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Example Dashboard\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Example Dashboard",
+          "widgets": [
+            "item1",
+            "item2"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 479,
+      "output_tokens": 38,
+      "total_latency_ms": 498,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:57.304Z"
+  },
+  {
+    "result_id": "d2c2ce8c-0f51-46a6-bd76-c03b770a1cda",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"testuser\"}}\n```\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "testuser"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 469,
+      "output_tokens": 55,
+      "total_latency_ms": 593,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:57.960Z"
+  },
+  {
+    "result_id": "b01281c7-b0fd-4370-8b6c-5bf9bdb98c34",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"John Doe\"}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "John Doe"
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.5
+    },
+    "metrics": {
+      "input_tokens": 469,
+      "output_tokens": 55,
+      "total_latency_ms": 935,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:52:58.956Z"
+  },
+  {
+    "result_id": "9bc14198-7d98-41d7-8b36-50d8eb0ea0a8",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"], \"shared\": false}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7333333333333334,
+      "overall": 0.7333333333333334
+    },
+    "metrics": {
+      "input_tokens": 496,
+      "output_tokens": 115,
+      "total_latency_ms": 1422,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:00.438Z"
+  },
+  {
+    "result_id": "8c03c0d9-2e46-4cdb-bdf6-71c8a4817fa2",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}\n```\n```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {}, \"user_id\": \"user123\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value",
+            "properties": {},
+            "user_id": "user123"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4666666666666666,
+      "overall": 0.4666666666666666
+    },
+    "metrics": {
+      "input_tokens": 498,
+      "output_tokens": 139,
+      "total_latency_ms": 958,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:01.464Z"
+  },
+  {
+    "result_id": "fb676ffd-fb57-4091-8a8f-011f490b67a2",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 455,
+      "output_tokens": 27,
+      "total_latency_ms": 322,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:01.853Z"
+  },
+  {
+    "result_id": "14c5fa90-1546-4550-b5ba-e1966f5fa384",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 458,
+      "output_tokens": 29,
+      "total_latency_ms": 325,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:02.233Z"
+  },
+  {
+    "result_id": "9dc72da6-f412-4e1f-b68e-09e7034dc263",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\", \"search\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending",
+          "search": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 471,
+      "output_tokens": 31,
+      "total_latency_ms": 435,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:02.727Z"
+  },
+  {
+    "result_id": "879f490a-75ce-407d-94ec-65edc5765f80",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": [
+            "value1",
+            "value2",
+            "value3"
+          ],
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 481,
+      "output_tokens": 47,
+      "total_latency_ms": 1333,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:04.128Z"
+  },
+  {
+    "result_id": "ac9b5cda-51c3-4893-a5fe-f50cc76d5920",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "I cannot answer that question directly. As an AI, I don't have the capacity to define philosophical concepts like the meaning of life. That's a question that has been pondered by humans for centuries and has no single, definitive answer. \n\nHowever, I can offer you some perspectives that people have explored:\n\n*   **Nihilism:** The belief that life has no inherent meaning.\n*   **Existentialism:** The idea that individuals are responsible for creating their own meaning and purpose.\n*   **Hedonism:** The pursuit of pleasure and happiness as the primary goal of life.\n*   **Religious and Spiritual Beliefs:** Many religions offer answers to the meaning of life, often centered around faith, service, and connection to a higher power.\n\nPerhaps you could tell me what *you* think the meaning of life is, or what kind of perspective you're interested in exploring?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 448,
+      "output_tokens": 189,
+      "total_latency_ms": 1251,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:05.442Z"
+  },
+  {
+    "result_id": "8cbb5bfc-ece2-44ff-87d6-afd99ec82c6f",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"chemical_formula_query\", \"properties\": {\"result\": \"H2O\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "chemical_formula_query",
+          "properties": {
+            "result": "H2O"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 449,
+      "output_tokens": 38,
+      "total_latency_ms": 495,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:05.996Z"
+  },
+  {
+    "result_id": "1a423f7d-1fea-43f1-a883-3735f1bcba1c",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Version control is absolutely critical in modern software development. Here's a breakdown of why:\n\n*   **Collaboration:** Multiple developers can work on the same project simultaneously without stepping on each other's toes. Version control manages concurrent changes, merging them seamlessly.\n\n*   **Tracking Changes:** Every modification to the codebase is recorded, along with who made the change and when. This provides a complete history of the project's evolution.\n\n*   **Reverting to Previous States:** If a new feature introduces bugs or breaks existing functionality, you can easily revert to a stable version of the code.\n\n*   **Branching and Experimentation:** Developers can create separate branches to work on new features or experiments without affecting the main codebase.\n\n*   **Auditing and Accountability:** Version control provides an audit trail, making it easier to identify the source of problems and hold developers accountable for their changes.\n\n*   **Backup and Disaster Recovery:** The repository serves as a backup of the entire codebase, protecting against data loss.\n\n*   **Release Management:** Version control facilitates the process of releasing new versions of the software, allowing you to track changes and manage releases effectively.\n\nEssentially, version control transforms software development from a chaotic, error-prone process into a structured, reliable, and collaborative one. It's a foundational practice for any serious software project.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 451,
+      "output_tokens": 276,
+      "total_latency_ms": 5813,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:11.879Z"
+  },
+  {
+    "result_id": "35f80555-923d-440a-91a1-9607ba749a66",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Here's a breakdown of best practices for code reviews, aiming for quality and collaboration:\n\n**1. Before the Review:**\n\n*   **Small, Focused Changes:** Reviews are much more effective when the changes are small and well-defined. Large, monolithic changes are overwhelming and difficult to review thoroughly. Aim for commits that address a single logical issue or feature.\n*   **Self-Review:** Before submitting for review, the author should review their own code. This catches many simple errors and ensures the code is well-structured and readable.\n*   **Clear Commit Messages:** Write descriptive commit messages that explain *why* the change was made, not just *what* was changed. Use a consistent format (e.g., imperative mood: \"Fix bug in X\").\n*   **Add Tests:** Include unit tests, integration tests, or other relevant tests to demonstrate that the changes work as expected and to prevent regressions.\n*   **Documentation:** If the code introduces new functionality or changes existing behavior, update the relevant documentation.\n\n**2. During the Review:**\n\n*   **Understand the Context:** Before diving into the code, understand the purpose of the change, the problem it solves, and the overall design.\n*   **Start with the Big Picture:** Don't get bogged down in minor details initially. Focus on the overall architecture, design choices, and potential risks.\n*   **Readability:** Is the code easy to understand? Are variable names descriptive? Is the code well-formatted and consistent with the project's style guide?\n*   **Logic and Correctness:** Does the code correctly implement the intended functionality? Are there any potential bugs or edge cases that haven't been considered?\n*   **Test Coverage:** Do the tests adequately cover the changes? Are there any gaps in test coverage?\n*   **Security:** Are there any potential security vulnerabilities? (e.g., SQL injection, cross-site scripting).\n*   **Performance:** Are there any potential performance issues? (e.g., inefficient algorithms, unnecessary database queries).\n*   **Maintainability:** Is the code easy to maintain and extend in the future? Is it modular and well-structured?\n*   **Ask Questions:** Don't hesitate to ask the author questions if something is unclear. This is a collaborative process.\n*   **Be Constructive:** Frame feedback in a positive and constructive manner. Focus on the code, not the person. Use \"I\" statements to express concerns (e.g., \"I'm concerned that this might lead to...\").\n*   **Suggest Improvements:** Offer suggestions for how the code could be improved, even if it's not a critical issue.\n\n**3. After the Review:**\n\n*   **Author Responds:** The author should respond to the feedback, explaining their reasoning or implementing the suggested changes.\n*   **Iterate:** The review process is often iterative. The author may need to make multiple revisions based on the feedback.\n*   **Confirmation:** Once the changes have been reviewed and approved, the reviewer should confirm that the code is ready to be merged.\n\n**Tools & Processes to Support Reviews:**\n\n*   **Code Review Tools:** Utilize tools like GitHub, GitLab, Bitbucket, or dedicated code review tools to streamline the process.\n*   **Checklists:** Use checklists to ensure that all important aspects of the code are reviewed.\n*   **Regular Reviews:** Make code reviews a regular part of the development process.\n\nDo you want me to elaborate on a specific aspect of code review, such as creating a review checklist or discussing how to handle particularly difficult feedback?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 450,
+      "output_tokens": 754,
+      "total_latency_ms": 4435,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T07:53:16.385Z"
+  }
+]

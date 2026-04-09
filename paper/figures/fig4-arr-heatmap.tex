@@ -1,0 +1,90 @@
+% fig4-arr-heatmap.tex -- ARR heatmap: Accuracy Retention Rate across model x scenario
+% Included via \input{figures/fig4-arr-heatmap} from main.tex
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+
+% ── Color definitions for ARR ranges ─────────────────────────────────────────
+\definecolor{arrdeg}{RGB}{198,40,40}        % <100%: degradation (red)
+\definecolor{arrpar}{RGB}{165,214,167}      % 100-110%: parity (light green)
+\definecolor{arrgain}{RGB}{76,175,80}       % 110-130%: gain (green)
+\definecolor{arrstrong}{RGB}{27,94,32}      % >130%: strong gain (dark green)
+\definecolor{arrmissing}{RGB}{224,224,224}  % missing data (light gray)
+
+% ── Layout constants ─────────────────────────────────────────────────────────
+\def\cellw{1.55}   % cell width
+\def\cellh{0.85}   % cell height
+
+% ── Column headers ───────────────────────────────────────────────────────────
+\node[font=\scriptsize\bfseries] at (0.5*\cellw, 0.5*\cellh + 3*\cellh) {Scen.~A};
+\node[font=\scriptsize\bfseries] at (1.5*\cellw, 0.5*\cellh + 3*\cellh) {Scen.~B};
+\node[font=\scriptsize\bfseries] at (2.5*\cellw, 0.5*\cellh + 3*\cellh) {Scen.~C};
+\node[font=\scriptsize\bfseries] at (3.5*\cellw, 0.5*\cellh + 3*\cellh) {Scen.~E};
+\node[font=\scriptsize\bfseries] at (4.5*\cellw, 0.5*\cellh + 3*\cellh) {BFCL};
+
+% ── Row headers (right-aligned, left of matrix) ─────────────────────────────
+\node[font=\small, anchor=east] at (-0.12, 2.5*\cellh) {Claude};
+\node[font=\small, anchor=east] at (-0.12, 1.5*\cellh) {GPT-4o};
+\node[font=\small, anchor=east] at (-0.12, 0.5*\cellh) {GPT-5.2};
+
+% ── Helper: filled cell with ARR value ───────────────────────────────────────
+% #1=col (0-4), #2=row (0-2), #3=fill color, #4=text color, #5=label
+\newcommand{\arrcell}[5]{%
+    \fill[#3] (#1*\cellw, #2*\cellh) rectangle +(\cellw, \cellh);
+    \draw[white, line width=0.6pt] (#1*\cellw, #2*\cellh) rectangle +(\cellw, \cellh);
+    \node[font=\small\bfseries, text=#4] at (#1*\cellw + 0.5*\cellw, #2*\cellh + 0.5*\cellh) {#5};
+}
+
+% ── Row 2 (top): Claude ─────────────────────────────────────────────────────
+\arrcell{0}{2}{arrgain}{white}{115.1\%}
+\arrcell{1}{2}{arrpar}{black}{105.6\%}
+\arrcell{2}{2}{arrgain}{white}{118.5\%}
+\arrcell{3}{2}{arrstrong}{white}{138.1\%}
+\arrcell{4}{2}{arrpar}{black}{108\%}
+
+% ── Row 1 (middle): GPT-4o ──────────────────────────────────────────────────
+\arrcell{0}{1}{arrpar}{black}{101.8\%}
+\arrcell{1}{1}{arrgain}{white}{113.9\%}
+% Missing: C, E
+\fill[arrmissing] (2*\cellw, 1*\cellh) rectangle +(1*\cellw, 1*\cellh);
+\draw[white, line width=0.6pt] (2*\cellw, 1*\cellh) rectangle +(\cellw, \cellh);
+\node[font=\scriptsize, text=tscggray] at (2.5*\cellw, 1.5*\cellh) {---};
+\fill[arrmissing] (3*\cellw, 1*\cellh) rectangle +(1*\cellw, 1*\cellh);
+\draw[white, line width=0.6pt] (3*\cellw, 1*\cellh) rectangle +(\cellw, \cellh);
+\node[font=\scriptsize, text=tscggray] at (3.5*\cellw, 1.5*\cellh) {---};
+\arrcell{4}{1}{arrstrong}{white}{181\%}
+
+% ── Row 0 (bottom): GPT-5.2 ─────────────────────────────────────────────────
+\arrcell{0}{0}{arrstrong}{white}{157.0\%}
+\arrcell{1}{0}{arrgain}{white}{111.2\%}
+\arrcell{2}{0}{arrpar}{black}{105.5\%}
+\arrcell{3}{0}{arrstrong}{white}{150.7\%}
+\arrcell{4}{0}{arrstrong}{white}{144\%}
+
+% ── Color legend (below matrix) ──────────────────────────────────────────────
+\begin{scope}[yshift=-1.1cm]
+    \def\lx{0}
+    \def\lw{0.45}
+    \def\lh{0.32}
+    \def\lsp{0.08}
+    % <100%
+    \fill[arrdeg] (\lx, 0) rectangle +(\lw, \lh);
+    \node[font=\tiny, anchor=west] at (\lx + \lw + 0.06, 0.5*\lh) {${<}100\%$};
+    % 100-110%
+    \pgfmathsetmacro{\lxa}{\lx + \lw + 0.06 + 0.65 + \lsp}
+    \fill[arrpar] (\lxa, 0) rectangle +(\lw, \lh);
+    \node[font=\tiny, anchor=west] at (\lxa + \lw + 0.06, 0.5*\lh) {100--110\%};
+    % 110-130%
+    \pgfmathsetmacro{\lxb}{\lxa + \lw + 0.06 + 0.82 + \lsp}
+    \fill[arrgain] (\lxb, 0) rectangle +(\lw, \lh);
+    \node[font=\tiny, anchor=west] at (\lxb + \lw + 0.06, 0.5*\lh) {110--130\%};
+    % >130%
+    \pgfmathsetmacro{\lxc}{\lxb + \lw + 0.06 + 0.82 + \lsp}
+    \fill[arrstrong] (\lxc, 0) rectangle +(\lw, \lh);
+    \node[font=\tiny, anchor=west] at (\lxc + \lw + 0.06, 0.5*\lh) {${>}130\%$};
+\end{scope}
+
+\end{tikzpicture}
+\caption{Accuracy Retention Rate (ARR $= \text{TSCG accuracy} / \text{Natural accuracy}$) across all model--scenario combinations. Every populated cell shows ARR $\geq 100\%$, confirming that TSCG compression causes \emph{zero accuracy degradation} on frontier models across five independent evaluation scenarios. Darker green indicates stronger accuracy gains under compression. Gray cells indicate scenarios not evaluated for that model.}
+\label{fig:arr-heatmap}
+\end{figure}

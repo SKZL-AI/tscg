@@ -1,0 +1,3512 @@
+[
+  {
+    "result_id": "cde5d11c-5ce2-41bf-8720-28aaf7c3d325",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"auth_update_permissions\",\n    \"arguments\": {\n      \"user_id\": \"user123\",\n      \"role\": \"editor\",\n      \"resources\": [\n        \"document1\",\n        \"document2\"\n      ]\n    }\n  }\n]\n",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "user123",
+          "role": "editor",
+          "resources": [
+            "document1",
+            "document2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6951,
+      "output_tokens": 77,
+      "total_latency_ms": 5302,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:27.482Z"
+  },
+  {
+    "result_id": "2a2523e6-6c1f-4745-8c05-7e0a2ea4ec11",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_list_files\",\n  \"arguments\": {\n    \"prefix\": \"my_directory\",\n    \"bucket\": \"my-bucket\",\n    \"max_results\": 10\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "my_directory",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6948,
+      "output_tokens": 60,
+      "total_latency_ms": 1277,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:28.867Z"
+  },
+  {
+    "result_id": "8659bfb1-3bb3-45f2-b3c3-565ea2ef3bf1",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"images/product_photo.jpg\",\n    \"expiry_seconds\": 3600,\n    \"method\": \"GET\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "images/product_photo.jpg",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6950,
+      "output_tokens": 67,
+      "total_latency_ms": 1191,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:30.173Z"
+  },
+  {
+    "result_id": "df4968fa-2393-4ed3-b982-86176a14e2f4",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 100,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 100,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 6976,
+      "output_tokens": 60,
+      "total_latency_ms": 1164,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:31.451Z"
+  },
+  {
+    "result_id": "8bdf79d1-02f0-4371-a0b2-f04d714996e6",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"description\": \"Update an existing calendar event with specified fields.\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"event_id\": {\n        \"type\": \"string\",\n        \"description\": \"The calendar event identifier to update.\",\n        \"required\": true\n      },\n      \"title\": {\n        \"type\": \"string\",\n        \"description\": \"The new event title.\",\n        \"required\": false\n      },\n      \"start\": {\n        \"type\": \"string\",\n        \"description\": \"The new start datetime in ISO 8601 format.\",\n        \"required\": false\n      },\n      \"end\": {\n        \"type\": \"string\",\n        \"description\": \"The new end datetime in ISO 8601 format.\",\n        \"required\": false\n      },\n      \"location\": {\n        \"type\": \"string\",\n        \"description\": \"The new event location or meeting URL.\",\n        \"required\": false\n      },\n      \"attendees\": {\n        \"type\": \"array\",\n        \"description\": \"The new attendee email addresses.\",\n        \"required\": false\n      },\n      \"verbose\": {\n        \"type\": \"boolean\",\n        \"description\": \"Include detailed metadata in the response.\",\n        \"default\": false\n      }\n    },\n    \"required\": [\n      \"event_id\"\n    ]\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6964,
+      "output_tokens": 343,
+      "total_latency_ms": 2816,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:34.376Z"
+  },
+  {
+    "result_id": "2e722d3a-157a-4a70-8a4c-e339706d2f59",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\",\n    \"include_pending\": false,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value",
+          "include_pending": false,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 6964,
+      "output_tokens": 63,
+      "total_latency_ms": 1175,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:35.654Z"
+  },
+  {
+    "result_id": "9e7fdd36-caa2-4245-bf7e-5c1a365ec4bb",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6967,
+      "output_tokens": 40,
+      "total_latency_ms": 1036,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:36.794Z"
+  },
+  {
+    "result_id": "c45aef07-4e50-4ad7-884d-ec2716c4cd27",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6969,
+      "output_tokens": 42,
+      "total_latency_ms": 1043,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:37.951Z"
+  },
+  {
+    "result_id": "08324319-268c-4091-876b-85b60532c964",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"auth_revoke_token\",\n      \"arguments\": {\n        \"token\": \"aHR0cHM6Ly9iaW5hby53d3cub3Z1Z3VuZGF0aW9uLmcuY29t\"\n      }\n    },\n    {\n      \"name\": \"media_extract_audio\",\n      \"arguments\": {\n        \"input_path\": \"https://www.nasa.gov/sites/default/files/thumbnails/image/web_images/1996/may/1996-05-16-16-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6958,
+      "output_tokens": 1024,
+      "total_latency_ms": 6820,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:44.880Z"
+  },
+  {
+    "result_id": "a0f30f6e-3ed2-46ab-b888-64670ee2b075",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"tool_call\": {\n    \"name\": \"media_text_to_speech\",\n    \"arguments\": {\n      \"text\": \"This is a test invoice creation.\",\n      \"voice\": \"alloy\",\n      \"language\": \"en-US\"\n    }\n  }\n}\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6961,
+      "output_tokens": 74,
+      "total_latency_ms": 1230,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:46.212Z"
+  },
+  {
+    "result_id": "89e07d15-ceca-445f-b0b6-f88cefd226e3",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"London\",\n      \"include_pollutants\": true\n    }\n  },\n  {\n    \"name\": \"shop_track_order\",\n    \"arguments\": {\n      \"order_id\": \"ORD-2024-10-27-001\"\n    }\n  },\n  {\n    \"name\": \"media_extract_audio\",\n    \"arguments\": {\n      \"input_path\": \"/path/to/video/ORD-2024-10-27-001.mp4\",\n      \"output_format\": \"mp3\",\n      \"bitrate\": \"128k\"\n    }\n  }\n]\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6965,
+      "output_tokens": 192,
+      "total_latency_ms": 1930,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:48.246Z"
+  },
+  {
+    "result_id": "ab288eda-7a84-4673-a949-6650a20830f5",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_stock_price\",\n  \"arguments\": {\n    \"ticker\": \"AAPL\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_stock_price",
+        "arguments": {
+          "ticker": "AAPL"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 40,
+      "total_latency_ms": 1037,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:49.397Z"
+  },
+  {
+    "result_id": "9fe7ada5-3d77-4aed-b7a0-26d7524c91f2",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6951,
+      "output_tokens": 40,
+      "total_latency_ms": 1043,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:50.541Z"
+  },
+  {
+    "result_id": "ed351f4b-9fbb-4429-b63f-3c6e4e51e80a",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_create_user\",\n  \"arguments\": {\n    \"email\": \"main\",\n    \"name\": \"config.json\",\n    \"role\": \"viewer\",\n    \"password\": \"hashed_password_here\",\n    \"limit\": 100\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "password": "hashed_password_here",
+          "limit": 100
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6958,
+      "output_tokens": 77,
+      "total_latency_ms": 1260,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:51.914Z"
+  },
+  {
+    "result_id": "1b54ef47-c5e6-49b6-b0af-7d81e1352952",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6992,
+      "output_tokens": 74,
+      "total_latency_ms": 1234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:53.252Z"
+  },
+  {
+    "result_id": "f218ac11-a239-4210-8f60-215e547f7088",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"],\n      \"verbose\": false\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 6994,
+      "output_tokens": 87,
+      "total_latency_ms": 1314,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:47:54.668Z"
+  },
+  {
+    "result_id": "54be5a0e-92bf-4742-b23f-3b09459b1676",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "That's a fantastic and frequently debated question! The short answer is: it's incredibly complex, and a *complete* replacement is unlikely, but electric vehicles (EVs) are absolutely poised to dramatically reshape the automotive landscape. Here's a breakdown of the factors involved, and why a full takeover is still a ways off:\n\n**Arguments for EVs Replacing Gas Cars (Significant Momentum):**\n\n* **Environmental Benefits:** This is the biggest driver. EVs produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change.\n* **Falling Costs:** Battery prices have plummeted over the last decade, making EVs increasingly competitive with gas cars.  This trend is expected to continue.\n* **Improved Technology:** Battery range is increasing dramatically, charging times are getting faster, and EV performance (acceleration, handling) is often superior to comparable gas cars.\n* **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and regulations (like emissions standards) that favor EV adoption.\n* **Total Cost of Ownership (TCO):**  While the initial purchase price can be higher, EVs often have lower running costs due to cheaper electricity compared to gasoline, reduced maintenance (fewer moving parts), and potential access to HOV lanes.\n* **Innovation & Investment:** Massive investment is flowing into EV technology and infrastructure, accelerating development and deployment.\n\n\n**Arguments Against EVs Completely Replacing Gas Cars (Remaining Challenges):**\n\n* **Charging Infrastructure:** This is currently the biggest hurdle. The availability of public charging stations, especially fast chargers, is still insufficient in many areas, leading to \"range anxiety.\"  Home charging requires installation, which adds to the upfront cost.\n* **Battery Production & Raw Materials:**  EV batteries rely on materials like lithium, cobalt, and nickel, which have supply chain challenges and ethical sourcing concerns. Scaling up production sustainably is a major challenge.\n* **Upfront Cost:** While decreasing, EVs still generally have a higher purchase price than comparable gas cars – though this gap is closing.\n* **Range Limitations (for some models):** While range is improving, some EVs still have limited range, particularly in cold weather or when towing.\n* **Grid Capacity & Renewables:**  Widespread EV adoption will put a strain on the electricity grid.  The environmental benefit of EVs is maximized when the electricity comes from renewable sources (solar, wind).\n* **Habits & Preferences:**  Many consumers are accustomed to the refueling experience of gas cars and may be hesitant to switch.\n\n\n**Likely Scenario – A Mixed Fleet:**\n\nMost experts believe a more realistic scenario is a *mixed fleet* – a significant percentage of vehicles will be electric, but gas-powered cars will still be around, particularly in rural areas, for those who:\n\n*   Don't have easy access to charging.\n*   Need long-range capabilities for travel.\n*   Prefer the refueling experience of a gas car.\n\n**Timeline Estimates (Highly Variable):**\n\n*   **2030:** EVs could represent 60-80% of new car sales in many developed markets.\n*   **2040:**  It's plausible that EVs could account for 80-90% of new car sales globally, *assuming* significant infrastructure investment and continued technological advancements.\n\n**In conclusion, while the momentum is undeniably with EVs, a complete replacement of gas cars is a complex, multi-faceted challenge with significant hurdles to overcome. It’s more likely we’ll see a gradual transition to a predominantly electric transportation system over the coming decades.**\n\nDo you want me to delve deeper into a specific aspect of this topic, such as:\n\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The technological advancements in battery technology?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6948,
+      "output_tokens": 788,
+      "total_latency_ms": 5418,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:00.186Z"
+  },
+  {
+    "result_id": "98e585a5-0e69-40b9-949c-434b42c6daeb",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6943,
+      "output_tokens": 17,
+      "total_latency_ms": 893,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:01.192Z"
+  },
+  {
+    "result_id": "cc8c7564-1b6a-483f-b17c-a85271e53b0d",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's dive into the `auth` toolset. It's a core part of the system, handling user management and security. Here's a breakdown of where to start and what you should focus on, categorized for clarity:\n\n**1. Understanding the Core Functions:**\n\n*   **`auth_list_users`**: This is *the* foundational tool.  You absolutely need to understand this first. It lets you see all the users currently in the system.  Pay attention to the available filters:\n    *   `role`:  This is crucial for understanding user permissions.  The `enum` (admin, editor, viewer, guest) defines what users can do.\n    *   `status`:  Knowing which users are active, suspended, or pending helps with troubleshooting and management.\n    *   `search`:  Use this to quickly find specific users by name or email.\n*   **`auth_create_user`**:  This is how you add new users to the system.  Understand the required fields (email, name) and the role assignment.\n*   **`auth_update_permissions`**: This is how you modify a user's role or access rights.  It's essential for managing access control.\n*   **`auth_revoke_token`**: This is how you invalidate a user's session.  It's important for security – if a user's token is compromised, you'll need to revoke it.\n\n**2. Key Concepts to Grasp:**\n\n*   **User Roles:** The `admin`, `editor`, `viewer`, and `guest` roles are fundamental.  Think about what each role *should* be able to do.\n*   **Token-Based Authentication:** The `auth` toolset likely uses tokens (likely JWT - JSON Web Tokens) to authenticate users.  While you don't directly manage the tokens, understanding this is important for how sessions are handled.\n*   **Permissions:**  The `auth_update_permissions` function is the key to managing permissions.  It's not just about assigning roles; it's about defining *what* those roles can access.\n\n**3. Recommended Starting Workflow:**\n\n1.  **List Users:** Use `auth_list_users` to get a sense of the existing user base and their roles.\n2.  **Create a User:** Use `auth_create_user` to add a new user, assigning them a role.\n3.  **Update Permissions:** Use `auth_update_permissions` to adjust the user's access rights.\n4.  **Revoke Token:** Use `auth_revoke_token` to test the session invalidation process.\n\n**4.  Tool to Avoid Initially (Unless You Need Them):**\n\n*   `auth_get_user`:  I haven't seen this tool defined in the available tools, but if it exists, it's likely a wrapper around `auth_list_users` and should be avoided for initial learning.\n\n**5.  How to Learn More (Given the Toolset):**\n\n*   **Experiment:** The best way to learn is to try the tools. Create users, assign roles, and test the revocation process.\n*   **Documentation (If Available):**  If there's any documentation for the `auth` toolset, read it carefully.\n*   **Ask Questions:**  Since I'm an AI, I can help you understand the tools and their parameters.  Be specific with your questions.\n\nTo help me give you even more targeted guidance, could you tell me:\n\n*   What are you trying to *achieve* with the `auth` toolset? (e.g., \"I want to create a new user account,\" or \"I want to understand how to manage user permissions.\")",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6950,
+      "output_tokens": 810,
+      "total_latency_ms": 5560,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:06.866Z"
+  },
+  {
+    "result_id": "d2f25b31-67ea-4d05-8444-ebd45bd8af38",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6th Century BC onwards):** The earliest known form of storage.  Mesopotamians used clay tablets to record cuneiform writing.  These were durable but incredibly limited in capacity.\n* **Papyrus Scrolls (3100 BC onwards):** Egyptians and other ancient civilizations used papyrus scrolls for writing and storing knowledge.  Still bulky and fragile.\n* **Parchment & Vellum (2nd Century BC onwards):**  Animal skin (sheep or calf) offered a more durable writing surface than papyrus, used extensively by the Romans and early Christians.\n* **Paper (1st Century AD):** Invented in China, paper revolutionized writing and storage. It was cheaper, lighter, and easier to produce than parchment.  The spread of paper through trade and the Silk Road was crucial.\n\n**2. The Dawn of Electronic Storage (Late 19th – Early 20th Century):**\n\n* **1888: Telegraph Paper:**  The first use of paper as a medium for storing telegraph messages.\n* **1895: Phonograph (Thomas Edison):**  While primarily a playback device, the phonograph used wax cylinders to store sound – a groundbreaking step in recording technology.\n* **1898: Magnetic Tape Recording (Emile Berliner):** Berliner’s invention of magnetic tape recording was a game-changer. It allowed for the recording and playback of sound and, crucially, the *storage* of information on a magnetic surface.\n* **1928: Magnetic Drum Memory (IBM):** IBM developed the first magnetic drum memory, a rotating cylinder coated with magnetic material. Data was stored by magnetizing tiny spots on the drum. This was incredibly fast but limited in capacity.\n\n**3. The Rise of Magnetic Storage (Mid 20th Century):**\n\n* **1956: Magnetic Tape for Data (IBM):** IBM adapted magnetic tape technology for storing computer data. This was a huge leap forward, offering a more practical and affordable storage solution than magnetic drums.\n* **1959: Magnetic Disk Drive (IBM):** IBM introduced the first hard disk drive (HDD), using rotating platters coated with magnetic material. HDDs offered significantly higher storage densities than magnetic tape.\n* **1963: Floppy Disk (Alden Horton):** The floppy disk, initially 8-inch, provided a portable way to store and transfer data.\n\n**4. The Era of Semiconductors (Late 20th Century – Early 21st Century):**\n\n* **1968: Read-Only Memory (ROM):** ROM allowed for the permanent storage of data, crucial for early computer programs.\n* **1970s: First SSDs (Solid State Drives):** Early versions of Solid State Drives (SSDs) using flash memory began to appear, offering faster access times and greater durability than HDDs.\n* **1986: Flash Memory (Fujitsu):** Fujitsu developed NAND flash memory, the dominant type of storage in SSDs and USB drives.\n* **1990s – 2000s: HDD Capacity Explosion:** HDD manufacturers relentlessly increased the capacity of their drives, with 10GB, 20GB, 50GB, 100GB, 200GB, 500GB, and eventually 1TB drives becoming commonplace.\n\n**5. Modern Storage (21st Century – Present):**\n\n* **Continued SSD Growth:** SSDs have become the dominant storage technology for most computers and servers due to their speed and durability.\n* **NVMe SSDs:**  Non-Volatile Memory Express (NVMe) SSDs, utilizing the PCIe interface, offer dramatically faster speeds than traditional SATA SSDs.\n* **UHDDs (Ultra-High Density Drives):** HDDs continue to evolve with increasing storage capacities (now exceeding 20TB).\n* **Cloud Storage:** The rise of cloud storage services (Google Drive, Dropbox, OneDrive, etc.) has fundamentally changed how people store and access data.\n* **Emerging Technologies:**  Research continues into new storage technologies like 3D NAND, DNA storage, and holographic storage, though widespread adoption is still some way off.\n\n\n**Key Trends Throughout History:**\n\n* **Moore's Law:** The relentless increase in computing power and the miniaturization of components has driven innovation in storage technology.\n* **Density:** The primary focus has always been on increasing the amount of data that can be stored in a given space.\n* **Speed:**  Alongside density, speed (",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6944,
+      "output_tokens": 1024,
+      "total_latency_ms": 6827,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:13.807Z"
+  },
+  {
+    "result_id": "687bbf8a-aee4-4581-bfa0-6267bd4ccf62",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"auth_update_permissions\",\n    \"arguments\": {\n      \"user_id\": \"user123\",\n      \"role\": \"editor\",\n      \"resources\": [\n        \"document1\",\n        \"document2\"\n      ]\n    }\n  }\n]\n",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "user123",
+          "role": "editor",
+          "resources": [
+            "document1",
+            "document2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6951,
+      "output_tokens": 77,
+      "total_latency_ms": 1253,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:15.163Z"
+  },
+  {
+    "result_id": "bcc38564-d9b6-4dc5-9582-bb4bc9d4ea80",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_list_files\",\n  \"arguments\": {\n    \"prefix\": \"my_directory\",\n    \"bucket\": \"my-bucket\",\n    \"max_results\": 10\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "my_directory",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6948,
+      "output_tokens": 60,
+      "total_latency_ms": 1145,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:16.417Z"
+  },
+  {
+    "result_id": "c06f2d34-b79d-4ab9-a3ea-aa796532392e",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"images/product_photo.jpg\",\n    \"expiry_seconds\": 3600,\n    \"method\": \"GET\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "images/product_photo.jpg",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6950,
+      "output_tokens": 67,
+      "total_latency_ms": 1191,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:17.712Z"
+  },
+  {
+    "result_id": "d436fad2-64c3-4c1c-8a01-a3afda495db8",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 100,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 100,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 6976,
+      "output_tokens": 60,
+      "total_latency_ms": 1152,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:18.965Z"
+  },
+  {
+    "result_id": "afb3bf86-a0e4-46f6-9bb1-3e2f78490d0c",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"description\": \"Update an existing calendar event with specified fields.\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"event_id\": {\n        \"type\": \"string\",\n        \"description\": \"The calendar event identifier to update.\",\n        \"required\": true\n      },\n      \"title\": {\n        \"type\": \"string\",\n        \"description\": \"The new event title.\",\n        \"required\": false\n      },\n      \"start\": {\n        \"type\": \"string\",\n        \"description\": \"The new start datetime in ISO 8601 format.\",\n        \"required\": false\n      },\n      \"end\": {\n        \"type\": \"string\",\n        \"description\": \"The new end datetime in ISO 8601 format.\",\n        \"required\": false\n      },\n      \"location\": {\n        \"type\": \"string\",\n        \"description\": \"The new event location or meeting URL.\",\n        \"required\": false\n      },\n      \"attendees\": {\n        \"type\": \"array\",\n        \"description\": \"The new attendee email addresses.\",\n        \"required\": false\n      },\n      \"verbose\": {\n        \"type\": \"boolean\",\n        \"description\": \"Include detailed metadata in the response.\",\n        \"default\": false\n      }\n    },\n    \"required\": [\n      \"event_id\"\n    ]\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6964,
+      "output_tokens": 343,
+      "total_latency_ms": 2828,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:21.904Z"
+  },
+  {
+    "result_id": "7e72609a-9606-4b4f-872c-8bba08a52c43",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\",\n    \"include_pending\": false,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value",
+          "include_pending": false,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 6964,
+      "output_tokens": 63,
+      "total_latency_ms": 1168,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:23.175Z"
+  },
+  {
+    "result_id": "6d26d7cb-4676-43b8-a808-1d279258c391",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6967,
+      "output_tokens": 40,
+      "total_latency_ms": 1035,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:24.323Z"
+  },
+  {
+    "result_id": "3d3ed389-85c8-472b-92ec-28088a4b7fe5",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6969,
+      "output_tokens": 42,
+      "total_latency_ms": 1048,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:25.473Z"
+  },
+  {
+    "result_id": "d29cd255-1756-4bee-be02-7ec8fba658a3",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"auth_revoke_token\",\n      \"arguments\": {\n        \"token\": \"aHR0cHM6Ly9iaW5hby53d3cub3Z1Z3VuZGF0aW9uLmcuY29t\"\n      }\n    },\n    {\n      \"name\": \"media_extract_audio\",\n      \"arguments\": {\n        \"input_path\": \"https://www.nasa.gov/sites/default/files/thumbnails/image/web_images/1996/may/1996-05-16-16-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6958,
+      "output_tokens": 1024,
+      "total_latency_ms": 6819,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:32.393Z"
+  },
+  {
+    "result_id": "ee8bda10-e31f-404d-9ba3-f02bc86d9cac",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"tool_call\": {\n    \"name\": \"media_text_to_speech\",\n    \"arguments\": {\n      \"text\": \"This is a test invoice creation.\",\n      \"voice\": \"alloy\",\n      \"language\": \"en-US\"\n    }\n  }\n}\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6961,
+      "output_tokens": 74,
+      "total_latency_ms": 1229,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:33.733Z"
+  },
+  {
+    "result_id": "f87c5362-49ab-4c3c-80c1-e3946c9d59f0",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"London\",\n      \"include_pollutants\": true\n    }\n  },\n  {\n    \"name\": \"shop_track_order\",\n    \"arguments\": {\n      \"order_id\": \"ORD-2024-10-27-001\"\n    }\n  },\n  {\n    \"name\": \"media_extract_audio\",\n    \"arguments\": {\n      \"input_path\": \"/path/to/video/ORD-2024-10-27-001.mp4\",\n      \"output_format\": \"mp3\",\n      \"bitrate\": \"128k\"\n    }\n  }\n]\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6965,
+      "output_tokens": 192,
+      "total_latency_ms": 1933,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:35.774Z"
+  },
+  {
+    "result_id": "4ad7db79-49e7-499b-9fa6-aa47c43a7a5d",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_stock_price\",\n  \"arguments\": {\n    \"ticker\": \"AAPL\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_stock_price",
+        "arguments": {
+          "ticker": "AAPL"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 40,
+      "total_latency_ms": 1035,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:36.920Z"
+  },
+  {
+    "result_id": "91d58ddc-f318-4de3-9ff1-f291840c7751",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6951,
+      "output_tokens": 40,
+      "total_latency_ms": 1042,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:38.073Z"
+  },
+  {
+    "result_id": "d6ee413c-31ae-423f-8d3d-38cf33cfc16a",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_create_user\",\n  \"arguments\": {\n    \"email\": \"main\",\n    \"name\": \"config.json\",\n    \"role\": \"viewer\",\n    \"password\": \"hashed_password_here\",\n    \"limit\": 100\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "password": "hashed_password_here",
+          "limit": 100
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6958,
+      "output_tokens": 77,
+      "total_latency_ms": 1252,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:39.430Z"
+  },
+  {
+    "result_id": "a2c61ece-5c2d-4109-9cf4-93a09c1008cb",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6992,
+      "output_tokens": 74,
+      "total_latency_ms": 1238,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:40.783Z"
+  },
+  {
+    "result_id": "fc0dc701-6e24-47c6-a5c4-eca716108333",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"],\n      \"verbose\": false\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 6994,
+      "output_tokens": 87,
+      "total_latency_ms": 1316,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:42.198Z"
+  },
+  {
+    "result_id": "a60fd4f7-acfa-4647-975d-61f3982afca6",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "That's a fantastic and frequently debated question! The short answer is: it's incredibly complex, and a *complete* replacement is unlikely, but electric vehicles (EVs) are absolutely poised to dramatically reshape the automotive landscape. Here's a breakdown of the factors involved, and why a full takeover is still a ways off:\n\n**Arguments for EVs Replacing Gas Cars (Significant Momentum):**\n\n* **Environmental Benefits:** This is the biggest driver. EVs produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change.\n* **Falling Costs:** Battery prices have plummeted over the last decade, making EVs increasingly competitive with gas cars.  This trend is expected to continue.\n* **Improved Technology:** Battery range is increasing dramatically, charging times are getting faster, and EV performance (acceleration, handling) is often superior to comparable gas cars.\n* **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and regulations (like emissions standards) that favor EV adoption.\n* **Total Cost of Ownership (TCO):**  While the initial purchase price can be higher, EVs often have lower running costs due to cheaper electricity compared to gasoline, reduced maintenance (fewer moving parts), and potential access to HOV lanes.\n* **Innovation & Investment:** Massive investment is flowing into EV technology and infrastructure, accelerating development and deployment.\n\n\n**Arguments Against EVs Completely Replacing Gas Cars (Remaining Challenges):**\n\n* **Charging Infrastructure:** This is currently the biggest hurdle. The availability of public charging stations, especially fast chargers, is still insufficient in many areas, leading to \"range anxiety.\"  Home charging requires installation, which adds to the upfront cost.\n* **Battery Production & Raw Materials:**  EV batteries rely on materials like lithium, cobalt, and nickel, which have supply chain challenges and ethical sourcing concerns. Scaling up production sustainably is a major challenge.\n* **Upfront Cost:** While decreasing, EVs still generally have a higher purchase price than comparable gas cars – though this gap is closing.\n* **Range Limitations (for some models):** While range is improving, some EVs still have limited range, particularly in cold weather or when towing.\n* **Grid Capacity & Renewables:**  Widespread EV adoption will put a strain on the electricity grid.  The environmental benefit of EVs is maximized when the electricity comes from renewable sources (solar, wind).\n* **Habits & Preferences:**  Many consumers are accustomed to the refueling experience of gas cars and may be hesitant to switch.\n\n\n**Likely Scenario – A Mixed Fleet:**\n\nMost experts believe a more realistic scenario is a *mixed fleet* – a significant percentage of vehicles will be electric, but gas-powered cars will still be around, particularly in rural areas, for those who:\n\n*   Don't have easy access to charging.\n*   Need long-range capabilities for travel.\n*   Prefer the refueling experience of a gas car.\n\n**Timeline Estimates (Highly Variable):**\n\n*   **2030:** EVs could represent 60-80% of new car sales in many developed markets.\n*   **2040:**  It's plausible that EVs could account for 80-90% of new car sales globally, *assuming* significant infrastructure investment and continued technological advancements.\n\n**In conclusion, while the momentum is undeniably with EVs, a complete replacement of gas cars is a complex, multi-faceted challenge with significant hurdles to overcome. It’s more likely we’ll see a gradual transition to a predominantly electric transportation system over the coming decades.**\n\nDo you want me to delve deeper into a specific aspect of this topic, such as:\n\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The technological advancements in battery technology?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6948,
+      "output_tokens": 788,
+      "total_latency_ms": 5410,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:47.715Z"
+  },
+  {
+    "result_id": "209cbe9f-5304-4678-9c8f-99a305f15f50",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6943,
+      "output_tokens": 17,
+      "total_latency_ms": 897,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:48.713Z"
+  },
+  {
+    "result_id": "86326090-3fec-4338-a92b-186c4d24768d",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, let's dive into the `auth` toolset. It's a core part of the system, handling user management and security. Here's a breakdown of where to start and what you should focus on, categorized for clarity:\n\n**1. Understanding the Core Functions:**\n\n*   **`auth_list_users`**: This is *the* foundational tool.  You absolutely need to understand this first. It lets you see all the users currently in the system.  Pay attention to the available filters:\n    *   `role`:  This is crucial for understanding user permissions.  The `enum` (admin, editor, viewer, guest) defines what users can do.\n    *   `status`:  Knowing which users are active, suspended, or pending helps with troubleshooting and management.\n    *   `search`:  Use this to quickly find specific users by name or email.\n*   **`auth_create_user`**:  This is how you add new users to the system.  Understand the required fields (email, name) and the role assignment.\n*   **`auth_update_permissions`**: This is how you modify a user's role or access rights.  It's essential for managing access control.\n*   **`auth_revoke_token`**: This is how you invalidate a user's session.  It's important for security – if a user's token is compromised, you'll need to revoke it.\n\n**2. Key Concepts to Grasp:**\n\n*   **User Roles:** The `admin`, `editor`, `viewer`, and `guest` roles are fundamental.  Think about what each role *should* be able to do.\n*   **Token-Based Authentication:** The `auth` toolset likely uses tokens (likely JWT - JSON Web Tokens) to authenticate users.  While you don't directly manage the tokens, understanding this is important for how sessions are handled.\n*   **Permissions:**  The `auth_update_permissions` function is the key to managing permissions.  It's not just about assigning roles; it's about defining *what* those roles can access.\n\n**3. Recommended Starting Workflow:**\n\n1.  **List Users:** Use `auth_list_users` to get a sense of the existing user base and their roles.\n2.  **Create a User:** Use `auth_create_user` to add a new user, assigning them a role.\n3.  **Update Permissions:** Use `auth_update_permissions` to adjust the user's access rights.\n4.  **Revoke Token:** Use `auth_revoke_token` to test the session invalidation process.\n\n**4.  Tool to Avoid Initially (Unless You Need Them):**\n\n*   `auth_get_user`:  I haven't seen this tool defined in the available tools, but if it exists, it's likely a wrapper around `auth_list_users` and should be avoided for initial learning.\n\n**5.  How to Learn More (Given the Toolset):**\n\n*   **Experiment:** The best way to learn is to try the tools. Create users, assign roles, and test the revocation process.\n*   **Documentation (If Available):**  If there's any documentation for the `auth` toolset, read it carefully.\n*   **Ask Questions:**  Since I'm an AI, I can help you understand the tools and their parameters.  Be specific with your questions.\n\nTo help me give you even more targeted guidance, could you tell me:\n\n*   What are you trying to *achieve* with the `auth` toolset? (e.g., \"I want to create a new user account,\" or \"I want to understand how to manage user permissions.\")",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6950,
+      "output_tokens": 810,
+      "total_latency_ms": 5565,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:48:54.382Z"
+  },
+  {
+    "result_id": "f9c2fb25-0e71-4f54-80f0-ae519424bffb",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6th Century BC onwards):** The earliest known form of storage.  Mesopotamians used clay tablets to record cuneiform writing.  These were durable but incredibly limited in capacity.\n* **Papyrus Scrolls (3100 BC onwards):** Egyptians and other ancient civilizations used papyrus scrolls for writing and storing knowledge.  Still bulky and fragile.\n* **Parchment & Vellum (2nd Century BC onwards):**  Animal skin (sheep or calf) offered a more durable writing surface than papyrus, used extensively by the Romans and early Christians.\n* **Paper (1st Century AD):** Invented in China, paper revolutionized writing and storage. It was cheaper, lighter, and easier to produce than parchment.  The spread of paper through trade and the Silk Road was crucial.\n\n**2. The Dawn of Electronic Storage (Late 19th – Early 20th Century):**\n\n* **1888: Telegraph Paper:**  The first use of paper as a medium for storing telegraph messages.\n* **1895: Phonograph (Thomas Edison):**  While primarily a playback device, the phonograph used wax cylinders to store sound – a groundbreaking step in recording technology.\n* **1898: Magnetic Tape Recording (Emile Berliner):** Berliner’s invention of magnetic tape recording was a game-changer. It allowed for the recording and playback of sound and, crucially, the *storage* of information on a magnetic surface.\n* **1928: Magnetic Drum Memory (IBM):** IBM developed the first magnetic drum memory, a rotating cylinder coated with magnetic material. Data was stored by magnetizing tiny spots on the drum. This was incredibly fast but limited in capacity.\n\n**3. The Rise of Magnetic Storage (Mid 20th Century):**\n\n* **1956: Magnetic Tape for Data (IBM):** IBM adapted magnetic tape technology for storing computer data. This was a huge leap forward, offering a more practical and affordable storage solution than magnetic drums.\n* **1959: Magnetic Disk Drive (IBM):** IBM introduced the first hard disk drive (HDD), using rotating platters coated with magnetic material. HDDs offered significantly higher storage densities than magnetic tape.\n* **1963: Floppy Disk (Alden Horton):** The floppy disk, initially 8-inch, provided a portable way to store and transfer data.\n\n**4. The Era of Semiconductors (Late 20th Century – Early 21st Century):**\n\n* **1968: Read-Only Memory (ROM):** ROM allowed for the permanent storage of data, crucial for early computer programs.\n* **1970s: First SSDs (Solid State Drives):** Early versions of Solid State Drives (SSDs) using flash memory began to appear, offering faster access times and greater durability than HDDs.\n* **1986: Flash Memory (Fujitsu):** Fujitsu developed NAND flash memory, the dominant type of storage in SSDs and USB drives.\n* **1990s – 2000s: HDD Capacity Explosion:** HDD manufacturers relentlessly increased the capacity of their drives, with 10GB, 20GB, 50GB, 100GB, 200GB, 500GB, and eventually 1TB drives becoming commonplace.\n\n**5. Modern Storage (21st Century – Present):**\n\n* **Continued SSD Growth:** SSDs have become the dominant storage technology for most computers and servers due to their speed and durability.\n* **NVMe SSDs:**  Non-Volatile Memory Express (NVMe) SSDs, utilizing the PCIe interface, offer dramatically faster speeds than traditional SATA SSDs.\n* **UHDDs (Ultra-High Density Drives):** HDDs continue to evolve with increasing storage capacities (now exceeding 20TB).\n* **Cloud Storage:** The rise of cloud storage services (Google Drive, Dropbox, OneDrive, etc.) has fundamentally changed how people store and access data.\n* **Emerging Technologies:**  Research continues into new storage technologies like 3D NAND, DNA storage, and holographic storage, though widespread adoption is still some way off.\n\n\n**Key Trends Throughout History:**\n\n* **Moore's Law:** The relentless increase in computing power and the miniaturization of components has driven innovation in storage technology.\n* **Density:** The primary focus has always been on increasing the amount of data that can be stored in a given space.\n* **Speed:**  Alongside density, speed (",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6944,
+      "output_tokens": 1024,
+      "total_latency_ms": 6823,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:01.319Z"
+  },
+  {
+    "result_id": "92b30ac2-a4ab-4565-881e-5838f0375427",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"auth_update_permissions\",\n    \"arguments\": {\n      \"user_id\": \"user123\",\n      \"role\": \"editor\",\n      \"resources\": [\n        \"document1\",\n        \"document2\"\n      ]\n    }\n  }\n]\n",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "user123",
+          "role": "editor",
+          "resources": [
+            "document1",
+            "document2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6951,
+      "output_tokens": 77,
+      "total_latency_ms": 1251,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:02.676Z"
+  },
+  {
+    "result_id": "9a7609ae-9350-4426-8d37-57285aab6765",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_list_files\",\n  \"arguments\": {\n    \"prefix\": \"my_directory\",\n    \"bucket\": \"my-bucket\",\n    \"max_results\": 10\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "my_directory",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6948,
+      "output_tokens": 60,
+      "total_latency_ms": 1154,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:03.944Z"
+  },
+  {
+    "result_id": "a6e0c6f7-869c-4488-9cef-77a666074f09",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"images/product_photo.jpg\",\n    \"expiry_seconds\": 3600,\n    \"method\": \"GET\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "images/product_photo.jpg",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6950,
+      "output_tokens": 67,
+      "total_latency_ms": 1197,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:05.251Z"
+  },
+  {
+    "result_id": "09ac7ea0-d1e7-4575-9127-0b7c87888a92",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 100,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 100,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 6976,
+      "output_tokens": 60,
+      "total_latency_ms": 1152,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:06.516Z"
+  },
+  {
+    "result_id": "301be882-8329-4ae9-ae31-2742fa48a849",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"description\": \"Update an existing calendar event with specified fields.\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"event_id\": {\n        \"type\": \"string\",\n        \"description\": \"The calendar event identifier to update.\",\n        \"required\": true\n      },\n      \"title\": {\n        \"type\": \"string\",\n        \"description\": \"The new event title.\",\n        \"required\": false\n      },\n      \"start\": {\n        \"type\": \"string\",\n        \"description\": \"The new start datetime in ISO 8601 format.\",\n        \"required\": false\n      },\n      \"end\": {\n        \"type\": \"string\",\n        \"description\": \"The new end datetime in ISO 8601 format.\",\n        \"required\": false\n      },\n      \"location\": {\n        \"type\": \"string\",\n        \"description\": \"The new event location or meeting URL.\",\n        \"required\": false\n      },\n      \"attendees\": {\n        \"type\": \"array\",\n        \"description\": \"The new attendee email addresses.\",\n        \"required\": false\n      },\n      \"verbose\": {\n        \"type\": \"boolean\",\n        \"description\": \"Include detailed metadata in the response.\",\n        \"default\": false\n      }\n    },\n    \"required\": [\n      \"event_id\"\n    ]\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6964,
+      "output_tokens": 343,
+      "total_latency_ms": 2817,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:09.437Z"
+  },
+  {
+    "result_id": "62d23990-e166-4131-85e3-dd9654720582",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\",\n    \"include_pending\": false,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value",
+          "include_pending": false,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 6964,
+      "output_tokens": 63,
+      "total_latency_ms": 1160,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:10.706Z"
+  },
+  {
+    "result_id": "ebe95a82-07cd-4bdb-b339-941ab21e90d9",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6967,
+      "output_tokens": 40,
+      "total_latency_ms": 1036,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:11.849Z"
+  },
+  {
+    "result_id": "753f8434-8579-4fa8-885c-205adf2b30a4",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6969,
+      "output_tokens": 42,
+      "total_latency_ms": 1041,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:12.993Z"
+  },
+  {
+    "result_id": "dd625744-3fd4-4b5c-a388-26c5114ecc62",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"tool_calls\": [\n    {\n      \"name\": \"auth_revoke_token\",\n      \"arguments\": {\n        \"token\": \"aHR0cHM6Ly9iaW5hby53d3cub3Z1Z3VuZGF0aW9uLmcuY29t\"\n      }\n    },\n    {\n      \"name\": \"media_extract_audio\",\n      \"arguments\": {\n        \"input_path\": \"https://www.nasa.gov/sites/default/files/thumbnails/image/web_images/1996/may/1996-05-16-16-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6958,
+      "output_tokens": 1024,
+      "total_latency_ms": 6821,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:19.923Z"
+  },
+  {
+    "result_id": "fd17b737-3f5b-4ba3-becc-7c4b3b632e63",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"tool_call\": {\n    \"name\": \"media_text_to_speech\",\n    \"arguments\": {\n      \"text\": \"This is a test invoice creation.\",\n      \"voice\": \"alloy\",\n      \"language\": \"en-US\"\n    }\n  }\n}\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6961,
+      "output_tokens": 74,
+      "total_latency_ms": 1232,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:21.256Z"
+  },
+  {
+    "result_id": "60a243b9-d7b3-410e-bfba-10bc3b7b8822",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"London\",\n      \"include_pollutants\": true\n    }\n  },\n  {\n    \"name\": \"shop_track_order\",\n    \"arguments\": {\n      \"order_id\": \"ORD-2024-10-27-001\"\n    }\n  },\n  {\n    \"name\": \"media_extract_audio\",\n    \"arguments\": {\n      \"input_path\": \"/path/to/video/ORD-2024-10-27-001.mp4\",\n      \"output_format\": \"mp3\",\n      \"bitrate\": \"128k\"\n    }\n  }\n]\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6965,
+      "output_tokens": 192,
+      "total_latency_ms": 1917,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:23.275Z"
+  },
+  {
+    "result_id": "facfd4a7-356d-422f-a17d-76071cf65d85",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_stock_price\",\n  \"arguments\": {\n    \"ticker\": \"AAPL\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_stock_price",
+        "arguments": {
+          "ticker": "AAPL"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 40,
+      "total_latency_ms": 1032,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:24.412Z"
+  },
+  {
+    "result_id": "f36a92a6-8a11-4503-ab4e-48631f1d82c5",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6951,
+      "output_tokens": 40,
+      "total_latency_ms": 1028,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:25.541Z"
+  },
+  {
+    "result_id": "c1341f29-0afe-4d58-a3c4-f013c6903af3",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_create_user\",\n  \"arguments\": {\n    \"email\": \"main\",\n    \"name\": \"config.json\",\n    \"role\": \"viewer\",\n    \"password\": \"hashed_password_here\",\n    \"limit\": 100\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "password": "hashed_password_here",
+          "limit": 100
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 6958,
+      "output_tokens": 77,
+      "total_latency_ms": 1251,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:26.894Z"
+  },
+  {
+    "result_id": "6d46490a-ce13-4778-9560-0ba80dbb3a02",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6992,
+      "output_tokens": 74,
+      "total_latency_ms": 1235,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:28.233Z"
+  },
+  {
+    "result_id": "9cd91f04-6ad3-4e2f-be72-be1857f15ef2",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"],\n      \"verbose\": false\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 6994,
+      "output_tokens": 87,
+      "total_latency_ms": 1312,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:29.652Z"
+  },
+  {
+    "result_id": "ad9db069-a0b1-43d4-a0bc-5715269940a0",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "That's a fantastic and frequently debated question! The short answer is: it's incredibly complex, and a *complete* replacement is unlikely, but electric vehicles (EVs) are absolutely poised to dramatically reshape the automotive landscape. Here's a breakdown of the factors involved, and why a full takeover is still a ways off:\n\n**Arguments for EVs Replacing Gas Cars (Significant Momentum):**\n\n* **Environmental Benefits:** This is the biggest driver. EVs produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change.\n* **Falling Costs:** Battery prices have plummeted over the last decade, making EVs increasingly competitive with gas cars.  This trend is expected to continue.\n* **Improved Technology:** Battery range is increasing dramatically, charging times are getting faster, and EV performance (acceleration, handling) is often superior to comparable gas cars.\n* **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and regulations (like emissions standards) that favor EV adoption.\n* **Total Cost of Ownership (TCO):**  While the initial purchase price can be higher, EVs often have lower running costs due to cheaper electricity compared to gasoline, reduced maintenance (fewer moving parts), and potential access to HOV lanes.\n* **Innovation & Investment:** Massive investment is flowing into EV technology and infrastructure, accelerating development and deployment.\n\n\n**Arguments Against EVs Completely Replacing Gas Cars (Remaining Challenges):**\n\n* **Charging Infrastructure:** This is currently the biggest hurdle. The availability of public charging stations, especially fast chargers, is still insufficient in many areas, leading to \"range anxiety.\"  Home charging requires installation, which adds to the upfront cost.\n* **Battery Production & Raw Materials:**  EV batteries rely on materials like lithium, cobalt, and nickel, which have supply chain challenges and ethical sourcing concerns. Scaling up production sustainably is a major challenge.\n* **Upfront Cost:** While decreasing, EVs still generally have a higher purchase price than comparable gas cars – though this gap is closing.\n* **Range Limitations (for some models):** While range is improving, some EVs still have limited range, particularly in cold weather or when towing.\n* **Grid Capacity & Renewables:**  Widespread EV adoption will put a strain on the electricity grid.  The environmental benefit of EVs is maximized when the electricity comes from renewable sources (solar, wind).\n* **Habits & Preferences:**  Many consumers are accustomed to the refueling experience of gas cars and may be hesitant to switch.\n\n\n**Likely Scenario – A Mixed Fleet:**\n\nMost experts believe a more realistic scenario is a *mixed fleet* – a significant percentage of vehicles will be electric, but gas-powered cars will still be around, particularly in rural areas, for those who:\n\n*   Don't have easy access to charging.\n*   Need long-range capabilities for travel.\n*   Prefer the refueling experience of a gas car.\n\n**Timeline Estimates (Highly Variable):**\n\n*   **2030:** EVs could represent 60-80% of new car sales in many developed markets.\n*   **2040:**  It's plausible that EVs could account for 80-90% of new car sales globally, *assuming* significant infrastructure investment and continued technological advancements.\n\n**In conclusion, while the momentum is undeniably with EVs, a complete replacement of gas cars is a complex, multi-faceted challenge with significant hurdles to overcome. It’s more likely we’ll see a gradual transition to a predominantly electric transportation system over the coming decades.**\n\nDo you want me to delve deeper into a specific aspect of this topic, such as:\n\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The technological advancements in battery technology?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6948,
+      "output_tokens": 788,
+      "total_latency_ms": 5422,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:35.175Z"
+  },
+  {
+    "result_id": "672b771d-9f11-4e59-b46c-737d70d1da69",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6943,
+      "output_tokens": 17,
+      "total_latency_ms": 893,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:36.178Z"
+  },
+  {
+    "result_id": "d736d29a-996d-4f04-a2a8-4fe639770649",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, let's dive into the `auth` toolset. It's a core part of the system, handling user management and security. Here's a breakdown of where to start and what you should focus on, categorized for clarity:\n\n**1. Understanding the Core Functions:**\n\n*   **`auth_list_users`**: This is *the* foundational tool.  You absolutely need to understand this first. It lets you see all the users currently in the system.  Pay attention to the available filters:\n    *   `role`:  This is crucial for understanding user permissions.  The `enum` (admin, editor, viewer, guest) defines what users can do.\n    *   `status`:  Knowing which users are active, suspended, or pending helps with troubleshooting and management.\n    *   `search`:  Use this to quickly find specific users by name or email.\n*   **`auth_create_user`**:  This is how you add new users to the system.  Understand the required fields (email, name) and the role assignment.\n*   **`auth_update_permissions`**: This is how you modify a user's role or access rights.  It's essential for managing access control.\n*   **`auth_revoke_token`**: This is how you invalidate a user's session.  It's important for security – if a user's token is compromised, you'll need to revoke it.\n\n**2. Key Concepts to Grasp:**\n\n*   **User Roles:** The `admin`, `editor`, `viewer`, and `guest` roles are fundamental.  Think about what each role *should* be able to do.\n*   **Token-Based Authentication:** The `auth` toolset likely uses tokens (likely JWT - JSON Web Tokens) to authenticate users.  While you don't directly manage the tokens, understanding this is important for how sessions are handled.\n*   **Permissions:**  The `auth_update_permissions` function is the key to managing permissions.  It's not just about assigning roles; it's about defining *what* those roles can access.\n\n**3. Recommended Starting Workflow:**\n\n1.  **List Users:** Use `auth_list_users` to get a sense of the existing user base and their roles.\n2.  **Create a User:** Use `auth_create_user` to add a new user, assigning them a role.\n3.  **Update Permissions:** Use `auth_update_permissions` to adjust the user's access rights.\n4.  **Revoke Token:** Use `auth_revoke_token` to test the session invalidation process.\n\n**4.  Tool to Avoid Initially (Unless You Need Them):**\n\n*   `auth_get_user`:  I haven't seen this tool defined in the available tools, but if it exists, it's likely a wrapper around `auth_list_users` and should be avoided for initial learning.\n\n**5.  How to Learn More (Given the Toolset):**\n\n*   **Experiment:** The best way to learn is to try the tools. Create users, assign roles, and test the revocation process.\n*   **Documentation (If Available):**  If there's any documentation for the `auth` toolset, read it carefully.\n*   **Ask Questions:**  Since I'm an AI, I can help you understand the tools and their parameters.  Be specific with your questions.\n\nTo help me give you even more targeted guidance, could you tell me:\n\n*   What are you trying to *achieve* with the `auth` toolset? (e.g., \"I want to create a new user account,\" or \"I want to understand how to manage user permissions.\")",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6950,
+      "output_tokens": 810,
+      "total_latency_ms": 5553,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:41.834Z"
+  },
+  {
+    "result_id": "d017ac92-2411-4f6c-ab0d-a13e39fa311e",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6th Century BC onwards):** The earliest known form of storage.  Mesopotamians used clay tablets to record cuneiform writing.  These were durable but incredibly limited in capacity.\n* **Papyrus Scrolls (3100 BC onwards):** Egyptians and other ancient civilizations used papyrus scrolls for writing and storing knowledge.  Still bulky and fragile.\n* **Parchment & Vellum (2nd Century BC onwards):**  Animal skin (sheep or calf) offered a more durable writing surface than papyrus, used extensively by the Romans and early Christians.\n* **Paper (1st Century AD):** Invented in China, paper revolutionized writing and storage. It was cheaper, lighter, and easier to produce than parchment.  The spread of paper through trade and the Silk Road was crucial.\n\n**2. The Dawn of Electronic Storage (Late 19th – Early 20th Century):**\n\n* **1888: Telegraph Paper:**  The first use of paper as a medium for storing telegraph messages.\n* **1895: Phonograph (Thomas Edison):**  While primarily a playback device, the phonograph used wax cylinders to store sound – a groundbreaking step in recording technology.\n* **1898: Magnetic Tape Recording (Emile Berliner):** Berliner’s invention of magnetic tape recording was a game-changer. It allowed for the recording and playback of sound and, crucially, the *storage* of information on a magnetic surface.\n* **1928: Magnetic Drum Memory (IBM):** IBM developed the first magnetic drum memory, a rotating cylinder coated with magnetic material. Data was stored by magnetizing tiny spots on the drum. This was incredibly fast but limited in capacity.\n\n**3. The Rise of Magnetic Storage (Mid 20th Century):**\n\n* **1956: Magnetic Tape for Data (IBM):** IBM adapted magnetic tape technology for storing computer data. This was a huge leap forward, offering a more practical and affordable storage solution than magnetic drums.\n* **1959: Magnetic Disk Drive (IBM):** IBM introduced the first hard disk drive (HDD), using rotating platters coated with magnetic material. HDDs offered significantly higher storage densities than magnetic tape.\n* **1963: Floppy Disk (Alden Horton):** The floppy disk, initially 8-inch, provided a portable way to store and transfer data.\n\n**4. The Era of Semiconductors (Late 20th Century – Early 21st Century):**\n\n* **1968: Read-Only Memory (ROM):** ROM allowed for the permanent storage of data, crucial for early computer programs.\n* **1970s: First SSDs (Solid State Drives):** Early versions of Solid State Drives (SSDs) using flash memory began to appear, offering faster access times and greater durability than HDDs.\n* **1986: Flash Memory (Fujitsu):** Fujitsu developed NAND flash memory, the dominant type of storage in SSDs and USB drives.\n* **1990s – 2000s: HDD Capacity Explosion:** HDD manufacturers relentlessly increased the capacity of their drives, with 10GB, 20GB, 50GB, 100GB, 200GB, 500GB, and eventually 1TB drives becoming commonplace.\n\n**5. Modern Storage (21st Century – Present):**\n\n* **Continued SSD Growth:** SSDs have become the dominant storage technology for most computers and servers due to their speed and durability.\n* **NVMe SSDs:**  Non-Volatile Memory Express (NVMe) SSDs, utilizing the PCIe interface, offer dramatically faster speeds than traditional SATA SSDs.\n* **UHDDs (Ultra-High Density Drives):** HDDs continue to evolve with increasing storage capacities (now exceeding 20TB).\n* **Cloud Storage:** The rise of cloud storage services (Google Drive, Dropbox, OneDrive, etc.) has fundamentally changed how people store and access data.\n* **Emerging Technologies:**  Research continues into new storage technologies like 3D NAND, DNA storage, and holographic storage, though widespread adoption is still some way off.\n\n\n**Key Trends Throughout History:**\n\n* **Moore's Law:** The relentless increase in computing power and the miniaturization of components has driven innovation in storage technology.\n* **Density:** The primary focus has always been on increasing the amount of data that can be stored in a given space.\n* **Speed:**  Alongside density, speed (",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6944,
+      "output_tokens": 1024,
+      "total_latency_ms": 6806,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:48.743Z"
+  },
+  {
+    "result_id": "27dac5fe-06fc-4f64-9efe-852182d81845",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"user123\", \"role\": \"editor\", \"resources\": [\"/products\", \"/orders\"]}}\n]\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "user123",
+          "role": "editor",
+          "resources": [
+            "/products",
+            "/orders"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2307,
+      "output_tokens": 52,
+      "total_latency_ms": 654,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:49.503Z"
+  },
+  {
+    "result_id": "6317639b-6f31-49af-99e9-8fcf5c0e9be6",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"prefix\": \"my_documents\",\n    \"bucket\": \"my-bucket\",\n    \"max_results\": 10\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "prefix": "my_documents",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2304,
+      "output_tokens": 62,
+      "total_latency_ms": 714,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:50.327Z"
+  },
+  {
+    "result_id": "83cfcad0-863c-43cd-a8ab-26be4339649d",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"images/product_photo.jpg\",\n    \"expiry_seconds\": 3600,\n    \"method\": \"GET\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "images/product_photo.jpg",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2306,
+      "output_tokens": 67,
+      "total_latency_ms": 748,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:51.181Z"
+  },
+  {
+    "result_id": "7f2b261d-5516-4b26-a0ba-d458286a69d1",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 100,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 100,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2332,
+      "output_tokens": 60,
+      "total_latency_ms": 702,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:51.996Z"
+  },
+  {
+    "result_id": "66730022-0629-41f9-a838-78b9489298f0",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"arguments\": {\n    \"event_id\": \"example_value\",\n    \"title\": \"New Event Title\",\n    \"start\": \"2024-03-15T10:00:00Z\",\n    \"end\": \"2024-03-15T11:00:00Z\",\n    \"location\": \"Meeting Room A\",\n    \"attendees\": [\"user1@example.com\", \"user2@example.com\"],\n    \"verbose\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "New Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z",
+          "location": "Meeting Room A",
+          "attendees": [
+            "user1@example.com",
+            "user2@example.com"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.25,
+      "overall": 0.7
+    },
+    "metrics": {
+      "input_tokens": 2320,
+      "output_tokens": 144,
+      "total_latency_ms": 1198,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:53.306Z"
+  },
+  {
+    "result_id": "9ae9922b-46de-4a12-a888-ab198e1b215a",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"fin_get_account_balance\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "fin_get_account_balance",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2320,
+      "output_tokens": 74,
+      "total_latency_ms": 784,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:54.201Z"
+  },
+  {
+    "result_id": "c2e999a9-5a38-4e1e-8056-c7951e70bd6c",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_current\",\n    \"arguments\": {\n      \"location\": \"example_value\",\n      \"units\": \"metric\",\n      \"sort_by\": \"temperature\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric",
+          "sort_by": "temperature"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2323,
+      "output_tokens": 64,
+      "total_latency_ms": 732,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:55.033Z"
+  },
+  {
+    "result_id": "e8e31fab-68f0-4528-94c7-e52afe72610c",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"media_text_to_speech\",\n    \"arguments\": {\n      \"text\": \"example_value\",\n      \"voice\": \"alloy\",\n      \"language\": \"en-US\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2325,
+      "output_tokens": 66,
+      "total_latency_ms": 739,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:55.880Z"
+  },
+  {
+    "result_id": "aca61dc7-46f3-456d-855e-dbdf8ee24fc9",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_revoke_token\",\n  \"arguments\": {\n    \"token\": \"a1b2c3d4-e5f6-7890-1234-567890abcdef\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_revoke_token",
+        "arguments": {
+          "token": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2314,
+      "output_tokens": 68,
+      "total_latency_ms": 755,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:56.745Z"
+  },
+  {
+    "result_id": "06f550f4-e53f-408d-acf7-0ebc269e9cea",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"This is a test invoice creation.\",\n    \"voice\": \"alloy\",\n    \"language\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "This is a test invoice creation.",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2317,
+      "output_tokens": 63,
+      "total_latency_ms": 718,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:57.577Z"
+  },
+  {
+    "result_id": "e7226a8f-346e-451a-84d3-34ef933a6670",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-20241027-001\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "ORD-20241027-001"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2321,
+      "output_tokens": 53,
+      "total_latency_ms": 666,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:49:58.356Z"
+  },
+  {
+    "result_id": "88cce9d6-fa00-404f-a36b-729030f636dd",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's break this down into a series of steps and use the available tools to achieve the desired outcome.\n\n**Step 1: Get Stock Price**\n\nI'll use the `fin_get_stock_price` tool to retrieve the current stock price for Apple (AAPL).\n\n```json\n{\n\"name\": \"fin_get_stock_price\",\n\"arguments\": {\n    \"ticker\": \"AAPL\",\n    \"exchange\": \"NASDAQ\",\n    \"include_history\": false\n  }\n}\n```\n\n**Step 2: Query Service Metrics**\n\nAssuming the `fin_get_stock_price` tool returns the stock price, let's assume the stock price is $175. Now, I'll use the `ops_get_metrics` tool to query CPU and memory metrics for a service.  I'll use a 1-hour window.\n\n```json\n{\n\"name\": \"ops_get_metrics\",\n\"arguments\": {\n    \"service\": \"my_service\",\n    \"metric\": \"cpu\",\n    \"window\": \"1h\"\n  }\n}\n```\n\n**Step 3: Create a Calendar Event**\n\nFinally, I'll use the `cal_find_free_time` tool to find a free time slot for a meeting. I'll use the stock price and service metrics as context for the meeting.\n\n```json\n{\n\"name\": \"cal_find_free_time\",\n\"arguments\": {\n    \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n    \"duration_minutes\": 60,\n    \"start_date\": \"2024-01-27\",\n    \"end_date\": \"2024-01-27\",\n    \"verbose\": true\n  }\n}\n```\n\n**Explanation:**\n\n*   **fin\\_get\\_stock\\_price:** This tool fetches the current stock price of AAPL.\n*   **ops\\_get\\_metrics:** This tool retrieves CPU and memory metrics for a service named \"my\\_service\" over the last hour.\n*   **cal\\_find\\_free\\_time:** This tool finds a 60-minute meeting time slot for the specified participants on January 27, 2024, considering the stock price and service metrics.\n\nI've included `verbose: true` in the `cal_find_free_time` call to get more detailed information in the response.\n",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 548,
+      "total_latency_ms": 3529,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:01.996Z"
+  },
+  {
+    "result_id": "3472f9be-69c9-4391-b608-664fe167f0b6",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2307,
+      "output_tokens": 40,
+      "total_latency_ms": 586,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:02.691Z"
+  },
+  {
+    "result_id": "e9df7c7d-8f83-43ea-aac0-220ccda0e9db",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"auth_create_user\",\n    \"arguments\": {\n      \"email\": \"main\",\n      \"name\": \"config.json\",\n      \"role\": \"viewer\",\n      \"limit\": 1\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2314,
+      "output_tokens": 69,
+      "total_latency_ms": 757,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:03.549Z"
+  },
+  {
+    "result_id": "569f120f-c20d-468a-9d96-646ad0dc4416",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"media_transcode_video\",\n    \"arguments\": {\n      \"input_path\": \"Berlin\",\n      \"output_format\": \"mp4\",\n      \"resolution\": \"4k\",\n      \"bitrate\": \"user@example.com\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2348,
+      "output_tokens": 80,
+      "total_latency_ms": 832,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:04.490Z"
+  },
+  {
+    "result_id": "4688bd0b-4043-4353-9805-abd3bb2ec874",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2350,
+      "output_tokens": 81,
+      "total_latency_ms": 826,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:05.427Z"
+  },
+  {
+    "result_id": "89b2cecb-8ce5-4a45-a2f4-0c7c6f180106",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "That's a really complex and fascinating question! The short answer is: it's *highly unlikely* that electric cars will *completely* replace gas cars, at least not in the next few decades. However, they *will* fundamentally change the automotive landscape. Here's a breakdown of why, considering the various factors involved:\n\n**Arguments for Significant Electric Car Adoption (and a Shift Away from Gas):**\n\n* **Environmental Concerns:** The biggest driver. EVs produce zero tailpipe emissions, dramatically reducing air pollution in urban areas and contributing to mitigating climate change.  Government regulations and consumer demand are pushing this forward.\n* **Falling Battery Costs:** Battery technology is improving rapidly, and costs are decreasing. This is making EVs more affordable.\n* **Performance & Driving Experience:** EVs offer instant torque, quick acceleration, and a generally quieter and smoother driving experience.\n* **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and other incentives to encourage EV adoption.\n* **Infrastructure Development:** Charging infrastructure is expanding, though it still lags behind the availability of gas stations.\n* **Total Cost of Ownership (TCO):**  Over the lifespan of a vehicle, EVs often have a lower TCO than gas cars due to lower fuel costs (electricity is generally cheaper than gasoline) and reduced maintenance needs.\n\n\n**Reasons Why Gas Cars Won't Completely Disappear:**\n\n* **Range Anxiety:**  Despite improvements, range anxiety – the fear of running out of battery – remains a significant concern for many consumers. While ranges are increasing, they're still often less than a typical gas car.\n* **Charging Time:** Charging an EV takes significantly longer than filling a gas tank.  While fast charging is improving, it’s still a barrier for some.\n* **Upfront Cost:**  While decreasing, EVs still generally have a higher initial purchase price than comparable gas cars (though this gap is narrowing).\n* **Battery Life & Replacement Costs:**  Battery degradation over time is a concern, and replacing a battery pack is a significant expense.  However, battery technology is improving rapidly, and warranties are becoming more common.\n* **Infrastructure Limitations:** The charging infrastructure isn't yet widespread enough, especially in rural areas and apartment complexes.\n* **Heavy-Duty Applications:** EVs currently struggle with applications requiring high power and torque, such as long-haul trucking, construction, and agriculture. Battery weight and charging times are major limitations.\n* **Consumer Habits & Preferences:**  Many consumers are simply accustomed to the convenience of filling up a gas tank and the perceived reliability of gas-powered vehicles.\n\n**Likely Scenario – A Mixed Fleet:**\n\nThe most probable future involves a *mixed fleet* of electric and gas-powered vehicles.  EVs will dominate urban driving and shorter commutes, while gas cars will likely remain prevalent for longer distances, heavy-duty applications, and in areas where charging infrastructure is limited.\n\n**Predictions & Estimates:**\n\n* **2030:** EVs could represent 60-80% of new car sales in many developed markets.\n* **2040:** EVs could account for 80-90% of new car sales globally.\n* **2050:**  It's more difficult to predict beyond this point, but EVs will almost certainly be the dominant form of transportation.\n\n\n**Do you want me to delve deeper into a specific aspect of this topic, such as:**\n\n*   Battery technology advancements?\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The future of electric trucks and buses?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2304,
+      "output_tokens": 749,
+      "total_latency_ms": 4674,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:10.207Z"
+  },
+  {
+    "result_id": "d937f7ce-6a7b-4105-8ef0-d1131b6b4c9b",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {}}\n",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2299,
+      "output_tokens": 17,
+      "total_latency_ms": 456,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:10.778Z"
+  },
+  {
+    "result_id": "fa474573-5ddd-4b05-86e4-0eeab7687d61",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's explore the `auth` tool. It's a core component for user management within the system. Here's a breakdown of where to start and what you can do with it, along with a JSON tool call to get you started:\n\n**Understanding the `auth` Tool**\n\nThe `auth` tool is primarily used for:\n\n*   **User Creation:** `auth_create_user` –  This is the most common use case. You can create new user accounts with various attributes like email, name, and role.\n*   **Token Management:** `auth_revoke_token` – Revoking existing tokens is crucial for security – logging out users or invalidating access.\n*   **User Permissions:** `auth_update_permissions` –  Allows you to modify user roles and access permissions to specific resources.\n\n**Where to Start - Key Operations & Tool Calls**\n\n1.  **Creating a User:** This is the most fundamental operation.\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_create_user\",\n          \"arguments\": {\n            \"email\": \"testuser@example.com\",\n            \"name\": \"Test User\",\n            \"role\": \"viewer\",\n            \"password\": \"password123\",\n            \"limit\": 1\n          }\n        }\n        ```\n        This will create a new user named \"Test User\" with the email address `testuser@example.com`, assigned the \"viewer\" role, and a password of \"password123\". The `limit` parameter ensures you only get one result.\n\n2.  **Revoking a Token:**  Let's say you want to invalidate a user's session.\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_revoke_token\",\n          \"arguments\": {\n            \"token\": \"your_token_here\"\n          }\n        }\n        ```\n        Replace `\"your_token_here\"` with the actual token you want to revoke.\n\n3.  **Listing Users:**  To see a list of existing users, you can use this:\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_list_users\",\n          \"arguments\": {\n            \"role\": \"viewer\",\n            \"search\": \"test\"\n          }\n        }\n        ```\n        This will list all users with the \"viewer\" role and whose name or email contains \"test\".\n\n**Important Considerations & Next Steps**\n\n*   **Security:**  Always handle passwords securely. The system likely hashes passwords before storing them.  Don't store plain-text passwords.\n*   **Roles:**  Understand the available roles (`admin`, `editor`, `viewer`, `guest`) and their associated permissions.\n*   **Token Management:**  Proper token management is critical for security.  Revoke tokens when users log out or when access needs to be restricted.\n\nTo help me give you even more targeted guidance, could you tell me:\n\n*   What are you trying to achieve with the `auth` tool? (e.g., \"I want to create a new user account,\" or \"I need to revoke a user's access.\")",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2306,
+      "output_tokens": 706,
+      "total_latency_ms": 4428,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:15.316Z"
+  },
+  {
+    "result_id": "1147e6ad-96b7-44d6-bfef-3c4ba624ba45",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6000 BC - 2000 BC):**  The earliest known form of storage.  Mesopotamians used clay tablets to record cuneiform writing.  These were durable but incredibly limited in capacity.\n* **Papyrus Scrolls (3000 BC - 1500 BC):** Egyptians and other ancient civilizations used papyrus scrolls for writing and storing knowledge.  Still bulky and prone to damage.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, allowing for multiple drafts.\n* **Punched Cards (1801 - 1898):** Joseph Jacquard used punched cards to control the weaving of intricate patterns in textiles. This was a crucial step towards automated data storage.\n\n**2. The Dawn of Electronic Storage (Early 20th Century):**\n\n* **Magnetic Tape (1928):** Fritz Pfleumer invented magnetic tape recording, initially for audio. This was a revolutionary step, offering a continuous, rewritable medium. RCA and other companies quickly adapted it for data storage.\n* **Magnetic Drum (1932):** IBM developed the magnetic drum, which stored data by magnetizing tiny spots on a rotating metal cylinder. It was incredibly fast but expensive and had limited capacity.\n* **Williams Tube (1946):**  Invented by John Mauchly and Herman Goldstine, the Williams Tube was an early form of random-access electronic memory. It used an electron beam to read and write data on a rotating cylinder.  It was unstable and short-lived.\n\n**3. The Rise of Magnetic Disks (Mid-20th Century):**\n\n* **Hard Disk Drives (HDDs) (1956):** IBM introduced the first commercially available HDD, the IBM 305 RAMAC. It used rotating platters coated with magnetic material. This was a massive improvement in capacity and speed compared to previous technologies.\n* **Floppy Disks (1969):**  IBM introduced the 5.25-inch floppy disk, initially for backup and data transfer.  Later, 3.5-inch floppy disks became ubiquitous for personal computing.\n\n**4. The Digital Revolution (Late 20th Century - Early 21st Century):**\n\n* **Optical Discs (1982):** Sony introduced the CD (Compact Disc), initially for audio but quickly adapted for storing data.\n* **DVDs (1995):**  DVDs offered significantly higher storage capacity than CDs, enabling movies and large data sets.\n* **Flash Memory (1983):**  The invention of NAND flash memory by Fujitsu was a game-changer. It’s non-volatile (retains data when power is off) and has no moving parts, making it much more durable and reliable than HDDs.\n* **Solid State Drives (SSDs) (Late 1990s - Present):** SSDs use flash memory to store data. They are significantly faster, more energy-efficient, and more durable than HDDs. They've become the standard for modern computers and mobile devices.\n\n**5. Modern Storage Trends (21st Century - Present):**\n\n* **NVMe SSDs:**  Utilize the PCIe interface for dramatically increased bandwidth.\n* **Cloud Storage:** Services like Google Drive, Dropbox, and Amazon S3 provide scalable storage solutions over the internet.\n* **DNA Storage (Emerging):**  Researchers are exploring using DNA to store massive amounts of data – potentially offering incredibly high density and longevity.\n* **3D NAND:**  Increasing storage density by stacking memory cells vertically.\n\n\n**Key Takeaways:**\n\n* **Constant Shrinking:** The trend throughout storage history has been a relentless drive to reduce the size and cost of storage while increasing its capacity and speed.\n* **Technological Convergence:**  Storage technologies have often evolved in tandem with other computing advancements (e.g., the rise of computers fueled the demand for better storage).\n\nDo you want me to delve deeper into a specific aspect of storage history, such as:\n\n*   A particular technology (e.g., HDDs, SSDs, flash memory)?\n*   The impact of storage on a specific industry (e.g., computing, media)?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2300,
+      "output_tokens": 969,
+      "total_latency_ms": 5937,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:21.361Z"
+  },
+  {
+    "result_id": "5f2bfe5e-7972-4659-aac4-4f1d639e02b5",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"user123\", \"role\": \"editor\", \"resources\": [\"/products\", \"/orders\"]}}\n]\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "user123",
+          "role": "editor",
+          "resources": [
+            "/products",
+            "/orders"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2307,
+      "output_tokens": 52,
+      "total_latency_ms": 659,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:22.132Z"
+  },
+  {
+    "result_id": "e90d3da6-b581-4fc1-b923-f5d9bc08e4d3",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"prefix\": \"my_documents\",\n    \"bucket\": \"my-bucket\",\n    \"max_results\": 10\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "prefix": "my_documents",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2304,
+      "output_tokens": 62,
+      "total_latency_ms": 717,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:22.950Z"
+  },
+  {
+    "result_id": "c304fc4b-dcd5-4680-bd12-1da194407689",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"images/product_photo.jpg\",\n    \"expiry_seconds\": 3600,\n    \"method\": \"GET\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "images/product_photo.jpg",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2306,
+      "output_tokens": 67,
+      "total_latency_ms": 746,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:23.804Z"
+  },
+  {
+    "result_id": "4941ccf7-c6d8-4972-939f-4caef406178a",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 100,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 100,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2332,
+      "output_tokens": 60,
+      "total_latency_ms": 699,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:24.604Z"
+  },
+  {
+    "result_id": "18c3eedc-7361-4c61-943b-92131855b8f5",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"arguments\": {\n    \"event_id\": \"example_value\",\n    \"title\": \"New Event Title\",\n    \"start\": \"2024-03-15T10:00:00Z\",\n    \"end\": \"2024-03-15T11:00:00Z\",\n    \"location\": \"Meeting Room A\",\n    \"attendees\": [\"user1@example.com\", \"user2@example.com\"],\n    \"verbose\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "New Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z",
+          "location": "Meeting Room A",
+          "attendees": [
+            "user1@example.com",
+            "user2@example.com"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.25,
+      "overall": 0.7
+    },
+    "metrics": {
+      "input_tokens": 2320,
+      "output_tokens": 144,
+      "total_latency_ms": 1190,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:25.904Z"
+  },
+  {
+    "result_id": "51f4147b-123d-40ba-b3cb-5a59d56c178a",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"fin_get_account_balance\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "fin_get_account_balance",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2320,
+      "output_tokens": 74,
+      "total_latency_ms": 783,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:26.794Z"
+  },
+  {
+    "result_id": "4417b85f-30f5-4233-bd9d-d5624938458e",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_current\",\n    \"arguments\": {\n      \"location\": \"example_value\",\n      \"units\": \"metric\",\n      \"sort_by\": \"temperature\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric",
+          "sort_by": "temperature"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2323,
+      "output_tokens": 64,
+      "total_latency_ms": 720,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:27.623Z"
+  },
+  {
+    "result_id": "557f062f-f437-4caa-9b3e-c53e78b5f457",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"media_text_to_speech\",\n    \"arguments\": {\n      \"text\": \"example_value\",\n      \"voice\": \"alloy\",\n      \"language\": \"en-US\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2325,
+      "output_tokens": 66,
+      "total_latency_ms": 738,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:28.462Z"
+  },
+  {
+    "result_id": "2a06d0f5-b1e2-47dd-a94c-8344702270c1",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_revoke_token\",\n  \"arguments\": {\n    \"token\": \"a1b2c3d4-e5f6-7890-1234-567890abcdef\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_revoke_token",
+        "arguments": {
+          "token": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2314,
+      "output_tokens": 68,
+      "total_latency_ms": 755,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:29.342Z"
+  },
+  {
+    "result_id": "07a5bb24-6f80-43ce-b469-9666b43080f5",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"This is a test invoice creation.\",\n    \"voice\": \"alloy\",\n    \"language\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "This is a test invoice creation.",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2317,
+      "output_tokens": 63,
+      "total_latency_ms": 730,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:30.176Z"
+  },
+  {
+    "result_id": "23013373-2089-4230-bc1c-e2c25c944719",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-20241027-001\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "ORD-20241027-001"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2321,
+      "output_tokens": 53,
+      "total_latency_ms": 665,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:30.947Z"
+  },
+  {
+    "result_id": "fab591ce-b938-452e-8f0a-3fdfc23b8398",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, let's break this down into a series of steps and use the available tools to achieve the desired outcome.\n\n**Step 1: Get Stock Price**\n\nI'll use the `fin_get_stock_price` tool to retrieve the current stock price for Apple (AAPL).\n\n```json\n{\n\"name\": \"fin_get_stock_price\",\n\"arguments\": {\n    \"ticker\": \"AAPL\",\n    \"exchange\": \"NASDAQ\",\n    \"include_history\": false\n  }\n}\n```\n\n**Step 2: Query Service Metrics**\n\nAssuming the `fin_get_stock_price` tool returns the stock price, let's assume the stock price is $175. Now, I'll use the `ops_get_metrics` tool to query CPU and memory metrics for a service.  I'll use a 1-hour window.\n\n```json\n{\n\"name\": \"ops_get_metrics\",\n\"arguments\": {\n    \"service\": \"my_service\",\n    \"metric\": \"cpu\",\n    \"window\": \"1h\"\n  }\n}\n```\n\n**Step 3: Create a Calendar Event**\n\nFinally, I'll use the `cal_find_free_time` tool to find a free time slot for a meeting. I'll use the stock price and service metrics as context for the meeting.\n\n```json\n{\n\"name\": \"cal_find_free_time\",\n\"arguments\": {\n    \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n    \"duration_minutes\": 60,\n    \"start_date\": \"2024-01-27\",\n    \"end_date\": \"2024-01-27\",\n    \"verbose\": true\n  }\n}\n```\n\n**Explanation:**\n\n*   **fin\\_get\\_stock\\_price:** This tool fetches the current stock price of AAPL.\n*   **ops\\_get\\_metrics:** This tool retrieves CPU and memory metrics for a service named \"my\\_service\" over the last hour.\n*   **cal\\_find\\_free\\_time:** This tool finds a 60-minute meeting time slot for the specified participants on January 27, 2024, considering the stock price and service metrics.\n\nI've included `verbose: true` in the `cal_find_free_time` call to get more detailed information in the response.\n",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 548,
+      "total_latency_ms": 3513,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:34.562Z"
+  },
+  {
+    "result_id": "e6eae9a8-1534-4495-aa2c-a6cdefa890d9",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2307,
+      "output_tokens": 40,
+      "total_latency_ms": 593,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:35.260Z"
+  },
+  {
+    "result_id": "3cb58103-753e-4295-8916-b40fbc60b2d5",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"auth_create_user\",\n    \"arguments\": {\n      \"email\": \"main\",\n      \"name\": \"config.json\",\n      \"role\": \"viewer\",\n      \"limit\": 1\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2314,
+      "output_tokens": 69,
+      "total_latency_ms": 757,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:36.128Z"
+  },
+  {
+    "result_id": "5d8efc0e-b2a0-48ee-9f06-abf909b36b78",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"media_transcode_video\",\n    \"arguments\": {\n      \"input_path\": \"Berlin\",\n      \"output_format\": \"mp4\",\n      \"resolution\": \"4k\",\n      \"bitrate\": \"user@example.com\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2348,
+      "output_tokens": 80,
+      "total_latency_ms": 826,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:37.054Z"
+  },
+  {
+    "result_id": "175fd2c5-7997-43c7-b8be-72b7ec52e8d0",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2350,
+      "output_tokens": 81,
+      "total_latency_ms": 832,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:37.990Z"
+  },
+  {
+    "result_id": "54f559a0-887d-4559-96f7-71a4f1753ad5",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "That's a really complex and fascinating question! The short answer is: it's *highly unlikely* that electric cars will *completely* replace gas cars, at least not in the next few decades. However, they *will* fundamentally change the automotive landscape. Here's a breakdown of why, considering the various factors involved:\n\n**Arguments for Significant Electric Car Adoption (and a Shift Away from Gas):**\n\n* **Environmental Concerns:** The biggest driver. EVs produce zero tailpipe emissions, dramatically reducing air pollution in urban areas and contributing to mitigating climate change.  Government regulations and consumer demand are pushing this forward.\n* **Falling Battery Costs:** Battery technology is improving rapidly, and costs are decreasing. This is making EVs more affordable.\n* **Performance & Driving Experience:** EVs offer instant torque, quick acceleration, and a generally quieter and smoother driving experience.\n* **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and other incentives to encourage EV adoption.\n* **Infrastructure Development:** Charging infrastructure is expanding, though it still lags behind the availability of gas stations.\n* **Total Cost of Ownership (TCO):**  Over the lifespan of a vehicle, EVs often have a lower TCO than gas cars due to lower fuel costs (electricity is generally cheaper than gasoline) and reduced maintenance needs.\n\n\n**Reasons Why Gas Cars Won't Completely Disappear:**\n\n* **Range Anxiety:**  Despite improvements, range anxiety – the fear of running out of battery – remains a significant concern for many consumers. While ranges are increasing, they're still often less than a typical gas car.\n* **Charging Time:** Charging an EV takes significantly longer than filling a gas tank.  While fast charging is improving, it’s still a barrier for some.\n* **Upfront Cost:**  While decreasing, EVs still generally have a higher initial purchase price than comparable gas cars (though this gap is narrowing).\n* **Battery Life & Replacement Costs:**  Battery degradation over time is a concern, and replacing a battery pack is a significant expense.  However, battery technology is improving rapidly, and warranties are becoming more common.\n* **Infrastructure Limitations:** The charging infrastructure isn't yet widespread enough, especially in rural areas and apartment complexes.\n* **Heavy-Duty Applications:** EVs currently struggle with applications requiring high power and torque, such as long-haul trucking, construction, and agriculture. Battery weight and charging times are major limitations.\n* **Consumer Habits & Preferences:**  Many consumers are simply accustomed to the convenience of filling up a gas tank and the perceived reliability of gas-powered vehicles.\n\n**Likely Scenario – A Mixed Fleet:**\n\nThe most probable future involves a *mixed fleet* of electric and gas-powered vehicles.  EVs will dominate urban driving and shorter commutes, while gas cars will likely remain prevalent for longer distances, heavy-duty applications, and in areas where charging infrastructure is limited.\n\n**Predictions & Estimates:**\n\n* **2030:** EVs could represent 60-80% of new car sales in many developed markets.\n* **2040:** EVs could account for 80-90% of new car sales globally.\n* **2050:**  It's more difficult to predict beyond this point, but EVs will almost certainly be the dominant form of transportation.\n\n\n**Do you want me to delve deeper into a specific aspect of this topic, such as:**\n\n*   Battery technology advancements?\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The future of electric trucks and buses?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2304,
+      "output_tokens": 749,
+      "total_latency_ms": 4685,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:42.790Z"
+  },
+  {
+    "result_id": "dfb73a2a-23d1-480b-b3d5-78e519a5962a",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {}}\n",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2299,
+      "output_tokens": 17,
+      "total_latency_ms": 453,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:43.347Z"
+  },
+  {
+    "result_id": "645aa8ff-5754-4b68-839e-4aa0c189a95e",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, let's explore the `auth` tool. It's a core component for user management within the system. Here's a breakdown of where to start and what you can do with it, along with a JSON tool call to get you started:\n\n**Understanding the `auth` Tool**\n\nThe `auth` tool is primarily used for:\n\n*   **User Creation:** `auth_create_user` –  This is the most common use case. You can create new user accounts with various attributes like email, name, and role.\n*   **Token Management:** `auth_revoke_token` – Revoking existing tokens is crucial for security – logging out users or invalidating access.\n*   **User Permissions:** `auth_update_permissions` –  Allows you to modify user roles and access permissions to specific resources.\n\n**Where to Start - Key Operations & Tool Calls**\n\n1.  **Creating a User:** This is the most fundamental operation.\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_create_user\",\n          \"arguments\": {\n            \"email\": \"testuser@example.com\",\n            \"name\": \"Test User\",\n            \"role\": \"viewer\",\n            \"password\": \"password123\",\n            \"limit\": 1\n          }\n        }\n        ```\n        This will create a new user named \"Test User\" with the email address `testuser@example.com`, assigned the \"viewer\" role, and a password of \"password123\". The `limit` parameter ensures you only get one result.\n\n2.  **Revoking a Token:**  Let's say you want to invalidate a user's session.\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_revoke_token\",\n          \"arguments\": {\n            \"token\": \"your_token_here\"\n          }\n        }\n        ```\n        Replace `\"your_token_here\"` with the actual token you want to revoke.\n\n3.  **Listing Users:**  To see a list of existing users, you can use this:\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_list_users\",\n          \"arguments\": {\n            \"role\": \"viewer\",\n            \"search\": \"test\"\n          }\n        }\n        ```\n        This will list all users with the \"viewer\" role and whose name or email contains \"test\".\n\n**Important Considerations & Next Steps**\n\n*   **Security:**  Always handle passwords securely. The system likely hashes passwords before storing them.  Don't store plain-text passwords.\n*   **Roles:**  Understand the available roles (`admin`, `editor`, `viewer`, `guest`) and their associated permissions.\n*   **Token Management:**  Proper token management is critical for security.  Revoke tokens when users log out or when access needs to be restricted.\n\nTo help me give you even more targeted guidance, could you tell me:\n\n*   What are you trying to achieve with the `auth` tool? (e.g., \"I want to create a new user account,\" or \"I need to revoke a user's access.\")",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2306,
+      "output_tokens": 706,
+      "total_latency_ms": 4413,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:47.865Z"
+  },
+  {
+    "result_id": "04e1771b-32f0-4d3f-b9f8-cda8581c0355",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6000 BC - 2000 BC):**  The earliest known form of storage.  Mesopotamians used clay tablets to record cuneiform writing.  These were durable but incredibly limited in capacity.\n* **Papyrus Scrolls (3000 BC - 1500 BC):** Egyptians and other ancient civilizations used papyrus scrolls for writing and storing knowledge.  Still bulky and prone to damage.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, allowing for multiple drafts.\n* **Punched Cards (1801 - 1898):** Joseph Jacquard used punched cards to control the weaving of intricate patterns in textiles. This was a crucial step towards automated data storage.\n\n**2. The Dawn of Electronic Storage (Early 20th Century):**\n\n* **Magnetic Tape (1928):** Fritz Pfleumer invented magnetic tape recording, initially for audio. This was a revolutionary step, offering a continuous, rewritable medium. RCA and other companies quickly adapted it for data storage.\n* **Magnetic Drum (1932):** IBM developed the magnetic drum, which stored data by magnetizing tiny spots on a rotating metal cylinder. It was incredibly fast but expensive and had limited capacity.\n* **Williams Tube (1946):**  Invented by John Mauchly and Herman Goldstine, the Williams Tube was an early form of random-access electronic memory. It used an electron beam to read and write data on a rotating cylinder.  It was unstable and short-lived.\n\n**3. The Rise of Magnetic Disks (Mid-20th Century):**\n\n* **Hard Disk Drives (HDDs) (1956):** IBM introduced the first commercially available HDD, the IBM 305 RAMAC. It used rotating platters coated with magnetic material. This was a massive improvement in capacity and speed compared to previous technologies.\n* **Floppy Disks (1969):**  IBM introduced the 5.25-inch floppy disk, initially for backup and data transfer.  Later, 3.5-inch floppy disks became ubiquitous for personal computing.\n\n**4. The Digital Revolution (Late 20th Century - Early 21st Century):**\n\n* **Optical Discs (1982):** Sony introduced the CD (Compact Disc), initially for audio but quickly adapted for storing data.\n* **DVDs (1995):**  DVDs offered significantly higher storage capacity than CDs, enabling movies and large data sets.\n* **Flash Memory (1983):**  The invention of NAND flash memory by Fujitsu was a game-changer. It’s non-volatile (retains data when power is off) and has no moving parts, making it much more durable and reliable than HDDs.\n* **Solid State Drives (SSDs) (Late 1990s - Present):** SSDs use flash memory to store data. They are significantly faster, more energy-efficient, and more durable than HDDs. They've become the standard for modern computers and mobile devices.\n\n**5. Modern Storage Trends (21st Century - Present):**\n\n* **NVMe SSDs:**  Utilize the PCIe interface for dramatically increased bandwidth.\n* **Cloud Storage:** Services like Google Drive, Dropbox, and Amazon S3 provide scalable storage solutions over the internet.\n* **DNA Storage (Emerging):**  Researchers are exploring using DNA to store massive amounts of data – potentially offering incredibly high density and longevity.\n* **3D NAND:**  Increasing storage density by stacking memory cells vertically.\n\n\n**Key Takeaways:**\n\n* **Constant Shrinking:** The trend throughout storage history has been a relentless drive to reduce the size and cost of storage while increasing its capacity and speed.\n* **Technological Convergence:**  Storage technologies have often evolved in tandem with other computing advancements (e.g., the rise of computers fueled the demand for better storage).\n\nDo you want me to delve deeper into a specific aspect of storage history, such as:\n\n*   A particular technology (e.g., HDDs, SSDs, flash memory)?\n*   The impact of storage on a specific industry (e.g., computing, media)?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2300,
+      "output_tokens": 969,
+      "total_latency_ms": 5934,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:53.908Z"
+  },
+  {
+    "result_id": "e763fd89-5b85-4956-bb22-3b3afaf6f629",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"user123\", \"role\": \"editor\", \"resources\": [\"/products\", \"/orders\"]}}\n]\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "user123",
+          "role": "editor",
+          "resources": [
+            "/products",
+            "/orders"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2307,
+      "output_tokens": 52,
+      "total_latency_ms": 656,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:54.675Z"
+  },
+  {
+    "result_id": "fd1dd845-8526-4401-8681-a8e69a4d720d",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"prefix\": \"my_documents\",\n    \"bucket\": \"my-bucket\",\n    \"max_results\": 10\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "prefix": "my_documents",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2304,
+      "output_tokens": 62,
+      "total_latency_ms": 722,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:55.501Z"
+  },
+  {
+    "result_id": "2c79c2d8-c123-4928-9b12-cf7dab3a3f78",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"images/product_photo.jpg\",\n    \"expiry_seconds\": 3600,\n    \"method\": \"GET\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "images/product_photo.jpg",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2306,
+      "output_tokens": 67,
+      "total_latency_ms": 746,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:56.347Z"
+  },
+  {
+    "result_id": "31693a39-3d39-417b-b94f-f0016c67a5f3",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 100,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 100,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2332,
+      "output_tokens": 60,
+      "total_latency_ms": 710,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:57.172Z"
+  },
+  {
+    "result_id": "d14d0670-f578-418a-8ccb-a250bba29718",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"arguments\": {\n    \"event_id\": \"example_value\",\n    \"title\": \"New Event Title\",\n    \"start\": \"2024-03-15T10:00:00Z\",\n    \"end\": \"2024-03-15T11:00:00Z\",\n    \"location\": \"Meeting Room A\",\n    \"attendees\": [\"user1@example.com\", \"user2@example.com\"],\n    \"verbose\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "New Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z",
+          "location": "Meeting Room A",
+          "attendees": [
+            "user1@example.com",
+            "user2@example.com"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.25,
+      "overall": 0.7
+    },
+    "metrics": {
+      "input_tokens": 2320,
+      "output_tokens": 144,
+      "total_latency_ms": 1188,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:58.470Z"
+  },
+  {
+    "result_id": "02c3d039-c437-43ba-8f69-c23bb8051d33",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"fin_get_account_balance\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "fin_get_account_balance",
+          "date_range": "last_30d",
+          "filters": {},
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2320,
+      "output_tokens": 74,
+      "total_latency_ms": 787,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:50:59.370Z"
+  },
+  {
+    "result_id": "2b3bf34d-6762-4591-93c5-af826b986f2d",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"wx_get_current\",\n    \"arguments\": {\n      \"location\": \"example_value\",\n      \"units\": \"metric\",\n      \"sort_by\": \"temperature\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric",
+          "sort_by": "temperature"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2323,
+      "output_tokens": 64,
+      "total_latency_ms": 724,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:00.200Z"
+  },
+  {
+    "result_id": "207b1ce3-8f46-4e9f-837c-b53b53564798",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"media_text_to_speech\",\n    \"arguments\": {\n      \"text\": \"example_value\",\n      \"voice\": \"alloy\",\n      \"language\": \"en-US\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2325,
+      "output_tokens": 66,
+      "total_latency_ms": 744,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:01.046Z"
+  },
+  {
+    "result_id": "542b1c56-0f40-4158-83f3-72f0fa8b45f6",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_revoke_token\",\n  \"arguments\": {\n    \"token\": \"a1b2c3d4-e5f6-7890-1234-567890abcdef\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_revoke_token",
+        "arguments": {
+          "token": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2314,
+      "output_tokens": 68,
+      "total_latency_ms": 747,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:01.905Z"
+  },
+  {
+    "result_id": "fbfca0b6-49d3-4137-8176-b33b46a00b3d",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"This is a test invoice creation.\",\n    \"voice\": \"alloy\",\n    \"language\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "This is a test invoice creation.",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2317,
+      "output_tokens": 63,
+      "total_latency_ms": 723,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:02.741Z"
+  },
+  {
+    "result_id": "6033bee9-5be5-47b8-83d5-3bfbfc237d86",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"ORD-20241027-001\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "ORD-20241027-001"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2321,
+      "output_tokens": 53,
+      "total_latency_ms": 666,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:03.511Z"
+  },
+  {
+    "result_id": "85cbd627-c910-4b84-a0ee-6accd985a8c4",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, let's break this down into a series of steps and use the available tools to achieve the desired outcome.\n\n**Step 1: Get Stock Price**\n\nI'll use the `fin_get_stock_price` tool to retrieve the current stock price for Apple (AAPL).\n\n```json\n{\n\"name\": \"fin_get_stock_price\",\n\"arguments\": {\n    \"ticker\": \"AAPL\",\n    \"exchange\": \"NASDAQ\",\n    \"include_history\": false\n  }\n}\n```\n\n**Step 2: Query Service Metrics**\n\nAssuming the `fin_get_stock_price` tool returns the stock price, let's assume the stock price is $175. Now, I'll use the `ops_get_metrics` tool to query CPU and memory metrics for a service.  I'll use a 1-hour window.\n\n```json\n{\n\"name\": \"ops_get_metrics\",\n\"arguments\": {\n    \"service\": \"my_service\",\n    \"metric\": \"cpu\",\n    \"window\": \"1h\"\n  }\n}\n```\n\n**Step 3: Create a Calendar Event**\n\nFinally, I'll use the `cal_find_free_time` tool to find a free time slot for a meeting. I'll use the stock price and service metrics as context for the meeting.\n\n```json\n{\n\"name\": \"cal_find_free_time\",\n\"arguments\": {\n    \"participants\": [\"user1@example.com\", \"user2@example.com\"],\n    \"duration_minutes\": 60,\n    \"start_date\": \"2024-01-27\",\n    \"end_date\": \"2024-01-27\",\n    \"verbose\": true\n  }\n}\n```\n\n**Explanation:**\n\n*   **fin\\_get\\_stock\\_price:** This tool fetches the current stock price of AAPL.\n*   **ops\\_get\\_metrics:** This tool retrieves CPU and memory metrics for a service named \"my\\_service\" over the last hour.\n*   **cal\\_find\\_free\\_time:** This tool finds a 60-minute meeting time slot for the specified participants on January 27, 2024, considering the stock price and service metrics.\n\nI've included `verbose: true` in the `cal_find_free_time` call to get more detailed information in the response.\n",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 548,
+      "total_latency_ms": 3511,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:07.137Z"
+  },
+  {
+    "result_id": "945ad06d-fb51-45c6-ade6-b386f24b5dff",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2307,
+      "output_tokens": 40,
+      "total_latency_ms": 586,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:07.833Z"
+  },
+  {
+    "result_id": "a8262239-059a-4f6e-8d4b-5b383576bc63",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"auth_create_user\",\n    \"arguments\": {\n      \"email\": \"main\",\n      \"name\": \"config.json\",\n      \"role\": \"viewer\",\n      \"limit\": 1\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2314,
+      "output_tokens": 69,
+      "total_latency_ms": 759,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:08.702Z"
+  },
+  {
+    "result_id": "dfb93879-1cb3-478f-9c89-4e7a0f6f96ec",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"media_transcode_video\",\n    \"arguments\": {\n      \"input_path\": \"Berlin\",\n      \"output_format\": \"mp4\",\n      \"resolution\": \"4k\",\n      \"bitrate\": \"user@example.com\"\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2348,
+      "output_tokens": 80,
+      "total_latency_ms": 836,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:09.646Z"
+  },
+  {
+    "result_id": "7f776343-8017-4307-bba9-9ef357179837",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n[\n  {\n    \"name\": \"cal_create_event\",\n    \"arguments\": {\n      \"title\": \"Berlin\",\n      \"start\": \"production\",\n      \"end\": \"main\",\n      \"location\": \"quarterly-report\",\n      \"attendees\": [\"value1\"]\n    }\n  }\n]\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2350,
+      "output_tokens": 81,
+      "total_latency_ms": 830,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:10.588Z"
+  },
+  {
+    "result_id": "83f550e8-a953-4775-8240-9ad0a17bf200",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "That's a really complex and fascinating question! The short answer is: it's *highly unlikely* that electric cars will *completely* replace gas cars, at least not in the next few decades. However, they *will* fundamentally change the automotive landscape. Here's a breakdown of why, considering the various factors involved:\n\n**Arguments for Significant Electric Car Adoption (and a Shift Away from Gas):**\n\n* **Environmental Concerns:** The biggest driver. EVs produce zero tailpipe emissions, dramatically reducing air pollution in urban areas and contributing to mitigating climate change.  Government regulations and consumer demand are pushing this forward.\n* **Falling Battery Costs:** Battery technology is improving rapidly, and costs are decreasing. This is making EVs more affordable.\n* **Performance & Driving Experience:** EVs offer instant torque, quick acceleration, and a generally quieter and smoother driving experience.\n* **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and other incentives to encourage EV adoption.\n* **Infrastructure Development:** Charging infrastructure is expanding, though it still lags behind the availability of gas stations.\n* **Total Cost of Ownership (TCO):**  Over the lifespan of a vehicle, EVs often have a lower TCO than gas cars due to lower fuel costs (electricity is generally cheaper than gasoline) and reduced maintenance needs.\n\n\n**Reasons Why Gas Cars Won't Completely Disappear:**\n\n* **Range Anxiety:**  Despite improvements, range anxiety – the fear of running out of battery – remains a significant concern for many consumers. While ranges are increasing, they're still often less than a typical gas car.\n* **Charging Time:** Charging an EV takes significantly longer than filling a gas tank.  While fast charging is improving, it’s still a barrier for some.\n* **Upfront Cost:**  While decreasing, EVs still generally have a higher initial purchase price than comparable gas cars (though this gap is narrowing).\n* **Battery Life & Replacement Costs:**  Battery degradation over time is a concern, and replacing a battery pack is a significant expense.  However, battery technology is improving rapidly, and warranties are becoming more common.\n* **Infrastructure Limitations:** The charging infrastructure isn't yet widespread enough, especially in rural areas and apartment complexes.\n* **Heavy-Duty Applications:** EVs currently struggle with applications requiring high power and torque, such as long-haul trucking, construction, and agriculture. Battery weight and charging times are major limitations.\n* **Consumer Habits & Preferences:**  Many consumers are simply accustomed to the convenience of filling up a gas tank and the perceived reliability of gas-powered vehicles.\n\n**Likely Scenario – A Mixed Fleet:**\n\nThe most probable future involves a *mixed fleet* of electric and gas-powered vehicles.  EVs will dominate urban driving and shorter commutes, while gas cars will likely remain prevalent for longer distances, heavy-duty applications, and in areas where charging infrastructure is limited.\n\n**Predictions & Estimates:**\n\n* **2030:** EVs could represent 60-80% of new car sales in many developed markets.\n* **2040:** EVs could account for 80-90% of new car sales globally.\n* **2050:**  It's more difficult to predict beyond this point, but EVs will almost certainly be the dominant form of transportation.\n\n\n**Do you want me to delve deeper into a specific aspect of this topic, such as:**\n\n*   Battery technology advancements?\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The future of electric trucks and buses?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2304,
+      "output_tokens": 749,
+      "total_latency_ms": 4677,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:15.369Z"
+  },
+  {
+    "result_id": "0c583f1e-539a-41c6-97cd-f4c00c440b93",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {}}\n",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2299,
+      "output_tokens": 17,
+      "total_latency_ms": 458,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:15.936Z"
+  },
+  {
+    "result_id": "0f593e6a-d7f9-4fc9-9053-76eb0f406f6b",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, let's explore the `auth` tool. It's a core component for user management within the system. Here's a breakdown of where to start and what you can do with it, along with a JSON tool call to get you started:\n\n**Understanding the `auth` Tool**\n\nThe `auth` tool is primarily used for:\n\n*   **User Creation:** `auth_create_user` –  This is the most common use case. You can create new user accounts with various attributes like email, name, and role.\n*   **Token Management:** `auth_revoke_token` – Revoking existing tokens is crucial for security – logging out users or invalidating access.\n*   **User Permissions:** `auth_update_permissions` –  Allows you to modify user roles and access permissions to specific resources.\n\n**Where to Start - Key Operations & Tool Calls**\n\n1.  **Creating a User:** This is the most fundamental operation.\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_create_user\",\n          \"arguments\": {\n            \"email\": \"testuser@example.com\",\n            \"name\": \"Test User\",\n            \"role\": \"viewer\",\n            \"password\": \"password123\",\n            \"limit\": 1\n          }\n        }\n        ```\n        This will create a new user named \"Test User\" with the email address `testuser@example.com`, assigned the \"viewer\" role, and a password of \"password123\". The `limit` parameter ensures you only get one result.\n\n2.  **Revoking a Token:**  Let's say you want to invalidate a user's session.\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_revoke_token\",\n          \"arguments\": {\n            \"token\": \"your_token_here\"\n          }\n        }\n        ```\n        Replace `\"your_token_here\"` with the actual token you want to revoke.\n\n3.  **Listing Users:**  To see a list of existing users, you can use this:\n\n    *   **Tool Call:**\n        ```json\n        {\n          \"name\": \"auth_list_users\",\n          \"arguments\": {\n            \"role\": \"viewer\",\n            \"search\": \"test\"\n          }\n        }\n        ```\n        This will list all users with the \"viewer\" role and whose name or email contains \"test\".\n\n**Important Considerations & Next Steps**\n\n*   **Security:**  Always handle passwords securely. The system likely hashes passwords before storing them.  Don't store plain-text passwords.\n*   **Roles:**  Understand the available roles (`admin`, `editor`, `viewer`, `guest`) and their associated permissions.\n*   **Token Management:**  Proper token management is critical for security.  Revoke tokens when users log out or when access needs to be restricted.\n\nTo help me give you even more targeted guidance, could you tell me:\n\n*   What are you trying to achieve with the `auth` tool? (e.g., \"I want to create a new user account,\" or \"I need to revoke a user's access.\")",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2306,
+      "output_tokens": 706,
+      "total_latency_ms": 4423,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:20.462Z"
+  },
+  {
+    "result_id": "6c6602df-7824-4392-b1ee-07664946092c",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6000 BC - 2000 BC):**  The earliest known form of storage.  Mesopotamians used clay tablets to record cuneiform writing.  These were durable but incredibly limited in capacity.\n* **Papyrus Scrolls (3000 BC - 1500 BC):** Egyptians and other ancient civilizations used papyrus scrolls for writing and storing knowledge.  Still bulky and prone to damage.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, allowing for multiple drafts.\n* **Punched Cards (1801 - 1898):** Joseph Jacquard used punched cards to control the weaving of intricate patterns in textiles. This was a crucial step towards automated data storage.\n\n**2. The Dawn of Electronic Storage (Early 20th Century):**\n\n* **Magnetic Tape (1928):** Fritz Pfleumer invented magnetic tape recording, initially for audio. This was a revolutionary step, offering a continuous, rewritable medium. RCA and other companies quickly adapted it for data storage.\n* **Magnetic Drum (1932):** IBM developed the magnetic drum, which stored data by magnetizing tiny spots on a rotating metal cylinder. It was incredibly fast but expensive and had limited capacity.\n* **Williams Tube (1946):**  Invented by John Mauchly and Herman Goldstine, the Williams Tube was an early form of random-access electronic memory. It used an electron beam to read and write data on a rotating cylinder.  It was unstable and short-lived.\n\n**3. The Rise of Magnetic Disks (Mid-20th Century):**\n\n* **Hard Disk Drives (HDDs) (1956):** IBM introduced the first commercially available HDD, the IBM 305 RAMAC. It used rotating platters coated with magnetic material. This was a massive improvement in capacity and speed compared to previous technologies.\n* **Floppy Disks (1969):**  IBM introduced the 5.25-inch floppy disk, initially for backup and data transfer.  Later, 3.5-inch floppy disks became ubiquitous for personal computing.\n\n**4. The Digital Revolution (Late 20th Century - Early 21st Century):**\n\n* **Optical Discs (1982):** Sony introduced the CD (Compact Disc), initially for audio but quickly adapted for storing data.\n* **DVDs (1995):**  DVDs offered significantly higher storage capacity than CDs, enabling movies and large data sets.\n* **Flash Memory (1983):**  The invention of NAND flash memory by Fujitsu was a game-changer. It’s non-volatile (retains data when power is off) and has no moving parts, making it much more durable and reliable than HDDs.\n* **Solid State Drives (SSDs) (Late 1990s - Present):** SSDs use flash memory to store data. They are significantly faster, more energy-efficient, and more durable than HDDs. They've become the standard for modern computers and mobile devices.\n\n**5. Modern Storage Trends (21st Century - Present):**\n\n* **NVMe SSDs:**  Utilize the PCIe interface for dramatically increased bandwidth.\n* **Cloud Storage:** Services like Google Drive, Dropbox, and Amazon S3 provide scalable storage solutions over the internet.\n* **DNA Storage (Emerging):**  Researchers are exploring using DNA to store massive amounts of data – potentially offering incredibly high density and longevity.\n* **3D NAND:**  Increasing storage density by stacking memory cells vertically.\n\n\n**Key Takeaways:**\n\n* **Constant Shrinking:** The trend throughout storage history has been a relentless drive to reduce the size and cost of storage while increasing its capacity and speed.\n* **Technological Convergence:**  Storage technologies have often evolved in tandem with other computing advancements (e.g., the rise of computers fueled the demand for better storage).\n\nDo you want me to delve deeper into a specific aspect of storage history, such as:\n\n*   A particular technology (e.g., HDDs, SSDs, flash memory)?\n*   The impact of storage on a specific industry (e.g., computing, media)?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2300,
+      "output_tokens": 969,
+      "total_latency_ms": 5955,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T20:51:26.531Z"
+  }
+]

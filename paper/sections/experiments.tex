@@ -1,0 +1,141 @@
+\section{Experiments}
+\label{sec:experiments}
+
+% Pre-TAB evaluation (19 core tasks, 6 strategies, 11 runs, domain benchmarks,
+% multi-model protocol, LLMLingua comparison) relocated to Appendix~\ref{app:pre-tab}.
+
+\subsection{TAB: TSCG-Agentic-Bench}
+\label{sec:tab-benchmark}
+
+TAB is the first benchmark measuring tool-schema compression effects on LLM tool-use, comprising five scenarios across ${\sim}$13{,}000 API calls and 12~models (4B--32B local + 3~frontier; Table~\ref{tab:tab-overview}).
+Each scenario compares Natural (uncompressed JSON), TSCG, and TSCG+SAD across four task categories (single\_tool, multi\_tool, parameter\_extraction, no\_tool).
+Overall accuracy = $0.6 \times \text{TSA} + 0.4 \times \text{PF1}$.
+
+\begin{table}[h]
+\centering
+\small
+\caption{TAB: five scenarios, ${\sim}$13{,}000 calls.}
+\label{tab:tab-overview}
+\begin{tabular}{llrr}
+\toprule
+\textbf{Sc.} & \textbf{Focus} & \textbf{Tools} & \textbf{Calls} \\
+\midrule
+A & Claude Code (16 real tools) & 16 & ${\sim}$540 \\
+B & MCP Servers & 43 & ${\sim}$2{,}700 \\
+C & Scaling (25--100 tools) & var. & ${\sim}$1{,}080 \\
+D & Small models $\times$ 7 configs & var. & ${\sim}$5{,}000 \\
+E & Multi-collection & 57 & ${\sim}$540 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Scenario A (Claude Code).}
+Claude Sonnet~4 achieves 68.9\% natural (JSON), 78.9\% TSCG (50.1\% savings, ARR~115\%).
+Text-mode: TSCG 87.8\% vs.\ 76.9\% natural---$+$10.9\,pp genuine compression.
+GPT-5.2 shows the largest frontier effect: $+$24.4\,pp (CI~[$+$15.0, $+$33.9], $d{=}0.54$).
+
+\paragraph{Scenario D (Small-Model Unlock).}
+Seven models (4B--14B) at 3--50 tools: JSON-baseline accuracy 0--49\% at $>$15 tools; TSCG recovers to 65--90\% (Table~\ref{tab:small-model}).
+Models exceeding the 65\% threshold at 50~tools rise from 4/7 to 7/7 (Figure~\ref{fig:capability-heatmap}).
+
+\begin{table}[h]
+\centering
+\small
+\caption{Scenario D: accuracy at 20 and 50 tools.}
+\label{tab:small-model}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \multicolumn{2}{c}{\textbf{20 Tools}} & \multicolumn{2}{c}{\textbf{50 Tools}} & \textbf{Shift} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+& Nat. & TSCG & Nat. & TSCG & \\
+\midrule
+Phi-4 14B    & 0.0  & 84.4 & 0.0  & 90.3 & 3$\to$50  \\
+Mistral 7B   & 35.0 & 80.1 & 30.0 & 65.0 & 20$\to$50 \\
+Gemma 3 4B   & 49.9 & 67.0 & 24.3 & 87.4 & 15$\to$50 \\
+Gemma 3 12B  & 85.0 & 95.0 & 85.0 & 98.0 & ---  \\
+Llama 3.1 8B & 78.4 & 81.0 & 75.1 & 86.3 & ---  \\
+Qwen3 4B     & 44.3 & 69.3 & 90.0 & 75.0 & volatile  \\
+Qwen3 14B    & 90.2 & 84.1 & 94.6 & 89.6 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\input{figures/fig2-capability-heatmap}
+
+N1 extends to 30B: Mistral-Small~24B ($-$1.1\,pp, Class~3); Qwen2.5-Coder~32B ($-$4.7\,pp, Class~4)---Qwen sensitivity persists across sizes.
+
+\subsection{Format Translation vs.\ Compression (E4)}
+\label{sec:format-effect}
+
+E4 decomposes TSCG's JSON-baseline gains into format gain (text$-$JSON) and compression gain (TSCG$-$text) across six small models (2{,}520 Ollama calls; Table~\ref{tab:e4-decomposition}).
+
+\begin{table}[h]
+\centering
+\small
+\caption{E4: format vs.\ compression decomposition. No small model shows genuine compression.}
+\label{tab:e4-decomposition}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Model} & \textbf{Format $\Delta$} & \textbf{Compr.\ $\Delta$} & \textbf{Class} \\
+\midrule
+Phi-4 14B    & $+$92.0 & $-$7.0  & 1: Format \\
+Mistral 7B   & $+$44.6 & $-$7.4  & 1: Format \\
+Gemma 3 4B   & $+$47.3 & $-$8.9  & 1: Format \\
+Qwen3 4B     & $+$16.7 & $-$23.4 & 1: Format \\
+Llama 3.1 8B & $+$5.6  & $+$0.3  & 3: Neutral \\
+Gemma 3 12B  & $+$9.2  & $-$0.9  & 3: Neutral \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+TSCG's gains on small models arise from format translation (JSON$\to$text), not structural compression.
+Since every production API transmits JSON, this translation \emph{is} the needed intervention.
+Naive truncation outperforms TSCG in hypothetical text-mode (mean $+$10.6\,pp), but no production framework offers text-mode tools.
+
+\subsection{R\textsuperscript{2} Decomposition and Naive Truncation}
+\label{sec:correlation-thesis}
+
+The predictive regression ($n{=}49$, 7~models $\times$ 7~sizes) yields:
+\begin{equation}
+\Delta_\text{TSCG} \approx -0.93 \times \text{Acc}_\text{JSON} + 0.76, \quad R^2 = 0.88
+\label{eq:correlation}
+\end{equation}
+Against text baselines (E4): $R^2$ collapses to 0.03 ($p{=}0.24$)---a 97\% drop confirming format sensitivity, not compression (Figure~\ref{fig:natural-vs-delta}).
+LOO RMSE = 12.8\,pp (detail in Appendix~\ref{app:loo-details}).
+
+\input{figures/fig8-natural-vs-delta}
+
+\label{sec:naive-truncation}
+At 16~tools, naive truncation matches TSCG (87.0\% vs.\ 87.8\%; Table~\ref{tab:naive-truncation}).
+At 50~ambiguous tools, TSCG achieves 100\% vs.\ 98.5\%, with multi-tool sequencing driving the gap (87.5\% vs.\ 75.0\%).
+
+\begin{table}[h]
+\centering
+\small
+\caption{Naive truncation vs.\ TSCG (text-mode, Claude Sonnet~4).}
+\label{tab:naive-truncation}
+\begin{tabular}{llrrr}
+\toprule
+\textbf{Sc.} & \textbf{Condition} & \textbf{Savings} & \textbf{TSA} & \textbf{Overall} \\
+\midrule
+\multirow{3}{*}{A-16}
+& Natural-Text     & ---    & 85.0 & 76.9 \\
+& TSCG             & 17\% & 95.0 & 87.8 \\
+& Naive trunc.     & 93\% & 95.0 & 87.0 \\
+\midrule
+\multirow{3}{*}{C-50}
+& Natural-Text     & ---    & 95.0 & 95.0 \\
+& TSCG             & 23\% & 100.0 & 100.0 \\
+& Naive trunc.     & 87\% & 100.0 & 98.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{External Validation}
+\label{sec:bfcl-integration}
+
+BFCL: 93.2\% on Berkeley Function Calling Leaderboard schemas (vs.\ 85.7\% natural; ARR~108\%, 46.8\% savings)---TSCG \emph{improves} accuracy on third-party benchmarks.
+GSM8K-Under-Load: reasoning preserved (${\sim}$81\% across 0--50 tools); details in Appendix~\ref{app:gsm8k}.
+Conservative SDM on Qwen3-14B: $+$4.4\,pp (balanced: $-$6.6\,pp); ablation in Appendix~\ref{app:sdm-detail} and Figure~\ref{fig:sdm-ablation}.
+
+\input{figures/fig7-sdm-ablation}

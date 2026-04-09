@@ -1,0 +1,35 @@
+{
+  "runId": "D-1772539132736",
+  "startedAt": "2026-03-03T11:58:52.736Z",
+  "gitCommit": "68669f04e0375beaa02ccad9cdf3f2aac01cebf6",
+  "gitBranch": "plan-5-1",
+  "gitDirty": true,
+  "experimentPlanHash": "unknown",
+  "scenario": "D",
+  "models": [
+    "claude-sonnet-4"
+  ],
+  "conditions": [
+    "natural",
+    "tscg",
+    "tscg_sad"
+  ],
+  "runs": 3,
+  "seed": 42,
+  "nodeVersion": "v24.12.0",
+  "platform": "win32-x64",
+  "errors": [
+    {
+      "timestamp": "2026-03-03T11:59:37.410Z",
+      "message": "rate_limit_exhausted: Anthropic API error (429): This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: ee306714-36ba-4b1c-aba4-cbb42065ec6c, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.",
+      "task": "tab-D-ts-008"
+    },
+    {
+      "timestamp": "2026-03-03T12:00:24.207Z",
+      "message": "rate_limit_exhausted: Anthropic API error (429): This request would exceed your organization's rate limit of 30,000 input tokens per minute (org: ee306714-36ba-4b1c-aba4-cbb42065ec6c, model: claude-sonnet-4-20250514). For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.",
+      "task": "tab-D-pe-003"
+    }
+  ],
+  "excludedCalls": [],
+  "completedAt": "2026-03-03T12:13:14.218Z"
+}

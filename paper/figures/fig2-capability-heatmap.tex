@@ -1,0 +1,197 @@
+% fig2-capability-heatmap.tex -- TSCG Delta heatmap: Model x Tool Count
+% Included via \input{figures/fig2-capability-heatmap} from main.tex
+% Requires: tikz, pgfplots (compat=1.18), xcolor, custom tscg* colors from main.tex
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+    % --- cell dimensions ---
+    cell width/.store in=\cellw, cell width=1.85cm,
+    cell height/.store in=\cellh, cell height=0.82cm,
+]
+
+% =========================================================================
+%  Color mapping: red (negative) -> white (0) -> green (positive)
+%  Clamp range to [-25, +95] for visual balance
+% =========================================================================
+\pgfmathdeclarefunction{heatR}{1}{%
+    \pgfmathparse{%
+        (#1 < 0) ? (100) :                              % negative -> red channel high
+        (#1 >= 0 && #1 <= 95) ? (100 - #1*1.05) :       % positive -> fade red out
+        (0)                                              % saturated green
+    }%
+}
+\pgfmathdeclarefunction{heatG}{1}{%
+    \pgfmathparse{%
+        (#1 < -25) ? (0) :                              % deep negative -> no green
+        (#1 >= -25 && #1 < 0) ? (100 + #1*4) :          % negative -> dim green
+        (#1 >= 0) ? (100) :                              % positive -> green channel high
+        (0)
+    }%
+}
+\pgfmathdeclarefunction{heatB}{1}{%
+    \pgfmathparse{%
+        (#1 < 0) ? (100 + #1*4) :                       % negative -> dim blue
+        (#1 >= 0 && #1 <= 95) ? (100 - #1*1.05) :       % positive -> fade blue out
+        (0)
+    }%
+}
+
+% =========================================================================
+%  Helper: draw one heatmap cell
+%    #1 = column index (0-based), #2 = row index (0-based), #3 = delta value
+% =========================================================================
+\newcommand{\hcell}[3]{%
+    \pgfmathsetmacro{\cR}{heatR(#3)}%
+    \pgfmathsetmacro{\cG}{heatG(#3)}%
+    \pgfmathsetmacro{\cB}{heatB(#3)}%
+    \definecolor{cellcol}{RGB}{\cR,\cG,\cB}%
+    % choose black text on light cells, white on dark cells
+    \pgfmathsetmacro{\lum}{0.299*\cR + 0.587*\cG + 0.114*\cB}%
+    \pgfmathparse{\lum > 55 ? 1 : 0}%
+    \ifnum\pgfmathresult=1
+        \colorlet{txtcol}{black!85}%
+    \else
+        \colorlet{txtcol}{white}%
+    \fi
+    % draw filled rectangle
+    \fill[cellcol, rounded corners=1.5pt]
+        ({#1*\cellw}, {#2*\cellh})
+        rectangle
+        ({#1*\cellw + \cellw - 0.06cm}, {#2*\cellh + \cellh - 0.06cm});
+    % print value
+    \node[font=\small\bfseries, text=txtcol]
+        at ({#1*\cellw + \cellw/2 - 0.03cm}, {#2*\cellh + \cellh/2 - 0.03cm})
+        {\pgfmathprintnumber[fixed, precision=1, showpos]{#3}};
+}
+
+% =========================================================================
+%  Data matrix  (row 0 = bottom = Qwen3 4B, row 6 = top = Phi-4 14B)
+%  Sorted by parameter size ascending (bottom to top)
+%  Columns: 3, 5, 10, 15, 20, 30, 50
+% =========================================================================
+
+% Row 0: Qwen3 4B
+\hcell{0}{0}{-3.2}   \hcell{1}{0}{-10.0}  \hcell{2}{0}{-19.7}
+\hcell{3}{0}{5.0}    \hcell{4}{0}{25.0}   \hcell{5}{0}{-15.0}  \hcell{6}{0}{-15.0}
+
+% Row 1: Gemma 3 4B
+\hcell{0}{1}{74.9}   \hcell{1}{1}{13.0}   \hcell{2}{1}{5.6}
+\hcell{3}{1}{1.1}    \hcell{4}{1}{17.1}   \hcell{5}{1}{34.7}   \hcell{6}{1}{63.1}
+
+% Row 2: Mistral 7B
+\hcell{0}{2}{-3.6}   \hcell{1}{2}{-0.7}   \hcell{2}{2}{-10.2}
+\hcell{3}{2}{-10.6}  \hcell{4}{2}{45.1}   \hcell{5}{2}{36.3}   \hcell{6}{2}{35.0}
+
+% Row 3: Llama 3.1 8B
+\hcell{0}{3}{18.8}   \hcell{1}{3}{17.0}   \hcell{2}{3}{-1.2}
+\hcell{3}{3}{4.1}    \hcell{4}{3}{2.6}    \hcell{5}{3}{-0.8}   \hcell{6}{3}{11.1}
+
+% Row 4: Gemma 3 12B
+\hcell{0}{4}{-0.7}   \hcell{1}{4}{-2.9}   \hcell{2}{4}{-12.9}
+\hcell{3}{4}{-1.1}   \hcell{4}{4}{14.0}   \hcell{5}{4}{-2.2}   \hcell{6}{4}{13.0}
+
+% Row 5: Qwen3 14B
+\hcell{0}{5}{-4.1}   \hcell{1}{5}{-16.5}  \hcell{2}{5}{-8.3}
+\hcell{3}{5}{-10.3}  \hcell{4}{5}{-6.1}   \hcell{5}{5}{-21.5}  \hcell{6}{5}{-5.0}
+
+% Row 6: Phi-4 14B
+\hcell{0}{6}{-3.5}   \hcell{1}{6}{87.5}   \hcell{2}{6}{89.4}
+\hcell{3}{6}{83.9}   \hcell{4}{6}{84.4}   \hcell{5}{6}{75.1}   \hcell{6}{6}{90.3}
+
+% =========================================================================
+%  Column headers (tool counts)
+% =========================================================================
+\foreach \col/\lab in {0/3, 1/5, 2/10, 3/15, 4/20, 5/30, 6/50} {
+    \node[font=\small\bfseries, text=black!80, anchor=south]
+        at ({\col*\cellw + \cellw/2 - 0.03cm}, {7*\cellh + 0.08cm}) {\lab};
+}
+% axis label
+\node[font=\small\bfseries, text=black!60, anchor=south]
+    at ({3*\cellw + \cellw/2 - 0.03cm}, {7*\cellh + 0.42cm}) {Tool Count};
+
+% =========================================================================
+%  Row labels (model names, left side)
+% =========================================================================
+\foreach \row/\lab in {
+    0/{Qwen3 4B},
+    1/{Gemma 3 4B},
+    2/{Mistral 7B},
+    3/{Llama 3.1 8B},
+    4/{Gemma 3 12B},
+    5/{Qwen3 14B},
+    6/{Phi-4 14B}%
+} {
+    \node[font=\small, anchor=east, text=black!85]
+        at ({-0.15cm}, {\row*\cellh + \cellh/2 - 0.03cm}) {\lab};
+}
+
+% =========================================================================
+%  Cluster annotations (right side, with decorations.pathreplacing braces)
+% =========================================================================
+
+% Cluster 1: "Format Effect" -- Phi-4 (row 6) -- E1 confirmed: JSON->text translation
+\draw[decorate, decoration={brace, amplitude=4pt, mirror},
+      tscggreen!80!black, line width=0.8pt]
+    ({6*\cellw + \cellw + 0.12cm}, {6*\cellh - 0.06cm})
+    -- ({6*\cellw + \cellw + 0.12cm}, {6*\cellh + \cellh - 0.06cm})
+    node[midway, right=5pt, font=\scriptsize\itshape, text=tscggreen!70!black,
+         align=left] {Format\\Effect$^\dagger$};
+
+% Cluster 2: "Format-dominated" -- Mistral + Gemma 4B (rows 1-2) -- E4 confirmed
+\draw[decorate, decoration={brace, amplitude=4pt, mirror},
+      tscgblue!80!black, line width=0.8pt]
+    ({6*\cellw + \cellw + 0.12cm}, {1*\cellh - 0.06cm})
+    -- ({6*\cellw + \cellw + 0.12cm}, {2*\cellh + \cellh - 0.06cm})
+    node[midway, right=5pt, font=\scriptsize\itshape, text=tscgblue!80!black,
+         align=left] {Format-\\dom.$^\dagger$};
+
+% Cluster 3: "Neutral" -- Llama + Gemma 12B (rows 3-4)
+\draw[decorate, decoration={brace, amplitude=4pt, mirror},
+      black!50, line width=0.8pt]
+    ({6*\cellw + \cellw + 0.12cm}, {3*\cellh - 0.06cm})
+    -- ({6*\cellw + \cellw + 0.12cm}, {4*\cellh + \cellh - 0.06cm})
+    node[midway, right=5pt, font=\scriptsize\itshape, text=black!50,
+         align=left] {Neutral};
+
+% Cluster 4: "Negative" -- Qwen3 14B + Qwen3 4B (rows 0, 5)
+\draw[decorate, decoration={brace, amplitude=4pt, mirror},
+      tscgred!80!black, line width=0.8pt]
+    ({6*\cellw + \cellw + 0.12cm}, {5*\cellh - 0.06cm})
+    -- ({6*\cellw + \cellw + 0.12cm}, {5*\cellh + \cellh - 0.06cm})
+    node[midway, right=5pt, font=\scriptsize\itshape, text=tscgred!80!black,
+         align=left] {Negative};
+
+\draw[decorate, decoration={brace, amplitude=4pt, mirror},
+      tscgred!80!black, line width=0.8pt]
+    ({6*\cellw + \cellw + 0.12cm}, {0*\cellh - 0.06cm})
+    -- ({6*\cellw + \cellw + 0.12cm}, {0*\cellh + \cellh - 0.06cm})
+    node[midway, right=5pt, font=\scriptsize\itshape, text=tscgred!80!black,
+         align=left] {Mixed};
+
+% =========================================================================
+%  Color legend (horizontal bar below the matrix)
+% =========================================================================
+\begin{scope}[yshift=-1.2cm]
+    % gradient bar
+    \shade[left color=red!90!black, right color=white, rounded corners=1.5pt]
+        ({1.5*\cellw}, 0) rectangle ({3.25*\cellw}, 0.32cm);
+    \shade[left color=white, right color=green!75!black, rounded corners=1.5pt]
+        ({3.25*\cellw}, 0) rectangle ({5.0*\cellw}, 0.32cm);
+    % ticks
+    \node[font=\tiny, anchor=north, text=black!70] at ({1.5*\cellw}, -0.04cm) {$-20$};
+    \node[font=\tiny, anchor=north, text=black!70] at ({3.25*\cellw}, -0.04cm) {$0$};
+    \node[font=\tiny, anchor=north, text=black!70] at ({5.0*\cellw}, -0.04cm) {$+90$};
+    % label
+    \node[font=\scriptsize, anchor=east, text=black!70] at ({1.35*\cellw}, 0.16cm)
+        {$\Delta$ (pp):};
+    % semantic labels
+    \node[font=\tiny, text=tscgred!80!black, anchor=north] at ({2.0*\cellw}, -0.35cm)
+        {TSCG hurts};
+    \node[font=\tiny, text=tscggreen!80!black, anchor=north] at ({4.5*\cellw}, -0.35cm)
+        {TSCG helps};
+\end{scope}
+
+\end{tikzpicture}
+\caption{TSCG delta heatmap ($\Delta = \text{TSCG accuracy} - \text{JSON-baseline accuracy}$, in percentage points) across seven models and seven tool-count conditions. Green cells indicate conditions where TSCG improves over JSON schemas; red cells indicate degradation. Five behavioral clusters emerge: \emph{Format Effect}$^\dagger$---Phi-4's +75--90\,pp gains are JSON$\to$text translation, not compression benefit (\S\ref{sec:format-effect}); \emph{Format-dominated}$^\dagger$---Mistral and Gemma~4B show large deltas driven primarily by format translation; \emph{Neutral}---Llama~3.1~8B and Gemma~3~12B show modest mixed effects; \emph{Negative}---Qwen3~14B shows uniform degradation ($-$4 to $-$22\,pp); \emph{Mixed}---Qwen3~4B exhibits chaotic response. $^\dagger$E1/E4 text-baseline experiments confirm format contribution (\S\ref{sec:experiments}).}
+\label{fig:capability-heatmap}
+\end{figure*}

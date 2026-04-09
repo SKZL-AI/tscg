@@ -1,0 +1,3172 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Qwen3 4B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-02T19:10:09.271Z",
+    "end_time": "2026-03-02T19:17:51.107Z",
+    "duration_ms": 461836
+  },
+  "results": [
+    {
+      "result_id": "4c50824b-4d17-47f2-82d0-240583f64cdd",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The air quality index and pollutant levels require a specific location (city name or coordinates) to retrieve. Could you please provide the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 620,
+        "output_tokens": 413,
+        "total_latency_ms": 6010,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:16.086Z"
+    },
+    {
+      "result_id": "bb07afea-66b0-4479-a9d9-e3eda3e43611",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Please provide the report ID for the pre-defined analytics report you'd like to run.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 621,
+        "output_tokens": 809,
+        "total_latency_ms": 4591,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:20.780Z"
+    },
+    {
+      "result_id": "822b62c3-3141-4967-ab5f-559bccce48cc",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Yes, I can record a custom analytics event with associated properties using the `analytics_track_event` function. Please provide the event name and any properties you'd like to track, and I'll help you set it up.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 613,
+        "total_latency_ms": 3470,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:24.360Z"
+    },
+    {
+      "result_id": "ff61daa8-7222-4d64-bd99-2dded7cb4bdb",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 631,
+        "output_tokens": 423,
+        "total_latency_ms": 2409,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:26.884Z"
+    },
+    {
+      "result_id": "61a8b9fc-0036-42b4-a6bb-20fc3e44ed9a",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 639,
+        "output_tokens": 255,
+        "total_latency_ms": 1477,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:28.461Z"
+    },
+    {
+      "result_id": "ada5e66d-193c-4537-9aad-7a1605e65593",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 631,
+        "output_tokens": 1024,
+        "total_latency_ms": 5814,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:34.378Z"
+    },
+    {
+      "result_id": "a8aae79e-730a-4e88-9999-01ef270b6d7b",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"test_input\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "test_input",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 638,
+        "output_tokens": 411,
+        "total_latency_ms": 2379,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:36.866Z"
+    },
+    {
+      "result_id": "db2f0639-10da-4434-8057-9544bf4e96a7",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 638,
+        "output_tokens": 310,
+        "total_latency_ms": 1783,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:38.750Z"
+    },
+    {
+      "result_id": "503f1d93-5075-4941-9978-c11634379ad3",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 625,
+        "output_tokens": 1024,
+        "total_latency_ms": 5800,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:44.659Z"
+    },
+    {
+      "result_id": "ef3be588-bcfe-4b24-b535-0e133b32ce7e",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 627,
+        "output_tokens": 1024,
+        "total_latency_ms": 5813,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:50.575Z"
+    },
+    {
+      "result_id": "202a90d1-b73b-45fa-9bbc-185814b4f45b",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 636,
+        "output_tokens": 1024,
+        "total_latency_ms": 5798,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:10:56.484Z"
+    },
+    {
+      "result_id": "b7267d7a-02f2-450b-9bdf-b67a744a55d1",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 636,
+        "output_tokens": 1024,
+        "total_latency_ms": 5815,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:02.414Z"
+    },
+    {
+      "result_id": "950f960e-b79f-440a-acc4-11240960be8f",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 628,
+        "output_tokens": 337,
+        "total_latency_ms": 1929,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:04.452Z"
+    },
+    {
+      "result_id": "c699ed07-a34c-4a1c-9e86-7872cbcdc10a",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 629,
+        "output_tokens": 565,
+        "total_latency_ms": 3204,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:07.761Z"
+    },
+    {
+      "result_id": "b870786d-1525-45c6-b1d0-b083ff3da61e",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536.37}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536.37
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 649,
+        "output_tokens": 513,
+        "total_latency_ms": 2931,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:10.805Z"
+    },
+    {
+      "result_id": "92793f96-980e-45a2-8eb0-09fa4fc61127",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 648,
+        "output_tokens": 705,
+        "total_latency_ms": 3990,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:14.900Z"
+    },
+    {
+      "result_id": "848ef19f-0d30-4c21-b64c-a4221da40652",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The square root of 144 is 12. \n\nNo tool calls are needed for this mathematical calculation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 175,
+        "total_latency_ms": 1033,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:16.047Z"
+    },
+    {
+      "result_id": "a53911a2-e4ad-49a8-9a78-027c57c46e1f",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The boiling point of water at standard atmospheric pressure (101.325 kPa) is **100°C**. \n\nThis information does not require any of the provided tools, as it is a well-established scientific fact.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 618,
+        "output_tokens": 245,
+        "total_latency_ms": 1409,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:17.558Z"
+    },
+    {
+      "result_id": "c7b6de90-51b7-4a9e-b7ad-55f8f984bee7",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The available tools (e.g., `analytics_track_event`, `analytics_run_report`) are specific implementations for tracking events and generating reports, but they do not provide a framework for comparing *analytics approaches* (e.g., descriptive vs. predictive analytics, real-time vs. batch processing, etc.). To answer your question about pros and cons of different analytics approaches, we would need to discuss conceptual methodologies rather than execute tool-based actions. \n\nFor example:\n- **Pros of descriptive analytics**: Simple, historical data analysis; good for identifying trends.\n- **Cons of descriptive analytics**: Limited to past data; cannot predict future outcomes.\n\nSince this query requires conceptual analysis rather than tool execution, no tool calls are needed here. Let me know if you'd like to run a specific analytics report or track an event!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 618,
+        "output_tokens": 618,
+        "total_latency_ms": 3514,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:21.185Z"
+    },
+    {
+      "result_id": "854ec8c7-f96b-46ac-99f7-843c211da875",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools that can analyze or compare code review approaches. My available tools only support analytics event tracking, air quality data lookup, and analytics report generation. This request falls outside the scope of my current capabilities. Would you like help with something that can be addressed using the tools I do have?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 290,
+        "total_latency_ms": 1678,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:22.975Z"
+    },
+    {
+      "result_id": "c1719727-39f8-4837-b7fe-0ae552daa45a",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The air quality index and pollutant levels require a specific location (city name or coordinates) to retrieve. Could you please provide the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 620,
+        "output_tokens": 413,
+        "total_latency_ms": 2340,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:25.415Z"
+    },
+    {
+      "result_id": "a66925ab-d65e-4311-a4be-5e40c5684b97",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Please provide the report ID for the pre-defined analytics report you'd like to run.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 621,
+        "output_tokens": 809,
+        "total_latency_ms": 4575,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:30.094Z"
+    },
+    {
+      "result_id": "2141cf21-6499-4b9d-bf85-7d69ea222381",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Yes, I can record a custom analytics event with associated properties using the `analytics_track_event` function. Please provide the event name and any properties you'd like to track, and I'll help you set it up.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 613,
+        "total_latency_ms": 3476,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:33.681Z"
+    },
+    {
+      "result_id": "98d20411-4efb-4d70-8810-46ea9d3d3228",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 631,
+        "output_tokens": 423,
+        "total_latency_ms": 2406,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:36.193Z"
+    },
+    {
+      "result_id": "6b2694a6-4410-4bdc-84b9-e34bc7a85301",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 639,
+        "output_tokens": 255,
+        "total_latency_ms": 1477,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:37.782Z"
+    },
+    {
+      "result_id": "cc29c3cb-b191-45ea-998b-465ed69105fe",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 631,
+        "output_tokens": 1024,
+        "total_latency_ms": 5791,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:43.679Z"
+    },
+    {
+      "result_id": "d3091fba-477e-451a-9ab6-b4f8b14b7dc1",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"test_input\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "test_input",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 638,
+        "output_tokens": 411,
+        "total_latency_ms": 2355,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:46.136Z"
+    },
+    {
+      "result_id": "35e5ec75-9422-49e3-b902-88d7c8a6707e",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 638,
+        "output_tokens": 310,
+        "total_latency_ms": 1777,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:48.014Z"
+    },
+    {
+      "result_id": "60281b2e-8264-4fe1-96dd-63067bd7260f",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 625,
+        "output_tokens": 1024,
+        "total_latency_ms": 5804,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:53.919Z"
+    },
+    {
+      "result_id": "b84a6330-4bb0-4e78-99ac-6b2928fe8183",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 627,
+        "output_tokens": 1024,
+        "total_latency_ms": 5809,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:11:59.836Z"
+    },
+    {
+      "result_id": "d927456d-c1bc-4c66-bfe0-8119ca1be655",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 636,
+        "output_tokens": 1024,
+        "total_latency_ms": 5836,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:05.780Z"
+    },
+    {
+      "result_id": "bdb40287-2412-4157-abbc-62465703f6f6",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 636,
+        "output_tokens": 1024,
+        "total_latency_ms": 5800,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:11.695Z"
+    },
+    {
+      "result_id": "376bf094-80da-489c-b08f-0c1022d8c973",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 628,
+        "output_tokens": 337,
+        "total_latency_ms": 1926,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:13.738Z"
+    },
+    {
+      "result_id": "2578c0b6-3113-416b-9e39-22bd6bda8d9d",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 629,
+        "output_tokens": 565,
+        "total_latency_ms": 3220,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:17.058Z"
+    },
+    {
+      "result_id": "489418f3-086f-4ae2-8926-abe0b87b2759",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536.37}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536.37
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 649,
+        "output_tokens": 513,
+        "total_latency_ms": 2912,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:20.081Z"
+    },
+    {
+      "result_id": "b6403c38-1cb3-49bd-8dd0-862139ca4e1e",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 648,
+        "output_tokens": 705,
+        "total_latency_ms": 3989,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:24.180Z"
+    },
+    {
+      "result_id": "a2990cd1-2e33-498b-a114-05002216caf4",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The square root of 144 is 12. \n\nNo tool calls are needed for this mathematical calculation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 175,
+        "total_latency_ms": 1022,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:25.309Z"
+    },
+    {
+      "result_id": "7eccd8df-57e8-48b1-b7e1-bb03e1bc8a2a",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The boiling point of water at standard atmospheric pressure (101.325 kPa) is **100°C**. \n\nThis information does not require any of the provided tools, as it is a well-established scientific fact.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 618,
+        "output_tokens": 245,
+        "total_latency_ms": 1424,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:26.840Z"
+    },
+    {
+      "result_id": "ca38b28a-1b81-4c0f-8b36-d7b788841c5d",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The available tools (e.g., `analytics_track_event`, `analytics_run_report`) are specific implementations for tracking events and generating reports, but they do not provide a framework for comparing *analytics approaches* (e.g., descriptive vs. predictive analytics, real-time vs. batch processing, etc.). To answer your question about pros and cons of different analytics approaches, we would need to discuss conceptual methodologies rather than execute tool-based actions. \n\nFor example:\n- **Pros of descriptive analytics**: Simple, historical data analysis; good for identifying trends.\n- **Cons of descriptive analytics**: Limited to past data; cannot predict future outcomes.\n\nSince this query requires conceptual analysis rather than tool execution, no tool calls are needed here. Let me know if you'd like to run a specific analytics report or track an event!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 618,
+        "output_tokens": 618,
+        "total_latency_ms": 3501,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:30.455Z"
+    },
+    {
+      "result_id": "24394f8a-f1df-4e87-bd10-1ca4b60fd303",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools that can analyze or compare code review approaches. My available tools only support analytics event tracking, air quality data lookup, and analytics report generation. This request falls outside the scope of my current capabilities. Would you like help with something that can be addressed using the tools I do have?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 290,
+        "total_latency_ms": 1670,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:32.235Z"
+    },
+    {
+      "result_id": "a99131db-f755-4706-829a-0139c3c218f6",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The air quality index and pollutant levels require a specific location (city name or coordinates) to retrieve. Could you please provide the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 620,
+        "output_tokens": 413,
+        "total_latency_ms": 2351,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:34.703Z"
+    },
+    {
+      "result_id": "dc152429-3ce3-4aa6-a6ca-5a666ad7554c",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Please provide the report ID for the pre-defined analytics report you'd like to run.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 621,
+        "output_tokens": 809,
+        "total_latency_ms": 4560,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:39.372Z"
+    },
+    {
+      "result_id": "a77b544a-e093-436e-ac8e-3d889baa3d87",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Yes, I can record a custom analytics event with associated properties using the `analytics_track_event` function. Please provide the event name and any properties you'd like to track, and I'll help you set it up.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 613,
+        "total_latency_ms": 3464,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:42.938Z"
+    },
+    {
+      "result_id": "e8a10eb4-faa6-480d-a371-eb1c53641224",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 631,
+        "output_tokens": 423,
+        "total_latency_ms": 2417,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:45.454Z"
+    },
+    {
+      "result_id": "92b35ebf-4808-4df7-8b2a-e871a1a6b6f1",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 639,
+        "output_tokens": 255,
+        "total_latency_ms": 1476,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:47.039Z"
+    },
+    {
+      "result_id": "d604b6da-713d-491b-a1c5-79f94167781b",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 631,
+        "output_tokens": 1024,
+        "total_latency_ms": 5804,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:52.948Z"
+    },
+    {
+      "result_id": "05312bc2-7981-4742-8b0e-aed553d94325",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"test_input\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "test_input",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 638,
+        "output_tokens": 411,
+        "total_latency_ms": 2350,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:55.398Z"
+    },
+    {
+      "result_id": "d135863d-c8ea-4de6-b0d8-c7626853d237",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 638,
+        "output_tokens": 310,
+        "total_latency_ms": 1787,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:12:57.290Z"
+    },
+    {
+      "result_id": "6fa51e9f-99ad-4e0c-a258-e03fa93a263f",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 625,
+        "output_tokens": 1024,
+        "total_latency_ms": 5836,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:03.231Z"
+    },
+    {
+      "result_id": "45ec1593-8738-44d8-a31b-af3603443d74",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 627,
+        "output_tokens": 1024,
+        "total_latency_ms": 5795,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:09.141Z"
+    },
+    {
+      "result_id": "24035d36-ae7c-4205-9fce-88826f736997",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 636,
+        "output_tokens": 1024,
+        "total_latency_ms": 5787,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:15.032Z"
+    },
+    {
+      "result_id": "c70c052b-fd98-4b05-9a07-bbd9f6aa8a66",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 636,
+        "output_tokens": 1024,
+        "total_latency_ms": 5799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:20.941Z"
+    },
+    {
+      "result_id": "76ad57f8-68f7-4720-bfdf-da530fd8410f",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 628,
+        "output_tokens": 337,
+        "total_latency_ms": 1930,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:22.981Z"
+    },
+    {
+      "result_id": "aa6a2b7a-ffbc-42a4-a9f7-9efffa5af6c1",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 629,
+        "output_tokens": 565,
+        "total_latency_ms": 3204,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:26.289Z"
+    },
+    {
+      "result_id": "61caedf2-88da-4b6a-8831-ad6ef53fc42a",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536.37}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536.37
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 649,
+        "output_tokens": 513,
+        "total_latency_ms": 2919,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:29.318Z"
+    },
+    {
+      "result_id": "a1d9cbd4-4217-4461-a03a-4e37ce095424",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"config.json\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "config.json",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 648,
+        "output_tokens": 705,
+        "total_latency_ms": 4008,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:33.431Z"
+    },
+    {
+      "result_id": "ea3b4ed0-54d3-4f97-b870-70e5a4f5989c",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The square root of 144 is 12. \n\nNo tool calls are needed for this mathematical calculation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 175,
+        "total_latency_ms": 1029,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:34.571Z"
+    },
+    {
+      "result_id": "63d0a28d-c13d-49a4-b1ae-eb026d15a8d9",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The boiling point of water at standard atmospheric pressure (101.325 kPa) is **100°C**. \n\nThis information does not require any of the provided tools, as it is a well-established scientific fact.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 618,
+        "output_tokens": 245,
+        "total_latency_ms": 1415,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:36.095Z"
+    },
+    {
+      "result_id": "ed0d78fa-057b-4dc5-9d9c-06643ccc6800",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The available tools (e.g., `analytics_track_event`, `analytics_run_report`) are specific implementations for tracking events and generating reports, but they do not provide a framework for comparing *analytics approaches* (e.g., descriptive vs. predictive analytics, real-time vs. batch processing, etc.). To answer your question about pros and cons of different analytics approaches, we would need to discuss conceptual methodologies rather than execute tool-based actions. \n\nFor example:\n- **Pros of descriptive analytics**: Simple, historical data analysis; good for identifying trends.\n- **Cons of descriptive analytics**: Limited to past data; cannot predict future outcomes.\n\nSince this query requires conceptual analysis rather than tool execution, no tool calls are needed here. Let me know if you'd like to run a specific analytics report or track an event!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 618,
+        "output_tokens": 618,
+        "total_latency_ms": 3505,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:39.713Z"
+    },
+    {
+      "result_id": "a81abb52-8f84-4b4f-ba0a-e28e0dc17872",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools that can analyze or compare code review approaches. My available tools only support analytics event tracking, air quality data lookup, and analytics report generation. This request falls outside the scope of my current capabilities. Would you like help with something that can be addressed using the tools I do have?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 619,
+        "output_tokens": 290,
+        "total_latency_ms": 1677,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:41.498Z"
+    },
+    {
+      "result_id": "233811ae-fcd1-4391-ba4b-edf7609f18b0",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "To get the air quality index and pollutant levels, I'll need the **location** (e.g., city name or coordinates). Could you please specify where you'd like the data for? \n\nFor example:  \n- \"New York\"  \n- \"40.7128° N, 74.0060° W\" (coordinates)  \n\nLet me know! 😊",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 284,
+        "output_tokens": 329,
+        "total_latency_ms": 1879,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:43.491Z"
+    },
+    {
+      "result_id": "752c8fa2-cfe6-4571-be2b-fc0a44001fe1",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "I need more details to run the analytics report. Please specify:\n- Report ID (report_id)\n- Date range (e.g., \"last_7d\", \"last_30d\", or custom)\n- Any filters\n- Output format (json, xml, csv, or text)\n\nLet me know these details and I'll execute the report for you.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 285,
+        "output_tokens": 546,
+        "total_latency_ms": 3054,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:46.654Z"
+    },
+    {
+      "result_id": "504102d6-f0df-44b3-9967-161b9566b6d4",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Yes, I can help you record a custom analytics event with associated properties using the `analytics_track_event` tool. To do this, I'll need the following details:\n- **Event name** (e.g., \"user_login\")\n- **Properties** (key-value pairs for event context)\n- **User ID** (optional, for attribution)\n\nFor example:\n```json\n{\n  \"event_name\": \"user_login\",\n  \"properties\": {\n    \"device_type\": \"mobile\",\n    \"platform\": \"iOS\"\n  },\n  \"user_id\": \"user_12345\"\n}\n```\n\nLet me know the specific details you'd like to track, and I'll format the tool call for you!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 504,
+        "total_latency_ms": 2821,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:49.588Z"
+    },
+    {
+      "result_id": "492dc424-0524-47e1-aa71-ee3b16aeac0b",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 295,
+        "output_tokens": 789,
+        "total_latency_ms": 4409,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:54.102Z"
+    },
+    {
+      "result_id": "ac0997fd-b7f6-482d-b4d8-070c52983099",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 303,
+        "output_tokens": 1024,
+        "total_latency_ms": 5724,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:13:59.939Z"
+    },
+    {
+      "result_id": "69cb329a-16a9-4f94-a4ed-1a182113ed44",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 295,
+        "output_tokens": 1024,
+        "total_latency_ms": 5736,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:05.782Z"
+    },
+    {
+      "result_id": "a8955573-0b7e-446a-af7d-5a15da0e7b61",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"test_input\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "test_input",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 302,
+        "output_tokens": 580,
+        "total_latency_ms": 3247,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:09.140Z"
+    },
+    {
+      "result_id": "ab425ef1-c81c-40b0-abbf-c6576d2c951d",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 302,
+        "output_tokens": 1024,
+        "total_latency_ms": 5715,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:14.963Z"
+    },
+    {
+      "result_id": "067c9f60-aff7-4b19-8740-85dfd14e791e",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"custom_event\", \"properties\": {\"event_type\": \"test\"}, \"user_id\": \"test_user\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "custom_event",
+            "properties": {
+              "event_type": "test"
+            },
+            "user_id": "test_user"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 289,
+        "output_tokens": 704,
+        "total_latency_ms": 3950,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:19.019Z"
+    },
+    {
+      "result_id": "c2e6222e-cf9c-40f9-b5da-85cb658d9638",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 291,
+        "output_tokens": 1024,
+        "total_latency_ms": 5717,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:24.850Z"
+    },
+    {
+      "result_id": "197e3403-56ce-4465-ba4a-6e942f945568",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 300,
+        "output_tokens": 1024,
+        "total_latency_ms": 5741,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:30.696Z"
+    },
+    {
+      "result_id": "beed17f2-4c69-4ba3-8bc7-87b52dd99779",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 300,
+        "output_tokens": 1024,
+        "total_latency_ms": 5723,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:36.519Z"
+    },
+    {
+      "result_id": "bca17b57-965f-4ba6-849e-38480fb3cfba",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 292,
+        "output_tokens": 1024,
+        "total_latency_ms": 5737,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:42.363Z"
+    },
+    {
+      "result_id": "66872ffc-3965-40b6-b46a-6d54dc6aeba0",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 293,
+        "output_tokens": 749,
+        "total_latency_ms": 4186,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:46.659Z"
+    },
+    {
+      "result_id": "1b177c51-a112-47b1-bf85-7e39c4f8a279",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536.37}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536.37
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 313,
+        "output_tokens": 578,
+        "total_latency_ms": 3243,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:50.018Z"
+    },
+    {
+      "result_id": "aef63d7b-d713-4f9b-a8c9-f49870e8984d",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 312,
+        "output_tokens": 1024,
+        "total_latency_ms": 5729,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:55.848Z"
+    },
+    {
+      "result_id": "395364e7-bd7b-43c6-a395-1c47a8a0c38b",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The square root of 144 is 12. \n\nNo tool is required for this mathematical calculation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 219,
+        "total_latency_ms": 1252,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:57.215Z"
+    },
+    {
+      "result_id": "a7e9dae8-dcc5-4936-94aa-e3b84445c62d",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The boiling point of water at standard atmospheric pressure (1 atmosphere) is **100°C**. \n\nNo tool is required to answer this scientific fact.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 282,
+        "output_tokens": 238,
+        "total_latency_ms": 1363,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:14:58.687Z"
+    },
+    {
+      "result_id": "f08f5077-0f64-4acc-b5c9-00537a3f541e",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The user is asking for a comparison of pros and cons of different analytics approaches (e.g., descriptive, diagnostic, predictive, prescriptive analytics), which is a conceptual question about analytics methodologies rather than a task requiring tool execution. Since none of the provided tools (e.g., `analytics_track_event`, `analytics_run_report`, `wx_get_air_quality`) are designed to provide information about analytics approaches themselves, **no tool calls are needed** for this request.\n\nHere’s a concise comparison of common analytics approaches:\n\n| **Analytics Approach** | **Pros**                                      | **Cons**                                      |\n|------------------------|-----------------------------------------------|-----------------------------------------------|\n| **Descriptive**        | Simple, identifies what happened (e.g., trends, patterns) | Limited to past data; doesn’t explain *why* or predict *what will happen* |\n| **Diagnostic**         | Explains *why* something happened (e.g., root cause analysis) | Requires deep data exploration; complex to implement |\n| **Predictive**         | Forecasts future outcomes (e.g., machine learning models) | Data quality and model accuracy critical; computationally intensive |\n| **Prescriptive**       | Recommends actions to achieve desired outcomes | Highly complex; requires domain expertise and real-time data |\n\nThis response is based on general knowledge of analytics methodologies and does not require any tool calls.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 282,
+        "output_tokens": 666,
+        "total_latency_ms": 3743,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:02.538Z"
+    },
+    {
+      "result_id": "ddc4c051-606a-43d2-a57c-3a502954e206",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The available tools (analytics tracking, report generation, and air quality data) are unrelated to code review methodologies. I cannot use any tools to address this query. \n\nHere's a general comparison of common code review approaches:\n\n**1. Manual Code Reviews (Peer Review)**\n- *Pros*: High quality feedback, builds team collaboration, catches complex bugs\n- *Cons*: Time-intensive, inconsistent quality, potential bottlenecks\n\n**2. Automated Code Reviews (CI/CD Pipelines)**\n- *Pros*: Consistent enforcement, faster feedback, integrates with development workflow\n- *Cons*: May miss contextual issues, requires proper configuration\n\n**3. Distributed Code Reviews (e.g., GitHub PRs)**\n- *Pros*: Transparent history, version-controlled changes, team accountability\n- *Cons*: Can create coordination overhead, may lead to \"review fatigue\"\n\n**4. Hybrid Approaches (Automated + Human)**\n- *Pros*: Balances speed and quality, scalable for large teams\n- *Cons*: Requires careful configuration to avoid over-reliance on automation\n\nWould you like me to focus on any specific aspect of code review approaches?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 473,
+        "total_latency_ms": 2646,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:05.288Z"
+    },
+    {
+      "result_id": "1bd1e7e8-e9ad-4309-923f-2fc435518e89",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "To get the air quality index and pollutant levels, I'll need the location (e.g., city name or coordinates). Could you please specify the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 284,
+        "output_tokens": 162,
+        "total_latency_ms": 943,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:06.339Z"
+    },
+    {
+      "result_id": "6e3733f0-2bd7-4c37-8119-ba9ce83743a6",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "I need more details to run the analytics report. Please specify:\n- Report ID (report_id)\n- Date range (e.g., \"last_7d\", \"last_30d\", or custom)\n- Any filters\n- Output format (json, xml, csv, or text)\n\nLet me know these details and I'll execute the report for you.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 285,
+        "output_tokens": 546,
+        "total_latency_ms": 3067,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:09.513Z"
+    },
+    {
+      "result_id": "43d5d549-5648-4a92-bdb0-3d4a065cfd47",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Yes, I can help you record a custom analytics event with associated properties using the `analytics_track_event` tool. To do this, I'll need the following details:\n- **Event name** (e.g., \"user_login\")\n- **Properties** (key-value pairs for event context)\n- **User ID** (optional, for attribution)\n\nFor example:\n```json\n{\n  \"event_name\": \"user_login\",\n  \"properties\": {\n    \"device_type\": \"mobile\",\n    \"platform\": \"iOS\"\n  },\n  \"user_id\": \"user_12345\"\n}\n```\n\nLet me know the specific details you'd like to track, and I'll format the tool call for you!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 504,
+        "total_latency_ms": 2815,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:12.440Z"
+    },
+    {
+      "result_id": "3677a3ca-ca27-4e0e-b723-588ea6ce55d8",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 295,
+        "output_tokens": 789,
+        "total_latency_ms": 4400,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:16.956Z"
+    },
+    {
+      "result_id": "e8899a61-8ac6-4144-a361-38325e7ead0a",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 303,
+        "output_tokens": 1024,
+        "total_latency_ms": 5718,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:22.785Z"
+    },
+    {
+      "result_id": "f281dbae-108d-4b7f-9acb-c372b6d10a17",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 295,
+        "output_tokens": 1024,
+        "total_latency_ms": 5727,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:28.624Z"
+    },
+    {
+      "result_id": "cba6fb1e-f049-472c-acb9-6d00b560308e",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"test_input\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "test_input",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 302,
+        "output_tokens": 580,
+        "total_latency_ms": 3243,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:31.977Z"
+    },
+    {
+      "result_id": "7e2d2ee0-4116-4681-824b-f629b5bfa98a",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 302,
+        "output_tokens": 1024,
+        "total_latency_ms": 5731,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:37.823Z"
+    },
+    {
+      "result_id": "f7e504ae-8e5d-40aa-a2ff-1a9ad49abbdf",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"custom_event\", \"properties\": {\"event_type\": \"test\"}, \"user_id\": \"test_user\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "custom_event",
+            "properties": {
+              "event_type": "test"
+            },
+            "user_id": "test_user"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 289,
+        "output_tokens": 704,
+        "total_latency_ms": 3945,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:41.880Z"
+    },
+    {
+      "result_id": "6098841e-26dc-4645-b13f-bccfa9f6f9ce",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 291,
+        "output_tokens": 1024,
+        "total_latency_ms": 5721,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:47.706Z"
+    },
+    {
+      "result_id": "fc782f6a-7ce5-4910-bb36-b9d25e857675",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 300,
+        "output_tokens": 1024,
+        "total_latency_ms": 5728,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:53.544Z"
+    },
+    {
+      "result_id": "4414ac24-af57-4b4e-9e5f-4df00342cbfb",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 300,
+        "output_tokens": 1024,
+        "total_latency_ms": 5719,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:15:59.367Z"
+    },
+    {
+      "result_id": "f2b5e92e-1945-4109-a0a1-a58bdb3fa6a9",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 292,
+        "output_tokens": 1024,
+        "total_latency_ms": 5738,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:05.208Z"
+    },
+    {
+      "result_id": "06327d13-25d3-4497-a3fa-3cb40a4e031c",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 293,
+        "output_tokens": 749,
+        "total_latency_ms": 4173,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:09.491Z"
+    },
+    {
+      "result_id": "76839010-387d-4ac6-a194-39c581e57481",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536.37}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536.37
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 313,
+        "output_tokens": 578,
+        "total_latency_ms": 3244,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:12.838Z"
+    },
+    {
+      "result_id": "47641ed5-e522-4154-b8d3-55fb1ce52513",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 312,
+        "output_tokens": 1024,
+        "total_latency_ms": 5738,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:18.688Z"
+    },
+    {
+      "result_id": "5ed24b9b-0123-4a74-a386-ce11744f529b",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The square root of 144 is 12. \n\nNo tool is required for this mathematical calculation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 219,
+        "total_latency_ms": 1257,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:20.051Z"
+    },
+    {
+      "result_id": "31f1f692-1cdc-4e88-9979-16b35acf1096",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The boiling point of water at standard atmospheric pressure (1 atmosphere) is **100°C**. \n\nNo tool is required to answer this scientific fact.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 282,
+        "output_tokens": 238,
+        "total_latency_ms": 1370,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:21.536Z"
+    },
+    {
+      "result_id": "7daf1079-29af-4d4e-ad5e-f66753db57cb",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The user is asking for a comparison of pros and cons of different analytics approaches (e.g., descriptive, diagnostic, predictive, prescriptive analytics), which is a conceptual question about analytics methodologies rather than a task requiring tool execution. Since none of the provided tools (e.g., `analytics_track_event`, `analytics_run_report`, `wx_get_air_quality`) are designed to provide information about analytics approaches themselves, **no tool calls are needed** for this request.\n\nHere’s a concise comparison of common analytics approaches:\n\n| **Analytics Approach** | **Pros**                                      | **Cons**                                      |\n|------------------------|-----------------------------------------------|-----------------------------------------------|\n| **Descriptive**        | Simple, identifies what happened (e.g., trends, patterns) | Limited to past data; doesn’t explain *why* or predict *what will happen* |\n| **Diagnostic**         | Explains *why* something happened (e.g., root cause analysis) | Requires deep data exploration; complex to implement |\n| **Predictive**         | Forecasts future outcomes (e.g., machine learning models) | Data quality and model accuracy critical; computationally intensive |\n| **Prescriptive**       | Recommends actions to achieve desired outcomes | Highly complex; requires domain expertise and real-time data |\n\nThis response is based on general knowledge of analytics methodologies and does not require any tool calls.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 282,
+        "output_tokens": 666,
+        "total_latency_ms": 3727,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:25.370Z"
+    },
+    {
+      "result_id": "bc56bdba-5c1c-4c43-b268-5dd0ffd69113",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The available tools (analytics tracking, report generation, and air quality data) are unrelated to code review methodologies. I cannot use any tools to address this query. \n\nHere's a general comparison of common code review approaches:\n\n**1. Manual Code Reviews (Peer Review)**\n- *Pros*: High quality feedback, builds team collaboration, catches complex bugs\n- *Cons*: Time-intensive, inconsistent quality, potential bottlenecks\n\n**2. Automated Code Reviews (CI/CD Pipelines)**\n- *Pros*: Consistent enforcement, faster feedback, integrates with development workflow\n- *Cons*: May miss contextual issues, requires proper configuration\n\n**3. Distributed Code Reviews (e.g., GitHub PRs)**\n- *Pros*: Transparent history, version-controlled changes, team accountability\n- *Cons*: Can create coordination overhead, may lead to \"review fatigue\"\n\n**4. Hybrid Approaches (Automated + Human)**\n- *Pros*: Balances speed and quality, scalable for large teams\n- *Cons*: Requires careful configuration to avoid over-reliance on automation\n\nWould you like me to focus on any specific aspect of code review approaches?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 473,
+        "total_latency_ms": 2649,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:28.126Z"
+    },
+    {
+      "result_id": "be87e21d-864a-4c14-9893-7cfa3a75bbfd",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "To get the air quality index and pollutant levels, I'll need the location (e.g., city name or coordinates). Could you please specify the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 284,
+        "output_tokens": 162,
+        "total_latency_ms": 944,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:29.183Z"
+    },
+    {
+      "result_id": "85ab4b9b-8da9-4d8f-90e6-ca20cbfb6046",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "I need more details to run the analytics report. Please specify:\n- Report ID (report_id)\n- Date range (e.g., \"last_7d\", \"last_30d\", or custom)\n- Any filters\n- Output format (json, xml, csv, or text)\n\nLet me know these details and I'll execute the report for you.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 285,
+        "output_tokens": 546,
+        "total_latency_ms": 3055,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:32.343Z"
+    },
+    {
+      "result_id": "354fed2b-1a76-4fc6-a0cc-177032e3b27d",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Yes, I can help you record a custom analytics event with associated properties using the `analytics_track_event` tool. To do this, I'll need the following details:\n- **Event name** (e.g., \"user_login\")\n- **Properties** (key-value pairs for event context)\n- **User ID** (optional, for attribution)\n\nFor example:\n```json\n{\n  \"event_name\": \"user_login\",\n  \"properties\": {\n    \"device_type\": \"mobile\",\n    \"platform\": \"iOS\"\n  },\n  \"user_id\": \"user_12345\"\n}\n```\n\nLet me know the specific details you'd like to track, and I'll format the tool call for you!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 504,
+        "total_latency_ms": 2836,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:35.283Z"
+    },
+    {
+      "result_id": "d3f40423-fdc5-4e82-adf2-9be0e7937a0c",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 295,
+        "output_tokens": 789,
+        "total_latency_ms": 4418,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:39.804Z"
+    },
+    {
+      "result_id": "50926a6f-8a29-44f5-952c-b17c20e53dc8",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 303,
+        "output_tokens": 1024,
+        "total_latency_ms": 5740,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:45.652Z"
+    },
+    {
+      "result_id": "76b97738-60ae-4b6c-b5bf-cbbdd894e7ea",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 295,
+        "output_tokens": 1024,
+        "total_latency_ms": 5726,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:51.483Z"
+    },
+    {
+      "result_id": "2d13e788-d259-4c92-8453-634a2b9e4685",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"test_input\", \"include_pollutants\": true, \"offset\": 0}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "test_input",
+            "include_pollutants": true,
+            "offset": 0
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 302,
+        "output_tokens": 580,
+        "total_latency_ms": 3256,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:16:54.842Z"
+    },
+    {
+      "result_id": "d2c2919d-f81a-4d52-9f06-1a969f3e3eed",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 302,
+        "output_tokens": 1024,
+        "total_latency_ms": 5730,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:00.679Z"
+    },
+    {
+      "result_id": "763db7c9-1938-4186-933f-a3c34b221971",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"custom_event\", \"properties\": {\"event_type\": \"test\"}, \"user_id\": \"test_user\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "custom_event",
+            "properties": {
+              "event_type": "test"
+            },
+            "user_id": "test_user"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 289,
+        "output_tokens": 704,
+        "total_latency_ms": 3943,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:04.724Z"
+    },
+    {
+      "result_id": "75f4a4a7-826e-494d-b443-6cf975394566",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 291,
+        "output_tokens": 1024,
+        "total_latency_ms": 5745,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:10.583Z"
+    },
+    {
+      "result_id": "8690f807-4a28-4121-9821-9e2b740ad64e",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 300,
+        "output_tokens": 1024,
+        "total_latency_ms": 5730,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:16.421Z"
+    },
+    {
+      "result_id": "aa198d41-65d4-4d62-b57f-fb43a55d623e",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 300,
+        "output_tokens": 1024,
+        "total_latency_ms": 5730,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:22.260Z"
+    },
+    {
+      "result_id": "8f01c997-2217-4631-b324-7460297fb2d4",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 292,
+        "output_tokens": 1024,
+        "total_latency_ms": 5722,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:28.089Z"
+    },
+    {
+      "result_id": "22fac95e-b12e-4200-b051-81ed08702f2d",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 293,
+        "output_tokens": 749,
+        "total_latency_ms": 4196,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:32.393Z"
+    },
+    {
+      "result_id": "90420791-8ce9-459b-b379-a50e9a7e54d7",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"user@example.com\", \"include_pollutants\": true, \"offset\": 536.37}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "user@example.com",
+            "include_pollutants": true,
+            "offset": 536.37
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 313,
+        "output_tokens": 578,
+        "total_latency_ms": 3236,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:35.740Z"
+    },
+    {
+      "result_id": "50ccc626-8d33-4250-938e-e9b33ca5a794",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 312,
+        "output_tokens": 1024,
+        "total_latency_ms": 5717,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:41.562Z"
+    },
+    {
+      "result_id": "ffb17b2a-3ce8-4f8c-b610-36e7434409be",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The square root of 144 is 12. \n\nNo tool is required for this mathematical calculation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 219,
+        "total_latency_ms": 1265,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:42.942Z"
+    },
+    {
+      "result_id": "7b911081-08e0-4bd3-a3bb-fe8a0b396b11",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The boiling point of water at standard atmospheric pressure (1 atmosphere) is **100°C**. \n\nNo tool is required to answer this scientific fact.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 282,
+        "output_tokens": 238,
+        "total_latency_ms": 1368,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:44.420Z"
+    },
+    {
+      "result_id": "620a18df-8320-4fe1-8db0-847fe45f2d7c",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The user is asking for a comparison of pros and cons of different analytics approaches (e.g., descriptive, diagnostic, predictive, prescriptive analytics), which is a conceptual question about analytics methodologies rather than a task requiring tool execution. Since none of the provided tools (e.g., `analytics_track_event`, `analytics_run_report`, `wx_get_air_quality`) are designed to provide information about analytics approaches themselves, **no tool calls are needed** for this request.\n\nHere’s a concise comparison of common analytics approaches:\n\n| **Analytics Approach** | **Pros**                                      | **Cons**                                      |\n|------------------------|-----------------------------------------------|-----------------------------------------------|\n| **Descriptive**        | Simple, identifies what happened (e.g., trends, patterns) | Limited to past data; doesn’t explain *why* or predict *what will happen* |\n| **Diagnostic**         | Explains *why* something happened (e.g., root cause analysis) | Requires deep data exploration; complex to implement |\n| **Predictive**         | Forecasts future outcomes (e.g., machine learning models) | Data quality and model accuracy critical; computationally intensive |\n| **Prescriptive**       | Recommends actions to achieve desired outcomes | Highly complex; requires domain expertise and real-time data |\n\nThis response is based on general knowledge of analytics methodologies and does not require any tool calls.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 282,
+        "output_tokens": 666,
+        "total_latency_ms": 3717,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:48.249Z"
+    },
+    {
+      "result_id": "f0306163-2622-4a27-9c52-cbe8e7c9c3c3",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The available tools (analytics tracking, report generation, and air quality data) are unrelated to code review methodologies. I cannot use any tools to address this query. \n\nHere's a general comparison of common code review approaches:\n\n**1. Manual Code Reviews (Peer Review)**\n- *Pros*: High quality feedback, builds team collaboration, catches complex bugs\n- *Cons*: Time-intensive, inconsistent quality, potential bottlenecks\n\n**2. Automated Code Reviews (CI/CD Pipelines)**\n- *Pros*: Consistent enforcement, faster feedback, integrates with development workflow\n- *Cons*: May miss contextual issues, requires proper configuration\n\n**3. Distributed Code Reviews (e.g., GitHub PRs)**\n- *Pros*: Transparent history, version-controlled changes, team accountability\n- *Cons*: Can create coordination overhead, may lead to \"review fatigue\"\n\n**4. Hybrid Approaches (Automated + Human)**\n- *Pros*: Balances speed and quality, scalable for large teams\n- *Cons*: Requires careful configuration to avoid over-reliance on automation\n\nWould you like me to focus on any specific aspect of code review approaches?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 283,
+        "output_tokens": 473,
+        "total_latency_ms": 2639,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:51.000Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5333333333333334,
+        "ci95": [
+          0.4736582439420685,
+          0.714306969962345
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.6,
+        "ci95": [
+          0.4736582439420685,
+          0.714306969962345
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.43333333333333335,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.4000000000000001,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.45,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.325,
+        "ci95": [
+          0.24167601723815488,
+          0.4763761619052249
+        ]
+      },
+      "arr": 0.75,
+      "token_savings_pct": 53.37993486376996,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

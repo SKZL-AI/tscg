@@ -1,0 +1,1198 @@
+{
+  "meta": {
+    "analysis": "ablation-no-mt",
+    "description": "Scenario D accuracy with and without multi-tool tasks",
+    "generatedAt": "2026-03-03T11:40:18.146Z",
+    "models": [
+      "Mistral 7B",
+      "Phi-4",
+      "Gemma 3 4B",
+      "Llama 3.1 8B",
+      "Qwen3 4B"
+    ],
+    "catalogSizes": [
+      3,
+      5,
+      10,
+      15,
+      20,
+      30,
+      50
+    ],
+    "taskTypesExcluded": [
+      "mt (multi-tool)"
+    ],
+    "taskTypesKept": [
+      "ts (tool selection)",
+      "pe (param extract)",
+      "nt (no-tool)"
+    ],
+    "tasksPerConditionAll": 20,
+    "tasksPerConditionNoMt": 16,
+    "runsPerCondition": 3
+  },
+  "summaries": [
+    {
+      "model": "Mistral 7B",
+      "avgDeltaAll": 0.13049999999999998,
+      "avgDeltaNoMt": 0.09920068027210895,
+      "shift": -0.03129931972789103,
+      "perSize": [
+        {
+          "catalogSize": 3,
+          "deltaAll": -0.03619047619047633,
+          "deltaNoMt": -0.033333333333333215,
+          "shift": 0.0028571428571431134
+        },
+        {
+          "catalogSize": 5,
+          "deltaAll": -0.006666666666666599,
+          "deltaNoMt": -0.008333333333333082,
+          "shift": -0.0016666666666664831
+        },
+        {
+          "catalogSize": 10,
+          "deltaAll": -0.10166666666666702,
+          "deltaNoMt": -0.09583333333333333,
+          "shift": 0.00583333333333369
+        },
+        {
+          "catalogSize": 15,
+          "deltaAll": -0.1060714285714286,
+          "deltaNoMt": -0.08571428571428552,
+          "shift": 0.020357142857143073
+        },
+        {
+          "catalogSize": 20,
+          "deltaAll": 0.45133333333333336,
+          "deltaNoMt": 0.36,
+          "shift": -0.09133333333333338
+        },
+        {
+          "catalogSize": 30,
+          "deltaAll": 0.3627619047619048,
+          "deltaNoMt": 0.3076190476190478,
+          "shift": -0.055142857142856994
+        },
+        {
+          "catalogSize": 50,
+          "deltaAll": 0.35000000000000003,
+          "deltaNoMt": 0.25,
+          "shift": -0.10000000000000003
+        }
+      ]
+    },
+    {
+      "model": "Phi-4",
+      "avgDeltaAll": 0.7244013605442178,
+      "avgDeltaNoMt": 0.7276530612244899,
+      "shift": 0.0032517006802721404,
+      "perSize": [
+        {
+          "catalogSize": 3,
+          "deltaAll": -0.034714285714285587,
+          "deltaNoMt": -0.03714285714285703,
+          "shift": -0.0024285714285714466
+        },
+        {
+          "catalogSize": 5,
+          "deltaAll": 0.8746666666666668,
+          "deltaNoMt": 0.8600000000000002,
+          "shift": -0.014666666666666606
+        },
+        {
+          "catalogSize": 10,
+          "deltaAll": 0.894,
+          "deltaNoMt": 0.93,
+          "shift": 0.03600000000000003
+        },
+        {
+          "catalogSize": 15,
+          "deltaAll": 0.8387619047619047,
+          "deltaNoMt": 0.898452380952381,
+          "shift": 0.059690476190476294
+        },
+        {
+          "catalogSize": 20,
+          "deltaAll": 0.8441428571428573,
+          "deltaNoMt": 0.8405952380952383,
+          "shift": -0.0035476190476190217
+        },
+        {
+          "catalogSize": 30,
+          "deltaAll": 0.7513333333333333,
+          "deltaNoMt": 0.6891666666666669,
+          "shift": -0.06216666666666637
+        },
+        {
+          "catalogSize": 50,
+          "deltaAll": 0.9026190476190477,
+          "deltaNoMt": 0.9125000000000001,
+          "shift": 0.009880952380952435
+        }
+      ]
+    },
+    {
+      "model": "Gemma 3 4B",
+      "avgDeltaAll": 0.2993177695320553,
+      "avgDeltaNoMt": 0.2822325293753866,
+      "shift": -0.01708524015666868,
+      "perSize": [
+        {
+          "catalogSize": 3,
+          "deltaAll": 0.7489206349206351,
+          "deltaNoMt": 0.8639285714285716,
+          "shift": 0.1150079365079365
+        },
+        {
+          "catalogSize": 5,
+          "deltaAll": 0.1299999999999999,
+          "deltaNoMt": 0.09583333333333321,
+          "shift": -0.03416666666666668
+        },
+        {
+          "catalogSize": 10,
+          "deltaAll": 0.05577777777777804,
+          "deltaNoMt": 0.03500000000000014,
+          "shift": -0.020777777777777895
+        },
+        {
+          "catalogSize": 15,
+          "deltaAll": 0.011214285714285954,
+          "deltaNoMt": -0.012023809523809437,
+          "shift": -0.02323809523809539
+        },
+        {
+          "catalogSize": 20,
+          "deltaAll": 0.17125396825396838,
+          "deltaNoMt": 0.10365079365079388,
+          "shift": -0.0676031746031745
+        },
+        {
+          "catalogSize": 30,
+          "deltaAll": 0.34694660894660895,
+          "deltaNoMt": 0.3086832611832613,
+          "shift": -0.038263347763347666
+        },
+        {
+          "catalogSize": 50,
+          "deltaAll": 0.631111111111111,
+          "deltaNoMt": 0.5805555555555555,
+          "shift": -0.050555555555555465
+        }
+      ]
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "avgDeltaAll": 0.07379818594104291,
+      "avgDeltaNoMt": 0.05514455782312915,
+      "shift": -0.01865362811791376,
+      "perSize": [
+        {
+          "catalogSize": 3,
+          "deltaAll": 0.18834920634920616,
+          "deltaNoMt": 0.042380952380952075,
+          "shift": -0.14596825396825408
+        },
+        {
+          "catalogSize": 5,
+          "deltaAll": 0.170333333333333,
+          "deltaNoMt": 0.15249999999999997,
+          "shift": -0.017833333333333035
+        },
+        {
+          "catalogSize": 10,
+          "deltaAll": -0.01188888888888906,
+          "deltaNoMt": 0.0024999999999999467,
+          "shift": 0.014388888888889007
+        },
+        {
+          "catalogSize": 15,
+          "deltaAll": 0.040904761904761666,
+          "deltaNoMt": 0.01988095238095222,
+          "shift": -0.021023809523809445
+        },
+        {
+          "catalogSize": 20,
+          "deltaAll": 0.025698412698412665,
+          "deltaNoMt": -0.012321428571428483,
+          "shift": -0.03801984126984115
+        },
+        {
+          "catalogSize": 30,
+          "deltaAll": -0.008000000000000118,
+          "deltaNoMt": 0.05249999999999988,
+          "shift": 0.0605
+        },
+        {
+          "catalogSize": 50,
+          "deltaAll": 0.11119047619047606,
+          "deltaNoMt": 0.12857142857142845,
+          "shift": 0.017380952380952386
+        }
+      ]
+    },
+    {
+      "model": "Qwen3 4B",
+      "avgDeltaAll": -0.04698412698412698,
+      "avgDeltaNoMt": -0.05873015873015871,
+      "shift": -0.011746031746031727,
+      "perSize": [
+        {
+          "catalogSize": 3,
+          "deltaAll": -0.03222222222222221,
+          "deltaNoMt": -0.040277777777777746,
+          "shift": -0.008055555555555538
+        },
+        {
+          "catalogSize": 5,
+          "deltaAll": -0.09999999999999998,
+          "deltaNoMt": -0.0625,
+          "shift": 0.03749999999999998
+        },
+        {
+          "catalogSize": 10,
+          "deltaAll": -0.19666666666666666,
+          "deltaNoMt": -0.18333333333333324,
+          "shift": 0.01333333333333342
+        },
+        {
+          "catalogSize": 15,
+          "deltaAll": 0.04999999999999999,
+          "deltaNoMt": 0,
+          "shift": -0.04999999999999999
+        },
+        {
+          "catalogSize": 20,
+          "deltaAll": 0.25,
+          "deltaNoMt": 0.25,
+          "shift": 0
+        },
+        {
+          "catalogSize": 30,
+          "deltaAll": -0.15000000000000002,
+          "deltaNoMt": -0.1875,
+          "shift": -0.03749999999999998
+        },
+        {
+          "catalogSize": 50,
+          "deltaAll": -0.15000000000000002,
+          "deltaNoMt": -0.1875,
+          "shift": -0.03749999999999998
+        }
+      ]
+    }
+  ],
+  "detailedRows": [
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 3,
+      "condition": "natural",
+      "overall_all": 0.6916666666666668,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.6916666666666668,
+      "n_all": 60,
+      "overall_noMt": 0.75,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.75,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 3,
+      "condition": "tscg",
+      "overall_all": 0.6554761904761904,
+      "tool_selection_all": 0.7833333333333332,
+      "param_f1_all": 0.6625000000000001,
+      "n_all": 60,
+      "overall_noMt": 0.7166666666666668,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6666666666666669,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 5,
+      "condition": "natural",
+      "overall_all": 0.7833333333333333,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.7583333333333333,
+      "n_all": 60,
+      "overall_noMt": 0.7291666666666666,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6979166666666666,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 5,
+      "condition": "tscg",
+      "overall_all": 0.7766666666666667,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.7416666666666667,
+      "n_all": 60,
+      "overall_noMt": 0.7208333333333335,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6770833333333334,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 10,
+      "condition": "natural",
+      "overall_all": 0.8350000000000002,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.825,
+      "n_all": 60,
+      "overall_noMt": 0.8041666666666667,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.7916666666666666,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 10,
+      "condition": "tscg",
+      "overall_all": 0.7333333333333332,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.6833333333333335,
+      "n_all": 60,
+      "overall_noMt": 0.7083333333333334,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6458333333333334,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 15,
+      "condition": "natural",
+      "overall_all": 0.7733333333333333,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.7583333333333332,
+      "n_all": 60,
+      "overall_noMt": 0.7999999999999999,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.78125,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 15,
+      "condition": "tscg",
+      "overall_all": 0.6672619047619047,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.624404761904762,
+      "n_all": 60,
+      "overall_noMt": 0.7142857142857144,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6607142857142858,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 20,
+      "condition": "natural",
+      "overall_all": 0.35,
+      "tool_selection_all": 0.35,
+      "param_f1_all": 0.35,
+      "n_all": 60,
+      "overall_noMt": 0.4375,
+      "tool_selection_noMt": 0.4375,
+      "param_f1_noMt": 0.4375,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 20,
+      "condition": "tscg",
+      "overall_all": 0.8013333333333333,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.8,
+      "n_all": 60,
+      "overall_noMt": 0.7975,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.7749999999999999,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 30,
+      "condition": "natural",
+      "overall_all": 0.3,
+      "tool_selection_all": 0.3,
+      "param_f1_all": 0.3,
+      "n_all": 60,
+      "overall_noMt": 0.375,
+      "tool_selection_noMt": 0.375,
+      "param_f1_noMt": 0.375,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 30,
+      "condition": "tscg",
+      "overall_all": 0.6627619047619048,
+      "tool_selection_all": 0.75,
+      "param_f1_all": 0.5902380952380952,
+      "n_all": 60,
+      "overall_noMt": 0.6826190476190478,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.5815476190476191,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 50,
+      "condition": "natural",
+      "overall_all": 0.3,
+      "tool_selection_all": 0.3,
+      "param_f1_all": 0.3,
+      "n_all": 60,
+      "overall_noMt": 0.375,
+      "tool_selection_noMt": 0.375,
+      "param_f1_noMt": 0.375,
+      "n_noMt": 48
+    },
+    {
+      "model": "Mistral 7B",
+      "catalogSize": 50,
+      "condition": "tscg",
+      "overall_all": 0.65,
+      "tool_selection_all": 0.7,
+      "param_f1_all": 0.6666666666666667,
+      "n_all": 60,
+      "overall_noMt": 0.625,
+      "tool_selection_noMt": 0.625,
+      "param_f1_noMt": 0.625,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 3,
+      "condition": "natural",
+      "overall_all": 0.9101428571428569,
+      "tool_selection_all": 1,
+      "param_f1_all": 0.8428571428571427,
+      "n_all": 60,
+      "overall_noMt": 0.9439285714285713,
+      "tool_selection_noMt": 1,
+      "param_f1_noMt": 0.8598214285714286,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 3,
+      "condition": "tscg",
+      "overall_all": 0.8754285714285713,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.7635714285714283,
+      "n_all": 60,
+      "overall_noMt": 0.9067857142857143,
+      "tool_selection_noMt": 1,
+      "param_f1_noMt": 0.7669642857142857,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 5,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 5,
+      "condition": "tscg",
+      "overall_all": 0.8746666666666668,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.7816666666666665,
+      "n_all": 60,
+      "overall_noMt": 0.8600000000000002,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.74375,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 10,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 10,
+      "condition": "tscg",
+      "overall_all": 0.894,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.8099999999999999,
+      "n_all": 60,
+      "overall_noMt": 0.93,
+      "tool_selection_noMt": 1,
+      "param_f1_noMt": 0.8250000000000001,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 15,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 15,
+      "condition": "tscg",
+      "overall_all": 0.8387619047619047,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.7919047619047618,
+      "n_all": 60,
+      "overall_noMt": 0.898452380952381,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.8398809523809524,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 20,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 20,
+      "condition": "tscg",
+      "overall_all": 0.8441428571428573,
+      "tool_selection_all": 0.9,
+      "param_f1_all": 0.8028571428571426,
+      "n_all": 60,
+      "overall_noMt": 0.8405952380952383,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.7889880952380953,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 30,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 30,
+      "condition": "tscg",
+      "overall_all": 0.7513333333333333,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.6783333333333332,
+      "n_all": 60,
+      "overall_noMt": 0.6891666666666669,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.5979166666666667,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 50,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Phi-4",
+      "catalogSize": 50,
+      "condition": "tscg",
+      "overall_all": 0.9026190476190477,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.8726190476190474,
+      "n_all": 60,
+      "overall_noMt": 0.9125000000000001,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.875,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 3,
+      "condition": "natural",
+      "overall_all": 0,
+      "tool_selection_all": 0,
+      "param_f1_all": 0,
+      "n_all": 60,
+      "overall_noMt": 0,
+      "tool_selection_noMt": 0,
+      "param_f1_noMt": 0,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 3,
+      "condition": "tscg",
+      "overall_all": 0.7489206349206351,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.6606349206349207,
+      "n_all": 60,
+      "overall_noMt": 0.8639285714285716,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.7535714285714286,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 5,
+      "condition": "natural",
+      "overall_all": 0.5960000000000002,
+      "tool_selection_all": 0.75,
+      "param_f1_all": 0.43,
+      "n_all": 60,
+      "overall_noMt": 0.6741666666666669,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.46666666666666673,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 5,
+      "condition": "tscg",
+      "overall_all": 0.7260000000000001,
+      "tool_selection_all": 0.8666666666666667,
+      "param_f1_all": 0.6499999999999999,
+      "n_all": 60,
+      "overall_noMt": 0.7700000000000001,
+      "tool_selection_noMt": 0.8333333333333334,
+      "param_f1_noMt": 0.6749999999999999,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 10,
+      "condition": "natural",
+      "overall_all": 0.6913333333333332,
+      "tool_selection_all": 0.75,
+      "param_f1_all": 0.6033333333333334,
+      "n_all": 60,
+      "overall_noMt": 0.7391666666666667,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.6291666666666667,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 10,
+      "condition": "tscg",
+      "overall_all": 0.7471111111111113,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.6261111111111111,
+      "n_all": 60,
+      "overall_noMt": 0.7741666666666669,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.6229166666666667,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 15,
+      "condition": "natural",
+      "overall_all": 0.5988571428571429,
+      "tool_selection_all": 0.6333333333333333,
+      "param_f1_all": 0.5471428571428573,
+      "n_all": 60,
+      "overall_noMt": 0.706904761904762,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6422619047619048,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 15,
+      "condition": "tscg",
+      "overall_all": 0.6100714285714288,
+      "tool_selection_all": 0.7333333333333332,
+      "param_f1_all": 0.5522619047619047,
+      "n_all": 60,
+      "overall_noMt": 0.6948809523809526,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.612202380952381,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 20,
+      "condition": "natural",
+      "overall_all": 0.49898412698412703,
+      "tool_selection_all": 0.5333333333333333,
+      "param_f1_all": 0.4474603174603174,
+      "n_all": 60,
+      "overall_noMt": 0.5820634920634921,
+      "tool_selection_noMt": 0.625,
+      "param_f1_noMt": 0.5176587301587302,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 20,
+      "condition": "tscg",
+      "overall_all": 0.6702380952380954,
+      "tool_selection_all": 0.75,
+      "param_f1_all": 0.593095238095238,
+      "n_all": 60,
+      "overall_noMt": 0.6857142857142859,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.5892857142857143,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 30,
+      "condition": "natural",
+      "overall_all": 0.36694949494949497,
+      "tool_selection_all": 0.4,
+      "param_f1_all": 0.3173737373737373,
+      "n_all": 60,
+      "overall_noMt": 0.41702020202020207,
+      "tool_selection_noMt": 0.4583333333333333,
+      "param_f1_noMt": 0.355050505050505,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 30,
+      "condition": "tscg",
+      "overall_all": 0.7138961038961039,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.6097402597402598,
+      "n_all": 60,
+      "overall_noMt": 0.7257034632034634,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.595508658008658,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 50,
+      "condition": "natural",
+      "overall_all": 0.24333333333333335,
+      "tool_selection_all": 0.25,
+      "param_f1_all": 0.2333333333333333,
+      "n_all": 60,
+      "overall_noMt": 0.2833333333333334,
+      "tool_selection_noMt": 0.2916666666666667,
+      "param_f1_noMt": 0.2708333333333333,
+      "n_noMt": 48
+    },
+    {
+      "model": "Gemma 3 4B",
+      "catalogSize": 50,
+      "condition": "tscg",
+      "overall_all": 0.8744444444444444,
+      "tool_selection_all": 0.8833333333333332,
+      "param_f1_all": 0.8777777777777778,
+      "n_all": 60,
+      "overall_noMt": 0.8638888888888889,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.8472222222222222,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 3,
+      "condition": "natural",
+      "overall_all": 0.6021269841269843,
+      "tool_selection_all": 0.7833333333333333,
+      "param_f1_all": 0.451984126984127,
+      "n_all": 60,
+      "overall_noMt": 0.7290476190476194,
+      "tool_selection_noMt": 0.8541666666666666,
+      "param_f1_noMt": 0.5413690476190477,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 3,
+      "condition": "tscg",
+      "overall_all": 0.7904761904761904,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.7411904761904762,
+      "n_all": 60,
+      "overall_noMt": 0.7714285714285715,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.7098214285714285,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 5,
+      "condition": "natural",
+      "overall_all": 0.6330000000000002,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.475,
+      "n_all": 60,
+      "overall_noMt": 0.7433333333333335,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.5458333333333333,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 5,
+      "condition": "tscg",
+      "overall_all": 0.8033333333333332,
+      "tool_selection_all": 1,
+      "param_f1_all": 0.6783333333333333,
+      "n_all": 60,
+      "overall_noMt": 0.8958333333333335,
+      "tool_selection_noMt": 1,
+      "param_f1_noMt": 0.7395833333333334,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 10,
+      "condition": "natural",
+      "overall_all": 0.735777777777778,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.6477777777777778,
+      "n_all": 60,
+      "overall_noMt": 0.7391666666666667,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.6291666666666668,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 10,
+      "condition": "tscg",
+      "overall_all": 0.7238888888888889,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.638888888888889,
+      "n_all": 60,
+      "overall_noMt": 0.7416666666666667,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.6354166666666666,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 15,
+      "condition": "natural",
+      "overall_all": 0.7771904761904763,
+      "tool_selection_all": 0.9166666666666666,
+      "param_f1_all": 0.7404761904761904,
+      "n_all": 60,
+      "overall_noMt": 0.8860714285714287,
+      "tool_selection_noMt": 0.9166666666666666,
+      "param_f1_noMt": 0.8401785714285714,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 15,
+      "condition": "tscg",
+      "overall_all": 0.818095238095238,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.7802380952380953,
+      "n_all": 60,
+      "overall_noMt": 0.905952380952381,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.8586309523809524,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 20,
+      "condition": "natural",
+      "overall_all": 0.7839523809523811,
+      "tool_selection_all": 0.9166666666666666,
+      "param_f1_all": 0.7098809523809523,
+      "n_all": 60,
+      "overall_noMt": 0.8341071428571429,
+      "tool_selection_noMt": 0.8958333333333334,
+      "param_f1_noMt": 0.7415178571428571,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 20,
+      "condition": "tscg",
+      "overall_all": 0.8096507936507937,
+      "tool_selection_all": 0.9,
+      "param_f1_all": 0.7457936507936508,
+      "n_all": 60,
+      "overall_noMt": 0.8217857142857145,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.7419642857142857,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 30,
+      "condition": "natural",
+      "overall_all": 0.8493333333333334,
+      "tool_selection_all": 0.9,
+      "param_f1_all": 0.7983333333333333,
+      "n_all": 60,
+      "overall_noMt": 0.8325,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.7687499999999999,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 30,
+      "condition": "tscg",
+      "overall_all": 0.8413333333333333,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.7783333333333332,
+      "n_all": 60,
+      "overall_noMt": 0.8849999999999999,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.8062499999999999,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 50,
+      "condition": "natural",
+      "overall_all": 0.7513095238095239,
+      "tool_selection_all": 0.8,
+      "param_f1_all": 0.7095238095238096,
+      "n_all": 60,
+      "overall_noMt": 0.7151785714285714,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.6629464285714286,
+      "n_noMt": 48
+    },
+    {
+      "model": "Llama 3.1 8B",
+      "catalogSize": 50,
+      "condition": "tscg",
+      "overall_all": 0.8624999999999999,
+      "tool_selection_all": 0.9,
+      "param_f1_all": 0.825,
+      "n_all": 60,
+      "overall_noMt": 0.8437499999999999,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.796875,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 3,
+      "condition": "natural",
+      "overall_all": 0.4366666666666667,
+      "tool_selection_all": 0.45,
+      "param_f1_all": 0.4166666666666667,
+      "n_all": 60,
+      "overall_noMt": 0.5458333333333334,
+      "tool_selection_noMt": 0.5625,
+      "param_f1_noMt": 0.5208333333333334,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 3,
+      "condition": "tscg",
+      "overall_all": 0.4044444444444445,
+      "tool_selection_all": 0.4166666666666667,
+      "param_f1_all": 0.38611111111111107,
+      "n_all": 60,
+      "overall_noMt": 0.5055555555555556,
+      "tool_selection_noMt": 0.5208333333333334,
+      "param_f1_noMt": 0.48263888888888884,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 5,
+      "condition": "natural",
+      "overall_all": 0.9433333333333334,
+      "tool_selection_all": 0.95,
+      "param_f1_all": 0.9333333333333332,
+      "n_all": 60,
+      "overall_noMt": 0.9291666666666667,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.9166666666666666,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 5,
+      "condition": "tscg",
+      "overall_all": 0.8433333333333334,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.8333333333333333,
+      "n_all": 60,
+      "overall_noMt": 0.8666666666666667,
+      "tool_selection_noMt": 0.875,
+      "param_f1_noMt": 0.8541666666666666,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 10,
+      "condition": "natural",
+      "overall_all": 0.8866666666666667,
+      "tool_selection_all": 0.9,
+      "param_f1_all": 0.8666666666666667,
+      "n_all": 60,
+      "overall_noMt": 0.9833333333333334,
+      "tool_selection_noMt": 1,
+      "param_f1_noMt": 0.9583333333333334,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 10,
+      "condition": "tscg",
+      "overall_all": 0.6900000000000001,
+      "tool_selection_all": 0.7,
+      "param_f1_all": 0.675,
+      "n_all": 60,
+      "overall_noMt": 0.8000000000000002,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.78125,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 15,
+      "condition": "natural",
+      "overall_all": 0.45,
+      "tool_selection_all": 0.45,
+      "param_f1_all": 0.45,
+      "n_all": 60,
+      "overall_noMt": 0.5625,
+      "tool_selection_noMt": 0.5625,
+      "param_f1_noMt": 0.5625,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 15,
+      "condition": "tscg",
+      "overall_all": 0.5,
+      "tool_selection_all": 0.5,
+      "param_f1_all": 0.5,
+      "n_all": 60,
+      "overall_noMt": 0.5625,
+      "tool_selection_noMt": 0.5625,
+      "param_f1_noMt": 0.5625,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 20,
+      "condition": "natural",
+      "overall_all": 0.44333333333333336,
+      "tool_selection_all": 0.45,
+      "param_f1_all": 0.43333333333333335,
+      "n_all": 60,
+      "overall_noMt": 0.4916666666666667,
+      "tool_selection_noMt": 0.5,
+      "param_f1_noMt": 0.4791666666666667,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 20,
+      "condition": "tscg",
+      "overall_all": 0.6933333333333334,
+      "tool_selection_all": 0.7,
+      "param_f1_all": 0.6833333333333333,
+      "n_all": 60,
+      "overall_noMt": 0.7416666666666667,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.7291666666666666,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 30,
+      "condition": "natural",
+      "overall_all": 0.85,
+      "tool_selection_all": 0.85,
+      "param_f1_all": 0.85,
+      "n_all": 60,
+      "overall_noMt": 0.9375,
+      "tool_selection_noMt": 0.9375,
+      "param_f1_noMt": 0.9375,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 30,
+      "condition": "tscg",
+      "overall_all": 0.7,
+      "tool_selection_all": 0.7,
+      "param_f1_all": 0.7,
+      "n_all": 60,
+      "overall_noMt": 0.75,
+      "tool_selection_noMt": 0.75,
+      "param_f1_noMt": 0.75,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 50,
+      "condition": "natural",
+      "overall_all": 0.9,
+      "tool_selection_all": 0.9,
+      "param_f1_all": 0.9,
+      "n_all": 60,
+      "overall_noMt": 1,
+      "tool_selection_noMt": 1,
+      "param_f1_noMt": 1,
+      "n_noMt": 48
+    },
+    {
+      "model": "Qwen3 4B",
+      "catalogSize": 50,
+      "condition": "tscg",
+      "overall_all": 0.75,
+      "tool_selection_all": 0.75,
+      "param_f1_all": 0.75,
+      "n_all": 60,
+      "overall_noMt": 0.8125,
+      "tool_selection_noMt": 0.8125,
+      "param_f1_noMt": 0.8125,
+      "n_noMt": 48
+    }
+  ]
+}

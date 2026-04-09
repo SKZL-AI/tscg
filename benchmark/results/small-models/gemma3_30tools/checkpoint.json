@@ -1,0 +1,3635 @@
+[
+  {
+    "result_id": "14279e39-3678-40fe-b53d-61f5ca2655ec",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 50,
+      "total_latency_ms": 14708,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:46.799Z"
+  },
+  {
+    "result_id": "6606d657-6cc2-4625-a5a0-8072a78e3924",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my-bucket\", \"prefix\": \"images/logos\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "bucket": "my-bucket",
+          "prefix": "images/logos",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6982,
+      "output_tokens": 44,
+      "total_latency_ms": 1057,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:47.914Z"
+  },
+  {
+    "result_id": "13a573eb-72ff-4192-a1ff-e7c79519d2c1",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"src/components\",\n    \"bucket\": \"my-bucket\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "bucket": "my-bucket"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 52,
+      "total_latency_ms": 1113,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:49.084Z"
+  },
+  {
+    "result_id": "5da3f259-27ea-474d-8db5-ac1949b19c2e",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 42,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7004,
+      "output_tokens": 59,
+      "total_latency_ms": 1149,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:50.295Z"
+  },
+  {
+    "result_id": "79f50d16-7697-4154-a007-d9211ac58937",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"arguments\": {\n    \"event_id\": \"example_value\",\n    \"title\": \"Updated Event Title\",\n    \"start\": \"2024-03-15T10:00:00Z\",\n    \"end\": \"2024-03-15T11:00:00Z\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "Updated Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 106,
+      "total_latency_ms": 1426,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:51.785Z"
+  },
+  {
+    "result_id": "da9073cb-c0d3-498b-9d9c-72650e275579",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\",\n    \"include_pending\": true,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value",
+          "include_pending": true,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 6995,
+      "output_tokens": 63,
+      "total_latency_ms": 1193,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:53.047Z"
+  },
+  {
+    "result_id": "37ec67de-3fc4-4356-859a-dfadba4d991c",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6996,
+      "output_tokens": 40,
+      "total_latency_ms": 1055,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:54.167Z"
+  },
+  {
+    "result_id": "9849bed2-db57-4847-9b1a-5c19cc31e5c0",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6998,
+      "output_tokens": 42,
+      "total_latency_ms": 1054,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:55.276Z"
+  },
+  {
+    "result_id": "ac51420d-612b-48d8-8114-e9602b8b573c",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7002,
+      "output_tokens": 56,
+      "total_latency_ms": 1139,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:56.483Z"
+  },
+  {
+    "result_id": "7c72d008-e79d-42ff-9d93-a0b1a0b8053c",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"tool_name\", \"arguments\": {\"function\": \"media_text_to_speech\", \"text\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "tool_name",
+        "arguments": {
+          "function": "media_text_to_speech",
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 7012,
+      "output_tokens": 37,
+      "total_latency_ms": 1028,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:57.576Z"
+  },
+  {
+    "result_id": "37cc895b-4c76-4d41-b21d-53818f6a1614",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"shop_track_order\",\n  \"arguments\": {\n    \"order_id\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "shop_track_order",
+        "arguments": {
+          "order_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 7017,
+      "output_tokens": 42,
+      "total_latency_ms": 1063,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:58.696Z"
+  },
+  {
+    "result_id": "4c6bbef7-e72d-4e72-a5c5-847b09a52b50",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"tool_name\", \"arguments\": {\"ticker\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "tool_name",
+        "arguments": {
+          "ticker": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 7056,
+      "output_tokens": 25,
+      "total_latency_ms": 963,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:43:59.724Z"
+  },
+  {
+    "result_id": "ce08df3d-c524-4848-bfc1-5b80768f6694",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"Berlin\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6981,
+      "output_tokens": 40,
+      "total_latency_ms": 1056,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:00.838Z"
+  },
+  {
+    "result_id": "34b5305c-1d59-4c57-a228-f0396b70a9e9",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_create_user\",\n  \"arguments\": {\n    \"email\": \"main\",\n    \"name\": \"config.json\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 48,
+      "total_latency_ms": 1115,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:02.013Z"
+  },
+  {
+    "result_id": "f9d7a63f-7e46-46d8-929d-1e24ab8d0f26",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7022,
+      "output_tokens": 74,
+      "total_latency_ms": 1254,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:03.326Z"
+  },
+  {
+    "result_id": "100f70b0-e283-4252-ac8c-1f4f62896f9f",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_create_event\",\n  \"arguments\": {\n    \"title\": \"Berlin\",\n    \"start\": \"production\",\n    \"end\": \"main\",\n    \"location\": \"quarterly-report\",\n    \"attendees\": [\"value1\"],\n    \"verbose\": false\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ],
+          "verbose": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 7024,
+      "output_tokens": 81,
+      "total_latency_ms": 1287,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:04.674Z"
+  },
+  {
+    "result_id": "e4af788e-8428-4675-95bc-0c5c06ba2e7a",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "That's a really complex question, and the short answer is: it's incredibly difficult to say definitively if electric cars will *completely* replace gas cars. There are a lot of factors at play, and the future is likely to be a mix of both. Here's a breakdown of the arguments for and against complete replacement, along with the key trends:\n\n**Arguments for Electric Car Dominance:**\n\n* **Environmental Benefits:** This is the biggest driver. EVs produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change.  As renewable energy sources become more prevalent to power the grid, the overall carbon footprint of EVs continues to decrease.\n* **Falling Battery Costs:** Battery technology is improving rapidly, and costs are steadily decreasing. This is making EVs more affordable and competitive with gas cars.  Analysts predict battery costs could fall dramatically further.\n* **Government Incentives & Regulations:** Many governments worldwide are offering subsidies, tax credits, and stricter emission regulations to encourage EV adoption.  Some countries and cities are even planning to ban the sale of new gasoline-powered vehicles in the coming years.\n* **Performance & Technology:** EVs offer instant torque, quick acceleration, and a quieter driving experience.  Battery technology is also leading to longer ranges and faster charging times.\n* **Lower Running Costs:** Electricity is generally cheaper than gasoline, and EVs require less maintenance (no oil changes, etc.).\n\n**Arguments Against Complete Replacement:**\n\n* **Charging Infrastructure:** The availability of charging stations is still a major hurdle. While the network is growing rapidly, it’s not yet widespread enough, especially in rural areas and apartment complexes. “Range anxiety” – the fear of running out of battery – remains a concern for many consumers.\n* **Charging Time:** Even with fast chargers, refueling an EV takes longer than filling a gas tank.  This can be a significant inconvenience.\n* **Battery Production & Materials:** The production of EV batteries requires significant amounts of materials like lithium, cobalt, and nickel.  There are concerns about the environmental and ethical impacts of mining these materials, as well as potential supply chain disruptions.\n* **Upfront Cost:** While prices are coming down, EVs still tend to be more expensive than comparable gas cars, although this gap is narrowing.\n* **Grid Capacity:**  A massive increase in EV adoption will put a strain on the electricity grid.  Significant investments in grid infrastructure will be needed to handle the increased demand.\n* **Specific Use Cases:** Some vehicles, like heavy-duty trucks and long-haul transport, are proving more challenging to electrify due to the energy demands and the need for longer ranges.\n\n\n**Likely Scenario – A Mixed Future:**\n\nMost experts believe a gradual transition is more likely than a sudden, complete replacement. Here's what's likely to happen:\n\n* **EVs will dominate the passenger vehicle market:**  As technology improves and costs continue to fall, EVs will become the preferred choice for most consumers.\n* **Gas cars will still exist:**  They’ll likely remain popular in certain segments (trucks, SUVs, and potentially some smaller vehicles) and in areas where charging infrastructure is limited.\n* **Hybrid vehicles will play a transitional role:** Hybrids will likely continue to be a bridge between gas and electric vehicles, offering some fuel efficiency benefits while reducing reliance on charging infrastructure.\n\n**Conclusion:**\n\nWhile the trend is undeniably towards electric vehicles, a complete replacement of gas cars is unlikely in the near future.  It’s a complex transition driven by technological advancements, environmental concerns, and economic factors.  The pace of change will depend on continued innovation, investment in infrastructure, and policy decisions.\n\n---\n\nTo help me give you a more tailored response, could you tell me:\n\n*   Are you interested in a specific timeframe (e.g., 10 years, 20 years, 50 years)?\n*   Are you interested in a particular region or country?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6978,
+      "output_tokens": 819,
+      "total_latency_ms": 5639,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:10.370Z"
+  },
+  {
+    "result_id": "f1d45a52-9798-4611-8999-f31f5f7ec558",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6973,
+      "output_tokens": 29,
+      "total_latency_ms": 976,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:11.407Z"
+  },
+  {
+    "result_id": "c364821c-7770-4a8b-9914-7aea26fec153",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": null,\n    \"status\": null,\n    \"search\": null,\n    \"max_results\": 100\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": null,
+          "max_results": 100
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 6980,
+      "output_tokens": 62,
+      "total_latency_ms": 1186,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:12.658Z"
+  },
+  {
+    "result_id": "17767946-a4de-413f-adc0-23b225da965e",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's dive into the fascinating history of storage – it’s a story of incredible innovation and shrinking technology! Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Storage (Before the 20th Century):**\n\n* **Clay Tablets (6000 BC - 3000 BC):**  The earliest known form of storage.  Mesopotamians used wet-baked clay tablets to record cuneiform script.  Fragile and limited capacity.\n* **Papyrus Scrolls (3000 BC - 1st Century BC):** Egyptians and Greeks used papyrus for writing and storing information.  More portable than clay, but still susceptible to damage.\n* **Parchment & Vellum (1st Century BC - Middle Ages):** Animal skin (sheep, goat, calf) offered a more durable writing surface than papyrus.  Became the dominant material for books and documents.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, allowing for multiple drafts.\n\n**2. The Dawn of Electronic Storage (Late 19th – Early 20th Centuries):**\n\n* **1888: Telegraphic Memory (Samuel Gore):** Gore invented a device that could store telegraph messages electrically, allowing for replay.  A very early form of electronic data storage.\n* **1932: Magnetic Tape Recording (Emile Belin & Léon Théran):** This is a *huge* breakthrough.  The first practical magnetic recording system. Initially used for audio, but the principle was revolutionary.\n* **1946: IBM Selectron:** Considered the first hard drive. It used rotating magnetic drums to store data, but was incredibly expensive and unreliable.\n\n**3. The Rise of Magnetic Storage (Mid-20th Century):**\n\n* **1956: IBM 305 RAMAC:** The first commercially available hard disk drive.  It was massive (filled a whole room!), but dramatically improved storage density and speed compared to the Selectron.\n* **1958: Magnetic Tape for Data:**  Magnetic tape began to be used for storing computer data, becoming more affordable and reliable than hard drives.\n* **1960s - 1970s:  Evolution of Hard Drives:**  Hard drive technology continued to improve – smaller platters, faster speeds, and increased capacity.  Companies like Seagate and Western Digital emerged.\n\n**4. The Floppy Disk Era (1970s - 1990s):**\n\n* **1971: Intel 404 Floppy Drive:** The first floppy disk drive, offering a portable and relatively inexpensive way to store and transfer data.\n* **5.25\" and 3.5\" Floppy Disks:**  Different sizes of floppy disks became standard, with 3.5\" disks eventually dominating.  Floppy disks were used for everything from software distribution to backing up data.\n\n**5. The Age of Optical Storage (1980s - 2000s):**\n\n* **1981: Sony Disc Writer:** Introduced the first writable optical disc technology.\n* **CD-ROM (1982):** Compact Disc Read-Only Memory – revolutionized music distribution and provided a high-capacity storage medium for software.\n* **CD-R & CD-RW (Later):** Recordable and rewritable versions of CDs expanded their uses.\n\n**6. The Solid State Revolution (Late 1990s – Present):**\n\n* **1996: First NAND Flash Memory Drives:**  NAND flash memory, initially used in EEPROMs, began to be used in storage devices.\n* **1999: Zip Drives:** Offered high capacity and portability, competing with floppy disks.\n* **2003: iPod & Flash Memory:** The launch of the iPod, using flash memory, marked a turning point. Flash memory became the dominant storage technology for portable devices.\n* **SSDs (Solid State Drives) – 2008 onwards:** Solid State Drives, using NAND flash memory, replaced traditional hard drives in many applications, offering significantly faster speeds, greater durability, and lower power consumption.  They are now the standard for most computers and laptops.\n* **NVMe SSDs (2010s):**  Non-Volatile Memory Express (NVMe) SSDs, utilizing the PCIe interface, provide even greater speeds than traditional SATA SSDs.\n\n**7. Current Trends & Future:**\n\n* **UFS (Universal Flash Storage):**  A standard for NAND flash memory used in smartphones and tablets.\n* **3D NAND:**  Increasing storage density by stacking memory cells vertically.\n* **Persistent Memory (MRAM, ReRAM):** Emerging technologies",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 6974,
+      "output_tokens": 1024,
+      "total_latency_ms": 6851,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:19.576Z"
+  },
+  {
+    "result_id": "4faddf3b-c4a0-4896-b752-138332ad9984",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 50,
+      "total_latency_ms": 1095,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:20.732Z"
+  },
+  {
+    "result_id": "f3f82f5b-82fb-49d9-81b7-357714aa5ab5",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my-bucket\", \"prefix\": \"images/logos\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "bucket": "my-bucket",
+          "prefix": "images/logos",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 6982,
+      "output_tokens": 44,
+      "total_latency_ms": 1069,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:21.862Z"
+  },
+  {
+    "result_id": "31d9be51-0bd0-4bf4-a928-c5c326187490",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"store_generate_signed_url\",\n  \"arguments\": {\n    \"path\": \"src/components\",\n    \"bucket\": \"my-bucket\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "bucket": "my-bucket"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 6987,
+      "output_tokens": 52,
+      "total_latency_ms": 1110,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:23.029Z"
+  },
+  {
+    "result_id": "da7ffed9-de44-448c-807d-573ee8249953",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 42,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7004,
+      "output_tokens": 59,
+      "total_latency_ms": 1152,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:24.237Z"
+  },
+  {
+    "result_id": "e07117de-3ba5-4c78-b8fe-dfae894ca1f8",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"cal_update_event\",\n  \"arguments\": {\n    \"event_id\": \"example_value\",\n    \"title\": \"Updated Event Title\",\n    \"start\": \"2024-03-15T10:00:00Z\",\n    \"end\": \"2024-03-15T11:00:00Z\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "Updated Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 6991,
+      "output_tokens": 106,
+      "total_latency_ms": 1430,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:25.731Z"
+  },
+  {
+    "result_id": "db6d9637-9e8a-49c3-8fa5-79305c1a8af0",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\",\n    \"include_pending\": true,\n    \"locale\": \"en-US\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value",
+          "include_pending": true,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 6995,
+      "output_tokens": 63,
+      "total_latency_ms": 1184,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:26.993Z"
+  },
+  {
+    "result_id": "95bbb604-0a4a-40c4-ac27-6a3967e9336f",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6996,
+      "output_tokens": 40,
+      "total_latency_ms": 1045,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:28.098Z"
+  },
+  {
+    "result_id": "a96d7834-9d3e-44c8-ad90-5de490ebd7b8",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"media_text_to_speech\",\n  \"arguments\": {\n    \"text\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 6998,
+      "output_tokens": 42,
+      "total_latency_ms": 17351,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:45.512Z"
+  },
+  {
+    "result_id": "2601dac0-51f9-4abb-a154-79a338f4a9b0",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 7002,
+      "output_tokens": 56,
+      "total_latency_ms": 1151,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:46.719Z"
+  },
+  {
+    "result_id": "58227084-6d76-4177-8603-baf71b416495",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"tool_name\", \"arguments\": {\"function\": \"media_text_to_speech\", \"text\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "tool_name",
+        "arguments": {
+          "function": "media_text_to_speech",
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 7012,
+      "output_tokens": 37,
+      "total_latency_ms": 1035,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:44:47.821Z"
+  },
+  {
+    "result_id": "09a5c1a0-8fe8-46c7-9988-b14f21516994",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:10.747Z"
+  },
+  {
+    "result_id": "2afb271f-11a8-4061-b867-5232aed847fe",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:14.118Z"
+  },
+  {
+    "result_id": "3f86b16e-f6de-454e-92b4-2bdf8b883da0",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:17.506Z"
+  },
+  {
+    "result_id": "fafa2259-359c-44ff-960b-fddbad707e3f",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:20.887Z"
+  },
+  {
+    "result_id": "02f80af7-9cb9-495f-95ee-c6a2eb0a63f7",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:24.280Z"
+  },
+  {
+    "result_id": "c6de6d44-b409-4725-9d93-135847b90a4f",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:27.706Z"
+  },
+  {
+    "result_id": "a12329e5-96e5-49b5-990c-cd3fd0c97f8f",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:31.144Z"
+  },
+  {
+    "result_id": "e193a5ab-c2a2-4d99-8334-4acf6485338c",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:34.519Z"
+  },
+  {
+    "result_id": "75b794ad-c668-4186-b9de-216640fa8306",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:37.902Z"
+  },
+  {
+    "result_id": "2fb08aea-9e58-436d-90cf-a6fb8ea1d5a6",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:41.289Z"
+  },
+  {
+    "result_id": "aaeddd29-c0f8-4267-97eb-7d725b9dcc1b",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:44.656Z"
+  },
+  {
+    "result_id": "0e1c2c98-742e-445f-83e9-1921980c56d7",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:48.052Z"
+  },
+  {
+    "result_id": "93cdc08a-f7fd-419c-ab8d-338cdae6a413",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:51.450Z"
+  },
+  {
+    "result_id": "7146d661-54db-4b56-b143-2e4be098d30c",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:54.809Z"
+  },
+  {
+    "result_id": "79081e6c-94d9-4d89-bfa7-7ed25f174c6b",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:45:58.203Z"
+  },
+  {
+    "result_id": "ea9d14cc-1b55-4602-b892-4441ae21f4ff",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:01.596Z"
+  },
+  {
+    "result_id": "d7854ce9-0ba5-4b44-9c6d-63a417fe641d",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:05.020Z"
+  },
+  {
+    "result_id": "085cf34e-b263-4962-a63c-a7d32c43caaa",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:08.393Z"
+  },
+  {
+    "result_id": "2c293e77-27fb-4f46-8738-4cc283b0f63c",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:11.757Z"
+  },
+  {
+    "result_id": "99d72d3f-3408-403b-83fd-6143f6468e5b",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:15.120Z"
+  },
+  {
+    "result_id": "1fc560e4-7ff6-48dc-a4f0-30bf6f14ecd2",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:18.510Z"
+  },
+  {
+    "result_id": "c86c2192-9df9-4995-99d1-4e345e982c47",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:21.922Z"
+  },
+  {
+    "result_id": "450bd426-5c07-4306-9352-1f475a0dfadd",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:25.301Z"
+  },
+  {
+    "result_id": "31c58bc9-b736-4096-ac80-048568d0101e",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:28.686Z"
+  },
+  {
+    "result_id": "de767320-f7fe-481a-a667-f71db1bdcec4",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:32.058Z"
+  },
+  {
+    "result_id": "9b3a1ffd-92e5-4569-824f-cf873f19dd92",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:35.453Z"
+  },
+  {
+    "result_id": "72bb704a-84fd-442e-aefb-66368eaeff3b",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:38.853Z"
+  },
+  {
+    "result_id": "39e4d3ee-87fa-4016-87ba-b6155cb109a1",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:42.227Z"
+  },
+  {
+    "result_id": "5653f269-f0ac-4c51-813d-a201c18c04c4",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:45.616Z"
+  },
+  {
+    "result_id": "e1c19180-15c9-46d5-8aa4-9067f198cf8e",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+      "parse_success": false
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_latency_ms": 0,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:49.014Z"
+  },
+  {
+    "result_id": "ec9d013e-f0de-423d-b455-329ad5b85fa5",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 50,
+      "total_latency_ms": 1136,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:50.218Z"
+  },
+  {
+    "result_id": "9ca22eb0-4d94-4d05-974d-a4207cd35acb",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"reports\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "reports",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2338,
+      "output_tokens": 42,
+      "total_latency_ms": 896,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:51.172Z"
+  },
+  {
+    "result_id": "0954ed4e-e561-4560-bd2b-6ecc7090d9a1",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n\"name\": \"store_generate_signed_url\",\n\"arguments\": {\n\"path\": \"src/components\",\n\"expiry_seconds\": 3600,\n\"method\": \"GET\"\n}\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 57,
+      "total_latency_ms": 1001,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:52.243Z"
+  },
+  {
+    "result_id": "9d6143af-0de5-4b1a-97c9-bf4a56cddeda",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2360,
+      "output_tokens": 42,
+      "total_latency_ms": 6443,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:58.757Z"
+  },
+  {
+    "result_id": "21aebd54-cc21-4a15-a573-536e0461939f",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\", \"start\": \"2024-03-15T10:00:00Z\", \"end\": \"2024-03-15T11:00:00Z\", \"location\": \"New Meeting Room\", \"attendees\": [\"user1@example.com\", \"user2@example.com\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "Updated Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z",
+          "location": "New Meeting Room",
+          "attendees": [
+            "user1@example.com",
+            "user2@example.com"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.2857142857142857,
+      "overall": 0.7142857142857143
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 116,
+      "total_latency_ms": 1041,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:46:59.860Z"
+  },
+  {
+    "result_id": "94f8c084-4cd5-45e4-9783-54046778b6de",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"account_balance_retrieved\", \"properties\": {\"account_id\": \"example_value\"}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "account_balance_retrieved",
+          "properties": {
+            "account_id": "example_value"
+          },
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2351,
+      "output_tokens": 56,
+      "total_latency_ms": 697,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:00.616Z"
+  },
+  {
+    "result_id": "0b16d3c0-74ec-4064-a9ff-030c4c568fe3",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2352,
+      "output_tokens": 33,
+      "total_latency_ms": 566,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:01.244Z"
+  },
+  {
+    "result_id": "3f6f0c0a-c8b9-40bf-9022-9f889a828134",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2354,
+      "output_tokens": 43,
+      "total_latency_ms": 621,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:01.929Z"
+  },
+  {
+    "result_id": "95fead16-0724-4067-b0f5-0774fa7bfd26",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2358,
+      "output_tokens": 56,
+      "total_latency_ms": 44271,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:46.272Z"
+  },
+  {
+    "result_id": "69a39b58-de64-4c83-afa5-586b446982ab",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"tool_name\", \"arguments\": {\"param\": \"example_value\"}}\n```\n```json\n{\"name\": \"tool_name\", \"arguments\": {\"text\": \"example_value\"}}\n```\n```json\n{\"name\": \"tool_name\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "tool_name",
+          "arguments": {
+            "param": "example_value"
+          }
+        },
+        {
+          "name": "tool_name",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "tool_name",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2368,
+      "output_tokens": 89,
+      "total_latency_ms": 1551,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:47.891Z"
+  },
+  {
+    "result_id": "094f132d-cae3-42c1-9aff-412c9382fc53",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2373,
+      "output_tokens": 87,
+      "total_latency_ms": 1574,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:49.536Z"
+  },
+  {
+    "result_id": "f66b5495-0e02-4936-8767-90a54a0a6b53",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\"}}\n```\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n```\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "AAPL"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.6666666666666666
+    },
+    "metrics": {
+      "input_tokens": 2412,
+      "output_tokens": 124,
+      "total_latency_ms": 1770,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:51.371Z"
+  },
+  {
+    "result_id": "11ff88e5-863b-4529-9d0e-2823f8e18527",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\n\"name\": \"analytics_run_report\",\n\"arguments\": {\n\"report_id\": \"Berlin\"\n}\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2337,
+      "output_tokens": 36,
+      "total_latency_ms": 877,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:52.306Z"
+  },
+  {
+    "result_id": "c52ff95a-1904-4345-8323-02be17c4b811",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 45,
+      "total_latency_ms": 995,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:53.364Z"
+  },
+  {
+    "result_id": "4c96b86d-a18b-49ff-84ab-f818671f8931",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2378,
+      "output_tokens": 55,
+      "total_latency_ms": 1327,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:54.763Z"
+  },
+  {
+    "result_id": "4c463e63-5023-4781-aafc-69718ef07564",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"event_id\": \"64f7a9b2-9c3d-4a8b-8c7e-f01234567890\", \"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "event_id": "64f7a9b2-9c3d-4a8b-8c7e-f01234567890",
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 2380,
+      "output_tokens": 98,
+      "total_latency_ms": 1899,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:47:56.730Z"
+  },
+  {
+    "result_id": "381dddaf-e177-4634-9feb-a8bcf3af19ec",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "That's a really complex question, and there's no simple yes or no answer! Here's a breakdown of the factors involved, based on my knowledge:\n\n**Arguments for Electric Car Dominance:**\n\n*   **Environmental Benefits:** Electric vehicles (EVs) produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change. This is a huge driver for adoption.\n*   **Falling Battery Costs:** Battery technology is improving rapidly, and costs are decreasing. This is making EVs more affordable.\n*   **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and regulations (like emissions standards) that favor EVs.\n*   **Performance:** Modern EVs offer impressive acceleration and performance, often exceeding that of comparable gasoline cars.\n*   **Lower Running Costs:** Electricity is generally cheaper than gasoline, and EVs have fewer moving parts, leading to lower maintenance costs.\n*   **Technological Advancements:** Battery range is increasing, charging infrastructure is expanding, and software improvements are constantly enhancing the EV experience.\n\n**Arguments Against Complete Replacement:**\n\n*   **Charging Infrastructure:** The availability of public charging stations is still a major limitation, particularly in rural areas and apartment complexes. \"Range anxiety\" (fear of running out of battery) remains a concern for many consumers.\n*   **Charging Time:** Charging an EV takes longer than filling a gasoline car, although fast-charging technology is improving.\n*   **Battery Production and Disposal:** The production of EV batteries requires significant resources and raises concerns about sustainability. Battery disposal and recycling are also challenges that need to be addressed.\n*   **Upfront Cost:** While costs are coming down, EVs still tend to have a higher initial purchase price than comparable gasoline cars (though this gap is narrowing).\n*   **Range Limitations:** While range is increasing, some EVs still have limited range, which may not suit all driving needs (e.g., long road trips).\n*   **Grid Capacity:** Widespread EV adoption will put a strain on the electricity grid, requiring significant investments in grid infrastructure.\n\n**Likely Scenario:**\n\nIt's *unlikely* that electric cars will *completely* replace gas cars in the near future. Instead, a more probable scenario is a **mixed market** where EVs and gasoline cars coexist. EVs will likely dominate in urban areas and for shorter commutes, while gasoline cars will remain prevalent for longer distances and in areas with limited charging infrastructure.\n\n**Timeframe:**\n\nPredictions vary, but most experts believe that EVs will account for a significant portion of new car sales (perhaps 50-70% or more) by 2030-2035, but full replacement is still decades away.\n\nDo you want me to delve deeper into a specific aspect of this question, such as:\n\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The technological advancements driving EV adoption?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2334,
+      "output_tokens": 610,
+      "total_latency_ms": 6943,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:03.737Z"
+  },
+  {
+    "result_id": "f1a842ed-e4e7-4f6c-84bd-53abb627c688",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"user@example.com\", \"name\": \"John Doe\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "user@example.com",
+          "name": "John Doe",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 48,
+      "total_latency_ms": 954,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:04.749Z"
+  },
+  {
+    "result_id": "7ef300ba-d434-4cc4-a119-76a7fadc716a",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"test@example.com\", \"name\": \"Test User\", \"role\": \"viewer\", \"password\": \"password123\", \"limit\": 1}}\n",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "test@example.com",
+          "name": "Test User",
+          "role": "viewer",
+          "password": "password123",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2336,
+      "output_tokens": 53,
+      "total_latency_ms": 1150,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:05.965Z"
+  },
+  {
+    "result_id": "0b29c12e-d1fd-465c-bc72-0e9e75ee0064",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, let's delve into the fascinating history of storage – a story of constant innovation and shrinking sizes. Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Era (Before 1800s):**\n\n* **Clay Tablets & Papyrus (Ancient Civilizations):** The earliest forms of storage were physical – writing on clay tablets (Mesopotamia, Egypt) and papyrus scrolls. These were bulky, fragile, and limited in capacity.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, offering a more reusable medium.\n* **Paper (China, 2nd Century BC):** The invention of paper revolutionized writing and storage, becoming the dominant medium for centuries.  It was still relatively expensive and prone to damage.\n\n**2. The Dawn of Mechanical Storage (1800s - Early 1900s):**\n\n* **Punch Cards (1801 - Joseph Marie Jacquard):**  Initially used to control looms, punch cards represented a crucial step. They encoded data as patterns of holes, a fundamental concept for later storage technologies.\n* **Magnetic Tape (1894 - Fritz Pfleumer):** Pfleumer patented a method of coating metal strips with magnetic material, creating a durable and recordable medium. This was initially used for audio recording but quickly found applications in data storage.\n* **Visible Tape Recording (1928 - AEG):**  AEG developed the first commercially viable magnetic tape recorder, initially for audio.\n\n**3. The Rise of Electronic Storage (1940s - 1970s):**\n\n* **Magnetic Drum Memory (1932 - IBM):**  A rotating metal cylinder coated with magnetic material. Data was written by magnetizing spots on the surface. This was incredibly fast but expensive and limited in capacity.\n* **Magnetic Tape Storage (1956 - IBM):** IBM introduced the IBM 350 RAMAC, the first commercially available computer with magnetic tape storage. This was a massive improvement in capacity and speed compared to drum memory.\n* **Magnetic Disk Storage (1956 - IBM):** IBM also developed the IBM 305 RAMAC, which used rotating magnetic disks. This was faster and more reliable than tape for many applications.\n* **Hard Disk Drives (HDDs) (1957 - Reynolds Metals):** Reynolds Metals introduced the first hard disk drive, using rotating platters coated with magnetic material. This became the dominant form of bulk storage for computers.\n\n**4. The Digital Revolution (1980s - 2000s):**\n\n* **Floppy Disks (1971 - Intel):**  Small, removable magnetic disks that became ubiquitous for data transfer and backup.\n* **Optical Discs (1982 - Sony):** CD-ROMs (Compact Disc Read-Only Memory) offered high-density storage for music and software.\n* **ZIP Drives (1994 - ZipDrive):** Provided significantly higher capacity than floppy disks.\n* **DVDs (1995 - Sony & Pioneer):**  Digital Versatile Discs offered even greater storage capacity for movies and large files.\n* **Solid State Drives (SSDs) (Late 1990s - Present):** Initially expensive, SSDs replaced HDDs in many applications due to their speed, durability, and lower power consumption.\n\n**5. The Modern Era (2000s - Present):**\n\n* **Flash Memory (1983 - Toshiba):** NAND flash memory revolutionized portable storage with devices like USB drives and SD cards.\n* **Cloud Storage (2006 - Dropbox):** The rise of cloud storage services like Dropbox, Google Drive, and OneDrive transformed how people store and access data.\n* **NVMe SSDs (2010s - Present):** Non-Volatile Memory Express (NVMe) SSDs leverage the PCIe bus for dramatically faster speeds than traditional SATA SSDs.\n* **DNA Storage (Emerging):**  Research is underway to store data in DNA, offering potentially enormous storage density and longevity.\n\n**Key Trends Throughout History:**\n\n* **Increased Density:** The primary driver of storage innovation has been increasing the amount of data that can be stored in a given physical space.\n* **Faster Access Times:**  Storage technologies have continually evolved to provide faster access to data.\n* **Smaller Sizes:** Storage devices have shrunk dramatically over time, from room-sized machines to devices that fit in your pocket.\n\nDo you want me to delve deeper into a specific aspect of storage history, such as the development of a particular technology, or perhaps the impact of storage on a specific industry (e.g., computing, music)?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2330,
+      "output_tokens": 1009,
+      "total_latency_ms": 12465,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:18.495Z"
+  },
+  {
+    "result_id": "06191aca-70e0-4873-8c6d-c971a9a19cfc",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 50,
+      "total_latency_ms": 1264,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:19.829Z"
+  },
+  {
+    "result_id": "a073b916-4fe6-4b6c-80a2-a6591954173b",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"reports\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "reports",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2338,
+      "output_tokens": 42,
+      "total_latency_ms": 1148,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:21.034Z"
+  },
+  {
+    "result_id": "ad06b0d9-7eb7-486c-a554-fea5303bac4d",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n\"name\": \"store_generate_signed_url\",\n\"arguments\": {\n\"path\": \"src/components\",\n\"expiry_seconds\": 3600,\n\"method\": \"GET\"\n}\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 57,
+      "total_latency_ms": 1351,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:22.453Z"
+  },
+  {
+    "result_id": "f0d8c56d-aa27-4ba1-b445-4f8be72417d4",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2360,
+      "output_tokens": 42,
+      "total_latency_ms": 1152,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:23.667Z"
+  },
+  {
+    "result_id": "8f71b8a7-4289-4cd3-86f6-2646ac1d52b9",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\", \"start\": \"2024-03-15T10:00:00Z\", \"end\": \"2024-03-15T11:00:00Z\", \"location\": \"New Meeting Room\", \"attendees\": [\"user1@example.com\", \"user2@example.com\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "Updated Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z",
+          "location": "New Meeting Room",
+          "attendees": [
+            "user1@example.com",
+            "user2@example.com"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.2857142857142857,
+      "overall": 0.7142857142857143
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 116,
+      "total_latency_ms": 1982,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:25.711Z"
+  },
+  {
+    "result_id": "d2b31922-9040-4d1b-a22d-e8836d7755ee",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"account_balance_retrieved\", \"properties\": {\"account_id\": \"example_value\"}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "account_balance_retrieved",
+          "properties": {
+            "account_id": "example_value"
+          },
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2351,
+      "output_tokens": 56,
+      "total_latency_ms": 1011,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:26.780Z"
+  },
+  {
+    "result_id": "bdfcfa80-5012-49f5-ab67-55d3157bcd39",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2352,
+      "output_tokens": 33,
+      "total_latency_ms": 833,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:27.674Z"
+  },
+  {
+    "result_id": "238daf9f-7431-4474-9b55-55d9a4f601d6",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2354,
+      "output_tokens": 43,
+      "total_latency_ms": 889,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:28.625Z"
+  },
+  {
+    "result_id": "f57ecc8d-302e-419d-b084-89f0c8894f53",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2358,
+      "output_tokens": 56,
+      "total_latency_ms": 1168,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:29.853Z"
+  },
+  {
+    "result_id": "c9bce4f6-6fee-4ca2-8f57-ca1f51e99877",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"tool_name\", \"arguments\": {\"param\": \"example_value\"}}\n```\n```json\n{\"name\": \"tool_name\", \"arguments\": {\"text\": \"example_value\"}}\n```\n```json\n{\"name\": \"tool_name\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "tool_name",
+          "arguments": {
+            "param": "example_value"
+          }
+        },
+        {
+          "name": "tool_name",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "tool_name",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2368,
+      "output_tokens": 89,
+      "total_latency_ms": 1562,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:31.472Z"
+  },
+  {
+    "result_id": "d7100195-d141-4a22-9ac1-90d8a125a5b0",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2373,
+      "output_tokens": 87,
+      "total_latency_ms": 1555,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:33.099Z"
+  },
+  {
+    "result_id": "68fe9b2d-416b-4add-9f7a-75aa51e94cd3",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\"}}\n```\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n```\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "AAPL"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.6666666666666666
+    },
+    "metrics": {
+      "input_tokens": 2412,
+      "output_tokens": 124,
+      "total_latency_ms": 1754,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:34.913Z"
+  },
+  {
+    "result_id": "c9170060-863f-42e1-8c1a-f201a140469f",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\n\"name\": \"analytics_run_report\",\n\"arguments\": {\n\"report_id\": \"Berlin\"\n}\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2337,
+      "output_tokens": 36,
+      "total_latency_ms": 926,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:35.900Z"
+  },
+  {
+    "result_id": "58f79d76-d334-4b83-985a-6a6d65bf889a",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 45,
+      "total_latency_ms": 1020,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:36.975Z"
+  },
+  {
+    "result_id": "a4409860-ae25-4091-a8f4-bd98941d353a",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2378,
+      "output_tokens": 55,
+      "total_latency_ms": 1330,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:38.364Z"
+  },
+  {
+    "result_id": "7e1f7b18-6a25-49b7-a9ae-1947994d26e8",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"event_id\": \"64f7a9b2-9c3d-4a8b-8c7e-f01234567890\", \"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "event_id": "64f7a9b2-9c3d-4a8b-8c7e-f01234567890",
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 2380,
+      "output_tokens": 98,
+      "total_latency_ms": 1906,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:40.331Z"
+  },
+  {
+    "result_id": "4ef961a5-0932-4680-b402-63a9d14ba08a",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "That's a really complex question, and there's no simple yes or no answer! Here's a breakdown of the factors involved, based on my knowledge:\n\n**Arguments for Electric Car Dominance:**\n\n*   **Environmental Benefits:** Electric vehicles (EVs) produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change. This is a huge driver for adoption.\n*   **Falling Battery Costs:** Battery technology is improving rapidly, and costs are decreasing. This is making EVs more affordable.\n*   **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and regulations (like emissions standards) that favor EVs.\n*   **Performance:** Modern EVs offer impressive acceleration and performance, often exceeding that of comparable gasoline cars.\n*   **Lower Running Costs:** Electricity is generally cheaper than gasoline, and EVs have fewer moving parts, leading to lower maintenance costs.\n*   **Technological Advancements:** Battery range is increasing, charging infrastructure is expanding, and software improvements are constantly enhancing the EV experience.\n\n**Arguments Against Complete Replacement:**\n\n*   **Charging Infrastructure:** The availability of public charging stations is still a major limitation, particularly in rural areas and apartment complexes. \"Range anxiety\" (fear of running out of battery) remains a concern for many consumers.\n*   **Charging Time:** Charging an EV takes longer than filling a gasoline car, although fast-charging technology is improving.\n*   **Battery Production and Disposal:** The production of EV batteries requires significant resources and raises concerns about sustainability. Battery disposal and recycling are also challenges that need to be addressed.\n*   **Upfront Cost:** While costs are coming down, EVs still tend to have a higher initial purchase price than comparable gasoline cars (though this gap is narrowing).\n*   **Range Limitations:** While range is increasing, some EVs still have limited range, which may not suit all driving needs (e.g., long road trips).\n*   **Grid Capacity:** Widespread EV adoption will put a strain on the electricity grid, requiring significant investments in grid infrastructure.\n\n**Likely Scenario:**\n\nIt's *unlikely* that electric cars will *completely* replace gas cars in the near future. Instead, a more probable scenario is a **mixed market** where EVs and gasoline cars coexist. EVs will likely dominate in urban areas and for shorter commutes, while gasoline cars will remain prevalent for longer distances and in areas with limited charging infrastructure.\n\n**Timeframe:**\n\nPredictions vary, but most experts believe that EVs will account for a significant portion of new car sales (perhaps 50-70% or more) by 2030-2035, but full replacement is still decades away.\n\nDo you want me to delve deeper into a specific aspect of this question, such as:\n\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The technological advancements driving EV adoption?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2334,
+      "output_tokens": 610,
+      "total_latency_ms": 8096,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:48.490Z"
+  },
+  {
+    "result_id": "a9d13537-e2f2-4408-a5c3-b39c2d73566d",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"user@example.com\", \"name\": \"John Doe\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "user@example.com",
+          "name": "John Doe",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 48,
+      "total_latency_ms": 1243,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:49.793Z"
+  },
+  {
+    "result_id": "fb59964f-811d-4c77-8b8c-99ca1ee359cc",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"test@example.com\", \"name\": \"Test User\", \"role\": \"viewer\", \"password\": \"password123\", \"limit\": 1}}\n",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "test@example.com",
+          "name": "Test User",
+          "role": "viewer",
+          "password": "password123",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2336,
+      "output_tokens": 53,
+      "total_latency_ms": 1022,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:48:50.878Z"
+  },
+  {
+    "result_id": "77e73645-09dd-43cb-92f6-befb0ce574ef",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, let's delve into the fascinating history of storage – a story of constant innovation and shrinking sizes. Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Era (Before 1800s):**\n\n* **Clay Tablets & Papyrus (Ancient Civilizations):** The earliest forms of storage were physical – writing on clay tablets (Mesopotamia, Egypt) and papyrus scrolls. These were bulky, fragile, and limited in capacity.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, offering a more reusable medium.\n* **Paper (China, 2nd Century BC):** The invention of paper revolutionized writing and storage, becoming the dominant medium for centuries.  It was still relatively expensive and prone to damage.\n\n**2. The Dawn of Mechanical Storage (1800s - Early 1900s):**\n\n* **Punch Cards (1801 - Joseph Marie Jacquard):**  Initially used to control looms, punch cards represented a crucial step. They encoded data as patterns of holes, a fundamental concept for later storage technologies.\n* **Magnetic Tape (1894 - Fritz Pfleumer):** Pfleumer patented a method of coating metal strips with magnetic material, creating a durable and recordable medium. This was initially used for audio recording but quickly found applications in data storage.\n* **Visible Tape Recording (1928 - AEG):**  AEG developed the first commercially viable magnetic tape recorder, initially for audio.\n\n**3. The Rise of Electronic Storage (1940s - 1970s):**\n\n* **Magnetic Drum Memory (1932 - IBM):**  A rotating metal cylinder coated with magnetic material. Data was written by magnetizing spots on the surface. This was incredibly fast but expensive and limited in capacity.\n* **Magnetic Tape Storage (1956 - IBM):** IBM introduced the IBM 350 RAMAC, the first commercially available computer with magnetic tape storage. This was a massive improvement in capacity and speed compared to drum memory.\n* **Magnetic Disk Storage (1956 - IBM):** IBM also developed the IBM 305 RAMAC, which used rotating magnetic disks. This was faster and more reliable than tape for many applications.\n* **Hard Disk Drives (HDDs) (1957 - Reynolds Metals):** Reynolds Metals introduced the first hard disk drive, using rotating platters coated with magnetic material. This became the dominant form of bulk storage for computers.\n\n**4. The Digital Revolution (1980s - 2000s):**\n\n* **Floppy Disks (1971 - Intel):**  Small, removable magnetic disks that became ubiquitous for data transfer and backup.\n* **Optical Discs (1982 - Sony):** CD-ROMs (Compact Disc Read-Only Memory) offered high-density storage for music and software.\n* **ZIP Drives (1994 - ZipDrive):** Provided significantly higher capacity than floppy disks.\n* **DVDs (1995 - Sony & Pioneer):**  Digital Versatile Discs offered even greater storage capacity for movies and large files.\n* **Solid State Drives (SSDs) (Late 1990s - Present):** Initially expensive, SSDs replaced HDDs in many applications due to their speed, durability, and lower power consumption.\n\n**5. The Modern Era (2000s - Present):**\n\n* **Flash Memory (1983 - Toshiba):** NAND flash memory revolutionized portable storage with devices like USB drives and SD cards.\n* **Cloud Storage (2006 - Dropbox):** The rise of cloud storage services like Dropbox, Google Drive, and OneDrive transformed how people store and access data.\n* **NVMe SSDs (2010s - Present):** Non-Volatile Memory Express (NVMe) SSDs leverage the PCIe bus for dramatically faster speeds than traditional SATA SSDs.\n* **DNA Storage (Emerging):**  Research is underway to store data in DNA, offering potentially enormous storage density and longevity.\n\n**Key Trends Throughout History:**\n\n* **Increased Density:** The primary driver of storage innovation has been increasing the amount of data that can be stored in a given physical space.\n* **Faster Access Times:**  Storage technologies have continually evolved to provide faster access to data.\n* **Smaller Sizes:** Storage devices have shrunk dramatically over time, from room-sized machines to devices that fit in your pocket.\n\nDo you want me to delve deeper into a specific aspect of storage history, such as the development of a particular technology, or perhaps the impact of storage on a specific industry (e.g., computing, music)?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2330,
+      "output_tokens": 1009,
+      "total_latency_ms": 11379,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:02.316Z"
+  },
+  {
+    "result_id": "6c001760-fe19-4602-9501-0dfea32f4081",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 50,
+      "total_latency_ms": 1250,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:03.627Z"
+  },
+  {
+    "result_id": "e74b7177-c65a-4d21-839f-21de1715bfe9",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"reports\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "reports",
+          "bucket": "my-bucket",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2338,
+      "output_tokens": 42,
+      "total_latency_ms": 1161,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:04.845Z"
+  },
+  {
+    "result_id": "da16b3f0-8149-4c44-a6ec-585dd504c875",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n\"name\": \"store_generate_signed_url\",\n\"arguments\": {\n\"path\": \"src/components\",\n\"expiry_seconds\": 3600,\n\"method\": \"GET\"\n}\n}\n```",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 57,
+      "total_latency_ms": 1360,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:06.262Z"
+  },
+  {
+    "result_id": "24c80442-3233-46a6-8572-23655f94815c",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2360,
+      "output_tokens": 42,
+      "total_latency_ms": 906,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:07.238Z"
+  },
+  {
+    "result_id": "9b527709-9bb3-459d-9c17-dd420e2972d9",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"Updated Event Title\", \"start\": \"2024-03-15T10:00:00Z\", \"end\": \"2024-03-15T11:00:00Z\", \"location\": \"New Meeting Room\", \"attendees\": [\"user1@example.com\", \"user2@example.com\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "Updated Event Title",
+          "start": "2024-03-15T10:00:00Z",
+          "end": "2024-03-15T11:00:00Z",
+          "location": "New Meeting Room",
+          "attendees": [
+            "user1@example.com",
+            "user2@example.com"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.2857142857142857,
+      "overall": 0.7142857142857143
+    },
+    "metrics": {
+      "input_tokens": 2347,
+      "output_tokens": 116,
+      "total_latency_ms": 1981,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:09.285Z"
+  },
+  {
+    "result_id": "073a335e-c21e-4789-a01c-db4d276bafb1",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"account_balance_retrieved\", \"properties\": {\"account_id\": \"example_value\"}, \"user_id\": \"user123\"}}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "account_balance_retrieved",
+          "properties": {
+            "account_id": "example_value"
+          },
+          "user_id": "user123"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2351,
+      "output_tokens": 56,
+      "total_latency_ms": 1346,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:10.687Z"
+  },
+  {
+    "result_id": "0e1ce8bd-4b08-4250-b446-30f7c67eabef",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2352,
+      "output_tokens": 33,
+      "total_latency_ms": 1049,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:11.796Z"
+  },
+  {
+    "result_id": "b6f11d3f-dd48-4b31-99f3-af0cd645fa39",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2354,
+      "output_tokens": 43,
+      "total_latency_ms": 1153,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:13.013Z"
+  },
+  {
+    "result_id": "1259bf57-39f9-44c1-8a5e-a771b2b7287f",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2358,
+      "output_tokens": 56,
+      "total_latency_ms": 1290,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:14.361Z"
+  },
+  {
+    "result_id": "54fd4db6-7d0a-4dec-99d8-fb8d8bc31786",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"tool_name\", \"arguments\": {\"param\": \"example_value\"}}\n```\n```json\n{\"name\": \"tool_name\", \"arguments\": {\"text\": \"example_value\"}}\n```\n```json\n{\"name\": \"tool_name\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "tool_name",
+          "arguments": {
+            "param": "example_value"
+          }
+        },
+        {
+          "name": "tool_name",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "tool_name",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2368,
+      "output_tokens": 89,
+      "total_latency_ms": 880,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:15.310Z"
+  },
+  {
+    "result_id": "b1a777ef-c534-4987-9b94-61b32b6cb892",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```\n```json\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n```\n```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2373,
+      "output_tokens": 87,
+      "total_latency_ms": 863,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:16.240Z"
+  },
+  {
+    "result_id": "a72b15c4-bedc-475b-b757-dea98a6f1dae",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"AAPL\"}}\n```\n```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n```\n```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "AAPL"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.6666666666666666
+    },
+    "metrics": {
+      "input_tokens": 2412,
+      "output_tokens": 124,
+      "total_latency_ms": 1089,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:17.389Z"
+  },
+  {
+    "result_id": "1ee97f7a-85c3-47c4-9b3c-c6393b740afd",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\n\"name\": \"analytics_run_report\",\n\"arguments\": {\n\"report_id\": \"Berlin\"\n}\n}\n```",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2337,
+      "output_tokens": 36,
+      "total_latency_ms": 570,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:18.026Z"
+  },
+  {
+    "result_id": "f20ac3ee-40cf-400e-ba4f-d1c01a666899",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2343,
+      "output_tokens": 45,
+      "total_latency_ms": 625,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:18.712Z"
+  },
+  {
+    "result_id": "99c11d68-3cfc-4743-a739-1f61a8278fe1",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}\n```",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2378,
+      "output_tokens": 55,
+      "total_latency_ms": 689,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:19.459Z"
+  },
+  {
+    "result_id": "171cadbb-60c9-4faf-8ac3-52f723938241",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"event_id\": \"64f7a9b2-9c3d-4a8b-8c7e-f01234567890\", \"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "event_id": "64f7a9b2-9c3d-4a8b-8c7e-f01234567890",
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.9090909090909091,
+      "overall": 0.9636363636363636
+    },
+    "metrics": {
+      "input_tokens": 2380,
+      "output_tokens": 98,
+      "total_latency_ms": 939,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:20.453Z"
+  },
+  {
+    "result_id": "dd281713-867b-4552-a54c-298aca6b24aa",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "That's a really complex question, and there's no simple yes or no answer! Here's a breakdown of the factors involved, based on my knowledge:\n\n**Arguments for Electric Car Dominance:**\n\n*   **Environmental Benefits:** Electric vehicles (EVs) produce zero tailpipe emissions, significantly reducing air pollution in urban areas and combating climate change. This is a huge driver for adoption.\n*   **Falling Battery Costs:** Battery technology is improving rapidly, and costs are decreasing. This is making EVs more affordable.\n*   **Government Incentives:** Many governments worldwide are offering subsidies, tax credits, and regulations (like emissions standards) that favor EVs.\n*   **Performance:** Modern EVs offer impressive acceleration and performance, often exceeding that of comparable gasoline cars.\n*   **Lower Running Costs:** Electricity is generally cheaper than gasoline, and EVs have fewer moving parts, leading to lower maintenance costs.\n*   **Technological Advancements:** Battery range is increasing, charging infrastructure is expanding, and software improvements are constantly enhancing the EV experience.\n\n**Arguments Against Complete Replacement:**\n\n*   **Charging Infrastructure:** The availability of public charging stations is still a major limitation, particularly in rural areas and apartment complexes. \"Range anxiety\" (fear of running out of battery) remains a concern for many consumers.\n*   **Charging Time:** Charging an EV takes longer than filling a gasoline car, although fast-charging technology is improving.\n*   **Battery Production and Disposal:** The production of EV batteries requires significant resources and raises concerns about sustainability. Battery disposal and recycling are also challenges that need to be addressed.\n*   **Upfront Cost:** While costs are coming down, EVs still tend to have a higher initial purchase price than comparable gasoline cars (though this gap is narrowing).\n*   **Range Limitations:** While range is increasing, some EVs still have limited range, which may not suit all driving needs (e.g., long road trips).\n*   **Grid Capacity:** Widespread EV adoption will put a strain on the electricity grid, requiring significant investments in grid infrastructure.\n\n**Likely Scenario:**\n\nIt's *unlikely* that electric cars will *completely* replace gas cars in the near future. Instead, a more probable scenario is a **mixed market** where EVs and gasoline cars coexist. EVs will likely dominate in urban areas and for shorter commutes, while gasoline cars will remain prevalent for longer distances and in areas with limited charging infrastructure.\n\n**Timeframe:**\n\nPredictions vary, but most experts believe that EVs will account for a significant portion of new car sales (perhaps 50-70% or more) by 2030-2035, but full replacement is still decades away.\n\nDo you want me to delve deeper into a specific aspect of this question, such as:\n\n*   The impact of charging infrastructure?\n*   The role of government policy?\n*   The technological advancements driving EV adoption?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2334,
+      "output_tokens": 610,
+      "total_latency_ms": 3957,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:24.478Z"
+  },
+  {
+    "result_id": "c43f316c-3b54-409a-961b-57fb74bd6620",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"user@example.com\", \"name\": \"John Doe\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "user@example.com",
+          "name": "John Doe",
+          "role": "viewer",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2329,
+      "output_tokens": 48,
+      "total_latency_ms": 648,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:25.186Z"
+  },
+  {
+    "result_id": "f72c9e61-89c1-4269-abc1-83576686177d",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"test@example.com\", \"name\": \"Test User\", \"role\": \"viewer\", \"password\": \"password123\", \"limit\": 1}}\n",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "test@example.com",
+          "name": "Test User",
+          "role": "viewer",
+          "password": "password123",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2336,
+      "output_tokens": 53,
+      "total_latency_ms": 686,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:25.935Z"
+  },
+  {
+    "result_id": "34e7a7b3-16ee-4dca-8909-17ea8bf74bf0",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 4B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, let's delve into the fascinating history of storage – a story of constant innovation and shrinking sizes. Here's a breakdown, categorized for clarity:\n\n**1. Pre-Electronic Era (Before 1800s):**\n\n* **Clay Tablets & Papyrus (Ancient Civilizations):** The earliest forms of storage were physical – writing on clay tablets (Mesopotamia, Egypt) and papyrus scrolls. These were bulky, fragile, and limited in capacity.\n* **Wax Tablets (Ancient Greece & Rome):**  Used for writing and erasing, offering a more reusable medium.\n* **Paper (China, 2nd Century BC):** The invention of paper revolutionized writing and storage, becoming the dominant medium for centuries.  It was still relatively expensive and prone to damage.\n\n**2. The Dawn of Mechanical Storage (1800s - Early 1900s):**\n\n* **Punch Cards (1801 - Joseph Marie Jacquard):**  Initially used to control looms, punch cards represented a crucial step. They encoded data as patterns of holes, a fundamental concept for later storage technologies.\n* **Magnetic Tape (1894 - Fritz Pfleumer):** Pfleumer patented a method of coating metal strips with magnetic material, creating a durable and recordable medium. This was initially used for audio recording but quickly found applications in data storage.\n* **Visible Tape Recording (1928 - AEG):**  AEG developed the first commercially viable magnetic tape recorder, initially for audio.\n\n**3. The Rise of Electronic Storage (1940s - 1970s):**\n\n* **Magnetic Drum Memory (1932 - IBM):**  A rotating metal cylinder coated with magnetic material. Data was written by magnetizing spots on the surface. This was incredibly fast but expensive and limited in capacity.\n* **Magnetic Tape Storage (1956 - IBM):** IBM introduced the IBM 350 RAMAC, the first commercially available computer with magnetic tape storage. This was a massive improvement in capacity and speed compared to drum memory.\n* **Magnetic Disk Storage (1956 - IBM):** IBM also developed the IBM 305 RAMAC, which used rotating magnetic disks. This was faster and more reliable than tape for many applications.\n* **Hard Disk Drives (HDDs) (1957 - Reynolds Metals):** Reynolds Metals introduced the first hard disk drive, using rotating platters coated with magnetic material. This became the dominant form of bulk storage for computers.\n\n**4. The Digital Revolution (1980s - 2000s):**\n\n* **Floppy Disks (1971 - Intel):**  Small, removable magnetic disks that became ubiquitous for data transfer and backup.\n* **Optical Discs (1982 - Sony):** CD-ROMs (Compact Disc Read-Only Memory) offered high-density storage for music and software.\n* **ZIP Drives (1994 - ZipDrive):** Provided significantly higher capacity than floppy disks.\n* **DVDs (1995 - Sony & Pioneer):**  Digital Versatile Discs offered even greater storage capacity for movies and large files.\n* **Solid State Drives (SSDs) (Late 1990s - Present):** Initially expensive, SSDs replaced HDDs in many applications due to their speed, durability, and lower power consumption.\n\n**5. The Modern Era (2000s - Present):**\n\n* **Flash Memory (1983 - Toshiba):** NAND flash memory revolutionized portable storage with devices like USB drives and SD cards.\n* **Cloud Storage (2006 - Dropbox):** The rise of cloud storage services like Dropbox, Google Drive, and OneDrive transformed how people store and access data.\n* **NVMe SSDs (2010s - Present):** Non-Volatile Memory Express (NVMe) SSDs leverage the PCIe bus for dramatically faster speeds than traditional SATA SSDs.\n* **DNA Storage (Emerging):**  Research is underway to store data in DNA, offering potentially enormous storage density and longevity.\n\n**Key Trends Throughout History:**\n\n* **Increased Density:** The primary driver of storage innovation has been increasing the amount of data that can be stored in a given physical space.\n* **Faster Access Times:**  Storage technologies have continually evolved to provide faster access to data.\n* **Smaller Sizes:** Storage devices have shrunk dramatically over time, from room-sized machines to devices that fit in your pocket.\n\nDo you want me to delve deeper into a specific aspect of storage history, such as the development of a particular technology, or perhaps the impact of storage on a specific industry (e.g., computing, music)?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2330,
+      "output_tokens": 1009,
+      "total_latency_ms": 6329,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:49:32.326Z"
+  }
+]

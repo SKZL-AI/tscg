@@ -1,0 +1,54 @@
+{
+  "name": "@tscg/core",
+  "version": "1.0.0",
+  "description": "Deterministic prompt compiler for tool-schema compression. Reduces LLM tool-definition overhead by 71.7%. Zero dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "llm",
+    "tool-use",
+    "function-calling",
+    "compression",
+    "prompt-optimization",
+    "agentic-ai",
+    "mcp",
+    "langchain",
+    "token-savings",
+    "schema-compression",
+    "tscg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SKZL-AI/tscg"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  }
+}

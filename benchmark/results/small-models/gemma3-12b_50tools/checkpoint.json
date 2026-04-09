@@ -1,0 +1,3839 @@
+[
+  {
+    "result_id": "358c2e70-f4e1-4226-bd3c-75cc84fbdb7b",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 42, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_find_free_time",
+        "arguments": {
+          "participants": [
+            "item1",
+            "item2"
+          ],
+          "duration_minutes": 42,
+          "start_date": "example_value",
+          "end_date": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11673,
+      "output_tokens": 60,
+      "total_latency_ms": 3949,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:32.950Z"
+  },
+  {
+    "result_id": "83988bce-c0bc-4a52-8994-77ff848a5426",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_convert_currency_v2\", \"arguments\": {\"amount\": 42, \"from\": \"example_value\", \"to\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_convert_currency_v2",
+        "arguments": {
+          "amount": 42,
+          "from": "example_value",
+          "to": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11664,
+      "output_tokens": 40,
+      "total_latency_ms": 3665,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:36.675Z"
+  },
+  {
+    "result_id": "2e40a7c5-a40a-49f2-962b-ba5a937dd131",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"cpu\"}}",
+      "parsed_tool_call": {
+        "name": "ops_get_metrics",
+        "arguments": {
+          "service": "example_value",
+          "metric": "cpu"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11651,
+      "output_tokens": 28,
+      "total_latency_ms": 3520,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:40.255Z"
+  },
+  {
+    "result_id": "3ebc6221-4d05-499e-97e7-d64f3c7e0c77",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_upload_file\", \"arguments\": {\"path\": \"src/components\", \"destination\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_upload_file",
+        "arguments": {
+          "path": "src/components",
+          "destination": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 35,
+      "total_latency_ms": 3571,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:43.891Z"
+  },
+  {
+    "result_id": "f0446ce6-dd6c-4825-858d-d75629ff7873",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 35,
+      "total_latency_ms": 3580,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:47.529Z"
+  },
+  {
+    "result_id": "9adcf4d3-bf52-4a25-beac-a1a7a653804e",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}\n```",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "example_value",
+          "width": 42
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 36,
+      "total_latency_ms": 3602,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:51.189Z"
+  },
+  {
+    "result_id": "dc05488c-4b5b-4208-9ec1-fc0466254b78",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "auth_verify_token",
+        "arguments": {
+          "token": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 22,
+      "total_latency_ms": 3404,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:54.658Z"
+  },
+  {
+    "result_id": "03fa7cc9-aeaa-459e-9dbc-14280976be42",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11668,
+      "output_tokens": 35,
+      "total_latency_ms": 3583,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:15:58.302Z"
+  },
+  {
+    "result_id": "717f1730-f1d5-487a-9705-3311d5227d7c",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_search_products\", \"arguments\": {\"query\": \"example_value\"}}\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_search_products",
+          "arguments": {
+            "query": "example_value"
+          }
+        },
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11663,
+      "output_tokens": 46,
+      "total_latency_ms": 3728,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:02.093Z"
+  },
+  {
+    "result_id": "a90e4ba0-f062-46c9-8af4-6b5b06c9439d",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 11678,
+      "output_tokens": 40,
+      "total_latency_ms": 3662,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:05.820Z"
+  },
+  {
+    "result_id": "48b2718c-9df1-41a3-9bd0-d6885138c80b",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_verify_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11683,
+      "output_tokens": 70,
+      "total_latency_ms": 4061,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:09.945Z"
+  },
+  {
+    "result_id": "e5105cfc-9c5b-49a0-996e-67c51b0eb1d0",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"ops_scale_service\", \"arguments\": {\"service\": \"example_value\", \"replicas\": 104, \"environment\": \"production\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"store_delete_file_v2\", \"arguments\": {\"path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "ops_scale_service",
+          "arguments": {
+            "service": "example_value",
+            "replicas": 104,
+            "environment": "production"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        {
+          "name": "store_delete_file_v2",
+          "arguments": {
+            "path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11695,
+      "output_tokens": 86,
+      "total_latency_ms": 4284,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:14.294Z"
+  },
+  {
+    "result_id": "08c51003-c7ac-4bf6-bd49-51b085690a0c",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"user@example.com\", \"output_format\": \"webm\"}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "user@example.com",
+          "output_format": "webm"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 11654,
+      "output_tokens": 34,
+      "total_latency_ms": 3565,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:17.921Z"
+  },
+  {
+    "result_id": "9ce10984-a09a-4373-bfca-18e570d03ca6",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Berlin\", \"widgets\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Berlin",
+          "widgets": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11647,
+      "output_tokens": 28,
+      "total_latency_ms": 3480,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:21.461Z"
+  },
+  {
+    "result_id": "f2fe6c49-edc3-4a2f-9d02-ef18ccba830a",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_query_metrics\", \"arguments\": {\"metric\": \"config.json\", \"start_time\": \"main\", \"end_time\": \"production\", \"aggregation\": \"p99\", \"group_by\": \"quarterly-report\"}}```",
+      "parsed_tool_call": {
+        "name": "analytics_query_metrics",
+        "arguments": {
+          "metric": "config.json",
+          "start_time": "main",
+          "end_time": "production",
+          "aggregation": "p99",
+          "group_by": "quarterly-report"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11698,
+      "output_tokens": 61,
+      "total_latency_ms": 3946,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:25.468Z"
+  },
+  {
+    "result_id": "7762f61e-0ee2-4bab-b358-d7353904790e",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_forecast\", \"arguments\": {\"location\": \"production\", \"days\": 901.99, \"units\": \"imperial\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_forecast",
+        "arguments": {
+          "location": "production",
+          "days": 901.99,
+          "units": "imperial"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11667,
+      "output_tokens": 42,
+      "total_latency_ms": 3688,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:29.230Z"
+  },
+  {
+    "result_id": "dbcc3de8-c667-4cfa-9aab-e3e4de5b7491",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I do not have the ability to determine the boiling point of water. I am a language model and do not have access to external tools or real-time information.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11638,
+      "output_tokens": 34,
+      "total_latency_ms": 3572,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:32.868Z"
+  },
+  {
+    "result_id": "373f8ade-ebde-4a55-8e8d-da7b2a8d3785",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "1024",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11640,
+      "output_tokens": 5,
+      "total_latency_ms": 3182,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:36.110Z"
+  },
+  {
+    "result_id": "6136f5ef-90f0-47d9-a647-2659eab51280",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of how version control has evolved over the last decade (roughly 2014-2024), focusing on key trends and shifts.  It's been a period of refinement and increased integration rather than radical revolution.\n\n**Early 2010s (Pre-2014): Git Dominance & Initial Cloud Integration**\n\n*   **Git was the undisputed king:** By 2014, Git had firmly established itself as the dominant version control system, largely replacing centralized systems like SVN and Mercurial.  The distributed nature of Git, enabling offline work and branching, was a major advantage.\n*   **GitHub's Rise:** GitHub's popularity exploded, becoming *the* central hub for Git repositories, especially for open-source projects.  This fostered collaboration and code sharing.  Bitbucket and GitLab were also emerging as competitors.\n*   **Early Cloud Integration:**  Basic web-based interfaces for Git repositories were common (GitHub, Bitbucket, GitLab), but they were primarily for hosting and basic collaboration.  Integration with IDEs was improving, but still relatively limited.\n\n**2014-2019: Branching Strategies, Pull Requests, and CI/CD**\n\n*   **Branching Model Standardization:**  The rise of Gitflow (though later somewhat criticized) and similar branching strategies became common.  This formalized how teams managed feature development, releases, and hotfixes.  Trunk-based development also started gaining traction as a simpler alternative.\n*   **Pull Requests (and Merge Requests):**  GitHub's pull request model (and GitLab's equivalent \"merge requests\") became a core workflow.  They provided a structured way to review code changes, discuss improvements, and ensure quality before merging into the main branch.  This significantly improved code review processes.\n*   **CI/CD Integration:** Continuous Integration/Continuous Delivery (CI/CD) pipelines became increasingly integrated with Git repositories.  Services like Jenkins, Travis CI, CircleCI, and GitLab CI/CD automated build, testing, and deployment processes triggered by Git commits and pull requests.\n*   **Git LFS (Large File Storage):** Git LFS emerged as a solution for managing large binary files (images, audio, video) within Git repositories, addressing performance issues with Git's core functionality.\n*   **GUI Clients Improve:**  GUI clients for Git (like SourceTree, GitKraken, and integrated IDE features) matured, making Git more accessible to developers who weren't comfortable with the command line.\n\n**2019-2024:  Focus on Developer Experience, GitOps, and AI Assistance**\n\n*   **Developer Experience (DX) is Key:**  There's been a strong focus on improving the developer experience around Git. This includes:\n    *   **Simplified Workflows:**  Efforts to reduce cognitive load and streamline common Git operations.\n    *   **Better Error Messages:**  More informative and helpful error messages to aid debugging.\n    *   **Improved Branching Visualizations:**  Tools to better understand and manage complex branching structures.\n*   **GitOps Emerges:** GitOps, a declarative approach to infrastructure and application deployment, gained significant traction.  Git becomes the single source of truth for the desired state of the system, and automated operators reconcile the actual state with the Git repository.  Tools like Argo CD and Flux are central to GitOps.\n*   **AI-Powered Assistance:**  The integration of AI and machine learning into Git workflows is a recent and growing trend.  Examples include:\n    *   **Code Completion & Suggestions:**  AI-powered code completion tools (like GitHub Copilot) that integrate with Git to provide context-aware suggestions.\n    *   **Automated Code Review:**  AI tools that can automatically identify potential code quality issues and security vulnerabilities during pull request reviews.\n    *   **Commit Message Generation:**  AI assistance in crafting clear and concise commit messages.\n*   **Git on the Blockchain:** While still experimental, there's exploration of using blockchain technology to enhance Git's immutability and auditability.\n*   **Git Submodules and Subtrees Refinement:** While always present, better tooling and understanding of submodules and subtree strategies have improved their usability for managing dependencies.\n*   **Cloud-Native Git:**  Git platforms are increasingly designed for cloud-native environments, with features like scalability, high availability, and integration with container orchestration platforms (e.g., Kubernetes).\n\n**Key Takeaways:**\n\n*   **Git's Dominance Continues:** Git remains the undisputed leader.\n*   **Collaboration is Central:**  Pull requests and similar mechanisms are deeply ingrained in development workflows.\n*   **Automation is Essential:** CI/CD and GitOps are critical for modern software delivery.\n*   **Developer Experience Matters:**  Efforts to",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11638,
+      "output_tokens": 1024,
+      "total_latency_ms": 17175,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:53.351Z"
+  },
+  {
+    "result_id": "d92b2628-b27f-4184-8fe6-27562bf75cf6",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"storage_history.txt\", \"bucket\": \"knowledge_base\", \"max_results\": 10, \"locale\": \"en-US\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "storage_history.txt",
+          "bucket": "knowledge_base",
+          "max_results": 10,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 11635,
+      "output_tokens": 54,
+      "total_latency_ms": 3831,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:16:57.243Z"
+  },
+  {
+    "result_id": "e215beb9-4563-4b70-b91f-084a99eb3dd7",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 42, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_find_free_time",
+        "arguments": {
+          "participants": [
+            "item1",
+            "item2"
+          ],
+          "duration_minutes": 42,
+          "start_date": "example_value",
+          "end_date": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11673,
+      "output_tokens": 60,
+      "total_latency_ms": 3951,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:01.253Z"
+  },
+  {
+    "result_id": "d8386417-477c-43b5-b20e-c95e28c566f2",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_convert_currency_v2\", \"arguments\": {\"amount\": 42, \"from\": \"example_value\", \"to\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_convert_currency_v2",
+        "arguments": {
+          "amount": 42,
+          "from": "example_value",
+          "to": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11664,
+      "output_tokens": 40,
+      "total_latency_ms": 3673,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:04.991Z"
+  },
+  {
+    "result_id": "1f681414-37df-4867-b036-b26448cbf15e",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"cpu\"}}",
+      "parsed_tool_call": {
+        "name": "ops_get_metrics",
+        "arguments": {
+          "service": "example_value",
+          "metric": "cpu"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11651,
+      "output_tokens": 28,
+      "total_latency_ms": 3500,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:08.557Z"
+  },
+  {
+    "result_id": "d618c408-47a2-4927-88ff-7faef167e429",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_upload_file\", \"arguments\": {\"path\": \"src/components\", \"destination\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_upload_file",
+        "arguments": {
+          "path": "src/components",
+          "destination": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 35,
+      "total_latency_ms": 3595,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:12.211Z"
+  },
+  {
+    "result_id": "6636e0e8-031b-446f-a752-050332599cd5",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 35,
+      "total_latency_ms": 3595,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:15.864Z"
+  },
+  {
+    "result_id": "05e0d70f-bf2b-420c-868f-06da43eefd6d",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}\n```",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "example_value",
+          "width": 42
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 36,
+      "total_latency_ms": 3612,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:19.533Z"
+  },
+  {
+    "result_id": "fc151c57-1874-494f-8e19-78281896c13e",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "auth_verify_token",
+        "arguments": {
+          "token": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 22,
+      "total_latency_ms": 3420,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:23.009Z"
+  },
+  {
+    "result_id": "196064cf-2810-472a-a2bf-1823fff3b0a3",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11668,
+      "output_tokens": 35,
+      "total_latency_ms": 3590,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:26.668Z"
+  },
+  {
+    "result_id": "90e6e870-7ccd-40b1-9ccc-8d72fc4fa7a4",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_search_products\", \"arguments\": {\"query\": \"example_value\"}}\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_search_products",
+          "arguments": {
+            "query": "example_value"
+          }
+        },
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11663,
+      "output_tokens": 46,
+      "total_latency_ms": 3751,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:30.479Z"
+  },
+  {
+    "result_id": "f138a3df-ff1e-41db-b0ad-0f74b7001015",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 11678,
+      "output_tokens": 40,
+      "total_latency_ms": 3650,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:34.184Z"
+  },
+  {
+    "result_id": "51387957-c01f-4b12-b96d-bbe1f23d31ad",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_verify_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11683,
+      "output_tokens": 70,
+      "total_latency_ms": 4069,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:38.311Z"
+  },
+  {
+    "result_id": "81db4103-e715-49a1-aba8-a679785e50a8",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"ops_scale_service\", \"arguments\": {\"service\": \"example_value\", \"replicas\": 104, \"environment\": \"production\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"store_delete_file_v2\", \"arguments\": {\"path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "ops_scale_service",
+          "arguments": {
+            "service": "example_value",
+            "replicas": 104,
+            "environment": "production"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        {
+          "name": "store_delete_file_v2",
+          "arguments": {
+            "path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11695,
+      "output_tokens": 86,
+      "total_latency_ms": 4302,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:42.672Z"
+  },
+  {
+    "result_id": "127240c1-6d3e-43ef-b494-c87afb95fd21",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"user@example.com\", \"output_format\": \"webm\"}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "user@example.com",
+          "output_format": "webm"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 11654,
+      "output_tokens": 34,
+      "total_latency_ms": 3578,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:46.305Z"
+  },
+  {
+    "result_id": "04bee515-e4cc-4fad-98f2-ff16e69b56d9",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Berlin\", \"widgets\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Berlin",
+          "widgets": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11647,
+      "output_tokens": 28,
+      "total_latency_ms": 3481,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:49.848Z"
+  },
+  {
+    "result_id": "18384f9a-60d4-4e2e-bdc6-9f38ad7cebd7",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_query_metrics\", \"arguments\": {\"metric\": \"config.json\", \"start_time\": \"main\", \"end_time\": \"production\", \"aggregation\": \"p99\", \"group_by\": \"quarterly-report\"}}```",
+      "parsed_tool_call": {
+        "name": "analytics_query_metrics",
+        "arguments": {
+          "metric": "config.json",
+          "start_time": "main",
+          "end_time": "production",
+          "aggregation": "p99",
+          "group_by": "quarterly-report"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11698,
+      "output_tokens": 61,
+      "total_latency_ms": 3973,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:53.891Z"
+  },
+  {
+    "result_id": "6024a25c-72c7-4db1-bf12-9ca74ed6bdfd",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_forecast\", \"arguments\": {\"location\": \"production\", \"days\": 901.99, \"units\": \"imperial\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_forecast",
+        "arguments": {
+          "location": "production",
+          "days": 901.99,
+          "units": "imperial"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11667,
+      "output_tokens": 42,
+      "total_latency_ms": 3694,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:17:57.645Z"
+  },
+  {
+    "result_id": "bdd87d86-2b08-4816-8229-e9c74fe2dff8",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "I do not have the ability to determine the boiling point of water. I am a language model and do not have access to external tools or real-time information.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11638,
+      "output_tokens": 34,
+      "total_latency_ms": 3574,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:01.282Z"
+  },
+  {
+    "result_id": "b977589f-e4fc-4a08-8cb3-ebbc7a2d156a",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "1024",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11640,
+      "output_tokens": 5,
+      "total_latency_ms": 3183,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:04.522Z"
+  },
+  {
+    "result_id": "61e9e143-d4c4-46ef-8cc4-3eab8f623c8c",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of how version control has evolved over the last decade (roughly 2014-2024), focusing on key trends and shifts.  It's been a period of refinement and increased integration rather than radical revolution.\n\n**Early 2010s (Pre-2014): Git Dominance & Initial Cloud Integration**\n\n*   **Git was the undisputed king:** By 2014, Git had firmly established itself as the dominant version control system, largely replacing centralized systems like SVN and Mercurial.  The distributed nature of Git, enabling offline work and branching, was a major advantage.\n*   **GitHub's Rise:** GitHub's popularity exploded, becoming *the* central hub for Git repositories, especially for open-source projects.  This fostered collaboration and code sharing.  Bitbucket and GitLab were also emerging as competitors.\n*   **Early Cloud Integration:**  Basic web-based interfaces for Git repositories were common (GitHub, Bitbucket, GitLab), but they were primarily for hosting and basic collaboration.  Integration with IDEs was improving, but still relatively limited.\n\n**2014-2019: Branching Strategies, Pull Requests, and CI/CD**\n\n*   **Branching Model Standardization:**  The rise of Gitflow (though later somewhat criticized) and similar branching strategies became common.  This formalized how teams managed feature development, releases, and hotfixes.  Trunk-based development also started gaining traction as a simpler alternative.\n*   **Pull Requests (and Merge Requests):**  GitHub's pull request model (and GitLab's equivalent \"merge requests\") became a core workflow.  They provided a structured way to review code changes, discuss improvements, and ensure quality before merging into the main branch.  This significantly improved code review processes.\n*   **CI/CD Integration:** Continuous Integration/Continuous Delivery (CI/CD) pipelines became increasingly integrated with Git repositories.  Services like Jenkins, Travis CI, CircleCI, and GitLab CI/CD automated build, testing, and deployment processes triggered by Git commits and pull requests.\n*   **Git LFS (Large File Storage):** Git LFS emerged as a solution for managing large binary files (images, audio, video) within Git repositories, addressing performance issues with Git's core functionality.\n*   **GUI Clients Improve:**  GUI clients for Git (like SourceTree, GitKraken, and integrated IDE features) matured, making Git more accessible to developers who weren't comfortable with the command line.\n\n**2019-2024:  Focus on Developer Experience, GitOps, and AI Assistance**\n\n*   **Developer Experience (DX) is Key:**  There's been a strong focus on improving the developer experience around Git. This includes:\n    *   **Simplified Workflows:**  Efforts to reduce cognitive load and streamline common Git operations.\n    *   **Better Error Messages:**  More informative and helpful error messages to aid debugging.\n    *   **Improved Branching Visualizations:**  Tools to better understand and manage complex branching structures.\n*   **GitOps Emerges:** GitOps, a declarative approach to infrastructure and application deployment, gained significant traction.  Git becomes the single source of truth for the desired state of the system, and automated operators reconcile the actual state with the Git repository.  Tools like Argo CD and Flux are central to GitOps.\n*   **AI-Powered Assistance:**  The integration of AI and machine learning into Git workflows is a recent and growing trend.  Examples include:\n    *   **Code Completion & Suggestions:**  AI-powered code completion tools (like GitHub Copilot) that integrate with Git to provide context-aware suggestions.\n    *   **Automated Code Review:**  AI tools that can automatically identify potential code quality issues and security vulnerabilities during pull request reviews.\n    *   **Commit Message Generation:**  AI assistance in crafting clear and concise commit messages.\n*   **Git on the Blockchain:** While still experimental, there's exploration of using blockchain technology to enhance Git's immutability and auditability.\n*   **Git Submodules and Subtrees Refinement:** While always present, better tooling and understanding of submodules and subtree strategies have improved their usability for managing dependencies.\n*   **Cloud-Native Git:**  Git platforms are increasingly designed for cloud-native environments, with features like scalability, high availability, and integration with container orchestration platforms (e.g., Kubernetes).\n\n**Key Takeaways:**\n\n*   **Git's Dominance Continues:** Git remains the undisputed leader.\n*   **Collaboration is Central:**  Pull requests and similar mechanisms are deeply ingrained in development workflows.\n*   **Automation is Essential:** CI/CD and GitOps are critical for modern software delivery.\n*   **Developer Experience Matters:**  Efforts to",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11638,
+      "output_tokens": 1024,
+      "total_latency_ms": 17252,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:21.833Z"
+  },
+  {
+    "result_id": "b5baf4eb-7955-416f-8d13-f5d86efbd37f",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"storage_history.txt\", \"bucket\": \"knowledge_base\", \"max_results\": 10, \"locale\": \"en-US\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "storage_history.txt",
+          "bucket": "knowledge_base",
+          "max_results": 10,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 11635,
+      "output_tokens": 54,
+      "total_latency_ms": 3862,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:25.761Z"
+  },
+  {
+    "result_id": "cb9068e9-9235-4ce7-a319-bfe3f7bd8523",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 42, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_find_free_time",
+        "arguments": {
+          "participants": [
+            "item1",
+            "item2"
+          ],
+          "duration_minutes": 42,
+          "start_date": "example_value",
+          "end_date": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11673,
+      "output_tokens": 60,
+      "total_latency_ms": 3943,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:29.761Z"
+  },
+  {
+    "result_id": "3db0418c-2e94-482b-8471-e0c6e87de059",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_convert_currency_v2\", \"arguments\": {\"amount\": 42, \"from\": \"example_value\", \"to\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_convert_currency_v2",
+        "arguments": {
+          "amount": 42,
+          "from": "example_value",
+          "to": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11664,
+      "output_tokens": 40,
+      "total_latency_ms": 3693,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:33.513Z"
+  },
+  {
+    "result_id": "0a69cbf3-1f81-4ace-aa98-5904552d992f",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"cpu\"}}",
+      "parsed_tool_call": {
+        "name": "ops_get_metrics",
+        "arguments": {
+          "service": "example_value",
+          "metric": "cpu"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11651,
+      "output_tokens": 28,
+      "total_latency_ms": 3514,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:37.088Z"
+  },
+  {
+    "result_id": "5198c8c4-c84c-4af6-b917-31a9d5cdec20",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_upload_file\", \"arguments\": {\"path\": \"src/components\", \"destination\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_upload_file",
+        "arguments": {
+          "path": "src/components",
+          "destination": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 35,
+      "total_latency_ms": 3587,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:40.737Z"
+  },
+  {
+    "result_id": "f31dde94-6ffb-4653-a4c8-44b81e4fe733",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 35,
+      "total_latency_ms": 3600,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:44.403Z"
+  },
+  {
+    "result_id": "3026f5ae-18b0-478a-a9cf-f7836fe62dcb",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}\n```",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "example_value",
+          "width": 42
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 36,
+      "total_latency_ms": 3600,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:48.063Z"
+  },
+  {
+    "result_id": "70a72876-533f-440b-be0c-b875a28e3162",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "auth_verify_token",
+        "arguments": {
+          "token": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11657,
+      "output_tokens": 22,
+      "total_latency_ms": 3427,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:51.557Z"
+  },
+  {
+    "result_id": "1d6acc08-9ba8-4624-852f-4df6776ffd5a",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11668,
+      "output_tokens": 35,
+      "total_latency_ms": 3589,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:55.207Z"
+  },
+  {
+    "result_id": "e3744d9a-ba40-40bd-b13a-a2e13210b5b9",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_search_products\", \"arguments\": {\"query\": \"example_value\"}}\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_search_products",
+          "arguments": {
+            "query": "example_value"
+          }
+        },
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11663,
+      "output_tokens": 46,
+      "total_latency_ms": 3756,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:18:59.023Z"
+  },
+  {
+    "result_id": "7645a0d5-7b11-464c-bfad-20d370b3f16e",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}\n```",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 11678,
+      "output_tokens": 40,
+      "total_latency_ms": 3659,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:02.744Z"
+  },
+  {
+    "result_id": "edf49172-36d1-42a9-88fb-936e6180f899",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_verify_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11683,
+      "output_tokens": 70,
+      "total_latency_ms": 4084,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:06.893Z"
+  },
+  {
+    "result_id": "711607cb-fba0-4251-a8c8-08c51e8b2445",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"ops_scale_service\", \"arguments\": {\"service\": \"example_value\", \"replicas\": 104, \"environment\": \"production\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"store_delete_file_v2\", \"arguments\": {\"path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "ops_scale_service",
+          "arguments": {
+            "service": "example_value",
+            "replicas": 104,
+            "environment": "production"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        {
+          "name": "store_delete_file_v2",
+          "arguments": {
+            "path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11695,
+      "output_tokens": 86,
+      "total_latency_ms": 4290,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:11.250Z"
+  },
+  {
+    "result_id": "6c09d781-af77-4289-9933-9b47ddf11389",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"user@example.com\", \"output_format\": \"webm\"}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "user@example.com",
+          "output_format": "webm"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 11654,
+      "output_tokens": 34,
+      "total_latency_ms": 3583,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:14.891Z"
+  },
+  {
+    "result_id": "0fb70eb2-42a5-47bd-a9dd-6f14d05ffb93",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Berlin\", \"widgets\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Berlin",
+          "widgets": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11647,
+      "output_tokens": 28,
+      "total_latency_ms": 3476,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:18.434Z"
+  },
+  {
+    "result_id": "142036ca-cf29-43ed-a68d-38c928e98e8e",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"analytics_query_metrics\", \"arguments\": {\"metric\": \"config.json\", \"start_time\": \"main\", \"end_time\": \"production\", \"aggregation\": \"p99\", \"group_by\": \"quarterly-report\"}}```",
+      "parsed_tool_call": {
+        "name": "analytics_query_metrics",
+        "arguments": {
+          "metric": "config.json",
+          "start_time": "main",
+          "end_time": "production",
+          "aggregation": "p99",
+          "group_by": "quarterly-report"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11698,
+      "output_tokens": 61,
+      "total_latency_ms": 3937,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:22.437Z"
+  },
+  {
+    "result_id": "fb2343b8-050e-4c09-bc0e-34aa86efd3be",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"wx_get_forecast\", \"arguments\": {\"location\": \"production\", \"days\": 901.99, \"units\": \"imperial\"}}\n```",
+      "parsed_tool_call": {
+        "name": "wx_get_forecast",
+        "arguments": {
+          "location": "production",
+          "days": 901.99,
+          "units": "imperial"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 11667,
+      "output_tokens": 42,
+      "total_latency_ms": 3692,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:26.198Z"
+  },
+  {
+    "result_id": "b95816d7-49ff-47ef-aad6-3ee6b648e995",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "I do not have the ability to determine the boiling point of water. I am a language model and do not have access to external tools or real-time information.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11638,
+      "output_tokens": 34,
+      "total_latency_ms": 3579,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:29.840Z"
+  },
+  {
+    "result_id": "11fcf166-efbe-4331-bb36-4b14632f89f2",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "1024",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11640,
+      "output_tokens": 5,
+      "total_latency_ms": 3172,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:33.071Z"
+  },
+  {
+    "result_id": "e01bc9cd-22a1-4bee-8050-9fd109b75dcf",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of how version control has evolved over the last decade (roughly 2014-2024), focusing on key trends and shifts.  It's been a period of refinement and increased integration rather than radical revolution.\n\n**Early 2010s (Pre-2014): Git Dominance & Initial Cloud Integration**\n\n*   **Git was the undisputed king:** By 2014, Git had firmly established itself as the dominant version control system, largely replacing centralized systems like SVN and Mercurial.  The distributed nature of Git, enabling offline work and branching, was a major advantage.\n*   **GitHub's Rise:** GitHub's popularity exploded, becoming *the* central hub for Git repositories, especially for open-source projects.  This fostered collaboration and code sharing.  Bitbucket and GitLab were also emerging as competitors.\n*   **Early Cloud Integration:**  Basic web-based interfaces for Git repositories were common (GitHub, Bitbucket, GitLab), but they were primarily for hosting and basic collaboration.  Integration with IDEs was improving, but still relatively limited.\n\n**2014-2019: Branching Strategies, Pull Requests, and CI/CD**\n\n*   **Branching Model Standardization:**  The rise of Gitflow (though later somewhat criticized) and similar branching strategies became common.  This formalized how teams managed feature development, releases, and hotfixes.  Trunk-based development also started gaining traction as a simpler alternative.\n*   **Pull Requests (and Merge Requests):**  GitHub's pull request model (and GitLab's equivalent \"merge requests\") became a core workflow.  They provided a structured way to review code changes, discuss improvements, and ensure quality before merging into the main branch.  This significantly improved code review processes.\n*   **CI/CD Integration:** Continuous Integration/Continuous Delivery (CI/CD) pipelines became increasingly integrated with Git repositories.  Services like Jenkins, Travis CI, CircleCI, and GitLab CI/CD automated build, testing, and deployment processes triggered by Git commits and pull requests.\n*   **Git LFS (Large File Storage):** Git LFS emerged as a solution for managing large binary files (images, audio, video) within Git repositories, addressing performance issues with Git's core functionality.\n*   **GUI Clients Improve:**  GUI clients for Git (like SourceTree, GitKraken, and integrated IDE features) matured, making Git more accessible to developers who weren't comfortable with the command line.\n\n**2019-2024:  Focus on Developer Experience, GitOps, and AI Assistance**\n\n*   **Developer Experience (DX) is Key:**  There's been a strong focus on improving the developer experience around Git. This includes:\n    *   **Simplified Workflows:**  Efforts to reduce cognitive load and streamline common Git operations.\n    *   **Better Error Messages:**  More informative and helpful error messages to aid debugging.\n    *   **Improved Branching Visualizations:**  Tools to better understand and manage complex branching structures.\n*   **GitOps Emerges:** GitOps, a declarative approach to infrastructure and application deployment, gained significant traction.  Git becomes the single source of truth for the desired state of the system, and automated operators reconcile the actual state with the Git repository.  Tools like Argo CD and Flux are central to GitOps.\n*   **AI-Powered Assistance:**  The integration of AI and machine learning into Git workflows is a recent and growing trend.  Examples include:\n    *   **Code Completion & Suggestions:**  AI-powered code completion tools (like GitHub Copilot) that integrate with Git to provide context-aware suggestions.\n    *   **Automated Code Review:**  AI tools that can automatically identify potential code quality issues and security vulnerabilities during pull request reviews.\n    *   **Commit Message Generation:**  AI assistance in crafting clear and concise commit messages.\n*   **Git on the Blockchain:** While still experimental, there's exploration of using blockchain technology to enhance Git's immutability and auditability.\n*   **Git Submodules and Subtrees Refinement:** While always present, better tooling and understanding of submodules and subtree strategies have improved their usability for managing dependencies.\n*   **Cloud-Native Git:**  Git platforms are increasingly designed for cloud-native environments, with features like scalability, high availability, and integration with container orchestration platforms (e.g., Kubernetes).\n\n**Key Takeaways:**\n\n*   **Git's Dominance Continues:** Git remains the undisputed leader.\n*   **Collaboration is Central:**  Pull requests and similar mechanisms are deeply ingrained in development workflows.\n*   **Automation is Essential:** CI/CD and GitOps are critical for modern software delivery.\n*   **Developer Experience Matters:**  Efforts to",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 11638,
+      "output_tokens": 1024,
+      "total_latency_ms": 16993,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:50.125Z"
+  },
+  {
+    "result_id": "04b5a837-cfb5-4a46-81d4-ec8eeb757330",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"storage_history.txt\", \"bucket\": \"knowledge_base\", \"max_results\": 10, \"locale\": \"en-US\"}}\n```",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "storage_history.txt",
+          "bucket": "knowledge_base",
+          "max_results": 10,
+          "locale": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 11635,
+      "output_tokens": 54,
+      "total_latency_ms": 3825,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:54.020Z"
+  },
+  {
+    "result_id": "30e6e5b5-f9d9-4d2e-920e-9b22d9643fe2",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 42, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_find_free_time",
+        "arguments": {
+          "participants": [
+            "item1",
+            "item2"
+          ],
+          "duration_minutes": 42,
+          "start_date": "example_value",
+          "end_date": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3852,
+      "output_tokens": 60,
+      "total_latency_ms": 1874,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:55.960Z"
+  },
+  {
+    "result_id": "6e5ca20a-0ded-4dc6-b08a-4d2f0370eff1",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_convert_currency_v2\", \"arguments\": {\"amount\": 42, \"from\": \"example_value\", \"to\": \"example_value\", \"limit\": 1}}",
+      "parsed_tool_call": {
+        "name": "fin_convert_currency_v2",
+        "arguments": {
+          "amount": 42,
+          "from": "example_value",
+          "to": "example_value",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8571428571428571,
+      "overall": 0.9428571428571428
+    },
+    "metrics": {
+      "input_tokens": 3843,
+      "output_tokens": 46,
+      "total_latency_ms": 1694,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:57.711Z"
+  },
+  {
+    "result_id": "2103f05c-9aca-4934-9cb3-fbfda9d50d50",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"cpu\"}}\n```",
+      "parsed_tool_call": {
+        "name": "ops_get_metrics",
+        "arguments": {
+          "service": "example_value",
+          "metric": "cpu"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3830,
+      "output_tokens": 33,
+      "total_latency_ms": 1518,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:19:59.298Z"
+  },
+  {
+    "result_id": "3a7ef0de-9f7c-4924-8585-df74c4685268",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"store_upload_file\", \"arguments\": {\"path\": \"src/components\", \"destination\": \"example_value\", \"bucket\": null}}",
+      "parsed_tool_call": {
+        "name": "store_upload_file",
+        "arguments": {
+          "path": "src/components",
+          "destination": "example_value",
+          "bucket": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 35,
+      "total_latency_ms": 1542,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:00.902Z"
+  },
+  {
+    "result_id": "2575f136-79e9-4d1c-ab6b-65d67479c194",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 30,
+      "total_latency_ms": 1482,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:02.451Z"
+  },
+  {
+    "result_id": "03a86a75-909a-4576-b513-a31414d05575",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "example_value",
+          "width": 42
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 31,
+      "total_latency_ms": 1481,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:03.998Z"
+  },
+  {
+    "result_id": "bb6ffd49-39b6-432c-835a-f1d6018e5c2b",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\", \"audience\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_verify_token",
+        "arguments": {
+          "token": "example_value",
+          "audience": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 27,
+      "total_latency_ms": 1442,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:05.498Z"
+  },
+  {
+    "result_id": "c81c096b-ddc8-4507-ac27-7dbdbac21c5b",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"], \"currency\": \"USD\", \"due_days\": 30}}",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ],
+          "currency": "USD",
+          "due_days": 30
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 3847,
+      "output_tokens": 49,
+      "total_latency_ms": 1739,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:07.297Z"
+  },
+  {
+    "result_id": "fb2f8f92-7139-4352-b8a2-52fe918cf3ee",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_search_products\", \"arguments\": {\"query\": \"example_value\"}}\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_search_products",
+          "arguments": {
+            "query": "example_value"
+          }
+        },
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3842,
+      "output_tokens": 46,
+      "total_latency_ms": 1709,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:09.062Z"
+  },
+  {
+    "result_id": "8610b515-25d2-44f4-9ac1-612bbb34b7ff",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 43}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 43
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3857,
+      "output_tokens": 66,
+      "total_latency_ms": 1961,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:11.080Z"
+  },
+  {
+    "result_id": "b3e5db5c-b80f-4f04-bbf6-45f0c192f918",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_verify_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3862,
+      "output_tokens": 70,
+      "total_latency_ms": 2015,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:13.161Z"
+  },
+  {
+    "result_id": "45fbd4c9-9951-4da1-a0a3-001e1e2ccf70",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"ops_scale_service\", \"arguments\": {\"service\": \"example_value\", \"replicas\": 104, \"environment\": \"production\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"store_delete_file_v2\", \"arguments\": {\"path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "ops_scale_service",
+          "arguments": {
+            "service": "example_value",
+            "replicas": 104,
+            "environment": "production"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        {
+          "name": "store_delete_file_v2",
+          "arguments": {
+            "path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3874,
+      "output_tokens": 86,
+      "total_latency_ms": 2225,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:15.445Z"
+  },
+  {
+    "result_id": "783c8fca-7fb8-463a-8f17-ec4f424dac74",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"user@example.com\", \"output_format\": \"webm\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "user@example.com",
+          "output_format": "webm"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3833,
+      "output_tokens": 35,
+      "total_latency_ms": 1538,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:17.045Z"
+  },
+  {
+    "result_id": "098e7a64-7ca5-4042-92f7-f1302471f47c",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Berlin\", \"widgets\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Berlin",
+          "widgets": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3826,
+      "output_tokens": 28,
+      "total_latency_ms": 1446,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:18.554Z"
+  },
+  {
+    "result_id": "2d6f5ffc-d177-4c2b-b8e6-662c040d868f",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_query_metrics\", \"arguments\": {\"metric\": \"config.json\", \"start_time\": \"main\", \"end_time\": \"production\", \"aggregation\": \"p99\", \"group_by\": \"quarterly-report\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_query_metrics",
+        "arguments": {
+          "metric": "config.json",
+          "start_time": "main",
+          "end_time": "production",
+          "aggregation": "p99",
+          "group_by": "quarterly-report"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3877,
+      "output_tokens": 57,
+      "total_latency_ms": 1845,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:20.470Z"
+  },
+  {
+    "result_id": "7006d0b5-0359-45e8-9179-74496a74110f",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_forecast\", \"arguments\": {\"location\": \"production\", \"days\": 901.99, \"units\": \"imperial\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_forecast",
+        "arguments": {
+          "location": "production",
+          "days": 901.99,
+          "units": "imperial"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3846,
+      "output_tokens": 37,
+      "total_latency_ms": 1569,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:22.106Z"
+  },
+  {
+    "result_id": "028eec61-d0f7-401f-bcb0-2d24f6b2ccd9",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "The boiling point of water is 100 degrees Celsius.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3817,
+      "output_tokens": 14,
+      "total_latency_ms": 1266,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:23.432Z"
+  },
+  {
+    "result_id": "317c7057-86c5-44bf-9693-15e3322c4336",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "1024",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3819,
+      "output_tokens": 5,
+      "total_latency_ms": 1150,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:24.651Z"
+  },
+  {
+    "result_id": "7bc81552-65a3-4eb1-b127-86e5ee3c2290",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of how version control has evolved over the last decade (roughly 2014-2024), focusing on key trends and shifts.  It's a complex topic, so I'll break it down into categories: Core Systems, Workflow, Tooling, and Emerging Trends.\n\n**1. Core Systems (Git Dominance & Beyond)**\n\n*   **Git's Continued Reign:** Git solidified its position as *the* dominant version control system.  While other systems (like Mercurial, Subversion, and Perforce) still exist, Git's distributed nature, branching model, and open-source nature made it the clear winner.  This wasn't a huge change from the early 2010s, but the *scale* of Git adoption increased dramatically.\n*   **Git Large File Storage (LFS):** A critical development was the rise of Git LFS.  Git was originally designed for text-based code.  Managing large binary files (images, audio, video, datasets) directly in a Git repository became problematic (bloating the repository size, slowing down operations). Git LFS addressed this by storing the large files separately and referencing them in the Git repository. This became essential for game development, data science, and other fields dealing with large assets.\n*   **Sparse Checkouts:** Git sparse checkouts, while existing before, became more widely adopted and improved.  They allow developers to only download portions of a large repository, significantly speeding up cloning and working with massive projects.\n*   **Beyond Git:** While Git is dominant, there's been some exploration of alternative distributed version control systems, often focused on specific niches or addressing perceived limitations of Git (though none have achieved widespread adoption).\n\n**2. Workflow & Methodologies**\n\n*   **Gitflow & Feature Branching:** Gitflow, a formalized branching model, was popular for a while, but its complexity led to a shift.  Simpler \"feature branching\" workflows (where developers create branches for individual features, merge them into a main branch) became more common.\n*   **Trunk-Based Development:** Trunk-based development gained traction as a more streamlined alternative to Gitflow.  It emphasizes frequent commits directly to the main branch (the \"trunk\"), minimizing long-lived feature branches and reducing merge conflicts.  This requires robust testing and continuous integration.\n*   **GitHub Flow:** A simplified workflow tailored for GitHub, emphasizing continuous deployment and frequent releases.\n*   **Increased Focus on Code Review:**  Code review became an even more integral part of the development process, often integrated directly into version control platforms (GitHub, GitLab, Bitbucket).  Pull requests (or merge requests) became the standard mechanism for code review.\n*   **GitOps:** A relatively new approach where Git repositories are used to declare the desired state of infrastructure and applications.  Automated tools then reconcile the actual state with the Git repository, enabling infrastructure-as-code and continuous deployment.\n\n**3. Tooling & Platforms**\n\n*   **GitHub's Dominance:** GitHub became *the* central hub for Git repositories, attracting a massive community and a wide range of integrations.  It's more than just a repository host; it's a development platform.\n*   **GitLab's Rise:** GitLab emerged as a strong competitor to GitHub, offering a complete DevOps platform (repository hosting, CI/CD, issue tracking, etc.) in a single tool.  Its appeal lies in its self-hosting capabilities and integrated features.\n*   **Bitbucket's Niche:** Bitbucket, owned by Atlassian, remains popular, particularly within teams already using other Atlassian tools (Jira, Confluence).\n*   **GUI Clients:** While command-line Git remains powerful, GUI clients (like SourceTree, GitKraken, Fork) improved significantly, making Git more accessible to developers who prefer a visual interface.\n*   **Integrated CI/CD:** Continuous Integration and Continuous Delivery (CI/CD) pipelines became tightly integrated with version control systems.  Automated builds, tests, and deployments are triggered by Git commits and pull requests.\n*   **Improved Branching Visualization:** Tools and platforms improved their visualization of branching models, making it easier to understand complex project structures.\n\n**4. Emerging Trends**\n\n*   **AI-Assisted Version Control:**  Early experimentation with AI to assist with code review, conflict resolution, and even suggesting commit messages is beginning to appear.\n*   **Decentralized Version Control (DVC):** DVC is gaining traction as a tool to manage data and machine learning models alongside code, addressing the limitations of Git for large datasets.\n*   **Blockchain-Based Version Control:**  While still very early stage, there's exploration of using blockchain technology to create immutable and auditable version control systems.\n*   **Git with Cloud Native Technologies:**  Integration",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3817,
+      "output_tokens": 1024,
+      "total_latency_ms": 14237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:38.945Z"
+  },
+  {
+    "result_id": "49183c59-4ac2-4ad5-a5c1-129c4569788a",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll break it down into eras.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Petroglyphs (30,000+ BCE):**  The earliest forms of recording information.  Visual representations of events, stories, and knowledge.\n*   **Clay Tablets (3000 BCE):** Used in Mesopotamia for record-keeping (taxes, laws, literature). Durable but heavy and limited in capacity.\n*   **Papyrus Scrolls (2500 BCE):**  Developed in Egypt, papyrus allowed for longer texts than clay tablets.  Still sequential access (must unroll).\n*   **Parchment & Vellum (2nd Century BCE):**  Made from animal skins, these were more durable and could be written on both sides.\n*   **Codex (1st Century CE):**  The ancestor of the modern book – pages bound together.  Allowed for random access.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (1801):** Joseph Marie Jacquard invented a loom controlled by punched cards, demonstrating a way to encode information mechanically.  Later used by Herman Hollerith for the 1890 US Census.\n*   **Punched Tape (1840s):** Used in telegraph systems and early computers.\n*   **Magnetic Tape (1928):** Initially used for audio recording, it was quickly adapted for data storage in computers.  Sequential access.\n*   **Magnetic Drum Memory (1932):** Early form of computer memory, faster than tape but still sequential access.\n*   **Magnetic Core Memory (1951):**  First form of random-access computer memory (RAM).  Relatively fast and reliable for its time.\n\n**3. Early Electronic Era (Mid 1900s - 1980s):**\n\n*   **Floppy Disks (1971):**  Introduced by IBM, floppy disks offered removable storage and became ubiquitous for personal computers.  Relatively low capacity.\n*   **Magnetic Tape Cartridges (1950s onward):** Used for backup and archival storage.\n*   **Hard Disk Drives (HDDs) (1956):** IBM introduced the first HDD, offering significantly higher capacity and faster access than magnetic tape.  Dominated storage for decades.\n*   **Optical Discs (CD-ROM) (1982):**  Compact Discs offered higher capacity than floppy disks and became popular for distributing software and music.\n\n**4. Modern Era (1990s - Present):**\n\n*   **DVDs (1995):** Digital Versatile Discs offered even higher capacity than CDs, used for video storage.\n*   **Blu-ray Discs (2006):**  Further increased capacity, primarily for high-definition video.\n*   **USB Flash Drives (2000):**  Solid-state storage devices offering portability and ease of use.\n*   **Solid State Drives (SSDs) (1990s, widespread adoption 2010s):**  Use flash memory to store data, offering significantly faster access times and greater durability than HDDs.  Becoming increasingly common.\n*   **Cloud Storage (2000s - Present):**  Data stored on remote servers and accessed over the internet (e.g., Google Drive, Dropbox, Amazon S3).\n*   **NVMe SSDs (2010s - Present):**  A faster interface for SSDs, significantly improving performance.\n*   **DNA Storage (Emerging):**  Research into using DNA as a storage medium, offering potentially massive storage density and longevity.\n\n\n\n**Key Trends:**\n\n*   **Increasing Capacity:** Storage capacity has increased exponentially over time.\n*   **Decreasing Size:** Storage devices have become smaller and more portable.\n*   **Faster Access Times:** Access times have dramatically improved, from sequential access to random access.\n*   **Increased Durability:**  Modern storage media are generally more durable and resistant to physical damage.\n*   **Shift to Solid State:**  The transition from mechanical storage (HDDs) to solid-state storage (SSDs) is a major trend.\n*   **Cloud Dominance:** Cloud storage is becoming increasingly important for both personal and business data.\n\nDo you want me to elaborate on any specific era or technology?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3814,
+      "output_tokens": 1002,
+      "total_latency_ms": 13907,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:52.908Z"
+  },
+  {
+    "result_id": "d8e7dd01-8ee5-4b75-b4dd-53c6be41226c",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 42, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_find_free_time",
+        "arguments": {
+          "participants": [
+            "item1",
+            "item2"
+          ],
+          "duration_minutes": 42,
+          "start_date": "example_value",
+          "end_date": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3852,
+      "output_tokens": 60,
+      "total_latency_ms": 1856,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:54.825Z"
+  },
+  {
+    "result_id": "5ff04d5c-c92f-450a-8b4e-5e423a03a172",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_convert_currency_v2\", \"arguments\": {\"amount\": 42, \"from\": \"example_value\", \"to\": \"example_value\", \"limit\": 1}}",
+      "parsed_tool_call": {
+        "name": "fin_convert_currency_v2",
+        "arguments": {
+          "amount": 42,
+          "from": "example_value",
+          "to": "example_value",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8571428571428571,
+      "overall": 0.9428571428571428
+    },
+    "metrics": {
+      "input_tokens": 3843,
+      "output_tokens": 46,
+      "total_latency_ms": 1681,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:56.572Z"
+  },
+  {
+    "result_id": "cfa30559-07fa-469c-a417-b034910e830e",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"cpu\"}}\n```",
+      "parsed_tool_call": {
+        "name": "ops_get_metrics",
+        "arguments": {
+          "service": "example_value",
+          "metric": "cpu"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3830,
+      "output_tokens": 33,
+      "total_latency_ms": 1506,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:58.147Z"
+  },
+  {
+    "result_id": "e3a5c259-1de7-4191-b0c5-a4d757c6d607",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"store_upload_file\", \"arguments\": {\"path\": \"src/components\", \"destination\": \"example_value\", \"bucket\": null}}",
+      "parsed_tool_call": {
+        "name": "store_upload_file",
+        "arguments": {
+          "path": "src/components",
+          "destination": "example_value",
+          "bucket": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 35,
+      "total_latency_ms": 1523,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:20:59.729Z"
+  },
+  {
+    "result_id": "47088a2e-9d56-4017-b149-7209207d3169",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 30,
+      "total_latency_ms": 1473,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:01.269Z"
+  },
+  {
+    "result_id": "52cf10a5-e588-479b-b2ff-4d886ade18de",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "example_value",
+          "width": 42
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 31,
+      "total_latency_ms": 1486,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:02.820Z"
+  },
+  {
+    "result_id": "4bee7f3e-3a95-46e9-9beb-e35c9119c89e",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\", \"audience\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_verify_token",
+        "arguments": {
+          "token": "example_value",
+          "audience": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 27,
+      "total_latency_ms": 1424,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:04.303Z"
+  },
+  {
+    "result_id": "985ad4ee-752b-4d96-90ed-ed6e2404f31c",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"], \"currency\": \"USD\", \"due_days\": 30}}",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ],
+          "currency": "USD",
+          "due_days": 30
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 3847,
+      "output_tokens": 49,
+      "total_latency_ms": 1718,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:06.087Z"
+  },
+  {
+    "result_id": "4cac40f0-92d2-49c5-bf1e-1f3c13c4feb9",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_search_products\", \"arguments\": {\"query\": \"example_value\"}}\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_search_products",
+          "arguments": {
+            "query": "example_value"
+          }
+        },
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3842,
+      "output_tokens": 46,
+      "total_latency_ms": 1680,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:07.823Z"
+  },
+  {
+    "result_id": "06dfb683-e6a6-4ad1-b0b2-3a24edf0d65a",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 43}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 43
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3857,
+      "output_tokens": 66,
+      "total_latency_ms": 1939,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:09.827Z"
+  },
+  {
+    "result_id": "aa2d4262-f553-454b-88a8-1be68beb19d9",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_verify_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3862,
+      "output_tokens": 70,
+      "total_latency_ms": 1977,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:11.865Z"
+  },
+  {
+    "result_id": "1778a45c-7944-439d-87f3-22e046ae8dc2",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"ops_scale_service\", \"arguments\": {\"service\": \"example_value\", \"replicas\": 104, \"environment\": \"production\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"store_delete_file_v2\", \"arguments\": {\"path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "ops_scale_service",
+          "arguments": {
+            "service": "example_value",
+            "replicas": 104,
+            "environment": "production"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        {
+          "name": "store_delete_file_v2",
+          "arguments": {
+            "path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3874,
+      "output_tokens": 86,
+      "total_latency_ms": 2205,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:14.128Z"
+  },
+  {
+    "result_id": "21b0d464-2f9c-419c-87f1-635fd781982b",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"user@example.com\", \"output_format\": \"webm\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "user@example.com",
+          "output_format": "webm"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3833,
+      "output_tokens": 35,
+      "total_latency_ms": 1532,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:15.716Z"
+  },
+  {
+    "result_id": "3a686453-f62a-43b5-9513-52a13389afc8",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Berlin\", \"widgets\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Berlin",
+          "widgets": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3826,
+      "output_tokens": 28,
+      "total_latency_ms": 1442,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:17.222Z"
+  },
+  {
+    "result_id": "1315e3c7-e5f9-4bbf-9ff5-4cf3aa69d3f6",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_query_metrics\", \"arguments\": {\"metric\": \"config.json\", \"start_time\": \"main\", \"end_time\": \"production\", \"aggregation\": \"p99\", \"group_by\": \"quarterly-report\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_query_metrics",
+        "arguments": {
+          "metric": "config.json",
+          "start_time": "main",
+          "end_time": "production",
+          "aggregation": "p99",
+          "group_by": "quarterly-report"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3877,
+      "output_tokens": 57,
+      "total_latency_ms": 1823,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:19.106Z"
+  },
+  {
+    "result_id": "9901c8ab-afb8-4c8a-9b00-41b063274a64",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_forecast\", \"arguments\": {\"location\": \"production\", \"days\": 901.99, \"units\": \"imperial\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_forecast",
+        "arguments": {
+          "location": "production",
+          "days": 901.99,
+          "units": "imperial"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3846,
+      "output_tokens": 37,
+      "total_latency_ms": 1561,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:20.738Z"
+  },
+  {
+    "result_id": "992d1313-a25b-4383-9823-85e5c473fedb",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "The boiling point of water is 100 degrees Celsius.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3817,
+      "output_tokens": 14,
+      "total_latency_ms": 1259,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:22.053Z"
+  },
+  {
+    "result_id": "d5b62bdd-c6ba-4dc3-9815-f1ea0a47271c",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "1024",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3819,
+      "output_tokens": 5,
+      "total_latency_ms": 1145,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:23.261Z"
+  },
+  {
+    "result_id": "710e0e7d-dbac-407b-b32d-f5f030f87f5a",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of how version control has evolved over the last decade (roughly 2014-2024), focusing on key trends and shifts.  It's a complex topic, so I'll break it down into categories: Core Systems, Workflow, Tooling, and Emerging Trends.\n\n**1. Core Systems (Git Dominance & Beyond)**\n\n*   **Git's Continued Reign:** Git solidified its position as *the* dominant version control system.  While other systems (like Mercurial, Subversion, and Perforce) still exist, Git's distributed nature, branching model, and open-source nature made it the clear winner.  This wasn't a huge change from the early 2010s, but the *scale* of Git adoption increased dramatically.\n*   **Git Large File Storage (LFS):** A critical development was the rise of Git LFS.  Git was originally designed for text-based code.  Managing large binary files (images, audio, video, datasets) directly in a Git repository became problematic (bloating the repository size, slowing down operations). Git LFS addressed this by storing the large files separately and referencing them in the Git repository. This became essential for game development, data science, and other fields dealing with large assets.\n*   **Sparse Checkouts:** Git sparse checkouts, while existing before, became more widely adopted and improved.  They allow developers to only download portions of a large repository, significantly speeding up cloning and working with massive projects.\n*   **Beyond Git:** While Git is dominant, there's been some exploration of alternative distributed version control systems, often focused on specific niches or addressing perceived limitations of Git (though none have achieved widespread adoption).\n\n**2. Workflow & Methodologies**\n\n*   **Gitflow & Feature Branching:** Gitflow, a formalized branching model, was popular for a while, but its complexity led to a shift.  Simpler \"feature branching\" workflows (where developers create branches for individual features, merge them into a main branch) became more common.\n*   **Trunk-Based Development:** Trunk-based development gained traction as a more streamlined alternative to Gitflow.  It emphasizes frequent commits directly to the main branch (the \"trunk\"), minimizing long-lived feature branches and reducing merge conflicts.  This requires robust testing and continuous integration.\n*   **GitHub Flow:** A simplified workflow tailored for GitHub, emphasizing continuous deployment and frequent releases.\n*   **Increased Focus on Code Review:**  Code review became an even more integral part of the development process, often integrated directly into version control platforms (GitHub, GitLab, Bitbucket).  Pull requests (or merge requests) became the standard mechanism for code review.\n*   **GitOps:** A relatively new approach where Git repositories are used to declare the desired state of infrastructure and applications.  Automated tools then reconcile the actual state with the Git repository, enabling infrastructure-as-code and continuous deployment.\n\n**3. Tooling & Platforms**\n\n*   **GitHub's Dominance:** GitHub became *the* central hub for Git repositories, attracting a massive community and a wide range of integrations.  It's more than just a repository host; it's a development platform.\n*   **GitLab's Rise:** GitLab emerged as a strong competitor to GitHub, offering a complete DevOps platform (repository hosting, CI/CD, issue tracking, etc.) in a single tool.  Its appeal lies in its self-hosting capabilities and integrated features.\n*   **Bitbucket's Niche:** Bitbucket, owned by Atlassian, remains popular, particularly within teams already using other Atlassian tools (Jira, Confluence).\n*   **GUI Clients:** While command-line Git remains powerful, GUI clients (like SourceTree, GitKraken, Fork) improved significantly, making Git more accessible to developers who prefer a visual interface.\n*   **Integrated CI/CD:** Continuous Integration and Continuous Delivery (CI/CD) pipelines became tightly integrated with version control systems.  Automated builds, tests, and deployments are triggered by Git commits and pull requests.\n*   **Improved Branching Visualization:** Tools and platforms improved their visualization of branching models, making it easier to understand complex project structures.\n\n**4. Emerging Trends**\n\n*   **AI-Assisted Version Control:**  Early experimentation with AI to assist with code review, conflict resolution, and even suggesting commit messages is beginning to appear.\n*   **Decentralized Version Control (DVC):** DVC is gaining traction as a tool to manage data and machine learning models alongside code, addressing the limitations of Git for large datasets.\n*   **Blockchain-Based Version Control:**  While still very early stage, there's exploration of using blockchain technology to create immutable and auditable version control systems.\n*   **Git with Cloud Native Technologies:**  Integration",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3817,
+      "output_tokens": 1024,
+      "total_latency_ms": 14211,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:37.531Z"
+  },
+  {
+    "result_id": "b52589f3-4130-45fe-8a2d-b7e759a2abb4",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll break it down into eras.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Petroglyphs (30,000+ BCE):**  The earliest forms of recording information.  Visual representations of events, stories, and knowledge.\n*   **Clay Tablets (3000 BCE):** Used in Mesopotamia for record-keeping (taxes, laws, literature). Durable but heavy and limited in capacity.\n*   **Papyrus Scrolls (2500 BCE):**  Developed in Egypt, papyrus allowed for longer texts than clay tablets.  Still sequential access (must unroll).\n*   **Parchment & Vellum (2nd Century BCE):**  Made from animal skins, these were more durable and could be written on both sides.\n*   **Codex (1st Century CE):**  The ancestor of the modern book – pages bound together.  Allowed for random access.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (1801):** Joseph Marie Jacquard invented a loom controlled by punched cards, demonstrating a way to encode information mechanically.  Later used by Herman Hollerith for the 1890 US Census.\n*   **Punched Tape (1840s):** Used in telegraph systems and early computers.\n*   **Magnetic Tape (1928):** Initially used for audio recording, it was quickly adapted for data storage in computers.  Sequential access.\n*   **Magnetic Drum Memory (1932):** Early form of computer memory, faster than tape but still sequential access.\n*   **Magnetic Core Memory (1951):**  First form of random-access computer memory (RAM).  Relatively fast and reliable for its time.\n\n**3. Early Electronic Era (Mid 1900s - 1980s):**\n\n*   **Floppy Disks (1971):**  Introduced by IBM, floppy disks offered removable storage and became ubiquitous for personal computers.  Relatively low capacity.\n*   **Magnetic Tape Cartridges (1950s onward):** Used for backup and archival storage.\n*   **Hard Disk Drives (HDDs) (1956):** IBM introduced the first HDD, offering significantly higher capacity and faster access than magnetic tape.  Dominated storage for decades.\n*   **Optical Discs (CD-ROM) (1982):**  Compact Discs offered higher capacity than floppy disks and became popular for distributing software and music.\n\n**4. Modern Era (1990s - Present):**\n\n*   **DVDs (1995):** Digital Versatile Discs offered even higher capacity than CDs, used for video storage.\n*   **Blu-ray Discs (2006):**  Further increased capacity, primarily for high-definition video.\n*   **USB Flash Drives (2000):**  Solid-state storage devices offering portability and ease of use.\n*   **Solid State Drives (SSDs) (1990s, widespread adoption 2010s):**  Use flash memory to store data, offering significantly faster access times and greater durability than HDDs.  Becoming increasingly common.\n*   **Cloud Storage (2000s - Present):**  Data stored on remote servers and accessed over the internet (e.g., Google Drive, Dropbox, Amazon S3).\n*   **NVMe SSDs (2010s - Present):**  A faster interface for SSDs, significantly improving performance.\n*   **DNA Storage (Emerging):**  Research into using DNA as a storage medium, offering potentially massive storage density and longevity.\n\n\n\n**Key Trends:**\n\n*   **Increasing Capacity:** Storage capacity has increased exponentially over time.\n*   **Decreasing Size:** Storage devices have become smaller and more portable.\n*   **Faster Access Times:** Access times have dramatically improved, from sequential access to random access.\n*   **Increased Durability:**  Modern storage media are generally more durable and resistant to physical damage.\n*   **Shift to Solid State:**  The transition from mechanical storage (HDDs) to solid-state storage (SSDs) is a major trend.\n*   **Cloud Dominance:** Cloud storage is becoming increasingly important for both personal and business data.\n\nDo you want me to elaborate on any specific era or technology?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3814,
+      "output_tokens": 1002,
+      "total_latency_ms": 13969,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:51.556Z"
+  },
+  {
+    "result_id": "ebc7eec9-1029-422b-beac-81a5665e21c0",
+    "task_id": "tab-D-ts-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 42, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}\n```",
+      "parsed_tool_call": {
+        "name": "cal_find_free_time",
+        "arguments": {
+          "participants": [
+            "item1",
+            "item2"
+          ],
+          "duration_minutes": 42,
+          "start_date": "example_value",
+          "end_date": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3852,
+      "output_tokens": 60,
+      "total_latency_ms": 1862,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:53.490Z"
+  },
+  {
+    "result_id": "645492f4-ba1b-44cb-81bc-7917e1d0ab61",
+    "task_id": "tab-D-ts-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_convert_currency_v2\", \"arguments\": {\"amount\": 42, \"from\": \"example_value\", \"to\": \"example_value\", \"limit\": 1}}",
+      "parsed_tool_call": {
+        "name": "fin_convert_currency_v2",
+        "arguments": {
+          "amount": 42,
+          "from": "example_value",
+          "to": "example_value",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8571428571428571,
+      "overall": 0.9428571428571428
+    },
+    "metrics": {
+      "input_tokens": 3843,
+      "output_tokens": 46,
+      "total_latency_ms": 1677,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:55.227Z"
+  },
+  {
+    "result_id": "9d16ac60-b43a-4a66-9cf2-30fe21ba889c",
+    "task_id": "tab-D-ts-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"cpu\"}}\n```",
+      "parsed_tool_call": {
+        "name": "ops_get_metrics",
+        "arguments": {
+          "service": "example_value",
+          "metric": "cpu"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3830,
+      "output_tokens": 33,
+      "total_latency_ms": 1507,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:56.801Z"
+  },
+  {
+    "result_id": "44356810-6c3c-4351-b46e-980da62c7bec",
+    "task_id": "tab-D-ts-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"store_upload_file\", \"arguments\": {\"path\": \"src/components\", \"destination\": \"example_value\", \"bucket\": null}}",
+      "parsed_tool_call": {
+        "name": "store_upload_file",
+        "arguments": {
+          "path": "src/components",
+          "destination": "example_value",
+          "bucket": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.8,
+      "overall": 0.92
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 35,
+      "total_latency_ms": 1530,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:58.391Z"
+  },
+  {
+    "result_id": "bda48211-858f-4f61-a502-90e5591ee9ee",
+    "task_id": "tab-D-ts-005",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "comm_send_message",
+        "arguments": {
+          "recipient": "example_value",
+          "message": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 30,
+      "total_latency_ms": 1475,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:21:59.927Z"
+  },
+  {
+    "result_id": "bb981ef4-b866-4600-8f92-ac23a0399e9f",
+    "task_id": "tab-D-ts-006",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}",
+      "parsed_tool_call": {
+        "name": "media_resize_image",
+        "arguments": {
+          "input_path": "example_value",
+          "width": 42
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 31,
+      "total_latency_ms": 1493,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:01.492Z"
+  },
+  {
+    "result_id": "0037e9af-50e9-41f4-a075-dc0312ead2bd",
+    "task_id": "tab-D-ts-007",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\", \"audience\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_verify_token",
+        "arguments": {
+          "token": "example_value",
+          "audience": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 3836,
+      "output_tokens": 27,
+      "total_latency_ms": 1440,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:02.989Z"
+  },
+  {
+    "result_id": "260bcd2a-4da8-4bcf-b926-e80d1490c48b",
+    "task_id": "tab-D-ts-008",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"], \"currency\": \"USD\", \"due_days\": 30}}",
+      "parsed_tool_call": {
+        "name": "fin_create_invoice",
+        "arguments": {
+          "customer_id": "example_value",
+          "items": [
+            "item1",
+            "item2"
+          ],
+          "currency": "USD",
+          "due_days": 30
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 3847,
+      "output_tokens": 49,
+      "total_latency_ms": 1716,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:04.772Z"
+  },
+  {
+    "result_id": "af6c8e5b-7431-4bd6-ab3d-6a58f78565db",
+    "task_id": "tab-D-mt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_search_products\", \"arguments\": {\"query\": \"example_value\"}}\n{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_search_products",
+          "arguments": {
+            "query": "example_value"
+          }
+        },
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3842,
+      "output_tokens": 46,
+      "total_latency_ms": 1686,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:06.522Z"
+  },
+  {
+    "result_id": "c77d8d4b-4e86-4bea-8a09-85081843ddde",
+    "task_id": "tab-D-mt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 43}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 43
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3857,
+      "output_tokens": 66,
+      "total_latency_ms": 1942,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:08.524Z"
+  },
+  {
+    "result_id": "1682f697-7836-4fe6-b1b1-21643f1046c8",
+    "task_id": "tab-D-mt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_verify_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_verify_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3862,
+      "output_tokens": 70,
+      "total_latency_ms": 1996,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:10.582Z"
+  },
+  {
+    "result_id": "e37643b1-9c45-40d3-a224-71920cc2f720",
+    "task_id": "tab-D-mt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"ops_scale_service\", \"arguments\": {\"service\": \"example_value\", \"replicas\": 104, \"environment\": \"production\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"store_delete_file_v2\", \"arguments\": {\"path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "ops_scale_service",
+          "arguments": {
+            "service": "example_value",
+            "replicas": 104,
+            "environment": "production"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        {
+          "name": "store_delete_file_v2",
+          "arguments": {
+            "path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3874,
+      "output_tokens": 86,
+      "total_latency_ms": 2243,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:12.882Z"
+  },
+  {
+    "result_id": "4ab6731d-1ea4-4497-aaaa-85175569a56a",
+    "task_id": "tab-D-pe-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"user@example.com\", \"output_format\": \"webm\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "user@example.com",
+          "output_format": "webm"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3833,
+      "output_tokens": 35,
+      "total_latency_ms": 1547,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:14.487Z"
+  },
+  {
+    "result_id": "1fce2c8f-a383-4899-aa1e-32f001614097",
+    "task_id": "tab-D-pe-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Berlin\", \"widgets\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Berlin",
+          "widgets": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3826,
+      "output_tokens": 28,
+      "total_latency_ms": 1446,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:16.000Z"
+  },
+  {
+    "result_id": "83084736-cc6e-45c3-8bc5-e302db298659",
+    "task_id": "tab-D-pe-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_query_metrics\", \"arguments\": {\"metric\": \"config.json\", \"start_time\": \"main\", \"end_time\": \"production\", \"aggregation\": \"p99\", \"group_by\": \"quarterly-report\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_query_metrics",
+        "arguments": {
+          "metric": "config.json",
+          "start_time": "main",
+          "end_time": "production",
+          "aggregation": "p99",
+          "group_by": "quarterly-report"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3877,
+      "output_tokens": 57,
+      "total_latency_ms": 1830,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:17.889Z"
+  },
+  {
+    "result_id": "da1cfe7d-9e67-45a6-8b56-2d9e4cd60bcc",
+    "task_id": "tab-D-pe-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_forecast\", \"arguments\": {\"location\": \"production\", \"days\": 901.99, \"units\": \"imperial\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_forecast",
+        "arguments": {
+          "location": "production",
+          "days": 901.99,
+          "units": "imperial"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3846,
+      "output_tokens": 37,
+      "total_latency_ms": 1566,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:19.521Z"
+  },
+  {
+    "result_id": "43545861-bb39-4fbd-881f-38e008291900",
+    "task_id": "tab-D-nt-001",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "The boiling point of water is 100 degrees Celsius.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3817,
+      "output_tokens": 14,
+      "total_latency_ms": 1267,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:20.855Z"
+  },
+  {
+    "result_id": "530b504e-5020-4e6c-9645-b4d5c5fcd639",
+    "task_id": "tab-D-nt-002",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "1024",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3819,
+      "output_tokens": 5,
+      "total_latency_ms": 1145,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:22.071Z"
+  },
+  {
+    "result_id": "78b09b59-0d96-4e31-835d-ba73c0a4dc74",
+    "task_id": "tab-D-nt-003",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of how version control has evolved over the last decade (roughly 2014-2024), focusing on key trends and shifts.  It's a complex topic, so I'll break it down into categories: Core Systems, Workflow, Tooling, and Emerging Trends.\n\n**1. Core Systems (Git Dominance & Beyond)**\n\n*   **Git's Continued Reign:** Git solidified its position as *the* dominant version control system.  While other systems (like Mercurial, Subversion, and Perforce) still exist, Git's distributed nature, branching model, and open-source nature made it the clear winner.  This wasn't a huge change from the early 2010s, but the *scale* of Git adoption increased dramatically.\n*   **Git Large File Storage (LFS):** A critical development was the rise of Git LFS.  Git was originally designed for text-based code.  Managing large binary files (images, audio, video, datasets) directly in a Git repository became problematic (bloating the repository size, slowing down operations). Git LFS addressed this by storing the large files separately and referencing them in the Git repository. This became essential for game development, data science, and other fields dealing with large assets.\n*   **Sparse Checkouts:** Git sparse checkouts, while existing before, became more widely adopted and improved.  They allow developers to only download portions of a large repository, significantly speeding up cloning and working with massive projects.\n*   **Beyond Git:** While Git is dominant, there's been some exploration of alternative distributed version control systems, often focused on specific niches or addressing perceived limitations of Git (though none have achieved widespread adoption).\n\n**2. Workflow & Methodologies**\n\n*   **Gitflow & Feature Branching:** Gitflow, a formalized branching model, was popular for a while, but its complexity led to a shift.  Simpler \"feature branching\" workflows (where developers create branches for individual features, merge them into a main branch) became more common.\n*   **Trunk-Based Development:** Trunk-based development gained traction as a more streamlined alternative to Gitflow.  It emphasizes frequent commits directly to the main branch (the \"trunk\"), minimizing long-lived feature branches and reducing merge conflicts.  This requires robust testing and continuous integration.\n*   **GitHub Flow:** A simplified workflow tailored for GitHub, emphasizing continuous deployment and frequent releases.\n*   **Increased Focus on Code Review:**  Code review became an even more integral part of the development process, often integrated directly into version control platforms (GitHub, GitLab, Bitbucket).  Pull requests (or merge requests) became the standard mechanism for code review.\n*   **GitOps:** A relatively new approach where Git repositories are used to declare the desired state of infrastructure and applications.  Automated tools then reconcile the actual state with the Git repository, enabling infrastructure-as-code and continuous deployment.\n\n**3. Tooling & Platforms**\n\n*   **GitHub's Dominance:** GitHub became *the* central hub for Git repositories, attracting a massive community and a wide range of integrations.  It's more than just a repository host; it's a development platform.\n*   **GitLab's Rise:** GitLab emerged as a strong competitor to GitHub, offering a complete DevOps platform (repository hosting, CI/CD, issue tracking, etc.) in a single tool.  Its appeal lies in its self-hosting capabilities and integrated features.\n*   **Bitbucket's Niche:** Bitbucket, owned by Atlassian, remains popular, particularly within teams already using other Atlassian tools (Jira, Confluence).\n*   **GUI Clients:** While command-line Git remains powerful, GUI clients (like SourceTree, GitKraken, Fork) improved significantly, making Git more accessible to developers who prefer a visual interface.\n*   **Integrated CI/CD:** Continuous Integration and Continuous Delivery (CI/CD) pipelines became tightly integrated with version control systems.  Automated builds, tests, and deployments are triggered by Git commits and pull requests.\n*   **Improved Branching Visualization:** Tools and platforms improved their visualization of branching models, making it easier to understand complex project structures.\n\n**4. Emerging Trends**\n\n*   **AI-Assisted Version Control:**  Early experimentation with AI to assist with code review, conflict resolution, and even suggesting commit messages is beginning to appear.\n*   **Decentralized Version Control (DVC):** DVC is gaining traction as a tool to manage data and machine learning models alongside code, addressing the limitations of Git for large datasets.\n*   **Blockchain-Based Version Control:**  While still very early stage, there's exploration of using blockchain technology to create immutable and auditable version control systems.\n*   **Git with Cloud Native Technologies:**  Integration",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3817,
+      "output_tokens": 1024,
+      "total_latency_ms": 14270,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:36.397Z"
+  },
+  {
+    "result_id": "c17f026d-5d22-4e66-b3f4-44185ef976e3",
+    "task_id": "tab-D-nt-004",
+    "model": "Gemma 3 12B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Okay, here's a breakdown of the history of data storage, from early methods to modern technologies. It's a long story, so I'll break it down into eras.\n\n**1. Pre-Mechanical Era (Before 1800s):**\n\n*   **Cave Paintings & Petroglyphs (30,000+ BCE):**  The earliest forms of recording information.  Visual representations of events, stories, and knowledge.\n*   **Clay Tablets (3000 BCE):** Used in Mesopotamia for record-keeping (taxes, laws, literature). Durable but heavy and limited in capacity.\n*   **Papyrus Scrolls (2500 BCE):**  Developed in Egypt, papyrus allowed for longer texts than clay tablets.  Still sequential access (must unroll).\n*   **Parchment & Vellum (2nd Century BCE):**  Made from animal skins, these were more durable and could be written on both sides.\n*   **Codex (1st Century CE):**  The ancestor of the modern book – pages bound together.  Allowed for random access.\n\n**2. Mechanical Era (1800s - Mid 1900s):**\n\n*   **Punched Cards (1801):** Joseph Marie Jacquard invented a loom controlled by punched cards, demonstrating a way to encode information mechanically.  Later used by Herman Hollerith for the 1890 US Census.\n*   **Punched Tape (1840s):** Used in telegraph systems and early computers.\n*   **Magnetic Tape (1928):** Initially used for audio recording, it was quickly adapted for data storage in computers.  Sequential access.\n*   **Magnetic Drum Memory (1932):** Early form of computer memory, faster than tape but still sequential access.\n*   **Magnetic Core Memory (1951):**  First form of random-access computer memory (RAM).  Relatively fast and reliable for its time.\n\n**3. Early Electronic Era (Mid 1900s - 1980s):**\n\n*   **Floppy Disks (1971):**  Introduced by IBM, floppy disks offered removable storage and became ubiquitous for personal computers.  Relatively low capacity.\n*   **Magnetic Tape Cartridges (1950s onward):** Used for backup and archival storage.\n*   **Hard Disk Drives (HDDs) (1956):** IBM introduced the first HDD, offering significantly higher capacity and faster access than magnetic tape.  Dominated storage for decades.\n*   **Optical Discs (CD-ROM) (1982):**  Compact Discs offered higher capacity than floppy disks and became popular for distributing software and music.\n\n**4. Modern Era (1990s - Present):**\n\n*   **DVDs (1995):** Digital Versatile Discs offered even higher capacity than CDs, used for video storage.\n*   **Blu-ray Discs (2006):**  Further increased capacity, primarily for high-definition video.\n*   **USB Flash Drives (2000):**  Solid-state storage devices offering portability and ease of use.\n*   **Solid State Drives (SSDs) (1990s, widespread adoption 2010s):**  Use flash memory to store data, offering significantly faster access times and greater durability than HDDs.  Becoming increasingly common.\n*   **Cloud Storage (2000s - Present):**  Data stored on remote servers and accessed over the internet (e.g., Google Drive, Dropbox, Amazon S3).\n*   **NVMe SSDs (2010s - Present):**  A faster interface for SSDs, significantly improving performance.\n*   **DNA Storage (Emerging):**  Research into using DNA as a storage medium, offering potentially massive storage density and longevity.\n\n\n\n**Key Trends:**\n\n*   **Increasing Capacity:** Storage capacity has increased exponentially over time.\n*   **Decreasing Size:** Storage devices have become smaller and more portable.\n*   **Faster Access Times:** Access times have dramatically improved, from sequential access to random access.\n*   **Increased Durability:**  Modern storage media are generally more durable and resistant to physical damage.\n*   **Shift to Solid State:**  The transition from mechanical storage (HDDs) to solid-state storage (SSDs) is a major trend.\n*   **Cloud Dominance:** Cloud storage is becoming increasingly important for both personal and business data.\n\nDo you want me to elaborate on any specific era or technology?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3814,
+      "output_tokens": 1002,
+      "total_latency_ms": 14006,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T15:22:50.465Z"
+  }
+]

@@ -1,0 +1,37 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=14pt,
+    width=\columnwidth,
+    height=6cm,
+    ylabel={Token Savings vs.\ Natural (\%)},
+    ylabel style={font=\small},
+    symbolic x coords={minimal, balanced, max\_comp, max\_acc, full},
+    xtick=data,
+    x tick label style={rotate=30, anchor=east, font=\scriptsize},
+    ymin=0,
+    ymax=15,
+    ytick={0,3,6,9,12,15},
+    nodes near coords,
+    nodes near coords style={font=\tiny, above},
+    every node near coord/.append style={yshift=1pt},
+    grid=major,
+    grid style={dashed, gray!25},
+    enlarge x limits=0.15,
+]
+
+\addplot[fill=tscgblue!70, draw=tscgblue!80] coordinates {
+    (minimal, 4.2)
+    (balanced, 5.8)
+    (max\_comp, 7.1)
+    (max\_acc, 5.5)
+    (full, 6.3)
+};
+
+\end{axis}
+\end{tikzpicture}
+\caption{Token savings (\%) relative to natural language prompts across the five TSCG optimization profiles, measured as $(1 - \text{TSCG tokens} / \text{Natural tokens}) \times 100$ on the 19-task benchmark. The \texttt{full} profile achieves 6.3\% token savings while maintaining parity or superiority in accuracy. Note: character-level compression (measured as string length reduction) ranges from 35--63\% across profiles, but this does not directly correspond to token count reduction due to BPE tokenization.}
+\label{fig:compression}
+\end{figure}

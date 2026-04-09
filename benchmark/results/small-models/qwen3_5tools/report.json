@@ -1,0 +1,3646 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Qwen3 4B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-03T07:55:19.902Z",
+    "end_time": "2026-03-03T08:09:49.490Z",
+    "duration_ms": 869588
+  },
+  "results": [
+    {
+      "result_id": "b8ad7520-692d-46a2-a17f-c0c8bea7270d",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 985,
+        "output_tokens": 249,
+        "total_latency_ms": 7887,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:55:28.852Z"
+    },
+    {
+      "result_id": "15381ee6-231a-4c7e-ab41-ecada8163037",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 993,
+        "output_tokens": 1024,
+        "total_latency_ms": 10950,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:55:39.862Z"
+    },
+    {
+      "result_id": "7684558c-82c7-4451-b15b-4ab90eb2b4c9",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 995,
+        "output_tokens": 379,
+        "total_latency_ms": 6390,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:55:46.312Z"
+    },
+    {
+      "result_id": "a707cec4-e629-48be-b52e-676f333ee28f",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1002,
+        "output_tokens": 463,
+        "total_latency_ms": 8436,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:55:54.817Z"
+    },
+    {
+      "result_id": "657e7606-1526-49a9-a0a9-02c8e6202659",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1000,
+        "output_tokens": 312,
+        "total_latency_ms": 6685,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:01.567Z"
+    },
+    {
+      "result_id": "9e8993af-81ed-4643-82a0-c77c17855b2d",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 988,
+        "output_tokens": 270,
+        "total_latency_ms": 7363,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:09.000Z"
+    },
+    {
+      "result_id": "590776bc-0502-4551-90c4-d3ae13af4883",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1002,
+        "output_tokens": 678,
+        "total_latency_ms": 9015,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:18.080Z"
+    },
+    {
+      "result_id": "b0fd84a7-e5ef-48a2-8d2d-dc9817913dd5",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1007,
+        "output_tokens": 394,
+        "total_latency_ms": 8061,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:26.211Z"
+    },
+    {
+      "result_id": "b8c98cb7-595d-4853-b817-922c66f5557f",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 994,
+        "output_tokens": 295,
+        "total_latency_ms": 7509,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:33.777Z"
+    },
+    {
+      "result_id": "9129f10b-0752-4dc1-902d-de86c59bb6f6",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 994,
+        "output_tokens": 450,
+        "total_latency_ms": 8553,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:42.386Z"
+    },
+    {
+      "result_id": "f3e02eda-f286-4cc9-acdc-d3ffc628939b",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_create_dashboard",
+            "arguments": {
+              "name": "example_value",
+              "widgets": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1018,
+        "output_tokens": 940,
+        "total_latency_ms": 11305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:56:53.748Z"
+    },
+    {
+      "result_id": "c6a5d506-7478-4143-b972-4cc124a895af",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1017,
+        "output_tokens": 551,
+        "total_latency_ms": 9111,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:02.917Z"
+    },
+    {
+      "result_id": "3a4ac730-acfb-4e23-9b59-33b69fee442e",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 983,
+        "output_tokens": 235,
+        "total_latency_ms": 7189,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:10.171Z"
+    },
+    {
+      "result_id": "d75e69c8-f74e-433e-9666-f9b913d29727",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 985,
+        "output_tokens": 295,
+        "total_latency_ms": 5670,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:15.908Z"
+    },
+    {
+      "result_id": "6695ba8d-b2c6-4118-9bb6-0efc4c24b5c7",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1000,
+        "output_tokens": 376,
+        "total_latency_ms": 5337,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:21.316Z"
+    },
+    {
+      "result_id": "c46677ee-9be3-4de5-860d-eb5ac96287eb",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1009,
+        "output_tokens": 395,
+        "total_latency_ms": 4438,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:25.823Z"
+    },
+    {
+      "result_id": "0cc5452d-98d0-4251-b0fb-9f1dbc0b4a8c",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The meaning of life is a philosophical question that has been debated for centuries and doesn't have a single definitive answer. Since I don't have access to tools that can provide philosophical insights or interpret existential questions, I can't help with this query using the available functions. Let me know if you'd like assistance with something else that aligns with the tools I have!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 979,
+        "output_tokens": 251,
+        "total_latency_ms": 3889,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:29.782Z"
+    },
+    {
+      "result_id": "364328ff-d7fd-446e-88ce-d86574c08719",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The chemical formula for water is H₂O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 980,
+        "output_tokens": 257,
+        "total_latency_ms": 3318,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:33.162Z"
+    },
+    {
+      "result_id": "6e04dd27-d802-4f92-b1e7-0195aa21a352",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Version control is crucial in modern software development because it enables teams to collaboratively manage code changes, track revisions, and maintain a clear history of modifications. It helps prevent conflicts when multiple developers work on the same project, allows for easy rollback to previous stable states if issues arise, supports feature branching for parallel development, and ensures transparency through detailed commit logs. Tools like Git have become industry standards for these purposes, making version control essential for efficient, scalable, and reliable software delivery.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 982,
+        "output_tokens": 319,
+        "total_latency_ms": 3341,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:36.567Z"
+    },
+    {
+      "result_id": "8fc96b73-5ef0-4764-962c-0852edce1640",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The best practices for code review include:\n1. Assigning reviews to at least two reviewers for critical changes\n2. Using specific, actionable feedback rather than vague comments\n3. Reviewing code changes incrementally (e.g., small commits)\n4. Ensuring code follows established style guides and standards\n5. Checking for potential security vulnerabilities and edge cases\n6. Documenting decisions and rationale for changes\n7. Maintaining a collaborative and constructive tone throughout the process\n8. Using automated tools for static code analysis before manual review\n9. Setting clear expectations for review timelines and responsibilities\n10. Encouraging reviewers to focus on the purpose of the change rather than just the code itself\n\nNone of the available tools can provide this information as they are focused on analytics tracking, air quality data, user management, and report generation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 981,
+        "output_tokens": 379,
+        "total_latency_ms": 4668,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:41.295Z"
+    },
+    {
+      "result_id": "5eae9135-63a3-462e-bdb6-c57703672f90",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 985,
+        "output_tokens": 247,
+        "total_latency_ms": 3595,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:44.947Z"
+    },
+    {
+      "result_id": "2342f0e7-f2a5-45fb-9962-1a256ef07db0",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 993,
+        "output_tokens": 1024,
+        "total_latency_ms": 11079,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:57:56.086Z"
+    },
+    {
+      "result_id": "67e96094-172f-4ecb-aa84-14fccb52ebeb",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 995,
+        "output_tokens": 379,
+        "total_latency_ms": 15714,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:11.861Z"
+    },
+    {
+      "result_id": "bdb51241-fec6-491a-80e4-a82cbeb86ec4",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1002,
+        "output_tokens": 463,
+        "total_latency_ms": 8517,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:20.441Z"
+    },
+    {
+      "result_id": "af0cf527-3b2f-4585-beb7-a516b8178eea",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1000,
+        "output_tokens": 312,
+        "total_latency_ms": 6729,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:27.228Z"
+    },
+    {
+      "result_id": "54213851-ba68-468b-a73a-1693eb90462f",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 988,
+        "output_tokens": 270,
+        "total_latency_ms": 7423,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:34.715Z"
+    },
+    {
+      "result_id": "5884fa59-aab3-491c-a973-a9984b414b30",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1002,
+        "output_tokens": 678,
+        "total_latency_ms": 9113,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:43.884Z"
+    },
+    {
+      "result_id": "a898f634-68e6-4a23-8a39-262c010df0e9",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1007,
+        "output_tokens": 394,
+        "total_latency_ms": 8155,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:52.095Z"
+    },
+    {
+      "result_id": "ddb14a3d-cb32-4fc9-9f96-484e7120c7ae",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 994,
+        "output_tokens": 295,
+        "total_latency_ms": 7534,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:58:59.686Z"
+    },
+    {
+      "result_id": "eea2839a-7b7d-44a5-a656-40c0d5ab785d",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 994,
+        "output_tokens": 450,
+        "total_latency_ms": 8482,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:08.226Z"
+    },
+    {
+      "result_id": "be526b67-fab9-49c4-b96b-2ca88de98f38",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_create_dashboard",
+            "arguments": {
+              "name": "example_value",
+              "widgets": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1018,
+        "output_tokens": 940,
+        "total_latency_ms": 11171,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:19.457Z"
+    },
+    {
+      "result_id": "7e159385-322b-4ef6-913f-dcc5d4fff38d",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1017,
+        "output_tokens": 551,
+        "total_latency_ms": 9066,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:28.579Z"
+    },
+    {
+      "result_id": "a2422f11-1966-43bf-aaf7-36d9ba8209d9",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 983,
+        "output_tokens": 235,
+        "total_latency_ms": 7222,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:35.863Z"
+    },
+    {
+      "result_id": "6e734287-e7f7-4bb1-870c-087739ed7f32",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 985,
+        "output_tokens": 295,
+        "total_latency_ms": 5672,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:41.602Z"
+    },
+    {
+      "result_id": "27fa52ae-debe-433b-a244-3e0dcdb910d1",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1000,
+        "output_tokens": 376,
+        "total_latency_ms": 5379,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:47.039Z"
+    },
+    {
+      "result_id": "1cc7d906-0c51-43e4-b0e2-551b479fbfb7",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1009,
+        "output_tokens": 395,
+        "total_latency_ms": 4445,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:51.544Z"
+    },
+    {
+      "result_id": "d6b28d8e-2899-4b58-b94a-0f102177fb7d",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The meaning of life is a philosophical question that has been debated for centuries and doesn't have a single definitive answer. Since I don't have access to tools that can provide philosophical insights or interpret existential questions, I can't help with this query using the available functions. Let me know if you'd like assistance with something else that aligns with the tools I have!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 979,
+        "output_tokens": 251,
+        "total_latency_ms": 3869,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:55.480Z"
+    },
+    {
+      "result_id": "c699dca2-7c40-4b77-b55d-163527c852c7",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The chemical formula for water is H₂O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 980,
+        "output_tokens": 257,
+        "total_latency_ms": 3291,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T07:59:58.837Z"
+    },
+    {
+      "result_id": "3bdc9f90-aa64-457d-a95d-80fabc5de774",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Version control is crucial in modern software development because it enables teams to collaboratively manage code changes, track revisions, and maintain a clear history of modifications. It helps prevent conflicts when multiple developers work on the same project, allows for easy rollback to previous stable states if issues arise, supports feature branching for parallel development, and ensures transparency through detailed commit logs. Tools like Git have become industry standards for these purposes, making version control essential for efficient, scalable, and reliable software delivery.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 982,
+        "output_tokens": 319,
+        "total_latency_ms": 3391,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:02.290Z"
+    },
+    {
+      "result_id": "7610ace0-b7c1-4f0c-a389-b9a4727785b1",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The best practices for code review include:\n1. Assigning reviews to at least two reviewers for critical changes\n2. Using specific, actionable feedback rather than vague comments\n3. Reviewing code changes incrementally (e.g., small commits)\n4. Ensuring code follows established style guides and standards\n5. Checking for potential security vulnerabilities and edge cases\n6. Documenting decisions and rationale for changes\n7. Maintaining a collaborative and constructive tone throughout the process\n8. Using automated tools for static code analysis before manual review\n9. Setting clear expectations for review timelines and responsibilities\n10. Encouraging reviewers to focus on the purpose of the change rather than just the code itself\n\nNone of the available tools can provide this information as they are focused on analytics tracking, air quality data, user management, and report generation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 981,
+        "output_tokens": 379,
+        "total_latency_ms": 4675,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:07.025Z"
+    },
+    {
+      "result_id": "2912ad29-2be0-4ae9-b0cd-d5abd36f0596",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 985,
+        "output_tokens": 247,
+        "total_latency_ms": 3585,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:10.677Z"
+    },
+    {
+      "result_id": "5e3596c7-ae1d-4919-b81f-8a2e687aab35",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 993,
+        "output_tokens": 1024,
+        "total_latency_ms": 11017,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:21.756Z"
+    },
+    {
+      "result_id": "2a318195-7908-4e2f-92af-d9389d12f0db",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 995,
+        "output_tokens": 379,
+        "total_latency_ms": 14734,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:36.551Z"
+    },
+    {
+      "result_id": "21f4381e-a9c4-4d14-875c-65cfa5ac8515",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1002,
+        "output_tokens": 463,
+        "total_latency_ms": 7604,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:44.221Z"
+    },
+    {
+      "result_id": "97b52e23-aea7-4e83-aa3e-4df0683b7f7b",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1000,
+        "output_tokens": 312,
+        "total_latency_ms": 7669,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:51.950Z"
+    },
+    {
+      "result_id": "e7b4eb00-adc9-4688-a34d-318a0a6e9711",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 988,
+        "output_tokens": 270,
+        "total_latency_ms": 6749,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:00:58.757Z"
+    },
+    {
+      "result_id": "9cad78b9-7f8e-4e36-8834-803313accd85",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1002,
+        "output_tokens": 678,
+        "total_latency_ms": 9824,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:08.639Z"
+    },
+    {
+      "result_id": "35bee883-4c69-421d-a923-e0be5434b221",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1007,
+        "output_tokens": 394,
+        "total_latency_ms": 8110,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:16.811Z"
+    },
+    {
+      "result_id": "4a4b168e-cb79-4d71-bc41-2564cf30670f",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 994,
+        "output_tokens": 295,
+        "total_latency_ms": 7547,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:24.416Z"
+    },
+    {
+      "result_id": "8fc9bbe8-8b4a-49c8-b3e3-99614eabdc77",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 994,
+        "output_tokens": 450,
+        "total_latency_ms": 8358,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:32.840Z"
+    },
+    {
+      "result_id": "da030e1e-a09f-4cb8-a320-4b8a19c81d4d",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_create_dashboard",
+            "arguments": {
+              "name": "example_value",
+              "widgets": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1018,
+        "output_tokens": 940,
+        "total_latency_ms": 11344,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:44.243Z"
+    },
+    {
+      "result_id": "6a5a10f3-bc20-4956-b96d-f75b477dea75",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1017,
+        "output_tokens": 551,
+        "total_latency_ms": 8998,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:53.299Z"
+    },
+    {
+      "result_id": "d412786e-c9a9-438e-a26b-69ee41ae52fe",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 983,
+        "output_tokens": 235,
+        "total_latency_ms": 5356,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:01:58.724Z"
+    },
+    {
+      "result_id": "bf57ac9d-fd27-4dab-98e8-4b127adf02e3",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 985,
+        "output_tokens": 295,
+        "total_latency_ms": 4909,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:03.699Z"
+    },
+    {
+      "result_id": "25676c0f-16d5-495b-b752-8507ed5ff3d0",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1000,
+        "output_tokens": 376,
+        "total_latency_ms": 4336,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:08.094Z"
+    },
+    {
+      "result_id": "c79641ba-fef4-41f1-a556-cc5b313f2546",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1009,
+        "output_tokens": 395,
+        "total_latency_ms": 4715,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:12.877Z"
+    },
+    {
+      "result_id": "cdde1171-cd13-43b4-905b-54a44762530e",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The meaning of life is a philosophical question that has been debated for centuries and doesn't have a single definitive answer. Since I don't have access to tools that can provide philosophical insights or interpret existential questions, I can't help with this query using the available functions. Let me know if you'd like assistance with something else that aligns with the tools I have!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 979,
+        "output_tokens": 251,
+        "total_latency_ms": 3281,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:16.216Z"
+    },
+    {
+      "result_id": "f5a1ae98-658d-4b0c-80b4-8fdbadaed41e",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The chemical formula for water is H₂O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 980,
+        "output_tokens": 257,
+        "total_latency_ms": 2975,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:19.252Z"
+    },
+    {
+      "result_id": "9eb0a894-4a1e-4b7b-809e-0ab0b32591a1",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Version control is crucial in modern software development because it enables teams to collaboratively manage code changes, track revisions, and maintain a clear history of modifications. It helps prevent conflicts when multiple developers work on the same project, allows for easy rollback to previous stable states if issues arise, supports feature branching for parallel development, and ensures transparency through detailed commit logs. Tools like Git have become industry standards for these purposes, making version control essential for efficient, scalable, and reliable software delivery.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 982,
+        "output_tokens": 319,
+        "total_latency_ms": 4299,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:23.612Z"
+    },
+    {
+      "result_id": "e026818f-bb72-4144-9e0b-5fb32d18a69d",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The best practices for code review include:\n1. Assigning reviews to at least two reviewers for critical changes\n2. Using specific, actionable feedback rather than vague comments\n3. Reviewing code changes incrementally (e.g., small commits)\n4. Ensuring code follows established style guides and standards\n5. Checking for potential security vulnerabilities and edge cases\n6. Documenting decisions and rationale for changes\n7. Maintaining a collaborative and constructive tone throughout the process\n8. Using automated tools for static code analysis before manual review\n9. Setting clear expectations for review timelines and responsibilities\n10. Encouraging reviewers to focus on the purpose of the change rather than just the code itself\n\nNone of the available tools can provide this information as they are focused on analytics tracking, air quality data, user management, and report generation.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 981,
+        "output_tokens": 379,
+        "total_latency_ms": 4342,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:28.014Z"
+    },
+    {
+      "result_id": "ce6129b8-d2f6-40c2-8794-bdbbe97c94a0",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 420,
+        "output_tokens": 409,
+        "total_latency_ms": 5492,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:33.576Z"
+    },
+    {
+      "result_id": "ed739c9c-25f6-4a1a-bceb-ff6e376641e4",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 428,
+        "output_tokens": 982,
+        "total_latency_ms": 11243,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:44.881Z"
+    },
+    {
+      "result_id": "420b1059-b315-488e-afe4-1bcf3102f4cd",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 430,
+        "output_tokens": 637,
+        "total_latency_ms": 7125,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:52.068Z"
+    },
+    {
+      "result_id": "02a46795-1ab2-4dcd-9762-bf0b5b8c732c",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 437,
+        "output_tokens": 368,
+        "total_latency_ms": 4016,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:02:56.147Z"
+    },
+    {
+      "result_id": "0f4733a9-1fcd-4ff7-8eec-4122b6ff0020",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 1024,
+        "total_latency_ms": 11123,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:07.339Z"
+    },
+    {
+      "result_id": "4f48c44e-3728-426f-a0df-a73ebfd5f241",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 423,
+        "output_tokens": 622,
+        "total_latency_ms": 6208,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:13.607Z"
+    },
+    {
+      "result_id": "17f4126d-5ae9-4ff7-bc65-fdb3300f907c",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 437,
+        "output_tokens": 624,
+        "total_latency_ms": 9118,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:22.789Z"
+    },
+    {
+      "result_id": "bea08442-2427-4245-b8a5-e80b16f62675",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 442,
+        "output_tokens": 603,
+        "total_latency_ms": 7071,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:29.926Z"
+    },
+    {
+      "result_id": "9223f8f7-8c35-479c-bb4c-e9cf88c4533c",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 429,
+        "output_tokens": 869,
+        "total_latency_ms": 10316,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:40.311Z"
+    },
+    {
+      "result_id": "dd8a2bcd-4ea9-4ea7-a1c3-589925df20b0",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 429,
+        "output_tokens": 576,
+        "total_latency_ms": 8157,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:48.532Z"
+    },
+    {
+      "result_id": "5f585691-5aa3-435a-83ac-6f53140dd553",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 453,
+        "output_tokens": 1024,
+        "total_latency_ms": 11382,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:03:59.974Z"
+    },
+    {
+      "result_id": "0f171558-29de-4841-ba6d-70026832878d",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 452,
+        "output_tokens": 603,
+        "total_latency_ms": 7163,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:07.207Z"
+    },
+    {
+      "result_id": "e98c81e3-f47b-4ebe-a9cd-527679c17bc5",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 418,
+        "output_tokens": 1024,
+        "total_latency_ms": 11353,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:18.620Z"
+    },
+    {
+      "result_id": "d4cca635-bb61-45d5-8920-8fdfca18462f",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 420,
+        "output_tokens": 950,
+        "total_latency_ms": 10996,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:29.686Z"
+    },
+    {
+      "result_id": "57d3ea20-7276-4048-972d-7fafde6bace9",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 357,
+        "total_latency_ms": 4686,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:34.438Z"
+    },
+    {
+      "result_id": "f85088a5-cba1-48bc-969e-d638a1d3a9fc",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 444,
+        "output_tokens": 516,
+        "total_latency_ms": 4919,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:39.422Z"
+    },
+    {
+      "result_id": "b91ea9de-e356-4745-9ec5-e46e2babd3a8",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The question \"What is the meaning of life?\" is a philosophical inquiry that doesn't have a single definitive answer and is not covered by any of the available analytics or utility tools. I don't have the capability to provide this kind of abstract response through the tools listed.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 414,
+        "output_tokens": 242,
+        "total_latency_ms": 2614,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:42.104Z"
+    },
+    {
+      "result_id": "d953a79a-0956-4559-9070-4b59fb6ed28c",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The chemical formula for water is H₂O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 415,
+        "output_tokens": 213,
+        "total_latency_ms": 2445,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:44.610Z"
+    },
+    {
+      "result_id": "c2e02b69-beaa-41d6-b612-ac79206b85af",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Version control is crucial in modern software development because it enables teams to collaboratively manage code changes while maintaining a clear history of modifications. It allows developers to track who made what changes, revert to previous versions if errors occur, and work on features or bug fixes in isolated branches without disrupting the main codebase. This ensures accountability, reduces conflicts, supports continuous integration and deployment pipelines, and provides a safety net against accidental data loss or corruption. By facilitating structured collaboration and transparency, version control systems like Git have become foundational for scalable, reliable, and maintainable software development practices.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 417,
+        "output_tokens": 602,
+        "total_latency_ms": 6674,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:51.344Z"
+    },
+    {
+      "result_id": "cbf954d2-d3f1-4e16-ae89-45640c3cf048",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The question about best practices for code review doesn't require any of the provided analytics, user management, or air quality tools. I don't have access to code review guidelines or development practices through the available toolset. Would you like me to provide general best practices for code review instead?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 416,
+        "output_tokens": 223,
+        "total_latency_ms": 3532,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:04:54.944Z"
+    },
+    {
+      "result_id": "dfa116ca-24f9-4c3c-a51f-0a29b1a2a069",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 420,
+        "output_tokens": 563,
+        "total_latency_ms": 6180,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:01.181Z"
+    },
+    {
+      "result_id": "0ddf3c9f-c141-4bb5-9cba-1a6b6a7c0379",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 428,
+        "output_tokens": 982,
+        "total_latency_ms": 11165,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:12.410Z"
+    },
+    {
+      "result_id": "3703059d-dfee-4701-a055-0592015e9db9",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 430,
+        "output_tokens": 637,
+        "total_latency_ms": 7116,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:19.590Z"
+    },
+    {
+      "result_id": "d3d1ce66-5353-4aaf-9dcc-371167a32569",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 437,
+        "output_tokens": 368,
+        "total_latency_ms": 4014,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:23.672Z"
+    },
+    {
+      "result_id": "bb9bb3d1-52f2-42f4-b73a-8ea5f90c83e4",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 1024,
+        "total_latency_ms": 11112,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:34.841Z"
+    },
+    {
+      "result_id": "0009db1b-f009-460f-9d15-2df03f5a6192",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 423,
+        "output_tokens": 622,
+        "total_latency_ms": 6159,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:41.070Z"
+    },
+    {
+      "result_id": "e4335d98-7694-4fa3-a392-befc113d9a27",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 437,
+        "output_tokens": 624,
+        "total_latency_ms": 9120,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:50.251Z"
+    },
+    {
+      "result_id": "dae20ff0-932b-4704-91b6-0311d6bcdca0",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 442,
+        "output_tokens": 603,
+        "total_latency_ms": 7084,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:05:57.400Z"
+    },
+    {
+      "result_id": "19b36065-4941-4995-966a-aeecd5ec60b1",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 429,
+        "output_tokens": 869,
+        "total_latency_ms": 10333,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:06:07.792Z"
+    },
+    {
+      "result_id": "00e1943b-bb72-464d-bb56-33ef845e5726",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 429,
+        "output_tokens": 576,
+        "total_latency_ms": 8152,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:06:16.010Z"
+    },
+    {
+      "result_id": "a3b6fb69-c74b-4800-a3b3-13936328e4dc",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 453,
+        "output_tokens": 1024,
+        "total_latency_ms": 11407,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:06:27.481Z"
+    },
+    {
+      "result_id": "c841eed4-6090-4071-b5aa-039198c2cffb",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 452,
+        "output_tokens": 603,
+        "total_latency_ms": 7165,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:06:34.713Z"
+    },
+    {
+      "result_id": "1d8ae958-196f-4685-a879-77e77fad9141",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 418,
+        "output_tokens": 1024,
+        "total_latency_ms": 11350,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:06:46.128Z"
+    },
+    {
+      "result_id": "bd16a607-ec35-4cff-b5be-2e70a8887bb5",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 420,
+        "output_tokens": 950,
+        "total_latency_ms": 10928,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:06:57.123Z"
+    },
+    {
+      "result_id": "c0b05fa4-38c0-4177-99b8-46a296133e27",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 357,
+        "total_latency_ms": 4656,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:01.845Z"
+    },
+    {
+      "result_id": "2c89e189-41cb-4c35-ac52-cae6481a79fe",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 444,
+        "output_tokens": 516,
+        "total_latency_ms": 4872,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:06.785Z"
+    },
+    {
+      "result_id": "c114b7ac-f767-4d8c-9b37-2e1578d64e48",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The question \"What is the meaning of life?\" is a philosophical inquiry that doesn't have a single definitive answer and is not covered by any of the available analytics or utility tools. I don't have the capability to provide this kind of abstract response through the tools listed.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 414,
+        "output_tokens": 242,
+        "total_latency_ms": 2618,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:09.459Z"
+    },
+    {
+      "result_id": "26acc902-16ca-4636-a972-32e57dbb7d09",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The chemical formula for water is H₂O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 415,
+        "output_tokens": 213,
+        "total_latency_ms": 2431,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:11.952Z"
+    },
+    {
+      "result_id": "2ac54999-c3b7-44d0-9325-af11e82dca47",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Version control is crucial in modern software development because it enables teams to collaboratively manage code changes while maintaining a clear history of modifications. It allows developers to track who made what changes, revert to previous versions if errors occur, and work on features or bug fixes in isolated branches without disrupting the main codebase. This ensures accountability, reduces conflicts, supports continuous integration and deployment pipelines, and provides a safety net against accidental data loss or corruption. By facilitating structured collaboration and transparency, version control systems like Git have become foundational for scalable, reliable, and maintainable software development practices.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 417,
+        "output_tokens": 602,
+        "total_latency_ms": 6638,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:18.649Z"
+    },
+    {
+      "result_id": "94fe4b4b-c6f4-4018-9fd6-0db0036888e8",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The question about best practices for code review doesn't require any of the provided analytics, user management, or air quality tools. I don't have access to code review guidelines or development practices through the available toolset. Would you like me to provide general best practices for code review instead?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 416,
+        "output_tokens": 223,
+        "total_latency_ms": 3539,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:22.243Z"
+    },
+    {
+      "result_id": "fdb186b8-d722-4bac-8a0d-6f5adcdbddcc",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 420,
+        "output_tokens": 563,
+        "total_latency_ms": 6145,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:28.450Z"
+    },
+    {
+      "result_id": "c3de91f3-dcc1-4f10-94a7-34fe5520647d",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 428,
+        "output_tokens": 982,
+        "total_latency_ms": 11085,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:39.604Z"
+    },
+    {
+      "result_id": "a639c441-5b04-4e3f-afab-d9a369dfd637",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 430,
+        "output_tokens": 637,
+        "total_latency_ms": 7092,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:46.760Z"
+    },
+    {
+      "result_id": "3306c6d0-bf78-4a0e-89c5-5927db736f50",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 437,
+        "output_tokens": 368,
+        "total_latency_ms": 4017,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:07:50.838Z"
+    },
+    {
+      "result_id": "6fd8a18a-8cd7-4e88-a2b6-d5889c57392c",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 1024,
+        "total_latency_ms": 11127,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:02.030Z"
+    },
+    {
+      "result_id": "2a4ac825-9ad8-45fc-aa1e-1de54118ed02",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 423,
+        "output_tokens": 622,
+        "total_latency_ms": 6171,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:08.270Z"
+    },
+    {
+      "result_id": "bfa3b84c-235e-4bb3-b102-a807e4100fd8",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 437,
+        "output_tokens": 624,
+        "total_latency_ms": 9118,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:17.457Z"
+    },
+    {
+      "result_id": "ec9d58ba-b8be-4dea-9fbb-f91d460d46e1",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 442,
+        "output_tokens": 603,
+        "total_latency_ms": 7089,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:24.608Z"
+    },
+    {
+      "result_id": "48e1b29f-78ac-474f-9347-666d106b70da",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 429,
+        "output_tokens": 869,
+        "total_latency_ms": 10335,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:35.006Z"
+    },
+    {
+      "result_id": "a9b032dd-3782-4c6b-aacb-d359d7b82748",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_list_users",
+            "arguments": {}
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 429,
+        "output_tokens": 576,
+        "total_latency_ms": 8148,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:43.215Z"
+    },
+    {
+      "result_id": "e250d593-97dc-424f-a86b-a497523ea3ac",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 453,
+        "output_tokens": 1024,
+        "total_latency_ms": 11377,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:08:54.661Z"
+    },
+    {
+      "result_id": "5031008a-8833-4a30-ab52-adb0834efe0d",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 452,
+        "output_tokens": 603,
+        "total_latency_ms": 7155,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:01.876Z"
+    },
+    {
+      "result_id": "b1a4195e-4650-41b7-a4c0-2bdaaad792b8",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 418,
+        "output_tokens": 1024,
+        "total_latency_ms": 11363,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:13.296Z"
+    },
+    {
+      "result_id": "d30d4df3-e9d3-4639-abb4-a17b5ec898f2",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 420,
+        "output_tokens": 950,
+        "total_latency_ms": 10936,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:24.298Z"
+    },
+    {
+      "result_id": "c7d37703-a4a3-4ca1-8a0f-6a7a76391a62",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 357,
+        "total_latency_ms": 4647,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:29.007Z"
+    },
+    {
+      "result_id": "1cc2a06e-717a-4395-9644-eb1f928c89f4",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\", \"value2\", \"value3\"], \"shared\": false}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 444,
+        "output_tokens": 516,
+        "total_latency_ms": 4859,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:33.936Z"
+    },
+    {
+      "result_id": "599921a9-3573-4abe-9ba8-46da93d52051",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The question \"What is the meaning of life?\" is a philosophical inquiry that doesn't have a single definitive answer and is not covered by any of the available analytics or utility tools. I don't have the capability to provide this kind of abstract response through the tools listed.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 414,
+        "output_tokens": 242,
+        "total_latency_ms": 2606,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:36.608Z"
+    },
+    {
+      "result_id": "b50454b9-bb01-4d23-92e0-350d979a3ec9",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The chemical formula for water is H₂O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 415,
+        "output_tokens": 213,
+        "total_latency_ms": 2448,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:39.119Z"
+    },
+    {
+      "result_id": "bf5d6d82-47e4-4279-97f1-a89adc0af0b1",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Version control is crucial in modern software development because it enables teams to collaboratively manage code changes while maintaining a clear history of modifications. It allows developers to track who made what changes, revert to previous versions if errors occur, and work on features or bug fixes in isolated branches without disrupting the main codebase. This ensures accountability, reduces conflicts, supports continuous integration and deployment pipelines, and provides a safety net against accidental data loss or corruption. By facilitating structured collaboration and transparency, version control systems like Git have become foundational for scalable, reliable, and maintainable software development practices.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 417,
+        "output_tokens": 602,
+        "total_latency_ms": 6643,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:45.827Z"
+    },
+    {
+      "result_id": "fffb9607-cef7-4777-b110-5f1213ce314d",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The question about best practices for code review doesn't require any of the provided analytics, user management, or air quality tools. I don't have access to code review guidelines or development practices through the available toolset. Would you like me to provide general best practices for code review instead?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 416,
+        "output_tokens": 223,
+        "total_latency_ms": 3539,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:09:49.422Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.9433333333333334,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.95,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.9333333333333332,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.8433333333333334,
+        "ci95": [
+          0.7388517410884038,
+          0.9190265075770431
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.85,
+        "ci95": [
+          0.7388517410884038,
+          0.9190265075770431
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.8333333333333333,
+        "ci95": [
+          0.7388517410884038,
+          0.9190265075770431
+        ]
+      },
+      "arr": 0.8939929328621908,
+      "token_savings_pct": 56.801045541369255,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

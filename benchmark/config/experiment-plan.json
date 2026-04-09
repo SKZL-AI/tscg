@@ -1,0 +1,185 @@
+{
+  "version": "5.1.0",
+  "created": "2026-03-02",
+  "branch": "plan-5-1",
+  "description": "TAB (TSCG-Agentic-Bench) experiment configuration — Single Source of Truth",
+
+  "seed_policy": {
+    "primary": 42,
+    "validation": [123, 7],
+    "description": "Primary seed for all task generation. Validation seeds for multi-seed robustness check."
+  },
+
+  "models": {
+    "frontier": [
+      { "name": "claude-sonnet-4-6", "provider": "anthropic", "model_id": "claude-sonnet-4-6" },
+      { "name": "gpt-4o", "provider": "openai", "model_id": "gpt-4o-2024-08-06" },
+      { "name": "gpt-5.2", "provider": "openai", "model_id": "gpt-5.2" }
+    ],
+    "small": [
+      { "name": "mistral-7b", "provider": "ollama", "model_id": "mistral:7b-instruct-v0.3-q4_K_M", "params": "7B" },
+      { "name": "phi-4", "provider": "ollama", "model_id": "phi4:latest", "params": "14B" },
+      { "name": "gemma3-4b", "provider": "ollama", "model_id": "gemma3:4b", "params": "4B" },
+      { "name": "llama3.1-8b", "provider": "ollama", "model_id": "llama3.1:8b", "params": "8B" },
+      { "name": "qwen3-4b", "provider": "ollama", "model_id": "qwen3:4b", "params": "4B" }
+    ],
+    "excluded": {
+      "thinking_models": ["o1", "o3", "o4-mini", "deepseek-r1", "qwq"],
+      "reason": "Thinking models decompress schemas in CoT, yielding 0% accuracy. Known limitation documented in paper."
+    }
+  },
+
+  "scenarios": {
+    "A": {
+      "name": "Claude Code",
+      "description": "Real agent tools from Claude Code (16 tools: Bash, Read, Write, Edit, etc.)",
+      "schema_source": "claude-code",
+      "tools": 16,
+      "tasks_per_collection": 20,
+      "collections": 1,
+      "runs": 3,
+      "conditions": ["natural", "tscg", "tscg_sad"],
+      "models": ["claude-sonnet-4-6", "gpt-4o", "gpt-5.2"],
+      "estimated_calls": 540,
+      "estimated_cost_usd": 30,
+      "note": "tscg_sad only applied to Claude (SAD model-protection enforced). GPT-5.2 added for frontier comparison."
+    },
+    "B": {
+      "name": "MCP Servers",
+      "description": "Protocol schemas from 4 MCP servers (GitHub, Filesystem, PostgreSQL, Playwright)",
+      "schema_source": "mcp-servers",
+      "tools": 43,
+      "tasks_per_collection": 20,
+      "collections": 5,
+      "runs": 3,
+      "conditions": ["natural", "tscg", "tscg_sad"],
+      "models": ["claude-sonnet-4-6", "gpt-4o", "gpt-5.2"],
+      "estimated_calls": 2700,
+      "estimated_cost_usd": 135,
+      "note": "5 server collections, 3 runs for statistical significance. GPT-5.2 added."
+    },
+    "C": {
+      "name": "Scaling",
+      "description": "Synthetic catalogs scaling from 3 to 100 tools (seed=42)",
+      "schema_source": "synthetic",
+      "tools": "3-100",
+      "catalog_sizes": [3, 5, 10, 15, 20, 30, 50, 75, 100],
+      "tasks_per_collection": 20,
+      "collections": 9,
+      "runs": 1,
+      "conditions": ["natural", "tscg"],
+      "models": ["claude-sonnet-4-6", "gpt-5.2"],
+      "estimated_calls": 720,
+      "estimated_cost_usd": 40,
+      "note": "2 frontier models (Claude + GPT-5.2) for cross-model scaling comparison. No tscg_sad."
+    },
+    "D": {
+      "name": "Small Models",
+      "description": "Small-model (3B-14B) stress test across increasing tool catalog sizes",
+      "schema_source": "synthetic",
+      "tools": "3-50",
+      "catalog_sizes": [3, 5, 10, 15, 20, 30, 50],
+      "tasks_per_collection": 20,
+      "runs": 3,
+      "conditions": ["natural", "tscg"],
+      "models": ["mistral-7b", "phi-4", "gemma3-4b", "llama3.1-8b", "qwen3-3b"],
+      "estimated_calls": 4200,
+      "estimated_cost_usd": 0,
+      "note": "All calls local via Ollama. No tscg_sad (SAD disabled for non-Claude). 3 runs for statistical significance.",
+      "hypotheses": {
+        "H-D1": "7B + 50 tools + natural → accuracy < 20%",
+        "H-D2": "7B + 50 tools + TSCG → accuracy > 65%",
+        "H-D3": "Measurable threshold shift (tool count where accuracy drops below 50%)"
+      },
+      "contingency": {
+        "plan_b": "If ARR < 80% at 50 tools → focus narrative on 3-25 tools scaling curve ('TSCG doubles usable tool count')",
+        "plan_c": "If < 5pp improvement → focus paper on frontier efficiency, small-model as appendix"
+      }
+    },
+    "E": {
+      "name": "Multi-Collection Stress",
+      "description": "Combined Claude Code + MCP tools in a single context (NOT multi-agent orchestration)",
+      "schema_source": "claude-code + mcp-servers combined",
+      "tasks": 30,
+      "runs": 1,
+      "conditions": ["natural", "tscg"],
+      "models": ["claude-sonnet-4-6", "gpt-5.2"],
+      "estimated_calls": 120,
+      "estimated_cost_usd": 8,
+      "note": "Renamed from 'Multi-Agent' to 'Multi-Collection Stress'. 2 frontier models. True multi-agent → Future Work."
+    }
+  },
+
+  "gsm8k": {
+    "name": "GSM8K-Under-Load",
+    "description": "Mathematical reasoning accuracy under tool-schema load pressure",
+    "questions": 50,
+    "loads": [0, 10, 25, 50],
+    "conditions": ["natural", "tscg"],
+    "models": ["claude-sonnet-4-6", "gpt-5.2", "mistral-7b", "llama3.1-8b", "phi-4"],
+    "runs": 1,
+    "estimated_calls": 2000,
+    "estimated_cost_usd": 45,
+    "note": "1000 API calls (frontier) + 800 local (Ollama). load=0 is baseline (no tools). GPT-5.2 added."
+  },
+
+  "bfcl": {
+    "name": "BFCL-style Function-Calling Suite",
+    "description": "BFCL-inspired schema subset (15 tools: 5 simple, 5 multiple, 5 relevance detection)",
+    "tools": 15,
+    "tasks": 20,
+    "runs": 1,
+    "conditions": ["natural", "tscg"],
+    "models": ["claude-sonnet-4-6", "gpt-4o", "gpt-5.2"],
+    "estimated_calls": 120,
+    "estimated_cost_usd": 5,
+    "note": "Labeled 'BFCL-style' (not official BFCL subset). 15 tools vs BFCL's 1,600+ functions. GPT-5.2 added."
+  },
+
+  "execution_config": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "retry_attempts": 2,
+    "retry_delay_ms": 5000,
+    "checkpoint_interval": 10,
+    "rate_limits": {
+      "anthropic": { "requests_per_minute": 50, "tokens_per_minute": 100000 },
+      "openai": { "requests_per_minute": 60, "tokens_per_minute": 150000 },
+      "ollama": { "requests_per_minute": null, "tokens_per_minute": null }
+    }
+  },
+
+  "budget": {
+    "total_api_calls": 2816,
+    "total_local_calls": 5385,
+    "total_calls": 8201,
+    "estimated_cost_range_usd": [125, 200],
+    "note": "~65% of all calls are local/free via Ollama"
+  },
+
+  "task_categories": {
+    "single_tool": { "count_per_collection": 8, "difficulty_mix": "easy:3, medium:3, hard:2" },
+    "multi_tool": { "count_per_collection": 4, "difficulty_mix": "medium:2, hard:2" },
+    "no_tool": { "count_per_collection": 4, "difficulty_mix": "easy:2, medium:2" },
+    "parameter_extraction": { "count_per_collection": 4, "difficulty_mix": "medium:2, hard:2" }
+  },
+
+  "scoring": {
+    "tool_selection": "exact match on tool name",
+    "parameter_f1": "F1 score on parameter key-value pairs",
+    "sequence": "LCS-based scoring for multi-tool sequences",
+    "no_tool": "binary: model correctly abstains from tool use",
+    "gsm8k": "exact numeric answer match (±0.01 tolerance)",
+    "arr": "accuracy_tscg / accuracy_natural (Accuracy Retention Rate)"
+  },
+
+  "statistical_tests": {
+    "primary": "Paired t-test (Natural vs TSCG accuracy per model x scenario)",
+    "binary": "McNemar's test (binary accuracy comparison)",
+    "confidence": "Bootstrap CI (1000 resamples, seed=42, 95% percentile)",
+    "effect_size": "Cohen's d with Hedges' g small-sample correction",
+    "multiplicity": "Holm-Bonferroni correction for multiple comparisons"
+  },
+
+  "analysis_plan": "benchmark/config/analysis-plan.md"
+}

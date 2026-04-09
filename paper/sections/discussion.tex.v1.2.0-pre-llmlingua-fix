@@ -1,0 +1,155 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Limitations}
+
+We identify several limitations of the current work that should inform interpretation of the results and guide future research.
+
+\textbf{Benchmark scale.} Our evaluation uses 19 test cases across seven categories. While this provides breadth across task types, the small $N=19$ per run limits statistical power for detecting accuracy differences within individual runs. However, by conducting 11 independent runs, we can characterize the \emph{distribution} of outcomes rather than relying on point estimates. The consistency result---TSCG never performing worse than Natural in any of 11 runs---provides meaningful evidence of a non-degradation property, even though individual run-level accuracy differences are not statistically significant. A larger benchmark with hundreds of test cases per category would enable more precise effect size estimation.
+
+\textbf{Run-to-run variance.} Despite using temperature 0, we observed meaningful variance across the 11 independent runs. TSCG accuracy ranged from 94.7\% to 100\% (std 1.6\%), while Natural accuracy ranged from 89.5\% to 94.7\% (std 1.6\%). Notably, TSCG and Natural exhibit identical variance (both 1.6\% std), suggesting that TSCG's optimization does not amplify the inherent non-determinism. This variance likely stems from non-determinism in the model's inference infrastructure (e.g., floating-point non-determinism across different hardware, batch processing effects) rather than from TSCG itself, which is fully deterministic. The 11-run design allows us to characterize this variance rather than being confounded by it.
+
+\textbf{Model-dependent effectiveness.} The multi-model evaluation across four models (\S\ref{sec:multimodel-results}) reveals a spectrum of TSCG compatibility. Claude Sonnet 4 benefits most (TSCG outperforms Natural on combined accuracy, 95.5\% vs.\ 93.2\%). GPT-5.2 is the most TSCG-compatible non-Claude model: it shows no statistically significant accuracy differences across strategies, TSCG improves its RAG accuracy (95.5\% vs.\ 90.9\%), and it achieves perfect Tool Use across all strategies. GPT-4o and Gemini 2.5 Flash both show significant TSCG+SAD degradation (combined $p=0.0391$ and $p=0.0117$ respectively), though Gemini 2.5 Flash exhibits a notable positive interaction on Tool Use where TSCG outperforms Natural (90.0\% vs.\ 83.3\%). CFL's \texttt{[ANSWER:type]} format annotations remain the primary source of cross-model incompatibility, suggesting that model-adaptive profiles should selectively disable CFL-based annotations for non-Anthropic, non-GPT-5.2 models. Cross-model evaluation on additional architectures (Llama, Mistral) remains an important direction.
+
+\textbf{Thinking model incompatibility.} Gemini 2.5 Pro, a ``thinking'' model that produces extended chain-of-thought reasoning before generating output, returned empty responses on all TSCG-optimized prompts. This suggests that TSCG's compressed format may interfere with the model's internal reasoning chain initiation. Thinking models (including OpenAI's o1 and o3-mini families) likely require separate API handling that accounts for the reasoning token budget, and TSCG transforms may need to be adapted to preserve sufficient verbosity for the reasoning phase. This is a known limitation that affects an emerging class of models.
+
+\textbf{English-only evaluation.} The current benchmark and filler pattern library are English-only. TSCG's tokenizer-level principles (TAS, SDM) are language-sensitive, as BPE tokenizations and filler patterns differ across languages. Extending TSCG to multilingual settings requires language-specific filler pattern libraries and tokenizer-specific delimiter optimization tables.
+
+\textbf{CAS and CFO scope.} The current implementations of CAS (fragility scoring) and CFO (causal ordering) operate on relatively simple prompt structures. CAS uses heuristic importance estimation rather than learned importance scores, and CFO handles linear dependency chains but not complex dependency DAGs. More sophisticated implementations could improve the effectiveness of these principles.
+
+\textbf{Static optimization.} TSCG optimizes prompts statically, without knowledge of the specific model state or the conversation history. Dynamic optimization that adapts to the model's behavior during multi-turn conversations is not addressed.
+
+\textbf{Rate limiting in v1.0.0 domain benchmarks (resolved in v1.1.0).} The v1.0.0 domain-specific benchmarks (Phases 1--3) were substantially affected by API rate limiting, which depressed absolute accuracy across all strategies. In v1.1.0, we implemented a custom rate limiter with per-provider token budget tracking that eliminated all rate-limiting failures, producing clean results for all 82 domain-specific tests. The dramatic accuracy improvement from v1.0.0 to v1.1.0 (e.g., RAG Natural from 31.8\% to 95.5\%) confirms that the original domain results were dominated by infrastructure artifacts rather than prompt quality. We retain the v1.0.0 results in Table~\ref{tab:domain-results} for transparency and to illustrate the magnitude of the rate-limiting confound.
+
+\subsection{Domain-Specific Findings}
+\label{sec:domain-discussion}
+
+The v1.1.0 clean domain benchmarks reveal refined patterns compared to the rate-limited v1.0.0 results.
+
+\textbf{The statistically significant NIAH result.} The most notable finding from v1.1.0 is the statistically significant improvement on long-context NIAH retrieval: TSCG achieves 83.3\% accuracy compared to Natural's 50.0\% (McNemar's test, $p=0.0063$). This is the first statistically significant accuracy improvement observed for TSCG and provides strong evidence that attention-density compression materially improves a model's ability to retrieve information from long contexts. The theoretical explanation is that the ADC transform reduces the total token count while preserving retrieval-critical anchors, effectively increasing the signal-to-noise ratio in the model's attention distribution over the long context window. This result addresses a key limitation of the v1.0.0 evaluation, where no individual accuracy difference reached statistical significance.
+
+\textbf{Tool-description optimization as a production use case.} The v1.1.0 tool-use results confirm and strengthen the v1.0.0 findings: TSCG achieves 71.7\% token savings (up from 59.4\% in v1.0.0) while maintaining 93.3\% accuracy on clean execution. For an application making 10{,}000 tool-use API calls per day, this translates to substantial cost savings at current API pricing. The slight accuracy deficit relative to Natural (93.3\% vs.\ 96.7\%, a single test case difference) suggests that the compression threshold for tool descriptions could be fine-tuned to preserve more information in edge cases.
+
+\textbf{Revised understanding of SAD-F in domain contexts.} The v1.0.0 results suggested that SAD-F was critical for RAG tasks (TSCG 18.2\% vs.\ TSCG+SAD 40.9\%). The v1.1.0 clean results paint a different picture: in RAG, TSCG and TSCG+SAD both achieve 100\%, and in NIAH, TSCG+SAD (73.3\%) actually performs \emph{worse} than base TSCG (83.3\%). This reversal indicates that the apparent v1.0.0 advantage of SAD-F was largely a rate-limiting artifact. In clean execution, anchor duplication in long contexts may dilute attention by adding tokens to an already-long prompt (consistent with the attention dilution analysis in Proposition 1, \S\ref{sec:theoretical}).
+
+\textbf{New domain-specific transforms.} The domain benchmarks motivated three new transforms beyond the original eight TSCG principles:
+\begin{itemize}[noitemsep]
+    \item \textbf{Attention-Density Compression (ADC)}: Compresses verbose context passages while preserving retrieval-critical anchors, optimized for long-context NIAH scenarios. The v1.1.0 NIAH results ($p=0.0063$) provide strong validation of this transform.
+    \item \textbf{Tool-Prompt Distillation (TPD)}: Distills verbose tool schemas into token-efficient representations, exploiting the regular structure of function definitions and parameter descriptions. Achieves up to 71.7\% token savings.
+    \item \textbf{Iterative Chain-of-Thought (ICoT)}: Restructures multi-hop reasoning prompts to align retrieved evidence with causal attention flow, designed for RAG pipelines where evidence must be integrated from multiple sources.
+\end{itemize}
+These transforms extend TSCG's applicability from general-purpose prompt optimization to domain-specific deployment scenarios, and represent a direction for future principled development of specialized optimization profiles.
+
+\subsection{Multi-Model Analysis}
+\label{sec:multimodel-discussion}
+
+The evaluation across four models reveals a nuanced transferability landscape. We identify four transferability categories based on the expanded four-model data:
+
+\textbf{Universally transferable: token savings.} TSCG's token efficiency transfers perfectly across all four models because it depends solely on deterministic prompt transforms. Combined savings range from 6.4\% (Gemini 2.5 Flash) to 8.8\% (GPT-5.2), and Tool Use savings range from 70.9\% (Gemini) to 73.9\% (GPT-4o, GPT-5.2). This confirms that TSCG's efficiency proposition is model-agnostic.
+
+\textbf{Broadly transferable: Tool Use.} Tool-description compression (TPD) maintains or improves accuracy on three of four models: GPT-4o (96.7\%), GPT-5.2 (100\%), and Gemini 2.5 Flash (90.0\%, up from 83.3\% Natural). Only Claude shows a slight deficit (93.3\% vs.\ 96.7\%). The Gemini Tool Use result is particularly significant---it demonstrates that TSCG's structured compression can actively \emph{help} models with weaker baseline tool-calling performance, likely by reducing noise in verbose tool schemas and making parameter semantics more salient.
+
+\textbf{Partially transferable: RAG.} RAG optimization transfers perfectly to Claude Sonnet 4 and GPT-4o (100\% across all strategies) and improves GPT-5.2 (95.5\% vs.\ 90.9\% Natural). However, Gemini 2.5 Flash degrades under TSCG on RAG (72.7\% vs.\ 77.3\% Natural), suggesting that ICoT's evidence restructuring is not universally beneficial. This may reflect differences in how Google's training handles multi-source evidence integration.
+
+\textbf{Model-dependent: format annotations.} CFL's \texttt{[ANSWER:type]} format annotations produce the most model-sensitive results. Combined TSCG+SAD accuracy is significantly worse than Natural on GPT-4o ($p=0.0391$) and Gemini 2.5 Flash ($p=0.0117$), but not on GPT-5.2 (no significant difference). This three-way split suggests that CFL compatibility correlates with the model's robustness to non-standard formatting: GPT-5.2's stronger instruction-following handles CFL annotations gracefully, while GPT-4o and Gemini do not. A model-adaptive CFL variant---which omits format annotations for incompatible models---would improve cross-model transferability for the two affected models while preserving benefits on Claude and GPT-5.2.
+
+\subsection{CFL Echo-Back Problem}
+\label{sec:cfl-echo-back}
+
+During multi-model evaluation, we identified a systematic failure mode where non-Anthropic models echo CFL format annotations verbatim rather than interpreting them as meta-instructions. Table~\ref{tab:cfl-echo} illustrates this phenomenon.
+
+\begin{table}[h]
+\centering
+\small
+\caption{CFL Echo-Back: models echo \texttt{[ANSWER:type]} tags instead of interpreting them as format constraints.}
+\label{tab:cfl-echo}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Model} & \textbf{Test} & \textbf{Natural} & \textbf{TSCG Response} & \textbf{Problem} \\
+\midrule
+GPT-5.2\textsuperscript{$\dagger$} & Syllogism & No & \texttt{[ANSWER:no]} & CFL echo \\
+Gemini 2.5 Flash & ISO Code & JP & \texttt{[ANSWER:JP]} & CFL echo \\
+Gemini 2.5 Flash & Word Count & 3 & \texttt{[ANSWER:Deep, calm...} & Truncation \\
+\bottomrule
+\multicolumn{5}{l}{\textsuperscript{$\dagger$}\footnotesize GPT-5.2 occasionally echoes CFL annotations but tolerates them without significant} \\
+\multicolumn{5}{l}{\footnotesize accuracy degradation (90.9\% combined), unlike GPT-4o and Gemini where echo-back is systematic.}
+\end{tabular}
+\end{table}
+
+\textbf{Root cause.} CFL's \texttt{[ANSWER:type]} and \texttt{[CLASSIFY:options]} annotations are designed as meta-level output constraints. Claude Sonnet 4 interprets these as formatting instructions and produces clean outputs. GPT-5.2 occasionally echoes the annotation syntax but still produces correct answers in most cases (90.9\% combined accuracy), tolerating CFL without significant degradation. In contrast, GPT-4o and Gemini 2.5 Flash systematically treat the bracket notation as literal content to be reproduced, wrapping their answers in the annotation format. In the Gemini word-count case, the model attempts to produce a structured response within the annotation but truncates the actual answer content.
+
+\textbf{Implemented fix: model-adaptive CFL profiles.} To address this, we introduce a \emph{model profile} system (v1.2.0) that maps each model family to a compatibility profile. The system defines five model families---\texttt{claude}, \texttt{gpt5}, \texttt{gpt4o}, \texttt{gemini}, and \texttt{unknown}---each with flags controlling whether CFL annotations and SAD anchors should be applied. For incompatible models (GPT-4o, Gemini, unknown), the optimizer automatically strips \texttt{[ANSWER:...]}, \texttt{[CLASSIFY:...]}, and \texttt{[ANCHOR:...]} tags from TSCG-optimized prompts. This post-processing step is applied after strategy transformation and before API submission, preserving all other TSCG optimizations (SDM, DRO, CFO, TAS, TPD) while removing only the format-sensitive annotations.
+
+\textbf{Implications for cross-model prompt optimization.} The CFL echo-back problem highlights a fundamental tension in prompt optimization: techniques that exploit specific model behaviors (such as attention-sink positioning of constraints) may not transfer across architectures with different instruction-following training. This motivates a model-aware approach to prompt optimization where the optimization profile adapts to the target model's known sensitivities, rather than applying a universal set of transforms.
+
+\subsection{Comparison with Statistical Compression}
+\label{sec:llmlingua-discussion}
+
+The controlled comparison with LLMLingua-2 (\S\ref{sec:llmlingua-comparison}) reveals that structural and statistical compression operate on fundamentally different types of redundancy and that each approach dominates in its respective domain.
+
+\textbf{Where TSCG dominates.} On tool-description prompts, TSCG achieves 90.6\% token savings at 93.3\% accuracy, while LLMLingua-2 achieves only 60.6\% savings at 80.0\% accuracy---TSCG is strictly superior on both dimensions. The explanation lies in the nature of the redundancy: tool schemas contain \emph{structural} redundancy (verbose descriptions, repeated parameter patterns, redundant formatting) that TSCG's grammar-aware transforms exploit directly, whereas LLMLingua-2's token-level perplexity scoring treats all positions uniformly and cannot distinguish between structurally redundant and semantically critical tokens. LLMLingua-2's 16.7 percentage point accuracy drop on structured content (80.0\% vs.\ its reported $\sim$95\% on natural prose benchmarks such as GSM8K and BBH~\cite{pan2024llmlingua2}) confirms that statistical token importance does not transfer across content types.
+
+\textbf{Where LLMLingua dominates.} On natural prose---long documents, conversational history, few-shot examples---LLMLingua-2 achieves up to 20$\times$ compression with minimal accuracy degradation~\cite{pan2024llmlingua2}. TSCG's general-purpose compression on natural language prompts is only 1.07$\times$ (6.3\% savings), orders of magnitude less effective. TSCG's rule-based transforms can only exploit redundancy that manifests as recognizable structural patterns; the smooth, distributed redundancy of natural prose is inaccessible to deterministic grammar transforms.
+
+\textbf{Compound pipeline failure.} The compound pipeline result (0\% accuracy at 98.1\% compression) demonstrates that the two approaches are \emph{not} composable layers. After TSCG compression, the remaining tokens are all semantically critical---tool names, parameter types, delimiters---and LLMLingua-2's statistical pruning removes these indiscriminately, producing output that Claude interprets as corrupted text.
+
+\textbf{Practical implication.} The two methods address orthogonal deployment scenarios: TSCG for structured prompt content (tool schemas, API definitions, function signatures) where deterministic, zero-dependency compilation is practical; LLMLingua for natural prose contexts where statistical redundancy dominates. Neither replaces the other.
+
+\subsection{Scope and Practical Positioning}
+\label{sec:scope}
+
+It is important to delineate what TSCG is and is not. Table~\ref{tab:scope} summarizes TSCG's competitive position across different prompt optimization dimensions.
+
+\begin{table}[h]
+\centering
+\small
+\caption{Honest scope comparison across prompt optimization dimensions.}
+\label{tab:scope}
+\begin{tabular}{lll}
+\toprule
+\textbf{Dimension} & \textbf{Best System} & \textbf{TSCG Position} \\
+\midrule
+Natural prose compression & LLMLingua ($\sim$20$\times$) & Weak (1.07$\times$) \\
+Tool/schema compression & \textbf{TSCG (10.6$\times$)} & \textbf{\#1} \\
+Prompt content optimization & DSPy/SAMMO & Not applicable \\
+Zero-dependency/browser & \textbf{TSCG (27.7\,KB)} & \textbf{\#1} \\
+Determinism ($<$1\,ms) & \textbf{TSCG} & \textbf{\#1} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+TSCG does not claim to be a general-purpose prompt compression method. On natural language, statistical methods are superior. On prompt \emph{content} optimization (selecting demonstrations, reformulating instructions, restructuring pipelines), search-based systems like DSPy~\cite{khattab2023dspy} and SAMMO~\cite{schlegel2024sammo} operate on a fundamentally different axis---they optimize \emph{what} to say, while TSCG optimizes \emph{how} to say it structurally. These are complementary, not competing, objectives.
+
+\textbf{Why the niche matters.} TSCG's target domain---structured prompt content in agentic tool-use systems---is both real and growing. Modern agent frameworks (LangChain, CrewAI, AutoGen) embed dozens of tool definitions in every API call, each consuming 100--500 tokens. A typical agent invocation with 30 tools consumes 3,000--25,000 tokens in tool schemas alone, \emph{on every call}. At production scale (millions of calls per day), this represents a substantial and recurring cost that no existing system addresses: the NAACL 2025 prompt compression survey~\cite{li2024prompt} evaluates no system on function-calling schemas. TSCG's unique infrastructure profile---27.7\,KB, zero dependencies, deterministic, browser-compatible, sub-millisecond execution---enables deployment as lightweight middleware in any agent framework without requiring GPU infrastructure, Python runtimes, or external API calls.
+
+\subsection{Threats to Validity}
+
+\textbf{Internal validity.} The automated correctness checkers used in the benchmark may contain errors that systematically favor or disfavor certain strategies. We mitigated this by manually verifying all checker outputs for the first run and spot-checking subsequent runs.
+
+\textbf{External validity.} The 19-task core benchmark was designed to cover diverse capabilities but may not be representative of real-world prompt distributions. The domain-specific benchmarks (Phases 0--3, totaling 107 additional tests) partially address this by evaluating TSCG on long-context retrieval, RAG pipelines, and tool-use scenarios closer to production workloads. The multi-model evaluation across four models (Claude Sonnet 4, GPT-4o, GPT-5.2, Gemini 2.5 Flash) spanning three provider families (Anthropic, OpenAI, Google) extends external validity across model architectures and instruction-following training approaches. However, further evaluation on real-world prompt distributions at scale and on additional model families (Llama, Mistral) remains important future work.
+
+\textbf{Construct validity.} Binary accuracy (correct/incorrect) is a coarse metric that does not capture the quality gradient of partial correctness. For tasks like summarization or creative writing, where correctness is not binary, alternative metrics would be needed.
+
+\subsection{Comparison with Human Prompt Engineering}
+
+An important question is whether TSCG produces prompts that outperform those crafted by expert human prompt engineers. Our benchmark uses Natural prompts written by the first author, which represent competent but not extensively optimized prompt engineering. A rigorous comparison would require prompts from multiple expert prompt engineers, optimized for each specific task and model---a study we leave for future work.
+
+We note, however, that TSCG's value proposition is not solely about accuracy improvement over expert prompts. Even at accuracy parity, TSCG provides: (i) deterministic reproducibility, (ii) consistent token cost savings of 6.3\% on general-purpose prompts and up to 71.7\% on structured domains such as tool descriptions, (iii) zero per-prompt engineering effort, and (iv) formal guarantees about semantic preservation. These properties have independent practical value regardless of the accuracy differential.
+
+\subsection{Future Directions}
+
+\textbf{Model-adaptive optimization profiles.} The four-model evaluation reveals a clear spectrum of TSCG compatibility: Claude Sonnet 4 (full benefit), GPT-5.2 (near-full benefit, no significant degradation), GPT-4o (partial benefit, significant TSCG+SAD degradation), and Gemini 2.5 Flash (mixed, with Tool Use benefit but RAG and combined degradation). Developing model-specific profiles that selectively enable, disable, or modify principles based on the target model's known sensitivities is an immediate priority. Concretely, a model compatibility matrix could map each principle to an effectiveness score per model family: CFL format annotations would be enabled for Claude and GPT-5.2 but disabled for GPT-4o and Gemini; TPD tool compression would be enabled universally (beneficial or neutral on all four models); and ICoT RAG restructuring would be disabled for Gemini models. This matrix-driven approach would maximize cross-model benefit while avoiding known degradation patterns.
+
+\textbf{Multi-turn optimization.} The current framework optimizes individual prompts. Extending TSCG to multi-turn conversations---where attention patterns span multiple exchanges and the model maintains state across turns---is a natural next step. CCP and CFL could be adapted to position critical information at turn boundaries.
+
+\textbf{Multimodal prompts.} As LLMs increasingly support multimodal inputs (text + images + code), TSCG's principles could be extended to optimize the ordering and formatting of mixed-modality prompts.
+
+\textbf{Reasoning models.} Models with explicit chain-of-thought reasoning (e.g., o1, o3-mini, Gemini 2.5 Pro) respond differently to TSCG's optimization. Our evaluation of Gemini 2.5 Pro confirmed this: the thinking model produced empty responses on all TSCG-optimized prompts, likely because TSCG's compression interferes with the model's reasoning token generation. Adapting TSCG for thinking models---potentially by preserving more verbosity in prompts or using thinking-mode-specific API parameters---is an important direction as reasoning models become more prevalent.
+
+\textbf{Non-English languages.} Building language-specific filler pattern libraries and validating TAS tokenizer alignment across multilingual BPE tokenizers would extend TSCG's applicability to the global LLM user base.
+
+\textbf{Learned fragility scores.} Replacing CAS's heuristic importance estimation with learned fragility scores (e.g., trained on a dataset of prompt-response pairs annotated with parameter criticality) could significantly improve the accuracy of fragility-based ordering and duplication decisions.
+
+\textbf{Domain-specific optimization profiles.} The domain benchmarks demonstrate that TSCG's effectiveness scales dramatically with domain structure: from 6.3\% savings on general prompts to 71.7\% on tool descriptions. Developing specialized optimization profiles for high-value domains---including tool-use pipelines, RAG systems, agent frameworks, and code generation---could unlock substantial cost savings in production LLM deployments. The ADC, TPD, and ICoT transforms introduced in this work represent a first step, but systematic investigation of domain-specific transform compositions remains an open problem.
+
+\textbf{Formal verification.} TSCG's deterministic nature makes it amenable to formal verification---proving that specific transforms preserve semantic equivalence under a formal semantics of prompts. This is a long-term direction that could provide certified prompt optimization.

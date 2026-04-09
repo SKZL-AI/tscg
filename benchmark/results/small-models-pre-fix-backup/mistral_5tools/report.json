@@ -1,0 +1,3262 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Mistral 7B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-02T19:17:51.110Z",
+    "end_time": "2026-03-02T19:19:50.886Z",
+    "duration_ms": 119776
+  },
+  "results": [
+    {
+      "result_id": "184a7ea5-df18-429d-a6a6-a28e48efefdd",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\"}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1150,
+        "output_tokens": 11,
+        "total_latency_ms": 2459,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:54.462Z"
+    },
+    {
+      "result_id": "6bfcddb6-7a7a-4be8-af6f-89391ee77c8b",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To run a pre-defined analytics report, we can use the `analytics_run_report` function. Here's the JSON tool call:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"revenue_by_day\",\n      \"date_range\": \"last_7d\",\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\nThis command will run the \"revenue_by_day\" report for the last 7 days and return the results in JSON format.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "revenue_by_day",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1153,
+        "output_tokens": 138,
+        "total_latency_ms": 955,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:55.533Z"
+    },
+    {
+      "result_id": "24d868f0-684e-49c7-a87d-2fd41f0620f6",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To create a new analytics dashboard, we can use the `analytics_create_dashboard` function. Here's the JSON tool call for that:\n\n```json\n[\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"My New Dashboard\",\n      \"widgets\": [\n        // Widget configurations go here. For example:\n        // {\n        //   \"type\": \"line_chart\",\n        //   \"properties\": {\n        //     \"event_name\": \"pageviews\",\n        //     \"date_range\": \"last_7d\"\n        //   }\n        // }\n      ],\n      \"shared\": true\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1150,
+        "output_tokens": 172,
+        "total_latency_ms": 1179,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:56.822Z"
+    },
+    {
+      "result_id": "c080994c-5e46-4f47-b719-4962316cb3b4",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To get the air quality index and pollutant levels for the specified location, we can use the `wx_get_air_quality` tool. Here's the JSON representation of the tool call:\n\n```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"sample_data\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1171,
+        "output_tokens": 94,
+        "total_latency_ms": 657,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:57.587Z"
+    },
+    {
+      "result_id": "fe50c8c1-f75b-48eb-b0a5-b54c1efe2a6b",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1171,
+        "output_tokens": 26,
+        "total_latency_ms": 203,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:57.897Z"
+    },
+    {
+      "result_id": "87753c86-88e7-46ab-8f87-822991dba587",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1160,
+        "output_tokens": 19,
+        "total_latency_ms": 155,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:58.156Z"
+    },
+    {
+      "result_id": "bda46abb-451b-469b-a122-eab6269eaa00",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_run_report\",]}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1174,
+        "output_tokens": 13,
+        "total_latency_ms": 116,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:58.385Z"
+    },
+    {
+      "result_id": "b2ac8787-826b-4f67-bdf8-32ffe15b285a",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1183,
+        "output_tokens": 37,
+        "total_latency_ms": 274,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:58.764Z"
+    },
+    {
+      "result_id": "d8fe9df2-47ec-435b-9e1e-0c9634856a13",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " First, let's retrieve the list of users:\n\n```json\n{\"name\": \"auth_list_users\"}\n```\n\nAfter getting the user list, we can proceed with fetching the air quality data:\n\n```json\n[\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York\"}},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"Los Angeles\"}}\n]\n```\n\nThis will fetch the air quality data for both New York and Los Angeles.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1161,
+        "output_tokens": 129,
+        "total_latency_ms": 890,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:17:59.767Z"
+    },
+    {
+      "result_id": "97e976f9-196b-4933-9484-76c159f7774e",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To list all users and then run a pre-defined analytics report, we will first call the `auth_list_users` function and then call the `analytics_run_report`. Here's how it would look in JSON format:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"<report_template_identifier>\",\n      \"date_range\": \"<date_range>\",\n      \"filters\": {},\n      \"format\": \"json\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1159,
+        "output_tokens": 143,
+        "total_latency_ms": 1007,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:00.879Z"
+    },
+    {
+      "result_id": "4355363b-eac3-4906-aa6f-687c577ad068",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first list users, then run an analytics report, and finally create a dashboard with the results. Here's how you can structure the JSON tool calls:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"<report_template_identifier>\",\n    \"date_range\": \"<date_range>\",\n    \"filters\": {\n      \"<filter_parameter_1>\": \"<value_1>\",\n      \"<filter_parameter_2>\": \"<value_2>\"\n    },\n    \"format\": \"json\"\n  }},\n  {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n    \"name\": \"<dashboard_name>\",\n    \"widgets\": [<chart_widget_1>, <chart_widget_2>],\n    \"shared\": true\n  }}\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1173,
+        "output_tokens": 220,
+        "total_latency_ms": 1505,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:02.495Z"
+    },
+    {
+      "result_id": "93873696-ebce-4753-b23f-c7eb73d58d9b",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first call `wx_get_air_quality`, then `analytics_run_report`, and finally `analytics_track_event`. Here's a JSON array of tool calls for this sequence:\n\n```json\n[\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\"\n  }},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"daily_air_quality_summary\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {\n      \"location\": \"New York City\"\n    },\n    \"format\": \"json\"\n  }},\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"air_quality_report_generated\",\n    \"properties\": {\n      \"report_id\": \"$report_id\",\n      \"location\": \"New York City\"\n    },\n    \"user_id\": \"user123\"\n  }}\n]\n```\n\nIn this example, I've used placeholders for the `$report_id` value generated by the first step. You can replace it with the actual report ID returned from the `wx_get_air_quality` call.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1175,
+        "output_tokens": 307,
+        "total_latency_ms": 2081,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:04.683Z"
+    },
+    {
+      "result_id": "494e6f79-3966-4be9-a799-020adca1e120",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_run_report\", \"analytics_track_event\"]}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"dashboard_viewed\", \"properties\": {\"dashboard_name\": \"Main Dashboard\"}}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1153,
+        "output_tokens": 87,
+        "total_latency_ms": 606,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:05.402Z"
+    },
+    {
+      "result_id": "128f757b-eca2-4f01-9eaf-6bddcd8a799d",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_track_event\", \"analytics_create_dashboard\"], \"arguments\": {\n  \"event_name\": \"config.json\",\n  \"properties\": {},\n  \"user_id\": \"USER_ID\"\n}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1156,
+        "output_tokens": 56,
+        "total_latency_ms": 400,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:05.908Z"
+    },
+    {
+      "result_id": "3698df26-f2ac-40c4-bc58-21ee27ff58cd",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1170,
+        "output_tokens": 28,
+        "total_latency_ms": 215,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:06.226Z"
+    },
+    {
+      "result_id": "079e9a59-52ac-4def-8ffc-40e7ba4f4fc9",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " Yes, here is the JSON tool call for creating a new analytics dashboard with the specified parameters:\n\n```JSON\n[\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"config.json\",\n      \"widgets\": [\"value1\",\"value2\",\"value3\"],\n      \"shared\": false\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1183,
+        "output_tokens": 93,
+        "total_latency_ms": 649,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:06.991Z"
+    },
+    {
+      "result_id": "de8c6e10-b57a-420e-871a-a5ea3ce98bbd",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " I'm sorry for any confusion, but as a helpful assistant, my purpose is to provide information and assist with tasks based on the tools and resources available. The question you asked is philosophical in nature and not something that can be answered by the tools provided. If you have a specific task or question related to the tools I've been described, I'd be happy to help! Here's an example of how I might respond if you asked for an analytics event:\n\n```\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"meaning_of_life\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "meaning_of_life"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1146,
+        "output_tokens": 134,
+        "total_latency_ms": 923,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:08.024Z"
+    },
+    {
+      "result_id": "2a3f58a2-bbf4-4d55-a667-3ada872d17b6",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " The chemical formula for water is not a tool request, so no JSON response is needed. The answer is H2O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1147,
+        "output_tokens": 26,
+        "total_latency_ms": 201,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:08.337Z"
+    },
+    {
+      "result_id": "81b59c8c-6db7-4d8b-911e-b45198a42fa4",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " Version control, also known as source control or revision control, is crucial in modern software development for several reasons:\n\n1. Collaboration: Version control systems allow multiple developers to work on the same project simultaneously without overwriting each other's changes.\n\n2. Tracking Changes: Version control keeps a record of every change made to the codebase, making it easier to identify who made a specific modification and when. This can help in debugging issues and understanding the evolution of the project.\n\n3. Rollbacks and Recovery: If an error is introduced during development, version control allows developers to roll back to a previous version of the codebase that was functioning correctly.\n\n4. Branching and Merging: Version control systems support branching, which allows developers to work on separate features or bug fixes without affecting the main codebase. Once these changes are tested and ready, they can be merged back into the main branch.\n\n5. Code Organization: Version control helps keep the code organized by providing a history of commits, allowing developers to easily navigate through different versions of the project.\n\n6. Continuous Integration/Continuous Deployment (CI/CD): Version control is essential for CI/CD pipelines as it provides the necessary artifacts (code changes) that trigger these processes.\n\nIn summary, version control is important in modern software development because it facilitates collaboration, tracks changes, allows rollbacks and recovery, supports branching and merging, organizes code, and is essential for CI/CD pipelines.\n\nHowever, as a text-based AI model, I don't directly participate in software development or use version control systems myself. But I can help explain their importance! If you need assistance with a specific version control system like Git, feel free to ask!\n\nHere's an example of how the \"analytics_track_event\" tool could be used to track an event related to version control:\n\n```json\n[\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"version_control_used\",\n    \"properties\": {\n      \"user_id\": \"user123\"\n    }\n  }}\n]\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "version_control_used",
+            "properties": {
+              "user_id": "user123"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1149,
+        "output_tokens": 478,
+        "total_latency_ms": 3241,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:11.693Z"
+    },
+    {
+      "result_id": "3b6d0e71-3b53-4109-a3ed-c58c92b95107",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": " To provide a comprehensive response, I'll outline some best practices for code review using the available tools. Let's assume we have a function called `code_review` that takes in a pull request URL as an argument and performs the following steps:\n\n1. Fetch the associated pull request details (e.g., author, title, description, files changed).\n2. Track the event to log the code review process.\n   ```json\n   [\n     {\"name\": \"analytics_track_event\", \"arguments\": {\n       \"event_name\": \"code_review_started\",\n       \"properties\": {\n         \"pull_request_url\": \"<PULL_REQUEST_URL>\",\n         \"user_id\": \"<USER_ID>\"\n       }\n     }}\n   ]\n   ```\n3. List the users with the 'editor' or 'admin' role to find potential reviewers for the pull request.\n   ```json\n   [\n     {\"name\": \"auth_list_users\", \"arguments\": {\n       \"role\": [\"editor\", \"admin\"]\n     }}\n   ]\n   ```\n4. Analyze the changes in the files, and if necessary, suggest relevant analytics reports to run for better understanding of the code's impact.\n5. Create a new dashboard with charts based on the suggested reports for easy visualization during the review process.\n   ```json\n   [\n     {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n       \"name\": \"Code Review - <PULL_REQUEST_ID>\",\n       \"widgets\": [...],\n       \"shared\": true\n     }}\n   ]\n   ```\n6. After the review, update the event to log the code review outcome (e.g., approved, rejected).\n   ```json\n   [\n     {\"name\": \"analytics_track_event\", \"arguments\": {\n       \"event_name\": \"code_review_completed\",\n       \"properties\": {\n         \"pull_request_url\": \"<PULL_REQUEST_URL>\",\n         \"outcome\": \"<APPROVED/REJECTED>\",\n         \"user_id\": \"<USER_ID>\"\n       }\n     }}\n   ]\n   ```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1148,
+        "output_tokens": 491,
+        "total_latency_ms": 3330,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:15.134Z"
+    },
+    {
+      "result_id": "14e9e048-65c2-4fa9-b425-8940c4081b57",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\"}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1150,
+        "output_tokens": 11,
+        "total_latency_ms": 99,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:15.335Z"
+    },
+    {
+      "result_id": "e541afb5-ca4d-48ff-b5e9-08789e5943ff",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To run a pre-defined analytics report, we can use the `analytics_run_report` function. Here's the JSON tool call:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"revenue_by_day\",\n      \"date_range\": \"last_7d\",\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\nThis command will run the \"revenue_by_day\" report for the last 7 days and return the results in JSON format.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "revenue_by_day",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1153,
+        "output_tokens": 138,
+        "total_latency_ms": 952,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:16.394Z"
+    },
+    {
+      "result_id": "9ca2f077-2407-4729-a5b6-743896be1d48",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To create a new analytics dashboard, we can use the `analytics_create_dashboard` function. Here's the JSON tool call for that:\n\n```json\n[\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"My New Dashboard\",\n      \"widgets\": [\n        // Widget configurations go here. For example:\n        // {\n        //   \"type\": \"line_chart\",\n        //   \"properties\": {\n        //     \"event_name\": \"pageviews\",\n        //     \"date_range\": \"last_7d\"\n        //   }\n        // }\n      ],\n      \"shared\": true\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1150,
+        "output_tokens": 172,
+        "total_latency_ms": 1185,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:17.687Z"
+    },
+    {
+      "result_id": "6e9505a9-9d8d-40b6-8287-f72d26779c4e",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To get the air quality index and pollutant levels for the specified location, we can use the `wx_get_air_quality` tool. Here's the JSON representation of the tool call:\n\n```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"sample_data\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1171,
+        "output_tokens": 94,
+        "total_latency_ms": 655,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:18.449Z"
+    },
+    {
+      "result_id": "d3e0fa90-7a27-4ba4-ac16-7b07c47d0b18",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1171,
+        "output_tokens": 26,
+        "total_latency_ms": 201,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:18.765Z"
+    },
+    {
+      "result_id": "90df5141-a9ce-47fa-aa86-38b93cb47786",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1160,
+        "output_tokens": 19,
+        "total_latency_ms": 154,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:19.030Z"
+    },
+    {
+      "result_id": "905ffcb9-c355-4e76-9b68-546423786a1d",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_run_report\",]}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1174,
+        "output_tokens": 13,
+        "total_latency_ms": 117,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:19.260Z"
+    },
+    {
+      "result_id": "d946149a-c1a2-479e-a1af-4d60dc3e6043",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1183,
+        "output_tokens": 37,
+        "total_latency_ms": 276,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:19.639Z"
+    },
+    {
+      "result_id": "a60fb817-7b37-4852-83ae-8e12163507ae",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " First, let's retrieve the list of users:\n\n```json\n{\"name\": \"auth_list_users\"}\n```\n\nAfter getting the user list, we can proceed with fetching the air quality data:\n\n```json\n[\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York\"}},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"Los Angeles\"}}\n]\n```\n\nThis will fetch the air quality data for both New York and Los Angeles.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1161,
+        "output_tokens": 129,
+        "total_latency_ms": 891,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:20.641Z"
+    },
+    {
+      "result_id": "c6238176-5dc3-4311-8662-bd925c4d4470",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To list all users and then run a pre-defined analytics report, we will first call the `auth_list_users` function and then call the `analytics_run_report`. Here's how it would look in JSON format:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"<report_template_identifier>\",\n      \"date_range\": \"<date_range>\",\n      \"filters\": {},\n      \"format\": \"json\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1159,
+        "output_tokens": 143,
+        "total_latency_ms": 983,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:21.729Z"
+    },
+    {
+      "result_id": "fbd6fe63-82be-4b58-b09b-bb5ff5bd5b36",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first list users, then run an analytics report, and finally create a dashboard with the results. Here's how you can structure the JSON tool calls:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"<report_template_identifier>\",\n    \"date_range\": \"<date_range>\",\n    \"filters\": {\n      \"<filter_parameter_1>\": \"<value_1>\",\n      \"<filter_parameter_2>\": \"<value_2>\"\n    },\n    \"format\": \"json\"\n  }},\n  {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n    \"name\": \"<dashboard_name>\",\n    \"widgets\": [<chart_widget_1>, <chart_widget_2>],\n    \"shared\": true\n  }}\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1173,
+        "output_tokens": 220,
+        "total_latency_ms": 1504,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:23.336Z"
+    },
+    {
+      "result_id": "886b3376-4d2c-463a-be41-26e32b6257ce",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first call `wx_get_air_quality`, then `analytics_run_report`, and finally `analytics_track_event`. Here's a JSON array of tool calls for this sequence:\n\n```json\n[\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\"\n  }},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"daily_air_quality_summary\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {\n      \"location\": \"New York City\"\n    },\n    \"format\": \"json\"\n  }},\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"air_quality_report_generated\",\n    \"properties\": {\n      \"report_id\": \"$report_id\",\n      \"location\": \"New York City\"\n    },\n    \"user_id\": \"user123\"\n  }}\n]\n```\n\nIn this example, I've used placeholders for the `$report_id` value generated by the first step. You can replace it with the actual report ID returned from the `wx_get_air_quality` call.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1175,
+        "output_tokens": 307,
+        "total_latency_ms": 2084,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:25.528Z"
+    },
+    {
+      "result_id": "83f54519-d10f-4a9d-b0aa-4fb993a463e9",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_run_report\", \"analytics_track_event\"]}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"dashboard_viewed\", \"properties\": {\"dashboard_name\": \"Main Dashboard\"}}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1153,
+        "output_tokens": 87,
+        "total_latency_ms": 607,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:26.244Z"
+    },
+    {
+      "result_id": "a6a8c9c9-c5d8-451f-ad35-7ebf0aabaf13",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_track_event\", \"analytics_create_dashboard\"], \"arguments\": {\n  \"event_name\": \"config.json\",\n  \"properties\": {},\n  \"user_id\": \"USER_ID\"\n}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1156,
+        "output_tokens": 56,
+        "total_latency_ms": 400,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:26.754Z"
+    },
+    {
+      "result_id": "b5aa7d88-db4a-4825-a759-67f795b59f5b",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1170,
+        "output_tokens": 28,
+        "total_latency_ms": 216,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:27.081Z"
+    },
+    {
+      "result_id": "c8639cb8-52aa-4991-af71-e1c81298b0bc",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " Yes, here is the JSON tool call for creating a new analytics dashboard with the specified parameters:\n\n```JSON\n[\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"config.json\",\n      \"widgets\": [\"value1\",\"value2\",\"value3\"],\n      \"shared\": false\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1183,
+        "output_tokens": 93,
+        "total_latency_ms": 650,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:27.842Z"
+    },
+    {
+      "result_id": "50f17703-943f-4a7e-a0c3-bfdbaaed242a",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " I'm sorry for any confusion, but as a helpful assistant, my purpose is to provide information and assist with tasks based on the tools and resources available. The question you asked is philosophical in nature and not something that can be answered by the tools provided. If you have a specific task or question related to the tools I've been described, I'd be happy to help! Here's an example of how I might respond if you asked for an analytics event:\n\n```\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"meaning_of_life\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "meaning_of_life"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1146,
+        "output_tokens": 134,
+        "total_latency_ms": 926,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:28.874Z"
+    },
+    {
+      "result_id": "c0bc5a29-0812-4f7c-a610-08f1541e7d0e",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " The chemical formula for water is not a tool request, so no JSON response is needed. The answer is H2O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1147,
+        "output_tokens": 26,
+        "total_latency_ms": 200,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:29.189Z"
+    },
+    {
+      "result_id": "12fe07b1-4879-47a6-9c74-c2a8b5019951",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " Version control, also known as source control or revision control, is crucial in modern software development for several reasons:\n\n1. Collaboration: Version control systems allow multiple developers to work on the same project simultaneously without overwriting each other's changes.\n\n2. Tracking Changes: Version control keeps a record of every change made to the codebase, making it easier to identify who made a specific modification and when. This can help in debugging issues and understanding the evolution of the project.\n\n3. Rollbacks and Recovery: If an error is introduced during development, version control allows developers to roll back to a previous version of the codebase that was functioning correctly.\n\n4. Branching and Merging: Version control systems support branching, which allows developers to work on separate features or bug fixes without affecting the main codebase. Once these changes are tested and ready, they can be merged back into the main branch.\n\n5. Code Organization: Version control helps keep the code organized by providing a history of commits, allowing developers to easily navigate through different versions of the project.\n\n6. Continuous Integration/Continuous Deployment (CI/CD): Version control is essential for CI/CD pipelines as it provides the necessary artifacts (code changes) that trigger these processes.\n\nIn summary, version control is important in modern software development because it facilitates collaboration, tracks changes, allows rollbacks and recovery, supports branching and merging, organizes code, and is essential for CI/CD pipelines.\n\nHowever, as a text-based AI model, I don't directly participate in software development or use version control systems myself. But I can help explain their importance! If you need assistance with a specific version control system like Git, feel free to ask!\n\nHere's an example of how the \"analytics_track_event\" tool could be used to track an event related to version control:\n\n```json\n[\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"version_control_used\",\n    \"properties\": {\n      \"user_id\": \"user123\"\n    }\n  }}\n]\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "version_control_used",
+            "properties": {
+              "user_id": "user123"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1149,
+        "output_tokens": 478,
+        "total_latency_ms": 3260,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:32.558Z"
+    },
+    {
+      "result_id": "dd83e86f-5b18-4908-9e33-023211aa5927",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": " To provide a comprehensive response, I'll outline some best practices for code review using the available tools. Let's assume we have a function called `code_review` that takes in a pull request URL as an argument and performs the following steps:\n\n1. Fetch the associated pull request details (e.g., author, title, description, files changed).\n2. Track the event to log the code review process.\n   ```json\n   [\n     {\"name\": \"analytics_track_event\", \"arguments\": {\n       \"event_name\": \"code_review_started\",\n       \"properties\": {\n         \"pull_request_url\": \"<PULL_REQUEST_URL>\",\n         \"user_id\": \"<USER_ID>\"\n       }\n     }}\n   ]\n   ```\n3. List the users with the 'editor' or 'admin' role to find potential reviewers for the pull request.\n   ```json\n   [\n     {\"name\": \"auth_list_users\", \"arguments\": {\n       \"role\": [\"editor\", \"admin\"]\n     }}\n   ]\n   ```\n4. Analyze the changes in the files, and if necessary, suggest relevant analytics reports to run for better understanding of the code's impact.\n5. Create a new dashboard with charts based on the suggested reports for easy visualization during the review process.\n   ```json\n   [\n     {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n       \"name\": \"Code Review - <PULL_REQUEST_ID>\",\n       \"widgets\": [...],\n       \"shared\": true\n     }}\n   ]\n   ```\n6. After the review, update the event to log the code review outcome (e.g., approved, rejected).\n   ```json\n   [\n     {\"name\": \"analytics_track_event\", \"arguments\": {\n       \"event_name\": \"code_review_completed\",\n       \"properties\": {\n         \"pull_request_url\": \"<PULL_REQUEST_URL>\",\n         \"outcome\": \"<APPROVED/REJECTED>\",\n         \"user_id\": \"<USER_ID>\"\n       }\n     }}\n   ]\n   ```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1148,
+        "output_tokens": 491,
+        "total_latency_ms": 3333,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:36.007Z"
+    },
+    {
+      "result_id": "eb2856e0-4e6f-4ca9-9e26-2bef7aaa9fe0",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\"}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1150,
+        "output_tokens": 11,
+        "total_latency_ms": 99,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:36.211Z"
+    },
+    {
+      "result_id": "45030164-6473-43cd-bcbf-4a14fe7ef125",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To run a pre-defined analytics report, we can use the `analytics_run_report` function. Here's the JSON tool call:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"revenue_by_day\",\n      \"date_range\": \"last_7d\",\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\nThis command will run the \"revenue_by_day\" report for the last 7 days and return the results in JSON format.",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "revenue_by_day",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1153,
+        "output_tokens": 138,
+        "total_latency_ms": 951,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:37.263Z"
+    },
+    {
+      "result_id": "8e3d7460-9770-48a5-95d9-fc064314d9bd",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To create a new analytics dashboard, we can use the `analytics_create_dashboard` function. Here's the JSON tool call for that:\n\n```json\n[\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"My New Dashboard\",\n      \"widgets\": [\n        // Widget configurations go here. For example:\n        // {\n        //   \"type\": \"line_chart\",\n        //   \"properties\": {\n        //     \"event_name\": \"pageviews\",\n        //     \"date_range\": \"last_7d\"\n        //   }\n        // }\n      ],\n      \"shared\": true\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1150,
+        "output_tokens": 172,
+        "total_latency_ms": 1178,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:38.547Z"
+    },
+    {
+      "result_id": "7f683816-2c94-41b8-befa-610ac1770d79",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To get the air quality index and pollutant levels for the specified location, we can use the `wx_get_air_quality` tool. Here's the JSON representation of the tool call:\n\n```json\n[\n  {\n    \"name\": \"wx_get_air_quality\",\n    \"arguments\": {\n      \"location\": \"sample_data\"\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1171,
+        "output_tokens": 94,
+        "total_latency_ms": 657,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:39.320Z"
+    },
+    {
+      "result_id": "73233680-7663-4802-bcb9-c423d711a342",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1171,
+        "output_tokens": 26,
+        "total_latency_ms": 201,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:39.624Z"
+    },
+    {
+      "result_id": "659d17b2-c5b2-4cea-8526-775a76d78419",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1160,
+        "output_tokens": 19,
+        "total_latency_ms": 153,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:39.891Z"
+    },
+    {
+      "result_id": "972ef504-f8f3-41ff-a3ec-328e1bc0f8b9",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_run_report\",]}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1174,
+        "output_tokens": 13,
+        "total_latency_ms": 115,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:40.114Z"
+    },
+    {
+      "result_id": "6da2d253-fc48-4fb0-9c2b-baf3090c2095",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1183,
+        "output_tokens": 37,
+        "total_latency_ms": 277,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:40.498Z"
+    },
+    {
+      "result_id": "084d32fd-edf3-4d91-813f-c728f436b2cd",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " First, let's retrieve the list of users:\n\n```json\n{\"name\": \"auth_list_users\"}\n```\n\nAfter getting the user list, we can proceed with fetching the air quality data:\n\n```json\n[\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York\"}},\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"Los Angeles\"}}\n]\n```\n\nThis will fetch the air quality data for both New York and Los Angeles.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1161,
+        "output_tokens": 129,
+        "total_latency_ms": 892,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:41.490Z"
+    },
+    {
+      "result_id": "33b510df-2562-4a68-8c2a-56ffd69e8808",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To list all users and then run a pre-defined analytics report, we will first call the `auth_list_users` function and then call the `analytics_run_report`. Here's how it would look in JSON format:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"<report_template_identifier>\",\n      \"date_range\": \"<date_range>\",\n      \"filters\": {},\n      \"format\": \"json\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1159,
+        "output_tokens": 143,
+        "total_latency_ms": 985,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:42.577Z"
+    },
+    {
+      "result_id": "89a574f4-356c-4e7a-b74a-85036317dcb2",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first list users, then run an analytics report, and finally create a dashboard with the results. Here's how you can structure the JSON tool calls:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"<report_template_identifier>\",\n    \"date_range\": \"<date_range>\",\n    \"filters\": {\n      \"<filter_parameter_1>\": \"<value_1>\",\n      \"<filter_parameter_2>\": \"<value_2>\"\n    },\n    \"format\": \"json\"\n  }},\n  {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n    \"name\": \"<dashboard_name>\",\n    \"widgets\": [<chart_widget_1>, <chart_widget_2>],\n    \"shared\": true\n  }}\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1173,
+        "output_tokens": 220,
+        "total_latency_ms": 1506,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:44.188Z"
+    },
+    {
+      "result_id": "a8077092-b36b-4953-b978-885f320a3fbc",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first call `wx_get_air_quality`, then `analytics_run_report`, and finally `analytics_track_event`. Here's a JSON array of tool calls for this sequence:\n\n```json\n[\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\"\n  }},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"daily_air_quality_summary\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {\n      \"location\": \"New York City\"\n    },\n    \"format\": \"json\"\n  }},\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"air_quality_report_generated\",\n    \"properties\": {\n      \"report_id\": \"$report_id\",\n      \"location\": \"New York City\"\n    },\n    \"user_id\": \"user123\"\n  }}\n]\n```\n\nIn this example, I've used placeholders for the `$report_id` value generated by the first step. You can replace it with the actual report ID returned from the `wx_get_air_quality` call.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1175,
+        "output_tokens": 307,
+        "total_latency_ms": 2088,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:46.379Z"
+    },
+    {
+      "result_id": "956a509f-9000-48d1-a3ea-96b3d19c33d0",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_run_report\", \"analytics_track_event\"]}\n\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}\n\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"dashboard_viewed\", \"properties\": {\"dashboard_name\": \"Main Dashboard\"}}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1153,
+        "output_tokens": 87,
+        "total_latency_ms": 608,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:47.089Z"
+    },
+    {
+      "result_id": "3d1f5392-3d2a-4d25-b032-3cf498005000",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_track_event\", \"analytics_create_dashboard\"], \"arguments\": {\n  \"event_name\": \"config.json\",\n  \"properties\": {},\n  \"user_id\": \"USER_ID\"\n}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1156,
+        "output_tokens": 56,
+        "total_latency_ms": 401,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:47.599Z"
+    },
+    {
+      "result_id": "263c9450-e186-4ba7-bb12-cb10a8397db0",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1170,
+        "output_tokens": 28,
+        "total_latency_ms": 215,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:47.925Z"
+    },
+    {
+      "result_id": "764bc1c3-8056-4302-9a8b-fa354cc59103",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " Yes, here is the JSON tool call for creating a new analytics dashboard with the specified parameters:\n\n```JSON\n[\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"config.json\",\n      \"widgets\": [\"value1\",\"value2\",\"value3\"],\n      \"shared\": false\n    }\n  }\n]\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "config.json",
+            "widgets": [
+              "value1",
+              "value2",
+              "value3"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1183,
+        "output_tokens": 93,
+        "total_latency_ms": 652,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:48.689Z"
+    },
+    {
+      "result_id": "a9a9d47e-2f35-4fae-802c-734aed8e7679",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " I'm sorry for any confusion, but as a helpful assistant, my purpose is to provide information and assist with tasks based on the tools and resources available. The question you asked is philosophical in nature and not something that can be answered by the tools provided. If you have a specific task or question related to the tools I've been described, I'd be happy to help! Here's an example of how I might respond if you asked for an analytics event:\n\n```\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"meaning_of_life\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "meaning_of_life"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1146,
+        "output_tokens": 134,
+        "total_latency_ms": 928,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:49.730Z"
+    },
+    {
+      "result_id": "5bbbb295-fe55-48d2-89bf-118be7abf90f",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " The chemical formula for water is not a tool request, so no JSON response is needed. The answer is H2O.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1147,
+        "output_tokens": 26,
+        "total_latency_ms": 199,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:50.041Z"
+    },
+    {
+      "result_id": "37d9fa63-c41e-46e5-83d8-d131ab912dcd",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " Version control, also known as source control or revision control, is crucial in modern software development for several reasons:\n\n1. Collaboration: Version control systems allow multiple developers to work on the same project simultaneously without overwriting each other's changes.\n\n2. Tracking Changes: Version control keeps a record of every change made to the codebase, making it easier to identify who made a specific modification and when. This can help in debugging issues and understanding the evolution of the project.\n\n3. Rollbacks and Recovery: If an error is introduced during development, version control allows developers to roll back to a previous version of the codebase that was functioning correctly.\n\n4. Branching and Merging: Version control systems support branching, which allows developers to work on separate features or bug fixes without affecting the main codebase. Once these changes are tested and ready, they can be merged back into the main branch.\n\n5. Code Organization: Version control helps keep the code organized by providing a history of commits, allowing developers to easily navigate through different versions of the project.\n\n6. Continuous Integration/Continuous Deployment (CI/CD): Version control is essential for CI/CD pipelines as it provides the necessary artifacts (code changes) that trigger these processes.\n\nIn summary, version control is important in modern software development because it facilitates collaboration, tracks changes, allows rollbacks and recovery, supports branching and merging, organizes code, and is essential for CI/CD pipelines.\n\nHowever, as a text-based AI model, I don't directly participate in software development or use version control systems myself. But I can help explain their importance! If you need assistance with a specific version control system like Git, feel free to ask!\n\nHere's an example of how the \"analytics_track_event\" tool could be used to track an event related to version control:\n\n```json\n[\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"version_control_used\",\n    \"properties\": {\n      \"user_id\": \"user123\"\n    }\n  }}\n]\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "version_control_used",
+            "properties": {
+              "user_id": "user123"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1149,
+        "output_tokens": 478,
+        "total_latency_ms": 3249,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:53.403Z"
+    },
+    {
+      "result_id": "d74a499b-ba11-4e25-8be7-d3ae737f3083",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": " To provide a comprehensive response, I'll outline some best practices for code review using the available tools. Let's assume we have a function called `code_review` that takes in a pull request URL as an argument and performs the following steps:\n\n1. Fetch the associated pull request details (e.g., author, title, description, files changed).\n2. Track the event to log the code review process.\n   ```json\n   [\n     {\"name\": \"analytics_track_event\", \"arguments\": {\n       \"event_name\": \"code_review_started\",\n       \"properties\": {\n         \"pull_request_url\": \"<PULL_REQUEST_URL>\",\n         \"user_id\": \"<USER_ID>\"\n       }\n     }}\n   ]\n   ```\n3. List the users with the 'editor' or 'admin' role to find potential reviewers for the pull request.\n   ```json\n   [\n     {\"name\": \"auth_list_users\", \"arguments\": {\n       \"role\": [\"editor\", \"admin\"]\n     }}\n   ]\n   ```\n4. Analyze the changes in the files, and if necessary, suggest relevant analytics reports to run for better understanding of the code's impact.\n5. Create a new dashboard with charts based on the suggested reports for easy visualization during the review process.\n   ```json\n   [\n     {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n       \"name\": \"Code Review - <PULL_REQUEST_ID>\",\n       \"widgets\": [...],\n       \"shared\": true\n     }}\n   ]\n   ```\n6. After the review, update the event to log the code review outcome (e.g., approved, rejected).\n   ```json\n   [\n     {\"name\": \"analytics_track_event\", \"arguments\": {\n       \"event_name\": \"code_review_completed\",\n       \"properties\": {\n         \"pull_request_url\": \"<PULL_REQUEST_URL>\",\n         \"outcome\": \"<APPROVED/REJECTED>\",\n         \"user_id\": \"<USER_ID>\"\n       }\n     }}\n   ]\n   ```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1148,
+        "output_tokens": 491,
+        "total_latency_ms": 3331,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:56.847Z"
+    },
+    {
+      "result_id": "da798ff2-c944-43d7-b83c-95fe10c1aa38",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"all\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "all"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 436,
+        "output_tokens": 21,
+        "total_latency_ms": 206,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:57.168Z"
+    },
+    {
+      "result_id": "e828a917-3709-4f51-a221-986cf79a7bef",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sales_revenue_report\", \"date_range\": \"last_30d\", \"format\": \"csv\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sales_revenue_report",
+            "date_range": "last_30d",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 439,
+        "output_tokens": 48,
+        "total_latency_ms": 338,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:57.616Z"
+    },
+    {
+      "result_id": "f6aa2450-0ac6-4ab1-86ce-c6bfbd0f0f07",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n  \"name\": \"New Dashboard\",\n  \"widgets\": [\n    // Here you can specify the widget configurations for your desired charts\n  ],\n  \"shared\": true\n}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 436,
+        "output_tokens": 58,
+        "total_latency_ms": 403,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:58.123Z"
+    },
+    {
+      "result_id": "42afbc42-8c05-4b84-b1b0-8b8085d3f52c",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "sample_data",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 33,
+        "total_latency_ms": 244,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:58.483Z"
+    },
+    {
+      "result_id": "a922097b-2984-44a7-8969-b5096976020f",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 26,
+        "total_latency_ms": 196,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:58.792Z"
+    },
+    {
+      "result_id": "0c7f7953-0890-417a-b814-da32437e175c",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 446,
+        "output_tokens": 19,
+        "total_latency_ms": 150,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:59.045Z"
+    },
+    {
+      "result_id": "674df63f-3158-4d81-beda-06f6f4bcf687",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "test_input",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 460,
+        "output_tokens": 32,
+        "total_latency_ms": 237,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:59.382Z"
+    },
+    {
+      "result_id": "d89e1de8-f7c4-419c-a96a-338bff7813aa",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 469,
+        "output_tokens": 37,
+        "total_latency_ms": 269,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:18:59.757Z"
+    },
+    {
+      "result_id": "419d4d2c-6c8f-4cd2-8e74-8310e16b5933",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " [{\"name\": \"auth_list_users\"}, {\"name\": \"wx_get_air_quality\"}]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 447,
+        "output_tokens": 25,
+        "total_latency_ms": 188,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:00.054Z"
+    },
+    {
+      "result_id": "2396354a-2b74-4659-a120-9d1a35f111a8",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To list all user accounts and then run a pre-defined analytics report on the listed users, we can first use `auth_list_users` tool and then use `analytics_run_report`. Here's how you can structure the requests:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"<report_template_identifier>\",\n      \"date_range\": \"<date_range>\",\n      \"filters\": {\n        \"user_ids\": \"<list_of_user_ids_from_previous_response>\"\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 445,
+        "output_tokens": 170,
+        "total_latency_ms": 1152,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:01.319Z"
+    },
+    {
+      "result_id": "2e3abe54-7f49-4941-95ff-e0e7964a9439",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first list all users, then run an analytics report on the user data, and finally create a dashboard with the results. Here's how to do it:\n\n1. List all users (auth_list_users):\n```json\n{\"name\": \"auth_list_users\"}\n```\n\n2. Run an analytics report on the user data (analytics_run_report):\nAssuming we want to get a count of active users, let's filter by status and role:\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"user_count_by_status_and_role\",\n      \"date_range\": \"last_7d\",\n      \"filters\": {\n        \"status\": \"active\",\n        \"role\": \"admin\"\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\n3. Create a new analytics dashboard with the results (analytics_create_dashboard):\nAssuming we want to create a dashboard with two widgets: one for total users and another for active users:\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"user_count_by_status_and_role\",\n      \"date_range\": \"last_7d\",\n      \"filters\": {\n        \"status\": \"active\",\n        \"role\": \"admin\"\n      },\n      \"format\": \"json\"\n    }\n  },\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"User Count Dashboard\",\n      \"widgets\": [\n        {\n          \"type\": \"table\",\n          \"title\": \"Total Users\",\n          \"dataSourceId\": \"user_count_by_status_and_role\",\n          \"filters\": {\n            \"status\": \"all\"\n          },\n          \"columns\": [\"User Count\"]\n        },\n        {\n          \"type\": \"table\",\n          \"title\": \"Active Users\",\n          \"dataSourceId\": \"user_count_by_status_and_role\",\n          \"filters\": {\n            \"status\": \"active\"\n          },\n          \"columns\": [\"User Count\"]\n        }\n      ],\n      \"shared\": true\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 459,
+        "output_tokens": 592,
+        "total_latency_ms": 3954,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:05.388Z"
+    },
+    {
+      "result_id": "b81ed5ba-a95d-429d-b4bb-a88f38844d6e",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\",\n    \"include_pollutants\": true\n  }},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"air_quality_summary\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {\n      \"location\": \"$WX_GET_AIR_QUALITY.location\"\n    },\n    \"format\": \"csv\"\n  }},\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"Air Quality Report Generated\",\n    \"properties\": {\n      \"report_type\": \"Daily Summary\",\n      \"location\": \"$WX_GET_AIR_QUALITY.location\"\n    },\n    \"user_id\": \"USER_ID\"\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 461,
+        "output_tokens": 218,
+        "total_latency_ms": 1458,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:06.961Z"
+    },
+    {
+      "result_id": "f332fdf5-c9f4-413c-80b0-224cce25c521",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 439,
+        "output_tokens": 24,
+        "total_latency_ms": 181,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:07.243Z"
+    },
+    {
+      "result_id": "24b6a6b2-3139-4051-af1f-5ac4cc937f86",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 442,
+        "output_tokens": 26,
+        "total_latency_ms": 195,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:07.540Z"
+    },
+    {
+      "result_id": "146a282d-1971-449f-a1ae-65095f69b9bb",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"auth_list_users\"], \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 456,
+        "output_tokens": 28,
+        "total_latency_ms": 208,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:07.860Z"
+    },
+    {
+      "result_id": "ccb612a2-c197-4eb9-99ee-68cc65e33ba3",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\",\"value2\",\"value3\"], \"shared\": false}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 469,
+        "output_tokens": 42,
+        "total_latency_ms": 302,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:08.278Z"
+    },
+    {
+      "result_id": "802955a4-96c6-4f3a-8ff7-80a29d90fc9f",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"meaning_of_life\", \"date_range\": \"all_time\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "meaning_of_life",
+            "date_range": "all_time"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 432,
+        "output_tokens": 39,
+        "total_latency_ms": 285,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:08.669Z"
+    },
+    {
+      "result_id": "f4d40ff9-2099-4bfd-ba7a-d9183db63da2",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_question\", \"properties\": {\"question\": \"What is the chemical formula for water?\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user_question",
+            "properties": {
+              "question": "What is the chemical formula for water?"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 433,
+        "output_tokens": 41,
+        "total_latency_ms": 291,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:09.072Z"
+    },
+    {
+      "result_id": "5cb43d8a-256f-4093-9bdf-31f511912223",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " Version control is crucial in modern software development for several reasons:\n\n1. Collaboration: It allows multiple developers to work on the same project simultaneously without overwriting each other's changes.\n2. Tracking Changes: Version control systems keep a record of every change made to the codebase, making it easier to identify who made a specific change and when.\n3. Rollbacks: If an error is introduced during development, version control allows developers to roll back to a previous version of the code that was known to be working correctly.\n4. Branching: Version control systems support branching, which enables developers to work on new features or bug fixes without affecting the main codebase until they are ready to merge their changes.\n5. Code Organization: Version control helps keep the code organized by providing a history of commits and allowing for easy management of different versions of the project.\n6. Continuous Integration/Continuous Deployment (CI/CD): Version control is essential for automating the build, test, and deployment process in CI/CD pipelines.\n7. Code Review: Version control facilitates code review by allowing developers to view changes made by others and provide feedback before merging their changes into the main branch.\n8. Disaster Recovery: In case of a catastrophic failure or data loss, version control provides a backup of the entire project history, making it easier to recover lost work.\n\nIn summary, version control is essential for efficient collaboration, tracking changes, rollbacks, branching, code organization, continuous integration/continuous deployment, code review, and disaster recovery in modern software development.\n\n(No tool call required)",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 350,
+        "total_latency_ms": 2329,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:11.515Z"
+    },
+    {
+      "result_id": "5d6405e8-50d6-4a2e-8e01-838aac999c2b",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": " To provide an effective code review, here are some best practices that can be followed:\n\n1. Understand the purpose and context of the code being reviewed.\n2. Check if the code adheres to the project's coding standards and guidelines.\n3. Verify that the code is well-organized, easy to read, and maintainable.\n4. Look for potential bugs or issues that may cause errors or security vulnerabilities.\n5. Ensure that the code follows best practices for error handling, exception management, and logging.\n6. Check if the code is optimized for performance and scalability.\n7. Verify that the code includes appropriate comments and documentation to explain its purpose and functionality.\n8. Suggest improvements or refactoring where necessary to make the code more efficient and maintainable.\n9. Provide constructive feedback and communicate clearly about any issues found during the review.\n10. Encourage collaboration and open communication between team members during the review process.\n\nIn terms of tools, you can use Git for version control, GitHub or Bitbucket for code hosting and collaboration, and SonarQube or CodeClimate for automated code analysis and quality checks.\n\nHere's a JSON representation of the best practices:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"event_name\": \"code_review_started\",\n      \"properties\": {\n        \"best_practices\": [\"understand_purpose\", \"adhere_to_guidelines\", \"well-organized\", \"check_for_bugs\", \"error_handling\", \"optimization\", \"comments\", \"improvements\"]\n      },\n      \"user_id\": \"reviewer_1\"\n    }\n  },\n  {\n    \"name\": \"analytics_track_event\",\n    \"arguments\": {\n      \"event_name\": \"code_review_completed\",\n      \"properties\": {\n        \"best_practices\": [\"collaboration\", \"constructive_feedback\"]\n      },\n      \"user_id\": \"reviewer_1\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 434,
+        "output_tokens": 485,
+        "total_latency_ms": 3235,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:14.854Z"
+    },
+    {
+      "result_id": "2be57c19-8cbb-4797-b289-574e9e4a549b",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"all\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "all"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 436,
+        "output_tokens": 21,
+        "total_latency_ms": 162,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:15.132Z"
+    },
+    {
+      "result_id": "29b5e485-f4c5-4193-91f4-b089f08d02d0",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sales_revenue_report\", \"date_range\": \"last_30d\", \"format\": \"csv\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sales_revenue_report",
+            "date_range": "last_30d",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 439,
+        "output_tokens": 48,
+        "total_latency_ms": 340,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:15.577Z"
+    },
+    {
+      "result_id": "9ca0ebf6-34b5-4f61-9ee5-04a5ed7d7bdf",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n  \"name\": \"New Dashboard\",\n  \"widgets\": [\n    // Here you can specify the widget configurations for your desired charts\n  ],\n  \"shared\": true\n}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 436,
+        "output_tokens": 58,
+        "total_latency_ms": 404,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:16.090Z"
+    },
+    {
+      "result_id": "4afcc104-ab55-4034-be03-3f3bd9be7d59",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "sample_data",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 33,
+        "total_latency_ms": 248,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:16.447Z"
+    },
+    {
+      "result_id": "c939bb65-44b5-4d10-979e-459d72c3a9ac",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 26,
+        "total_latency_ms": 203,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:16.757Z"
+    },
+    {
+      "result_id": "036b2e55-b064-4a87-b6c0-adffbec0b7a5",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 446,
+        "output_tokens": 19,
+        "total_latency_ms": 148,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:17.017Z"
+    },
+    {
+      "result_id": "f1991d77-6b2a-46f1-a952-f108020bf86b",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "test_input",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 460,
+        "output_tokens": 32,
+        "total_latency_ms": 236,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:17.368Z"
+    },
+    {
+      "result_id": "ad620371-c622-41af-bc73-6bcdf2be6d1f",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 469,
+        "output_tokens": 37,
+        "total_latency_ms": 275,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:17.751Z"
+    },
+    {
+      "result_id": "3a3af54e-5e53-4b22-bc56-9f9f32f4598f",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " [{\"name\": \"auth_list_users\"}, {\"name\": \"wx_get_air_quality\"}]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 447,
+        "output_tokens": 25,
+        "total_latency_ms": 189,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:18.045Z"
+    },
+    {
+      "result_id": "afff3aa7-48f4-451e-ab16-efa5f82c2e20",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To list all user accounts and then run a pre-defined analytics report on the listed users, we can first use `auth_list_users` tool and then use `analytics_run_report`. Here's how you can structure the requests:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"<report_template_identifier>\",\n      \"date_range\": \"<date_range>\",\n      \"filters\": {\n        \"user_ids\": \"<list_of_user_ids_from_previous_response>\"\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 445,
+        "output_tokens": 170,
+        "total_latency_ms": 1145,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:19.294Z"
+    },
+    {
+      "result_id": "83ba8015-888a-4291-b6f7-fcace6a8423c",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first list all users, then run an analytics report on the user data, and finally create a dashboard with the results. Here's how to do it:\n\n1. List all users (auth_list_users):\n```json\n{\"name\": \"auth_list_users\"}\n```\n\n2. Run an analytics report on the user data (analytics_run_report):\nAssuming we want to get a count of active users, let's filter by status and role:\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"user_count_by_status_and_role\",\n      \"date_range\": \"last_7d\",\n      \"filters\": {\n        \"status\": \"active\",\n        \"role\": \"admin\"\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\n3. Create a new analytics dashboard with the results (analytics_create_dashboard):\nAssuming we want to create a dashboard with two widgets: one for total users and another for active users:\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"user_count_by_status_and_role\",\n      \"date_range\": \"last_7d\",\n      \"filters\": {\n        \"status\": \"active\",\n        \"role\": \"admin\"\n      },\n      \"format\": \"json\"\n    }\n  },\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"User Count Dashboard\",\n      \"widgets\": [\n        {\n          \"type\": \"table\",\n          \"title\": \"Total Users\",\n          \"dataSourceId\": \"user_count_by_status_and_role\",\n          \"filters\": {\n            \"status\": \"all\"\n          },\n          \"columns\": [\"User Count\"]\n        },\n        {\n          \"type\": \"table\",\n          \"title\": \"Active Users\",\n          \"dataSourceId\": \"user_count_by_status_and_role\",\n          \"filters\": {\n            \"status\": \"active\"\n          },\n          \"columns\": [\"User Count\"]\n        }\n      ],\n      \"shared\": true\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 459,
+        "output_tokens": 592,
+        "total_latency_ms": 3944,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:23.351Z"
+    },
+    {
+      "result_id": "35c47be9-02bd-441c-b922-aa38d106f52c",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\",\n    \"include_pollutants\": true\n  }},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"air_quality_summary\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {\n      \"location\": \"$WX_GET_AIR_QUALITY.location\"\n    },\n    \"format\": \"csv\"\n  }},\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"Air Quality Report Generated\",\n    \"properties\": {\n      \"report_type\": \"Daily Summary\",\n      \"location\": \"$WX_GET_AIR_QUALITY.location\"\n    },\n    \"user_id\": \"USER_ID\"\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 461,
+        "output_tokens": 218,
+        "total_latency_ms": 1460,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:24.918Z"
+    },
+    {
+      "result_id": "474d4fb7-9985-437b-9af0-9b160880aa7e",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 439,
+        "output_tokens": 24,
+        "total_latency_ms": 183,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:25.212Z"
+    },
+    {
+      "result_id": "aa95b6e4-2aab-460a-9504-45f87c9c24d8",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 442,
+        "output_tokens": 26,
+        "total_latency_ms": 195,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:25.507Z"
+    },
+    {
+      "result_id": "84f7f19b-2896-49c7-89c7-33839125e5d9",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"auth_list_users\"], \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 456,
+        "output_tokens": 28,
+        "total_latency_ms": 209,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:25.818Z"
+    },
+    {
+      "result_id": "030f4df7-9dc5-4ae0-83c5-f34adce9270c",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\",\"value2\",\"value3\"], \"shared\": false}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 469,
+        "output_tokens": 42,
+        "total_latency_ms": 302,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:26.224Z"
+    },
+    {
+      "result_id": "867c349c-ff71-4b2e-9ddb-0d0ae4fdf473",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"meaning_of_life\", \"date_range\": \"all_time\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "meaning_of_life",
+            "date_range": "all_time"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 432,
+        "output_tokens": 39,
+        "total_latency_ms": 282,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:26.610Z"
+    },
+    {
+      "result_id": "d3db1459-3e5c-4132-a205-2444c6a187a4",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_question\", \"properties\": {\"question\": \"What is the chemical formula for water?\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user_question",
+            "properties": {
+              "question": "What is the chemical formula for water?"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 433,
+        "output_tokens": 41,
+        "total_latency_ms": 294,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:27.011Z"
+    },
+    {
+      "result_id": "74d88114-e9cb-48a4-a1b3-50de1545fe14",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " Version control is crucial in modern software development for several reasons:\n\n1. Collaboration: It allows multiple developers to work on the same project simultaneously without overwriting each other's changes.\n2. Tracking Changes: Version control systems keep a record of every change made to the codebase, making it easier to identify who made a specific change and when.\n3. Rollbacks: If an error is introduced during development, version control allows developers to roll back to a previous version of the code that was known to be working correctly.\n4. Branching: Version control systems support branching, which enables developers to work on new features or bug fixes without affecting the main codebase until they are ready to merge their changes.\n5. Code Organization: Version control helps keep the code organized by providing a history of commits and allowing for easy management of different versions of the project.\n6. Continuous Integration/Continuous Deployment (CI/CD): Version control is essential for automating the build, test, and deployment process in CI/CD pipelines.\n7. Code Review: Version control facilitates code review by allowing developers to view changes made by others and provide feedback before merging their changes into the main branch.\n8. Disaster Recovery: In case of a catastrophic failure or data loss, version control provides a backup of the entire project history, making it easier to recover lost work.\n\nIn summary, version control is essential for efficient collaboration, tracking changes, rollbacks, branching, code organization, continuous integration/continuous deployment, code review, and disaster recovery in modern software development.\n\n(No tool call required)",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 350,
+        "total_latency_ms": 2330,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:29.456Z"
+    },
+    {
+      "result_id": "887bc535-73d2-4c4f-b9b6-5a949ba0338c",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": " To provide an effective code review, here are some best practices that can be followed:\n\n1. Understand the purpose and context of the code being reviewed.\n2. Check if the code adheres to the project's coding standards and guidelines.\n3. Verify that the code is well-organized, easy to read, and maintainable.\n4. Look for potential bugs or issues that may cause errors or security vulnerabilities.\n5. Ensure that the code follows best practices for error handling, exception management, and logging.\n6. Check if the code is optimized for performance and scalability.\n7. Verify that the code includes appropriate comments and documentation to explain its purpose and functionality.\n8. Suggest improvements or refactoring where necessary to make the code more efficient and maintainable.\n9. Provide constructive feedback and communicate clearly about any issues found during the review.\n10. Encourage collaboration and open communication between team members during the review process.\n\nIn terms of tools, you can use Git for version control, GitHub or Bitbucket for code hosting and collaboration, and SonarQube or CodeClimate for automated code analysis and quality checks.\n\nHere's a JSON representation of the best practices:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"event_name\": \"code_review_started\",\n      \"properties\": {\n        \"best_practices\": [\"understand_purpose\", \"adhere_to_guidelines\", \"well-organized\", \"check_for_bugs\", \"error_handling\", \"optimization\", \"comments\", \"improvements\"]\n      },\n      \"user_id\": \"reviewer_1\"\n    }\n  },\n  {\n    \"name\": \"analytics_track_event\",\n    \"arguments\": {\n      \"event_name\": \"code_review_completed\",\n      \"properties\": {\n        \"best_practices\": [\"collaboration\", \"constructive_feedback\"]\n      },\n      \"user_id\": \"reviewer_1\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 434,
+        "output_tokens": 485,
+        "total_latency_ms": 3237,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:32.808Z"
+    },
+    {
+      "result_id": "0f2073de-b010-48fe-b616-3ba4063a061e",
+      "task_id": "tab-D-ts-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"all\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "all"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 436,
+        "output_tokens": 21,
+        "total_latency_ms": 162,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:33.080Z"
+    },
+    {
+      "result_id": "3f21eda6-946b-4cd4-beda-372b99231809",
+      "task_id": "tab-D-ts-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"sales_revenue_report\", \"date_range\": \"last_30d\", \"format\": \"csv\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "sales_revenue_report",
+            "date_range": "last_30d",
+            "format": "csv"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 439,
+        "output_tokens": 48,
+        "total_latency_ms": 338,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:33.524Z"
+    },
+    {
+      "result_id": "9f5d466f-4429-45df-9887-44f6f31cc056",
+      "task_id": "tab-D-ts-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_create_dashboard\", \"arguments\": {\n  \"name\": \"New Dashboard\",\n  \"widgets\": [\n    // Here you can specify the widget configurations for your desired charts\n  ],\n  \"shared\": true\n}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 436,
+        "output_tokens": 58,
+        "total_latency_ms": 406,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:34.043Z"
+    },
+    {
+      "result_id": "d55209d3-cc9a-45fd-8611-4f211dbc755c",
+      "task_id": "tab-D-ts-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "sample_data",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 33,
+        "total_latency_ms": 243,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:34.393Z"
+    },
+    {
+      "result_id": "1dd04f04-0449-4848-bdab-94b6ee60c29b",
+      "task_id": "tab-D-ts-005",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "sample_data"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 457,
+        "output_tokens": 26,
+        "total_latency_ms": 196,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:34.700Z"
+    },
+    {
+      "result_id": "f650c9b3-1d9a-4398-8981-96530bafc3c3",
+      "task_id": "tab-D-ts-006",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 446,
+        "output_tokens": 19,
+        "total_latency_ms": 150,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:34.954Z"
+    },
+    {
+      "result_id": "04641fac-2663-4862-b592-cf3110266c60",
+      "task_id": "tab-D-ts-007",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\", \"format\": \"json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "test_input",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 460,
+        "output_tokens": 32,
+        "total_latency_ms": 235,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:35.301Z"
+    },
+    {
+      "result_id": "04a489ca-f660-48a1-84f9-cd15545fe82b",
+      "task_id": "tab-D-ts-008",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 469,
+        "output_tokens": 37,
+        "total_latency_ms": 270,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:35.683Z"
+    },
+    {
+      "result_id": "21ca0aa5-1242-4586-901f-b0d8d0ba0410",
+      "task_id": "tab-D-mt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " [{\"name\": \"auth_list_users\"}, {\"name\": \"wx_get_air_quality\"}]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 447,
+        "output_tokens": 25,
+        "total_latency_ms": 187,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:35.986Z"
+    },
+    {
+      "result_id": "ae1876d4-92f5-43c2-9e3a-47490408b251",
+      "task_id": "tab-D-mt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To list all user accounts and then run a pre-defined analytics report on the listed users, we can first use `auth_list_users` tool and then use `analytics_run_report`. Here's how you can structure the requests:\n\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"<report_template_identifier>\",\n      \"date_range\": \"<date_range>\",\n      \"filters\": {\n        \"user_ids\": \"<list_of_user_ids_from_previous_response>\"\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 445,
+        "output_tokens": 170,
+        "total_latency_ms": 1145,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:37.236Z"
+    },
+    {
+      "result_id": "acf7f306-687f-428e-bf00-79869a5fd802",
+      "task_id": "tab-D-mt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To achieve the requested three-step process, we will first list all users, then run an analytics report on the user data, and finally create a dashboard with the results. Here's how to do it:\n\n1. List all users (auth_list_users):\n```json\n{\"name\": \"auth_list_users\"}\n```\n\n2. Run an analytics report on the user data (analytics_run_report):\nAssuming we want to get a count of active users, let's filter by status and role:\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"user_count_by_status_and_role\",\n      \"date_range\": \"last_7d\",\n      \"filters\": {\n        \"status\": \"active\",\n        \"role\": \"admin\"\n      },\n      \"format\": \"json\"\n    }\n  }\n]\n```\n\n3. Create a new analytics dashboard with the results (analytics_create_dashboard):\nAssuming we want to create a dashboard with two widgets: one for total users and another for active users:\n```json\n[\n  {\"name\": \"auth_list_users\"},\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"report_id\": \"user_count_by_status_and_role\",\n      \"date_range\": \"last_7d\",\n      \"filters\": {\n        \"status\": \"active\",\n        \"role\": \"admin\"\n      },\n      \"format\": \"json\"\n    }\n  },\n  {\n    \"name\": \"analytics_create_dashboard\",\n    \"arguments\": {\n      \"name\": \"User Count Dashboard\",\n      \"widgets\": [\n        {\n          \"type\": \"table\",\n          \"title\": \"Total Users\",\n          \"dataSourceId\": \"user_count_by_status_and_role\",\n          \"filters\": {\n            \"status\": \"all\"\n          },\n          \"columns\": [\"User Count\"]\n        },\n        {\n          \"type\": \"table\",\n          \"title\": \"Active Users\",\n          \"dataSourceId\": \"user_count_by_status_and_role\",\n          \"filters\": {\n            \"status\": \"active\"\n          },\n          \"columns\": [\"User Count\"]\n        }\n      ],\n      \"shared\": true\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 459,
+        "output_tokens": 592,
+        "total_latency_ms": 3945,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:41.286Z"
+    },
+    {
+      "result_id": "bdc345df-dd48-4b06-82ee-df3564a1ba29",
+      "task_id": "tab-D-mt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " [\n  {\"name\": \"wx_get_air_quality\", \"arguments\": {\n    \"location\": \"New York City\",\n    \"include_pollutants\": true\n  }},\n  {\"name\": \"analytics_run_report\", \"arguments\": {\n    \"report_id\": \"air_quality_summary\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {\n      \"location\": \"$WX_GET_AIR_QUALITY.location\"\n    },\n    \"format\": \"csv\"\n  }},\n  {\"name\": \"analytics_track_event\", \"arguments\": {\n    \"event_name\": \"Air Quality Report Generated\",\n    \"properties\": {\n      \"report_type\": \"Daily Summary\",\n      \"location\": \"$WX_GET_AIR_QUALITY.location\"\n    },\n    \"user_id\": \"USER_ID\"\n  }}\n]",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 461,
+        "output_tokens": 218,
+        "total_latency_ms": 1459,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:42.860Z"
+    },
+    {
+      "result_id": "07b74b34-7d12-404b-959f-3d25b3eef0c7",
+      "task_id": "tab-D-pe-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 439,
+        "output_tokens": 24,
+        "total_latency_ms": 180,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:43.152Z"
+    },
+    {
+      "result_id": "fef77aa4-f304-437a-97b0-bc2d2d5b4543",
+      "task_id": "tab-D-pe-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "config.json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 442,
+        "output_tokens": 26,
+        "total_latency_ms": 194,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:43.450Z"
+    },
+    {
+      "result_id": "2a612b54-ec5f-4b14-99a3-f6eac7a5bd25",
+      "task_id": "tab-D-pe-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"auth_list_users\"], \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 456,
+        "output_tokens": 28,
+        "total_latency_ms": 213,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:43.769Z"
+    },
+    {
+      "result_id": "20e35bdc-90bc-481e-8744-fca06d931bb7",
+      "task_id": "tab-D-pe-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": [\"analytics_create_dashboard\"], \"arguments\": {\"name\": \"config.json\", \"widgets\": [\"value1\",\"value2\",\"value3\"], \"shared\": false}}",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 469,
+        "output_tokens": 42,
+        "total_latency_ms": 305,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:44.189Z"
+    },
+    {
+      "result_id": "ad99ac57-5ce9-4663-80de-03ee4dca5b42",
+      "task_id": "tab-D-nt-001",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"meaning_of_life\", \"date_range\": \"all_time\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "meaning_of_life",
+            "date_range": "all_time"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 432,
+        "output_tokens": 39,
+        "total_latency_ms": 282,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:44.587Z"
+    },
+    {
+      "result_id": "3d5442ed-7a71-4dec-b2a5-39540a0994b7",
+      "task_id": "tab-D-nt-002",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_question\", \"properties\": {\"question\": \"What is the chemical formula for water?\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user_question",
+            "properties": {
+              "question": "What is the chemical formula for water?"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 433,
+        "output_tokens": 41,
+        "total_latency_ms": 293,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:44.984Z"
+    },
+    {
+      "result_id": "998da74f-310e-4ac9-ab57-8d80291f9c91",
+      "task_id": "tab-D-nt-003",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " Version control is crucial in modern software development for several reasons:\n\n1. Collaboration: It allows multiple developers to work on the same project simultaneously without overwriting each other's changes.\n2. Tracking Changes: Version control systems keep a record of every change made to the codebase, making it easier to identify who made a specific change and when.\n3. Rollbacks: If an error is introduced during development, version control allows developers to roll back to a previous version of the code that was known to be working correctly.\n4. Branching: Version control systems support branching, which enables developers to work on new features or bug fixes without affecting the main codebase until they are ready to merge their changes.\n5. Code Organization: Version control helps keep the code organized by providing a history of commits and allowing for easy management of different versions of the project.\n6. Continuous Integration/Continuous Deployment (CI/CD): Version control is essential for automating the build, test, and deployment process in CI/CD pipelines.\n7. Code Review: Version control facilitates code review by allowing developers to view changes made by others and provide feedback before merging their changes into the main branch.\n8. Disaster Recovery: In case of a catastrophic failure or data loss, version control provides a backup of the entire project history, making it easier to recover lost work.\n\nIn summary, version control is essential for efficient collaboration, tracking changes, rollbacks, branching, code organization, continuous integration/continuous deployment, code review, and disaster recovery in modern software development.\n\n(No tool call required)",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 435,
+        "output_tokens": 350,
+        "total_latency_ms": 2335,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:47.429Z"
+    },
+    {
+      "result_id": "39dea470-48d2-4f60-9ba5-6c45bb31192b",
+      "task_id": "tab-D-nt-004",
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": " To provide an effective code review, here are some best practices that can be followed:\n\n1. Understand the purpose and context of the code being reviewed.\n2. Check if the code adheres to the project's coding standards and guidelines.\n3. Verify that the code is well-organized, easy to read, and maintainable.\n4. Look for potential bugs or issues that may cause errors or security vulnerabilities.\n5. Ensure that the code follows best practices for error handling, exception management, and logging.\n6. Check if the code is optimized for performance and scalability.\n7. Verify that the code includes appropriate comments and documentation to explain its purpose and functionality.\n8. Suggest improvements or refactoring where necessary to make the code more efficient and maintainable.\n9. Provide constructive feedback and communicate clearly about any issues found during the review.\n10. Encourage collaboration and open communication between team members during the review process.\n\nIn terms of tools, you can use Git for version control, GitHub or Bitbucket for code hosting and collaboration, and SonarQube or CodeClimate for automated code analysis and quality checks.\n\nHere's a JSON representation of the best practices:\n\n```json\n[\n  {\n    \"name\": \"analytics_run_report\",\n    \"arguments\": {\n      \"event_name\": \"code_review_started\",\n      \"properties\": {\n        \"best_practices\": [\"understand_purpose\", \"adhere_to_guidelines\", \"well-organized\", \"check_for_bugs\", \"error_handling\", \"optimization\", \"comments\", \"improvements\"]\n      },\n      \"user_id\": \"reviewer_1\"\n    }\n  },\n  {\n    \"name\": \"analytics_track_event\",\n    \"arguments\": {\n      \"event_name\": \"code_review_completed\",\n      \"properties\": {\n        \"best_practices\": [\"collaboration\", \"constructive_feedback\"]\n      },\n      \"user_id\": \"reviewer_1\"\n    }\n  }\n]\n```",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 434,
+        "output_tokens": 485,
+        "total_latency_ms": 3233,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T19:19:50.778Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Mistral 7B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.37000000000000005,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.45,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.25,
+        "ci95": [
+          0.1577638557841185,
+          0.372323109454848
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Mistral 7B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.38000000000000006,
+        "ci95": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.5,
+        "ci95": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.2,
+        "ci95": [
+          0.11828389736858964,
+          0.3178204609181701
+        ]
+      },
+      "arr": 1.027027027027027,
+      "token_savings_pct": 61.46694214876033,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "wave": "2.5.3",
+  "description": "LLMLingua-2 Head-to-Head with BPE-corrected token counting",
+  "tokenizer": "tiktoken cl100k_base",
+  "model": "claude-sonnet-4-20250514",
+  "startedAt": "2026-03-03T14:37:32.055298Z",
+  "completedAt": "2026-03-03T14:42:42.533939Z",
+  "n_tests": 30,
+  "n_conditions": 4,
+  "total_api_calls": 120,
+  "n_errors": 0,
+  "condition_stats": {
+    "natural": {
+      "correct": 29,
+      "total": 30,
+      "accuracy": 0.9667,
+      "avg_tokens_bpe": 2502.8,
+      "avg_savings_bpe": 0.0,
+      "avg_latency_ms": 1512.8
+    },
+    "tscg_only": {
+      "correct": 28,
+      "total": 30,
+      "accuracy": 0.9333,
+      "avg_tokens_bpe": 629.8,
+      "avg_savings_bpe": 0.7484,
+      "avg_latency_ms": 1545.3
+    },
+    "llmlingua_only": {
+      "correct": 28,
+      "total": 30,
+      "accuracy": 0.9333,
+      "avg_tokens_bpe": 1230.9,
+      "avg_savings_bpe": 0.5082,
+      "avg_latency_ms": 3644.4
+    },
+    "tscg_llmlingua": {
+      "correct": 24,
+      "total": 30,
+      "accuracy": 0.8,
+      "avg_tokens_bpe": 260.5,
+      "avg_savings_bpe": 0.8959,
+      "avg_latency_ms": 1635.2
+    }
+  },
+  "category_stats": {
+    "Tool_SingleTool": {
+      "natural": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 2504.6
+      },
+      "tscg_only": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 631.6
+      },
+      "llmlingua_only": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 1232.5
+      },
+      "tscg_llmlingua": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 262.3
+      }
+    },
+    "Tool_MultiTool": {
+      "natural": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 2508.8
+      },
+      "tscg_only": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 635.8
+      },
+      "llmlingua_only": {
+        "correct": 7,
+        "total": 8,
+        "accuracy": 0.875,
+        "avg_tokens_bpe": 1233.1
+      },
+      "tscg_llmlingua": {
+        "correct": 7,
+        "total": 8,
+        "accuracy": 0.875,
+        "avg_tokens_bpe": 261.9
+      }
+    },
+    "Tool_Ambiguous": {
+      "natural": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 2500.4
+      },
+      "tscg_only": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 627.4
+      },
+      "llmlingua_only": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 1230.3
+      },
+      "tscg_llmlingua": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0,
+        "avg_tokens_bpe": 259.9
+      }
+    },
+    "Tool_NoTool": {
+      "natural": {
+        "correct": 4,
+        "total": 5,
+        "accuracy": 0.8,
+        "avg_tokens_bpe": 2493.0
+      },
+      "tscg_only": {
+        "correct": 3,
+        "total": 5,
+        "accuracy": 0.6,
+        "avg_tokens_bpe": 620.0
+      },
+      "llmlingua_only": {
+        "correct": 4,
+        "total": 5,
+        "accuracy": 0.8,
+        "avg_tokens_bpe": 1225.2
+      },
+      "tscg_llmlingua": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0,
+        "avg_tokens_bpe": 255.4
+      }
+    }
+  },
+  "v1_comparison": {
+    "note": "Comparing BPE-measured (v2) vs word-estimated (v1) token counts",
+    "v1_tscg_savings_word_est": 0.9058,
+    "v1_llmlingua_savings_word_est": 0.6062,
+    "v2_tscg_savings_bpe": 0.7484,
+    "v2_llmlingua_savings_bpe": 0.5082
+  },
+  "errors": []
+}

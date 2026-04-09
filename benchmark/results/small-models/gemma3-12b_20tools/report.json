@@ -1,0 +1,3796 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Gemma 3 12B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-03T15:03:02.864Z",
+    "end_time": "2026-03-03T15:09:38.141Z",
+    "duration_ms": 395277
+  },
+  "results": [
+    {
+      "result_id": "68970279-b37f-40cd-8e33-872dfc4e425b",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4715,
+        "output_tokens": 29,
+        "total_latency_ms": 1681,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:06.280Z"
+    },
+    {
+      "result_id": "7b4a2dc0-2324-4ad0-bc53-68e96adde1c1",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4725,
+        "output_tokens": 35,
+        "total_latency_ms": 1771,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:08.110Z"
+    },
+    {
+      "result_id": "88a0ddcd-1240-495d-8a0d-4bfb3a9962eb",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4721,
+        "output_tokens": 29,
+        "total_latency_ms": 1684,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:09.850Z"
+    },
+    {
+      "result_id": "dfd9bceb-8b14-4d09-a9b8-3cec54f00965",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 42,
+        "total_latency_ms": 1852,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:11.757Z"
+    },
+    {
+      "result_id": "47dd8afd-710e-4017-bbeb-9be6f2c9c43c",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\"}}\n```",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "latency_p99"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 37,
+        "total_latency_ms": 1793,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:13.608Z"
+    },
+    {
+      "result_id": "5fa6e3e5-9d0f-462c-b864-a7a14743cbbb",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 42
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4730,
+        "output_tokens": 36,
+        "total_latency_ms": 1777,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:15.443Z"
+    },
+    {
+      "result_id": "185faecb-f233-49af-a0b0-9f76e7412564",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 29,
+        "total_latency_ms": 1689,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:17.192Z"
+    },
+    {
+      "result_id": "6eb9025e-e4b4-480f-b808-c86faf084afc",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 29,
+        "total_latency_ms": 1682,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:18.932Z"
+    },
+    {
+      "result_id": "230c7fcd-5efc-4155-9a66-ffb3b9baf8a9",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4738,
+        "output_tokens": 35,
+        "total_latency_ms": 1768,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:20.757Z"
+    },
+    {
+      "result_id": "51d3d179-d079-4932-80dc-c9592357e73d",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"admin\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "admin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4746,
+        "output_tokens": 35,
+        "total_latency_ms": 1772,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:22.584Z"
+    },
+    {
+      "result_id": "fa285512-b827-49db-b2fb-0740d7e81928",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "my-bucket",
+            "max_results": 10
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4752,
+        "output_tokens": 40,
+        "total_latency_ms": 1829,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:24.472Z"
+    },
+    {
+      "result_id": "7ea1fa10-fc57-4331-b139-d14f92963eb7",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4775,
+        "output_tokens": 27,
+        "total_latency_ms": 1677,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:26.206Z"
+    },
+    {
+      "result_id": "0ec02d4c-b8ef-46f0-9c8e-0d0d3f72888a",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\"}}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4733,
+        "output_tokens": 42,
+        "total_latency_ms": 1856,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:28.125Z"
+    },
+    {
+      "result_id": "ccd4e39e-b577-4d66-8800-e5565f17471b",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4721,
+        "output_tokens": 36,
+        "total_latency_ms": 1772,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:29.954Z"
+    },
+    {
+      "result_id": "0a991aaf-dc53-4254-af2a-e9f0778b08d6",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"quarterly-report\", \"end\": \"config.json\", \"location\": \"config.json\", \"attendees\": [\"value1\",\"value2\"]}}\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "quarterly-report",
+            "end": "config.json",
+            "location": "config.json",
+            "attendees": [
+              "value1",
+              "value2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4763,
+        "output_tokens": 62,
+        "total_latency_ms": 2131,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:32.144Z"
+    },
+    {
+      "result_id": "609b0a0d-cf37-427a-b5a9-191bec1d52d7",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4748,
+        "output_tokens": 50,
+        "total_latency_ms": 1970,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:34.183Z"
+    },
+    {
+      "result_id": "3878ec27-065f-4070-a65d-94b77bb3288d",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I do not have the capability to answer that question. I am a tool assistant and do not have general knowledge.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 24,
+        "total_latency_ms": 1627,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:35.875Z"
+    },
+    {
+      "result_id": "11fbb492-790d-405e-a336-6653a5e8107b",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "My tools have several limitations, stemming from their design and the underlying systems they interact with. Here's a breakdown:\n\n**General Limitations:**\n\n*   **Real-time Data:** While some tools (like weather or order tracking) provide near real-time data, there's always a delay. The data isn't *instantaneous*.\n*   **Geographic Restrictions:** Some tools (especially those related to weather, location-based services, or financial transactions) might have geographic limitations. They may not function correctly or provide accurate results for all locations.\n*   **Rate Limits:** Each tool has rate limits to prevent abuse and ensure fair usage. If you make too many requests in a short period, you might encounter errors.\n*   **Data Accuracy:** The accuracy of the data returned by the tools depends on the accuracy of the underlying data sources. I cannot guarantee 100% accuracy.\n*   **Error Handling:** While I try to handle errors gracefully, unexpected issues can occur. The tools might return errors or incomplete results.\n*   **Complex Logic:** I am designed to execute single, well-defined tasks. I cannot handle complex, multi-step logic that requires combining the results of multiple tools in a sophisticated way without explicit instructions.\n*   **No Persistent State:** I don't retain information from previous interactions. Each request is treated as a new, independent query.\n\n**Specific Tool Limitations:**\n\n*   **`analytics_track_event`:** Limited to the properties defined in the function's parameters.  Cannot track arbitrary data.\n*   **`wx_get_air_quality`:** Accuracy depends on the availability of air quality data for the specified location.  May not be available for all areas.\n*   **`analytics_run_report`:** Limited to the pre-defined reports available.  Cannot create custom reports.\n*   **`auth_list_users`:**  May be restricted by access permissions.  Cannot list all users if I don't have the necessary privileges.\n*   **`analytics_create_dashboard`:** Limited to the widget types supported by the analytics platform.\n*   **`media_generate_thumbnail`:**  Thumbnail quality is dependent on the video quality and the timestamp selected.\n*   **`store_list_files`:** Limited to the accessible storage buckets and permissions.\n*   **`shop_track_order`:** Requires a valid order ID.  Tracking information is only available for orders that have been processed.\n*   **`comm_send_message`:**  Limited by the messaging platform's capabilities and restrictions (e.g., message length, recipient limits).\n*   **`media_resize_image`:**  Image quality may be reduced during resizing.\n*   **`auth_create_user`:**  Limited by account creation policies and restrictions.\n*   **`wx_get_current`:** Accuracy depends on the weather data provider.\n*   **`fin_process_payment`:** Subject to financial transaction limits and security protocols.\n*   **`auth_update_permissions`:** Requires appropriate administrative privileges.\n*   **`media_transcode_video`:** Transcoding time depends on video length and complexity.\n*   **`cal_find_free_time`:** Relies on the accuracy of calendar data.\n*   **`cal_create_event`:** Limited by calendar system capabilities and permissions.\n*   **`media_extract_audio`:** Audio quality depends on the original video's audio quality.\n*   **`ops_get_metrics`:** Limited to the available metrics and the granularity of the data.\n\n\n\nI am continuously being improved, and these limitations may change over time.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4705,
+        "output_tokens": 789,
+        "total_latency_ms": 11592,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:03:47.528Z"
+    },
+    {
+      "result_id": "d3ef01bc-e870-404b-99f4-cbeb030ab34a",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of common mistakes people make with version control (specifically, Git, as it's the most prevalent), categorized for clarity.\n\n**1. Basic Workflow & Commit Issues:**\n\n*   **Committing Too Frequently/Infrequently:**  Too frequent commits (e.g., every single keystroke) can clutter the history. Too infrequent commits (e.g., massive changesets) make it hard to understand what happened and to revert specific changes. Aim for logical units of work.\n*   **Poor Commit Messages:**  Vague commit messages like \"Fixed bug\" or \"Update\" are useless.  Good commit messages should briefly describe *what* changed and *why*.  A common convention is \"Subject line (50 chars max) \\n\\nBody (optional, explains the 'why')\"\n*   **Committing Secrets/Sensitive Data:** Accidentally committing API keys, passwords, or other sensitive information directly into the repository is a *major* security risk.  Use environment variables or dedicated secrets management tools.\n*   **Committing Large Binary Files:** Git is designed for text-based files.  Large binaries (images, videos, etc.) bloat the repository size and slow down operations.  Consider using Git LFS (Large File Storage) for these.\n*   **Not Staging Changes Properly:**  Forgetting to `git add` files before committing means changes won't be included.  Understanding the staging area is crucial.\n*   **Ignoring `.gitignore`:** Failing to use a `.gitignore` file leads to unnecessary files (build artifacts, temporary files) being tracked, polluting the repository.\n\n**2. Branching & Merging Issues:**\n\n*   **Not Branching:** Working directly on the `main` or `master` branch is a recipe for disaster. Branching allows for isolated development and experimentation.\n*   **Long-Lived Branches:** Branches that exist for extended periods become difficult to merge and increase the risk of conflicts.  Try to keep branches short-lived and merge them frequently.\n*   **Merge Conflicts:**  These are inevitable, but often poorly handled.  Not understanding how to resolve merge conflicts properly can lead to broken code.  Take the time to understand the changes and resolve them carefully.\n*   **Rebase vs. Merge (Misunderstanding):** Knowing when to use `rebase` (rewrites history) versus `merge` (preserves history) is important.  Rebasing can make history cleaner but can also cause issues if shared branches are involved.\n*   **Force Pushing:**  `git push --force` should be avoided unless you *really* know what you're doing. It rewrites history and can cause problems for collaborators.\n\n**3. History & Collaboration Issues:**\n\n*   **Rewriting History Publicly:**  Modifying commits on shared branches (using `rebase` or `commit --amend`) is generally a bad idea. It can confuse and disrupt other developers.\n*   **Not Pulling Regularly:**  Failing to `git pull` frequently leads to divergence and increased merge conflicts.\n*   **Ignoring Collaboration Guidelines:**  Not following team-established Git workflows (branching strategies, commit message conventions) creates chaos.\n*   **Assuming Git is a Backup:** Git is a version control system, not a backup solution.  It tracks changes, but it's not a substitute for proper backups.\n*   **Not Understanding `HEAD` and `detached HEAD` state:**  Being unaware of what `HEAD` represents and how to handle a detached `HEAD` state can lead to confusion and lost work.\n\n**4. Advanced/Less Common Mistakes:**\n\n*   **Incorrect Use of `git revert` vs. `git reset`:**  `git revert` creates a new commit that undoes changes, while `git reset` moves the branch pointer.  Using the wrong one can have unintended consequences.\n*   **Submodule Issues:**  Submodules can be powerful but are notoriously difficult to manage if not understood properly.\n*   **Ignoring Git Hooks:** Not leveraging Git hooks (scripts that run automatically on certain Git events) to enforce code quality or automate tasks.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   What's your level of experience with Git? (Beginner, Intermediate, Advanced)\n*   Are you working on a solo project or a team project?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 928,
+        "total_latency_ms": 13450,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:01.038Z"
+    },
+    {
+      "result_id": "25d291d9-d4b7-4ff1-be1a-bbf7a8f074d4",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of how software architecture has evolved over the last decade (roughly 2014-2024), hitting key trends and shifts. It's a complex topic, so I'll try to organize it into categories:\n\n**1. The Rise of Microservices (Early to Mid 2010s - Present)**\n\n*   **Before:** Monolithic architectures were common. While they had simplicity in development and deployment initially, they became unwieldy as applications grew.\n*   **The Shift:** Microservices emerged as a direct response to the limitations of monoliths. The idea is to break down an application into small, independently deployable services, each responsible for a specific business capability.\n*   **Impact:** Increased agility, faster development cycles, independent scaling, and technology diversity. However, it introduced complexities in distributed systems (service discovery, inter-service communication, eventual consistency, distributed tracing).\n*   **Current Status:** Microservices are still dominant, but the initial hype has subsided. Teams are now focusing on *practical* microservices, avoiding unnecessary decomposition and addressing operational challenges.  There's a growing recognition that microservices aren't a silver bullet and that simpler architectures might be better suited for some projects.\n\n**2. Cloud-Native Architectures (Mid 2010s - Present)**\n\n*   **Before:** Applications were often designed for on-premise infrastructure.\n*   **The Shift:** The rise of cloud platforms (AWS, Azure, Google Cloud) spurred the development of cloud-native architectures. These architectures are designed to take full advantage of cloud services.\n*   **Key Technologies:**\n    *   **Containers (Docker):**  Standardized packaging and deployment.\n    *   **Orchestration (Kubernetes):** Automated deployment, scaling, and management of containers.\n    *   **Serverless Computing (AWS Lambda, Azure Functions, Google Cloud Functions):**  Event-driven, pay-per-use execution of code.\n    *   **Managed Services:**  Leveraging cloud provider's managed databases, message queues, and other services.\n*   **Impact:** Increased scalability, resilience, and cost-efficiency.\n*   **Current Status:** Cloud-native is now the default for many new applications.  The focus is shifting towards optimizing cloud costs and improving observability in complex, distributed environments.\n\n**3. Event-Driven Architectures (EDA) (Mid 2010s - Present)**\n\n*   **Before:** Request-response architectures were the norm.\n*   **The Shift:** EDA gained prominence as a way to build loosely coupled, asynchronous systems. Services communicate through events, rather than direct calls.\n*   **Key Technologies:** Message queues (Kafka, RabbitMQ, AWS SQS), event streaming platforms.\n*   **Impact:** Improved scalability, resilience, and real-time capabilities.\n*   **Current Status:** EDA is increasingly integrated with microservices and cloud-native architectures.  Challenges include ensuring event ordering, handling failures, and managing event schemas.\n\n**4. Domain-Driven Design (DDD) (Resurgence - Late 2010s - Present)**\n\n*   **Before:** Architectural decisions were often driven by technology or implementation concerns.\n*   **The Shift:** DDD emphasizes aligning software design with the business domain.  It focuses on understanding the core business concepts and modeling the software accordingly.\n*   **Impact:** Improved communication between developers and business stakeholders, more maintainable and adaptable software.\n*   **Current Status:** DDD is now a widely recognized and applied architectural approach, particularly in complex domains.  It's often used in conjunction with microservices to define service boundaries.\n\n**5. API-First Design (Mid 2010s - Present)**\n\n*   **Before:** APIs were often an afterthought.\n*   **The Shift:** API-first design emphasizes designing APIs *before* implementing the underlying functionality.\n*   **Impact:** Improved developer experience, faster integration, and greater flexibility.\n*   **Current Status:** API-first is now a standard practice, with tools and frameworks to support API design and documentation.\n\n**6.  Architectural Patterns & Trends Emerging Now (2021-2024)**\n\n*   **Mesh Architectures (Service Mesh - Istio, Linkerd):**  Addressing the operational complexity of microservices by providing features like traffic management, security, and observability.\n*   **Data Mesh:** Decentralized data ownership and architecture, treating data as a product.\n*   **Serverless Durations:**  Optimizing serverless functions for longer-running tasks.\n*   **AI-Driven Architecture:** Using AI and machine learning to automate architectural decisions and optimize performance.\n*   **Composable Architectures:** Building applications from reusable components and APIs, promoting flexibility and innovation.\n*   **Edge Computing",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 1024,
+        "total_latency_ms": 14585,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:15.679Z"
+    },
+    {
+      "result_id": "867e37c8-022a-4612-8851-889bd2b05790",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4715,
+        "output_tokens": 29,
+        "total_latency_ms": 1681,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:17.416Z"
+    },
+    {
+      "result_id": "1bc32366-57f0-4208-ab1d-cc3c9485a8cb",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4725,
+        "output_tokens": 35,
+        "total_latency_ms": 1761,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:19.235Z"
+    },
+    {
+      "result_id": "f8e5ba59-007f-4f67-9ef7-94480bf5e223",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4721,
+        "output_tokens": 29,
+        "total_latency_ms": 1684,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:20.974Z"
+    },
+    {
+      "result_id": "9340b96a-8c2f-4ea4-bfb8-e2f1da18f512",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 42,
+        "total_latency_ms": 1856,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:22.894Z"
+    },
+    {
+      "result_id": "8b1f2622-7902-453d-960a-57c43a8735c4",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\"}}\n```",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "latency_p99"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 37,
+        "total_latency_ms": 1792,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:24.742Z"
+    },
+    {
+      "result_id": "b6d5c056-af55-43f2-8009-c28f9c61fe07",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 42
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4730,
+        "output_tokens": 36,
+        "total_latency_ms": 1794,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:26.595Z"
+    },
+    {
+      "result_id": "285b063b-eb29-4736-a497-44e9228ba4a8",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 29,
+        "total_latency_ms": 1684,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:28.336Z"
+    },
+    {
+      "result_id": "d65ed276-42d0-4504-936f-dab447282d2a",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 29,
+        "total_latency_ms": 1687,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:30.094Z"
+    },
+    {
+      "result_id": "2ce30603-0594-47ab-87d6-69674ceea937",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4738,
+        "output_tokens": 35,
+        "total_latency_ms": 1783,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:31.936Z"
+    },
+    {
+      "result_id": "ac8e996f-d469-4cf2-9c4d-5268be20e912",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"admin\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "admin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4746,
+        "output_tokens": 35,
+        "total_latency_ms": 1763,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:33.759Z"
+    },
+    {
+      "result_id": "2643e8eb-93d3-4482-a531-271a68ac9c01",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "my-bucket",
+            "max_results": 10
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4752,
+        "output_tokens": 40,
+        "total_latency_ms": 1834,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:35.653Z"
+    },
+    {
+      "result_id": "5aac7767-008f-415f-a823-49a57e91dedc",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4775,
+        "output_tokens": 27,
+        "total_latency_ms": 1675,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:37.389Z"
+    },
+    {
+      "result_id": "d7bd610e-7687-4944-9db9-6345596a6072",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\"}}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4733,
+        "output_tokens": 42,
+        "total_latency_ms": 1856,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:39.309Z"
+    },
+    {
+      "result_id": "360a8543-43ec-4026-8a44-4e3ec3555ec7",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4721,
+        "output_tokens": 36,
+        "total_latency_ms": 1778,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:41.147Z"
+    },
+    {
+      "result_id": "427629b1-883a-4da4-815e-f0267f40887c",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"quarterly-report\", \"end\": \"config.json\", \"location\": \"config.json\", \"attendees\": [\"value1\",\"value2\"]}}\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "quarterly-report",
+            "end": "config.json",
+            "location": "config.json",
+            "attendees": [
+              "value1",
+              "value2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4763,
+        "output_tokens": 62,
+        "total_latency_ms": 2114,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:43.325Z"
+    },
+    {
+      "result_id": "d3281c57-e3f4-4a70-a32a-666e12a1a98d",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4748,
+        "output_tokens": 50,
+        "total_latency_ms": 1955,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:45.341Z"
+    },
+    {
+      "result_id": "aad91f0f-51cf-446f-9b4d-76c30aee81e6",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I do not have the capability to answer that question. I am a tool assistant and do not have general knowledge.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 24,
+        "total_latency_ms": 1613,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:47.010Z"
+    },
+    {
+      "result_id": "6e4add27-98a8-4d20-a38d-55123bc3d999",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "My tools have several limitations, stemming from their design and the underlying systems they interact with. Here's a breakdown:\n\n**General Limitations:**\n\n*   **Real-time Data:** While some tools (like weather or order tracking) provide near real-time data, there's always a delay. The data isn't *instantaneous*.\n*   **Geographic Restrictions:** Some tools (especially those related to weather, location-based services, or financial transactions) might have geographic limitations. They may not function correctly or provide accurate results for all locations.\n*   **Rate Limits:** Each tool has rate limits to prevent abuse and ensure fair usage. If you make too many requests in a short period, you might encounter errors.\n*   **Data Accuracy:** The accuracy of the data returned by the tools depends on the accuracy of the underlying data sources. I cannot guarantee 100% accuracy.\n*   **Error Handling:** While I try to handle errors gracefully, unexpected issues can occur. The tools might return errors or incomplete results.\n*   **Complex Logic:** I am designed to execute single, well-defined tasks. I cannot handle complex, multi-step logic that requires combining the results of multiple tools in a sophisticated way without explicit instructions.\n*   **No Persistent State:** I don't retain information from previous interactions. Each request is treated as a new, independent query.\n\n**Specific Tool Limitations:**\n\n*   **`analytics_track_event`:** Limited to the properties defined in the function's parameters.  Cannot track arbitrary data.\n*   **`wx_get_air_quality`:** Accuracy depends on the availability of air quality data for the specified location.  May not be available for all areas.\n*   **`analytics_run_report`:** Limited to the pre-defined reports available.  Cannot create custom reports.\n*   **`auth_list_users`:**  May be restricted by access permissions.  Cannot list all users if I don't have the necessary privileges.\n*   **`analytics_create_dashboard`:** Limited to the widget types supported by the analytics platform.\n*   **`media_generate_thumbnail`:**  Thumbnail quality is dependent on the video quality and the timestamp selected.\n*   **`store_list_files`:** Limited to the accessible storage buckets and permissions.\n*   **`shop_track_order`:** Requires a valid order ID.  Tracking information is only available for orders that have been processed.\n*   **`comm_send_message`:**  Limited by the messaging platform's capabilities and restrictions (e.g., message length, recipient limits).\n*   **`media_resize_image`:**  Image quality may be reduced during resizing.\n*   **`auth_create_user`:**  Limited by account creation policies and restrictions.\n*   **`wx_get_current`:** Accuracy depends on the weather data provider.\n*   **`fin_process_payment`:** Subject to financial transaction limits and security protocols.\n*   **`auth_update_permissions`:** Requires appropriate administrative privileges.\n*   **`media_transcode_video`:** Transcoding time depends on video length and complexity.\n*   **`cal_find_free_time`:** Relies on the accuracy of calendar data.\n*   **`cal_create_event`:** Limited by calendar system capabilities and permissions.\n*   **`media_extract_audio`:** Audio quality depends on the original video's audio quality.\n*   **`ops_get_metrics`:** Limited to the available metrics and the granularity of the data.\n\n\n\nI am continuously being improved, and these limitations may change over time.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4705,
+        "output_tokens": 789,
+        "total_latency_ms": 11606,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:04:58.674Z"
+    },
+    {
+      "result_id": "7470bf36-8c6b-4809-b74a-90946c5a14a5",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of common mistakes people make with version control (specifically, Git, as it's the most prevalent), categorized for clarity.\n\n**1. Basic Workflow & Commit Issues:**\n\n*   **Committing Too Frequently/Infrequently:**  Too frequent commits (e.g., every single keystroke) can clutter the history. Too infrequent commits (e.g., massive changesets) make it hard to understand what happened and to revert specific changes. Aim for logical units of work.\n*   **Poor Commit Messages:**  Vague commit messages like \"Fixed bug\" or \"Update\" are useless.  Good commit messages should briefly describe *what* changed and *why*.  A common convention is \"Subject line (50 chars max) \\n\\nBody (optional, explains the 'why')\"\n*   **Committing Secrets/Sensitive Data:** Accidentally committing API keys, passwords, or other sensitive information directly into the repository is a *major* security risk.  Use environment variables or dedicated secrets management tools.\n*   **Committing Large Binary Files:** Git is designed for text-based files.  Large binaries (images, videos, etc.) bloat the repository size and slow down operations.  Consider using Git LFS (Large File Storage) for these.\n*   **Not Staging Changes Properly:**  Forgetting to `git add` files before committing means changes won't be included.  Understanding the staging area is crucial.\n*   **Ignoring `.gitignore`:** Failing to use a `.gitignore` file leads to unnecessary files (build artifacts, temporary files) being tracked, polluting the repository.\n\n**2. Branching & Merging Issues:**\n\n*   **Not Branching:** Working directly on the `main` or `master` branch is a recipe for disaster. Branching allows for isolated development and experimentation.\n*   **Long-Lived Branches:** Branches that exist for extended periods become difficult to merge and increase the risk of conflicts.  Try to keep branches short-lived and merge them frequently.\n*   **Merge Conflicts:**  These are inevitable, but often poorly handled.  Not understanding how to resolve merge conflicts properly can lead to broken code.  Take the time to understand the changes and resolve them carefully.\n*   **Rebase vs. Merge (Misunderstanding):** Knowing when to use `rebase` (rewrites history) versus `merge` (preserves history) is important.  Rebasing can make history cleaner but can also cause issues if shared branches are involved.\n*   **Force Pushing:**  `git push --force` should be avoided unless you *really* know what you're doing. It rewrites history and can cause problems for collaborators.\n\n**3. History & Collaboration Issues:**\n\n*   **Rewriting History Publicly:**  Modifying commits on shared branches (using `rebase` or `commit --amend`) is generally a bad idea. It can confuse and disrupt other developers.\n*   **Not Pulling Regularly:**  Failing to `git pull` frequently leads to divergence and increased merge conflicts.\n*   **Ignoring Collaboration Guidelines:**  Not following team-established Git workflows (branching strategies, commit message conventions) creates chaos.\n*   **Assuming Git is a Backup:** Git is a version control system, not a backup solution.  It tracks changes, but it's not a substitute for proper backups.\n*   **Not Understanding `HEAD` and `detached HEAD` state:**  Being unaware of what `HEAD` represents and how to handle a detached `HEAD` state can lead to confusion and lost work.\n\n**4. Advanced/Less Common Mistakes:**\n\n*   **Incorrect Use of `git revert` vs. `git reset`:**  `git revert` creates a new commit that undoes changes, while `git reset` moves the branch pointer.  Using the wrong one can have unintended consequences.\n*   **Submodule Issues:**  Submodules can be powerful but are notoriously difficult to manage if not understood properly.\n*   **Ignoring Git Hooks:** Not leveraging Git hooks (scripts that run automatically on certain Git events) to enforce code quality or automate tasks.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   What's your level of experience with Git? (Beginner, Intermediate, Advanced)\n*   Are you working on a solo project or a team project?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 928,
+        "total_latency_ms": 13568,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:12.297Z"
+    },
+    {
+      "result_id": "e7240e34-726f-4115-81fb-0b0ea721e3ec",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of how software architecture has evolved over the last decade (roughly 2014-2024), hitting key trends and shifts. It's a complex topic, so I'll try to organize it into categories:\n\n**1. The Rise of Microservices (Early to Mid 2010s - Present)**\n\n*   **Before:** Monolithic architectures were common. While they had simplicity in development and deployment initially, they became unwieldy as applications grew.\n*   **The Shift:** Microservices emerged as a direct response to the limitations of monoliths. The idea is to break down an application into small, independently deployable services, each responsible for a specific business capability.\n*   **Impact:** Increased agility, faster development cycles, independent scaling, and technology diversity. However, it introduced complexities in distributed systems (service discovery, inter-service communication, eventual consistency, distributed tracing).\n*   **Current Status:** Microservices are still dominant, but the initial hype has subsided. Teams are now focusing on *practical* microservices, avoiding unnecessary decomposition and addressing operational challenges.  There's a growing recognition that microservices aren't a silver bullet and that simpler architectures might be better suited for some projects.\n\n**2. Cloud-Native Architectures (Mid 2010s - Present)**\n\n*   **Before:** Applications were often designed for on-premise infrastructure.\n*   **The Shift:** The rise of cloud platforms (AWS, Azure, Google Cloud) spurred the development of cloud-native architectures. These architectures are designed to take full advantage of cloud services.\n*   **Key Technologies:**\n    *   **Containers (Docker):**  Standardized packaging and deployment.\n    *   **Orchestration (Kubernetes):** Automated deployment, scaling, and management of containers.\n    *   **Serverless Computing (AWS Lambda, Azure Functions, Google Cloud Functions):**  Event-driven, pay-per-use execution of code.\n    *   **Managed Services:**  Leveraging cloud provider's managed databases, message queues, and other services.\n*   **Impact:** Increased scalability, resilience, and cost-efficiency.\n*   **Current Status:** Cloud-native is now the default for many new applications.  The focus is shifting towards optimizing cloud costs and improving observability in complex, distributed environments.\n\n**3. Event-Driven Architectures (EDA) (Mid 2010s - Present)**\n\n*   **Before:** Request-response architectures were the norm.\n*   **The Shift:** EDA gained prominence as a way to build loosely coupled, asynchronous systems. Services communicate through events, rather than direct calls.\n*   **Key Technologies:** Message queues (Kafka, RabbitMQ, AWS SQS), event streaming platforms.\n*   **Impact:** Improved scalability, resilience, and real-time capabilities.\n*   **Current Status:** EDA is increasingly integrated with microservices and cloud-native architectures.  Challenges include ensuring event ordering, handling failures, and managing event schemas.\n\n**4. Domain-Driven Design (DDD) (Resurgence - Late 2010s - Present)**\n\n*   **Before:** Architectural decisions were often driven by technology or implementation concerns.\n*   **The Shift:** DDD emphasizes aligning software design with the business domain.  It focuses on understanding the core business concepts and modeling the software accordingly.\n*   **Impact:** Improved communication between developers and business stakeholders, more maintainable and adaptable software.\n*   **Current Status:** DDD is now a widely recognized and applied architectural approach, particularly in complex domains.  It's often used in conjunction with microservices to define service boundaries.\n\n**5. API-First Design (Mid 2010s - Present)**\n\n*   **Before:** APIs were often an afterthought.\n*   **The Shift:** API-first design emphasizes designing APIs *before* implementing the underlying functionality.\n*   **Impact:** Improved developer experience, faster integration, and greater flexibility.\n*   **Current Status:** API-first is now a standard practice, with tools and frameworks to support API design and documentation.\n\n**6.  Architectural Patterns & Trends Emerging Now (2021-2024)**\n\n*   **Mesh Architectures (Service Mesh - Istio, Linkerd):**  Addressing the operational complexity of microservices by providing features like traffic management, security, and observability.\n*   **Data Mesh:** Decentralized data ownership and architecture, treating data as a product.\n*   **Serverless Durations:**  Optimizing serverless functions for longer-running tasks.\n*   **AI-Driven Architecture:** Using AI and machine learning to automate architectural decisions and optimize performance.\n*   **Composable Architectures:** Building applications from reusable components and APIs, promoting flexibility and innovation.\n*   **Edge Computing",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 1024,
+        "total_latency_ms": 14746,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:27.108Z"
+    },
+    {
+      "result_id": "713f1425-86fa-43b8-b388-91f99fa1e2c7",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4715,
+        "output_tokens": 29,
+        "total_latency_ms": 1678,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:28.846Z"
+    },
+    {
+      "result_id": "fec01873-9c92-43c5-a36f-5a7ccf721a7f",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4725,
+        "output_tokens": 35,
+        "total_latency_ms": 1753,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:30.660Z"
+    },
+    {
+      "result_id": "9b4b54bc-6f2d-45c4-a63f-5422455c9f3a",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4721,
+        "output_tokens": 29,
+        "total_latency_ms": 1682,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:32.399Z"
+    },
+    {
+      "result_id": "985a04af-acf6-4240-bf34-f9c3b345cecd",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"], \"shared\": false}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 42,
+        "total_latency_ms": 1857,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:34.320Z"
+    },
+    {
+      "result_id": "c87edf71-79b1-4992-a4ba-dc2b338219c7",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\"}}\n```",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "latency_p99"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 37,
+        "total_latency_ms": 1790,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:36.168Z"
+    },
+    {
+      "result_id": "0f04a28b-fe1e-495d-abb3-5bf4f8fca8b8",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}\n```",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 42
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4730,
+        "output_tokens": 36,
+        "total_latency_ms": 1770,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:37.998Z"
+    },
+    {
+      "result_id": "5ecef1a1-d2f9-4e73-8dc7-df7b1c986283",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 29,
+        "total_latency_ms": 1678,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:39.731Z"
+    },
+    {
+      "result_id": "f44dc049-385c-46dd-ba8d-eabd6a75f2f7",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4729,
+        "output_tokens": 29,
+        "total_latency_ms": 1692,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:41.490Z"
+    },
+    {
+      "result_id": "4658a68c-2d98-4709-9054-89ef9cf1b891",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4738,
+        "output_tokens": 35,
+        "total_latency_ms": 1761,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:43.312Z"
+    },
+    {
+      "result_id": "52c73b81-1284-4c0e-a066-a996dbdf2e31",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"admin\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "admin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4746,
+        "output_tokens": 35,
+        "total_latency_ms": 1767,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:45.134Z"
+    },
+    {
+      "result_id": "3cb5be4f-c4c2-4061-8bf6-1c5f8e936e06",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "",
+            "bucket": "my-bucket",
+            "max_results": 10
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4752,
+        "output_tokens": 40,
+        "total_latency_ms": 1846,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:47.043Z"
+    },
+    {
+      "result_id": "a32fbdf5-d83f-4d27-adcc-dca04c50f8e5",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 4775,
+        "output_tokens": 27,
+        "total_latency_ms": 1671,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:48.774Z"
+    },
+    {
+      "result_id": "418c5e79-a423-4506-b7e4-13b4ad0e9b88",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\"}}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4733,
+        "output_tokens": 42,
+        "total_latency_ms": 1852,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:50.689Z"
+    },
+    {
+      "result_id": "7ecbf4e0-8847-49f9-a7d6-b610bb93e60c",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4721,
+        "output_tokens": 36,
+        "total_latency_ms": 1787,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:52.536Z"
+    },
+    {
+      "result_id": "1c5c3ee9-7261-464c-a60f-e004fb9e7b8d",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"quarterly-report\", \"end\": \"config.json\", \"location\": \"config.json\", \"attendees\": [\"value1\",\"value2\"]}}\n```",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "quarterly-report",
+            "end": "config.json",
+            "location": "config.json",
+            "attendees": [
+              "value1",
+              "value2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4763,
+        "output_tokens": 62,
+        "total_latency_ms": 2121,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:54.717Z"
+    },
+    {
+      "result_id": "d81c6f9f-745b-47ec-807c-6922047b7270",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 4748,
+        "output_tokens": 50,
+        "total_latency_ms": 1958,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:56.738Z"
+    },
+    {
+      "result_id": "184b5d74-510a-47b9-adf2-cc0f04fbf376",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I do not have the capability to answer that question. I am a tool assistant and do not have general knowledge.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 24,
+        "total_latency_ms": 1621,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:05:58.417Z"
+    },
+    {
+      "result_id": "297daece-5765-4b6e-807f-6dc155a680de",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "My tools have several limitations, stemming from their design and the underlying systems they interact with. Here's a breakdown:\n\n**General Limitations:**\n\n*   **Real-time Data:** While some tools (like weather or order tracking) provide near real-time data, there's always a delay. The data isn't *instantaneous*.\n*   **Geographic Restrictions:** Some tools (especially those related to weather, location-based services, or financial transactions) might have geographic limitations. They may not function correctly or provide accurate results for all locations.\n*   **Rate Limits:** Each tool has rate limits to prevent abuse and ensure fair usage. If you make too many requests in a short period, you might encounter errors.\n*   **Data Accuracy:** The accuracy of the data returned by the tools depends on the accuracy of the underlying data sources. I cannot guarantee 100% accuracy.\n*   **Error Handling:** While I try to handle errors gracefully, unexpected issues can occur. The tools might return errors or incomplete results.\n*   **Complex Logic:** I am designed to execute single, well-defined tasks. I cannot handle complex, multi-step logic that requires combining the results of multiple tools in a sophisticated way without explicit instructions.\n*   **No Persistent State:** I don't retain information from previous interactions. Each request is treated as a new, independent query.\n\n**Specific Tool Limitations:**\n\n*   **`analytics_track_event`:** Limited to the properties defined in the function's parameters.  Cannot track arbitrary data.\n*   **`wx_get_air_quality`:** Accuracy depends on the availability of air quality data for the specified location.  May not be available for all areas.\n*   **`analytics_run_report`:** Limited to the pre-defined reports available.  Cannot create custom reports.\n*   **`auth_list_users`:**  May be restricted by access permissions.  Cannot list all users if I don't have the necessary privileges.\n*   **`analytics_create_dashboard`:** Limited to the widget types supported by the analytics platform.\n*   **`media_generate_thumbnail`:**  Thumbnail quality is dependent on the video quality and the timestamp selected.\n*   **`store_list_files`:** Limited to the accessible storage buckets and permissions.\n*   **`shop_track_order`:** Requires a valid order ID.  Tracking information is only available for orders that have been processed.\n*   **`comm_send_message`:**  Limited by the messaging platform's capabilities and restrictions (e.g., message length, recipient limits).\n*   **`media_resize_image`:**  Image quality may be reduced during resizing.\n*   **`auth_create_user`:**  Limited by account creation policies and restrictions.\n*   **`wx_get_current`:** Accuracy depends on the weather data provider.\n*   **`fin_process_payment`:** Subject to financial transaction limits and security protocols.\n*   **`auth_update_permissions`:** Requires appropriate administrative privileges.\n*   **`media_transcode_video`:** Transcoding time depends on video length and complexity.\n*   **`cal_find_free_time`:** Relies on the accuracy of calendar data.\n*   **`cal_create_event`:** Limited by calendar system capabilities and permissions.\n*   **`media_extract_audio`:** Audio quality depends on the original video's audio quality.\n*   **`ops_get_metrics`:** Limited to the available metrics and the granularity of the data.\n\n\n\nI am continuously being improved, and these limitations may change over time.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4705,
+        "output_tokens": 789,
+        "total_latency_ms": 11551,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:10.024Z"
+    },
+    {
+      "result_id": "2e856ae7-302b-47a9-bc37-98e51ca34ea4",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of common mistakes people make with version control (specifically, Git, as it's the most prevalent), categorized for clarity.\n\n**1. Basic Workflow & Commit Issues:**\n\n*   **Committing Too Frequently/Infrequently:**  Too frequent commits (e.g., every single keystroke) can clutter the history. Too infrequent commits (e.g., massive changesets) make it hard to understand what happened and to revert specific changes. Aim for logical units of work.\n*   **Poor Commit Messages:**  Vague commit messages like \"Fixed bug\" or \"Update\" are useless.  Good commit messages should briefly describe *what* changed and *why*.  A common convention is \"Subject line (50 chars max) \\n\\nBody (optional, explains the 'why')\"\n*   **Committing Secrets/Sensitive Data:** Accidentally committing API keys, passwords, or other sensitive information directly into the repository is a *major* security risk.  Use environment variables or dedicated secrets management tools.\n*   **Committing Large Binary Files:** Git is designed for text-based files.  Large binaries (images, videos, etc.) bloat the repository size and slow down operations.  Consider using Git LFS (Large File Storage) for these.\n*   **Not Staging Changes Properly:**  Forgetting to `git add` files before committing means changes won't be included.  Understanding the staging area is crucial.\n*   **Ignoring `.gitignore`:** Failing to use a `.gitignore` file leads to unnecessary files (build artifacts, temporary files) being tracked, polluting the repository.\n\n**2. Branching & Merging Issues:**\n\n*   **Not Branching:** Working directly on the `main` or `master` branch is a recipe for disaster. Branching allows for isolated development and experimentation.\n*   **Long-Lived Branches:** Branches that exist for extended periods become difficult to merge and increase the risk of conflicts.  Try to keep branches short-lived and merge them frequently.\n*   **Merge Conflicts:**  These are inevitable, but often poorly handled.  Not understanding how to resolve merge conflicts properly can lead to broken code.  Take the time to understand the changes and resolve them carefully.\n*   **Rebase vs. Merge (Misunderstanding):** Knowing when to use `rebase` (rewrites history) versus `merge` (preserves history) is important.  Rebasing can make history cleaner but can also cause issues if shared branches are involved.\n*   **Force Pushing:**  `git push --force` should be avoided unless you *really* know what you're doing. It rewrites history and can cause problems for collaborators.\n\n**3. History & Collaboration Issues:**\n\n*   **Rewriting History Publicly:**  Modifying commits on shared branches (using `rebase` or `commit --amend`) is generally a bad idea. It can confuse and disrupt other developers.\n*   **Not Pulling Regularly:**  Failing to `git pull` frequently leads to divergence and increased merge conflicts.\n*   **Ignoring Collaboration Guidelines:**  Not following team-established Git workflows (branching strategies, commit message conventions) creates chaos.\n*   **Assuming Git is a Backup:** Git is a version control system, not a backup solution.  It tracks changes, but it's not a substitute for proper backups.\n*   **Not Understanding `HEAD` and `detached HEAD` state:**  Being unaware of what `HEAD` represents and how to handle a detached `HEAD` state can lead to confusion and lost work.\n\n**4. Advanced/Less Common Mistakes:**\n\n*   **Incorrect Use of `git revert` vs. `git reset`:**  `git revert` creates a new commit that undoes changes, while `git reset` moves the branch pointer.  Using the wrong one can have unintended consequences.\n*   **Submodule Issues:**  Submodules can be powerful but are notoriously difficult to manage if not understood properly.\n*   **Ignoring Git Hooks:** Not leveraging Git hooks (scripts that run automatically on certain Git events) to enforce code quality or automate tasks.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   What's your level of experience with Git? (Beginner, Intermediate, Advanced)\n*   Are you working on a solo project or a team project?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 928,
+        "total_latency_ms": 13373,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:23.459Z"
+    },
+    {
+      "result_id": "7a493e97-b4cb-493e-b391-46ffb0516c4e",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of how software architecture has evolved over the last decade (roughly 2014-2024), hitting key trends and shifts. It's a complex topic, so I'll try to organize it into categories:\n\n**1. The Rise of Microservices (Early to Mid 2010s - Present)**\n\n*   **Before:** Monolithic architectures were common. While they had simplicity in development and deployment initially, they became unwieldy as applications grew.\n*   **The Shift:** Microservices emerged as a direct response to the limitations of monoliths. The idea is to break down an application into small, independently deployable services, each responsible for a specific business capability.\n*   **Impact:** Increased agility, faster development cycles, independent scaling, and technology diversity. However, it introduced complexities in distributed systems (service discovery, inter-service communication, eventual consistency, distributed tracing).\n*   **Current Status:** Microservices are still dominant, but the initial hype has subsided. Teams are now focusing on *practical* microservices, avoiding unnecessary decomposition and addressing operational challenges.  There's a growing recognition that microservices aren't a silver bullet and that simpler architectures might be better suited for some projects.\n\n**2. Cloud-Native Architectures (Mid 2010s - Present)**\n\n*   **Before:** Applications were often designed for on-premise infrastructure.\n*   **The Shift:** The rise of cloud platforms (AWS, Azure, Google Cloud) spurred the development of cloud-native architectures. These architectures are designed to take full advantage of cloud services.\n*   **Key Technologies:**\n    *   **Containers (Docker):**  Standardized packaging and deployment.\n    *   **Orchestration (Kubernetes):** Automated deployment, scaling, and management of containers.\n    *   **Serverless Computing (AWS Lambda, Azure Functions, Google Cloud Functions):**  Event-driven, pay-per-use execution of code.\n    *   **Managed Services:**  Leveraging cloud provider's managed databases, message queues, and other services.\n*   **Impact:** Increased scalability, resilience, and cost-efficiency.\n*   **Current Status:** Cloud-native is now the default for many new applications.  The focus is shifting towards optimizing cloud costs and improving observability in complex, distributed environments.\n\n**3. Event-Driven Architectures (EDA) (Mid 2010s - Present)**\n\n*   **Before:** Request-response architectures were the norm.\n*   **The Shift:** EDA gained prominence as a way to build loosely coupled, asynchronous systems. Services communicate through events, rather than direct calls.\n*   **Key Technologies:** Message queues (Kafka, RabbitMQ, AWS SQS), event streaming platforms.\n*   **Impact:** Improved scalability, resilience, and real-time capabilities.\n*   **Current Status:** EDA is increasingly integrated with microservices and cloud-native architectures.  Challenges include ensuring event ordering, handling failures, and managing event schemas.\n\n**4. Domain-Driven Design (DDD) (Resurgence - Late 2010s - Present)**\n\n*   **Before:** Architectural decisions were often driven by technology or implementation concerns.\n*   **The Shift:** DDD emphasizes aligning software design with the business domain.  It focuses on understanding the core business concepts and modeling the software accordingly.\n*   **Impact:** Improved communication between developers and business stakeholders, more maintainable and adaptable software.\n*   **Current Status:** DDD is now a widely recognized and applied architectural approach, particularly in complex domains.  It's often used in conjunction with microservices to define service boundaries.\n\n**5. API-First Design (Mid 2010s - Present)**\n\n*   **Before:** APIs were often an afterthought.\n*   **The Shift:** API-first design emphasizes designing APIs *before* implementing the underlying functionality.\n*   **Impact:** Improved developer experience, faster integration, and greater flexibility.\n*   **Current Status:** API-first is now a standard practice, with tools and frameworks to support API design and documentation.\n\n**6.  Architectural Patterns & Trends Emerging Now (2021-2024)**\n\n*   **Mesh Architectures (Service Mesh - Istio, Linkerd):**  Addressing the operational complexity of microservices by providing features like traffic management, security, and observability.\n*   **Data Mesh:** Decentralized data ownership and architecture, treating data as a product.\n*   **Serverless Durations:**  Optimizing serverless functions for longer-running tasks.\n*   **AI-Driven Architecture:** Using AI and machine learning to automate architectural decisions and optimize performance.\n*   **Composable Architectures:** Building applications from reusable components and APIs, promoting flexibility and innovation.\n*   **Edge Computing",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 4708,
+        "output_tokens": 1024,
+        "total_latency_ms": 14617,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:38.142Z"
+    },
+    {
+      "result_id": "3ad03c24-5318-4e5c-a783-7be307816fc1",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1623,
+        "output_tokens": 33,
+        "total_latency_ms": 968,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:39.180Z"
+    },
+    {
+      "result_id": "a3391518-70d3-48f9-acfb-1c7b6d4ad879",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1633,
+        "output_tokens": 30,
+        "total_latency_ms": 925,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:40.167Z"
+    },
+    {
+      "result_id": "89bb4edd-44e9-466c-8500-bc1a0835ed11",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": true, \"locale\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": true,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1629,
+        "output_tokens": 39,
+        "total_latency_ms": 1038,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:41.260Z"
+    },
+    {
+      "result_id": "d0678209-9f1d-439f-b39a-0f9d48a35d38",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 33,
+        "total_latency_ms": 964,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:42.280Z"
+    },
+    {
+      "result_id": "9b1756e9-ddff-49ab-9ce5-724bf6682d8d",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\", \"window\": \"1h\"}}",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "latency_p99",
+            "window": "1h"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 39,
+        "total_latency_ms": 1041,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:43.379Z"
+    },
+    {
+      "result_id": "3024b1d0-678d-4284-9be9-61224371eaf7",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 42
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1638,
+        "output_tokens": 31,
+        "total_latency_ms": 935,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:44.372Z"
+    },
+    {
+      "result_id": "53f54525-8d89-4f8f-8400-ab73edb7815f",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 24,
+        "total_latency_ms": 847,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:45.288Z"
+    },
+    {
+      "result_id": "bf0ae6bd-ad0c-4021-9aee-f452f9d96850",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "00:00:10",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 45,
+        "total_latency_ms": 1117,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:46.470Z"
+    },
+    {
+      "result_id": "4c8750fb-de58-42db-abb9-42110aa86d42",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1646,
+        "output_tokens": 54,
+        "total_latency_ms": 1231,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:47.758Z"
+    },
+    {
+      "result_id": "d04643f9-043d-46a4-a3d2-9050527e2f5e",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"admin\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_update_permissions",
+            "arguments": {
+              "user_id": "example_value",
+              "role": "admin"
+            }
+          },
+          {
+            "name": "fin_create_invoice",
+            "arguments": {
+              "customer_id": "example_value",
+              "items": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1654,
+        "output_tokens": 65,
+        "total_latency_ms": 1373,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:49.187Z"
+    },
+    {
+      "result_id": "c072698c-626f-482d-aaba-e0e689d82268",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\", \"window\": \"1h\"}}\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}",
+        "parsed_sequence": [
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "prefix": "",
+              "bucket": "my-bucket",
+              "max_results": 10
+            }
+          },
+          {
+            "name": "ops_get_metrics",
+            "arguments": {
+              "service": "example_value",
+              "metric": "latency_p99",
+              "window": "1h"
+            }
+          },
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.43333333333333335,
+        "overall": 0.43333333333333335
+      },
+      "metrics": {
+        "input_tokens": 1660,
+        "output_tokens": 110,
+        "total_latency_ms": 1943,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:51.200Z"
+    },
+    {
+      "result_id": "9a33ed28-f19c-46d0-b841-54dc65c1244c",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 56, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "cal_find_free_time",
+            "arguments": {
+              "participants": [
+                "item1",
+                "item2"
+              ],
+              "duration_minutes": 56,
+              "start_date": "example_value",
+              "end_date": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1683,
+        "output_tokens": 107,
+        "total_latency_ms": 1909,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:53.169Z"
+    },
+    {
+      "result_id": "eb5f8a93-daf3-41b3-96ed-027fc1116fa7",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\", \"method\": \"bank_transfer\", \"reference\": \"test\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production",
+            "method": "bank_transfer",
+            "reference": "test"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.7499999999999999,
+        "overall": 0.8999999999999999
+      },
+      "metrics": {
+        "input_tokens": 1641,
+        "output_tokens": 51,
+        "total_latency_ms": 1195,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:54.430Z"
+    },
+    {
+      "result_id": "5de1a9ed-58ab-42ba-b07f-00a6f9a87d86",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1629,
+        "output_tokens": 31,
+        "total_latency_ms": 930,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:55.417Z"
+    },
+    {
+      "result_id": "45f19c6b-fd54-46eb-aed2-74b9b60677be",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"quarterly-report\", \"end\": \"config.json\", \"location\": \"config.json\", \"attendees\": [\"value1\",\"value2\"]}}",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "quarterly-report",
+            "end": "config.json",
+            "location": "config.json",
+            "attendees": [
+              "value1",
+              "value2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1671,
+        "output_tokens": 57,
+        "total_latency_ms": 1280,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:56.755Z"
+    },
+    {
+      "result_id": "e03c5a0b-a889-47d3-bd8a-fc96e31c82fe",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1656,
+        "output_tokens": 45,
+        "total_latency_ms": 1115,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:57.926Z"
+    },
+    {
+      "result_id": "94dc5d12-31a8-4245-bba4-09fa85d043c0",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is approximately 299,792,458 meters per second (m/s).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 30,
+        "total_latency_ms": 919,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:06:58.906Z"
+    },
+    {
+      "result_id": "041d5c91-6764-475e-bb11-a5fc60f1a874",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "My tools have several limitations, which stem from their design and the underlying systems they interact with. Here's a breakdown:\n\n**General Limitations:**\n\n*   **Real-time Data:** Most tools operate on data that has a slight delay. \"Real-time\" is relative; there's usually a few seconds to minutes of latency depending on the tool and the data source.\n*   **Data Accuracy:** The accuracy of the data returned by the tools depends on the accuracy of the underlying data sources. I cannot guarantee 100% accuracy.\n*   **Rate Limits:** Each tool has rate limits to prevent abuse and ensure system stability. If you make too many requests in a short period, you might receive errors.\n*   **Error Handling:** While I attempt to handle errors gracefully, some errors are beyond my control. The tools might return error messages that require manual intervention.\n*   **Complex Logic:** I am designed to execute specific tasks. I cannot handle complex, multi-step logic that requires reasoning or decision-making beyond the tool's capabilities.\n*   **Context Window:** I have a limited context window. Long conversations or complex requests might exceed this window, leading to loss of context.\n\n**Tool-Specific Limitations:**\n\n*   **analytics\\_track\\_event:**\n    *   Limited to predefined event names and properties. Custom event names or properties might not be supported.\n    *   User ID is required for attribution.\n*   **analytics\\_run\\_report:**\n    *   Report templates are pre-defined. Custom report creation is not possible.\n    *   Date range options are limited (e.g., last 7 days, last 30 days, custom).\n    *   Filtering options depend on the specific report template.\n*   **analytics\\_create\\_dashboard:**\n    *   Widget configurations are limited to predefined types.\n    *   Dashboard sharing is restricted to team access.\n*   **store\\_list\\_files:**\n    *   File listing is limited by the storage provider's API.\n    *   Prefix filtering is case-sensitive.\n*   **comm\\_send\\_message:**\n    *   Message content is limited in length.\n    *   Supports basic Markdown formatting only.\n    *   Recipient must be a valid user ID, email, or channel name.\n*   **auth\\_create\\_user:**\n    *   Password complexity requirements are enforced by the underlying system.\n    *   User creation is subject to account limits.\n*   **fin\\_process\\_payment:**\n    *   Payment methods are limited to the supported options (bank transfer, credit card, PayPal, crypto).\n    *   Transaction limits apply based on the payment method and recipient.\n*   **fin\\_create\\_invoice:**\n    *   Invoice currency is limited to supported currencies.\n    *   Line item details must adhere to predefined formats.\n*   **media\\_transcode\\_video:**\n    *   Supported input and output formats are limited.\n    *   Resolution and bitrate options are constrained by the transcoding engine.\n*   **media\\_extract\\_audio:**\n    *   Supported audio output formats are limited.\n    *   Extraction might fail for certain video codecs.\n*   **ops\\_get\\_metrics:**\n    *   Available metrics depend on the service being monitored.\n    *   Time window granularity is limited.\n*   **cal\\_create\\_event:**\n    *   Event details must adhere to ISO 8601 datetime format.\n    *   Attendee email addresses must be valid.\n*   **cal\\_find\\_free\\_time:**\n    *   Availability data depends on the calendars being checked.\n    *   Finding free time can be computationally expensive for large groups.\n*   **auth\\_update\\_permissions:**\n    *   Role assignments are limited to predefined roles.\n    *   Resource scopes must be valid and supported.\n*   **wx\\_get\\_current:**\n    *   Weather data availability depends on the location.\n    *   Accuracy of weather forecasts is subject to limitations.\n*   **media\\_resize\\_image:**\n    *   Image resizing might introduce quality loss.\n    *   Supported image formats are limited.\n*   **shop\\_track\\_order:**\n    *   Order tracking information is dependent on the carrier's data.\n    *   Tracking history might be incomplete.\n*   **media\\_generate\\_thumbnail:**\n    *   Thumbnail generation might fail for certain video formats.\n    *   Timestamp must be in the specified format.\n*   **auth\\_list\\_users:**\n    *   Filtering options are limited to role, status, and search.\n*   **wx\\_get\\_air\\_quality:**\n    *   Air quality data availability depends on the location.\n    *   Accuracy of air quality readings is subject",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1613,
+        "output_tokens": 1024,
+        "total_latency_ms": 13612,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:12.589Z"
+    },
+    {
+      "result_id": "2f2ffc24-6f76-475e-9b7b-2595942da083",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of common version control mistakes, categorized for clarity. I'll focus on Git, as it's the most prevalent system.\n\n**1. Basic Workflow Errors:**\n\n*   **Committing Too Frequently/Infrequently:** Both extremes are problematic. Too frequent commits (e.g., every keystroke) create a noisy history. Too infrequent commits (e.g., massive changesets) make debugging and reverting difficult. Aim for logical units of work.\n*   **Large, Unfocused Commits:**  Similar to infrequent commits, large commits are hard to review and understand. Break down changes into smaller, logical chunks.  A good commit should address a single, well-defined task.\n*   **Not Writing Good Commit Messages:**  Commit messages are crucial for understanding *why* changes were made.  \"Fixed bug\" or \"Updated code\" are useless.  Use a clear, concise format (e.g., \"Fix: Resolved issue with user authentication\").  A good commit message has a subject line (50 characters or less) and an optional body explaining the details.\n*   **Committing Secrets/Sensitive Data:** Accidentally committing API keys, passwords, or other sensitive information is a *major* security risk.  Use `.gitignore` files to exclude sensitive files and be extremely careful about what you commit.  Tools like `git-secrets` can help prevent this.\n*   **Ignoring `.gitignore`:** Failing to properly configure `.gitignore` leads to unnecessary files (build artifacts, IDE settings) being tracked, cluttering the repository.\n*   **Directly Modifying `main`/`master` Branch:**  This is a cardinal sin.  Always work on feature branches and merge them back into the main branch through a pull request/merge request process.\n\n**2. Branching and Merging Issues:**\n\n*   **Not Branching:** Working directly on the main branch defeats the purpose of version control. Branching allows for isolated development and experimentation.\n*   **Long-Lived Branches:** Branches that exist for extended periods become difficult to merge and can lead to significant conflicts.  Keep branches short-lived and merge them frequently.\n*   **Merge Conflicts – Ignoring or Handling Poorly:** Merge conflicts are inevitable. Ignoring them or resolving them incorrectly can introduce bugs and create a tangled history.  Understand how to resolve conflicts properly (using a merge tool is highly recommended).\n*   **Rebase vs. Merge – Misunderstanding the Implications:** Both `rebase` and `merge` integrate changes, but they do so differently.  `Rebase` rewrites history, which can be problematic in shared repositories.  `Merge` preserves the history but can create more complex merge commits. Choose the appropriate strategy based on the team's workflow.\n*   **Not Regularly Pulling Changes:**  Failing to regularly pull changes from the remote repository can lead to significant divergence and difficult merges.\n\n**3. Advanced/Less Common Mistakes:**\n\n*   **Force Pushing:**  `git push --force` should be avoided unless you *really* know what you're doing. It rewrites history and can cause problems for collaborators.\n*   **Deleting Branches Incorrectly:**  Deleting branches without proper cleanup can leave dangling references and confusion.\n*   **Misusing `git revert` vs. `git reset`:**  `git revert` creates a new commit that undoes changes, preserving history. `git reset` moves the branch pointer, potentially discarding commits.  Use them appropriately.\n*   **Not Understanding Stashing:**  Stashing allows you to temporarily save changes without committing.  Not knowing how to use it can lead to messy working directories.\n*   **Ignoring Git Hooks:** Git hooks are scripts that run automatically before or after certain Git events (e.g., commit, push). They can be used to enforce coding standards, run tests, or prevent accidental commits.\n*   **Not Using a GUI Client (or Using it Incorrectly):** While the command line is powerful, GUI clients can make some tasks easier, especially for beginners. However, relying *solely* on a GUI without understanding the underlying Git commands can lead to problems.\n\n**4. Team Collaboration Issues:**\n\n*   **Lack of a Clear Workflow:** Without a defined branching strategy and code review process, collaboration can become chaotic.\n*   **Not Reviewing Pull Requests:** Code review is essential for catching errors and ensuring code quality.\n*   **Not Communicating Changes:**  Keep team members informed about significant changes or potential conflicts.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   Are you a beginner, intermediate, or advanced Git user?\n*   What is the context you're asking about (e.g., personal projects, team development)?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 1003,
+        "total_latency_ms": 13385,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:26.040Z"
+    },
+    {
+      "result_id": "1d8a6ddc-eeee-48d3-b199-ae9e6325653b",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Software architecture has undergone a significant evolution in the last decade, driven by factors like cloud computing, microservices, DevOps, and the increasing complexity of applications. Here's a breakdown of key shifts:\n\n**1. Monolith to Microservices (Early 2010s - Present):**\n\n*   **Then (Early 2010s):** Monolithic architectures were common. Applications were built as single, large, tightly coupled units. Deployment was often slow and risky. Scaling specific components was difficult.\n*   **Now (Present):** Microservices have become a dominant paradigm. Applications are broken down into small, independent, deployable services that communicate over APIs. This enables independent scaling, faster deployments, and technology diversity. However, microservices introduce complexities like distributed tracing, inter-service communication management, and eventual consistency.  Service meshes (like Istio) have emerged to address some of these complexities.\n\n**2. Cloud-Native Architectures (Mid 2010s - Present):**\n\n*   **Then (Mid 2010s):** Cloud adoption was growing, but many applications were still designed for on-premise infrastructure.\n*   **Now (Present):** Cloud-native architectures are the norm. This includes:\n    *   **Containerization (Docker):**  Packaging applications and dependencies into containers for portability and consistency.\n    *   **Orchestration (Kubernetes):** Automating deployment, scaling, and management of containerized applications.\n    *   **Serverless Computing (AWS Lambda, Azure Functions, Google Cloud Functions):**  Abstracting away infrastructure management, allowing developers to focus on code.\n    *   **Immutable Infrastructure:** Treating infrastructure as code and deploying new versions instead of modifying existing ones.\n\n**3. Event-Driven Architectures (EDA) (Late 2010s - Present):**\n\n*   **Then (Late 2010s):**  Many systems were request-response based.\n*   **Now (Present):** EDA is increasingly prevalent. Systems react to events (e.g., user actions, sensor data) asynchronously. This promotes loose coupling, scalability, and real-time responsiveness. Message queues (Kafka, RabbitMQ) and stream processing platforms are key components.\n\n**4. API-First Design (Mid 2010s - Present):**\n\n*   **Then (Mid 2010s):** APIs were often an afterthought.\n*   **Now (Present):** API-first design is a core principle. APIs are designed and documented *before* implementation, ensuring consistency and enabling reuse across different clients (web, mobile, third-party integrations).  API gateways manage traffic, security, and rate limiting.\n\n**5. Domain-Driven Design (DDD) (Growing Adoption):**\n\n*   **Then (Early 2010s):** DDD was a niche practice.\n*   **Now (Present):** DDD is gaining wider adoption, particularly in complex domains. It emphasizes aligning software design with the business domain, leading to more maintainable and understandable systems.  Bounded contexts and ubiquitous language are key concepts.\n\n**6. Observability (Late 2010s - Present):**\n\n*   **Then (Early 2010s):** Monitoring focused primarily on basic metrics.\n*   **Now (Present):** Observability has become critical, especially with distributed systems. This involves collecting and analyzing metrics, logs, and traces to understand system behavior and troubleshoot issues. Tools like Prometheus, Grafana, and Jaeger are essential.\n\n**7.  Data Mesh (Emerging):**\n\n*   **Then (Early 2010s):** Data was often centralized and managed by a dedicated data team.\n*   **Now (Present):** The Data Mesh concept is emerging, advocating for decentralized data ownership and domain-aligned data products. This aims to improve data agility and accessibility.\n\n\n\nIn summary, the evolution of software architecture has been about embracing agility, scalability, and resilience in a rapidly changing technological landscape. The trend is towards decentralized, cloud-native, and event-driven systems that are designed with APIs at their core and are highly observable.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 884,
+        "total_latency_ms": 11786,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:37.882Z"
+    },
+    {
+      "result_id": "aee3d913-987a-424c-9f42-d53eb664e313",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1623,
+        "output_tokens": 33,
+        "total_latency_ms": 963,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:38.908Z"
+    },
+    {
+      "result_id": "6bb39b7a-ec35-463b-a955-77ac1db96391",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1633,
+        "output_tokens": 30,
+        "total_latency_ms": 934,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:39.898Z"
+    },
+    {
+      "result_id": "6d5708b7-ed59-4b41-966a-c25e634fdd06",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": true, \"locale\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": true,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1629,
+        "output_tokens": 39,
+        "total_latency_ms": 1048,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:41.005Z"
+    },
+    {
+      "result_id": "8ba9e84a-3706-471b-a53e-00cd0ff65581",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 33,
+        "total_latency_ms": 959,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:42.030Z"
+    },
+    {
+      "result_id": "ce87754e-76bc-4413-8be8-dffcc1632427",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\", \"window\": \"1h\"}}",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "latency_p99",
+            "window": "1h"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 39,
+        "total_latency_ms": 1049,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:43.146Z"
+    },
+    {
+      "result_id": "ca5551cf-747f-44e3-820e-4bcd5ec8011a",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 42
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1638,
+        "output_tokens": 31,
+        "total_latency_ms": 939,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:44.143Z"
+    },
+    {
+      "result_id": "0b54e548-c6ff-43ad-86b8-5eeb976272ff",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 24,
+        "total_latency_ms": 856,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:45.064Z"
+    },
+    {
+      "result_id": "499a7898-d399-414b-9762-5f042ac04167",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "00:00:10",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 45,
+        "total_latency_ms": 1118,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:46.249Z"
+    },
+    {
+      "result_id": "12ab7afb-1608-462e-a1c2-7064b5e63512",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1646,
+        "output_tokens": 54,
+        "total_latency_ms": 1234,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:47.542Z"
+    },
+    {
+      "result_id": "57f8656d-dc84-45f1-853b-18f8c7a556f6",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"admin\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_update_permissions",
+            "arguments": {
+              "user_id": "example_value",
+              "role": "admin"
+            }
+          },
+          {
+            "name": "fin_create_invoice",
+            "arguments": {
+              "customer_id": "example_value",
+              "items": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1654,
+        "output_tokens": 65,
+        "total_latency_ms": 1376,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:48.985Z"
+    },
+    {
+      "result_id": "6d1027dc-ae34-4543-ba84-934fcb0f7734",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\", \"window\": \"1h\"}}\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}",
+        "parsed_sequence": [
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "prefix": "",
+              "bucket": "my-bucket",
+              "max_results": 10
+            }
+          },
+          {
+            "name": "ops_get_metrics",
+            "arguments": {
+              "service": "example_value",
+              "metric": "latency_p99",
+              "window": "1h"
+            }
+          },
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.43333333333333335,
+        "overall": 0.43333333333333335
+      },
+      "metrics": {
+        "input_tokens": 1660,
+        "output_tokens": 110,
+        "total_latency_ms": 1946,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:51.003Z"
+    },
+    {
+      "result_id": "0bf820f3-facb-4b6f-8e36-d7fb5992cbf0",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 56, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "cal_find_free_time",
+            "arguments": {
+              "participants": [
+                "item1",
+                "item2"
+              ],
+              "duration_minutes": 56,
+              "start_date": "example_value",
+              "end_date": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1683,
+        "output_tokens": 107,
+        "total_latency_ms": 1926,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:52.986Z"
+    },
+    {
+      "result_id": "241c4bd8-9bcf-44cd-9362-1adef546bc6a",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\", \"method\": \"bank_transfer\", \"reference\": \"test\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production",
+            "method": "bank_transfer",
+            "reference": "test"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.7499999999999999,
+        "overall": 0.8999999999999999
+      },
+      "metrics": {
+        "input_tokens": 1641,
+        "output_tokens": 51,
+        "total_latency_ms": 1189,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:54.245Z"
+    },
+    {
+      "result_id": "6ac16ad8-b7cb-4ad9-8cd0-f91e3c44a60b",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1629,
+        "output_tokens": 31,
+        "total_latency_ms": 939,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:55.247Z"
+    },
+    {
+      "result_id": "4fdc81d5-3104-4379-9a40-53e289eba689",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"quarterly-report\", \"end\": \"config.json\", \"location\": \"config.json\", \"attendees\": [\"value1\",\"value2\"]}}",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "quarterly-report",
+            "end": "config.json",
+            "location": "config.json",
+            "attendees": [
+              "value1",
+              "value2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1671,
+        "output_tokens": 57,
+        "total_latency_ms": 1285,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:56.588Z"
+    },
+    {
+      "result_id": "9c6c88a4-4a71-44a3-9369-819d537b77d7",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1656,
+        "output_tokens": 45,
+        "total_latency_ms": 1124,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:57.774Z"
+    },
+    {
+      "result_id": "82effed2-49b4-45c7-aef8-57dbdbd0c2d5",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is approximately 299,792,458 meters per second (m/s).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 30,
+        "total_latency_ms": 925,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:07:58.757Z"
+    },
+    {
+      "result_id": "113facc9-2ff5-4a2c-8a57-daa42f37b470",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "My tools have several limitations, which stem from their design and the underlying systems they interact with. Here's a breakdown:\n\n**General Limitations:**\n\n*   **Real-time Data:** Most tools operate on data that has a slight delay. \"Real-time\" is relative; there's usually a few seconds to minutes of latency depending on the tool and the data source.\n*   **Data Accuracy:** The accuracy of the data returned by the tools depends on the accuracy of the underlying data sources. I cannot guarantee 100% accuracy.\n*   **Rate Limits:** Each tool has rate limits to prevent abuse and ensure system stability. If you make too many requests in a short period, you might receive errors.\n*   **Error Handling:** While I attempt to handle errors gracefully, some errors are beyond my control. The tools might return error messages that require manual intervention.\n*   **Complex Logic:** I am designed to execute specific tasks. I cannot handle complex, multi-step logic that requires reasoning or decision-making beyond the tool's capabilities.\n*   **Context Window:** I have a limited context window. Long conversations or complex requests might exceed this window, leading to loss of context.\n\n**Tool-Specific Limitations:**\n\n*   **analytics\\_track\\_event:**\n    *   Limited to predefined event names and properties. Custom event names or properties might not be supported.\n    *   User ID is required for attribution.\n*   **analytics\\_run\\_report:**\n    *   Report templates are pre-defined. Custom report creation is not possible.\n    *   Date range options are limited (e.g., last 7 days, last 30 days, custom).\n    *   Filtering options depend on the specific report template.\n*   **analytics\\_create\\_dashboard:**\n    *   Widget configurations are limited to predefined types.\n    *   Dashboard sharing is restricted to team access.\n*   **store\\_list\\_files:**\n    *   File listing is limited by the storage provider's API.\n    *   Prefix filtering is case-sensitive.\n*   **comm\\_send\\_message:**\n    *   Message content is limited in length.\n    *   Supports basic Markdown formatting only.\n    *   Recipient must be a valid user ID, email, or channel name.\n*   **auth\\_create\\_user:**\n    *   Password complexity requirements are enforced by the underlying system.\n    *   User creation is subject to account limits.\n*   **fin\\_process\\_payment:**\n    *   Payment methods are limited to the supported options (bank transfer, credit card, PayPal, crypto).\n    *   Transaction limits apply based on the payment method and recipient.\n*   **fin\\_create\\_invoice:**\n    *   Invoice currency is limited to supported currencies.\n    *   Line item details must adhere to predefined formats.\n*   **media\\_transcode\\_video:**\n    *   Supported input and output formats are limited.\n    *   Resolution and bitrate options are constrained by the transcoding engine.\n*   **media\\_extract\\_audio:**\n    *   Supported audio output formats are limited.\n    *   Extraction might fail for certain video codecs.\n*   **ops\\_get\\_metrics:**\n    *   Available metrics depend on the service being monitored.\n    *   Time window granularity is limited.\n*   **cal\\_create\\_event:**\n    *   Event details must adhere to ISO 8601 datetime format.\n    *   Attendee email addresses must be valid.\n*   **cal\\_find\\_free\\_time:**\n    *   Availability data depends on the calendars being checked.\n    *   Finding free time can be computationally expensive for large groups.\n*   **auth\\_update\\_permissions:**\n    *   Role assignments are limited to predefined roles.\n    *   Resource scopes must be valid and supported.\n*   **wx\\_get\\_current:**\n    *   Weather data availability depends on the location.\n    *   Accuracy of weather forecasts is subject to limitations.\n*   **media\\_resize\\_image:**\n    *   Image resizing might introduce quality loss.\n    *   Supported image formats are limited.\n*   **shop\\_track\\_order:**\n    *   Order tracking information is dependent on the carrier's data.\n    *   Tracking history might be incomplete.\n*   **media\\_generate\\_thumbnail:**\n    *   Thumbnail generation might fail for certain video formats.\n    *   Timestamp must be in the specified format.\n*   **auth\\_list\\_users:**\n    *   Filtering options are limited to role, status, and search.\n*   **wx\\_get\\_air\\_quality:**\n    *   Air quality data availability depends on the location.\n    *   Accuracy of air quality readings is subject",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1613,
+        "output_tokens": 1024,
+        "total_latency_ms": 13575,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:12.389Z"
+    },
+    {
+      "result_id": "4e199cb1-8dd5-4577-b18f-bf14933e9a53",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of common version control mistakes, categorized for clarity. I'll focus on Git, as it's the most prevalent system.\n\n**1. Basic Workflow Errors:**\n\n*   **Committing Too Frequently/Infrequently:** Both extremes are problematic. Too frequent commits (e.g., every keystroke) create a noisy history. Too infrequent commits (e.g., massive changesets) make debugging and reverting difficult. Aim for logical units of work.\n*   **Large, Unfocused Commits:**  Similar to infrequent commits, large commits are hard to review and understand. Break down changes into smaller, logical chunks.  A good commit should address a single, well-defined task.\n*   **Not Writing Good Commit Messages:**  Commit messages are crucial for understanding *why* changes were made.  \"Fixed bug\" or \"Updated code\" are useless.  Use a clear, concise format (e.g., \"Fix: Resolved issue with user authentication\").  A good commit message has a subject line (50 characters or less) and an optional body explaining the details.\n*   **Committing Secrets/Sensitive Data:** Accidentally committing API keys, passwords, or other sensitive information is a *major* security risk.  Use `.gitignore` files to exclude sensitive files and be extremely careful about what you commit.  Tools like `git-secrets` can help prevent this.\n*   **Ignoring `.gitignore`:** Failing to properly configure `.gitignore` leads to unnecessary files (build artifacts, IDE settings) being tracked, cluttering the repository.\n*   **Directly Modifying `main`/`master` Branch:**  This is a cardinal sin.  Always work on feature branches and merge them back into the main branch through a pull request/merge request process.\n\n**2. Branching and Merging Issues:**\n\n*   **Not Branching:** Working directly on the main branch defeats the purpose of version control. Branching allows for isolated development and experimentation.\n*   **Long-Lived Branches:** Branches that exist for extended periods become difficult to merge and can lead to significant conflicts.  Keep branches short-lived and merge them frequently.\n*   **Merge Conflicts – Ignoring or Handling Poorly:** Merge conflicts are inevitable. Ignoring them or resolving them incorrectly can introduce bugs and create a tangled history.  Understand how to resolve conflicts properly (using a merge tool is highly recommended).\n*   **Rebase vs. Merge – Misunderstanding the Implications:** Both `rebase` and `merge` integrate changes, but they do so differently.  `Rebase` rewrites history, which can be problematic in shared repositories.  `Merge` preserves the history but can create more complex merge commits. Choose the appropriate strategy based on the team's workflow.\n*   **Not Regularly Pulling Changes:**  Failing to regularly pull changes from the remote repository can lead to significant divergence and difficult merges.\n\n**3. Advanced/Less Common Mistakes:**\n\n*   **Force Pushing:**  `git push --force` should be avoided unless you *really* know what you're doing. It rewrites history and can cause problems for collaborators.\n*   **Deleting Branches Incorrectly:**  Deleting branches without proper cleanup can leave dangling references and confusion.\n*   **Misusing `git revert` vs. `git reset`:**  `git revert` creates a new commit that undoes changes, preserving history. `git reset` moves the branch pointer, potentially discarding commits.  Use them appropriately.\n*   **Not Understanding Stashing:**  Stashing allows you to temporarily save changes without committing.  Not knowing how to use it can lead to messy working directories.\n*   **Ignoring Git Hooks:** Git hooks are scripts that run automatically before or after certain Git events (e.g., commit, push). They can be used to enforce coding standards, run tests, or prevent accidental commits.\n*   **Not Using a GUI Client (or Using it Incorrectly):** While the command line is powerful, GUI clients can make some tasks easier, especially for beginners. However, relying *solely* on a GUI without understanding the underlying Git commands can lead to problems.\n\n**4. Team Collaboration Issues:**\n\n*   **Lack of a Clear Workflow:** Without a defined branching strategy and code review process, collaboration can become chaotic.\n*   **Not Reviewing Pull Requests:** Code review is essential for catching errors and ensuring code quality.\n*   **Not Communicating Changes:**  Keep team members informed about significant changes or potential conflicts.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   Are you a beginner, intermediate, or advanced Git user?\n*   What is the context you're asking about (e.g., personal projects, team development)?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 1003,
+        "total_latency_ms": 13355,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:25.802Z"
+    },
+    {
+      "result_id": "ae38b348-695d-479b-9991-d6fdc0f6b515",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Software architecture has undergone a significant evolution in the last decade, driven by factors like cloud computing, microservices, DevOps, and the increasing complexity of applications. Here's a breakdown of key shifts:\n\n**1. Monolith to Microservices (Early 2010s - Present):**\n\n*   **Then (Early 2010s):** Monolithic architectures were common. Applications were built as single, large, tightly coupled units. Deployment was often slow and risky. Scaling specific components was difficult.\n*   **Now (Present):** Microservices have become a dominant paradigm. Applications are broken down into small, independent, deployable services that communicate over APIs. This enables independent scaling, faster deployments, and technology diversity. However, microservices introduce complexities like distributed tracing, inter-service communication management, and eventual consistency.  Service meshes (like Istio) have emerged to address some of these complexities.\n\n**2. Cloud-Native Architectures (Mid 2010s - Present):**\n\n*   **Then (Mid 2010s):** Cloud adoption was growing, but many applications were still designed for on-premise infrastructure.\n*   **Now (Present):** Cloud-native architectures are the norm. This includes:\n    *   **Containerization (Docker):**  Packaging applications and dependencies into containers for portability and consistency.\n    *   **Orchestration (Kubernetes):** Automating deployment, scaling, and management of containerized applications.\n    *   **Serverless Computing (AWS Lambda, Azure Functions, Google Cloud Functions):**  Abstracting away infrastructure management, allowing developers to focus on code.\n    *   **Immutable Infrastructure:** Treating infrastructure as code and deploying new versions instead of modifying existing ones.\n\n**3. Event-Driven Architectures (EDA) (Late 2010s - Present):**\n\n*   **Then (Late 2010s):**  Many systems were request-response based.\n*   **Now (Present):** EDA is increasingly prevalent. Systems react to events (e.g., user actions, sensor data) asynchronously. This promotes loose coupling, scalability, and real-time responsiveness. Message queues (Kafka, RabbitMQ) and stream processing platforms are key components.\n\n**4. API-First Design (Mid 2010s - Present):**\n\n*   **Then (Mid 2010s):** APIs were often an afterthought.\n*   **Now (Present):** API-first design is a core principle. APIs are designed and documented *before* implementation, ensuring consistency and enabling reuse across different clients (web, mobile, third-party integrations).  API gateways manage traffic, security, and rate limiting.\n\n**5. Domain-Driven Design (DDD) (Growing Adoption):**\n\n*   **Then (Early 2010s):** DDD was a niche practice.\n*   **Now (Present):** DDD is gaining wider adoption, particularly in complex domains. It emphasizes aligning software design with the business domain, leading to more maintainable and understandable systems.  Bounded contexts and ubiquitous language are key concepts.\n\n**6. Observability (Late 2010s - Present):**\n\n*   **Then (Early 2010s):** Monitoring focused primarily on basic metrics.\n*   **Now (Present):** Observability has become critical, especially with distributed systems. This involves collecting and analyzing metrics, logs, and traces to understand system behavior and troubleshoot issues. Tools like Prometheus, Grafana, and Jaeger are essential.\n\n**7.  Data Mesh (Emerging):**\n\n*   **Then (Early 2010s):** Data was often centralized and managed by a dedicated data team.\n*   **Now (Present):** The Data Mesh concept is emerging, advocating for decentralized data ownership and domain-aligned data products. This aims to improve data agility and accessibility.\n\n\n\nIn summary, the evolution of software architecture has been about embracing agility, scalability, and resilience in a rapidly changing technological landscape. The trend is towards decentralized, cloud-native, and event-driven systems that are designed with APIs at their core and are highly observable.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 884,
+        "total_latency_ms": 11803,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:37.662Z"
+    },
+    {
+      "result_id": "5c7168a9-1775-4a15-99c0-a54a2de36893",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\", \"include_pollutants\": true}}",
+        "parsed_tool_call": {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value",
+            "include_pollutants": true
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1623,
+        "output_tokens": 33,
+        "total_latency_ms": 959,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:38.687Z"
+    },
+    {
+      "result_id": "fe59f27d-3802-43c5-864b-92e366b07ca6",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1633,
+        "output_tokens": 30,
+        "total_latency_ms": 924,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:39.674Z"
+    },
+    {
+      "result_id": "d615f968-d1ae-4e89-8cbf-119db35a6c2a",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": true, \"locale\": \"en-US\"}}",
+        "parsed_tool_call": {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value",
+            "include_history": true,
+            "locale": "en-US"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1629,
+        "output_tokens": 39,
+        "total_latency_ms": 1042,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:40.783Z"
+    },
+    {
+      "result_id": "afaac892-f9ff-452f-a47b-560b17f82f04",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\",\"item2\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 33,
+        "total_latency_ms": 967,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:41.805Z"
+    },
+    {
+      "result_id": "ee3fe439-84f6-4910-b55a-31d6aa7cd41d",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\", \"window\": \"1h\"}}",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "latency_p99",
+            "window": "1h"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 39,
+        "total_latency_ms": 1040,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:42.900Z"
+    },
+    {
+      "result_id": "8caf26de-fb4c-4bb7-9efd-6d0f54043ae6",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"example_value\", \"width\": 42}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "example_value",
+            "width": 42
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1638,
+        "output_tokens": 31,
+        "total_latency_ms": 940,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:43.898Z"
+    },
+    {
+      "result_id": "54a64f9a-7cea-466f-aefa-085e22d58433",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 24,
+        "total_latency_ms": 855,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:44.812Z"
+    },
+    {
+      "result_id": "4822ea63-a979-4eba-a091-471be6790d4f",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"example_value\", \"timestamp\": \"00:00:10\", \"width\": 128}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "example_value",
+            "timestamp": "00:00:10",
+            "width": 128
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1637,
+        "output_tokens": 45,
+        "total_latency_ms": 1120,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:46.000Z"
+    },
+    {
+      "result_id": "302333a1-3b59-4ead-b978-be9deba6f1d0",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "analytics_run_report",
+            "arguments": {
+              "report_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1646,
+        "output_tokens": 54,
+        "total_latency_ms": 1232,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:47.295Z"
+    },
+    {
+      "result_id": "1b54445d-e130-44a5-a3d0-7367b092093a",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"admin\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+        "parsed_sequence": [
+          {
+            "name": "auth_update_permissions",
+            "arguments": {
+              "user_id": "example_value",
+              "role": "admin"
+            }
+          },
+          {
+            "name": "fin_create_invoice",
+            "arguments": {
+              "customer_id": "example_value",
+              "items": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1654,
+        "output_tokens": 65,
+        "total_latency_ms": 1381,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:48.739Z"
+    },
+    {
+      "result_id": "adc143c2-7ce6-4e9c-a272-bd59d0fa68bd",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"my-bucket\", \"max_results\": 10}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"latency_p99\", \"window\": \"1h\"}}\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}",
+        "parsed_sequence": [
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "prefix": "",
+              "bucket": "my-bucket",
+              "max_results": 10
+            }
+          },
+          {
+            "name": "ops_get_metrics",
+            "arguments": {
+              "service": "example_value",
+              "metric": "latency_p99",
+              "window": "1h"
+            }
+          },
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.43333333333333335,
+        "overall": 0.43333333333333335
+      },
+      "metrics": {
+        "input_tokens": 1660,
+        "output_tokens": 110,
+        "total_latency_ms": 1940,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:50.747Z"
+    },
+    {
+      "result_id": "13ea611c-0673-443f-94c2-7f204f0c7b58",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 56, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "comm_send_message",
+            "arguments": {
+              "recipient": "example_value",
+              "message": "example_value"
+            }
+          },
+          {
+            "name": "cal_find_free_time",
+            "arguments": {
+              "participants": [
+                "item1",
+                "item2"
+              ],
+              "duration_minutes": 56,
+              "start_date": "example_value",
+              "end_date": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1683,
+        "output_tokens": 107,
+        "total_latency_ms": 1905,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:52.713Z"
+    },
+    {
+      "result_id": "56d1db31-1ad4-46c3-a903-46a117f21936",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\", \"method\": \"bank_transfer\", \"reference\": \"test\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production",
+            "method": "bank_transfer",
+            "reference": "test"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.7499999999999999,
+        "overall": 0.8999999999999999
+      },
+      "metrics": {
+        "input_tokens": 1641,
+        "output_tokens": 51,
+        "total_latency_ms": 1199,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:53.975Z"
+    },
+    {
+      "result_id": "a018bfd6-ff5b-412c-a5d1-82d98cf581c3",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1629,
+        "output_tokens": 31,
+        "total_latency_ms": 945,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:54.975Z"
+    },
+    {
+      "result_id": "037f500e-d1f6-44f3-bbfb-f99b11be6ae0",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"quarterly-report\", \"end\": \"config.json\", \"location\": \"config.json\", \"attendees\": [\"value1\",\"value2\"]}}",
+        "parsed_tool_call": {
+          "name": "cal_create_event",
+          "arguments": {
+            "title": "Berlin",
+            "start": "quarterly-report",
+            "end": "config.json",
+            "location": "config.json",
+            "attendees": [
+              "value1",
+              "value2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1671,
+        "output_tokens": 57,
+        "total_latency_ms": 1275,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:56.309Z"
+    },
+    {
+      "result_id": "f0d68078-e61a-4697-91f8-5c418f97f30f",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1656,
+        "output_tokens": 45,
+        "total_latency_ms": 1118,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:57.490Z"
+    },
+    {
+      "result_id": "c5871770-d2e3-4d39-9b04-855ea9b95591",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is approximately 299,792,458 meters per second (m/s).",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 30,
+        "total_latency_ms": 921,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:08:58.467Z"
+    },
+    {
+      "result_id": "d084e93d-12e7-476b-8cc2-c1d2e8fd7cd6",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "My tools have several limitations, which stem from their design and the underlying systems they interact with. Here's a breakdown:\n\n**General Limitations:**\n\n*   **Real-time Data:** Most tools operate on data that has a slight delay. \"Real-time\" is relative; there's usually a few seconds to minutes of latency depending on the tool and the data source.\n*   **Data Accuracy:** The accuracy of the data returned by the tools depends on the accuracy of the underlying data sources. I cannot guarantee 100% accuracy.\n*   **Rate Limits:** Each tool has rate limits to prevent abuse and ensure system stability. If you make too many requests in a short period, you might receive errors.\n*   **Error Handling:** While I attempt to handle errors gracefully, some errors are beyond my control. The tools might return error messages that require manual intervention.\n*   **Complex Logic:** I am designed to execute specific tasks. I cannot handle complex, multi-step logic that requires reasoning or decision-making beyond the tool's capabilities.\n*   **Context Window:** I have a limited context window. Long conversations or complex requests might exceed this window, leading to loss of context.\n\n**Tool-Specific Limitations:**\n\n*   **analytics\\_track\\_event:**\n    *   Limited to predefined event names and properties. Custom event names or properties might not be supported.\n    *   User ID is required for attribution.\n*   **analytics\\_run\\_report:**\n    *   Report templates are pre-defined. Custom report creation is not possible.\n    *   Date range options are limited (e.g., last 7 days, last 30 days, custom).\n    *   Filtering options depend on the specific report template.\n*   **analytics\\_create\\_dashboard:**\n    *   Widget configurations are limited to predefined types.\n    *   Dashboard sharing is restricted to team access.\n*   **store\\_list\\_files:**\n    *   File listing is limited by the storage provider's API.\n    *   Prefix filtering is case-sensitive.\n*   **comm\\_send\\_message:**\n    *   Message content is limited in length.\n    *   Supports basic Markdown formatting only.\n    *   Recipient must be a valid user ID, email, or channel name.\n*   **auth\\_create\\_user:**\n    *   Password complexity requirements are enforced by the underlying system.\n    *   User creation is subject to account limits.\n*   **fin\\_process\\_payment:**\n    *   Payment methods are limited to the supported options (bank transfer, credit card, PayPal, crypto).\n    *   Transaction limits apply based on the payment method and recipient.\n*   **fin\\_create\\_invoice:**\n    *   Invoice currency is limited to supported currencies.\n    *   Line item details must adhere to predefined formats.\n*   **media\\_transcode\\_video:**\n    *   Supported input and output formats are limited.\n    *   Resolution and bitrate options are constrained by the transcoding engine.\n*   **media\\_extract\\_audio:**\n    *   Supported audio output formats are limited.\n    *   Extraction might fail for certain video codecs.\n*   **ops\\_get\\_metrics:**\n    *   Available metrics depend on the service being monitored.\n    *   Time window granularity is limited.\n*   **cal\\_create\\_event:**\n    *   Event details must adhere to ISO 8601 datetime format.\n    *   Attendee email addresses must be valid.\n*   **cal\\_find\\_free\\_time:**\n    *   Availability data depends on the calendars being checked.\n    *   Finding free time can be computationally expensive for large groups.\n*   **auth\\_update\\_permissions:**\n    *   Role assignments are limited to predefined roles.\n    *   Resource scopes must be valid and supported.\n*   **wx\\_get\\_current:**\n    *   Weather data availability depends on the location.\n    *   Accuracy of weather forecasts is subject to limitations.\n*   **media\\_resize\\_image:**\n    *   Image resizing might introduce quality loss.\n    *   Supported image formats are limited.\n*   **shop\\_track\\_order:**\n    *   Order tracking information is dependent on the carrier's data.\n    *   Tracking history might be incomplete.\n*   **media\\_generate\\_thumbnail:**\n    *   Thumbnail generation might fail for certain video formats.\n    *   Timestamp must be in the specified format.\n*   **auth\\_list\\_users:**\n    *   Filtering options are limited to role, status, and search.\n*   **wx\\_get\\_air\\_quality:**\n    *   Air quality data availability depends on the location.\n    *   Accuracy of air quality readings is subject",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1613,
+        "output_tokens": 1024,
+        "total_latency_ms": 13763,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:09:12.299Z"
+    },
+    {
+      "result_id": "d426ee0c-87e6-4e69-b0fb-1c5cc44f4c4b",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Okay, here's a breakdown of common version control mistakes, categorized for clarity. I'll focus on Git, as it's the most prevalent system.\n\n**1. Basic Workflow Errors:**\n\n*   **Committing Too Frequently/Infrequently:** Both extremes are problematic. Too frequent commits (e.g., every keystroke) create a noisy history. Too infrequent commits (e.g., massive changesets) make debugging and reverting difficult. Aim for logical units of work.\n*   **Large, Unfocused Commits:**  Similar to infrequent commits, large commits are hard to review and understand. Break down changes into smaller, logical chunks.  A good commit should address a single, well-defined task.\n*   **Not Writing Good Commit Messages:**  Commit messages are crucial for understanding *why* changes were made.  \"Fixed bug\" or \"Updated code\" are useless.  Use a clear, concise format (e.g., \"Fix: Resolved issue with user authentication\").  A good commit message has a subject line (50 characters or less) and an optional body explaining the details.\n*   **Committing Secrets/Sensitive Data:** Accidentally committing API keys, passwords, or other sensitive information is a *major* security risk.  Use `.gitignore` files to exclude sensitive files and be extremely careful about what you commit.  Tools like `git-secrets` can help prevent this.\n*   **Ignoring `.gitignore`:** Failing to properly configure `.gitignore` leads to unnecessary files (build artifacts, IDE settings) being tracked, cluttering the repository.\n*   **Directly Modifying `main`/`master` Branch:**  This is a cardinal sin.  Always work on feature branches and merge them back into the main branch through a pull request/merge request process.\n\n**2. Branching and Merging Issues:**\n\n*   **Not Branching:** Working directly on the main branch defeats the purpose of version control. Branching allows for isolated development and experimentation.\n*   **Long-Lived Branches:** Branches that exist for extended periods become difficult to merge and can lead to significant conflicts.  Keep branches short-lived and merge them frequently.\n*   **Merge Conflicts – Ignoring or Handling Poorly:** Merge conflicts are inevitable. Ignoring them or resolving them incorrectly can introduce bugs and create a tangled history.  Understand how to resolve conflicts properly (using a merge tool is highly recommended).\n*   **Rebase vs. Merge – Misunderstanding the Implications:** Both `rebase` and `merge` integrate changes, but they do so differently.  `Rebase` rewrites history, which can be problematic in shared repositories.  `Merge` preserves the history but can create more complex merge commits. Choose the appropriate strategy based on the team's workflow.\n*   **Not Regularly Pulling Changes:**  Failing to regularly pull changes from the remote repository can lead to significant divergence and difficult merges.\n\n**3. Advanced/Less Common Mistakes:**\n\n*   **Force Pushing:**  `git push --force` should be avoided unless you *really* know what you're doing. It rewrites history and can cause problems for collaborators.\n*   **Deleting Branches Incorrectly:**  Deleting branches without proper cleanup can leave dangling references and confusion.\n*   **Misusing `git revert` vs. `git reset`:**  `git revert` creates a new commit that undoes changes, preserving history. `git reset` moves the branch pointer, potentially discarding commits.  Use them appropriately.\n*   **Not Understanding Stashing:**  Stashing allows you to temporarily save changes without committing.  Not knowing how to use it can lead to messy working directories.\n*   **Ignoring Git Hooks:** Git hooks are scripts that run automatically before or after certain Git events (e.g., commit, push). They can be used to enforce coding standards, run tests, or prevent accidental commits.\n*   **Not Using a GUI Client (or Using it Incorrectly):** While the command line is powerful, GUI clients can make some tasks easier, especially for beginners. However, relying *solely* on a GUI without understanding the underlying Git commands can lead to problems.\n\n**4. Team Collaboration Issues:**\n\n*   **Lack of a Clear Workflow:** Without a defined branching strategy and code review process, collaboration can become chaotic.\n*   **Not Reviewing Pull Requests:** Code review is essential for catching errors and ensuring code quality.\n*   **Not Communicating Changes:**  Keep team members informed about significant changes or potential conflicts.\n\n\n\nTo help me tailor my response further, could you tell me:\n\n*   Are you a beginner, intermediate, or advanced Git user?\n*   What is the context you're asking about (e.g., personal projects, team development)?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 1003,
+        "total_latency_ms": 13598,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:09:25.965Z"
+    },
+    {
+      "result_id": "cf66ca90-9d8c-405a-af6b-d0db53696419",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Software architecture has undergone a significant evolution in the last decade, driven by factors like cloud computing, microservices, DevOps, and the increasing complexity of applications. Here's a breakdown of key shifts:\n\n**1. Monolith to Microservices (Early 2010s - Present):**\n\n*   **Then (Early 2010s):** Monolithic architectures were common. Applications were built as single, large, tightly coupled units. Deployment was often slow and risky. Scaling specific components was difficult.\n*   **Now (Present):** Microservices have become a dominant paradigm. Applications are broken down into small, independent, deployable services that communicate over APIs. This enables independent scaling, faster deployments, and technology diversity. However, microservices introduce complexities like distributed tracing, inter-service communication management, and eventual consistency.  Service meshes (like Istio) have emerged to address some of these complexities.\n\n**2. Cloud-Native Architectures (Mid 2010s - Present):**\n\n*   **Then (Mid 2010s):** Cloud adoption was growing, but many applications were still designed for on-premise infrastructure.\n*   **Now (Present):** Cloud-native architectures are the norm. This includes:\n    *   **Containerization (Docker):**  Packaging applications and dependencies into containers for portability and consistency.\n    *   **Orchestration (Kubernetes):** Automating deployment, scaling, and management of containerized applications.\n    *   **Serverless Computing (AWS Lambda, Azure Functions, Google Cloud Functions):**  Abstracting away infrastructure management, allowing developers to focus on code.\n    *   **Immutable Infrastructure:** Treating infrastructure as code and deploying new versions instead of modifying existing ones.\n\n**3. Event-Driven Architectures (EDA) (Late 2010s - Present):**\n\n*   **Then (Late 2010s):**  Many systems were request-response based.\n*   **Now (Present):** EDA is increasingly prevalent. Systems react to events (e.g., user actions, sensor data) asynchronously. This promotes loose coupling, scalability, and real-time responsiveness. Message queues (Kafka, RabbitMQ) and stream processing platforms are key components.\n\n**4. API-First Design (Mid 2010s - Present):**\n\n*   **Then (Mid 2010s):** APIs were often an afterthought.\n*   **Now (Present):** API-first design is a core principle. APIs are designed and documented *before* implementation, ensuring consistency and enabling reuse across different clients (web, mobile, third-party integrations).  API gateways manage traffic, security, and rate limiting.\n\n**5. Domain-Driven Design (DDD) (Growing Adoption):**\n\n*   **Then (Early 2010s):** DDD was a niche practice.\n*   **Now (Present):** DDD is gaining wider adoption, particularly in complex domains. It emphasizes aligning software design with the business domain, leading to more maintainable and understandable systems.  Bounded contexts and ubiquitous language are key concepts.\n\n**6. Observability (Late 2010s - Present):**\n\n*   **Then (Early 2010s):** Monitoring focused primarily on basic metrics.\n*   **Now (Present):** Observability has become critical, especially with distributed systems. This involves collecting and analyzing metrics, logs, and traces to understand system behavior and troubleshoot issues. Tools like Prometheus, Grafana, and Jaeger are essential.\n\n**7.  Data Mesh (Emerging):**\n\n*   **Then (Early 2010s):** Data was often centralized and managed by a dedicated data team.\n*   **Now (Present):** The Data Mesh concept is emerging, advocating for decentralized data ownership and domain-aligned data products. This aims to improve data agility and accessibility.\n\n\n\nIn summary, the evolution of software architecture has been about embracing agility, scalability, and resilience in a rapidly changing technological landscape. The trend is towards decentralized, cloud-native, and event-driven systems that are designed with APIs at their core and are highly observable.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1616,
+        "output_tokens": 884,
+        "total_latency_ms": 12049,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T15:09:38.073Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Gemma 3 12B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.796,
+        "ci95": [
+          0.6821795390818299,
+          0.8817161026314104
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.8,
+        "ci95": [
+          0.6821795390818299,
+          0.8817161026314104
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.7899999999999999,
+        "ci95": [
+          0.6821795390818299,
+          0.8817161026314104
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Gemma 3 12B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.9359999999999998,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 1,
+        "ci95": [
+          0.9398260695220669,
+          0.9999999999999999
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.8824999999999998,
+        "ci95": [
+          0.8629926537490016,
+          0.9828508088208587
+        ]
+      },
+      "arr": 1.1758793969849244,
+      "token_savings_pct": 65.36168773517102,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

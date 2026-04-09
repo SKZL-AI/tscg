@@ -1,0 +1,5669 @@
+[
+  {
+    "result_id": "c524b68e-56bf-49a0-b214-19f0d8da8a48",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5835,
+      "output_tokens": 138,
+      "total_latency_ms": 3782,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:12.626Z"
+  },
+  {
+    "result_id": "3c6e23a1-0659-4488-bd4a-b0dcde72b82f",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "To use the `store_list_files` tool, I'll need some details to help filter the files. Please provide:\n\n1. A **prefix** (e.g., \"images/\" or \"reports/2023\") to narrow down the files\n2. A specific **bucket name** if you want to check a particular storage location\n3. A **maximum number of results** to return (e.g., 10, 50, 100)\n\nLet me know these details and I'll list the files for you!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 5828,
+      "output_tokens": 230,
+      "total_latency_ms": 3378,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:16.064Z"
+  },
+  {
+    "result_id": "470268ad-9b69-4ba5-bf32-82bc3ee98291",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\", \"expiry_seconds\": 3600, \"method\": \"GET\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 5831,
+      "output_tokens": 143,
+      "total_latency_ms": 2135,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:18.259Z"
+  },
+  {
+    "result_id": "edcd9637-6c60-420b-9350-d0fdf761fe0c",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5848,
+      "output_tokens": 231,
+      "total_latency_ms": 3396,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:21.712Z"
+  },
+  {
+    "result_id": "55e821c6-1aa1-4179-9225-344a27990dc3",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5835,
+      "output_tokens": 249,
+      "total_latency_ms": 3655,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:25.422Z"
+  },
+  {
+    "result_id": "95afc96e-24c2-44e9-a021-7695223f1c94",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5838,
+      "output_tokens": 142,
+      "total_latency_ms": 2130,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:27.613Z"
+  },
+  {
+    "result_id": "ced19c9d-4e48-44a7-b0be-f75178495c7e",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 5843,
+      "output_tokens": 177,
+      "total_latency_ms": 2641,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:30.314Z"
+  },
+  {
+    "result_id": "6d805eab-963d-4090-a86f-d3ea2b3c8c06",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5843,
+      "output_tokens": 157,
+      "total_latency_ms": 2352,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:32.723Z"
+  },
+  {
+    "result_id": "a6bc5e29-0e36-4f85-b8f1-fbd5c32c24e1",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5844,
+      "output_tokens": 319,
+      "total_latency_ms": 4689,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:37.471Z"
+  },
+  {
+    "result_id": "bbb20a6b-2552-49a2-8723-81180551f2c5",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5853,
+      "output_tokens": 704,
+      "total_latency_ms": 10256,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:47.784Z"
+  },
+  {
+    "result_id": "2a36a735-2836-4855-b7f7-01ff60bdae2e",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5853,
+      "output_tokens": 395,
+      "total_latency_ms": 5809,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:17:53.664Z"
+  },
+  {
+    "result_id": "fd72a05e-110e-4d0b-9621-d765324995db",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\", \"exchange\": \"NASDAQ\", \"include_history\": false}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\", \"window\": \"1h\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\", \"verbose\": true}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value",
+            "exchange": "NASDAQ",
+            "include_history": false
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec",
+            "window": "1h"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value",
+            "verbose": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7296296296296297,
+      "overall": 0.7296296296296297
+    },
+    "metrics": {
+      "input_tokens": 5887,
+      "output_tokens": 529,
+      "total_latency_ms": 7785,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:01.512Z"
+  },
+  {
+    "result_id": "ceac109c-fe28-4efa-9c55-7cf5dc0dad48",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5826,
+      "output_tokens": 288,
+      "total_latency_ms": 4245,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:05.814Z"
+  },
+  {
+    "result_id": "4aea7c8c-505c-4298-981b-ddefa84e7169",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5832,
+      "output_tokens": 206,
+      "total_latency_ms": 3060,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:08.937Z"
+  },
+  {
+    "result_id": "117c71ab-09f9-4f9b-9a6d-4ed8e8ece533",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5864,
+      "output_tokens": 339,
+      "total_latency_ms": 4995,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:13.998Z"
+  },
+  {
+    "result_id": "e202e593-c49e-4da5-8837-5fc6141548d8",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5869,
+      "output_tokens": 418,
+      "total_latency_ms": 6159,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:20.214Z"
+  },
+  {
+    "result_id": "8191a888-8fee-40f8-add3-db29805a5cb8",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to environmental concerns, technological advancements, and policy incentives. However, a **complete replacement** of gas cars by EVs in the near future is unlikely for several reasons:\n\n1. **Infrastructure and Range**: While EV charging networks are expanding, gas stations remain ubiquitous and offer faster refueling. EVs still face challenges with range anxiety and charging time, though improvements in battery tech (e.g., solid-state batteries) may address this.\n\n2. **Economic and Logistical Factors**: The global automotive industry requires time to shift production from internal combustion engines (ICE) to EVs. Additionally, regions reliant on oil exports may resist rapid transitions due to economic dependencies.\n\n3. **Consumer Behavior**: Some drivers prioritize cost, range, or vehicle type (e.g., trucks, heavy machinery) where EVs are less practical today. Hybrid vehicles may serve as a bridge until EVs become more viable for all use cases.\n\n4. **Resource Constraints**: Battery production depends on materials like lithium, cobalt, and nickel, which have supply chain and ethical challenges. Scaling EV manufacturing sustainably will take time.\n\n**Conclusion**: EVs are likely to dominate new vehicle sales in the 2030s–2040s, but gas cars may persist in certain segments (e.g., heavy-duty transport, rural areas) for decades. A complete replacement would require breakthroughs in energy storage, infrastructure, and global policy alignment.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5826,
+      "output_tokens": 618,
+      "total_latency_ms": 9057,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:29.336Z"
+  },
+  {
+    "result_id": "bd566084-331c-4d1d-a27e-2d8afd248388",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5821,
+      "output_tokens": 189,
+      "total_latency_ms": 2800,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:32.195Z"
+  },
+  {
+    "result_id": "0f6e55aa-61b2-486f-bc09-73c201a99f64",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "To get started with authentication, you might want to explore these key functions:\n\n1. **`auth_list_users`** - View existing user accounts and their roles/status\n2. **`auth_create_user`** - Create new user accounts with email, name, and role assignment\n3. **`auth_update_permissions`** - Modify user permissions and access levels\n4. **`auth_revoke_token`** - Manage security by revoking access tokens\n\nWould you like me to demonstrate any of these functions specifically?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5828,
+      "output_tokens": 256,
+      "total_latency_ms": 3758,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:36.014Z"
+  },
+  {
+    "result_id": "8cf96bba-84d9-4520-8ee8-e76ce1cfada4",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "The available tools don't include functionality to retrieve historical information about storage technologies or methods. Would you like me to help you with something related to cloud storage management using the available tools?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5822,
+      "output_tokens": 264,
+      "total_latency_ms": 3854,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:39.928Z"
+  },
+  {
+    "result_id": "efdb2610-e5df-416d-b07e-f77ac62eb588",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5835,
+      "output_tokens": 137,
+      "total_latency_ms": 2054,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:42.039Z"
+  },
+  {
+    "result_id": "839245cc-f21d-4f9a-9bf2-87f4021d0158",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "To use the `store_list_files` tool, I'll need some details to help filter the files. Please provide:\n\n1. A **prefix** (e.g., \"images/\" or \"reports/2023\") to narrow down the files\n2. A specific **bucket name** if you want to check a particular storage location\n3. A **maximum number of results** to return (e.g., 10, 50, 100)\n\nLet me know these details and I'll list the files for you!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 5828,
+      "output_tokens": 230,
+      "total_latency_ms": 3433,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:45.527Z"
+  },
+  {
+    "result_id": "85104d1e-e5fb-48cc-8000-88588f842541",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\", \"expiry_seconds\": 3600, \"method\": \"GET\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 5831,
+      "output_tokens": 143,
+      "total_latency_ms": 2183,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:47.772Z"
+  },
+  {
+    "result_id": "1c1856ee-5c48-44f1-ae21-a15fdc24ccf9",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5848,
+      "output_tokens": 231,
+      "total_latency_ms": 3476,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:51.310Z"
+  },
+  {
+    "result_id": "1535108a-1c8b-46ae-a10f-778ca5a40ba0",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5835,
+      "output_tokens": 249,
+      "total_latency_ms": 3737,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:55.106Z"
+  },
+  {
+    "result_id": "67256b2f-b9bc-4987-b6ea-bde06653f043",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5838,
+      "output_tokens": 142,
+      "total_latency_ms": 2173,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:18:57.334Z"
+  },
+  {
+    "result_id": "dcbb43f8-f448-4170-8895-b4cc2d2c88b5",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 5843,
+      "output_tokens": 177,
+      "total_latency_ms": 2683,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:00.074Z"
+  },
+  {
+    "result_id": "ebba74ed-fbcc-4501-883d-1ded34f1d45d",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5843,
+      "output_tokens": 157,
+      "total_latency_ms": 2392,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:02.528Z"
+  },
+  {
+    "result_id": "defbe5b2-d06c-4cc6-a5ef-e597623aa736",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5844,
+      "output_tokens": 319,
+      "total_latency_ms": 4734,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:07.327Z"
+  },
+  {
+    "result_id": "cbd4c7eb-dd05-4c0f-a6f8-add5241b674d",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5853,
+      "output_tokens": 704,
+      "total_latency_ms": 10373,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:17.770Z"
+  },
+  {
+    "result_id": "1d5bf14c-b6a8-4a80-8682-c5578b899711",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5853,
+      "output_tokens": 395,
+      "total_latency_ms": 5820,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:23.651Z"
+  },
+  {
+    "result_id": "084af604-ddff-44db-9fff-055320908fda",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\", \"exchange\": \"NASDAQ\", \"include_history\": false}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\", \"window\": \"1h\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\", \"verbose\": true}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value",
+            "exchange": "NASDAQ",
+            "include_history": false
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec",
+            "window": "1h"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value",
+            "verbose": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7296296296296297,
+      "overall": 0.7296296296296297
+    },
+    "metrics": {
+      "input_tokens": 5887,
+      "output_tokens": 529,
+      "total_latency_ms": 7749,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:31.456Z"
+  },
+  {
+    "result_id": "a09631fd-ae82-4b3d-afdf-ecb225b6a1f0",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5826,
+      "output_tokens": 288,
+      "total_latency_ms": 4245,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:35.763Z"
+  },
+  {
+    "result_id": "a1cac045-4695-4f70-b050-cb83955200a3",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5832,
+      "output_tokens": 206,
+      "total_latency_ms": 3069,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:38.894Z"
+  },
+  {
+    "result_id": "919a1636-7775-4259-9f0a-9b8a8159eead",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5864,
+      "output_tokens": 339,
+      "total_latency_ms": 5019,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:43.983Z"
+  },
+  {
+    "result_id": "03b4c5cd-79f7-4b4b-a1e7-19665c74a36d",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5869,
+      "output_tokens": 418,
+      "total_latency_ms": 6140,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:50.191Z"
+  },
+  {
+    "result_id": "e128abc0-c71d-4c9d-85a5-0f1a9c8b57fb",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to environmental concerns, technological advancements, and policy incentives. However, a **complete replacement** of gas cars by EVs in the near future is unlikely for several reasons:\n\n1. **Infrastructure and Range**: While EV charging networks are expanding, gas stations remain ubiquitous and offer faster refueling. EVs still face challenges with range anxiety and charging time, though improvements in battery tech (e.g., solid-state batteries) may address this.\n\n2. **Economic and Logistical Factors**: The global automotive industry requires time to shift production from internal combustion engines (ICE) to EVs. Additionally, regions reliant on oil exports may resist rapid transitions due to economic dependencies.\n\n3. **Consumer Behavior**: Some drivers prioritize cost, range, or vehicle type (e.g., trucks, heavy machinery) where EVs are less practical today. Hybrid vehicles may serve as a bridge until EVs become more viable for all use cases.\n\n4. **Resource Constraints**: Battery production depends on materials like lithium, cobalt, and nickel, which have supply chain and ethical challenges. Scaling EV manufacturing sustainably will take time.\n\n**Conclusion**: EVs are likely to dominate new vehicle sales in the 2030s–2040s, but gas cars may persist in certain segments (e.g., heavy-duty transport, rural areas) for decades. A complete replacement would require breakthroughs in energy storage, infrastructure, and global policy alignment.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5826,
+      "output_tokens": 618,
+      "total_latency_ms": 8995,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:19:59.246Z"
+  },
+  {
+    "result_id": "fd0a0d83-d197-414e-a5f9-8426702fcddd",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5821,
+      "output_tokens": 189,
+      "total_latency_ms": 2809,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:02.111Z"
+  },
+  {
+    "result_id": "d8ec2417-0cf6-429b-9db1-9feb72241830",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "To get started with authentication, you might want to explore these key functions:\n\n1. **`auth_list_users`** - View existing user accounts and their roles/status\n2. **`auth_create_user`** - Create new user accounts with email, name, and role assignment\n3. **`auth_update_permissions`** - Modify user permissions and access levels\n4. **`auth_revoke_token`** - Manage security by revoking access tokens\n\nWould you like me to demonstrate any of these functions specifically?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5828,
+      "output_tokens": 256,
+      "total_latency_ms": 3753,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:05.930Z"
+  },
+  {
+    "result_id": "3fd28529-2780-4910-a334-5e15cfb9994d",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "The available tools don't include functionality to retrieve historical information about storage technologies or methods. Would you like me to help you with something related to cloud storage management using the available tools?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5822,
+      "output_tokens": 264,
+      "total_latency_ms": 3864,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:09.853Z"
+  },
+  {
+    "result_id": "1416cc9e-8c85-4e98-b6c3-d357101d266d",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5835,
+      "output_tokens": 137,
+      "total_latency_ms": 2064,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:11.987Z"
+  },
+  {
+    "result_id": "ae5c326f-6715-45cf-b26e-e66c0e940b33",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "To use the `store_list_files` tool, I'll need some details to help filter the files. Please provide:\n\n1. A **prefix** (e.g., \"images/\" or \"reports/2023\") to narrow down the files\n2. A specific **bucket name** if you want to check a particular storage location\n3. A **maximum number of results** to return (e.g., 10, 50, 100)\n\nLet me know these details and I'll list the files for you!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 5828,
+      "output_tokens": 230,
+      "total_latency_ms": 3413,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:15.466Z"
+  },
+  {
+    "result_id": "3b3d668f-f5d0-4752-895f-24f13f38b8da",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\", \"expiry_seconds\": 3600, \"method\": \"GET\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600,
+          "method": "GET"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 5831,
+      "output_tokens": 143,
+      "total_latency_ms": 2153,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:17.675Z"
+  },
+  {
+    "result_id": "40a3d302-768e-4af7-b716-3f6ad6928953",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5848,
+      "output_tokens": 231,
+      "total_latency_ms": 3454,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:21.193Z"
+  },
+  {
+    "result_id": "ac1b18d7-16f0-4d12-9164-6d0df6ecbc0f",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5835,
+      "output_tokens": 249,
+      "total_latency_ms": 3680,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:24.930Z"
+  },
+  {
+    "result_id": "1481f492-5dee-40d1-a1ec-c6d1d9a095d3",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5838,
+      "output_tokens": 142,
+      "total_latency_ms": 2138,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:27.125Z"
+  },
+  {
+    "result_id": "66ab0ac4-0c5a-4eda-a98f-dd5807b55f34",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 5843,
+      "output_tokens": 177,
+      "total_latency_ms": 2648,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:29.843Z"
+  },
+  {
+    "result_id": "dd0664de-fcbd-4508-b31b-cbd1214951c4",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5843,
+      "output_tokens": 157,
+      "total_latency_ms": 2365,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:32.263Z"
+  },
+  {
+    "result_id": "dfd8dd5c-e722-428e-ba12-3bcb7b9c4cdf",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5844,
+      "output_tokens": 319,
+      "total_latency_ms": 4693,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:37.012Z"
+  },
+  {
+    "result_id": "4112c755-433b-4469-9af1-337313a38bab",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5853,
+      "output_tokens": 704,
+      "total_latency_ms": 10303,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:47.376Z"
+  },
+  {
+    "result_id": "2e9f5ea7-8f13-466a-9f12-ad1bbea9ab6f",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5853,
+      "output_tokens": 395,
+      "total_latency_ms": 5803,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:20:53.236Z"
+  },
+  {
+    "result_id": "23917274-a3ec-4d23-9b9e-879aa2476203",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\", \"exchange\": \"NASDAQ\", \"include_history\": false}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\", \"window\": \"1h\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\", \"verbose\": true}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value",
+            "exchange": "NASDAQ",
+            "include_history": false
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec",
+            "window": "1h"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value",
+            "verbose": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7296296296296297,
+      "overall": 0.7296296296296297
+    },
+    "metrics": {
+      "input_tokens": 5887,
+      "output_tokens": 529,
+      "total_latency_ms": 7766,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:01.066Z"
+  },
+  {
+    "result_id": "6a9fe5c2-3e36-404e-a60a-f2423637454e",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5826,
+      "output_tokens": 288,
+      "total_latency_ms": 4250,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:05.376Z"
+  },
+  {
+    "result_id": "7b10d2ea-285e-4b50-aa64-a60467256196",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5832,
+      "output_tokens": 206,
+      "total_latency_ms": 3079,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:08.514Z"
+  },
+  {
+    "result_id": "4f5d83e4-ff9f-4f66-bd01-e8ad278a4c54",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5864,
+      "output_tokens": 339,
+      "total_latency_ms": 5029,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:13.601Z"
+  },
+  {
+    "result_id": "39e2ed51-4377-4d71-94b7-e718abc9980a",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 5869,
+      "output_tokens": 418,
+      "total_latency_ms": 6192,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:19.857Z"
+  },
+  {
+    "result_id": "332941d1-bf42-42b7-932e-e03d41df5989",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to environmental concerns, technological advancements, and policy incentives. However, a **complete replacement** of gas cars by EVs in the near future is unlikely for several reasons:\n\n1. **Infrastructure and Range**: While EV charging networks are expanding, gas stations remain ubiquitous and offer faster refueling. EVs still face challenges with range anxiety and charging time, though improvements in battery tech (e.g., solid-state batteries) may address this.\n\n2. **Economic and Logistical Factors**: The global automotive industry requires time to shift production from internal combustion engines (ICE) to EVs. Additionally, regions reliant on oil exports may resist rapid transitions due to economic dependencies.\n\n3. **Consumer Behavior**: Some drivers prioritize cost, range, or vehicle type (e.g., trucks, heavy machinery) where EVs are less practical today. Hybrid vehicles may serve as a bridge until EVs become more viable for all use cases.\n\n4. **Resource Constraints**: Battery production depends on materials like lithium, cobalt, and nickel, which have supply chain and ethical challenges. Scaling EV manufacturing sustainably will take time.\n\n**Conclusion**: EVs are likely to dominate new vehicle sales in the 2030s–2040s, but gas cars may persist in certain segments (e.g., heavy-duty transport, rural areas) for decades. A complete replacement would require breakthroughs in energy storage, infrastructure, and global policy alignment.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5826,
+      "output_tokens": 618,
+      "total_latency_ms": 9055,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:28.968Z"
+  },
+  {
+    "result_id": "d7fb52b8-bd04-40f6-9e60-7f2012495bb7",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5821,
+      "output_tokens": 189,
+      "total_latency_ms": 2822,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:31.859Z"
+  },
+  {
+    "result_id": "5e9c5dba-f227-4866-9c8d-8832ed2e8338",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "To get started with authentication, you might want to explore these key functions:\n\n1. **`auth_list_users`** - View existing user accounts and their roles/status\n2. **`auth_create_user`** - Create new user accounts with email, name, and role assignment\n3. **`auth_update_permissions`** - Modify user permissions and access levels\n4. **`auth_revoke_token`** - Manage security by revoking access tokens\n\nWould you like me to demonstrate any of these functions specifically?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5828,
+      "output_tokens": 256,
+      "total_latency_ms": 3816,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:35.733Z"
+  },
+  {
+    "result_id": "5eedb2d0-0301-40a5-8e21-febdebcfcfd8",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "The available tools don't include functionality to retrieve historical information about storage technologies or methods. Would you like me to help you with something related to cloud storage management using the available tools?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 5822,
+      "output_tokens": 264,
+      "total_latency_ms": 3926,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:39.718Z"
+  },
+  {
+    "result_id": "4f289937-0b2f-46b9-a7e7-a7d236d40d34",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2165,
+      "output_tokens": 145,
+      "total_latency_ms": 2624,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:42.406Z"
+  },
+  {
+    "result_id": "dc070f2e-1fac-4f9d-bc5a-e6d321b35fa5",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "To use the `store_list_files` tool, I need the following details:\n1. **Prefix**: The path prefix to filter files (e.g., \"images/2023\").\n2. **Bucket**: The storage bucket name (e.g., \"my-organization-data\").\n3. **Max Results**: The maximum number of files to return (e.g., 100).\n\nPlease provide these details so I can proceed.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2158,
+      "output_tokens": 184,
+      "total_latency_ms": 2592,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:45.066Z"
+  },
+  {
+    "result_id": "ffd9b9e8-e988-4ff6-8ff8-69bff610b0a5",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Please provide the expiry time in seconds and the HTTP method (GET or PUT) for the signed URL.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2161,
+      "output_tokens": 154,
+      "total_latency_ms": 2194,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:47.316Z"
+  },
+  {
+    "result_id": "e26bff8f-36c2-4305-8c86-180f050b1b1d",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\", \"method\": \"example_value\", \"reference\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value",
+          "method": "example_value",
+          "reference": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7499999999999999,
+      "overall": 0.8999999999999999
+    },
+    "metrics": {
+      "input_tokens": 2178,
+      "output_tokens": 750,
+      "total_latency_ms": 10329,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:21:57.710Z"
+  },
+  {
+    "result_id": "21198b0e-f8a4-4da6-bf10-2c8b7824295f",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "To proceed with updating the calendar event, I need the specific changes you'd like to make. Please provide the new title, start time, end time, location, or attendees for the event with ID \"example_value\".",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2165,
+      "output_tokens": 220,
+      "total_latency_ms": 3068,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:00.834Z"
+  },
+  {
+    "result_id": "2c50e958-6dfc-4fc1-a5e6-79dedc318529",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2168,
+      "output_tokens": 363,
+      "total_latency_ms": 5019,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:05.909Z"
+  },
+  {
+    "result_id": "f26ce917-66b3-42bc-acdc-6dd0a94d8dbf",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2173,
+      "output_tokens": 183,
+      "total_latency_ms": 2556,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:08.529Z"
+  },
+  {
+    "result_id": "646ec09f-1c91-4432-9e26-247ebf7e6ba0",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2173,
+      "output_tokens": 213,
+      "total_latency_ms": 2969,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:11.565Z"
+  },
+  {
+    "result_id": "cd2a6d9f-226d-4258-baed-1662240892f2",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2174,
+      "output_tokens": 321,
+      "total_latency_ms": 4479,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:16.100Z"
+  },
+  {
+    "result_id": "be23719c-ae8c-4137-84e4-e0612e3170bf",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2183,
+      "output_tokens": 1024,
+      "total_latency_ms": 14106,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:30.264Z"
+  },
+  {
+    "result_id": "d9d7f513-f166-43c4-b559-aca1f04a2e50",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2183,
+      "output_tokens": 334,
+      "total_latency_ms": 4646,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:34.970Z"
+  },
+  {
+    "result_id": "e11bc41c-d054-4a35-8015-02378559cf56",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\", \"exchange\": \"NASDAQ\", \"include_history\": false}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\", \"window\": \"1h\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\", \"verbose\": true}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value",
+            "exchange": "NASDAQ",
+            "include_history": false
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec",
+            "window": "1h"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value",
+            "verbose": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7296296296296297,
+      "overall": 0.7296296296296297
+    },
+    "metrics": {
+      "input_tokens": 2217,
+      "output_tokens": 574,
+      "total_latency_ms": 7957,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:42.985Z"
+  },
+  {
+    "result_id": "670e498b-a05e-4f88-bf78-5655acedc679",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"date_range\": \"last_30d\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin",
+          "date_range": "last_30d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2156,
+      "output_tokens": 194,
+      "total_latency_ms": 2710,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:45.754Z"
+  },
+  {
+    "result_id": "12c1164a-d769-49a3-80b9-cf58513121c4",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2162,
+      "output_tokens": 406,
+      "total_latency_ms": 5614,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:51.427Z"
+  },
+  {
+    "result_id": "bd0be46b-4e22-4bc4-8319-0a2a313e3cc6",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2194,
+      "output_tokens": 232,
+      "total_latency_ms": 3256,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:22:54.740Z"
+  },
+  {
+    "result_id": "71caa1e7-b8b2-44c4-8fa0-79508b527a86",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2199,
+      "output_tokens": 476,
+      "total_latency_ms": 6542,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:01.344Z"
+  },
+  {
+    "result_id": "bd3d2490-de38-438c-acdd-4e571b815b9c",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to environmental, economic, and technological factors, but a complete replacement may take decades. Here's a balanced perspective:\n\n### **Drivers for EV Adoption**\n1. **Environmental Impact**: EVs produce zero tailpipe emissions, reducing air pollution and greenhouse gases, especially as renewable energy sources power grids.\n2. **Cost Efficiency**: Falling battery prices and lower maintenance costs (EVs have fewer moving parts) make EVs increasingly competitive with gas cars.\n3. **Policy Push**: Many countries have set deadlines to phase out internal combustion engines (e.g., EU by 2035, China by 2030).\n4. **Technological Advances**: Improvements in battery range (modern EVs often exceed 300 miles per charge) and charging speed (e.g., 80% charge in 20–30 minutes with DC fast chargers) are addressing key concerns.\n\n### **Challenges for Full Replacement**\n1. **Infrastructure Gaps**: Charging networks are still less dense than gas stations, particularly in rural areas.\n2. **Resource Constraints**: Battery production relies on materials like lithium, cobalt, and nickel, which face supply chain and ethical concerns.\n3. **Economic Inertia**: Gas cars remain cheaper for some buyers, and the automotive industry’s shift requires significant investment.\n4. **Consumer Habits**: Range anxiety, charging time, and familiarity with gas vehicles persist.\n\n### **Likely Outcome**\n- **Short-Term (Next 10–20 Years)**: EVs will dominate new car sales in urban areas and regions with strong policy support, but gas cars will still be common, especially in rural or developing regions.\n- **Long-Term (30–50 Years)**: As battery tech improves, charging infrastructure expands, and renewable energy scales, EVs could become the sole mainstream option. However, hybrid vehicles or alternative fuels (e.g., hydrogen) might coexist in niche markets.\n\nIn summary, while EVs are poised to become the dominant force, a complete replacement of gas cars is unlikely in the next few decades due to lingering challenges. The transition will depend on technological innovation, policy, and global energy shifts.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2156,
+      "output_tokens": 826,
+      "total_latency_ms": 11345,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:12.745Z"
+  },
+  {
+    "result_id": "b6ed712e-eb15-41c8-9fd1-c0a18a1bd339",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2151,
+      "output_tokens": 215,
+      "total_latency_ms": 2991,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:15.795Z"
+  },
+  {
+    "result_id": "0ed6e9b5-af2a-4f54-b8a4-c412d4d6bd01",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "To get started with authentication, you can begin with the following key concepts and tools:\n\n1. **User Creation**  \n   Use `auth_create_user` to create a new user account. This is the foundation of any authentication system.  \n   Example:  \n   ```json\n   {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"user@example.com\", \"name\": \"John Doe\", \"role\": \"viewer\", \"password\": \"securepassword123\"}}\n   ```\n\n2. **User Management**  \n   Use `auth_list_users` to view existing users and their roles.  \n   Example:  \n   ```json\n   {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"active\"}}\n   ```\n\n3. **Permission Updates**  \n   Use `auth_update_permissions` to modify user roles or access scopes.  \n   Example:  \n   ```json\n   {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"12345\", \"role\": \"editor\", \"resources\": [\"dashboard:analytics\"]}}\n   ```\n\n4. **Token Revocation**  \n   Use `auth_revoke_token` to securely terminate sessions.  \n   Example:  \n   ```json\n   {\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"abc123xyz\", \"revoke_all\": true}}\n   ```\n\nStart with `auth_create_user` to set up your first user, then explore managing permissions and security as needed. Let me know if you'd like a step-by-step tutorial!",
+      "parsed_sequence": [
+        {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "user@example.com",
+            "name": "John Doe",
+            "role": "viewer",
+            "password": "securepassword123"
+          }
+        },
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "active"
+          }
+        },
+        {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "12345",
+            "role": "editor",
+            "resources": [
+              "dashboard:analytics"
+            ]
+          }
+        },
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "abc123xyz",
+            "revoke_all": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2158,
+      "output_tokens": 475,
+      "total_latency_ms": 6534,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:22.388Z"
+  },
+  {
+    "result_id": "9e53c4bb-70a8-47de-8f12-81b5d4a2f92f",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "The history of data storage spans from early mechanical systems to modern digital solutions:\n\n1. **Pre-Computer Era**: Punched cards (1800s) and magnetic tape (1950s) were early storage methods.\n2. **Hard Disk Drives (HDDs)**: IBM's 1956 \"IBM 350 RAMAC\" introduced rotating disks for persistent storage.\n3. **Floppy Disks**: 1970s-1990s saw widespread use of 5.25\" and 3.5\" floppy disks for personal computing.\n4. **Solid-State Storage**: Flash memory (1980s) led to USB drives (2000s) and SSDs (2010s), offering faster access than HDDs.\n5. **Cloud Storage**: 2000s onward saw services like AWS S3 and Google Cloud enabling scalable, remote data storage.\n\nIf you meant a different type of \"storage\" (e.g., physical storage, biological storage), please clarify!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2152,
+      "output_tokens": 519,
+      "total_latency_ms": 7155,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:29.600Z"
+  },
+  {
+    "result_id": "74d78507-6867-435e-b523-bf581677d20f",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2165,
+      "output_tokens": 145,
+      "total_latency_ms": 2040,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:31.705Z"
+  },
+  {
+    "result_id": "1f0e0944-69b4-4fe6-a1d3-bc7bad449f60",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "To use the `store_list_files` tool, I need the following details:\n1. **Prefix**: The path prefix to filter files (e.g., \"images/2023\").\n2. **Bucket**: The storage bucket name (e.g., \"my-organization-data\").\n3. **Max Results**: The maximum number of files to return (e.g., 100).\n\nPlease provide these details so I can proceed.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2158,
+      "output_tokens": 184,
+      "total_latency_ms": 2564,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:34.332Z"
+  },
+  {
+    "result_id": "df5520ce-9b36-45be-97ab-4287719399e1",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Please provide the expiry time in seconds and the HTTP method (GET or PUT) for the signed URL.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2161,
+      "output_tokens": 154,
+      "total_latency_ms": 2166,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:36.560Z"
+  },
+  {
+    "result_id": "7ae2f3d5-9fc1-42d3-804a-09009084b267",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\", \"method\": \"example_value\", \"reference\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value",
+          "method": "example_value",
+          "reference": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7499999999999999,
+      "overall": 0.8999999999999999
+    },
+    "metrics": {
+      "input_tokens": 2178,
+      "output_tokens": 750,
+      "total_latency_ms": 10303,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:46.923Z"
+  },
+  {
+    "result_id": "d1013ee7-178b-4ae4-bdbe-38c1f41d5377",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "To proceed with updating the calendar event, I need the specific changes you'd like to make. Please provide the new title, start time, end time, location, or attendees for the event with ID \"example_value\".",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2165,
+      "output_tokens": 220,
+      "total_latency_ms": 3066,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:50.050Z"
+  },
+  {
+    "result_id": "e8062ba6-ebc4-4a18-919e-fc323cbe401e",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2168,
+      "output_tokens": 363,
+      "total_latency_ms": 5000,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:55.117Z"
+  },
+  {
+    "result_id": "387b0f04-f23c-441d-b36d-e42770d4a307",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2173,
+      "output_tokens": 183,
+      "total_latency_ms": 2561,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:23:57.743Z"
+  },
+  {
+    "result_id": "7863d6ad-30a8-4734-b928-573e40d99bf4",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2173,
+      "output_tokens": 213,
+      "total_latency_ms": 2968,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:00.780Z"
+  },
+  {
+    "result_id": "1d5566ff-aa49-497b-b275-a46cc5345ad7",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2174,
+      "output_tokens": 321,
+      "total_latency_ms": 4452,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:05.290Z"
+  },
+  {
+    "result_id": "da6040d0-eba4-49b1-97f3-f90b8499054f",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2183,
+      "output_tokens": 1024,
+      "total_latency_ms": 14111,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:19.457Z"
+  },
+  {
+    "result_id": "41f231c6-2d3d-4d09-be3d-f9c1a8782845",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2183,
+      "output_tokens": 334,
+      "total_latency_ms": 4599,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:24.121Z"
+  },
+  {
+    "result_id": "6239e57a-bc40-4b15-bab5-3013af72559a",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\", \"exchange\": \"NASDAQ\", \"include_history\": false}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\", \"window\": \"1h\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\", \"verbose\": true}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value",
+            "exchange": "NASDAQ",
+            "include_history": false
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec",
+            "window": "1h"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value",
+            "verbose": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7296296296296297,
+      "overall": 0.7296296296296297
+    },
+    "metrics": {
+      "input_tokens": 2217,
+      "output_tokens": 574,
+      "total_latency_ms": 7930,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:32.114Z"
+  },
+  {
+    "result_id": "6560f1db-5539-4271-985c-32c1d7d57db9",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"date_range\": \"last_30d\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin",
+          "date_range": "last_30d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2156,
+      "output_tokens": 194,
+      "total_latency_ms": 2695,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:34.875Z"
+  },
+  {
+    "result_id": "343a77ec-e7c3-47bd-b1c5-3764810be723",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2162,
+      "output_tokens": 406,
+      "total_latency_ms": 5592,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:40.524Z"
+  },
+  {
+    "result_id": "a682fc70-fdc0-437f-a78e-33fcc56efac5",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2194,
+      "output_tokens": 232,
+      "total_latency_ms": 3271,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:43.865Z"
+  },
+  {
+    "result_id": "d6e16539-b2dc-4b9a-9ee4-d0460149432e",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2199,
+      "output_tokens": 476,
+      "total_latency_ms": 6610,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:24:50.533Z"
+  },
+  {
+    "result_id": "21709dd5-74a6-49b6-8dff-bd78bab89d3b",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to environmental, economic, and technological factors, but a complete replacement may take decades. Here's a balanced perspective:\n\n### **Drivers for EV Adoption**\n1. **Environmental Impact**: EVs produce zero tailpipe emissions, reducing air pollution and greenhouse gases, especially as renewable energy sources power grids.\n2. **Cost Efficiency**: Falling battery prices and lower maintenance costs (EVs have fewer moving parts) make EVs increasingly competitive with gas cars.\n3. **Policy Push**: Many countries have set deadlines to phase out internal combustion engines (e.g., EU by 2035, China by 2030).\n4. **Technological Advances**: Improvements in battery range (modern EVs often exceed 300 miles per charge) and charging speed (e.g., 80% charge in 20–30 minutes with DC fast chargers) are addressing key concerns.\n\n### **Challenges for Full Replacement**\n1. **Infrastructure Gaps**: Charging networks are still less dense than gas stations, particularly in rural areas.\n2. **Resource Constraints**: Battery production relies on materials like lithium, cobalt, and nickel, which face supply chain and ethical concerns.\n3. **Economic Inertia**: Gas cars remain cheaper for some buyers, and the automotive industry’s shift requires significant investment.\n4. **Consumer Habits**: Range anxiety, charging time, and familiarity with gas vehicles persist.\n\n### **Likely Outcome**\n- **Short-Term (Next 10–20 Years)**: EVs will dominate new car sales in urban areas and regions with strong policy support, but gas cars will still be common, especially in rural or developing regions.\n- **Long-Term (30–50 Years)**: As battery tech improves, charging infrastructure expands, and renewable energy scales, EVs could become the sole mainstream option. However, hybrid vehicles or alternative fuels (e.g., hydrogen) might coexist in niche markets.\n\nIn summary, while EVs are poised to become the dominant force, a complete replacement of gas cars is unlikely in the next few decades due to lingering challenges. The transition will depend on technological innovation, policy, and global energy shifts.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2156,
+      "output_tokens": 826,
+      "total_latency_ms": 11424,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:02.020Z"
+  },
+  {
+    "result_id": "241e2c91-c679-41a6-9672-45b65d8b9d2d",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2151,
+      "output_tokens": 215,
+      "total_latency_ms": 2996,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:05.072Z"
+  },
+  {
+    "result_id": "b7e84c52-a199-402f-a58e-4104e15615df",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "To get started with authentication, you can begin with the following key concepts and tools:\n\n1. **User Creation**  \n   Use `auth_create_user` to create a new user account. This is the foundation of any authentication system.  \n   Example:  \n   ```json\n   {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"user@example.com\", \"name\": \"John Doe\", \"role\": \"viewer\", \"password\": \"securepassword123\"}}\n   ```\n\n2. **User Management**  \n   Use `auth_list_users` to view existing users and their roles.  \n   Example:  \n   ```json\n   {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"active\"}}\n   ```\n\n3. **Permission Updates**  \n   Use `auth_update_permissions` to modify user roles or access scopes.  \n   Example:  \n   ```json\n   {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"12345\", \"role\": \"editor\", \"resources\": [\"dashboard:analytics\"]}}\n   ```\n\n4. **Token Revocation**  \n   Use `auth_revoke_token` to securely terminate sessions.  \n   Example:  \n   ```json\n   {\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"abc123xyz\", \"revoke_all\": true}}\n   ```\n\nStart with `auth_create_user` to set up your first user, then explore managing permissions and security as needed. Let me know if you'd like a step-by-step tutorial!",
+      "parsed_sequence": [
+        {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "user@example.com",
+            "name": "John Doe",
+            "role": "viewer",
+            "password": "securepassword123"
+          }
+        },
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "active"
+          }
+        },
+        {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "12345",
+            "role": "editor",
+            "resources": [
+              "dashboard:analytics"
+            ]
+          }
+        },
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "abc123xyz",
+            "revoke_all": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2158,
+      "output_tokens": 475,
+      "total_latency_ms": 6516,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:11.657Z"
+  },
+  {
+    "result_id": "58b4be3f-0dd2-4975-bc25-be93d6a40c10",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "The history of data storage spans from early mechanical systems to modern digital solutions:\n\n1. **Pre-Computer Era**: Punched cards (1800s) and magnetic tape (1950s) were early storage methods.\n2. **Hard Disk Drives (HDDs)**: IBM's 1956 \"IBM 350 RAMAC\" introduced rotating disks for persistent storage.\n3. **Floppy Disks**: 1970s-1990s saw widespread use of 5.25\" and 3.5\" floppy disks for personal computing.\n4. **Solid-State Storage**: Flash memory (1980s) led to USB drives (2000s) and SSDs (2010s), offering faster access than HDDs.\n5. **Cloud Storage**: 2000s onward saw services like AWS S3 and Google Cloud enabling scalable, remote data storage.\n\nIf you meant a different type of \"storage\" (e.g., physical storage, biological storage), please clarify!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2152,
+      "output_tokens": 519,
+      "total_latency_ms": 7083,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:18.804Z"
+  },
+  {
+    "result_id": "ddba240d-a7f2-4361-b4ac-40c4ca71facb",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2165,
+      "output_tokens": 145,
+      "total_latency_ms": 2028,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:20.895Z"
+  },
+  {
+    "result_id": "63601a0f-0561-4e2e-b846-63dc3dc8e189",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "To use the `store_list_files` tool, I need the following details:\n1. **Prefix**: The path prefix to filter files (e.g., \"images/2023\").\n2. **Bucket**: The storage bucket name (e.g., \"my-organization-data\").\n3. **Max Results**: The maximum number of files to return (e.g., 100).\n\nPlease provide these details so I can proceed.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2158,
+      "output_tokens": 184,
+      "total_latency_ms": 2553,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:23.504Z"
+  },
+  {
+    "result_id": "cf2d2103-7ff2-44e9-8bc2-c5302d896469",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Please provide the expiry time in seconds and the HTTP method (GET or PUT) for the signed URL.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2161,
+      "output_tokens": 154,
+      "total_latency_ms": 2161,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:25.730Z"
+  },
+  {
+    "result_id": "58381fdc-ce8d-4f9d-9132-cd534bbd6d63",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\", \"method\": \"example_value\", \"reference\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value",
+          "method": "example_value",
+          "reference": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7499999999999999,
+      "overall": 0.8999999999999999
+    },
+    "metrics": {
+      "input_tokens": 2178,
+      "output_tokens": 750,
+      "total_latency_ms": 10245,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:36.041Z"
+  },
+  {
+    "result_id": "f61a4f36-8922-4b84-9693-c79e879f102a",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "To proceed with updating the calendar event, I need the specific changes you'd like to make. Please provide the new title, start time, end time, location, or attendees for the event with ID \"example_value\".",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2165,
+      "output_tokens": 220,
+      "total_latency_ms": 3038,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:39.135Z"
+  },
+  {
+    "result_id": "65a529fb-e6ef-449b-8be5-57eeabeb5d95",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2168,
+      "output_tokens": 363,
+      "total_latency_ms": 5000,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:44.194Z"
+  },
+  {
+    "result_id": "0600d211-b883-4734-94a2-b9cf30b58c6e",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value",
+          "units": "metric"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2173,
+      "output_tokens": 183,
+      "total_latency_ms": 2573,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:46.823Z"
+  },
+  {
+    "result_id": "cfb1220d-89de-49af-8f25-aaa9e5dea711",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2173,
+      "output_tokens": 213,
+      "total_latency_ms": 2979,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:49.860Z"
+  },
+  {
+    "result_id": "3ba76367-99b2-4283-830a-9f2dc124d857",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2174,
+      "output_tokens": 321,
+      "total_latency_ms": 4474,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:25:54.396Z"
+  },
+  {
+    "result_id": "f8a045ba-776a-43be-82b6-9c31d6597c92",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2183,
+      "output_tokens": 1024,
+      "total_latency_ms": 14214,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:08.666Z"
+  },
+  {
+    "result_id": "cc2f5d1b-32ea-4d46-a21c-e1d2e8da39f2",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2183,
+      "output_tokens": 334,
+      "total_latency_ms": 4647,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:13.370Z"
+  },
+  {
+    "result_id": "49f8fe3b-c955-44c0-98e9-57044a18a5bc",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\", \"exchange\": \"NASDAQ\", \"include_history\": false}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\", \"window\": \"1h\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\", \"verbose\": true}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value",
+            "exchange": "NASDAQ",
+            "include_history": false
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec",
+            "window": "1h"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value",
+            "verbose": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.7296296296296297,
+      "overall": 0.7296296296296297
+    },
+    "metrics": {
+      "input_tokens": 2217,
+      "output_tokens": 574,
+      "total_latency_ms": 7866,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:21.292Z"
+  },
+  {
+    "result_id": "3af2230f-42df-4591-a3b2-81ad3d53fefa",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"date_range\": \"last_30d\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin",
+          "date_range": "last_30d",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2156,
+      "output_tokens": 194,
+      "total_latency_ms": 2722,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:24.074Z"
+  },
+  {
+    "result_id": "c0e6114b-f811-4a9f-a8a2-b0760f56fb39",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2162,
+      "output_tokens": 406,
+      "total_latency_ms": 5624,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:29.754Z"
+  },
+  {
+    "result_id": "de9df137-1825-41cc-ad97-77d0eeed6d48",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2194,
+      "output_tokens": 232,
+      "total_latency_ms": 3244,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:33.057Z"
+  },
+  {
+    "result_id": "8d318af4-0300-4506-9344-38c800240326",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2199,
+      "output_tokens": 476,
+      "total_latency_ms": 6542,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:39.663Z"
+  },
+  {
+    "result_id": "05ddda14-8bc6-461c-96f8-c685d77d49c8",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to environmental, economic, and technological factors, but a complete replacement may take decades. Here's a balanced perspective:\n\n### **Drivers for EV Adoption**\n1. **Environmental Impact**: EVs produce zero tailpipe emissions, reducing air pollution and greenhouse gases, especially as renewable energy sources power grids.\n2. **Cost Efficiency**: Falling battery prices and lower maintenance costs (EVs have fewer moving parts) make EVs increasingly competitive with gas cars.\n3. **Policy Push**: Many countries have set deadlines to phase out internal combustion engines (e.g., EU by 2035, China by 2030).\n4. **Technological Advances**: Improvements in battery range (modern EVs often exceed 300 miles per charge) and charging speed (e.g., 80% charge in 20–30 minutes with DC fast chargers) are addressing key concerns.\n\n### **Challenges for Full Replacement**\n1. **Infrastructure Gaps**: Charging networks are still less dense than gas stations, particularly in rural areas.\n2. **Resource Constraints**: Battery production relies on materials like lithium, cobalt, and nickel, which face supply chain and ethical concerns.\n3. **Economic Inertia**: Gas cars remain cheaper for some buyers, and the automotive industry’s shift requires significant investment.\n4. **Consumer Habits**: Range anxiety, charging time, and familiarity with gas vehicles persist.\n\n### **Likely Outcome**\n- **Short-Term (Next 10–20 Years)**: EVs will dominate new car sales in urban areas and regions with strong policy support, but gas cars will still be common, especially in rural or developing regions.\n- **Long-Term (30–50 Years)**: As battery tech improves, charging infrastructure expands, and renewable energy scales, EVs could become the sole mainstream option. However, hybrid vehicles or alternative fuels (e.g., hydrogen) might coexist in niche markets.\n\nIn summary, while EVs are poised to become the dominant force, a complete replacement of gas cars is unlikely in the next few decades due to lingering challenges. The transition will depend on technological innovation, policy, and global energy shifts.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2156,
+      "output_tokens": 826,
+      "total_latency_ms": 11402,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:51.124Z"
+  },
+  {
+    "result_id": "eb9b310f-a626-4fe4-8e12-d02dc39d5dfa",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2151,
+      "output_tokens": 215,
+      "total_latency_ms": 2998,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:26:54.180Z"
+  },
+  {
+    "result_id": "bfe30abc-47d0-4b77-991b-69e601cc6f04",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "To get started with authentication, you can begin with the following key concepts and tools:\n\n1. **User Creation**  \n   Use `auth_create_user` to create a new user account. This is the foundation of any authentication system.  \n   Example:  \n   ```json\n   {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"user@example.com\", \"name\": \"John Doe\", \"role\": \"viewer\", \"password\": \"securepassword123\"}}\n   ```\n\n2. **User Management**  \n   Use `auth_list_users` to view existing users and their roles.  \n   Example:  \n   ```json\n   {\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"active\"}}\n   ```\n\n3. **Permission Updates**  \n   Use `auth_update_permissions` to modify user roles or access scopes.  \n   Example:  \n   ```json\n   {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"12345\", \"role\": \"editor\", \"resources\": [\"dashboard:analytics\"]}}\n   ```\n\n4. **Token Revocation**  \n   Use `auth_revoke_token` to securely terminate sessions.  \n   Example:  \n   ```json\n   {\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"abc123xyz\", \"revoke_all\": true}}\n   ```\n\nStart with `auth_create_user` to set up your first user, then explore managing permissions and security as needed. Let me know if you'd like a step-by-step tutorial!",
+      "parsed_sequence": [
+        {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "user@example.com",
+            "name": "John Doe",
+            "role": "viewer",
+            "password": "securepassword123"
+          }
+        },
+        {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer",
+            "status": "active"
+          }
+        },
+        {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "12345",
+            "role": "editor",
+            "resources": [
+              "dashboard:analytics"
+            ]
+          }
+        },
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "abc123xyz",
+            "revoke_all": true
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2158,
+      "output_tokens": 475,
+      "total_latency_ms": 6532,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:27:00.778Z"
+  },
+  {
+    "result_id": "79a93f1c-ecf1-47d2-9d62-2c07d4fded98",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "The history of data storage spans from early mechanical systems to modern digital solutions:\n\n1. **Pre-Computer Era**: Punched cards (1800s) and magnetic tape (1950s) were early storage methods.\n2. **Hard Disk Drives (HDDs)**: IBM's 1956 \"IBM 350 RAMAC\" introduced rotating disks for persistent storage.\n3. **Floppy Disks**: 1970s-1990s saw widespread use of 5.25\" and 3.5\" floppy disks for personal computing.\n4. **Solid-State Storage**: Flash memory (1980s) led to USB drives (2000s) and SSDs (2010s), offering faster access than HDDs.\n5. **Cloud Storage**: 2000s onward saw services like AWS S3 and Google Cloud enabling scalable, remote data storage.\n\nIf you meant a different type of \"storage\" (e.g., physical storage, biological storage), please clarify!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2152,
+      "output_tokens": 519,
+      "total_latency_ms": 7095,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T14:27:07.936Z"
+  },
+  {
+    "result_id": "84874b75-f24c-443a-b7c3-6a242595044f",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2611,
+      "output_tokens": 111,
+      "total_latency_ms": 1948,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:30.541Z"
+  },
+  {
+    "result_id": "c4cdc803-49ba-4c29-9599-3dba2955d420",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2604,
+      "output_tokens": 760,
+      "total_latency_ms": 10412,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:41.021Z"
+  },
+  {
+    "result_id": "c1094441-5821-4aa9-93c1-87c0e789cb12",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2607,
+      "output_tokens": 129,
+      "total_latency_ms": 1813,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:42.904Z"
+  },
+  {
+    "result_id": "908ecaf1-2b94-472a-9bf8-b65a9d63e6a7",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2624,
+      "output_tokens": 242,
+      "total_latency_ms": 3341,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:46.314Z"
+  },
+  {
+    "result_id": "e0b5b2b4-ea64-4143-905e-72432c5125bd",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "To update the calendar event with ID \"example_value\", please provide the specific changes you want to make (e.g., new title, updated time, location, attendees, etc.). I'll need details about which fields should be modified.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2611,
+      "output_tokens": 159,
+      "total_latency_ms": 2217,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:48.602Z"
+  },
+  {
+    "result_id": "19ede094-495a-4df9-8bce-bb8a4c2622da",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2614,
+      "output_tokens": 182,
+      "total_latency_ms": 2543,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:51.213Z"
+  },
+  {
+    "result_id": "39bd5e5c-72ba-4c49-a896-552b386f0494",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2619,
+      "output_tokens": 260,
+      "total_latency_ms": 3625,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:54.904Z"
+  },
+  {
+    "result_id": "2116bf35-72a9-4456-9610-f26cbd7dd35c",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2619,
+      "output_tokens": 172,
+      "total_latency_ms": 2408,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:18:57.383Z"
+  },
+  {
+    "result_id": "a967ab22-123f-4cb2-ba6b-6575ac0770d3",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2620,
+      "output_tokens": 489,
+      "total_latency_ms": 6712,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:04.154Z"
+  },
+  {
+    "result_id": "e08bb866-40cc-4667-bba7-a0c28fe8597e",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2629,
+      "output_tokens": 452,
+      "total_latency_ms": 6209,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:10.426Z"
+  },
+  {
+    "result_id": "a7d62261-a0c4-4338-af49-efbf0cb8df29",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2629,
+      "output_tokens": 310,
+      "total_latency_ms": 4284,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:14.770Z"
+  },
+  {
+    "result_id": "8d9d21eb-098c-4e40-933d-ca928d9b4e0f",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2663,
+      "output_tokens": 511,
+      "total_latency_ms": 7031,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:21.870Z"
+  },
+  {
+    "result_id": "841b03f2-bd87-4f7c-9483-5ad189cf787a",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2602,
+      "output_tokens": 259,
+      "total_latency_ms": 3581,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:25.511Z"
+  },
+  {
+    "result_id": "c9e010b6-391a-4169-aaeb-6cd2059d6e48",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2608,
+      "output_tokens": 231,
+      "total_latency_ms": 3213,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:28.785Z"
+  },
+  {
+    "result_id": "dda2824b-ff78-40ab-94e8-8e3e32e64983",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2640,
+      "output_tokens": 204,
+      "total_latency_ms": 2879,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:31.732Z"
+  },
+  {
+    "result_id": "78f5f4ed-4559-4c34-9e63-81da4af2ed0a",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2645,
+      "output_tokens": 347,
+      "total_latency_ms": 4804,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:36.600Z"
+  },
+  {
+    "result_id": "a68cc310-dba8-49fc-ad17-bd7273bb4060",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to advancements in battery technology, environmental concerns, and government policies. However, a complete replacement of gas cars by EVs will likely take time and depend on several factors:\n\n1. **Infrastructure**: Expansion of charging networks, especially in rural areas, is critical for widespread EV adoption.\n2. **Cost**: While EVs are becoming more affordable, upfront costs and battery production challenges may slow adoption.\n3. **Energy Sources**: The environmental benefits of EVs depend on the cleanliness of the electricity grid.\n4. **Policy**: Government incentives and phased bans on gas vehicles will influence the timeline.\n\nIt’s plausible that **gas cars will be largely phased out within 20-30 years**, but **hybrids and EVs may coexist with gas cars for some time**, especially in regions with limited infrastructure or economic constraints. The pace will vary by country and market.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2602,
+      "output_tokens": 630,
+      "total_latency_ms": 8656,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:45.313Z"
+  },
+  {
+    "result_id": "b9678348-2b44-40f4-8b90-dc2948437890",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2597,
+      "output_tokens": 234,
+      "total_latency_ms": 3238,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:48.611Z"
+  },
+  {
+    "result_id": "6d83dc00-5292-4d09-8d99-87a2fff8950e",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "To learn about authentication, start by understanding the fundamentals of authentication mechanisms (e.g., OAuth, JWT, API keys) and security best practices. Once you're familiar with the concepts, you can explore the available tools like `auth_list_users`, `auth_create_user`, and `auth_revoke_token` to manage user accounts and permissions in practice. Would you like guidance on any specific authentication topic?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2604,
+      "output_tokens": 226,
+      "total_latency_ms": 3133,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:51.810Z"
+  },
+  {
+    "result_id": "35a8b2f8-f230-4ff0-b03a-6ba613a8c99e",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 1,
+    "response": {
+      "raw_output": "The available tools do not include any functionality for retrieving historical information about storage technologies, systems, or practices. This query would require access to historical databases, academic resources, or general knowledge repositories, which are not provided in the current toolset.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2598,
+      "output_tokens": 356,
+      "total_latency_ms": 4897,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:56.767Z"
+  },
+  {
+    "result_id": "9ac6ba43-542b-4f51-aac9-07f248bee80d",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2611,
+      "output_tokens": 122,
+      "total_latency_ms": 1730,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:19:58.557Z"
+  },
+  {
+    "result_id": "1a199c50-700e-4220-9fc9-52e9f29cf19e",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2604,
+      "output_tokens": 760,
+      "total_latency_ms": 10418,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:09.040Z"
+  },
+  {
+    "result_id": "88f86ac6-4c50-44e5-8b7b-e23a90e67b27",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2607,
+      "output_tokens": 129,
+      "total_latency_ms": 1826,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:10.935Z"
+  },
+  {
+    "result_id": "eb20d738-c220-4da0-a077-4c11e3fee703",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2624,
+      "output_tokens": 242,
+      "total_latency_ms": 3366,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:14.364Z"
+  },
+  {
+    "result_id": "3f804c2e-17d4-4351-ac48-4d1b314b37a9",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "To update the calendar event with ID \"example_value\", please provide the specific changes you want to make (e.g., new title, updated time, location, attendees, etc.). I'll need details about which fields should be modified.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2611,
+      "output_tokens": 159,
+      "total_latency_ms": 2229,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:16.658Z"
+  },
+  {
+    "result_id": "97065509-296d-458d-8346-47467c0f7faf",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2614,
+      "output_tokens": 182,
+      "total_latency_ms": 2555,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:19.281Z"
+  },
+  {
+    "result_id": "a7e44847-9dee-47d4-be4e-322d54db97c6",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2619,
+      "output_tokens": 260,
+      "total_latency_ms": 3609,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:22.960Z"
+  },
+  {
+    "result_id": "ca6e82ee-0f44-4113-bd4e-3ca8dc8e8e22",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2619,
+      "output_tokens": 172,
+      "total_latency_ms": 2406,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:25.432Z"
+  },
+  {
+    "result_id": "93f8e4f3-6952-41d5-8991-bf236c347a48",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2620,
+      "output_tokens": 489,
+      "total_latency_ms": 6721,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:32.214Z"
+  },
+  {
+    "result_id": "65bd4cbc-dd3c-4696-814e-4b73392e22d1",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2629,
+      "output_tokens": 452,
+      "total_latency_ms": 6217,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:38.495Z"
+  },
+  {
+    "result_id": "21d45edd-b9c4-4c0f-b3eb-64d54bfa1412",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2629,
+      "output_tokens": 310,
+      "total_latency_ms": 4283,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:42.835Z"
+  },
+  {
+    "result_id": "60c24e8a-52d9-4b26-a492-a18dd5acbda2",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2663,
+      "output_tokens": 511,
+      "total_latency_ms": 7040,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:49.941Z"
+  },
+  {
+    "result_id": "dd1777cc-f870-40b8-84d6-7420fe53e9f0",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2602,
+      "output_tokens": 259,
+      "total_latency_ms": 3578,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:53.575Z"
+  },
+  {
+    "result_id": "da8f5220-5fc8-4e00-be34-e75f15b210cd",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2608,
+      "output_tokens": 231,
+      "total_latency_ms": 3228,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:56.872Z"
+  },
+  {
+    "result_id": "878bd8e3-4dc1-4367-b04c-01beb989a2f5",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2640,
+      "output_tokens": 204,
+      "total_latency_ms": 2852,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:20:59.784Z"
+  },
+  {
+    "result_id": "544a953b-9edf-4967-a0d3-5de9e824f17c",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2645,
+      "output_tokens": 347,
+      "total_latency_ms": 4810,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:04.659Z"
+  },
+  {
+    "result_id": "f4a16b85-89e9-4c1a-9e2b-4aed2dd77a4a",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to advancements in battery technology, environmental concerns, and government policies. However, a complete replacement of gas cars by EVs will likely take time and depend on several factors:\n\n1. **Infrastructure**: Expansion of charging networks, especially in rural areas, is critical for widespread EV adoption.\n2. **Cost**: While EVs are becoming more affordable, upfront costs and battery production challenges may slow adoption.\n3. **Energy Sources**: The environmental benefits of EVs depend on the cleanliness of the electricity grid.\n4. **Policy**: Government incentives and phased bans on gas vehicles will influence the timeline.\n\nIt’s plausible that **gas cars will be largely phased out within 20-30 years**, but **hybrids and EVs may coexist with gas cars for some time**, especially in regions with limited infrastructure or economic constraints. The pace will vary by country and market.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2602,
+      "output_tokens": 630,
+      "total_latency_ms": 8644,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:13.369Z"
+  },
+  {
+    "result_id": "437afc66-ca5e-4fa3-8b29-8cab1b82d740",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2597,
+      "output_tokens": 234,
+      "total_latency_ms": 3244,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:16.682Z"
+  },
+  {
+    "result_id": "214b4d6f-15f5-4b01-839c-f0f9ebb2ecbb",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "To learn about authentication, start by understanding the fundamentals of authentication mechanisms (e.g., OAuth, JWT, API keys) and security best practices. Once you're familiar with the concepts, you can explore the available tools like `auth_list_users`, `auth_create_user`, and `auth_revoke_token` to manage user accounts and permissions in practice. Would you like guidance on any specific authentication topic?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2604,
+      "output_tokens": 226,
+      "total_latency_ms": 3144,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:19.896Z"
+  },
+  {
+    "result_id": "23ca7e00-c4d5-49bb-b05e-884cd44026d3",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 2,
+    "response": {
+      "raw_output": "The available tools do not include any functionality for retrieving historical information about storage technologies, systems, or practices. This query would require access to historical databases, academic resources, or general knowledge repositories, which are not provided in the current toolset.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2598,
+      "output_tokens": 356,
+      "total_latency_ms": 4891,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:24.844Z"
+  },
+  {
+    "result_id": "84c0d6ad-3754-4665-8e84-e0d0152e8bba",
+    "task_id": "tab-D-ts-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2611,
+      "output_tokens": 122,
+      "total_latency_ms": 1733,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:26.640Z"
+  },
+  {
+    "result_id": "06c45238-24b5-49c8-b9a6-dcbf98f4e810",
+    "task_id": "tab-D-ts-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"store_list_files\", \"arguments\": {}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {}
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2604,
+      "output_tokens": 760,
+      "total_latency_ms": 10433,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:37.135Z"
+  },
+  {
+    "result_id": "d457417a-e486-4984-bcf7-56165d4620b8",
+    "task_id": "tab-D-ts-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\"}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2607,
+      "output_tokens": 129,
+      "total_latency_ms": 1824,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:39.021Z"
+  },
+  {
+    "result_id": "566a639b-7ba1-45a8-bc3a-4ee259e423de",
+    "task_id": "tab-D-ts-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2624,
+      "output_tokens": 242,
+      "total_latency_ms": 3365,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:42.446Z"
+  },
+  {
+    "result_id": "ade126ea-df70-4395-8e5c-31677cefd57e",
+    "task_id": "tab-D-ts-005",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "To update the calendar event with ID \"example_value\", please provide the specific changes you want to make (e.g., new title, updated time, location, attendees, etc.). I'll need details about which fields should be modified.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2611,
+      "output_tokens": 159,
+      "total_latency_ms": 2227,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:44.737Z"
+  },
+  {
+    "result_id": "bbccc243-4dad-4853-b1f6-0101609f7ece",
+    "task_id": "tab-D-ts-006",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2614,
+      "output_tokens": 182,
+      "total_latency_ms": 2546,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:47.340Z"
+  },
+  {
+    "result_id": "9c32ce9e-23b6-47fc-9560-691dc024535c",
+    "task_id": "tab-D-ts-007",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2619,
+      "output_tokens": 260,
+      "total_latency_ms": 3609,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:51.016Z"
+  },
+  {
+    "result_id": "8683581a-111e-4621-8731-9d06ba762a15",
+    "task_id": "tab-D-ts-008",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\", \"voice\": \"alloy\", \"language\": \"en-US\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value",
+          "voice": "alloy",
+          "language": "en-US"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.8
+    },
+    "metrics": {
+      "input_tokens": 2619,
+      "output_tokens": 172,
+      "total_latency_ms": 2419,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:21:53.501Z"
+  },
+  {
+    "result_id": "07f3a11a-fad2-4eeb-aadb-f148cb7b1645",
+    "task_id": "tab-D-mt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2620,
+      "output_tokens": 489,
+      "total_latency_ms": 6724,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:00.295Z"
+  },
+  {
+    "result_id": "4a60e20a-644b-4cec-a314-6495517abb0f",
+    "task_id": "tab-D-mt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\", \"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2629,
+      "output_tokens": 452,
+      "total_latency_ms": 6237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:06.588Z"
+  },
+  {
+    "result_id": "87470047-7c63-48bc-8b46-87079e1ca4a0",
+    "task_id": "tab-D-mt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}}\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2629,
+      "output_tokens": 310,
+      "total_latency_ms": 4290,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:10.940Z"
+  },
+  {
+    "result_id": "1648657c-2513-447a-a5e3-49079b6cb8b4",
+    "task_id": "tab-D-mt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\", \"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "fin_get_stock_price",
+          "arguments": {
+            "ticker": "example_value"
+          }
+        },
+        {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "example_value",
+            "metric": "requests_per_sec"
+          }
+        },
+        {
+          "name": "cal_find_free_time",
+          "arguments": {
+            "participants": [
+              "item1",
+              "item2"
+            ],
+            "duration_minutes": 66,
+            "start_date": "example_value",
+            "end_date": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2663,
+      "output_tokens": 511,
+      "total_latency_ms": 7058,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:18.055Z"
+  },
+  {
+    "result_id": "f5740ae2-8798-4cf6-8b80-a43ca65e7a7a",
+    "task_id": "tab-D-pe-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2602,
+      "output_tokens": 259,
+      "total_latency_ms": 3589,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:21.707Z"
+  },
+  {
+    "result_id": "26dd4459-ac63-41c0-892e-77a3b2f9e82f",
+    "task_id": "tab-D-pe-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2608,
+      "output_tokens": 231,
+      "total_latency_ms": 3220,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:24.990Z"
+  },
+  {
+    "result_id": "441fe18a-b1dd-43d0-a196-fd8cdb208670",
+    "task_id": "tab-D-pe-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2640,
+      "output_tokens": 204,
+      "total_latency_ms": 2862,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:27.912Z"
+  },
+  {
+    "result_id": "c7bdb999-2bea-44bf-95f2-80f951690216",
+    "task_id": "tab-D-pe-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2645,
+      "output_tokens": 347,
+      "total_latency_ms": 4796,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:32.766Z"
+  },
+  {
+    "result_id": "ea7c6b94-312e-4296-8f70-d08c09556079",
+    "task_id": "tab-D-nt-001",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "The transition from gas-powered vehicles to electric vehicles (EVs) is accelerating due to advancements in battery technology, environmental concerns, and government policies. However, a complete replacement of gas cars by EVs will likely take time and depend on several factors:\n\n1. **Infrastructure**: Expansion of charging networks, especially in rural areas, is critical for widespread EV adoption.\n2. **Cost**: While EVs are becoming more affordable, upfront costs and battery production challenges may slow adoption.\n3. **Energy Sources**: The environmental benefits of EVs depend on the cleanliness of the electricity grid.\n4. **Policy**: Government incentives and phased bans on gas vehicles will influence the timeline.\n\nIt’s plausible that **gas cars will be largely phased out within 20-30 years**, but **hybrids and EVs may coexist with gas cars for some time**, especially in regions with limited infrastructure or economic constraints. The pace will vary by country and market.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2602,
+      "output_tokens": 630,
+      "total_latency_ms": 8699,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:41.534Z"
+  },
+  {
+    "result_id": "64cc04a7-fd33-4154-bf3c-5ee57e40bd65",
+    "task_id": "tab-D-nt-002",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2597,
+      "output_tokens": 234,
+      "total_latency_ms": 3260,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:44.849Z"
+  },
+  {
+    "result_id": "8f2f9e80-109b-458b-b975-470e5c8b8d0b",
+    "task_id": "tab-D-nt-003",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "To learn about authentication, start by understanding the fundamentals of authentication mechanisms (e.g., OAuth, JWT, API keys) and security best practices. Once you're familiar with the concepts, you can explore the available tools like `auth_list_users`, `auth_create_user`, and `auth_revoke_token` to manage user accounts and permissions in practice. Would you like guidance on any specific authentication topic?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2604,
+      "output_tokens": 226,
+      "total_latency_ms": 3150,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:48.063Z"
+  },
+  {
+    "result_id": "02f7d927-a90b-4a99-bdba-d6527bd5baa9",
+    "task_id": "tab-D-nt-004",
+    "model": "Qwen3 14B",
+    "condition": "tscg_conservative",
+    "run": 3,
+    "response": {
+      "raw_output": "The available tools do not include any functionality for retrieving historical information about storage technologies, systems, or practices. This query would require access to historical databases, academic resources, or general knowledge repositories, which are not provided in the current toolset.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 2598,
+      "output_tokens": 356,
+      "total_latency_ms": 4905,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-04T08:22:53.034Z"
+  }
+]

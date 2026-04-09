@@ -1,0 +1,3136 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Qwen3 4B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-03T08:46:47.433Z",
+    "end_time": "2026-03-03T09:05:00.316Z",
+    "duration_ms": 1092883
+  },
+  "results": [
+    {
+      "result_id": "9d7c8082-9b1c-4a5e-b3cb-3afe12172b3c",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "output_format": "webm",
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1645,
+        "output_tokens": 336,
+        "total_latency_ms": 12655,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:00.256Z"
+    },
+    {
+      "result_id": "e6205c60-caa5-4a08-9423-98cdf4eca55f",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 1024,
+        "total_latency_ms": 10558,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:10.876Z"
+    },
+    {
+      "result_id": "a3f235af-6939-4b9e-b068-66a114898dbe",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1644,
+        "output_tokens": 1024,
+        "total_latency_ms": 9179,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:20.123Z"
+    },
+    {
+      "result_id": "d1886070-288b-4062-b126-333982324683",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1654,
+        "output_tokens": 1024,
+        "total_latency_ms": 9701,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:29.893Z"
+    },
+    {
+      "result_id": "42026843-e614-4812-8b87-00da629d1021",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 1024,
+        "total_latency_ms": 8875,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:38.826Z"
+    },
+    {
+      "result_id": "b95c483c-0cf8-4b66-91fe-e65b7b9cd1c7",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1644,
+        "output_tokens": 297,
+        "total_latency_ms": 3770,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:42.666Z"
+    },
+    {
+      "result_id": "e2fec6d3-3efd-4b14-b5d0-39d1623e2dce",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1651,
+        "output_tokens": 452,
+        "total_latency_ms": 5899,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:48.621Z"
+    },
+    {
+      "result_id": "699106dd-0319-429e-af3f-ec824b107d8c",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1653,
+        "output_tokens": 372,
+        "total_latency_ms": 5112,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:47:53.800Z"
+    },
+    {
+      "result_id": "b81fa443-d192-439d-aa92-6b04c0e983ab",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1651,
+        "output_tokens": 1024,
+        "total_latency_ms": 14141,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:48:08.011Z"
+    },
+    {
+      "result_id": "a2ad2dc8-9c2d-4357-aee4-a594e33a7cfd",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1646,
+        "output_tokens": 1024,
+        "total_latency_ms": 14127,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:48:22.196Z"
+    },
+    {
+      "result_id": "a5f3bea1-43bd-4088-a582-52a2c833b63d",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1665,
+        "output_tokens": 1024,
+        "total_latency_ms": 14116,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:48:36.373Z"
+    },
+    {
+      "result_id": "2ae7aa02-efa6-45ae-bdb6-68b916692e87",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1666,
+        "output_tokens": 1024,
+        "total_latency_ms": 10519,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:48:46.951Z"
+    },
+    {
+      "result_id": "51fb4bef-9109-4e05-b842-ddb04f552b01",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1634,
+        "output_tokens": 1024,
+        "total_latency_ms": 10419,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:48:57.439Z"
+    },
+    {
+      "result_id": "d8b9842f-573f-4353-a97e-9d0f1e1bc908",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1639,
+        "output_tokens": 1024,
+        "total_latency_ms": 10502,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:08.005Z"
+    },
+    {
+      "result_id": "900bcbd2-4c45-448b-ae8a-ba69474f6ae2",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1664,
+        "output_tokens": 1024,
+        "total_latency_ms": 14072,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:22.133Z"
+    },
+    {
+      "result_id": "a5ade556-ff69-4412-8b97-4db969c41f84",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 317,
+        "total_latency_ms": 4377,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:26.570Z"
+    },
+    {
+      "result_id": "5bbecc34-41d7-4707-9517-9d6d7b2f874d",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide programming language recommendations, but I can help you think through this decision! Here's a quick comparison:\n\n**Python**:\n- Great for beginners (simple syntax)\n- Widely used in data science, AI, web development\n- Strong community support\n- Good for quick prototyping\n\n**Rust**:\n- More challenging to learn (memory safety focus)\n- Ideal for systems programming, webAssembly, performance-critical apps\n- Great for building safe and efficient software\n- Smaller community than Python\n\nYour choice depends on your goals:\n- Start with Python if you're new to programming or want to focus on data/science\n- Choose Rust if you're interested in systems programming, performance, or building safe applications\n\nWould you like help narrowing this down based on your specific project or career goals?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1632,
+        "output_tokens": 462,
+        "total_latency_ms": 7444,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:34.081Z"
+    },
+    {
+      "result_id": "679046a4-3cb7-4825-a66a-2e687b9ecb02",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The Mona Lisa was painted by Leonardo da Vinci. I don't have access to tools that provide art history information, but this is a well-documented fact in art history.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1627,
+        "output_tokens": 235,
+        "total_latency_ms": 3042,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:37.184Z"
+    },
+    {
+      "result_id": "337c6b00-2993-4c06-a14d-7b38b6c1bc33",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Software architecture is crucial in modern software development because it provides a strategic blueprint that guides the design, structure, and behavior of a system. It ensures that the software can scale efficiently to handle growing user demands, maintain high performance, and adapt to future requirements without requiring complete rewrites. A well-defined architecture also promotes collaboration among development teams, reduces technical debt, enhances security, and facilitates seamless integration with third-party services. Additionally, it helps in managing complexity by breaking down the system into manageable components, ensuring that the solution remains flexible and cost-effective over its lifecycle. Ultimately, a robust architecture enables organizations to deliver reliable, maintainable, and innovative software that meets evolving business needs.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1631,
+        "output_tokens": 519,
+        "total_latency_ms": 6531,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:43.774Z"
+    },
+    {
+      "result_id": "86cbbde5-35ae-4710-92f8-f0adbe8b06f5",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools or data that can track the evolution of version control systems over time. My capabilities are limited to the specific functions listed in the tools section (e.g., analytics, user management, weather, payments, media processing). None of the available tools can provide historical information about version control systems like Git, SVN, or other development tools.\n\nWould you like help with something that can be addressed using the tools I do have access to?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1631,
+        "output_tokens": 402,
+        "total_latency_ms": 6495,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:50.327Z"
+    },
+    {
+      "result_id": "68632879-775d-4f6c-88eb-0e9f9fff94f8",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "output_format": "webm",
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1645,
+        "output_tokens": 336,
+        "total_latency_ms": 4889,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:49:55.276Z"
+    },
+    {
+      "result_id": "eef3dbc6-0fa4-460c-b2c4-9bd2739ccdbc",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 1024,
+        "total_latency_ms": 10555,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:05.897Z"
+    },
+    {
+      "result_id": "d0e09133-d71d-4da2-805b-1e9869695ce9",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1644,
+        "output_tokens": 1024,
+        "total_latency_ms": 9165,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:15.117Z"
+    },
+    {
+      "result_id": "4cdd501c-214f-4545-8155-6b03f056b6d1",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1654,
+        "output_tokens": 1024,
+        "total_latency_ms": 9657,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:24.841Z"
+    },
+    {
+      "result_id": "27c3f650-d757-4634-8e6b-f9c2343fe406",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 1024,
+        "total_latency_ms": 8828,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:33.736Z"
+    },
+    {
+      "result_id": "58e79d5c-6d08-429a-924c-a1cab7920204",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1644,
+        "output_tokens": 297,
+        "total_latency_ms": 3754,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:37.560Z"
+    },
+    {
+      "result_id": "31e49aaf-f769-406f-88dd-58e210e6eebd",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1651,
+        "output_tokens": 452,
+        "total_latency_ms": 5846,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:43.468Z"
+    },
+    {
+      "result_id": "56fe65fb-21c5-4a74-bccb-c3023c27751e",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "message": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1653,
+        "output_tokens": 372,
+        "total_latency_ms": 5084,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:50:48.611Z"
+    },
+    {
+      "result_id": "88035c29-8fb8-48c1-bc02-29bdd641db71",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1651,
+        "output_tokens": 1024,
+        "total_latency_ms": 14067,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:51:02.741Z"
+    },
+    {
+      "result_id": "6074e18f-8fb0-49a1-b47f-f629ebf9580c",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1646,
+        "output_tokens": 1024,
+        "total_latency_ms": 14005,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:51:16.807Z"
+    },
+    {
+      "result_id": "209df837-082f-4d76-a410-64aa31af0428",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1665,
+        "output_tokens": 1024,
+        "total_latency_ms": 14043,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:51:30.917Z"
+    },
+    {
+      "result_id": "d85f8988-331b-4aa0-ba7e-801a9c1d594d",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1666,
+        "output_tokens": 1024,
+        "total_latency_ms": 10472,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:51:41.455Z"
+    },
+    {
+      "result_id": "ae2583a8-bf90-4329-a51a-287ec5d62909",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1634,
+        "output_tokens": 1024,
+        "total_latency_ms": 10374,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:51:51.898Z"
+    },
+    {
+      "result_id": "e35dfae0-aab5-4236-ad54-046bcfc77be8",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1639,
+        "output_tokens": 1024,
+        "total_latency_ms": 10461,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:02.429Z"
+    },
+    {
+      "result_id": "22ddcb34-8161-49be-9765-bafa34c429d0",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1664,
+        "output_tokens": 1024,
+        "total_latency_ms": 14070,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:16.569Z"
+    },
+    {
+      "result_id": "a60b915e-824d-4f88-82e3-194eeec97e37",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "status": "pending",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 317,
+        "total_latency_ms": 4372,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:21.006Z"
+    },
+    {
+      "result_id": "421f0e15-da3a-441f-9895-23eefc01b142",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide programming language recommendations, but I can help you think through this decision! Here's a quick comparison:\n\n**Python**:\n- Great for beginners (simple syntax)\n- Widely used in data science, AI, web development\n- Strong community support\n- Good for quick prototyping\n\n**Rust**:\n- More challenging to learn (memory safety focus)\n- Ideal for systems programming, webAssembly, performance-critical apps\n- Great for building safe and efficient software\n- Smaller community than Python\n\nYour choice depends on your goals:\n- Start with Python if you're new to programming or want to focus on data/science\n- Choose Rust if you're interested in systems programming, performance, or building safe applications\n\nWould you like help narrowing this down based on your specific project or career goals?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1632,
+        "output_tokens": 462,
+        "total_latency_ms": 7424,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:28.489Z"
+    },
+    {
+      "result_id": "008c3895-f34d-43c1-ac94-45066f9191e9",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The Mona Lisa was painted by Leonardo da Vinci. I don't have access to tools that provide art history information, but this is a well-documented fact in art history.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1627,
+        "output_tokens": 235,
+        "total_latency_ms": 3030,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:31.581Z"
+    },
+    {
+      "result_id": "8d119868-dbad-4da4-9a67-eb2e0f34e750",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Software architecture is crucial in modern software development because it provides a strategic blueprint that guides the design, structure, and behavior of a system. It ensures that the software can scale efficiently to handle growing user demands, maintain high performance, and adapt to future requirements without requiring complete rewrites. A well-defined architecture also promotes collaboration among development teams, reduces technical debt, enhances security, and facilitates seamless integration with third-party services. Additionally, it helps in managing complexity by breaking down the system into manageable components, ensuring that the solution remains flexible and cost-effective over its lifecycle. Ultimately, a robust architecture enables organizations to deliver reliable, maintainable, and innovative software that meets evolving business needs.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1631,
+        "output_tokens": 519,
+        "total_latency_ms": 6487,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:38.127Z"
+    },
+    {
+      "result_id": "12b16b2a-6cc2-4aa5-b734-6819639efd01",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools or data that can track the evolution of version control systems over time. My capabilities are limited to the specific functions listed in the tools section (e.g., analytics, user management, weather, payments, media processing). None of the available tools can provide historical information about version control systems like Git, SVN, or other development tools.\n\nWould you like help with something that can be addressed using the tools I do have access to?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1631,
+        "output_tokens": 402,
+        "total_latency_ms": 6459,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:44.642Z"
+    },
+    {
+      "result_id": "1d1ebd69-bd82-4980-b9e9-2e4f8c4f1f22",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "output_format": "webm",
+            "input_path": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1645,
+        "output_tokens": 336,
+        "total_latency_ms": 4859,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:52:49.563Z"
+    },
+    {
+      "result_id": "62ccaf83-df15-4fb8-a5e0-786f2f265fb4",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 1024,
+        "total_latency_ms": 10528,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:00.154Z"
+    },
+    {
+      "result_id": "48f5b421-a33a-41ee-a4c1-71b0a742be4d",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1644,
+        "output_tokens": 1024,
+        "total_latency_ms": 9145,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:09.362Z"
+    },
+    {
+      "result_id": "39325644-fdbc-4869-bbe8-86c4dd052048",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1654,
+        "output_tokens": 1024,
+        "total_latency_ms": 9643,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:19.062Z"
+    },
+    {
+      "result_id": "cbc4ed3d-08f5-4da0-b5b4-0dfefd982479",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 1024,
+        "total_latency_ms": 8825,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:27.955Z"
+    },
+    {
+      "result_id": "8bf88ce6-a99c-4ba6-b6ab-299bbc55bcca",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1644,
+        "output_tokens": 297,
+        "total_latency_ms": 3770,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:31.785Z"
+    },
+    {
+      "result_id": "080d5d12-a600-485c-847b-bd9ada96123b",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1651,
+        "output_tokens": 452,
+        "total_latency_ms": 5850,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:37.691Z"
+    },
+    {
+      "result_id": "a1c2cc35-d7ec-4fc4-b06b-c00b62caf2e2",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1653,
+        "output_tokens": 372,
+        "total_latency_ms": 5081,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:42.836Z"
+    },
+    {
+      "result_id": "674f435a-56b2-48a8-b393-be5aa94b73b8",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1651,
+        "output_tokens": 1024,
+        "total_latency_ms": 14041,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:53:56.946Z"
+    },
+    {
+      "result_id": "10b89a35-dd87-4ff4-a526-8930ae24b3cf",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1646,
+        "output_tokens": 1024,
+        "total_latency_ms": 14046,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:54:11.050Z"
+    },
+    {
+      "result_id": "cf155309-f7a0-4dfb-8dcd-ad9d06767692",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1665,
+        "output_tokens": 1024,
+        "total_latency_ms": 14069,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:54:25.176Z"
+    },
+    {
+      "result_id": "77e6766c-aa47-475a-97ac-b2e79aa59db3",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1666,
+        "output_tokens": 1024,
+        "total_latency_ms": 10482,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:54:35.715Z"
+    },
+    {
+      "result_id": "de583bcf-aee2-4dba-b714-dd630acb6a30",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1634,
+        "output_tokens": 1024,
+        "total_latency_ms": 10415,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:54:46.186Z"
+    },
+    {
+      "result_id": "56149f9a-12e7-4faf-b828-d66d43cd9b4b",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1639,
+        "output_tokens": 1024,
+        "total_latency_ms": 10468,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:54:56.716Z"
+    },
+    {
+      "result_id": "9180e18a-22a3-4bdd-a72b-1c8eb019b85d",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1664,
+        "output_tokens": 1024,
+        "total_latency_ms": 14056,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:10.831Z"
+    },
+    {
+      "result_id": "ac1b4c48-4cbe-4334-9f47-a2a2aa1d22d1",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1648,
+        "output_tokens": 317,
+        "total_latency_ms": 4374,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:15.267Z"
+    },
+    {
+      "result_id": "a17ad9b2-053b-454e-8a42-fbf886398d91",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide programming language recommendations, but I can help you think through this decision! Here's a quick comparison:\n\n**Python**:\n- Great for beginners (simple syntax)\n- Widely used in data science, AI, web development\n- Strong community support\n- Good for quick prototyping\n\n**Rust**:\n- More challenging to learn (memory safety focus)\n- Ideal for systems programming, webAssembly, performance-critical apps\n- Great for building safe and efficient software\n- Smaller community than Python\n\nYour choice depends on your goals:\n- Start with Python if you're new to programming or want to focus on data/science\n- Choose Rust if you're interested in systems programming, performance, or building safe applications\n\nWould you like help narrowing this down based on your specific project or career goals?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1632,
+        "output_tokens": 462,
+        "total_latency_ms": 7451,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:22.776Z"
+    },
+    {
+      "result_id": "833941fa-73bd-4c02-91ca-9e5051224c75",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The Mona Lisa was painted by Leonardo da Vinci. I don't have access to tools that provide art history information, but this is a well-documented fact in art history.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1627,
+        "output_tokens": 235,
+        "total_latency_ms": 3021,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:25.865Z"
+    },
+    {
+      "result_id": "e5471b23-8e4d-4576-b681-9d18e99fab8e",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "Software architecture is crucial in modern software development because it provides a strategic blueprint that guides the design, structure, and behavior of a system. It ensures that the software can scale efficiently to handle growing user demands, maintain high performance, and adapt to future requirements without requiring complete rewrites. A well-defined architecture also promotes collaboration among development teams, reduces technical debt, enhances security, and facilitates seamless integration with third-party services. Additionally, it helps in managing complexity by breaking down the system into manageable components, ensuring that the solution remains flexible and cost-effective over its lifecycle. Ultimately, a robust architecture enables organizations to deliver reliable, maintainable, and innovative software that meets evolving business needs.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1631,
+        "output_tokens": 519,
+        "total_latency_ms": 6519,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:32.443Z"
+    },
+    {
+      "result_id": "b91dc8cb-a01a-49ac-b315-ebf01d15e0a9",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools or data that can track the evolution of version control systems over time. My capabilities are limited to the specific functions listed in the tools section (e.g., analytics, user management, weather, payments, media processing). None of the available tools can provide historical information about version control systems like Git, SVN, or other development tools.\n\nWould you like help with something that can be addressed using the tools I do have access to?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1631,
+        "output_tokens": 402,
+        "total_latency_ms": 6487,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:38.988Z"
+    },
+    {
+      "result_id": "36c08b08-be95-4666-b699-d5ef7901c52b",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"example_value\", \"output_format\": \"webm\"}}",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1101,
+        "output_tokens": 243,
+        "total_latency_ms": 3107,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:42.163Z"
+    },
+    {
+      "result_id": "a1996c48-bdf4-4afa-8c3e-a215bd91b7f9",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 1024,
+        "total_latency_ms": 13123,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:55:55.343Z"
+    },
+    {
+      "result_id": "9d3877eb-3e1e-43db-959e-42fc1667b6e0",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}",
+        "parsed_tool_call": {
+          "name": "example_value",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1100,
+        "output_tokens": 554,
+        "total_latency_ms": 8227,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:56:03.631Z"
+    },
+    {
+      "result_id": "768c4691-9592-4543-b1a7-e8516cd2702d",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1110,
+        "output_tokens": 1024,
+        "total_latency_ms": 13062,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:56:16.754Z"
+    },
+    {
+      "result_id": "8f1b82fd-a81c-4eb0-b075-8452c5b12f29",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 1024,
+        "total_latency_ms": 11979,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:56:28.792Z"
+    },
+    {
+      "result_id": "d970ee39-c410-4950-9216-a42145bbad01",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1100,
+        "output_tokens": 300,
+        "total_latency_ms": 3753,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:56:32.610Z"
+    },
+    {
+      "result_id": "f5e33c7b-98d4-4271-866e-f324ed77d9a8",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\",",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1107,
+        "output_tokens": 1024,
+        "total_latency_ms": 13021,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:56:45.688Z"
+    },
+    {
+      "result_id": "9df2ed49-196e-408b-879a-37a469daf10f",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1109,
+        "output_tokens": 321,
+        "total_latency_ms": 3958,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:56:49.705Z"
+    },
+    {
+      "result_id": "992361da-4e17-40a2-ab86-823bbccd1df9",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1107,
+        "output_tokens": 1024,
+        "total_latency_ms": 13051,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:57:02.825Z"
+    },
+    {
+      "result_id": "1630c05b-2ed1-45b5-b2e1-2f4c073ec731",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1102,
+        "output_tokens": 1024,
+        "total_latency_ms": 13006,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:57:15.894Z"
+    },
+    {
+      "result_id": "526ae39a-214f-438b-997a-aa2377b0b539",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1121,
+        "output_tokens": 1024,
+        "total_latency_ms": 13029,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:57:28.981Z"
+    },
+    {
+      "result_id": "5bf1469a-8bc4-4d26-892b-880c7cece7ec",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1122,
+        "output_tokens": 981,
+        "total_latency_ms": 10201,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:57:39.245Z"
+    },
+    {
+      "result_id": "aa7667e2-be44-4031-a6ea-b3517fc70949",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1090,
+        "output_tokens": 822,
+        "total_latency_ms": 11735,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:57:51.043Z"
+    },
+    {
+      "result_id": "8225a44f-ffe7-4fa3-8201-36a457d847bb",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1095,
+        "output_tokens": 1024,
+        "total_latency_ms": 13038,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:04.145Z"
+    },
+    {
+      "result_id": "9c2a0cd5-afc1-4f88-b825-5aad1104e65e",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1120,
+        "output_tokens": 1024,
+        "total_latency_ms": 13009,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:17.216Z"
+    },
+    {
+      "result_id": "a476af0b-8ce8-46ae-a5d1-cade21d0fdd8",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"editor\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 337,
+        "total_latency_ms": 4058,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:21.332Z"
+    },
+    {
+      "result_id": "d0549d34-9139-49bb-a4a5-34704f6da8fd",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide programming language recommendations, but I can help you decide based on your goals! \n\n**Python** is great for beginners, data science, AI, web development (with frameworks like Django/Flask), and scripting. It has a simple syntax and massive community support.\n\n**Rust** is more complex but excels in systems programming, performance-critical applications, and memory safety (e.g., webAssembly, embedded systems). It’s ideal if you want to build safe, efficient software without crashes.\n\n**Which to choose?**\n- Start with **Python** if you’re new to programming or want to focus on data/science/quick prototyping.\n- Choose **Rust** if you’re interested in low-level systems, high-performance apps, or want to avoid memory safety issues.\n\nLet me know your goals (e.g., \"I want to build a web app\" or \"I need fast backend code\"), and I can give more tailored advice! 😊",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1088,
+        "output_tokens": 646,
+        "total_latency_ms": 7850,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:29.241Z"
+    },
+    {
+      "result_id": "c065f830-3689-4638-a3d5-3e7c8f27d45f",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The Mona Lisa was painted by Leonardo da Vinci. However, none of the available tools can provide this information as they are focused on analytics, cloud storage, messaging, user management, payments, media processing, and weather-related functions. I don't have access to art history databases or external knowledge for this query.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1083,
+        "output_tokens": 240,
+        "total_latency_ms": 2740,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:32.047Z"
+    },
+    {
+      "result_id": "d1598087-8bba-4020-bcbc-6c7680fb2c2f",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Software architecture is crucial in modern software development because it provides a strategic blueprint that ensures systems can scale efficiently, remain maintainable, and adapt to evolving business needs. It enables teams to manage complexity through modular design, integrate modern technologies (like cloud services and microservices), and address critical factors such as security, performance, and cost. A well-defined architecture also accelerates development cycles, reduces technical debt, supports seamless collaboration across teams, and ensures compliance with regulatory requirements—making it indispensable for building robust, future-proof applications in today's fast-paced tech landscape.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1087,
+        "output_tokens": 646,
+        "total_latency_ms": 8360,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:40.478Z"
+    },
+    {
+      "result_id": "871a06f5-d6c7-4ab1-bb93-fd3d978dfc18",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The question about how version control has evolved over the last decade is outside the scope of the available tools. None of the provided tools (analytics, file storage, messaging, authentication, payments, media processing, weather, etc.) are designed to retrieve historical or conceptual information about version control systems like Git, SVN, or other tools. This query requires general knowledge rather than data from the tools listed.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1087,
+        "output_tokens": 396,
+        "total_latency_ms": 5088,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:45.633Z"
+    },
+    {
+      "result_id": "a9355471-e262-4f19-a71b-39d03769e526",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"example_value\", \"output_format\": \"webm\"}}",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1101,
+        "output_tokens": 347,
+        "total_latency_ms": 3660,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:58:49.353Z"
+    },
+    {
+      "result_id": "f1f28925-cfc4-47ec-9389-97db0b28ccf9",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 1024,
+        "total_latency_ms": 13035,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:02.451Z"
+    },
+    {
+      "result_id": "ba10188d-75cf-4e90-846e-9c477338f562",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}",
+        "parsed_tool_call": {
+          "name": "example_value",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1100,
+        "output_tokens": 554,
+        "total_latency_ms": 8185,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:10.699Z"
+    },
+    {
+      "result_id": "75fc2100-bef9-4466-85a2-ae8ba46e2ee7",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1110,
+        "output_tokens": 1024,
+        "total_latency_ms": 13060,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:23.828Z"
+    },
+    {
+      "result_id": "e423b6fa-cf97-45d5-a1a9-8d9135122276",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 1024,
+        "total_latency_ms": 11955,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:35.854Z"
+    },
+    {
+      "result_id": "98970eef-e749-402d-a4f7-bbea9606cb0c",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1100,
+        "output_tokens": 300,
+        "total_latency_ms": 3772,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:39.686Z"
+    },
+    {
+      "result_id": "93ec7b2d-3957-42ac-90da-d426b7643129",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\",",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1107,
+        "output_tokens": 1024,
+        "total_latency_ms": 13079,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:52.837Z"
+    },
+    {
+      "result_id": "92a53863-e783-4a4f-92c4-9299bc113b61",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1109,
+        "output_tokens": 321,
+        "total_latency_ms": 4004,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:59:56.899Z"
+    },
+    {
+      "result_id": "0b4052bf-22a2-4036-b81a-43a678b1b8b7",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1107,
+        "output_tokens": 1024,
+        "total_latency_ms": 13084,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:00:10.039Z"
+    },
+    {
+      "result_id": "b58aef61-fed5-463a-a4dc-1ec568e1b7fb",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1102,
+        "output_tokens": 1024,
+        "total_latency_ms": 13018,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:00:23.125Z"
+    },
+    {
+      "result_id": "91e3d074-b25b-441c-b64a-12109245355d",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1121,
+        "output_tokens": 1024,
+        "total_latency_ms": 13057,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:00:36.244Z"
+    },
+    {
+      "result_id": "1b95f692-e5f6-4948-bc92-28a0638850ed",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1122,
+        "output_tokens": 981,
+        "total_latency_ms": 10143,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:00:46.452Z"
+    },
+    {
+      "result_id": "e8ffaa22-e70d-4d99-85dd-3d0df46f7d3a",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1090,
+        "output_tokens": 822,
+        "total_latency_ms": 11757,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:00:58.276Z"
+    },
+    {
+      "result_id": "7c3c5dc8-7aa2-4f83-8f34-c8f7c8912583",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1095,
+        "output_tokens": 1024,
+        "total_latency_ms": 13101,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:11.439Z"
+    },
+    {
+      "result_id": "90324395-a397-4fc6-888b-56edb3c38eb3",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1120,
+        "output_tokens": 1024,
+        "total_latency_ms": 13083,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:24.587Z"
+    },
+    {
+      "result_id": "59b6839d-c9fd-4a00-babb-1b6aa66a2cf8",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"editor\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 337,
+        "total_latency_ms": 4055,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:28.710Z"
+    },
+    {
+      "result_id": "95b8621f-ac1d-4c25-b55e-78eed6a1c1d7",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide programming language recommendations, but I can help you decide based on your goals! \n\n**Python** is great for beginners, data science, AI, web development (with frameworks like Django/Flask), and scripting. It has a simple syntax and massive community support.\n\n**Rust** is more complex but excels in systems programming, performance-critical applications, and memory safety (e.g., webAssembly, embedded systems). It’s ideal if you want to build safe, efficient software without crashes.\n\n**Which to choose?**\n- Start with **Python** if you’re new to programming or want to focus on data/science/quick prototyping.\n- Choose **Rust** if you’re interested in low-level systems, high-performance apps, or want to avoid memory safety issues.\n\nLet me know your goals (e.g., \"I want to build a web app\" or \"I need fast backend code\"), and I can give more tailored advice! 😊",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1088,
+        "output_tokens": 646,
+        "total_latency_ms": 7814,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:36.587Z"
+    },
+    {
+      "result_id": "838e27b2-f79e-4c7c-a12b-bfc3cfba1868",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The Mona Lisa was painted by Leonardo da Vinci. However, none of the available tools can provide this information as they are focused on analytics, cloud storage, messaging, user management, payments, media processing, and weather-related functions. I don't have access to art history databases or external knowledge for this query.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1083,
+        "output_tokens": 240,
+        "total_latency_ms": 2757,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:39.405Z"
+    },
+    {
+      "result_id": "29308085-5c85-47e0-b916-b3e7936d7e2c",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Software architecture is crucial in modern software development because it provides a strategic blueprint that ensures systems can scale efficiently, remain maintainable, and adapt to evolving business needs. It enables teams to manage complexity through modular design, integrate modern technologies (like cloud services and microservices), and address critical factors such as security, performance, and cost. A well-defined architecture also accelerates development cycles, reduces technical debt, supports seamless collaboration across teams, and ensures compliance with regulatory requirements—making it indispensable for building robust, future-proof applications in today's fast-paced tech landscape.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1087,
+        "output_tokens": 646,
+        "total_latency_ms": 8393,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:47.863Z"
+    },
+    {
+      "result_id": "dd416045-e9ad-41dc-831b-784f99ee7640",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The question about how version control has evolved over the last decade is outside the scope of the available tools. None of the provided tools (analytics, file storage, messaging, authentication, payments, media processing, weather, etc.) are designed to retrieve historical or conceptual information about version control systems like Git, SVN, or other tools. This query requires general knowledge rather than data from the tools listed.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1087,
+        "output_tokens": 396,
+        "total_latency_ms": 5029,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:52.953Z"
+    },
+    {
+      "result_id": "dd76a5d3-1143-4403-a216-be3479a8e5c3",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"example_value\", \"output_format\": \"webm\"}}",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1101,
+        "output_tokens": 347,
+        "total_latency_ms": 3678,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:01:56.692Z"
+    },
+    {
+      "result_id": "01b7e28d-1280-4688-bb27-03636910a2a0",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 1024,
+        "total_latency_ms": 12980,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:02:09.738Z"
+    },
+    {
+      "result_id": "f314b366-47a5-48e5-b54f-5dd0af127a8d",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}",
+        "parsed_tool_call": {
+          "name": "example_value",
+          "arguments": {}
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1100,
+        "output_tokens": 554,
+        "total_latency_ms": 8182,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:02:17.976Z"
+    },
+    {
+      "result_id": "9333e790-1175-46ca-a88c-84f79d9757cc",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1110,
+        "output_tokens": 1024,
+        "total_latency_ms": 13021,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:02:31.058Z"
+    },
+    {
+      "result_id": "047a4dd9-c2d5-4dd5-90fd-419bdcd32e9a",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 1024,
+        "total_latency_ms": 11925,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:02:43.040Z"
+    },
+    {
+      "result_id": "cab7ec7f-4ea9-4383-a14a-e407789fdc57",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1100,
+        "output_tokens": 300,
+        "total_latency_ms": 3778,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:02:46.881Z"
+    },
+    {
+      "result_id": "8014ca2e-ffd6-49b3-9e34-aaa6f853aa57",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\",",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1107,
+        "output_tokens": 1024,
+        "total_latency_ms": 13064,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:03:00.009Z"
+    },
+    {
+      "result_id": "82421544-455d-4fcc-99fa-e5f2ef552963",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1109,
+        "output_tokens": 321,
+        "total_latency_ms": 3994,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:03:04.074Z"
+    },
+    {
+      "result_id": "a053af57-0cb7-4648-809c-3968c04013af",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1107,
+        "output_tokens": 1024,
+        "total_latency_ms": 13100,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:03:17.236Z"
+    },
+    {
+      "result_id": "fe7d41b9-b836-4af1-bc61-c13cd11dbbef",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1102,
+        "output_tokens": 1024,
+        "total_latency_ms": 13088,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:03:30.393Z"
+    },
+    {
+      "result_id": "2efc355e-3c01-423e-9307-551233d79081",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1121,
+        "output_tokens": 1024,
+        "total_latency_ms": 13037,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:03:43.499Z"
+    },
+    {
+      "result_id": "3193f203-8a64-43c4-ab77-c087008832d2",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1122,
+        "output_tokens": 981,
+        "total_latency_ms": 10167,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:03:53.724Z"
+    },
+    {
+      "result_id": "90470483-d05d-4ed8-8450-39723c5f347a",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1090,
+        "output_tokens": 822,
+        "total_latency_ms": 11756,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:05.539Z"
+    },
+    {
+      "result_id": "006c8142-052d-4ca7-b811-64fb0ef57d13",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1095,
+        "output_tokens": 1024,
+        "total_latency_ms": 13057,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:18.662Z"
+    },
+    {
+      "result_id": "ba05f8c3-606c-4f1a-b06a-cb2e5362396f",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1120,
+        "output_tokens": 1024,
+        "total_latency_ms": 13023,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:31.753Z"
+    },
+    {
+      "result_id": "143818d8-71f6-43b8-8e24-0a6089e32c25",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"editor\", \"status\": \"pending\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1104,
+        "output_tokens": 337,
+        "total_latency_ms": 4083,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:35.894Z"
+    },
+    {
+      "result_id": "67ed6130-8094-45ae-9fbd-25f91082772d",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide programming language recommendations, but I can help you decide based on your goals! \n\n**Python** is great for beginners, data science, AI, web development (with frameworks like Django/Flask), and scripting. It has a simple syntax and massive community support.\n\n**Rust** is more complex but excels in systems programming, performance-critical applications, and memory safety (e.g., webAssembly, embedded systems). It’s ideal if you want to build safe, efficient software without crashes.\n\n**Which to choose?**\n- Start with **Python** if you’re new to programming or want to focus on data/science/quick prototyping.\n- Choose **Rust** if you’re interested in low-level systems, high-performance apps, or want to avoid memory safety issues.\n\nLet me know your goals (e.g., \"I want to build a web app\" or \"I need fast backend code\"), and I can give more tailored advice! 😊",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1088,
+        "output_tokens": 646,
+        "total_latency_ms": 7835,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:43.788Z"
+    },
+    {
+      "result_id": "0b2eb603-6b84-4af3-aa2f-09f22f3c3c93",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The Mona Lisa was painted by Leonardo da Vinci. However, none of the available tools can provide this information as they are focused on analytics, cloud storage, messaging, user management, payments, media processing, and weather-related functions. I don't have access to art history databases or external knowledge for this query.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1083,
+        "output_tokens": 240,
+        "total_latency_ms": 2758,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:46.603Z"
+    },
+    {
+      "result_id": "369cd4d5-3ad2-4d07-94d1-2a61fdfc32b4",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Software architecture is crucial in modern software development because it provides a strategic blueprint that ensures systems can scale efficiently, remain maintainable, and adapt to evolving business needs. It enables teams to manage complexity through modular design, integrate modern technologies (like cloud services and microservices), and address critical factors such as security, performance, and cost. A well-defined architecture also accelerates development cycles, reduces technical debt, supports seamless collaboration across teams, and ensures compliance with regulatory requirements—making it indispensable for building robust, future-proof applications in today's fast-paced tech landscape.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1087,
+        "output_tokens": 646,
+        "total_latency_ms": 8431,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:04:55.099Z"
+    },
+    {
+      "result_id": "48729975-b3db-4483-be85-7b69137325f4",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The question about how version control has evolved over the last decade is outside the scope of the available tools. None of the provided tools (analytics, file storage, messaging, authentication, payments, media processing, weather, etc.) are designed to retrieve historical or conceptual information about version control systems like Git, SVN, or other tools. This query requires general knowledge rather than data from the tools listed.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1087,
+        "output_tokens": 396,
+        "total_latency_ms": 5085,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T09:05:00.244Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.45,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.45,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.45,
+        "ci95": [
+          0.33093453853760824,
+          0.575082854510185
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5,
+        "ci95": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.5,
+        "ci95": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.5,
+        "ci95": [
+          0.37734812427246284,
+          0.6226518757275372
+        ]
+      },
+      "arr": 1.1111111111111112,
+      "token_savings_pct": 33.04881382704049,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

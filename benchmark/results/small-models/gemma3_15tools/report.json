@@ -1,0 +1,3863 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Gemma 3 4B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-03T08:43:25.447Z",
+    "end_time": "2026-03-03T08:45:16.816Z",
+    "duration_ms": 111369
+  },
+  "results": [
+    {
+      "result_id": "b6f44dd8-01b9-4707-85d6-325c0525c89c",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"example_value\",\n    \"output_format\": \"webm\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3465,
+        "output_tokens": 53,
+        "total_latency_ms": 8283,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:41:58.904Z"
+    },
+    {
+      "result_id": "f0010b24-e350-4eda-9ae5-11f615ea7983",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 42,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 42,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3468,
+        "output_tokens": 59,
+        "total_latency_ms": 809,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:41:59.771Z"
+    },
+    {
+      "result_id": "2dcd5508-bac4-4d91-b08a-ece669816eb3",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"example_value\",\n    \"widgets\": [\n      \"item1\",\n      \"item2\"\n    ],\n    \"shared\": false\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 3463,
+        "output_tokens": 67,
+        "total_latency_ms": 852,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:00.689Z"
+    },
+    {
+      "result_id": "08c45095-7b29-4c2a-9238-f22aef02ed39",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_create_user\",\n  \"arguments\": {\n    \"email\": \"example_value\",\n    \"name\": \"example_value\",\n    \"role\": \"guest\",\n    \"password\": \"hashed_password\",\n    \"limit\": 1\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value",
+            "role": "guest",
+            "password": "hashed_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 3474,
+        "output_tokens": 75,
+        "total_latency_ms": 899,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:01.646Z"
+    },
+    {
+      "result_id": "e46389ed-cc8d-47e1-b251-7008f7024773",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3468,
+        "output_tokens": 50,
+        "total_latency_ms": 747,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:02.449Z"
+    },
+    {
+      "result_id": "4eb74568-2d6d-4de8-ade2-24fcc9fe55d5",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\",\n    \"units\": \"metric\",\n    \"sort_by\": \"temp\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value",
+            "units": "metric",
+            "sort_by": "temp"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3461,
+        "output_tokens": 58,
+        "total_latency_ms": 816,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:03.328Z"
+    },
+    {
+      "result_id": "05772c3a-2a06-490c-a836-540699f8d601",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3470,
+        "output_tokens": 46,
+        "total_latency_ms": 739,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:04.129Z"
+    },
+    {
+      "result_id": "c7a9e075-6d85-4b05-9f42-b03171e26049",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"comm_send_message\",\n  \"arguments\": {\n    \"recipient\": \"example_value\",\n    \"message\": \"example_value\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3473,
+        "output_tokens": 50,
+        "total_latency_ms": 751,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:04.937Z"
+    },
+    {
+      "result_id": "60808e40-aed3-4642-90b9-245937c6f7b3",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my-bucket\", \"prefix\": \"images\"}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "bucket": "my-bucket",
+            "prefix": "images"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3472,
+        "output_tokens": 33,
+        "total_latency_ms": 662,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:05.660Z"
+    },
+    {
+      "result_id": "efc969b0-548b-477b-ab28-f191846e44a1",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3467,
+        "output_tokens": 27,
+        "total_latency_ms": 622,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:06.342Z"
+    },
+    {
+      "result_id": "e14d6ae0-14f1-4cde-8c92-557334f4c4bf",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my_bucket\", \"prefix\": \"\"}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "bucket": "my_bucket",
+            "prefix": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3491,
+        "output_tokens": 32,
+        "total_latency_ms": 648,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:07.055Z"
+    },
+    {
+      "result_id": "fee5c30a-0600-446b-a5f6-229ac599f3de",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3494,
+        "output_tokens": 77,
+        "total_latency_ms": 913,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:08.026Z"
+    },
+    {
+      "result_id": "043bf6e7-b706-488a-b702-81702a5d5430",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"user@example.com\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3455,
+        "output_tokens": 44,
+        "total_latency_ms": 722,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:08.803Z"
+    },
+    {
+      "result_id": "31d2ae7b-0a14-4abe-835e-287d8d7a9dfd",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_create_user\",\n  \"arguments\": {\n    \"email\": \"quarterly-report\",\n    \"name\": \"Berlin\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "quarterly-report",
+            "name": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3458,
+        "output_tokens": 49,
+        "total_latency_ms": 751,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:09.615Z"
+    },
+    {
+      "result_id": "5b2a6c1a-0b68-49a1-9da2-3cdff8d390f2",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 3486,
+        "output_tokens": 54,
+        "total_latency_ms": 776,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:10.454Z"
+    },
+    {
+      "result_id": "9d459464-8d35-41e4-9a79-7191e8a07800",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"editor\",\n    \"status\": \"pending\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3466,
+        "output_tokens": 46,
+        "total_latency_ms": 732,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:11.254Z"
+    },
+    {
+      "result_id": "b7e917f0-73f3-4820-be64-496e8df94c5f",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, this is a classic and important question! Both Python and Rust are excellent choices, but they're very different. Here's a breakdown to help you decide, considering different priorities:\n\n**Python - The Easier, More Versatile Choice**\n\n*   **Pros:**\n    *   **Ease of Learning:** Python has a very readable and beginner-friendly syntax. It's known for its gentle learning curve.\n    *   **Large Community & Ecosystem:** Huge community support, tons of libraries and frameworks for almost anything you can imagine (web development, data science, machine learning, scripting, automation, etc.).\n    *   **Rapid Development:** Python allows you to get things done quickly due to its dynamic typing and extensive libraries.\n    *   **Versatility:**  Great for a wide range of applications – from simple scripts to complex web apps.\n    *   **Data Science/ML:** Python is *the* dominant language in data science and machine learning.\n*   **Cons:**\n    *   **Performance:** Python is an interpreted language, so it's generally slower than compiled languages like Rust.  This isn't usually a problem for many applications, but can be a bottleneck for performance-critical tasks.\n    *   **Runtime Errors:** Dynamic typing can lead to errors that aren't caught until runtime.\n\n**Rust - The Powerful, Performance-Focused Choice**\n\n*   **Pros:**\n    *   **Performance:** Rust is a compiled language that's incredibly fast and efficient. It's often compared to C and C++ in terms of performance.\n    *   **Memory Safety:** Rust's ownership system prevents common memory errors (like dangling pointers and data races) at compile time – a huge advantage for reliability.\n    *   **Concurrency:** Rust makes concurrent programming much safer and easier.\n    *   **Growing Ecosystem:** The Rust ecosystem is growing rapidly, with increasing support for web development, embedded systems, and more.\n*   **Cons:**\n    *   **Steeper Learning Curve:** Rust has a more complex syntax and concepts (like ownership and borrowing) that can be challenging for beginners.\n    *   **Compile Times:** Rust can have longer compile times than Python, especially for larger projects.\n    *   **Smaller Community (Relative to Python):** While the Rust community is fantastic and very supportive, it's still smaller than Python's.\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Python          | Rust            |\n|--------------------|-----------------|-----------------|\n| **Learning Curve** | Easy            | Steep           |\n| **Performance**    | Slow            | Very Fast       |\n| **Memory Safety**  | Not Built-In    | Excellent       |\n| **Community**      | Huge            | Growing         |\n| **Use Cases**      | Web Dev, Data Sci, Scripting | Systems Programming, Embedded, Performance-Critical Apps |\n\n**Recommendation:**\n\n*   **If you're a beginner and want to get started quickly with a versatile language for a wide range of applications, especially data science or web development, choose Python.** It's a fantastic language to build a foundation in programming.\n\n*   **If you're interested in performance, memory safety, and systems programming, and you're willing to invest the time to learn a more complex language, choose Rust.** It's a great choice for building reliable and efficient software.\n\n**To help me narrow down the recommendation further, could you tell me:**\n\n*   **What are you hoping to *do* with programming?** (e.g., build websites, analyze data, create games, automate tasks, etc.)\n*   **What's your current programming experience level?** (e.g., complete beginner, some experience with other languages, etc.)",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3448,
+        "output_tokens": 805,
+        "total_latency_ms": 5143,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:16.462Z"
+    },
+    {
+      "result_id": "e6fcdef0-5856-4062-a7ff-629631a6cdcc",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\"}}\n",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 3443,
+        "output_tokens": 21,
+        "total_latency_ms": 584,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:17.104Z"
+    },
+    {
+      "result_id": "19b32ce8-0369-4a03-b9be-5bb37cbdcda9",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"user_engagement_trends\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```\nSoftware architecture is absolutely critical in modern software development, and here's a breakdown of why:\n\n**1. Managing Complexity:**\n\n*   **Modern applications are incredibly complex:**  Today's software often involves microservices, distributed systems, cloud integration, and a huge number of interconnected components. Without a well-defined architecture, this complexity quickly spirals out of control, leading to unmanageable codebases, increased development time, and higher risk of errors.\n*   **Architecture provides a blueprint:** It establishes a clear structure, defining how different parts of the system interact, making it easier to understand, reason about, and modify.\n\n**2. Improving Maintainability and Scalability:**\n\n*   **Modular Design:** Good architecture promotes modularity – breaking down the system into independent, reusable components. This makes it easier to update, fix bugs, and add new features without affecting the entire system.\n*   **Scalability:** A well-designed architecture anticipates future growth and allows the system to handle increased load (users, data, transactions) efficiently. This often involves techniques like horizontal scaling (adding more servers) and load balancing.\n*   **Reduced Technical Debt:**  Proactive architectural decisions help prevent the accumulation of technical debt – shortcuts taken during development that create long-term problems.\n\n**3. Enhancing Reliability and Resilience:**\n\n*   **Fault Tolerance:** Architecture can incorporate mechanisms for handling failures gracefully. This might include redundancy, circuit breakers, and retry logic, making the system more resilient to errors.\n*   **Testability:** A well-structured architecture makes it easier to write comprehensive tests, ensuring the quality and stability of the software.\n\n**4. Facilitating Collaboration and Communication:**\n\n*   **Shared Understanding:** A documented architecture serves as a common reference point for all team members – developers, testers, operations, and stakeholders – ensuring everyone is on the same page.\n*   **Clear Responsibilities:** It defines the boundaries and responsibilities of different teams or components.\n\n**5. Cost Optimization:**\n\n*   **Efficient Resource Utilization:** A scalable architecture can optimize resource usage, reducing infrastructure costs.\n*   **Reduced Development Costs:**  A clear architecture reduces rework and improves development efficiency, ultimately lowering development costs.\n\n**In essence, software architecture isn't just about the technical design; it's about making smart decisions *early* in the development process that will have a significant impact on the long-term success of the software.**  It’s an investment that pays off in terms of reduced risk, increased agility, and improved business outcomes.\n\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_engagement_trends",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 3447,
+        "output_tokens": 601,
+        "total_latency_ms": 3946,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:21.120Z"
+    },
+    {
+      "result_id": "9f40dcc4-2d99-4a97-a760-268dd298b5fd",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "Okay, let's break down the evolution of version control over the last decade (roughly 2014-2024). It’s been a period of massive change, driven by the rise of cloud computing, distributed teams, and increasingly complex software development workflows.\n\n**2014-2016: Git Dominance & Cloud Integration**\n\n* **Git’s Continued Rise:** Git, originally released in 2005, solidified its position as *the* dominant version control system. Its distributed nature – where every developer has a full copy of the repository – was proving incredibly powerful.\n* **GitHub’s Explosion:** GitHub, acquired by Microsoft in 2018, became the central hub for Git repositories. Its free tier, easy-to-use interface, and social features (pull requests, issues) dramatically lowered the barrier to entry for developers. This period saw a massive influx of open-source projects and a shift towards collaborative development.\n* **Cloud-Based Repositories:**  While Git was originally designed for local use, cloud-based hosting (GitHub, GitLab, Bitbucket) became increasingly common. This simplified collaboration, provided backup, and enabled easy access from anywhere.\n* **Early CI/CD Integration:**  Continuous Integration and Continuous Delivery (CI/CD) pipelines started to integrate more closely with Git repositories, automating testing and deployment.\n\n**2017-2019: Branching Strategies & Advanced Features**\n\n* **Refined Branching Models:** The “Gitflow” model (with its long-lived release branches) started to be questioned.  More lightweight strategies like GitHub Flow (single main branch with pull requests) gained popularity, emphasizing faster development cycles.\n* **Git LFS (Large File Storage):**  Git LFS was introduced to handle large binary files (images, videos, datasets) more efficiently, preventing repository bloat.\n* **Git Hooks:** Git hooks became more sophisticated, allowing developers to automate tasks before or after Git events (e.g., running tests, formatting code).\n* **GitLab’s Rise:** GitLab emerged as a strong competitor to GitHub, offering a complete DevOps platform with integrated CI/CD, issue tracking, and more, all within a Git repository.\n\n**2020-2022:  Collaboration & Scalability**\n\n* **GitHub Actions:** GitHub introduced GitHub Actions, a powerful workflow automation tool built directly into GitHub. This allowed developers to create complex CI/CD pipelines without needing to integrate with external services.\n* **Multi-Branching:** Tools and workflows emerged to support working with multiple branches simultaneously, improving team productivity.\n* **Git Large File Storage (LFS) Adoption:** LFS became more widely adopted as projects grew and the need to manage large assets increased.\n* **Increased Focus on Security:**  Git repositories became a prime target for attackers.  Tools and practices for securing Git repositories (e.g., branch protection, code scanning) gained prominence.\n\n**2023-2024:  AI Integration & New Approaches**\n\n* **AI-Powered Git Tools:**  Tools like GitHub Copilot (powered by OpenAI) started to integrate with Git, offering features like code completion, pull request generation, and automated code review.\n* **Gitpod’s Rise:** Gitpod emerged as a fully cloud-based IDE that integrates seamlessly with Git repositories, eliminating the need for developers to set up local development environments.\n* **Experimental Version Control Systems:**  While Git remains dominant, there's been renewed interest in alternative version control systems like DVC (Data Version Control) for managing machine learning projects and Lens.jl for Julia.\n* **Continued Emphasis on Security & Compliance:**  Regulations like GDPR and SOC 2 are driving increased focus on security and compliance within Git repositories.\n\n\n\n**Key Trends Over the Decade:**\n\n* **Cloud-First:** The shift to cloud-based Git hosting has been the most significant change.\n* **Collaboration:** Version control has become deeply intertwined with collaborative development workflows.\n* **Automation:** CI/CD pipelines and automation tools have become essential parts of the development process.\n* **Scalability:**  Tools and techniques have evolved to handle increasingly large and complex projects.\n* **AI Integration:** The introduction of AI-powered tools is poised to further transform how developers use version control.\n\n**Resources for Further Exploration:**\n\n* **GitHub Blog:** [https://github.blog/](https://github.blog/)\n* **GitLab Blog:** [https://about.gitlab.com/blog/](https://about.gitlab.com/blog/)\n* **Git Documentation:** [https://git-scm.com/doc](https://git-scm.com/doc)\n\nDo you want me to delve deeper into a specific aspect of this evolution, such as:\n\n*   A particular branching strategy?\n*   The rise of CI",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3447,
+        "output_tokens": 1024,
+        "total_latency_ms": 6446,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:27.623Z"
+    },
+    {
+      "result_id": "2b8a941f-9fcc-4375-8e52-1b2d94acca11",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"example_value\",\n    \"output_format\": \"webm\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3465,
+        "output_tokens": 53,
+        "total_latency_ms": 777,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:28.461Z"
+    },
+    {
+      "result_id": "c79a4cc4-a585-42b9-ab00-7e82ef0907c8",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 42,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 42,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3468,
+        "output_tokens": 59,
+        "total_latency_ms": 814,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:29.340Z"
+    },
+    {
+      "result_id": "60657193-ad5e-4bee-b848-590eb4d9323f",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"example_value\",\n    \"widgets\": [\n      \"item1\",\n      \"item2\"\n    ],\n    \"shared\": false\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 3463,
+        "output_tokens": 67,
+        "total_latency_ms": 863,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:30.265Z"
+    },
+    {
+      "result_id": "364fc60a-9f97-49e7-91c0-06a59c88db33",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_create_user\",\n  \"arguments\": {\n    \"email\": \"example_value\",\n    \"name\": \"example_value\",\n    \"role\": \"guest\",\n    \"password\": \"hashed_password\",\n    \"limit\": 1\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value",
+            "role": "guest",
+            "password": "hashed_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 3474,
+        "output_tokens": 75,
+        "total_latency_ms": 906,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:31.230Z"
+    },
+    {
+      "result_id": "f9e6c20b-20ea-4940-8d39-5578ef0defae",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3468,
+        "output_tokens": 50,
+        "total_latency_ms": 758,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:32.049Z"
+    },
+    {
+      "result_id": "9e20dfa6-8b22-46f1-acaf-490ef69f7a1a",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\",\n    \"units\": \"metric\",\n    \"sort_by\": \"temp\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value",
+            "units": "metric",
+            "sort_by": "temp"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3461,
+        "output_tokens": 58,
+        "total_latency_ms": 799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:32.904Z"
+    },
+    {
+      "result_id": "27912e32-bd1a-41e6-bb1d-be6ebdc795ae",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3470,
+        "output_tokens": 46,
+        "total_latency_ms": 739,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:33.705Z"
+    },
+    {
+      "result_id": "20f85781-2ab5-42b8-90a6-593f6cc7e2e7",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"comm_send_message\",\n  \"arguments\": {\n    \"recipient\": \"example_value\",\n    \"message\": \"example_value\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3473,
+        "output_tokens": 50,
+        "total_latency_ms": 757,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:34.520Z"
+    },
+    {
+      "result_id": "03b62bef-6e87-4492-953e-b0cce2e260cf",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my-bucket\", \"prefix\": \"images\"}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "bucket": "my-bucket",
+            "prefix": "images"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3472,
+        "output_tokens": 33,
+        "total_latency_ms": 657,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:35.247Z"
+    },
+    {
+      "result_id": "c7b13749-4c21-4af1-aecf-76243e3b3963",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3467,
+        "output_tokens": 27,
+        "total_latency_ms": 626,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:35.936Z"
+    },
+    {
+      "result_id": "24754592-5c69-4b85-a124-0f1929d994c6",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my_bucket\", \"prefix\": \"\"}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "bucket": "my_bucket",
+            "prefix": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3491,
+        "output_tokens": 32,
+        "total_latency_ms": 652,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:36.650Z"
+    },
+    {
+      "result_id": "426f6ed4-cc35-4d01-b5fc-943ec4bb7bae",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\"}}\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_air_quality",
+            "arguments": {
+              "location": "example_value"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3494,
+        "output_tokens": 77,
+        "total_latency_ms": 929,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:37.648Z"
+    },
+    {
+      "result_id": "331f4076-337c-410c-b175-f914140d46df",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_track_event\",\n  \"arguments\": {\n    \"event_name\": \"user@example.com\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3455,
+        "output_tokens": 44,
+        "total_latency_ms": 725,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:38.444Z"
+    },
+    {
+      "result_id": "4d82dff6-c947-49ff-94d2-466b35bdfc6f",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_create_user\",\n  \"arguments\": {\n    \"email\": \"quarterly-report\",\n    \"name\": \"Berlin\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "quarterly-report",
+            "name": "Berlin"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3458,
+        "output_tokens": 49,
+        "total_latency_ms": 756,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:39.269Z"
+    },
+    {
+      "result_id": "3f55fbee-ead3-46f5-9ae0-aa92c3eb4d32",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 3486,
+        "output_tokens": 54,
+        "total_latency_ms": 777,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:40.116Z"
+    },
+    {
+      "result_id": "493d1db4-f192-40f6-aadd-c9b280f44da5",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_list_users\",\n  \"arguments\": {\n    \"role\": \"editor\",\n    \"status\": \"pending\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3466,
+        "output_tokens": 46,
+        "total_latency_ms": 746,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:40.926Z"
+    },
+    {
+      "result_id": "4530cd21-a032-4215-9ecc-0e115e126f0a",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, this is a classic and important question! Both Python and Rust are excellent choices, but they're very different. Here's a breakdown to help you decide, considering different priorities:\n\n**Python - The Easier, More Versatile Choice**\n\n*   **Pros:**\n    *   **Ease of Learning:** Python has a very readable and beginner-friendly syntax. It's known for its gentle learning curve.\n    *   **Large Community & Ecosystem:** Huge community support, tons of libraries and frameworks for almost anything you can imagine (web development, data science, machine learning, scripting, automation, etc.).\n    *   **Rapid Development:** Python allows you to get things done quickly due to its dynamic typing and extensive libraries.\n    *   **Versatility:**  Great for a wide range of applications – from simple scripts to complex web apps.\n    *   **Data Science/ML:** Python is *the* dominant language in data science and machine learning.\n*   **Cons:**\n    *   **Performance:** Python is an interpreted language, so it's generally slower than compiled languages like Rust.  This isn't usually a problem for many applications, but can be a bottleneck for performance-critical tasks.\n    *   **Runtime Errors:** Dynamic typing can lead to errors that aren't caught until runtime.\n\n**Rust - The Powerful, Performance-Focused Choice**\n\n*   **Pros:**\n    *   **Performance:** Rust is a compiled language that's incredibly fast and efficient. It's often compared to C and C++ in terms of performance.\n    *   **Memory Safety:** Rust's ownership system prevents common memory errors (like dangling pointers and data races) at compile time – a huge advantage for reliability.\n    *   **Concurrency:** Rust makes concurrent programming much safer and easier.\n    *   **Growing Ecosystem:** The Rust ecosystem is growing rapidly, with increasing support for web development, embedded systems, and more.\n*   **Cons:**\n    *   **Steeper Learning Curve:** Rust has a more complex syntax and concepts (like ownership and borrowing) that can be challenging for beginners.\n    *   **Compile Times:** Rust can have longer compile times than Python, especially for larger projects.\n    *   **Smaller Community (Relative to Python):** While the Rust community is fantastic and very supportive, it's still smaller than Python's.\n\n**Here's a table summarizing the key differences:**\n\n| Feature           | Python          | Rust            |\n|--------------------|-----------------|-----------------|\n| **Learning Curve** | Easy            | Steep           |\n| **Performance**    | Slow            | Very Fast       |\n| **Memory Safety**  | Not Built-In    | Excellent       |\n| **Community**      | Huge            | Growing         |\n| **Use Cases**      | Web Dev, Data Sci, Scripting | Systems Programming, Embedded, Performance-Critical Apps |\n\n**Recommendation:**\n\n*   **If you're a beginner and want to get started quickly with a versatile language for a wide range of applications, especially data science or web development, choose Python.** It's a fantastic language to build a foundation in programming.\n\n*   **If you're interested in performance, memory safety, and systems programming, and you're willing to invest the time to learn a more complex language, choose Rust.** It's a great choice for building reliable and efficient software.\n\n**To help me narrow down the recommendation further, could you tell me:**\n\n*   **What are you hoping to *do* with programming?** (e.g., build websites, analyze data, create games, automate tasks, etc.)\n*   **What's your current programming experience level?** (e.g., complete beginner, some experience with other languages, etc.)",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3448,
+        "output_tokens": 805,
+        "total_latency_ms": 5141,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:46.131Z"
+    },
+    {
+      "result_id": "22da2f2b-7f7b-4f11-9fda-7593364d658b",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\"}}\n",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "viewer"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 3443,
+        "output_tokens": 21,
+        "total_latency_ms": 586,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:46.772Z"
+    },
+    {
+      "result_id": "4a79edfc-a4ef-4806-872c-ebb3653eb955",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"user_engagement_trends\",\n    \"date_range\": \"last_30d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```\nSoftware architecture is absolutely critical in modern software development, and here's a breakdown of why:\n\n**1. Managing Complexity:**\n\n*   **Modern applications are incredibly complex:**  Today's software often involves microservices, distributed systems, cloud integration, and a huge number of interconnected components. Without a well-defined architecture, this complexity quickly spirals out of control, leading to unmanageable codebases, increased development time, and higher risk of errors.\n*   **Architecture provides a blueprint:** It establishes a clear structure, defining how different parts of the system interact, making it easier to understand, reason about, and modify.\n\n**2. Improving Maintainability and Scalability:**\n\n*   **Modular Design:** Good architecture promotes modularity – breaking down the system into independent, reusable components. This makes it easier to update, fix bugs, and add new features without affecting the entire system.\n*   **Scalability:** A well-designed architecture anticipates future growth and allows the system to handle increased load (users, data, transactions) efficiently. This often involves techniques like horizontal scaling (adding more servers) and load balancing.\n*   **Reduced Technical Debt:**  Proactive architectural decisions help prevent the accumulation of technical debt – shortcuts taken during development that create long-term problems.\n\n**3. Enhancing Reliability and Resilience:**\n\n*   **Fault Tolerance:** Architecture can incorporate mechanisms for handling failures gracefully. This might include redundancy, circuit breakers, and retry logic, making the system more resilient to errors.\n*   **Testability:** A well-structured architecture makes it easier to write comprehensive tests, ensuring the quality and stability of the software.\n\n**4. Facilitating Collaboration and Communication:**\n\n*   **Shared Understanding:** A documented architecture serves as a common reference point for all team members – developers, testers, operations, and stakeholders – ensuring everyone is on the same page.\n*   **Clear Responsibilities:** It defines the boundaries and responsibilities of different teams or components.\n\n**5. Cost Optimization:**\n\n*   **Efficient Resource Utilization:** A scalable architecture can optimize resource usage, reducing infrastructure costs.\n*   **Reduced Development Costs:**  A clear architecture reduces rework and improves development efficiency, ultimately lowering development costs.\n\n**In essence, software architecture isn't just about the technical design; it's about making smart decisions *early* in the development process that will have a significant impact on the long-term success of the software.**  It’s an investment that pays off in terms of reduced risk, increased agility, and improved business outcomes.\n\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_engagement_trends",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 3447,
+        "output_tokens": 601,
+        "total_latency_ms": 3959,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:50.800Z"
+    },
+    {
+      "result_id": "5e0ce60e-b562-4f39-a4f7-ff28a5ff17f5",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "Okay, let's break down the evolution of version control over the last decade (roughly 2014-2024). It’s been a period of massive change, driven by the rise of cloud computing, distributed teams, and increasingly complex software development workflows.\n\n**2014-2016: Git Dominance & Cloud Integration**\n\n* **Git’s Continued Rise:** Git, originally released in 2005, solidified its position as *the* dominant version control system. Its distributed nature – where every developer has a full copy of the repository – was proving incredibly powerful.\n* **GitHub’s Explosion:** GitHub, acquired by Microsoft in 2018, became the central hub for Git repositories. Its free tier, easy-to-use interface, and social features (pull requests, issues) dramatically lowered the barrier to entry for developers. This period saw a massive influx of open-source projects and a shift towards collaborative development.\n* **Cloud-Based Repositories:**  While Git was originally designed for local use, cloud-based hosting (GitHub, GitLab, Bitbucket) became increasingly common. This simplified collaboration, provided backup, and enabled easy access from anywhere.\n* **Early CI/CD Integration:**  Continuous Integration and Continuous Delivery (CI/CD) pipelines started to integrate more closely with Git repositories, automating testing and deployment.\n\n**2017-2019: Branching Strategies & Advanced Features**\n\n* **Refined Branching Models:** The “Gitflow” model (with its long-lived release branches) started to be questioned.  More lightweight strategies like GitHub Flow (single main branch with pull requests) gained popularity, emphasizing faster development cycles.\n* **Git LFS (Large File Storage):**  Git LFS was introduced to handle large binary files (images, videos, datasets) more efficiently, preventing repository bloat.\n* **Git Hooks:** Git hooks became more sophisticated, allowing developers to automate tasks before or after Git events (e.g., running tests, formatting code).\n* **GitLab’s Rise:** GitLab emerged as a strong competitor to GitHub, offering a complete DevOps platform with integrated CI/CD, issue tracking, and more, all within a Git repository.\n\n**2020-2022:  Collaboration & Scalability**\n\n* **GitHub Actions:** GitHub introduced GitHub Actions, a powerful workflow automation tool built directly into GitHub. This allowed developers to create complex CI/CD pipelines without needing to integrate with external services.\n* **Multi-Branching:** Tools and workflows emerged to support working with multiple branches simultaneously, improving team productivity.\n* **Git Large File Storage (LFS) Adoption:** LFS became more widely adopted as projects grew and the need to manage large assets increased.\n* **Increased Focus on Security:**  Git repositories became a prime target for attackers.  Tools and practices for securing Git repositories (e.g., branch protection, code scanning) gained prominence.\n\n**2023-2024:  AI Integration & New Approaches**\n\n* **AI-Powered Git Tools:**  Tools like GitHub Copilot (powered by OpenAI) started to integrate with Git, offering features like code completion, pull request generation, and automated code review.\n* **Gitpod’s Rise:** Gitpod emerged as a fully cloud-based IDE that integrates seamlessly with Git repositories, eliminating the need for developers to set up local development environments.\n* **Experimental Version Control Systems:**  While Git remains dominant, there's been renewed interest in alternative version control systems like DVC (Data Version Control) for managing machine learning projects and Lens.jl for Julia.\n* **Continued Emphasis on Security & Compliance:**  Regulations like GDPR and SOC 2 are driving increased focus on security and compliance within Git repositories.\n\n\n\n**Key Trends Over the Decade:**\n\n* **Cloud-First:** The shift to cloud-based Git hosting has been the most significant change.\n* **Collaboration:** Version control has become deeply intertwined with collaborative development workflows.\n* **Automation:** CI/CD pipelines and automation tools have become essential parts of the development process.\n* **Scalability:**  Tools and techniques have evolved to handle increasingly large and complex projects.\n* **AI Integration:** The introduction of AI-powered tools is poised to further transform how developers use version control.\n\n**Resources for Further Exploration:**\n\n* **GitHub Blog:** [https://github.blog/](https://github.blog/)\n* **GitLab Blog:** [https://about.gitlab.com/blog/](https://about.gitlab.com/blog/)\n* **Git Documentation:** [https://git-scm.com/doc](https://git-scm.com/doc)\n\nDo you want me to delve deeper into a specific aspect of this evolution, such as:\n\n*   A particular branching strategy?\n*   The rise of CI",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3447,
+        "output_tokens": 1024,
+        "total_latency_ms": 6398,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:57.264Z"
+    },
+    {
+      "result_id": "5aa0363b-9221-4ad2-934f-125492242e02",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"media_transcode_video\",\n  \"arguments\": {\n    \"input_path\": \"example_value\",\n    \"output_format\": \"webm\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3465,
+        "output_tokens": 53,
+        "total_latency_ms": 774,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:58.095Z"
+    },
+    {
+      "result_id": "3edb8894-06e7-44b3-a747-fb293e05dacc",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"fin_process_payment\",\n  \"arguments\": {\n    \"amount\": 42,\n    \"currency\": \"example_value\",\n    \"recipient\": \"example_value\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 42,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3468,
+        "output_tokens": 59,
+        "total_latency_ms": 808,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:58.970Z"
+    },
+    {
+      "result_id": "2f67e986-5093-4ad0-83fb-46b4a8395877",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_create_dashboard\",\n  \"arguments\": {\n    \"name\": \"example_value\",\n    \"widgets\": [\n      \"item1\",\n      \"item2\"\n    ],\n    \"shared\": false\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ],
+            "shared": false
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 3463,
+        "output_tokens": 67,
+        "total_latency_ms": 857,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:42:59.891Z"
+    },
+    {
+      "result_id": "edcb2ab9-523e-4e21-8ab9-4803067e3145",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_create_user\",\n  \"arguments\": {\n    \"email\": \"example_value\",\n    \"name\": \"example_value\",\n    \"role\": \"guest\",\n    \"password\": \"hashed_password\",\n    \"limit\": 1\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value",
+            "role": "guest",
+            "password": "hashed_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 3474,
+        "output_tokens": 75,
+        "total_latency_ms": 909,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:00.864Z"
+    },
+    {
+      "result_id": "15000db5-bbb2-4f9d-a811-c4620cc012c1",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3468,
+        "output_tokens": 50,
+        "total_latency_ms": 753,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:01.677Z"
+    },
+    {
+      "result_id": "34cf424c-fba2-444d-988d-ce872d1a8d73",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"wx_get_current\",\n  \"arguments\": {\n    \"location\": \"example_value\",\n    \"units\": \"metric\",\n    \"sort_by\": \"temp\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value",
+            "units": "metric",
+            "sort_by": "temp"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3461,
+        "output_tokens": 58,
+        "total_latency_ms": 809,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:02.547Z"
+    },
+    {
+      "result_id": "43060b60-1593-413d-b6f4-01d4ebf14c0d",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_7d\", \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_7d",
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3470,
+        "output_tokens": 46,
+        "total_latency_ms": 728,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:03.344Z"
+    },
+    {
+      "result_id": "7219a47a-9730-483f-bc84-7e8391955018",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"comm_send_message\",\n  \"arguments\": {\n    \"recipient\": \"example_value\",\n    \"message\": \"example_value\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3473,
+        "output_tokens": 50,
+        "total_latency_ms": 750,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:04.159Z"
+    },
+    {
+      "result_id": "c223ef6e-72b1-4201-82d0-dc78ca22c292",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"my-bucket\", \"prefix\": \"images\"}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "bucket": "my-bucket",
+            "prefix": "images"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3472,
+        "output_tokens": 33,
+        "total_latency_ms": 664,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:04.884Z"
+    },
+    {
+      "result_id": "3a37f0de-0816-40f0-9ddf-edeab17bc3dd",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3467,
+        "output_tokens": 27,
+        "total_latency_ms": 618,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:05.570Z"
+    },
+    {
+      "result_id": "a5f057af-b6ce-42bd-a2e2-353f671b17d0",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:28.933Z"
+    },
+    {
+      "result_id": "e4f3102d-e5ad-4ba7-9972-e9d8b4766200",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:32.324Z"
+    },
+    {
+      "result_id": "18293c80-e3ce-4d05-b84e-3290c4482649",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:35.703Z"
+    },
+    {
+      "result_id": "3d24f57d-8744-452e-9e00-353a3cc6f67c",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:39.086Z"
+    },
+    {
+      "result_id": "1ae449fa-2d27-4b5c-9224-103d34c52683",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:42.453Z"
+    },
+    {
+      "result_id": "c0ed00f9-ee37-4e44-9f51-d4ce49b13033",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:45.822Z"
+    },
+    {
+      "result_id": "93aadb1f-11a4-4743-a7da-b60732c9e4cd",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:49.193Z"
+    },
+    {
+      "result_id": "5e5dcf9a-ba77-40ee-8950-ca73a44973e9",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:52.556Z"
+    },
+    {
+      "result_id": "d4faf300-ad20-466d-a054-9944962e57c5",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:55.932Z"
+    },
+    {
+      "result_id": "ed0eae68-bc37-46a8-b8f9-1d592fc6c003",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "ERROR: Ollama API error (400): {\"error\":\"registry.ollama.ai/library/gemma3:4b does not support tools\"}",
+        "parse_success": false
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_latency_ms": 0,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:59.302Z"
+    },
+    {
+      "result_id": "aa93fd8a-29d3-4adf-85da-ff4f495ce8db",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"example_value\", \"output_format\": \"webm\"}}\n```",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1196,
+        "output_tokens": 38,
+        "total_latency_ms": 478,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:43:59.839Z"
+    },
+    {
+      "result_id": "48cf6c34-f6ca-40d8-9e34-0d3318ff0857",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 42,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1199,
+        "output_tokens": 42,
+        "total_latency_ms": 849,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:00.744Z"
+    },
+    {
+      "result_id": "8fca0aa8-6c54-438f-951c-48fd3255ca12",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1194,
+        "output_tokens": 39,
+        "total_latency_ms": 642,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:01.449Z"
+    },
+    {
+      "result_id": "c8248561-6675-4ed3-8796-ff2f2d157480",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\", \"role\": \"viewer\", \"password\": \"hashed_password\", \"limit\": 1}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value",
+            "role": "viewer",
+            "password": "hashed_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 1205,
+        "output_tokens": 55,
+        "total_latency_ms": 1254,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:02.769Z"
+    },
+    {
+      "result_id": "1cd2f9d1-4831-4125-955b-72b7c3b08251",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1199,
+        "output_tokens": 35,
+        "total_latency_ms": 538,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:03.374Z"
+    },
+    {
+      "result_id": "51138e16-2b37-4dbe-aa2b-94a44077fcbc",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value",
+            "units": "metric",
+            "sort_by": "temperature"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1192,
+        "output_tokens": 41,
+        "total_latency_ms": 667,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:04.099Z"
+    },
+    {
+      "result_id": "762c11a5-2ed1-4ff7-aefb-002253e32c28",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 1201,
+        "output_tokens": 51,
+        "total_latency_ms": 770,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:04.927Z"
+    },
+    {
+      "result_id": "4a063b78-e8d4-4e5a-bce2-b1d10bbbbdf5",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1204,
+        "output_tokens": 35,
+        "total_latency_ms": 567,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:05.560Z"
+    },
+    {
+      "result_id": "e77a5fd5-20a3-4883-9588-4b559c913c8a",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"my_folder\", \"bucket\": \"my_bucket\", \"max_results\": 10}}\n```\n```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "prefix": "my_folder",
+              "bucket": "my_bucket",
+              "max_results": 10
+            }
+          },
+          {
+            "name": "analytics_create_dashboard",
+            "arguments": {
+              "name": "example_value",
+              "widgets": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.5
+      },
+      "metrics": {
+        "input_tokens": 1203,
+        "output_tokens": 83,
+        "total_latency_ms": 913,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:06.537Z"
+    },
+    {
+      "result_id": "f7bec642-3e48-4a5c-91c3-4c0eb03148bf",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```\n```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"weather_data\", \"prefix\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          },
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "bucket": "weather_data",
+              "prefix": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.25,
+        "overall": 0.25
+      },
+      "metrics": {
+        "input_tokens": 1198,
+        "output_tokens": 76,
+        "total_latency_ms": 722,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:07.321Z"
+    },
+    {
+      "result_id": "3e06fa1d-8165-4411-91cf-80404ccaef20",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"my_files\", \"bucket\": \"my_bucket\", \"max_results\": 10}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "my_files",
+            "bucket": "my_bucket",
+            "max_results": 10
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1222,
+        "output_tokens": 44,
+        "total_latency_ms": 689,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:08.075Z"
+    },
+    {
+      "result_id": "771fee97-7b5b-4e61-9ae5-c97501760faa",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {\"location\": \"example_value\"}, \"user_id\": \"user123\"}}\n```\n```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": true, \"locale\": \"en-US\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {
+                "location": "example_value"
+              },
+              "user_id": "user123"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value",
+              "include_history": true,
+              "locale": "en-US"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0.6666666666666666,
+        "parameter_f1": 0.5,
+        "overall": 0.3333333333333333
+      },
+      "metrics": {
+        "input_tokens": 1225,
+        "output_tokens": 136,
+        "total_latency_ms": 1349,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:09.490Z"
+    },
+    {
+      "result_id": "00741eac-d3d0-4410-8501-1e2910c8883b",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1186,
+        "output_tokens": 31,
+        "total_latency_ms": 434,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:09.980Z"
+    },
+    {
+      "result_id": "d2472b7e-f4a3-4488-b45d-f235b73705cc",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"quarterly-report\", \"name\": \"Berlin\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "quarterly-report",
+            "name": "Berlin",
+            "role": "viewer",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1189,
+        "output_tokens": 46,
+        "total_latency_ms": 518,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:10.563Z"
+    },
+    {
+      "result_id": "8c889db7-3609-4e59-8860-bd9682e5a096",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 1217,
+        "output_tokens": 54,
+        "total_latency_ms": 576,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:11.201Z"
+    },
+    {
+      "result_id": "99807c6c-fd11-4156-9d02-63485a1b51f7",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"editor\", \"status\": \"pending\", \"search\": \"\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending",
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 1197,
+        "output_tokens": 36,
+        "total_latency_ms": 19673,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:30.940Z"
+    },
+    {
+      "result_id": "89cd7ef5-60d3-4cc2-b849-1ae9fddef185",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_language_comparison\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_language_comparison",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1179,
+        "output_tokens": 49,
+        "total_latency_ms": 1051,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:32.058Z"
+    },
+    {
+      "result_id": "ea46f2a2-644a-4b67-a7a3-1ff4fc96ab08",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"Leonardo da Vinci\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "Leonardo da Vinci"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1174,
+        "output_tokens": 22,
+        "total_latency_ms": 692,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:32.806Z"
+    },
+    {
+      "result_id": "6b0d270f-a8e4-46f6-afa4-62b7ed54fe9a",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_architecture_trends\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_architecture_trends",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1178,
+        "output_tokens": 49,
+        "total_latency_ms": 1030,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:33.906Z"
+    },
+    {
+      "result_id": "7c18a9d8-ccbb-43f4-8214-9734786d783e",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"version_control_evolution_report\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "version_control_evolution_report",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1178,
+        "output_tokens": 73,
+        "total_latency_ms": 1364,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:35.333Z"
+    },
+    {
+      "result_id": "ab0669bb-b0f6-4cbb-888b-83bb28001f9b",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"example_value\", \"output_format\": \"webm\"}}\n```",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1196,
+        "output_tokens": 38,
+        "total_latency_ms": 893,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:36.289Z"
+    },
+    {
+      "result_id": "36dcc6c8-9957-4eee-85d6-15c869ed4d4e",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 42,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1199,
+        "output_tokens": 42,
+        "total_latency_ms": 813,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:37.170Z"
+    },
+    {
+      "result_id": "a29df57e-a69f-45cd-981a-a1b33d722517",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1194,
+        "output_tokens": 39,
+        "total_latency_ms": 900,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:38.127Z"
+    },
+    {
+      "result_id": "da434452-e3fc-469f-9f20-1035cfcb74e1",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\", \"role\": \"viewer\", \"password\": \"hashed_password\", \"limit\": 1}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value",
+            "role": "viewer",
+            "password": "hashed_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 1205,
+        "output_tokens": 55,
+        "total_latency_ms": 1112,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:39.303Z"
+    },
+    {
+      "result_id": "4d80aa14-bb6f-4da8-8c4e-8be456443698",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1199,
+        "output_tokens": 35,
+        "total_latency_ms": 843,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:40.214Z"
+    },
+    {
+      "result_id": "22699baf-6b82-4783-882c-4c14352fc716",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value",
+            "units": "metric",
+            "sort_by": "temperature"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1192,
+        "output_tokens": 41,
+        "total_latency_ms": 924,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:41.199Z"
+    },
+    {
+      "result_id": "f411ca0d-ffd4-4220-9b6a-8b7941e10682",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 1201,
+        "output_tokens": 51,
+        "total_latency_ms": 1068,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:42.327Z"
+    },
+    {
+      "result_id": "db4c85cb-1475-4c49-b5c4-4a3797180da0",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1204,
+        "output_tokens": 35,
+        "total_latency_ms": 841,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:43.238Z"
+    },
+    {
+      "result_id": "9e1236b6-e763-4ad8-819b-8b14a4732a3c",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"my_folder\", \"bucket\": \"my_bucket\", \"max_results\": 10}}\n```\n```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "prefix": "my_folder",
+              "bucket": "my_bucket",
+              "max_results": 10
+            }
+          },
+          {
+            "name": "analytics_create_dashboard",
+            "arguments": {
+              "name": "example_value",
+              "widgets": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.5
+      },
+      "metrics": {
+        "input_tokens": 1203,
+        "output_tokens": 83,
+        "total_latency_ms": 1485,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:44.783Z"
+    },
+    {
+      "result_id": "9ee55538-2494-4b63-821a-00edb62ee5b8",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```\n```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"weather_data\", \"prefix\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          },
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "bucket": "weather_data",
+              "prefix": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.25,
+        "overall": 0.25
+      },
+      "metrics": {
+        "input_tokens": 1198,
+        "output_tokens": 76,
+        "total_latency_ms": 1201,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:46.053Z"
+    },
+    {
+      "result_id": "78f823c6-cb6d-495b-8ce8-da90e2606860",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"my_files\", \"bucket\": \"my_bucket\", \"max_results\": 10}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "my_files",
+            "bucket": "my_bucket",
+            "max_results": 10
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1222,
+        "output_tokens": 44,
+        "total_latency_ms": 814,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:46.927Z"
+    },
+    {
+      "result_id": "3d509eab-0ff3-4873-b01c-637992fde0c3",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {\"location\": \"example_value\"}, \"user_id\": \"user123\"}}\n```\n```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": true, \"locale\": \"en-US\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {
+                "location": "example_value"
+              },
+              "user_id": "user123"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value",
+              "include_history": true,
+              "locale": "en-US"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0.6666666666666666,
+        "parameter_f1": 0.5,
+        "overall": 0.3333333333333333
+      },
+      "metrics": {
+        "input_tokens": 1225,
+        "output_tokens": 136,
+        "total_latency_ms": 1697,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:48.688Z"
+    },
+    {
+      "result_id": "32e27a07-aa82-4968-ac09-aa9d21689da3",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1186,
+        "output_tokens": 31,
+        "total_latency_ms": 617,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:49.368Z"
+    },
+    {
+      "result_id": "f0f1fa34-5313-4b36-be94-5eec3e40616d",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"quarterly-report\", \"name\": \"Berlin\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "quarterly-report",
+            "name": "Berlin",
+            "role": "viewer",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1189,
+        "output_tokens": 46,
+        "total_latency_ms": 972,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:50.409Z"
+    },
+    {
+      "result_id": "99482bf5-a9df-4406-9833-0b4cc1e5fdc8",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 1217,
+        "output_tokens": 54,
+        "total_latency_ms": 934,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:51.400Z"
+    },
+    {
+      "result_id": "ab6d77a0-fb6a-459d-8664-7eff95ff107e",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"editor\", \"status\": \"pending\", \"search\": \"\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending",
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 1197,
+        "output_tokens": 36,
+        "total_latency_ms": 857,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:52.318Z"
+    },
+    {
+      "result_id": "52382711-d109-4859-9ee4-62330208ae5b",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_language_comparison\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_language_comparison",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1179,
+        "output_tokens": 49,
+        "total_latency_ms": 868,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:53.243Z"
+    },
+    {
+      "result_id": "632d325e-b93e-4df8-9924-a099104d7df1",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"Leonardo da Vinci\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "Leonardo da Vinci"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1174,
+        "output_tokens": 22,
+        "total_latency_ms": 621,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:53.931Z"
+    },
+    {
+      "result_id": "9c43e48c-8b31-4355-b987-63668c64d628",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_architecture_trends\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_architecture_trends",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1178,
+        "output_tokens": 49,
+        "total_latency_ms": 785,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:54.781Z"
+    },
+    {
+      "result_id": "2166ae00-b82a-484a-9317-3296f21969a4",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"version_control_evolution_report\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "version_control_evolution_report",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1178,
+        "output_tokens": 73,
+        "total_latency_ms": 1054,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:55.896Z"
+    },
+    {
+      "result_id": "f8e6a014-a2bb-4b12-b11a-2389c2bb9f81",
+      "task_id": "tab-D-ts-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"example_value\", \"output_format\": \"webm\"}}\n```",
+        "parsed_tool_call": {
+          "name": "media_transcode_video",
+          "arguments": {
+            "input_path": "example_value",
+            "output_format": "webm"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1196,
+        "output_tokens": 38,
+        "total_latency_ms": 583,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:56.548Z"
+    },
+    {
+      "result_id": "65a02655-7692-4ee4-a457-42791e74098b",
+      "task_id": "tab-D-ts-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 42,
+            "currency": "example_value",
+            "recipient": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1199,
+        "output_tokens": 42,
+        "total_latency_ms": 937,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:57.542Z"
+    },
+    {
+      "result_id": "c4dca8ef-c013-4d3c-9f1c-f00045f5220e",
+      "task_id": "tab-D-ts-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "example_value",
+            "widgets": [
+              "item1",
+              "item2"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1194,
+        "output_tokens": 39,
+        "total_latency_ms": 902,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:58.514Z"
+    },
+    {
+      "result_id": "d6674c7e-59d7-4d4c-a16e-5144264ce631",
+      "task_id": "tab-D-ts-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"example_value\", \"name\": \"example_value\", \"role\": \"viewer\", \"password\": \"hashed_password\", \"limit\": 1}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "example_value",
+            "name": "example_value",
+            "role": "viewer",
+            "password": "hashed_password",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5714285714285715,
+        "overall": 0.8285714285714286
+      },
+      "metrics": {
+        "input_tokens": 1205,
+        "output_tokens": 55,
+        "total_latency_ms": 1115,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:44:59.688Z"
+    },
+    {
+      "result_id": "d91e84f9-0b6b-4f63-ae8e-7687bd6c3856",
+      "task_id": "tab-D-ts-005",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "example_value",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1199,
+        "output_tokens": 35,
+        "total_latency_ms": 855,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:00.606Z"
+    },
+    {
+      "result_id": "48b32fb4-b4c0-40dd-9935-5ac9430b7ff9",
+      "task_id": "tab-D-ts-006",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```",
+        "parsed_tool_call": {
+          "name": "wx_get_current",
+          "arguments": {
+            "location": "example_value",
+            "units": "metric",
+            "sort_by": "temperature"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 1192,
+        "output_tokens": 41,
+        "total_latency_ms": 926,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:01.595Z"
+    },
+    {
+      "result_id": "4d5c452c-0527-465f-a04f-391e8c61cc4b",
+      "task_id": "tab-D-ts-007",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"example_value\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "example_value",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.4,
+        "overall": 0.76
+      },
+      "metrics": {
+        "input_tokens": 1201,
+        "output_tokens": 51,
+        "total_latency_ms": 976,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:02.630Z"
+    },
+    {
+      "result_id": "0c5b9a4c-44d0-4625-8653-0e9afc581ff1",
+      "task_id": "tab-D-ts-008",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"comm_send_message\", \"arguments\": {\"recipient\": \"example_value\", \"message\": \"example_value\"}}\n```",
+        "parsed_tool_call": {
+          "name": "comm_send_message",
+          "arguments": {
+            "recipient": "example_value",
+            "message": "example_value"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1204,
+        "output_tokens": 35,
+        "total_latency_ms": 855,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:03.540Z"
+    },
+    {
+      "result_id": "621f1d8a-cb0e-441d-9b57-a47e3a190bf9",
+      "task_id": "tab-D-mt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"my_folder\", \"bucket\": \"my_bucket\", \"max_results\": 10}}\n```\n```json\n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"example_value\", \"widgets\": [\"item1\", \"item2\"]}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "prefix": "my_folder",
+              "bucket": "my_bucket",
+              "max_results": 10
+            }
+          },
+          {
+            "name": "analytics_create_dashboard",
+            "arguments": {
+              "name": "example_value",
+              "widgets": [
+                "item1",
+                "item2"
+              ]
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.5
+      },
+      "metrics": {
+        "input_tokens": 1203,
+        "output_tokens": 83,
+        "total_latency_ms": 1475,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:05.080Z"
+    },
+    {
+      "result_id": "26fd21d3-c7d3-4d60-8a1a-44c424e9536f",
+      "task_id": "tab-D-mt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```\n```json\n{\"name\": \"store_list_files\", \"arguments\": {\"bucket\": \"weather_data\", \"prefix\": \"example_value\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          },
+          {
+            "name": "store_list_files",
+            "arguments": {
+              "bucket": "weather_data",
+              "prefix": "example_value"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.25,
+        "overall": 0.25
+      },
+      "metrics": {
+        "input_tokens": 1198,
+        "output_tokens": 76,
+        "total_latency_ms": 1376,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:06.519Z"
+    },
+    {
+      "result_id": "381dadc0-2c63-4692-b0e7-ccd9479de2a3",
+      "task_id": "tab-D-mt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"my_files\", \"bucket\": \"my_bucket\", \"max_results\": 10}}\n```",
+        "parsed_tool_call": {
+          "name": "store_list_files",
+          "arguments": {
+            "prefix": "my_files",
+            "bucket": "my_bucket",
+            "max_results": 10
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1222,
+        "output_tokens": 44,
+        "total_latency_ms": 962,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:07.548Z"
+    },
+    {
+      "result_id": "fd8a7b51-1c0a-45a0-927d-4a9467ddee6a",
+      "task_id": "tab-D-mt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\", \"units\": \"metric\", \"sort_by\": \"temperature\"}}\n```\n```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"example_value\", \"properties\": {\"location\": \"example_value\"}, \"user_id\": \"user123\"}}\n```\n```json\n{\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\", \"include_history\": true, \"locale\": \"en-US\"}}\n```",
+        "parsed_sequence": [
+          {
+            "name": "wx_get_current",
+            "arguments": {
+              "location": "example_value",
+              "units": "metric",
+              "sort_by": "temperature"
+            }
+          },
+          {
+            "name": "analytics_track_event",
+            "arguments": {
+              "event_name": "example_value",
+              "properties": {
+                "location": "example_value"
+              },
+              "user_id": "user123"
+            }
+          },
+          {
+            "name": "shop_track_order",
+            "arguments": {
+              "order_id": "example_value",
+              "include_history": true,
+              "locale": "en-US"
+            }
+          }
+        ],
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0.6666666666666666,
+        "parameter_f1": 0.5,
+        "overall": 0.3333333333333333
+      },
+      "metrics": {
+        "input_tokens": 1225,
+        "output_tokens": 136,
+        "total_latency_ms": 2203,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:09.817Z"
+    },
+    {
+      "result_id": "b387f8fb-749c-43a6-9b7e-00c308dabce0",
+      "task_id": "tab-D-pe-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user@example.com\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_track_event",
+          "arguments": {
+            "event_name": "user@example.com"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1186,
+        "output_tokens": 31,
+        "total_latency_ms": 799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:10.678Z"
+    },
+    {
+      "result_id": "212508c8-f6dd-4b8d-88a8-4a3268eeb15f",
+      "task_id": "tab-D-pe-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"quarterly-report\", \"name\": \"Berlin\", \"role\": \"viewer\", \"limit\": 1}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_create_user",
+          "arguments": {
+            "email": "quarterly-report",
+            "name": "Berlin",
+            "role": "viewer",
+            "limit": 1
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.6666666666666666,
+        "overall": 0.8666666666666667
+      },
+      "metrics": {
+        "input_tokens": 1189,
+        "output_tokens": 46,
+        "total_latency_ms": 817,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:11.555Z"
+    },
+    {
+      "result_id": "f5168445-8f95-424d-807d-228cb12de874",
+      "task_id": "tab-D-pe-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\", \"date_range\": \"user@example.com\", \"filters\": {\"key\": \"value\"}, \"format\": \"json\"}}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "main",
+            "date_range": "user@example.com",
+            "filters": {
+              "key": "value"
+            },
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8571428571428571,
+        "overall": 0.9428571428571428
+      },
+      "metrics": {
+        "input_tokens": 1217,
+        "output_tokens": 54,
+        "total_latency_ms": 925,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:12.535Z"
+    },
+    {
+      "result_id": "569161a0-74e6-4f57-a710-fbb314842093",
+      "task_id": "tab-D-pe-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"editor\", \"status\": \"pending\", \"search\": \"\"}}\n```",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "role": "editor",
+            "status": "pending",
+            "search": ""
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.8,
+        "overall": 0.92
+      },
+      "metrics": {
+        "input_tokens": 1197,
+        "output_tokens": 36,
+        "total_latency_ms": 671,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:13.267Z"
+    },
+    {
+      "result_id": "cda30e6f-1b65-46e4-8de7-9fd76fb10856",
+      "task_id": "tab-D-nt-001",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_language_comparison\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_language_comparison",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1179,
+        "output_tokens": 49,
+        "total_latency_ms": 867,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:14.192Z"
+    },
+    {
+      "result_id": "c68fb9ee-3cee-4de9-a04c-26050efd6640",
+      "task_id": "tab-D-nt-002",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"search\": \"Leonardo da Vinci\"}}",
+        "parsed_tool_call": {
+          "name": "auth_list_users",
+          "arguments": {
+            "search": "Leonardo da Vinci"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1174,
+        "output_tokens": 22,
+        "total_latency_ms": 487,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:14.735Z"
+    },
+    {
+      "result_id": "f712fbf9-b23d-4b95-a7b7-e9ca00efbfca",
+      "task_id": "tab-D-nt-003",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_architecture_trends\", \"date_range\": \"last_30d\", \"filters\": {}, \"format\": \"json\"}}\n",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "user_architecture_trends",
+            "date_range": "last_30d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1178,
+        "output_tokens": 49,
+        "total_latency_ms": 838,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:15.634Z"
+    },
+    {
+      "result_id": "6b1d74a3-d164-48d4-b5f5-3f57a5ba1651",
+      "task_id": "tab-D-nt-004",
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "```json\n{\n  \"name\": \"analytics_run_report\",\n  \"arguments\": {\n    \"report_id\": \"version_control_evolution_report\",\n    \"date_range\": \"last_7d\",\n    \"filters\": {},\n    \"format\": \"json\"\n  }\n}\n```",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "version_control_evolution_report",
+            "date_range": "last_7d",
+            "filters": {},
+            "format": "json"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0,
+        "no_tool_correct": false
+      },
+      "metrics": {
+        "input_tokens": 1178,
+        "output_tokens": 73,
+        "total_latency_ms": 1053,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-03T08:45:16.748Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Gemma 3 4B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5988571428571429,
+        "ci95": [
+          0.5068276736679673,
+          0.7437926115379172
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.6333333333333333,
+        "ci95": [
+          0.5068276736679673,
+          0.7437926115379172
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.5471428571428573,
+        "ci95": [
+          0.5068276736679673,
+          0.7437926115379172
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Gemma 3 4B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.6100714285714288,
+        "ci95": [
+          0.5236238380947751,
+          0.7583239827618451
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.7333333333333332,
+        "ci95": [
+          0.6276768905451521,
+          0.8422361442158816
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.5522619047619047,
+        "ci95": [
+          0.5236238380947751,
+          0.7583239827618451
+        ]
+      },
+      "arr": 1.0187261450381684,
+      "token_savings_pct": 58.56744733516817,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

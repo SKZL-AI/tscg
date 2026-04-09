@@ -1,0 +1,3377 @@
+[
+  {
+    "result_id": "bc6f5284-65bf-4f56-87a5-104bf068d638",
+    "task_id": "tab-D-ts-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To update the permissions for the user with ID \"example_value\" to the role of \"editor\", you can use the `auth_update_permissions` function as follows:\n\n```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3931,
+      "output_tokens": 92,
+      "total_latency_ms": 5293,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:35:46.985Z"
+  },
+  {
+    "result_id": "7c64e454-1c63-4443-aba0-f886ee04e6cf",
+    "task_id": "tab-D-ts-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To list files in a cloud storage directory, you can use the `store_list_files` function. Here's an example of how to call it:\n\n```javascript\nstore_list_files({\n  bucket: \"my-bucket\",\n  prefix: \"my-directory\"\n})\n```\n\nThis will return a list of files in the specified directory within the given storage bucket.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 88,
+      "total_latency_ms": 2550,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:35:49.601Z"
+  },
+  {
+    "result_id": "a307f74a-ae3e-4a58-8ba7-86f3df5dab8d",
+    "task_id": "tab-D-ts-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To generate a pre-signed URL for temporary access to the file located at `src/components`, you can use the following code:\n\n```javascript\nstore_generate_signed_url({\n  \"path\": \"src/components\",\n  \"expiry_seconds\": 300, // Set the desired expiration time in seconds (e.g., 5 minutes)\n  \"method\": \"GET\" // Specify the HTTP method allowed for the URL\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3926,
+      "output_tokens": 107,
+      "total_latency_ms": 2732,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:35:52.399Z"
+  },
+  {
+    "result_id": "b6f4e4d1-6155-49b1-9923-010ba908d6e9",
+    "task_id": "tab-D-ts-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To process the payment transaction, I can use the `fin_process_payment` function. Here's how it would look with your provided values:\n\n```javascript\nfin_process_payment({\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3943,
+      "output_tokens": 73,
+      "total_latency_ms": 2526,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:35:54.986Z"
+  },
+  {
+    "result_id": "6a12ca94-bee7-4d8e-9827-0648141578b5",
+    "task_id": "tab-D-ts-005",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To update an existing calendar event with the provided event ID, you can use the `cal_update_event` function. Here's how to call it:\n\n```javascript\ncal_update_event({\n  \"event_id\": \"example_value\",\n  \"start\": \"updated_start_datetime\",\n  \"end\": \"updated_end_datetime\",\n  \"title\": \"updated_event_title\"\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3930,
+      "output_tokens": 99,
+      "total_latency_ms": 2588,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:35:57.635Z"
+  },
+  {
+    "result_id": "185e67f8-8dde-4b55-8b9c-d1dad32e1017",
+    "task_id": "tab-D-ts-006",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To retrieve the current balance and recent transactions for the specified financial account, I can use the `fin_get_account_balance` tool. Here's the function call with the provided account ID:\n\n```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3934,
+      "output_tokens": 89,
+      "total_latency_ms": 2544,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:00.239Z"
+  },
+  {
+    "result_id": "272e4a96-1d72-451a-b542-00f12f014727",
+    "task_id": "tab-D-ts-007",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To provide the current weather conditions for the location \"example_value\", you can use the `wx_get_current` function with the provided parameters:\n\n```javascript\nconst result = wx_get_current({location: 'example_value'});\n```\n\nThis will return an object containing information about the current weather conditions, such as temperature, humidity, and wind.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3936,
+      "output_tokens": 83,
+      "total_latency_ms": 2371,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:02.674Z"
+  },
+  {
+    "result_id": "2ea18102-82f8-4103-b399-7441003ba6c8",
+    "task_id": "tab-D-ts-008",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To convert the given text \"example_value\" into spoken audio, we can utilize the `media_text_to_speech` tool. Here's an example of how you might call it:\n\n```javascript\nmedia_text_to_speech({\n  text: \"example_value\",\n  language: \"en-US\", // or any other supported language\n  voice: \"alloy\" // or any other available voice selection\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3939,
+      "output_tokens": 102,
+      "total_latency_ms": 2624,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:05.362Z"
+  },
+  {
+    "result_id": "4fd32282-665b-44e3-bd7f-34983770873a",
+    "task_id": "tab-D-mt-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To revoke the token with the value \"example\\_value\" and extract its audio, I will first use `auth_revoke_token` to terminate the session:\n\n```javascript\nconst response = await auth_revoke_token({ token: \"example_value\" });\n```\n\nAfter revoking the token, I'll proceed with extracting the audio from the input file. Let's assume that the input path is \"example\\_value\":\n\n```javascript\nconst response = await media_extract_audio({ input_path: \"example_value\" });\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3942,
+      "output_tokens": 130,
+      "total_latency_ms": 3044,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:08.472Z"
+  },
+  {
+    "result_id": "b76614e6-074b-404e-a7c8-8f7e22ce1c1f",
+    "task_id": "tab-D-mt-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To convert \"example_value\" to speech and then create an invoice for the customer with that value, first use the media_text_to_speech function:\n\n```javascript\nconst text = \"example_value\";\nconst speechResult = await media_text_to_speech({ text });\n```\n\nThen, use fin_create_invoice to create an invoice for the customer with the generated speech result as a line item:\n\n```javascript\nconst customerId = \"example_customer_id\"; // Replace this with the actual customer ID\nconst items = [speechResult];\nconst invoice = await fin_create_invoice({ customer_id: customerId, items });\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3955,
+      "output_tokens": 159,
+      "total_latency_ms": 3321,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:11.858Z"
+  },
+  {
+    "result_id": "34ff1343-372f-415e-85d1-0d24bf82ece5",
+    "task_id": "tab-D-mt-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To start with, let's track the status of an order using `shop_track_order`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Order Tracked\",\n  properties: {\n    order_id: \"example_value\"\n  }\n})\n\nlet orderStatus = shop_track_order({\n  order_id: \"example_value\",\n  include_history: true,\n  locale: \"en-US\"\n})\nconsole.log(orderStatus)\n```\n\nNext, we'll extract the audio from a video file using `media_extract_audio`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Audio Extracted\",\n  properties: {\n    input_path: \"example_value\"\n  }\n})\n\nlet extractedAudio = media_extract_audio({\n  input_path: \"example_value\",\n  output_format: \"mp3\"\n})\nconsole.log(extractedAudio)\n```\n\nLastly, let's get the air quality index for a specific location using `wx_get_air_quality`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Air Quality Checked\",\n  properties: {\n    location: \"example_value\"\n  }\n})\n\nlet airQuality = wx_get_air_quality({\n  location: \"example_value\",\n  include_pollutants: true\n})\nconsole.log(airQuality)\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3956,
+      "output_tokens": 353,
+      "total_latency_ms": 4846,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:16.768Z"
+  },
+  {
+    "result_id": "1e12d653-68cf-4465-8eac-b7150b7001ef",
+    "task_id": "tab-D-mt-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To get the current stock price for a specific ticker symbol and then use that data to monitor service requests per second, I will first utilize the `fin_get_stock_price` tool:\n\n```javascript\nconst stockPrice = await fin_get_stock_price({ticker: \"example_value\"});\n```\n\nNext, I'll use the output from the previous step to monitor service requests per second using the `ops_get_metrics` tool:\n\n```javascript\nconst serviceRequestsPerSec = await ops_get_metrics({service: stockPrice.service, metric: \"requests_per_sec\"});\n```\n\nFinally, I'll utilize the `cal_find_free_time` tool to find available time slots for a meeting with participants and duration based on the collected information:\n\n```javascript\nconst freeTime = await cal_find_free_time({participants: [\"item1\", \"item2\"], duration_minutes: 66, start_date: \"example_value\", end_date: \"example_value\"});\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 4000,
+      "output_tokens": 242,
+      "total_latency_ms": 4512,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:21.345Z"
+  },
+  {
+    "result_id": "0c509d01-d052-4834-ad75-ec8268e25da5",
+    "task_id": "tab-D-pe-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To get the formatted results of the specified analytics report, use the `analytics_run_report` function with the following parameters:\n\n```json\n{\n  \"report_id\": \"Berlin\",\n  \"date_range\": \"last_7d\"\n}\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 65,
+      "total_latency_ms": 2355,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:23.757Z"
+  },
+  {
+    "result_id": "c1f03fdf-8dff-4f0a-a5ae-7975526e45c7",
+    "task_id": "tab-D-pe-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To create a new user account with email \"main\" and name \"config.json\", you can use the following command:\n\n```javascript\nauth_create_user(email=\"main\", name=\"config.json\")\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3926,
+      "output_tokens": 51,
+      "total_latency_ms": 2289,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:26.110Z"
+  },
+  {
+    "result_id": "8927a6b9-f5eb-4737-badf-dfecba4f686b",
+    "task_id": "tab-D-pe-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To transcode a video file from Berlin with 4K resolution, MP4 format, and a specified bitrate for user@example.com, you can use the `media_transcode_video` function. Here's an example of how to call it:\n\n```javascript\nmedia_transcode_video(\n  {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n)\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3963,
+      "output_tokens": 125,
+      "total_latency_ms": 3016,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:29.191Z"
+  },
+  {
+    "result_id": "adcc94b1-4561-4765-b3f7-fcf17ec0017d",
+    "task_id": "tab-D-pe-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To create a calendar event with the specified details, you can use the `cal_create_event` function. Here's how to call it:\n\n```javascript\ncal_create_event({\n  title: \"Berlin\",\n  start: \"production\",\n  end: \"main\",\n  location: \"quarterly-report\",\n  attendees: [\"value1\"]\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3967,
+      "output_tokens": 92,
+      "total_latency_ms": 2780,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:32.027Z"
+  },
+  {
+    "result_id": "f54f4625-2f55-475b-be16-9b55d050a4f2",
+    "task_id": "tab-D-nt-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " While it's difficult to predict the future with certainty, there is a growing trend towards electric vehicles (EVs) due to their environmental benefits and advancements in battery technology. However, complete replacement of gas cars by EVs may take several decades as traditional automakers continue to produce internal combustion engine vehicles and infrastructure for charging stations needs to be expanded. Additionally, factors such as cost, range anxiety, and charging time still pose challenges that need to be addressed for widespread adoption of electric cars.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3917,
+      "output_tokens": 103,
+      "total_latency_ms": 2765,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:34.850Z"
+  },
+  {
+    "result_id": "90060dc0-ad3f-4439-8fc1-f6bb22c91738",
+    "task_id": "tab-D-nt-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " The Mona Lisa was painted by Leonardo da Vinci. No need for any tools here!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3913,
+      "output_tokens": 21,
+      "total_latency_ms": 2181,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:37.097Z"
+  },
+  {
+    "result_id": "58ab3935-4835-45e6-8025-b6a2aae87f83",
+    "task_id": "tab-D-nt-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To get started with authentication functions, you can explore the following functions:\n\n1. `auth_create_user` - Create a new user account with email, name, and role assignment.\n2. `auth_list_users` - List all user accounts with optional filtering by role and status.\n3. `auth_revoke_token` - Revoke an active access or refresh token to terminate a session.\n\nYou can use these functions for managing user accounts, creating new users, and handling authentication tokens in your application.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3919,
+      "output_tokens": 115,
+      "total_latency_ms": 3629,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:40.785Z"
+  },
+  {
+    "result_id": "9a0d0496-940b-41bc-a441-725261b7b19e",
+    "task_id": "tab-D-nt-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": " To list files in a cloud storage directory, you can use the `store_list_files` function. Here's an example usage:\n\n```javascript\nstore_list_files({\n  bucket: \"my-bucket\",\n  prefix: \"folder/\"\n})\n```\n\nThis will return a list of files in the specified directory within the given bucket. If you want to filter results by name or other criteria, you can add additional parameters as needed.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3913,
+      "output_tokens": 101,
+      "total_latency_ms": 3451,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:44.299Z"
+  },
+  {
+    "result_id": "48a64b83-1b35-4f1b-b160-a2dfba4a09d8",
+    "task_id": "tab-D-ts-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To update the permissions for the user with ID \"example_value\" to the role of \"editor\", you can use the `auth_update_permissions` function as follows:\n\n```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3931,
+      "output_tokens": 92,
+      "total_latency_ms": 2612,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:46.974Z"
+  },
+  {
+    "result_id": "3abc9abb-1649-4100-9ff2-10a575d5322a",
+    "task_id": "tab-D-ts-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To list files in a cloud storage directory, you can use the `store_list_files` function. Here's an example of how to call it:\n\n```javascript\nstore_list_files({\n  bucket: \"my-bucket\",\n  prefix: \"my-directory\"\n})\n```\n\nThis will return a list of files in the specified directory within the given storage bucket.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 88,
+      "total_latency_ms": 2563,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:49.607Z"
+  },
+  {
+    "result_id": "0dd5f459-0a31-4a01-b5e4-72f68470a69a",
+    "task_id": "tab-D-ts-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To generate a pre-signed URL for temporary access to the file located at `src/components`, you can use the following code:\n\n```javascript\nstore_generate_signed_url({\n  \"path\": \"src/components\",\n  \"expiry_seconds\": 300, // Set the desired expiration time in seconds (e.g., 5 minutes)\n  \"method\": \"GET\" // Specify the HTTP method allowed for the URL\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3926,
+      "output_tokens": 107,
+      "total_latency_ms": 2749,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:52.413Z"
+  },
+  {
+    "result_id": "176b79c3-4268-44a2-915d-9e5c6854af38",
+    "task_id": "tab-D-ts-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To process the payment transaction, I can use the `fin_process_payment` function. Here's how it would look with your provided values:\n\n```javascript\nfin_process_payment({\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3943,
+      "output_tokens": 73,
+      "total_latency_ms": 2541,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:55.013Z"
+  },
+  {
+    "result_id": "92f109c0-80f3-4329-97d1-738fa68cda8d",
+    "task_id": "tab-D-ts-005",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To update an existing calendar event with the provided event ID, you can use the `cal_update_event` function. Here's how to call it:\n\n```javascript\ncal_update_event({\n  \"event_id\": \"example_value\",\n  \"start\": \"updated_start_datetime\",\n  \"end\": \"updated_end_datetime\",\n  \"title\": \"updated_event_title\"\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3930,
+      "output_tokens": 99,
+      "total_latency_ms": 2606,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:36:57.675Z"
+  },
+  {
+    "result_id": "617d081a-0ea2-40f1-8fed-3b669edea63d",
+    "task_id": "tab-D-ts-006",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To retrieve the current balance and recent transactions for the specified financial account, I can use the `fin_get_account_balance` tool. Here's the function call with the provided account ID:\n\n```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3934,
+      "output_tokens": 89,
+      "total_latency_ms": 2549,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:00.290Z"
+  },
+  {
+    "result_id": "6cdc8375-0c9e-46f5-8687-f85fe924b879",
+    "task_id": "tab-D-ts-007",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To provide the current weather conditions for the location \"example_value\", you can use the `wx_get_current` function with the provided parameters:\n\n```javascript\nconst result = wx_get_current({location: 'example_value'});\n```\n\nThis will return an object containing information about the current weather conditions, such as temperature, humidity, and wind.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3936,
+      "output_tokens": 83,
+      "total_latency_ms": 2388,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:02.736Z"
+  },
+  {
+    "result_id": "9503e984-1387-4901-bd6b-245823610309",
+    "task_id": "tab-D-ts-008",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To convert the given text \"example_value\" into spoken audio, we can utilize the `media_text_to_speech` tool. Here's an example of how you might call it:\n\n```javascript\nmedia_text_to_speech({\n  text: \"example_value\",\n  language: \"en-US\", // or any other supported language\n  voice: \"alloy\" // or any other available voice selection\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3939,
+      "output_tokens": 102,
+      "total_latency_ms": 2629,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:05.428Z"
+  },
+  {
+    "result_id": "c58ef874-9dd7-4a6b-99d6-f06eed659062",
+    "task_id": "tab-D-mt-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To revoke the token with the value \"example\\_value\" and extract its audio, I will first use `auth_revoke_token` to terminate the session:\n\n```javascript\nconst response = await auth_revoke_token({ token: \"example_value\" });\n```\n\nAfter revoking the token, I'll proceed with extracting the audio from the input file. Let's assume that the input path is \"example\\_value\":\n\n```javascript\nconst response = await media_extract_audio({ input_path: \"example_value\" });\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3942,
+      "output_tokens": 130,
+      "total_latency_ms": 3049,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:08.536Z"
+  },
+  {
+    "result_id": "c5d9fe8f-1a3b-471c-9811-6e6cdc03a134",
+    "task_id": "tab-D-mt-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To convert \"example_value\" to speech and then create an invoice for the customer with that value, first use the media_text_to_speech function:\n\n```javascript\nconst text = \"example_value\";\nconst speechResult = await media_text_to_speech({ text });\n```\n\nThen, use fin_create_invoice to create an invoice for the customer with the generated speech result as a line item:\n\n```javascript\nconst customerId = \"example_customer_id\"; // Replace this with the actual customer ID\nconst items = [speechResult];\nconst invoice = await fin_create_invoice({ customer_id: customerId, items });\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3955,
+      "output_tokens": 159,
+      "total_latency_ms": 3325,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:11.917Z"
+  },
+  {
+    "result_id": "79f3b963-26d1-44fd-9ebd-2d4bc7647547",
+    "task_id": "tab-D-mt-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To start with, let's track the status of an order using `shop_track_order`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Order Tracked\",\n  properties: {\n    order_id: \"example_value\"\n  }\n})\n\nlet orderStatus = shop_track_order({\n  order_id: \"example_value\",\n  include_history: true,\n  locale: \"en-US\"\n})\nconsole.log(orderStatus)\n```\n\nNext, we'll extract the audio from a video file using `media_extract_audio`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Audio Extracted\",\n  properties: {\n    input_path: \"example_value\"\n  }\n})\n\nlet extractedAudio = media_extract_audio({\n  input_path: \"example_value\",\n  output_format: \"mp3\"\n})\nconsole.log(extractedAudio)\n```\n\nLastly, let's get the air quality index for a specific location using `wx_get_air_quality`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Air Quality Checked\",\n  properties: {\n    location: \"example_value\"\n  }\n})\n\nlet airQuality = wx_get_air_quality({\n  location: \"example_value\",\n  include_pollutants: true\n})\nconsole.log(airQuality)\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3956,
+      "output_tokens": 353,
+      "total_latency_ms": 4879,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:16.859Z"
+  },
+  {
+    "result_id": "c4bac93c-6bee-4455-b643-23bdd43975c9",
+    "task_id": "tab-D-mt-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To get the current stock price for a specific ticker symbol and then use that data to monitor service requests per second, I will first utilize the `fin_get_stock_price` tool:\n\n```javascript\nconst stockPrice = await fin_get_stock_price({ticker: \"example_value\"});\n```\n\nNext, I'll use the output from the previous step to monitor service requests per second using the `ops_get_metrics` tool:\n\n```javascript\nconst serviceRequestsPerSec = await ops_get_metrics({service: stockPrice.service, metric: \"requests_per_sec\"});\n```\n\nFinally, I'll utilize the `cal_find_free_time` tool to find available time slots for a meeting with participants and duration based on the collected information:\n\n```javascript\nconst freeTime = await cal_find_free_time({participants: [\"item1\", \"item2\"], duration_minutes: 66, start_date: \"example_value\", end_date: \"example_value\"});\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 4000,
+      "output_tokens": 242,
+      "total_latency_ms": 4535,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:21.458Z"
+  },
+  {
+    "result_id": "8fe9509f-8c05-443b-9a03-3e49c37c502c",
+    "task_id": "tab-D-pe-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To get the formatted results of the specified analytics report, use the `analytics_run_report` function with the following parameters:\n\n```json\n{\n  \"report_id\": \"Berlin\",\n  \"date_range\": \"last_7d\"\n}\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 65,
+      "total_latency_ms": 2361,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:23.875Z"
+  },
+  {
+    "result_id": "65d6edba-f9d1-480c-9ca1-412ba8a0b649",
+    "task_id": "tab-D-pe-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To create a new user account with email \"main\" and name \"config.json\", you can use the following command:\n\n```javascript\nauth_create_user(email=\"main\", name=\"config.json\")\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3926,
+      "output_tokens": 51,
+      "total_latency_ms": 2288,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:26.226Z"
+  },
+  {
+    "result_id": "0597de27-f6ed-4bdb-a15a-93fc5b6a8743",
+    "task_id": "tab-D-pe-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To transcode a video file from Berlin with 4K resolution, MP4 format, and a specified bitrate for user@example.com, you can use the `media_transcode_video` function. Here's an example of how to call it:\n\n```javascript\nmedia_transcode_video(\n  {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n)\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3963,
+      "output_tokens": 125,
+      "total_latency_ms": 3012,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:29.295Z"
+  },
+  {
+    "result_id": "b910e1e0-9569-43b3-8766-3314d4b0a0a0",
+    "task_id": "tab-D-pe-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To create a calendar event with the specified details, you can use the `cal_create_event` function. Here's how to call it:\n\n```javascript\ncal_create_event({\n  title: \"Berlin\",\n  start: \"production\",\n  end: \"main\",\n  location: \"quarterly-report\",\n  attendees: [\"value1\"]\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3967,
+      "output_tokens": 92,
+      "total_latency_ms": 2777,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:32.129Z"
+  },
+  {
+    "result_id": "a93f4692-e715-48f1-b373-8e4ecc577cd1",
+    "task_id": "tab-D-nt-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " While it's difficult to predict the future with certainty, there is a growing trend towards electric vehicles (EVs) due to their environmental benefits and advancements in battery technology. However, complete replacement of gas cars by EVs may take several decades as traditional automakers continue to produce internal combustion engine vehicles and infrastructure for charging stations needs to be expanded. Additionally, factors such as cost, range anxiety, and charging time still pose challenges that need to be addressed for widespread adoption of electric cars.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3917,
+      "output_tokens": 103,
+      "total_latency_ms": 2746,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:34.945Z"
+  },
+  {
+    "result_id": "6bc19e5b-282f-4e5b-b2fc-550158d2d278",
+    "task_id": "tab-D-nt-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " The Mona Lisa was painted by Leonardo da Vinci. No need for any tools here!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3913,
+      "output_tokens": 21,
+      "total_latency_ms": 2179,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:37.190Z"
+  },
+  {
+    "result_id": "61cc6b87-d347-4d29-aacb-e0a7beae2657",
+    "task_id": "tab-D-nt-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To get started with authentication functions, you can explore the following functions:\n\n1. `auth_create_user` - Create a new user account with email, name, and role assignment.\n2. `auth_list_users` - List all user accounts with optional filtering by role and status.\n3. `auth_revoke_token` - Revoke an active access or refresh token to terminate a session.\n\nYou can use these functions for managing user accounts, creating new users, and handling authentication tokens in your application.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3919,
+      "output_tokens": 115,
+      "total_latency_ms": 3618,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:40.874Z"
+  },
+  {
+    "result_id": "f67e193d-b6d6-4fce-ab14-ba30fbbc7147",
+    "task_id": "tab-D-nt-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": " To list files in a cloud storage directory, you can use the `store_list_files` function. Here's an example usage:\n\n```javascript\nstore_list_files({\n  bucket: \"my-bucket\",\n  prefix: \"folder/\"\n})\n```\n\nThis will return a list of files in the specified directory within the given bucket. If you want to filter results by name or other criteria, you can add additional parameters as needed.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3913,
+      "output_tokens": 101,
+      "total_latency_ms": 3469,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:44.400Z"
+  },
+  {
+    "result_id": "9bc6a65d-575a-492c-96f9-add034bdad8c",
+    "task_id": "tab-D-ts-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To update the permissions for the user with ID \"example_value\" to the role of \"editor\", you can use the `auth_update_permissions` function as follows:\n\n```json\n{\n  \"name\": \"auth_update_permissions\",\n  \"arguments\": {\n    \"user_id\": \"example_value\",\n    \"role\": \"editor\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3931,
+      "output_tokens": 92,
+      "total_latency_ms": 2609,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:47.080Z"
+  },
+  {
+    "result_id": "2cba6275-2abb-4cba-8b07-d27a533efb6d",
+    "task_id": "tab-D-ts-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To list files in a cloud storage directory, you can use the `store_list_files` function. Here's an example of how to call it:\n\n```javascript\nstore_list_files({\n  bucket: \"my-bucket\",\n  prefix: \"my-directory\"\n})\n```\n\nThis will return a list of files in the specified directory within the given storage bucket.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 88,
+      "total_latency_ms": 2578,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:49.714Z"
+  },
+  {
+    "result_id": "421ca213-7483-44c8-8653-1985a8162483",
+    "task_id": "tab-D-ts-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To generate a pre-signed URL for temporary access to the file located at `src/components`, you can use the following code:\n\n```javascript\nstore_generate_signed_url({\n  \"path\": \"src/components\",\n  \"expiry_seconds\": 300, // Set the desired expiration time in seconds (e.g., 5 minutes)\n  \"method\": \"GET\" // Specify the HTTP method allowed for the URL\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3926,
+      "output_tokens": 107,
+      "total_latency_ms": 2745,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:52.522Z"
+  },
+  {
+    "result_id": "3842a8a4-b350-4d67-a77a-744142547f7b",
+    "task_id": "tab-D-ts-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To process the payment transaction, I can use the `fin_process_payment` function. Here's how it would look with your provided values:\n\n```javascript\nfin_process_payment({\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3943,
+      "output_tokens": 73,
+      "total_latency_ms": 2538,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:55.131Z"
+  },
+  {
+    "result_id": "8ce3cf91-c778-46c9-9e97-9611cbfec4c2",
+    "task_id": "tab-D-ts-005",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To update an existing calendar event with the provided event ID, you can use the `cal_update_event` function. Here's how to call it:\n\n```javascript\ncal_update_event({\n  \"event_id\": \"example_value\",\n  \"start\": \"updated_start_datetime\",\n  \"end\": \"updated_end_datetime\",\n  \"title\": \"updated_event_title\"\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3930,
+      "output_tokens": 99,
+      "total_latency_ms": 2595,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:37:57.797Z"
+  },
+  {
+    "result_id": "e7fce12d-dbd9-487b-91e8-8881cc8fe027",
+    "task_id": "tab-D-ts-006",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To retrieve the current balance and recent transactions for the specified financial account, I can use the `fin_get_account_balance` tool. Here's the function call with the provided account ID:\n\n```json\n{\n  \"name\": \"fin_get_account_balance\",\n  \"arguments\": {\n    \"account_id\": \"example_value\"\n  }\n}\n```",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 3934,
+      "output_tokens": 89,
+      "total_latency_ms": 2550,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:00.405Z"
+  },
+  {
+    "result_id": "7586de05-8831-4dc4-af21-3185e3834c16",
+    "task_id": "tab-D-ts-007",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To provide the current weather conditions for the location \"example_value\", you can use the `wx_get_current` function with the provided parameters:\n\n```javascript\nconst result = wx_get_current({location: 'example_value'});\n```\n\nThis will return an object containing information about the current weather conditions, such as temperature, humidity, and wind.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3936,
+      "output_tokens": 83,
+      "total_latency_ms": 2392,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:02.855Z"
+  },
+  {
+    "result_id": "108aebe3-495b-4996-ad74-bc86e8a59278",
+    "task_id": "tab-D-ts-008",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To convert the given text \"example_value\" into spoken audio, we can utilize the `media_text_to_speech` tool. Here's an example of how you might call it:\n\n```javascript\nmedia_text_to_speech({\n  text: \"example_value\",\n  language: \"en-US\", // or any other supported language\n  voice: \"alloy\" // or any other available voice selection\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3939,
+      "output_tokens": 102,
+      "total_latency_ms": 2632,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:05.550Z"
+  },
+  {
+    "result_id": "505039af-73e5-476f-ad60-b56569c9f76b",
+    "task_id": "tab-D-mt-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To revoke the token with the value \"example\\_value\" and extract its audio, I will first use `auth_revoke_token` to terminate the session:\n\n```javascript\nconst response = await auth_revoke_token({ token: \"example_value\" });\n```\n\nAfter revoking the token, I'll proceed with extracting the audio from the input file. Let's assume that the input path is \"example\\_value\":\n\n```javascript\nconst response = await media_extract_audio({ input_path: \"example_value\" });\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3942,
+      "output_tokens": 130,
+      "total_latency_ms": 3041,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:08.657Z"
+  },
+  {
+    "result_id": "17de6030-e700-4e7e-a3cd-e8b926c9c77c",
+    "task_id": "tab-D-mt-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To convert \"example_value\" to speech and then create an invoice for the customer with that value, first use the media_text_to_speech function:\n\n```javascript\nconst text = \"example_value\";\nconst speechResult = await media_text_to_speech({ text });\n```\n\nThen, use fin_create_invoice to create an invoice for the customer with the generated speech result as a line item:\n\n```javascript\nconst customerId = \"example_customer_id\"; // Replace this with the actual customer ID\nconst items = [speechResult];\nconst invoice = await fin_create_invoice({ customer_id: customerId, items });\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3955,
+      "output_tokens": 159,
+      "total_latency_ms": 3316,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:12.044Z"
+  },
+  {
+    "result_id": "f3f051ba-7101-4710-bacb-171ec8d442f6",
+    "task_id": "tab-D-mt-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To start with, let's track the status of an order using `shop_track_order`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Order Tracked\",\n  properties: {\n    order_id: \"example_value\"\n  }\n})\n\nlet orderStatus = shop_track_order({\n  order_id: \"example_value\",\n  include_history: true,\n  locale: \"en-US\"\n})\nconsole.log(orderStatus)\n```\n\nNext, we'll extract the audio from a video file using `media_extract_audio`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Audio Extracted\",\n  properties: {\n    input_path: \"example_value\"\n  }\n})\n\nlet extractedAudio = media_extract_audio({\n  input_path: \"example_value\",\n  output_format: \"mp3\"\n})\nconsole.log(extractedAudio)\n```\n\nLastly, let's get the air quality index for a specific location using `wx_get_air_quality`.\n\n```javascript\nanalytics_track_event({\n  event_name: \"Air Quality Checked\",\n  properties: {\n    location: \"example_value\"\n  }\n})\n\nlet airQuality = wx_get_air_quality({\n  location: \"example_value\",\n  include_pollutants: true\n})\nconsole.log(airQuality)\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3956,
+      "output_tokens": 353,
+      "total_latency_ms": 4859,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:16.961Z"
+  },
+  {
+    "result_id": "251d7a8b-ce0d-4632-800e-a8c4f9de152b",
+    "task_id": "tab-D-mt-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To get the current stock price for a specific ticker symbol and then use that data to monitor service requests per second, I will first utilize the `fin_get_stock_price` tool:\n\n```javascript\nconst stockPrice = await fin_get_stock_price({ticker: \"example_value\"});\n```\n\nNext, I'll use the output from the previous step to monitor service requests per second using the `ops_get_metrics` tool:\n\n```javascript\nconst serviceRequestsPerSec = await ops_get_metrics({service: stockPrice.service, metric: \"requests_per_sec\"});\n```\n\nFinally, I'll utilize the `cal_find_free_time` tool to find available time slots for a meeting with participants and duration based on the collected information:\n\n```javascript\nconst freeTime = await cal_find_free_time({participants: [\"item1\", \"item2\"], duration_minutes: 66, start_date: \"example_value\", end_date: \"example_value\"});\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 4000,
+      "output_tokens": 242,
+      "total_latency_ms": 4525,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:21.549Z"
+  },
+  {
+    "result_id": "156dec9c-4f80-4ae3-b74b-c2e691275f29",
+    "task_id": "tab-D-pe-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To get the formatted results of the specified analytics report, use the `analytics_run_report` function with the following parameters:\n\n```json\n{\n  \"report_id\": \"Berlin\",\n  \"date_range\": \"last_7d\"\n}\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3921,
+      "output_tokens": 65,
+      "total_latency_ms": 2361,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:23.969Z"
+  },
+  {
+    "result_id": "426fee16-ef40-43df-a748-1160c16edb80",
+    "task_id": "tab-D-pe-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To create a new user account with email \"main\" and name \"config.json\", you can use the following command:\n\n```javascript\nauth_create_user(email=\"main\", name=\"config.json\")\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3926,
+      "output_tokens": 51,
+      "total_latency_ms": 2295,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:26.331Z"
+  },
+  {
+    "result_id": "eb00abfd-2c9b-4089-859f-3c1d3884eb4a",
+    "task_id": "tab-D-pe-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To transcode a video file from Berlin with 4K resolution, MP4 format, and a specified bitrate for user@example.com, you can use the `media_transcode_video` function. Here's an example of how to call it:\n\n```javascript\nmedia_transcode_video(\n  {\n    \"input_path\": \"Berlin\",\n    \"output_format\": \"mp4\",\n    \"resolution\": \"4k\",\n    \"bitrate\": \"user@example.com\"\n  }\n)\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3963,
+      "output_tokens": 125,
+      "total_latency_ms": 3010,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:29.406Z"
+  },
+  {
+    "result_id": "a7fd652a-6510-478d-a854-311babce133f",
+    "task_id": "tab-D-pe-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To create a calendar event with the specified details, you can use the `cal_create_event` function. Here's how to call it:\n\n```javascript\ncal_create_event({\n  title: \"Berlin\",\n  start: \"production\",\n  end: \"main\",\n  location: \"quarterly-report\",\n  attendees: [\"value1\"]\n})\n```",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 3967,
+      "output_tokens": 92,
+      "total_latency_ms": 2764,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:32.240Z"
+  },
+  {
+    "result_id": "616a46b5-81e0-4226-86d1-5de932b60ebb",
+    "task_id": "tab-D-nt-001",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " While it's difficult to predict the future with certainty, there is a growing trend towards electric vehicles (EVs) due to their environmental benefits and advancements in battery technology. However, complete replacement of gas cars by EVs may take several decades as traditional automakers continue to produce internal combustion engine vehicles and infrastructure for charging stations needs to be expanded. Additionally, factors such as cost, range anxiety, and charging time still pose challenges that need to be addressed for widespread adoption of electric cars.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3917,
+      "output_tokens": 103,
+      "total_latency_ms": 2758,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:35.055Z"
+  },
+  {
+    "result_id": "0dd7e873-d40d-4f2f-abee-ac7f776d6c73",
+    "task_id": "tab-D-nt-002",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " The Mona Lisa was painted by Leonardo da Vinci. No need for any tools here!",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3913,
+      "output_tokens": 21,
+      "total_latency_ms": 2190,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:37.300Z"
+  },
+  {
+    "result_id": "d1e72438-d713-4c5c-a5ca-612d71316ba8",
+    "task_id": "tab-D-nt-003",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To get started with authentication functions, you can explore the following functions:\n\n1. `auth_create_user` - Create a new user account with email, name, and role assignment.\n2. `auth_list_users` - List all user accounts with optional filtering by role and status.\n3. `auth_revoke_token` - Revoke an active access or refresh token to terminate a session.\n\nYou can use these functions for managing user accounts, creating new users, and handling authentication tokens in your application.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3919,
+      "output_tokens": 115,
+      "total_latency_ms": 3621,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:40.987Z"
+  },
+  {
+    "result_id": "14b277b4-50a9-429f-8ea0-3caf41163794",
+    "task_id": "tab-D-nt-004",
+    "model": "Mistral 7B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": " To list files in a cloud storage directory, you can use the `store_list_files` function. Here's an example usage:\n\n```javascript\nstore_list_files({\n  bucket: \"my-bucket\",\n  prefix: \"folder/\"\n})\n```\n\nThis will return a list of files in the specified directory within the given bucket. If you want to filter results by name or other criteria, you can add additional parameters as needed.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 3913,
+      "output_tokens": 101,
+      "total_latency_ms": 3457,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:44.511Z"
+  },
+  {
+    "result_id": "aa305c2a-c8ac-4123-96ab-f3b1bf4d5a08",
+    "task_id": "tab-D-ts-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2480,
+      "output_tokens": 32,
+      "total_latency_ms": 769,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:45.337Z"
+  },
+  {
+    "result_id": "5744298a-f1df-4fc1-96c7-8731d828dc61",
+    "task_id": "tab-D-ts-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"path/to/directory\"}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "path/to/directory"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2470,
+      "output_tokens": 25,
+      "total_latency_ms": 305,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:45.702Z"
+  },
+  {
+    "result_id": "c1b585ef-0e09-46cb-9c3b-c7dca9f94a9f",
+    "task_id": "tab-D-ts-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\", \"expiry_seconds\": 3600}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2475,
+      "output_tokens": 37,
+      "total_latency_ms": 463,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:46.236Z"
+  },
+  {
+    "result_id": "ada0e82f-4259-4b7e-9fe9-4ca794a40fef",
+    "task_id": "tab-D-ts-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2492,
+      "output_tokens": 40,
+      "total_latency_ms": 510,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:46.811Z"
+  },
+  {
+    "result_id": "cb9b13b4-b66e-43ac-a480-42c08cb40c52",
+    "task_id": "tab-D-ts-005",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"updated_title\", \"start\": \"updated_start_datetime\", \"end\": \"updated_end_datetime\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "updated_title",
+          "start": "updated_start_datetime",
+          "end": "updated_end_datetime"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 2479,
+      "output_tokens": 53,
+      "total_latency_ms": 686,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:47.565Z"
+  },
+  {
+    "result_id": "4cf77ec4-c7f0-43a1-acfd-a7e02f920abc",
+    "task_id": "tab-D-ts-006",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2483,
+      "output_tokens": 27,
+      "total_latency_ms": 332,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:47.961Z"
+  },
+  {
+    "result_id": "4acef15c-224f-463c-85a2-121063ad9bce",
+    "task_id": "tab-D-ts-007",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2485,
+      "output_tokens": 23,
+      "total_latency_ms": 282,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:48.300Z"
+  },
+  {
+    "result_id": "53a4de6d-e109-442b-913a-89972c4e7934",
+    "task_id": "tab-D-ts-008",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2488,
+      "output_tokens": 26,
+      "total_latency_ms": 321,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:48.683Z"
+  },
+  {
+    "result_id": "c57e129c-4c59-448d-9cb4-e515dbcfba26",
+    "task_id": "tab-D-mt-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"$output_path\", \"expiry_seconds\": 300, \"method\": \"GET\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"$output_path\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "$output_path",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "$output_path"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.3333333333333333
+    },
+    "metrics": {
+      "input_tokens": 2491,
+      "output_tokens": 92,
+      "total_latency_ms": 1229,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:49.982Z"
+  },
+  {
+    "result_id": "b3398e84-5801-4bf9-821d-2afd62c9258a",
+    "task_id": "tab-D-mt-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2504,
+      "output_tokens": 62,
+      "total_latency_ms": 816,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:50.868Z"
+  },
+  {
+    "result_id": "8c04c47d-d911-418f-bd4b-f8d55cd982ea",
+    "task_id": "tab-D-mt-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}},\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}},\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2505,
+      "output_tokens": 75,
+      "total_latency_ms": 1042,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:51.968Z"
+  },
+  {
+    "result_id": "9991a318-c824-423e-9977-3b16628bb569",
+    "task_id": "tab-D-mt-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"stock_price_query\", \"properties\": {\"ticker\": \"example_value\"}}\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2549,
+      "output_tokens": 158,
+      "total_latency_ms": 2162,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:54.195Z"
+  },
+  {
+    "result_id": "51b6666b-e3cc-4d3d-a1de-3cbc95581d80",
+    "task_id": "tab-D-pe-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2470,
+      "output_tokens": 31,
+      "total_latency_ms": 382,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:54.644Z"
+  },
+  {
+    "result_id": "83ffe039-86da-494b-a5a4-f60d30fd5878",
+    "task_id": "tab-D-pe-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"password\": \"hashed_password\", \"limit\": 1}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "password": "hashed_password",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5714285714285715,
+      "overall": 0.8285714285714286
+    },
+    "metrics": {
+      "input_tokens": 2475,
+      "output_tokens": 50,
+      "total_latency_ms": 662,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:55.361Z"
+  },
+  {
+    "result_id": "f0405009-6127-4236-8c2e-bca794976add",
+    "task_id": "tab-D-pe-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2512,
+      "output_tokens": 53,
+      "total_latency_ms": 702,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:56.120Z"
+  },
+  {
+    "result_id": "7627d7e4-5aa8-494d-ad7b-08eabe81033a",
+    "task_id": "tab-D-pe-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2516,
+      "output_tokens": 53,
+      "total_latency_ms": 705,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:56.881Z"
+  },
+  {
+    "result_id": "cd0dbde4-1beb-4031-bacd-b5aec169f757",
+    "task_id": "tab-D-nt-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_question\", \"properties\": {\"question\": \"Will electric cars completely replace gas cars?\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "user_question",
+          "properties": {
+            "question": "Will electric cars completely replace gas cars?"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2466,
+      "output_tokens": 41,
+      "total_latency_ms": 524,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:57.467Z"
+  },
+  {
+    "result_id": "558a9256-8682-4ee0-be99-3d70710aa460",
+    "task_id": "tab-D-nt-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"art_history_facts\", \"date_range\": \"last_7d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "art_history_facts",
+          "date_range": "last_7d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2462,
+      "output_tokens": 40,
+      "total_latency_ms": 529,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:58.067Z"
+  },
+  {
+    "result_id": "692dad88-4f37-462c-906b-549fd983f121",
+    "task_id": "tab-D-nt-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_accounts_summary\", \"date_range\": \"last_30d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "user_accounts_summary",
+          "date_range": "last_30d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2468,
+      "output_tokens": 41,
+      "total_latency_ms": 521,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:58.658Z"
+  },
+  {
+    "result_id": "7ca693d2-be66-4a18-b71d-35cc626b6383",
+    "task_id": "tab-D-nt-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"default\", \"max_results\": 10}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "",
+          "bucket": "default",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2462,
+      "output_tokens": 33,
+      "total_latency_ms": 422,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:59.139Z"
+  },
+  {
+    "result_id": "fc01d355-f27d-4bff-8f95-6b62637f2ac1",
+    "task_id": "tab-D-ts-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2480,
+      "output_tokens": 32,
+      "total_latency_ms": 403,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:59.602Z"
+  },
+  {
+    "result_id": "f11198e4-4835-412a-bed0-b4ea686fe49c",
+    "task_id": "tab-D-ts-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"path/to/directory\"}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "path/to/directory"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2470,
+      "output_tokens": 25,
+      "total_latency_ms": 299,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:38:59.968Z"
+  },
+  {
+    "result_id": "fbbffa9c-8ab0-4f8a-a2b3-7100676ad0a0",
+    "task_id": "tab-D-ts-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\", \"expiry_seconds\": 3600}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2475,
+      "output_tokens": 37,
+      "total_latency_ms": 478,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:00.505Z"
+  },
+  {
+    "result_id": "49177ab5-4f75-4fbe-8a3d-5ea8d5760e25",
+    "task_id": "tab-D-ts-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2492,
+      "output_tokens": 40,
+      "total_latency_ms": 510,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:01.084Z"
+  },
+  {
+    "result_id": "c5ed50b7-5940-4451-ad78-c563fac3990a",
+    "task_id": "tab-D-ts-005",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"updated_title\", \"start\": \"updated_start_datetime\", \"end\": \"updated_end_datetime\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "updated_title",
+          "start": "updated_start_datetime",
+          "end": "updated_end_datetime"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 2479,
+      "output_tokens": 53,
+      "total_latency_ms": 691,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:01.843Z"
+  },
+  {
+    "result_id": "83341739-fab0-4ee9-81c2-af8869081243",
+    "task_id": "tab-D-ts-006",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2483,
+      "output_tokens": 27,
+      "total_latency_ms": 336,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:02.237Z"
+  },
+  {
+    "result_id": "76de8b14-de7b-4182-b0df-1913c58f3f79",
+    "task_id": "tab-D-ts-007",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2485,
+      "output_tokens": 23,
+      "total_latency_ms": 269,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:02.577Z"
+  },
+  {
+    "result_id": "276d6cd6-6aee-4b23-bf77-a69d56dbcc5e",
+    "task_id": "tab-D-ts-008",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2488,
+      "output_tokens": 26,
+      "total_latency_ms": 324,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:02.959Z"
+  },
+  {
+    "result_id": "eca75d97-be99-42ac-b795-c7ac38985241",
+    "task_id": "tab-D-mt-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"$output_path\", \"expiry_seconds\": 300, \"method\": \"GET\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"$output_path\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "$output_path",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "$output_path"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.3333333333333333
+    },
+    "metrics": {
+      "input_tokens": 2491,
+      "output_tokens": 92,
+      "total_latency_ms": 1235,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:04.260Z"
+  },
+  {
+    "result_id": "e0b87255-c3bf-4743-9496-f6836493af4e",
+    "task_id": "tab-D-mt-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2504,
+      "output_tokens": 62,
+      "total_latency_ms": 819,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:05.143Z"
+  },
+  {
+    "result_id": "6bdfd5cc-af14-448a-b686-e25d35886ba3",
+    "task_id": "tab-D-mt-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}},\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}},\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2505,
+      "output_tokens": 75,
+      "total_latency_ms": 1039,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:06.240Z"
+  },
+  {
+    "result_id": "ba4344ae-f9d6-411d-b2f7-e8dfc710d020",
+    "task_id": "tab-D-mt-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"stock_price_query\", \"properties\": {\"ticker\": \"example_value\"}}\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2549,
+      "output_tokens": 158,
+      "total_latency_ms": 2159,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:08.469Z"
+  },
+  {
+    "result_id": "202358a7-056a-4bbd-b312-39c9f0d8b09e",
+    "task_id": "tab-D-pe-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2470,
+      "output_tokens": 31,
+      "total_latency_ms": 393,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:08.921Z"
+  },
+  {
+    "result_id": "1b87a3f1-8ac1-48bc-9c00-2e3316d69c5b",
+    "task_id": "tab-D-pe-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"password\": \"hashed_password\", \"limit\": 1}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "password": "hashed_password",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5714285714285715,
+      "overall": 0.8285714285714286
+    },
+    "metrics": {
+      "input_tokens": 2475,
+      "output_tokens": 50,
+      "total_latency_ms": 650,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:09.631Z"
+  },
+  {
+    "result_id": "bc8b63de-ea87-45ad-b060-4e2fd4a12847",
+    "task_id": "tab-D-pe-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2512,
+      "output_tokens": 53,
+      "total_latency_ms": 691,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:10.393Z"
+  },
+  {
+    "result_id": "0afe3c0a-d221-4201-b634-90c9edf87c0f",
+    "task_id": "tab-D-pe-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2516,
+      "output_tokens": 53,
+      "total_latency_ms": 700,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:11.154Z"
+  },
+  {
+    "result_id": "27706cbd-75d6-4a8a-bfb4-5ad9f7a89971",
+    "task_id": "tab-D-nt-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_question\", \"properties\": {\"question\": \"Will electric cars completely replace gas cars?\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "user_question",
+          "properties": {
+            "question": "Will electric cars completely replace gas cars?"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2466,
+      "output_tokens": 41,
+      "total_latency_ms": 527,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:11.746Z"
+  },
+  {
+    "result_id": "99c1b77e-7689-4b0a-b9c9-78518216e2fd",
+    "task_id": "tab-D-nt-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"art_history_facts\", \"date_range\": \"last_7d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "art_history_facts",
+          "date_range": "last_7d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2462,
+      "output_tokens": 40,
+      "total_latency_ms": 509,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:12.320Z"
+  },
+  {
+    "result_id": "933adea0-5207-4d27-9d64-8f503c92731e",
+    "task_id": "tab-D-nt-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_accounts_summary\", \"date_range\": \"last_30d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "user_accounts_summary",
+          "date_range": "last_30d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2468,
+      "output_tokens": 41,
+      "total_latency_ms": 534,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:12.910Z"
+  },
+  {
+    "result_id": "3b875a79-964c-4cba-aca7-bc7de42216df",
+    "task_id": "tab-D-nt-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"default\", \"max_results\": 10}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "",
+          "bucket": "default",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2462,
+      "output_tokens": 33,
+      "total_latency_ms": 418,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:13.387Z"
+  },
+  {
+    "result_id": "d3064227-09b2-49dc-aa15-9344564461f6",
+    "task_id": "tab-D-ts-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"example_value\", \"role\": \"editor\"}}",
+      "parsed_tool_call": {
+        "name": "auth_update_permissions",
+        "arguments": {
+          "user_id": "example_value",
+          "role": "editor"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2480,
+      "output_tokens": 32,
+      "total_latency_ms": 395,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:13.850Z"
+  },
+  {
+    "result_id": "d42cbba7-bd6f-4f74-97d2-dd98cf73cfd5",
+    "task_id": "tab-D-ts-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"path/to/directory\"}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "path/to/directory"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 2470,
+      "output_tokens": 25,
+      "total_latency_ms": 305,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:14.215Z"
+  },
+  {
+    "result_id": "2f15e831-2bdd-4013-85b3-9bc0a7cc3347",
+    "task_id": "tab-D-ts-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"src/components\", \"expiry_seconds\": 3600}}",
+      "parsed_tool_call": {
+        "name": "store_generate_signed_url",
+        "arguments": {
+          "path": "src/components",
+          "expiry_seconds": 3600
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2475,
+      "output_tokens": 37,
+      "total_latency_ms": 478,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:14.748Z"
+  },
+  {
+    "result_id": "1b155f56-7d8f-4d2e-8bf8-13b4654c8025",
+    "task_id": "tab-D-ts-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 42, \"currency\": \"example_value\", \"recipient\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_process_payment",
+        "arguments": {
+          "amount": 42,
+          "currency": "example_value",
+          "recipient": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2492,
+      "output_tokens": 40,
+      "total_latency_ms": 507,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:15.322Z"
+  },
+  {
+    "result_id": "603db0dc-a18d-499a-82e0-13f9c27d8cb3",
+    "task_id": "tab-D-ts-005",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"cal_update_event\", \"arguments\": {\"event_id\": \"example_value\", \"title\": \"updated_title\", \"start\": \"updated_start_datetime\", \"end\": \"updated_end_datetime\"}}",
+      "parsed_tool_call": {
+        "name": "cal_update_event",
+        "arguments": {
+          "event_id": "example_value",
+          "title": "updated_title",
+          "start": "updated_start_datetime",
+          "end": "updated_end_datetime"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.4,
+      "overall": 0.76
+    },
+    "metrics": {
+      "input_tokens": 2479,
+      "output_tokens": 53,
+      "total_latency_ms": 695,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:16.073Z"
+  },
+  {
+    "result_id": "b41c963c-9489-488d-9648-0c5369ccf766",
+    "task_id": "tab-D-ts-006",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"fin_get_account_balance\", \"arguments\": {\"account_id\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "fin_get_account_balance",
+        "arguments": {
+          "account_id": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2483,
+      "output_tokens": 27,
+      "total_latency_ms": 324,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:16.467Z"
+  },
+  {
+    "result_id": "d769b4e4-98ef-4e95-9c1f-44d973fced01",
+    "task_id": "tab-D-ts-007",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"wx_get_current\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_current",
+        "arguments": {
+          "location": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2485,
+      "output_tokens": 23,
+      "total_latency_ms": 272,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:16.807Z"
+  },
+  {
+    "result_id": "76f88955-f03c-447d-939c-bdb3556390a9",
+    "task_id": "tab-D-ts-008",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}",
+      "parsed_tool_call": {
+        "name": "media_text_to_speech",
+        "arguments": {
+          "text": "example_value"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2488,
+      "output_tokens": 26,
+      "total_latency_ms": 314,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:17.189Z"
+  },
+  {
+    "result_id": "9a72ba1d-8fc0-4ea1-9e02-78a0dfba86f5",
+    "task_id": "tab-D-mt-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"auth_revoke_token\", \"arguments\": {\"token\": \"example_value\"}}\n{\"name\": \"store_generate_signed_url\", \"arguments\": {\"path\": \"$output_path\", \"expiry_seconds\": 300, \"method\": \"GET\"}}\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"$output_path\"}}",
+      "parsed_sequence": [
+        {
+          "name": "auth_revoke_token",
+          "arguments": {
+            "token": "example_value"
+          }
+        },
+        {
+          "name": "store_generate_signed_url",
+          "arguments": {
+            "path": "$output_path",
+            "expiry_seconds": 300,
+            "method": "GET"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "$output_path"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5,
+      "overall": 0.3333333333333333
+    },
+    "metrics": {
+      "input_tokens": 2491,
+      "output_tokens": 92,
+      "total_latency_ms": 1238,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:18.486Z"
+  },
+  {
+    "result_id": "499e88bb-282e-4119-aaef-fb09b002c7a7",
+    "task_id": "tab-D-mt-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"media_text_to_speech\", \"arguments\": {\"text\": \"example_value\"}}\n{\"name\": \"fin_create_invoice\", \"arguments\": {\"customer_id\": \"example_value\", \"items\": [\"item1\",\"item2\"]}}",
+      "parsed_sequence": [
+        {
+          "name": "media_text_to_speech",
+          "arguments": {
+            "text": "example_value"
+          }
+        },
+        {
+          "name": "fin_create_invoice",
+          "arguments": {
+            "customer_id": "example_value",
+            "items": [
+              "item1",
+              "item2"
+            ]
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2504,
+      "output_tokens": 62,
+      "total_latency_ms": 831,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:19.375Z"
+  },
+  {
+    "result_id": "ad59dae9-5263-415e-93e1-068886cfa7cd",
+    "task_id": "tab-D-mt-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"shop_track_order\", \"arguments\": {\"order_id\": \"example_value\"}},\n{\"name\": \"media_extract_audio\", \"arguments\": {\"input_path\": \"example_value\"}},\n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"example_value\"}}",
+      "parsed_sequence": [
+        {
+          "name": "shop_track_order",
+          "arguments": {
+            "order_id": "example_value"
+          }
+        },
+        {
+          "name": "media_extract_audio",
+          "arguments": {
+            "input_path": "example_value"
+          }
+        },
+        {
+          "name": "wx_get_air_quality",
+          "arguments": {
+            "location": "example_value"
+          }
+        }
+      ],
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2505,
+      "output_tokens": 75,
+      "total_latency_ms": 1033,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:20.470Z"
+  },
+  {
+    "result_id": "d7c56178-9fe8-4392-bf2c-bef900f56988",
+    "task_id": "tab-D-mt-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"stock_price_query\", \"properties\": {\"ticker\": \"example_value\"}}\n{\"name\": \"fin_get_stock_price\", \"arguments\": {\"ticker\": \"example_value\"}}\n{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"example_value\", \"metric\": \"requests_per_sec\"}}\n{\"name\": \"cal_find_free_time\", \"arguments\": {\"participants\": [\"item1\",\"item2\"], \"duration_minutes\": 66, \"start_date\": \"example_value\", \"end_date\": \"example_value\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 2549,
+      "output_tokens": 158,
+      "total_latency_ms": 2172,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:22.703Z"
+  },
+  {
+    "result_id": "0ea6fb76-ddd2-4aaa-b1cd-7bc381cd1230",
+    "task_id": "tab-D-pe-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"Berlin\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "Berlin",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.6666666666666666,
+      "overall": 0.8666666666666667
+    },
+    "metrics": {
+      "input_tokens": 2470,
+      "output_tokens": 31,
+      "total_latency_ms": 389,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:23.151Z"
+  },
+  {
+    "result_id": "10bebee3-7806-463f-a946-c7e8fae89d8f",
+    "task_id": "tab-D-pe-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"auth_create_user\", \"arguments\": {\"email\": \"main\", \"name\": \"config.json\", \"role\": \"viewer\", \"password\": \"hashed_password\", \"limit\": 1}}",
+      "parsed_tool_call": {
+        "name": "auth_create_user",
+        "arguments": {
+          "email": "main",
+          "name": "config.json",
+          "role": "viewer",
+          "password": "hashed_password",
+          "limit": 1
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.5714285714285715,
+      "overall": 0.8285714285714286
+    },
+    "metrics": {
+      "input_tokens": 2475,
+      "output_tokens": 50,
+      "total_latency_ms": 648,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:23.862Z"
+  },
+  {
+    "result_id": "7ec27c29-f04c-4656-af79-2c4e83be9b9d",
+    "task_id": "tab-D-pe-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"media_transcode_video\", \"arguments\": {\"input_path\": \"Berlin\", \"output_format\": \"mp4\", \"resolution\": \"4k\", \"bitrate\": \"user@example.com\"}}",
+      "parsed_tool_call": {
+        "name": "media_transcode_video",
+        "arguments": {
+          "input_path": "Berlin",
+          "output_format": "mp4",
+          "resolution": "4k",
+          "bitrate": "user@example.com"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2512,
+      "output_tokens": 53,
+      "total_latency_ms": 702,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:24.621Z"
+  },
+  {
+    "result_id": "09f8ac39-5449-4f21-84d2-3d9326af6e49",
+    "task_id": "tab-D-pe-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"cal_create_event\", \"arguments\": {\"title\": \"Berlin\", \"start\": \"production\", \"end\": \"main\", \"location\": \"quarterly-report\", \"attendees\": [\"value1\"]}}",
+      "parsed_tool_call": {
+        "name": "cal_create_event",
+        "arguments": {
+          "title": "Berlin",
+          "start": "production",
+          "end": "main",
+          "location": "quarterly-report",
+          "attendees": [
+            "value1"
+          ]
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 2516,
+      "output_tokens": 53,
+      "total_latency_ms": 702,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:25.385Z"
+  },
+  {
+    "result_id": "92501b8b-6358-4dbd-93c9-c333419e4444",
+    "task_id": "tab-D-nt-001",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_question\", \"properties\": {\"question\": \"Will electric cars completely replace gas cars?\"}}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "user_question",
+          "properties": {
+            "question": "Will electric cars completely replace gas cars?"
+          }
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2466,
+      "output_tokens": 41,
+      "total_latency_ms": 524,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:25.972Z"
+  },
+  {
+    "result_id": "ad883dc9-0005-482f-8138-81da6f9f18c0",
+    "task_id": "tab-D-nt-002",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"art_history_facts\", \"date_range\": \"last_7d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "art_history_facts",
+          "date_range": "last_7d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2462,
+      "output_tokens": 40,
+      "total_latency_ms": 512,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:26.552Z"
+  },
+  {
+    "result_id": "f95f632a-71a1-4bb2-aaa2-b15a05501062",
+    "task_id": "tab-D-nt-003",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"user_accounts_summary\", \"date_range\": \"last_30d\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "user_accounts_summary",
+          "date_range": "last_30d"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2468,
+      "output_tokens": 41,
+      "total_latency_ms": 522,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:27.139Z"
+  },
+  {
+    "result_id": "366b87e4-5914-4bd5-a759-f9a33e2e2071",
+    "task_id": "tab-D-nt-004",
+    "model": "Mistral 7B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": " {\"name\": \"store_list_files\", \"arguments\": {\"prefix\": \"\", \"bucket\": \"default\", \"max_results\": 10}}",
+      "parsed_tool_call": {
+        "name": "store_list_files",
+        "arguments": {
+          "prefix": "",
+          "bucket": "default",
+          "max_results": 10
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 2462,
+      "output_tokens": 33,
+      "total_latency_ms": 426,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-03T09:39:27.622Z"
+  }
+]

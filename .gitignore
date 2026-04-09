@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Claude Code
+.claude/
+tmpclaude-*
+
+# Environment
+*.env
+.env.*
+
+# API Keys - NEVER commit
+**/API Keys/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+nul
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+
+# Test coverage
+coverage/
+
+# Internal planning docs (not for public repo)
+PLAN 2.0.md
+PLAN 5.0/
+PLAN 5.1/
+.planning/
+ANALYSIS CLAUDE AI/
+TSCG/
+
+# Utilities
+extract_docx.py

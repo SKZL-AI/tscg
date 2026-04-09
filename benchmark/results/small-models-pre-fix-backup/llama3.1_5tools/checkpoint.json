@@ -1,0 +1,3317 @@
+[
+  {
+    "result_id": "24a499d9-e429-42dd-9a49-b31642ba3771",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 953,
+      "output_tokens": 27,
+      "total_latency_ms": 11449,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:20.530Z"
+  },
+  {
+    "result_id": "bf6291af-5da4-4193-8bb7-21f3afda62cb",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "daily_active_users",
+          "date_range": "last_30d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 955,
+      "output_tokens": 42,
+      "total_latency_ms": 400,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:21.045Z"
+  },
+  {
+    "result_id": "3153f398-1f6f-4525-952a-09eaf8c894cf",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"My New Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"line_chart\\\", \\\"title\\\": \\\"Daily Users\\\", \\\"data_source\\\": \\\"users\\\"}, {\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Monthly Revenue\\\", \\\"data_source\\\": \\\"revenue\\\"}]\", \"shared\": true}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "My New Dashboard",
+          "widgets": "[{\"type\": \"line_chart\", \"title\": \"Daily Users\", \"data_source\": \"users\"}, {\"type\": \"bar_chart\", \"title\": \"Monthly Revenue\", \"data_source\": \"revenue\"}]",
+          "shared": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 952,
+      "output_tokens": 76,
+      "total_latency_ms": 641,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:21.787Z"
+  },
+  {
+    "result_id": "e85fd9ad-705f-4e7c-9119-ceb920393a5e",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 972,
+      "output_tokens": 20,
+      "total_latency_ms": 234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:22.132Z"
+  },
+  {
+    "result_id": "738353fc-683d-4ac2-b95c-934bbb0143fd",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 972,
+      "output_tokens": 20,
+      "total_latency_ms": 230,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:22.465Z"
+  },
+  {
+    "result_id": "b4c58257-5c71-48c9-8860-9fc6831fc84c",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 962,
+      "output_tokens": 18,
+      "total_latency_ms": 216,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:22.801Z"
+  },
+  {
+    "result_id": "54a71638-78a2-422c-b14a-3806f5f5b737",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "test_input",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 973,
+      "output_tokens": 41,
+      "total_latency_ms": 387,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:23.290Z"
+  },
+  {
+    "result_id": "5550d377-9f38-4a53-9ec6-cb0339649566",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": \"[\\\"a\\\", \\\"b\\\", \\\"c\\\"]\", \"shared\": false}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "sample_data",
+          "widgets": "[\"a\", \"b\", \"c\"]",
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 982,
+      "output_tokens": 38,
+      "total_latency_ms": 366,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:23.757Z"
+  },
+  {
+    "result_id": "38187aa4-19a0-4a53-86c6-a059be1ec744",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 959,
+      "output_tokens": 53,
+      "total_latency_ms": 476,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:24.341Z"
+  },
+  {
+    "result_id": "97083f51-6a48-4259-8764-7f011fc69e86",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 958,
+      "output_tokens": 60,
+      "total_latency_ms": 530,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:24.973Z"
+  },
+  {
+    "result_id": "6d6a8c9e-424d-4d18-95c4-1abb468fac37",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}} \n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Engagement Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Daily Engagement\\\"}]\", \"shared\": \"true\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 969,
+      "output_tokens": 106,
+      "total_latency_ms": 872,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:25.948Z"
+  },
+  {
+    "result_id": "df5c8cba-ffd1-41ac-84d9-c84f8aa14a9f",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true, \"offset\": 0}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"air_quality_report\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}} \n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"air_quality_check\", \"properties\": {\"location\": \"New York City\"}, \"user_id\": \"12345\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 970,
+      "output_tokens": 116,
+      "total_latency_ms": 936,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:26.984Z"
+  },
+  {
+    "result_id": "0c951e0c-c7fc-46e4-8f0b-9d9452b8e5a4",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 953,
+      "output_tokens": 19,
+      "total_latency_ms": 223,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:27.308Z"
+  },
+  {
+    "result_id": "9300fd1f-ec9e-4716-9fdc-97f1100ed755",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 955,
+      "output_tokens": 20,
+      "total_latency_ms": 237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:27.652Z"
+  },
+  {
+    "result_id": "80bfa69b-a40e-4af3-bd14-6bddf41f186c",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 970,
+      "output_tokens": 24,
+      "total_latency_ms": 263,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:28.019Z"
+  },
+  {
+    "result_id": "ce09e417-a7f8-4d73-90b2-e87293d6300e",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": \"[\\\"value1\\\",\\\"value2\\\",\\\"value3\\\"]\", \"shared\": \"false\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": "[\"value1\",\"value2\",\"value3\"]",
+          "shared": "false"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.3333333333333333,
+      "overall": 0.7333333333333333
+    },
+    "metrics": {
+      "input_tokens": 982,
+      "output_tokens": 40,
+      "total_latency_ms": 378,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:28.500Z"
+  },
+  {
+    "result_id": "bf9a8680-5ef2-48f7-b78a-c369276f5078",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "A question that has puzzled philosophers and thinkers for centuries! Unfortunately, I'm a helpful assistant with access to tools and information, but not necessarily with the answer to the ultimate question of existence.\n\nHowever, if you'd like to explore some interesting perspectives on this topic, I can suggest some possible approaches:\n\n1. **Philosophical inquiry**: We could delve into the works of philosophers such as Plato, Aristotle, or existentialists like Jean-Paul Sartre and Martin Heidegger, who have grappled with this question in their writings.\n2. **Scientific exploration**: We might examine the latest findings from fields like cosmology, neuroscience, or psychology to see if there are any clues about the nature of consciousness or the human experience.\n3. **Cultural and spiritual perspectives**: We could explore various religious traditions, mythologies, or folklores that offer insights into the meaning of life.\n\nWhich direction would you like to take this inquiry?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 949,
+      "output_tokens": 193,
+      "total_latency_ms": 1505,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:30.107Z"
+  },
+  {
+    "result_id": "6e0c6ec2-d4cb-40a8-863b-7cdbb5da0531",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "The chemical formula for water is H2O.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 950,
+      "output_tokens": 11,
+      "total_latency_ms": 171,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:30.380Z"
+  },
+  {
+    "result_id": "61fa1def-3efc-4c46-a9a6-77b784168561",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "Version control is essential in modern software development for several reasons:\n\n1. **Collaboration**: Version control systems allow multiple developers to work on the same project simultaneously, without conflicts or overwriting each other's changes.\n2. **Change tracking**: Version control keeps a record of all changes made to the codebase, including who made the change and when. This helps identify who is responsible for any issues that arise.\n3. **Reversion**: If something goes wrong during development, version control allows you to revert back to a previous version of the code, saving time and effort.\n4. **Code organization**: Version control systems help keep the code organized by separating different versions or branches of the project.\n5. **Release management**: Version control enables easy release management by allowing you to create separate branches for each release, making it easier to manage multiple releases simultaneously.\n6. **Backup**: Version control provides a backup of your codebase, ensuring that even if something goes wrong, you can recover from a previous version.\n7. **Auditing and compliance**: Version control helps with auditing and compliance by providing a clear record of all changes made to the codebase.\n\nSome popular version control systems include Git, SVN (Subversion), Mercurial, and Perforce.\n\nWould you like me to provide more information on any specific aspect of version control?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 952,
+      "output_tokens": 270,
+      "total_latency_ms": 2069,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:32.555Z"
+  },
+  {
+    "result_id": "dd23d0ae-db3c-46f7-ac6f-ed2211c55259",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"knowledge_base_get\", \"arguments\": {\"query\": \"code review best practices\"}}",
+      "parsed_tool_call": {
+        "name": "knowledge_base_get",
+        "arguments": {
+          "query": "code review best practices"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 951,
+      "output_tokens": 21,
+      "total_latency_ms": 237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:32.907Z"
+  },
+  {
+    "result_id": "68035080-79a5-44e5-a565-6ce7c47c82aa",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 953,
+      "output_tokens": 27,
+      "total_latency_ms": 290,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:33.306Z"
+  },
+  {
+    "result_id": "5c6b3f2b-3f53-4efb-8bd2-4044dbcec6aa",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "daily_active_users",
+          "date_range": "last_30d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 955,
+      "output_tokens": 42,
+      "total_latency_ms": 394,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:33.804Z"
+  },
+  {
+    "result_id": "6e3fa153-bd4a-4e9d-a84c-44d8b11d0511",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"My New Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"line_chart\\\", \\\"title\\\": \\\"Daily Users\\\", \\\"data_source\\\": \\\"users\\\"}, {\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Monthly Revenue\\\", \\\"data_source\\\": \\\"revenue\\\"}]\", \"shared\": true}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "My New Dashboard",
+          "widgets": "[{\"type\": \"line_chart\", \"title\": \"Daily Users\", \"data_source\": \"users\"}, {\"type\": \"bar_chart\", \"title\": \"Monthly Revenue\", \"data_source\": \"revenue\"}]",
+          "shared": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 952,
+      "output_tokens": 76,
+      "total_latency_ms": 653,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:34.558Z"
+  },
+  {
+    "result_id": "d576baef-0c4d-40eb-be16-e092aa083f83",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 972,
+      "output_tokens": 20,
+      "total_latency_ms": 234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:34.893Z"
+  },
+  {
+    "result_id": "1b0b4c42-2d8e-47d7-9f1c-86afd9b2002f",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 972,
+      "output_tokens": 20,
+      "total_latency_ms": 236,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:35.239Z"
+  },
+  {
+    "result_id": "ab6cfb6e-083d-46ff-9a4b-6e44bdb33a8c",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 962,
+      "output_tokens": 18,
+      "total_latency_ms": 213,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:35.556Z"
+  },
+  {
+    "result_id": "a7e28f5e-6aa9-4f1d-987d-f008b1b58248",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "test_input",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 973,
+      "output_tokens": 41,
+      "total_latency_ms": 387,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:36.055Z"
+  },
+  {
+    "result_id": "4e6649bb-8233-4e51-b5ee-527f93cafc7a",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": \"[\\\"a\\\", \\\"b\\\", \\\"c\\\"]\", \"shared\": false}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "sample_data",
+          "widgets": "[\"a\", \"b\", \"c\"]",
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 982,
+      "output_tokens": 38,
+      "total_latency_ms": 370,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:36.540Z"
+  },
+  {
+    "result_id": "2c06a2eb-2481-406e-89fe-d28de04d155a",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 959,
+      "output_tokens": 53,
+      "total_latency_ms": 480,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:37.126Z"
+  },
+  {
+    "result_id": "8133f5e4-b3b7-4255-9c8e-39e1eaee29e7",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 958,
+      "output_tokens": 60,
+      "total_latency_ms": 530,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:37.765Z"
+  },
+  {
+    "result_id": "9f6eb8e1-a81a-4933-b2a0-8c9a5059076d",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}} \n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Engagement Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Daily Engagement\\\"}]\", \"shared\": \"true\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 969,
+      "output_tokens": 106,
+      "total_latency_ms": 858,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:38.737Z"
+  },
+  {
+    "result_id": "f017251c-17a0-4ef0-a38d-50508788e8b4",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true, \"offset\": 0}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"air_quality_report\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}} \n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"air_quality_check\", \"properties\": {\"location\": \"New York City\"}, \"user_id\": \"12345\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 970,
+      "output_tokens": 116,
+      "total_latency_ms": 933,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:39.778Z"
+  },
+  {
+    "result_id": "7245ea5f-012f-4347-9d88-acfffb462e0a",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 953,
+      "output_tokens": 19,
+      "total_latency_ms": 230,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:40.118Z"
+  },
+  {
+    "result_id": "2acf5c11-30ec-477e-be08-1b8f1d634a0d",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 955,
+      "output_tokens": 20,
+      "total_latency_ms": 232,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:40.463Z"
+  },
+  {
+    "result_id": "281e6127-0ffc-48b7-9471-69dfd7acb527",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 970,
+      "output_tokens": 24,
+      "total_latency_ms": 269,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:40.832Z"
+  },
+  {
+    "result_id": "1bb960be-59fd-4ad6-a82d-f7256f035e7d",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": \"[\\\"value1\\\",\\\"value2\\\",\\\"value3\\\"]\", \"shared\": \"false\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": "[\"value1\",\"value2\",\"value3\"]",
+          "shared": "false"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.3333333333333333,
+      "overall": 0.7333333333333333
+    },
+    "metrics": {
+      "input_tokens": 982,
+      "output_tokens": 40,
+      "total_latency_ms": 375,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:41.311Z"
+  },
+  {
+    "result_id": "05fa3cfe-1a2b-4cb1-9b65-30ad4a6292b7",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "A question that has puzzled philosophers and thinkers for centuries! Unfortunately, I'm a helpful assistant with access to tools and information, but not necessarily with the answer to the ultimate question of existence.\n\nHowever, if you'd like to explore some interesting perspectives on this topic, I can suggest some possible approaches:\n\n1. **Philosophical inquiry**: We could delve into the works of philosophers such as Plato, Aristotle, or existentialists like Jean-Paul Sartre and Martin Heidegger, who have grappled with this question in their writings.\n2. **Scientific exploration**: We might examine the latest findings from fields like cosmology, neuroscience, or psychology to see if there are any clues about the nature of consciousness or the human experience.\n3. **Cultural and spiritual perspectives**: We could explore various religious traditions, mythologies, or folklores that offer insights into the meaning of life.\n\nWhich direction would you like to take this inquiry?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 949,
+      "output_tokens": 193,
+      "total_latency_ms": 1498,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:42.914Z"
+  },
+  {
+    "result_id": "3ae7b047-ac20-47d2-99fc-f14f92e2a906",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "The chemical formula for water is H2O.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 950,
+      "output_tokens": 11,
+      "total_latency_ms": 169,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:43.186Z"
+  },
+  {
+    "result_id": "7c0b431a-13ae-4eef-adb7-0c719d859d7e",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "Version control is essential in modern software development for several reasons:\n\n1. **Collaboration**: Version control systems allow multiple developers to work on the same project simultaneously, without conflicts or overwriting each other's changes.\n2. **Change tracking**: Version control keeps a record of all changes made to the codebase, including who made the change and when. This helps identify who is responsible for any issues that arise.\n3. **Reversion**: If something goes wrong during development, version control allows you to revert back to a previous version of the code, saving time and effort.\n4. **Code organization**: Version control systems help keep the code organized by separating different versions or branches of the project.\n5. **Release management**: Version control enables easy release management by allowing you to create separate branches for each release, making it easier to manage multiple releases simultaneously.\n6. **Backup**: Version control provides a backup of your codebase, ensuring that even if something goes wrong, you can recover from a previous version.\n7. **Auditing and compliance**: Version control helps with auditing and compliance by providing a clear record of all changes made to the codebase.\n\nSome popular version control systems include Git, SVN (Subversion), Mercurial, and Perforce.\n\nWould you like me to provide more information on any specific aspect of version control?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 952,
+      "output_tokens": 270,
+      "total_latency_ms": 2087,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:45.394Z"
+  },
+  {
+    "result_id": "727007e3-cf11-409b-b3ff-c6c4ff4ef56f",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"knowledge_base_get\", \"arguments\": {\"query\": \"code review best practices\"}}",
+      "parsed_tool_call": {
+        "name": "knowledge_base_get",
+        "arguments": {
+          "query": "code review best practices"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 951,
+      "output_tokens": 21,
+      "total_latency_ms": 237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:45.733Z"
+  },
+  {
+    "result_id": "f2d6b0e2-c0a4-44d7-8846-eea7bca50c85",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": null}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": null
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 953,
+      "output_tokens": 27,
+      "total_latency_ms": 292,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:46.129Z"
+  },
+  {
+    "result_id": "993cd3b3-2f71-434c-b040-b3dc980a1208",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "daily_active_users",
+          "date_range": "last_30d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 955,
+      "output_tokens": 42,
+      "total_latency_ms": 393,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:46.624Z"
+  },
+  {
+    "result_id": "e7d5e275-a847-4e20-88f4-a33b9508d059",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"My New Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"line_chart\\\", \\\"title\\\": \\\"Daily Users\\\", \\\"data_source\\\": \\\"users\\\"}, {\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Monthly Revenue\\\", \\\"data_source\\\": \\\"revenue\\\"}]\", \"shared\": true}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "My New Dashboard",
+          "widgets": "[{\"type\": \"line_chart\", \"title\": \"Daily Users\", \"data_source\": \"users\"}, {\"type\": \"bar_chart\", \"title\": \"Monthly Revenue\", \"data_source\": \"revenue\"}]",
+          "shared": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 952,
+      "output_tokens": 76,
+      "total_latency_ms": 648,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:47.376Z"
+  },
+  {
+    "result_id": "8ad3d6ce-c98a-413d-a2ad-d938970e0020",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 972,
+      "output_tokens": 20,
+      "total_latency_ms": 237,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:47.717Z"
+  },
+  {
+    "result_id": "1a579b66-64aa-41d2-89f2-842bec09c36f",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 972,
+      "output_tokens": 20,
+      "total_latency_ms": 234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:48.054Z"
+  },
+  {
+    "result_id": "0fd2ddf4-d933-4e1e-bc08-6a5dc6263083",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 962,
+      "output_tokens": 18,
+      "total_latency_ms": 225,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:48.385Z"
+  },
+  {
+    "result_id": "a44cc02f-4397-4386-9465-90ef5054a53b",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "test_input",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 973,
+      "output_tokens": 41,
+      "total_latency_ms": 385,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:48.881Z"
+  },
+  {
+    "result_id": "e9c533f1-f51c-414d-9234-5e2864de84dd",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": \"[\\\"a\\\", \\\"b\\\", \\\"c\\\"]\", \"shared\": false}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "sample_data",
+          "widgets": "[\"a\", \"b\", \"c\"]",
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 982,
+      "output_tokens": 38,
+      "total_latency_ms": 366,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:49.351Z"
+  },
+  {
+    "result_id": "679723cb-3b02-4675-a7cc-57063fcfa91b",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true, \"offset\": 0}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 959,
+      "output_tokens": 53,
+      "total_latency_ms": 474,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:49.936Z"
+  },
+  {
+    "result_id": "1bf910fd-44d8-49b5-988c-29a97888232e",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 958,
+      "output_tokens": 60,
+      "total_latency_ms": 531,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:50.582Z"
+  },
+  {
+    "result_id": "6ef9633e-74f7-45c6-97dc-a2af1878213f",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}} \n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Engagement Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Daily Engagement\\\"}]\", \"shared\": \"true\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 969,
+      "output_tokens": 106,
+      "total_latency_ms": 866,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:51.562Z"
+  },
+  {
+    "result_id": "ce262d67-b9a4-4a22-a492-784d2980e328",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true, \"offset\": 0}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"air_quality_report\", \"date_range\": \"last_7d\", \"filters\": {}, \"format\": \"json\"}} \n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"air_quality_check\", \"properties\": {\"location\": \"New York City\"}, \"user_id\": \"12345\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 970,
+      "output_tokens": 116,
+      "total_latency_ms": 937,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:52.607Z"
+  },
+  {
+    "result_id": "35850b53-0e7f-419f-b137-be1a08dbb981",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 953,
+      "output_tokens": 19,
+      "total_latency_ms": 230,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:52.942Z"
+  },
+  {
+    "result_id": "ef8a8c24-e65f-425a-ac2a-80291026ec81",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 955,
+      "output_tokens": 20,
+      "total_latency_ms": 234,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:53.283Z"
+  },
+  {
+    "result_id": "8b209b39-ae09-40c9-9e85-2b7e85c6b84b",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 970,
+      "output_tokens": 24,
+      "total_latency_ms": 258,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:53.652Z"
+  },
+  {
+    "result_id": "ea4f7b4d-b0c9-4719-a4b6-35c5758bddb9",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": \"[\\\"value1\\\",\\\"value2\\\",\\\"value3\\\"]\", \"shared\": \"false\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": "[\"value1\",\"value2\",\"value3\"]",
+          "shared": "false"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.3333333333333333,
+      "overall": 0.7333333333333333
+    },
+    "metrics": {
+      "input_tokens": 982,
+      "output_tokens": 40,
+      "total_latency_ms": 386,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:54.138Z"
+  },
+  {
+    "result_id": "b92d9327-d838-41cb-b51b-661d63ebed76",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "A question that has puzzled philosophers and thinkers for centuries! Unfortunately, I'm a helpful assistant with access to tools and information, but not necessarily with the answer to the ultimate question of existence.\n\nHowever, if you'd like to explore some interesting perspectives on this topic, I can suggest some possible approaches:\n\n1. **Philosophical inquiry**: We could delve into the works of philosophers such as Plato, Aristotle, or existentialists like Jean-Paul Sartre and Martin Heidegger, who have grappled with this question in their writings.\n2. **Scientific exploration**: We might examine the latest findings from fields like cosmology, neuroscience, or psychology to see if there are any clues about the nature of consciousness or the human experience.\n3. **Cultural and spiritual perspectives**: We could explore various religious traditions, mythologies, or folklores that offer insights into the meaning of life.\n\nWhich direction would you like to take this inquiry?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 949,
+      "output_tokens": 193,
+      "total_latency_ms": 1512,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:55.755Z"
+  },
+  {
+    "result_id": "72de896d-8520-49d0-9626-8547107c0185",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "The chemical formula for water is H2O.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 950,
+      "output_tokens": 11,
+      "total_latency_ms": 172,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:56.038Z"
+  },
+  {
+    "result_id": "661223d7-cfd9-4b77-8a95-b43c86d0d0e2",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "Version control is essential in modern software development for several reasons:\n\n1. **Collaboration**: Version control systems allow multiple developers to work on the same project simultaneously, without conflicts or overwriting each other's changes.\n2. **Change tracking**: Version control keeps a record of all changes made to the codebase, including who made the change and when. This helps identify who is responsible for any issues that arise.\n3. **Reversion**: If something goes wrong during development, version control allows you to revert back to a previous version of the code, saving time and effort.\n4. **Code organization**: Version control systems help keep the code organized by separating different versions or branches of the project.\n5. **Release management**: Version control enables easy release management by allowing you to create separate branches for each release, making it easier to manage multiple releases simultaneously.\n6. **Backup**: Version control provides a backup of your codebase, ensuring that even if something goes wrong, you can recover from a previous version.\n7. **Auditing and compliance**: Version control helps with auditing and compliance by providing a clear record of all changes made to the codebase.\n\nSome popular version control systems include Git, SVN (Subversion), Mercurial, and Perforce.\n\nWould you like me to provide more information on any specific aspect of version control?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 952,
+      "output_tokens": 270,
+      "total_latency_ms": 2081,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:58.223Z"
+  },
+  {
+    "result_id": "5af115e6-5fbf-4945-b54d-ce39fafe621a",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "natural",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"knowledge_base_get\", \"arguments\": {\"query\": \"code review best practices\"}}",
+      "parsed_tool_call": {
+        "name": "knowledge_base_get",
+        "arguments": {
+          "query": "code review best practices"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "no_tool_correct": false
+    },
+    "metrics": {
+      "input_tokens": 951,
+      "output_tokens": 21,
+      "total_latency_ms": 243,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:58.567Z"
+  },
+  {
+    "result_id": "e1d18984-1b41-4cee-a718-dea5cadcc3bd",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 388,
+      "output_tokens": 27,
+      "total_latency_ms": 322,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:58.992Z"
+  },
+  {
+    "result_id": "e62a656e-bbb2-44a4-b8d4-0547f59524e1",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "daily_engagement",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 390,
+      "output_tokens": 42,
+      "total_latency_ms": 389,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:26:59.487Z"
+  },
+  {
+    "result_id": "ef09b172-920f-41e3-995d-833b8c411dcd",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Sales Performance Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"line_chart\\\", \\\"title\\\": \\\"Monthly Sales\\\"}, {\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Quarterly Revenue\\\"}]\", \"shared\": true}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Sales Performance Dashboard",
+          "widgets": "[{\"type\": \"line_chart\", \"title\": \"Monthly Sales\"}, {\"type\": \"bar_chart\", \"title\": \"Quarterly Revenue\"}]",
+          "shared": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 387,
+      "output_tokens": 62,
+      "total_latency_ms": 536,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:00.124Z"
+  },
+  {
+    "result_id": "12ff26a5-1ed5-4cbf-892d-dda1d2a8e94f",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 407,
+      "output_tokens": 20,
+      "total_latency_ms": 233,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:00.461Z"
+  },
+  {
+    "result_id": "088f7d2e-324c-4135-a4bb-c21b59ecf582",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 407,
+      "output_tokens": 20,
+      "total_latency_ms": 232,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:00.793Z"
+  },
+  {
+    "result_id": "6d7ac795-dfbb-47c5-a8de-216b36a79c01",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 397,
+      "output_tokens": 18,
+      "total_latency_ms": 218,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:01.111Z"
+  },
+  {
+    "result_id": "b2eca03e-8cdc-4eef-a40e-d95c5a349735",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "test_input"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 408,
+      "output_tokens": 20,
+      "total_latency_ms": 233,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:01.451Z"
+  },
+  {
+    "result_id": "27d95423-2f2e-40df-a651-984a2f0e0008",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": \"[\\\"a\\\", \\\"b\\\", \\\"c\\\"]\", \"shared\": false}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "sample_data",
+          "widgets": "[\"a\", \"b\", \"c\"]",
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 417,
+      "output_tokens": 38,
+      "total_latency_ms": 359,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:01.915Z"
+  },
+  {
+    "result_id": "2481ea37-a293-48c3-9e70-05e64b7caf06",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 394,
+      "output_tokens": 47,
+      "total_latency_ms": 427,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:02.449Z"
+  },
+  {
+    "result_id": "5b50cc3b-0fc4-4834-ba90-11961f2f2b4c",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 393,
+      "output_tokens": 60,
+      "total_latency_ms": 518,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:03.069Z"
+  },
+  {
+    "result_id": "011eee84-2efc-466d-996e-5f93cc6a8134",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\"}} \n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"User Engagement Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"bar_chart\\\", \\\"metric\\\": \\\"engaged_users\\\"}, {\\\"type\\\": \\\"line_chart\\\", \\\"metric\\\": \\\"daily_engagement\\\"}]\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 404,
+      "output_tokens": 108,
+      "total_latency_ms": 870,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:04.052Z"
+  },
+  {
+    "result_id": "11646bfe-6848-4621-a6bd-c4cbc0f9e536",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"air_quality_index\", \"date_range\": \"last_30d\"}} \n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_viewed_air_quality_report\", \"properties\": {\"report_type\": \"air quality index\"}, \"user_id\": \"12345\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 405,
+      "output_tokens": 104,
+      "total_latency_ms": 837,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:04.989Z"
+  },
+  {
+    "result_id": "b0c91e58-dfb9-404a-a1b9-cead2fa8aef9",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 388,
+      "output_tokens": 19,
+      "total_latency_ms": 219,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:05.313Z"
+  },
+  {
+    "result_id": "dbf061f7-01e7-4bfa-9456-e4ee89a7c6ae",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 390,
+      "output_tokens": 20,
+      "total_latency_ms": 231,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:05.647Z"
+  },
+  {
+    "result_id": "65d35847-6ce3-4c79-9a75-f73c2e808d28",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 405,
+      "output_tokens": 24,
+      "total_latency_ms": 261,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:06.011Z"
+  },
+  {
+    "result_id": "35186303-7dc4-4bb9-8953-df43b4f2451d",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": \"[\\\"value1\\\",\\\"value2\\\",\\\"value3\\\"]\", \"shared\": \"false\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": "[\"value1\",\"value2\",\"value3\"]",
+          "shared": "false"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.3333333333333333,
+      "overall": 0.7333333333333333
+    },
+    "metrics": {
+      "input_tokens": 417,
+      "output_tokens": 40,
+      "total_latency_ms": 377,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:06.500Z"
+  },
+  {
+    "result_id": "2e136955-4934-4ae7-bb6f-fea4861d6f4a",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "A question that has puzzled philosophers and thinkers for centuries! Unfortunately, I don't have a definitive answer to this profound query. The meaning of life can vary greatly from person to person, culture to culture, and even moment to moment.\n\nSome people find meaning in their relationships with others, whether it's through family, friends, or community. Others may find purpose in their work, creative pursuits, or personal achievements.\n\nPhilosophers have proposed various theories on the meaning of life, such as:\n\n1. Hedonism: The pursuit of happiness and pleasure.\n2. Utilitarianism: Maximizing overall well-being and happiness for the greatest number of people.\n3. Existentialism: Embracing individual freedom and choice to create one's own meaning.\n\nUltimately, the meaning of life is a deeply personal and subjective question that each person must answer for themselves. What gives your life meaning?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 384,
+      "output_tokens": 180,
+      "total_latency_ms": 1394,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:07.995Z"
+  },
+  {
+    "result_id": "4f8eb678-3b8d-43ae-b001-1e91cf118b89",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "The chemical formula for water is H2O, which consists of two hydrogen atoms and one oxygen atom.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 385,
+      "output_tokens": 22,
+      "total_latency_ms": 245,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:08.351Z"
+  },
+  {
+    "result_id": "02d4c575-af8c-488a-b471-317ad09c3ef9",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "Version control is essential in modern software development because it allows teams to track changes made to their codebase over time, collaborate on projects, and maintain a record of all modifications. This helps ensure that the code remains stable, reliable, and easy to manage.\n\nSome key benefits of version control include:\n\n1. **Collaboration**: Multiple developers can work on the same project simultaneously without conflicts or lost changes.\n2. **Change tracking**: Version control systems like Git allow you to see who made what changes, when, and why, making it easier to identify and resolve issues.\n3. **Backup and recovery**: Version control provides a safety net in case of data loss due to hardware failure, human error, or other disasters.\n4. **Code reuse**: By tracking changes over time, teams can identify and reuse code snippets, reducing development time and effort.\n5. **Testing and debugging**: Version control enables developers to easily revert to previous versions if issues arise during testing or deployment.\n\nOverall, version control is a crucial tool for modern software development, enabling teams to work efficiently, reliably, and collaboratively on complex projects.\n\nWould you like me to explain any specific aspect of version control in more detail?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 387,
+      "output_tokens": 241,
+      "total_latency_ms": 1834,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:10.288Z"
+  },
+  {
+    "result_id": "9c951f49-b1bd-447c-9875-805f803278e3",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "**Code Review Best Practices**\n\nCode reviews are an essential part of ensuring high-quality software development. Here are some best practices to follow:\n\n### 1. **Establish a Code Review Process**\n\n*   Set clear expectations and guidelines for code reviews.\n*   Define the frequency, scope, and duration of code reviews.\n\n### 2. **Prepare for Code Reviews**\n\n*   Write clean, readable, and well-documented code.\n*   Provide context and explanations for complex decisions or design choices.\n*   Be prepared to discuss and defend your code.\n\n### 3. **Focus on Quality, Not Just Bugs**\n\n*   Review code for maintainability, scalability, performance, and security.\n*   Look for opportunities to improve code structure, organization, and naming conventions.\n*   Encourage feedback on coding standards and best practices.\n\n### 4. **Use a Consistent Review Format**\n\n*   Use a standardized template or checklist for code reviews.\n*   Include sections for comments, suggestions, and decisions made during the review.\n\n### 5. **Respect Time and Effort**\n\n*   Be mindful of reviewers' time and effort.\n*   Keep reviews concise and focused on key issues.\n*   Avoid unnecessary back-and-forth discussions.\n\n### 6. **Learn from Code Reviews**\n\n*   Use code reviews as an opportunity to learn and improve.\n*   Apply feedback and suggestions to future code development.\n*   Share knowledge and best practices with the team.\n\nBy following these best practices, you can create a productive and effective code review process that benefits both individual developers and the entire team.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 386,
+      "output_tokens": 322,
+      "total_latency_ms": 2420,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:12.810Z"
+  },
+  {
+    "result_id": "2d66aa3d-a84c-45be-bc4a-63f38284a4de",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 388,
+      "output_tokens": 27,
+      "total_latency_ms": 281,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:13.193Z"
+  },
+  {
+    "result_id": "e59104fb-1999-49bc-90b1-f1c808cf9559",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "daily_engagement",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 390,
+      "output_tokens": 42,
+      "total_latency_ms": 386,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:13.690Z"
+  },
+  {
+    "result_id": "8d639dd8-4de7-4579-9f4e-215b2c95b71b",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Sales Performance Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"line_chart\\\", \\\"title\\\": \\\"Monthly Sales\\\"}, {\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Quarterly Revenue\\\"}]\", \"shared\": true}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Sales Performance Dashboard",
+          "widgets": "[{\"type\": \"line_chart\", \"title\": \"Monthly Sales\"}, {\"type\": \"bar_chart\", \"title\": \"Quarterly Revenue\"}]",
+          "shared": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 387,
+      "output_tokens": 62,
+      "total_latency_ms": 538,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:14.330Z"
+  },
+  {
+    "result_id": "af7e8e3c-5e5f-4941-a588-bdc99a2f5731",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 407,
+      "output_tokens": 20,
+      "total_latency_ms": 229,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:14.665Z"
+  },
+  {
+    "result_id": "a0eaa711-d47e-4a2b-903e-7d520975e5f1",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 407,
+      "output_tokens": 20,
+      "total_latency_ms": 231,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:15.001Z"
+  },
+  {
+    "result_id": "3158c4bb-5574-4418-a086-b09eb8595b78",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 397,
+      "output_tokens": 18,
+      "total_latency_ms": 213,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:15.318Z"
+  },
+  {
+    "result_id": "bf44b218-bc88-45bd-aff0-170755928f6b",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "test_input"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 408,
+      "output_tokens": 20,
+      "total_latency_ms": 235,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:15.669Z"
+  },
+  {
+    "result_id": "fb75b93c-8620-490a-b11f-ba08fb991c07",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": \"[\\\"a\\\", \\\"b\\\", \\\"c\\\"]\", \"shared\": false}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "sample_data",
+          "widgets": "[\"a\", \"b\", \"c\"]",
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 417,
+      "output_tokens": 38,
+      "total_latency_ms": 367,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:16.148Z"
+  },
+  {
+    "result_id": "efc1b6bc-c4bb-4d06-ba7a-6c5c08137430",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 394,
+      "output_tokens": 47,
+      "total_latency_ms": 423,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:16.681Z"
+  },
+  {
+    "result_id": "dbc3b141-8e74-4b20-ae78-97f19f7e41cb",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 393,
+      "output_tokens": 60,
+      "total_latency_ms": 516,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:17.302Z"
+  },
+  {
+    "result_id": "6266267e-d36d-47f7-a7d8-5cb68b9d0e9f",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\"}} \n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"User Engagement Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"bar_chart\\\", \\\"metric\\\": \\\"engaged_users\\\"}, {\\\"type\\\": \\\"line_chart\\\", \\\"metric\\\": \\\"daily_engagement\\\"}]\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 404,
+      "output_tokens": 108,
+      "total_latency_ms": 867,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:18.281Z"
+  },
+  {
+    "result_id": "6969cb20-39d6-4217-b040-d476b5afc59c",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"air_quality_index\", \"date_range\": \"last_30d\"}} \n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_viewed_air_quality_report\", \"properties\": {\"report_type\": \"air quality index\"}, \"user_id\": \"12345\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 405,
+      "output_tokens": 104,
+      "total_latency_ms": 838,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:19.222Z"
+  },
+  {
+    "result_id": "a2b65374-9a0c-4792-9d03-ab90282e804b",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 388,
+      "output_tokens": 19,
+      "total_latency_ms": 217,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:19.543Z"
+  },
+  {
+    "result_id": "4b3c1a6b-a973-4f77-9e66-99f447d1aaf3",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 390,
+      "output_tokens": 20,
+      "total_latency_ms": 229,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:19.881Z"
+  },
+  {
+    "result_id": "1e0d7d3d-589c-4de3-8102-ae9d7adb9c35",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 405,
+      "output_tokens": 24,
+      "total_latency_ms": 256,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:20.239Z"
+  },
+  {
+    "result_id": "dbd29062-b3e5-4f28-835a-0d9d2b585d4c",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": \"[\\\"value1\\\",\\\"value2\\\",\\\"value3\\\"]\", \"shared\": \"false\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": "[\"value1\",\"value2\",\"value3\"]",
+          "shared": "false"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.3333333333333333,
+      "overall": 0.7333333333333333
+    },
+    "metrics": {
+      "input_tokens": 417,
+      "output_tokens": 40,
+      "total_latency_ms": 377,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:20.732Z"
+  },
+  {
+    "result_id": "71ce1b72-9a8c-4c8b-9505-d897885d542c",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "A question that has puzzled philosophers and thinkers for centuries! Unfortunately, I don't have a definitive answer to this profound query. The meaning of life can vary greatly from person to person, culture to culture, and even moment to moment.\n\nSome people find meaning in their relationships with others, whether it's through family, friends, or community. Others may find purpose in their work, creative pursuits, or personal achievements.\n\nPhilosophers have proposed various theories on the meaning of life, such as:\n\n1. Hedonism: The pursuit of happiness and pleasure.\n2. Utilitarianism: Maximizing overall well-being and happiness for the greatest number of people.\n3. Existentialism: Embracing individual freedom and choice to create one's own meaning.\n\nUltimately, the meaning of life is a deeply personal and subjective question that each person must answer for themselves. What gives your life meaning?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 384,
+      "output_tokens": 180,
+      "total_latency_ms": 1394,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:22.232Z"
+  },
+  {
+    "result_id": "1da315fd-0822-4e0d-b425-764c6aa947b8",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "The chemical formula for water is H2O, which consists of two hydrogen atoms and one oxygen atom.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 385,
+      "output_tokens": 22,
+      "total_latency_ms": 245,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:22.579Z"
+  },
+  {
+    "result_id": "11d74d81-1f5c-4263-b19c-7d6acbac6e3c",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "Version control is essential in modern software development because it allows teams to track changes made to their codebase over time, collaborate on projects, and maintain a record of all modifications. This helps ensure that the code remains stable, reliable, and easy to manage.\n\nSome key benefits of version control include:\n\n1. **Collaboration**: Multiple developers can work on the same project simultaneously without conflicts or lost changes.\n2. **Change tracking**: Version control systems like Git allow you to see who made what changes, when, and why, making it easier to identify and resolve issues.\n3. **Backup and recovery**: Version control provides a safety net in case of data loss due to hardware failure, human error, or other disasters.\n4. **Code reuse**: By tracking changes over time, teams can identify and reuse code snippets, reducing development time and effort.\n5. **Testing and debugging**: Version control enables developers to easily revert to previous versions if issues arise during testing or deployment.\n\nOverall, version control is a crucial tool for modern software development, enabling teams to work efficiently, reliably, and collaboratively on complex projects.\n\nWould you like me to explain any specific aspect of version control in more detail?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 387,
+      "output_tokens": 241,
+      "total_latency_ms": 1835,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:24.533Z"
+  },
+  {
+    "result_id": "ecd7d203-b948-461e-bd45-b30fd05993da",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 2,
+    "response": {
+      "raw_output": "**Code Review Best Practices**\n\nCode reviews are an essential part of ensuring high-quality software development. Here are some best practices to follow:\n\n### 1. **Establish a Code Review Process**\n\n*   Set clear expectations and guidelines for code reviews.\n*   Define the frequency, scope, and duration of code reviews.\n\n### 2. **Prepare for Code Reviews**\n\n*   Write clean, readable, and well-documented code.\n*   Provide context and explanations for complex decisions or design choices.\n*   Be prepared to discuss and defend your code.\n\n### 3. **Focus on Quality, Not Just Bugs**\n\n*   Review code for maintainability, scalability, performance, and security.\n*   Look for opportunities to improve code structure, organization, and naming conventions.\n*   Encourage feedback on coding standards and best practices.\n\n### 4. **Use a Consistent Review Format**\n\n*   Use a standardized template or checklist for code reviews.\n*   Include sections for comments, suggestions, and decisions made during the review.\n\n### 5. **Respect Time and Effort**\n\n*   Be mindful of reviewers' time and effort.\n*   Keep reviews concise and focused on key issues.\n*   Avoid unnecessary back-and-forth discussions.\n\n### 6. **Learn from Code Reviews**\n\n*   Use code reviews as an opportunity to learn and improve.\n*   Apply feedback and suggestions to future code development.\n*   Share knowledge and best practices with the team.\n\nBy following these best practices, you can create a productive and effective code review process that benefits both individual developers and the entire team.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 386,
+      "output_tokens": 322,
+      "total_latency_ms": 2423,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:27.063Z"
+  },
+  {
+    "result_id": "c4c774c2-33ac-4830-afc2-b1bea2591353",
+    "task_id": "tab-D-ts-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": null, \"status\": null, \"search\": \"\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": null,
+          "status": null,
+          "search": ""
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 388,
+      "output_tokens": 27,
+      "total_latency_ms": 277,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:27.451Z"
+  },
+  {
+    "result_id": "03aff125-2007-4c27-b017-d831bcf06d5a",
+    "task_id": "tab-D-ts-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "daily_engagement",
+          "date_range": "last_7d",
+          "filters": "{}",
+          "format": "json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 390,
+      "output_tokens": 42,
+      "total_latency_ms": 386,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:27.948Z"
+  },
+  {
+    "result_id": "f2d98f37-0282-4649-b7fb-146907e99b45",
+    "task_id": "tab-D-ts-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"Sales Performance Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"line_chart\\\", \\\"title\\\": \\\"Monthly Sales\\\"}, {\\\"type\\\": \\\"bar_chart\\\", \\\"title\\\": \\\"Quarterly Revenue\\\"}]\", \"shared\": true}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "Sales Performance Dashboard",
+          "widgets": "[{\"type\": \"line_chart\", \"title\": \"Monthly Sales\"}, {\"type\": \"bar_chart\", \"title\": \"Quarterly Revenue\"}]",
+          "shared": true
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 387,
+      "output_tokens": 62,
+      "total_latency_ms": 537,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:28.589Z"
+  },
+  {
+    "result_id": "4bbc9e0e-a98c-4e1a-a992-7c02471f717e",
+    "task_id": "tab-D-ts-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "wx_get_air_quality",
+        "arguments": {
+          "location": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 407,
+      "output_tokens": 20,
+      "total_latency_ms": 230,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:28.925Z"
+  },
+  {
+    "result_id": "e6ac6544-09d6-4771-a3b0-0ca3100755d8",
+    "task_id": "tab-D-ts-005",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"sample_data\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "sample_data"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 407,
+      "output_tokens": 20,
+      "total_latency_ms": 233,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:29.264Z"
+  },
+  {
+    "result_id": "0174f0c2-380f-4288-baa6-94de4adbfc91",
+    "task_id": "tab-D-ts-006",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"guest\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "guest"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 397,
+      "output_tokens": 18,
+      "total_latency_ms": 215,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:29.588Z"
+  },
+  {
+    "result_id": "b782f91c-475f-4fd0-baaf-542e72b0105a",
+    "task_id": "tab-D-ts-007",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"test_input\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "test_input"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 408,
+      "output_tokens": 20,
+      "total_latency_ms": 228,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:29.928Z"
+  },
+  {
+    "result_id": "ea118377-fde4-41e2-b438-3afc88483e74",
+    "task_id": "tab-D-ts-008",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": \"[\\\"a\\\", \\\"b\\\", \\\"c\\\"]\", \"shared\": false}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "sample_data",
+          "widgets": "[\"a\", \"b\", \"c\"]",
+          "shared": false
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0,
+      "overall": 0.6
+    },
+    "metrics": {
+      "input_tokens": 417,
+      "output_tokens": 38,
+      "total_latency_ms": 365,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:30.405Z"
+  },
+  {
+    "result_id": "a882cfbf-82b7-4ade-98f2-0696b8c63810",
+    "task_id": "tab-D-mt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 394,
+      "output_tokens": 47,
+      "total_latency_ms": 422,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:30.930Z"
+  },
+  {
+    "result_id": "48a9ba32-af64-45a7-8250-7797568b5013",
+    "task_id": "tab-D-mt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_active_users\", \"date_range\": \"last_30d\", \"filters\": \"{}\", \"format\": \"json\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 393,
+      "output_tokens": 60,
+      "total_latency_ms": 520,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:31.557Z"
+  },
+  {
+    "result_id": "69a6f113-7d89-4d42-b3f0-eb6139ff05cc",
+    "task_id": "tab-D-mt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"admin\"}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"daily_engagement\", \"date_range\": \"last_7d\"}} \n{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"User Engagement Dashboard\", \"widgets\": \"[{\\\"type\\\": \\\"bar_chart\\\", \\\"metric\\\": \\\"engaged_users\\\"}, {\\\"type\\\": \\\"line_chart\\\", \\\"metric\\\": \\\"daily_engagement\\\"}]\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 404,
+      "output_tokens": 108,
+      "total_latency_ms": 863,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:32.523Z"
+  },
+  {
+    "result_id": "249dbe01-ec76-4ab0-8c49-40cb19e1fddd",
+    "task_id": "tab-D-mt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"wx_get_air_quality\", \"arguments\": {\"location\": \"New York City\", \"include_pollutants\": true}} \n{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"air_quality_index\", \"date_range\": \"last_30d\"}} \n{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"user_viewed_air_quality_report\", \"properties\": {\"report_type\": \"air quality index\"}, \"user_id\": \"12345\"}}",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0
+    },
+    "metrics": {
+      "input_tokens": 405,
+      "output_tokens": 104,
+      "total_latency_ms": 834,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:33.459Z"
+  },
+  {
+    "result_id": "27b49dbb-daf2-4891-9251-32cb24ff0907",
+    "task_id": "tab-D-pe-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"main\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_run_report",
+        "arguments": {
+          "report_id": "main"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 388,
+      "output_tokens": 19,
+      "total_latency_ms": 215,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:33.780Z"
+  },
+  {
+    "result_id": "261ac10e-e845-4132-b1d9-074f0e62c52a",
+    "task_id": "tab-D-pe-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_track_event\", \"arguments\": {\"event_name\": \"config.json\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_track_event",
+        "arguments": {
+          "event_name": "config.json"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 390,
+      "output_tokens": 20,
+      "total_latency_ms": 231,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:34.125Z"
+  },
+  {
+    "result_id": "3d0b62f7-e6af-4d90-9bdf-ed2fcfaa9ec1",
+    "task_id": "tab-D-pe-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"auth_list_users\", \"arguments\": {\"role\": \"viewer\", \"status\": \"pending\"}}",
+      "parsed_tool_call": {
+        "name": "auth_list_users",
+        "arguments": {
+          "role": "viewer",
+          "status": "pending"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1
+    },
+    "metrics": {
+      "input_tokens": 405,
+      "output_tokens": 24,
+      "total_latency_ms": 259,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:34.499Z"
+  },
+  {
+    "result_id": "62d8f2bd-4b0f-4643-8fb3-1f7cad71cbd7",
+    "task_id": "tab-D-pe-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"config.json\", \"widgets\": \"[\\\"value1\\\",\\\"value2\\\",\\\"value3\\\"]\", \"shared\": \"false\"}}",
+      "parsed_tool_call": {
+        "name": "analytics_create_dashboard",
+        "arguments": {
+          "name": "config.json",
+          "widgets": "[\"value1\",\"value2\",\"value3\"]",
+          "shared": "false"
+        }
+      },
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 0.3333333333333333,
+      "overall": 0.7333333333333333
+    },
+    "metrics": {
+      "input_tokens": 417,
+      "output_tokens": 40,
+      "total_latency_ms": 374,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:34.975Z"
+  },
+  {
+    "result_id": "8234d09f-dcc1-4dae-9bcc-cf057d20a8dd",
+    "task_id": "tab-D-nt-001",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "A question that has puzzled philosophers and thinkers for centuries! Unfortunately, I don't have a definitive answer to this profound query. The meaning of life can vary greatly from person to person, culture to culture, and even moment to moment.\n\nSome people find meaning in their relationships with others, whether it's through family, friends, or community. Others may find purpose in their work, creative pursuits, or personal achievements.\n\nPhilosophers have proposed various theories on the meaning of life, such as:\n\n1. Hedonism: The pursuit of happiness and pleasure.\n2. Utilitarianism: Maximizing overall well-being and happiness for the greatest number of people.\n3. Existentialism: Embracing individual freedom and choice to create one's own meaning.\n\nUltimately, the meaning of life is a deeply personal and subjective question that each person must answer for themselves. What gives your life meaning?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 384,
+      "output_tokens": 180,
+      "total_latency_ms": 1393,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:36.483Z"
+  },
+  {
+    "result_id": "afd2b722-4211-4d86-aedb-7c31d61a701b",
+    "task_id": "tab-D-nt-002",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "The chemical formula for water is H2O, which consists of two hydrogen atoms and one oxygen atom.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 385,
+      "output_tokens": 22,
+      "total_latency_ms": 241,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:36.840Z"
+  },
+  {
+    "result_id": "3fdcea1a-86c5-43b3-819c-419680a0df9d",
+    "task_id": "tab-D-nt-003",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "Version control is essential in modern software development because it allows teams to track changes made to their codebase over time, collaborate on projects, and maintain a record of all modifications. This helps ensure that the code remains stable, reliable, and easy to manage.\n\nSome key benefits of version control include:\n\n1. **Collaboration**: Multiple developers can work on the same project simultaneously without conflicts or lost changes.\n2. **Change tracking**: Version control systems like Git allow you to see who made what changes, when, and why, making it easier to identify and resolve issues.\n3. **Backup and recovery**: Version control provides a safety net in case of data loss due to hardware failure, human error, or other disasters.\n4. **Code reuse**: By tracking changes over time, teams can identify and reuse code snippets, reducing development time and effort.\n5. **Testing and debugging**: Version control enables developers to easily revert to previous versions if issues arise during testing or deployment.\n\nOverall, version control is a crucial tool for modern software development, enabling teams to work efficiently, reliably, and collaboratively on complex projects.\n\nWould you like me to explain any specific aspect of version control in more detail?",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 387,
+      "output_tokens": 241,
+      "total_latency_ms": 1848,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:38.794Z"
+  },
+  {
+    "result_id": "68b5ce6c-d766-4d8c-b6d5-f1c1ce4f3611",
+    "task_id": "tab-D-nt-004",
+    "model": "Llama 3.1 8B",
+    "condition": "tscg",
+    "run": 3,
+    "response": {
+      "raw_output": "**Code Review Best Practices**\n\nCode reviews are an essential part of ensuring high-quality software development. Here are some best practices to follow:\n\n### 1. **Establish a Code Review Process**\n\n*   Set clear expectations and guidelines for code reviews.\n*   Define the frequency, scope, and duration of code reviews.\n\n### 2. **Prepare for Code Reviews**\n\n*   Write clean, readable, and well-documented code.\n*   Provide context and explanations for complex decisions or design choices.\n*   Be prepared to discuss and defend your code.\n\n### 3. **Focus on Quality, Not Just Bugs**\n\n*   Review code for maintainability, scalability, performance, and security.\n*   Look for opportunities to improve code structure, organization, and naming conventions.\n*   Encourage feedback on coding standards and best practices.\n\n### 4. **Use a Consistent Review Format**\n\n*   Use a standardized template or checklist for code reviews.\n*   Include sections for comments, suggestions, and decisions made during the review.\n\n### 5. **Respect Time and Effort**\n\n*   Be mindful of reviewers' time and effort.\n*   Keep reviews concise and focused on key issues.\n*   Avoid unnecessary back-and-forth discussions.\n\n### 6. **Learn from Code Reviews**\n\n*   Use code reviews as an opportunity to learn and improve.\n*   Apply feedback and suggestions to future code development.\n*   Share knowledge and best practices with the team.\n\nBy following these best practices, you can create a productive and effective code review process that benefits both individual developers and the entire team.",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 1,
+      "parameter_f1": 1,
+      "overall": 1,
+      "no_tool_correct": true
+    },
+    "metrics": {
+      "input_tokens": 386,
+      "output_tokens": 322,
+      "total_latency_ms": 2432,
+      "cost_usd": 0
+    },
+    "timestamp": "2026-03-02T19:27:41.341Z"
+  }
+]

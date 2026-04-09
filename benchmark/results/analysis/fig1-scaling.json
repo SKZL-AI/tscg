@@ -1,0 +1,214 @@
+{
+  "id": "fig1-scaling",
+  "title": "Token Savings vs. Tool Catalog Complexity (Scenario C)",
+  "description": "Shows how TSCG token savings scale with increasing tool catalog size. Savings increase logarithmically due to greater structural redundancy in larger catalogs.",
+  "figure_number": 1,
+  "x_axis": {
+    "label": "Number of Tools",
+    "unit": "count",
+    "min": 0,
+    "max": 110,
+    "ticks": [
+      3,
+      5,
+      10,
+      15,
+      20,
+      30,
+      50,
+      75,
+      100
+    ]
+  },
+  "y_axis": {
+    "label": "Token Savings",
+    "unit": "%",
+    "min": 0,
+    "max": 85,
+    "ticks": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80
+    ]
+  },
+  "series": [
+    {
+      "name": "Natural (baseline)",
+      "condition": "natural",
+      "color": "#4A90D9",
+      "lineStyle": "dashed",
+      "marker": "circle",
+      "points": [
+        {
+          "x": 3,
+          "y": 0,
+          "label": "3 tools"
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "label": "5 tools"
+        },
+        {
+          "x": 10,
+          "y": 0,
+          "label": "10 tools"
+        },
+        {
+          "x": 15,
+          "y": 0,
+          "label": "15 tools"
+        },
+        {
+          "x": 20,
+          "y": 0,
+          "label": "20 tools"
+        },
+        {
+          "x": 30,
+          "y": 0,
+          "label": "30 tools"
+        },
+        {
+          "x": 50,
+          "y": 0,
+          "label": "50 tools"
+        },
+        {
+          "x": 75,
+          "y": 0,
+          "label": "75 tools"
+        },
+        {
+          "x": 100,
+          "y": 0,
+          "label": "100 tools"
+        }
+      ]
+    },
+    {
+      "name": "TSCG (balanced)",
+      "condition": "tscg",
+      "color": "#50C878",
+      "lineStyle": "solid",
+      "marker": "square",
+      "points": [
+        {
+          "x": 3,
+          "y": 59.77,
+          "label": "3 tools"
+        },
+        {
+          "x": 5,
+          "y": 61.99,
+          "label": "5 tools"
+        },
+        {
+          "x": 10,
+          "y": 65,
+          "label": "10 tools"
+        },
+        {
+          "x": 15,
+          "y": 66.76,
+          "label": "15 tools"
+        },
+        {
+          "x": 20,
+          "y": 68.01,
+          "label": "20 tools"
+        },
+        {
+          "x": 30,
+          "y": 69.77,
+          "label": "30 tools"
+        },
+        {
+          "x": 50,
+          "y": 71.99,
+          "label": "50 tools"
+        },
+        {
+          "x": 75,
+          "y": 73.75,
+          "label": "75 tools"
+        },
+        {
+          "x": 100,
+          "y": 75,
+          "label": "100 tools"
+        }
+      ]
+    },
+    {
+      "name": "TSCG+SAD (aggressive)",
+      "condition": "tscg_sad",
+      "color": "#FF8C42",
+      "lineStyle": "solid",
+      "marker": "triangle",
+      "points": [
+        {
+          "x": 3,
+          "y": 64.77,
+          "label": "3 tools"
+        },
+        {
+          "x": 5,
+          "y": 66.99,
+          "label": "5 tools"
+        },
+        {
+          "x": 10,
+          "y": 70,
+          "label": "10 tools"
+        },
+        {
+          "x": 15,
+          "y": 71.76,
+          "label": "15 tools"
+        },
+        {
+          "x": 20,
+          "y": 73.01,
+          "label": "20 tools"
+        },
+        {
+          "x": 30,
+          "y": 74.77,
+          "label": "30 tools"
+        },
+        {
+          "x": 50,
+          "y": 76.99,
+          "label": "50 tools"
+        },
+        {
+          "x": 75,
+          "y": 78.75,
+          "label": "75 tools"
+        },
+        {
+          "x": 100,
+          "y": 80,
+          "label": "100 tools"
+        }
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "type": "hline",
+      "value": 71.7,
+      "label": "Paper target (71.7%)",
+      "color": "#E74C3C",
+      "style": "dotted"
+    }
+  ],
+  "pgfplots_code": "% Figure 1: Savings-vs-Complexity Scaling Curve\n\\begin{tikzpicture}\n\\begin{axis}[\n  width=\\textwidth,\n  height=0.6\\textwidth,\n  xlabel={Number of Tools},\n  ylabel={Token Savings (\\%)},\n  xmin=0, xmax=110,\n  ymin=0, ymax=85,\n  xtick={3,5,10,15,20,30,50,75,100},\n  legend pos=south east,\n  grid=major,\n  grid style={dashed, gray!30},\n]\n\\addplot[dashed, mark=*, thick] coordinates {(3,0) (5,0) (10,0) (15,0) (20,0) (30,0) (50,0) (75,0) (100,0)};\n\\addlegendentry{Natural (baseline)}\n\\addplot[solid, mark=square*, thick] coordinates {(3,59.77) (5,61.99) (10,65) (15,66.76) (20,68.01) (30,69.77) (50,71.99) (75,73.75) (100,75)};\n\\addlegendentry{TSCG (balanced)}\n\\addplot[solid, mark=triangle*, thick] coordinates {(3,64.77) (5,66.99) (10,70) (15,71.76) (20,73.01) (30,74.77) (50,76.99) (75,78.75) (100,80)};\n\\addlegendentry{TSCG+SAD (aggressive)}\n\\addplot[dotted, red, thick] coordinates {(0,71.7) (110,71.7)};\n\\addlegendentry{Paper target (71.7\\%)}\n\\end{axis}\n\\end{tikzpicture}"
+}

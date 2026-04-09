@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}l c c c@{}}
+\toprule
+\textbf{Disabled Principle} & \textbf{Acc. (\%)} & \textbf{$\Delta$ Acc.} & \textbf{$\Delta$ Tokens} \\
+\midrule
+None (full TSCG)     & 94.7 & ---       & --- \\
+\midrule
+$-$TAS               & 94.7 & $\pm$0.0  & $+$8.2\% \\
+$-$CFL               & 89.5 & $-$5.3    & $+$1.1\% \\
+$-$CFO               & 92.1 & $-$2.6    & $\pm$0.0\% \\
+$-$SDM               & 89.5 & $-$5.3    & $+$41.3\% \\
+$-$DRO               & 92.1 & $-$2.6    & $+$12.7\% \\
+$-$CCP               & 92.1 & $-$2.6    & $-$3.4\% \\
+$-$CAS               & 92.1 & $-$2.6    & $\pm$0.0\% \\
+$-$SAD-F             & 92.1 & $-$2.6    & $-$8.1\% \\
+\bottomrule
+\end{tabular}
+\caption{Ablation study results. Each row shows the effect of disabling one TSCG principle while keeping all others active. $\Delta$ Acc. is the accuracy change relative to full TSCG. $\Delta$ Tokens is the token count change (positive means more tokens). SDM and CFL have the largest individual accuracy impact. TAS affects only token count, not accuracy. All principles contribute positively to either accuracy or efficiency.}
+\label{tab:ablation}
+\end{table}

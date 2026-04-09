@@ -1,0 +1,153 @@
+/* ============================================================
+   TSCG Content Script - Floating Button & Panel Styles
+   Injected into chatgpt.com, claude.ai, gemini.google.com
+   ============================================================ */
+
+.tscg-float-btn {
+  position: absolute;
+  z-index: 99999;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.15s ease;
+  opacity: 0.85;
+  line-height: 1;
+  padding: 0;
+}
+
+.tscg-float-btn:hover {
+  opacity: 1;
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+}
+
+.tscg-float-btn:active {
+  transform: scale(0.95);
+}
+
+.tscg-float-btn.tscg-processing {
+  pointer-events: none;
+  animation: tscg-pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes tscg-pulse {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+/* Tooltip */
+.tscg-float-btn::after {
+  content: 'TSCG Optimize (Ctrl+Shift+O)';
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  color: #e6edf3;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tscg-float-btn:hover::after {
+  opacity: 1;
+}
+
+/* Toast notification */
+.tscg-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999999;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 12px 18px;
+  color: #e6edf3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: tscg-toast-in 0.25s ease;
+  max-width: 360px;
+}
+
+.tscg-toast.tscg-toast-out {
+  animation: tscg-toast-out 0.2s ease forwards;
+}
+
+@keyframes tscg-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tscg-toast-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.tscg-toast-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.tscg-toast-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tscg-toast-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.tscg-toast-detail {
+  font-size: 12px;
+  color: #8b949e;
+}
+
+.tscg-toast-detail .tscg-highlight {
+  color: #3fb950;
+  font-weight: 600;
+}

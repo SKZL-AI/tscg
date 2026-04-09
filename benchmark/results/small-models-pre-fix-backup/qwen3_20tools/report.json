@@ -1,0 +1,3136 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "Qwen3 4B"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 120,
+    "start_time": "2026-03-02T20:31:05.926Z",
+    "end_time": "2026-03-02T20:39:55.481Z",
+    "duration_ms": 529555
+  },
+  "results": [
+    {
+      "result_id": "f24e4323-8515-4097-8cd2-4cf79dfc1374",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I need the location (city name or coordinates) to check the air quality. Could you please specify where you'd like to get the air quality index and pollutant levels for?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3910,
+        "output_tokens": 281,
+        "total_latency_ms": 5931,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:13.221Z"
+    },
+    {
+      "result_id": "a3ea224b-cf5e-455f-a232-c25f29f9585c",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "To create a new user account, I need the following details:\n- Email address\n- Display name\n- Role (e.g., `admin`, `editor`, `viewer`, or `guest`)\n\nPlease provide these details so I can proceed with creating the account.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3912,
+        "output_tokens": 916,
+        "total_latency_ms": 5574,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:18.903Z"
+    },
+    {
+      "result_id": "8708ef35-3d42-47ad-a3be-d2bee8512908",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The term \"pla\" isn't clear in this context. If you meant **\"order\"** (e.g., real-time tracking for a placed order), I'll need the **order ID** to proceed. Could you clarify or provide the order ID? \n\nFor example:  \n`Can you get real-time tracking information for order #12345?`",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3909,
+        "output_tokens": 515,
+        "total_latency_ms": 3164,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:22.184Z"
+    },
+    {
+      "result_id": "ebc7fe59-bc48-4690-8898-4253be339017",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data",
+            "widgets": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3933,
+        "output_tokens": 289,
+        "total_latency_ms": 1793,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:24.092Z"
+    },
+    {
+      "result_id": "61755730-3244-42e8-832a-39a6c4020bf4",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"sample_data\", \"metric\": \"latency_p99\"}}",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "sample_data",
+            "metric": "latency_p99"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 476,
+        "total_latency_ms": 2909,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:27.114Z"
+    },
+    {
+      "result_id": "60a3166c-aff9-4866-85be-599d0b0eb78e",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"test_input\", \"width\": 7.5}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "test_input",
+            "width": 7.5
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3929,
+        "output_tokens": 348,
+        "total_latency_ms": 2148,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:29.370Z"
+    },
+    {
+      "result_id": "6b5d1586-c200-416c-a47d-f163478317d1",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3928,
+        "output_tokens": 1024,
+        "total_latency_ms": 6212,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:35.691Z"
+    },
+    {
+      "result_id": "8f22574d-b17e-43b4-9054-9916a801a7c2",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"test_input\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 645,
+        "total_latency_ms": 3917,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:39.710Z"
+    },
+    {
+      "result_id": "36acfdc0-4890-485b-9dd2-7a3ef5fc51af",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3914,
+        "output_tokens": 1024,
+        "total_latency_ms": 6227,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:46.053Z"
+    },
+    {
+      "result_id": "0ee9df21-4bb9-473d-af28-95aeabdb4228",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3922,
+        "output_tokens": 1024,
+        "total_latency_ms": 6198,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:52.352Z"
+    },
+    {
+      "result_id": "2aa0e769-5ffe-4848-9558-7d22baf80ba9",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 1024,
+        "total_latency_ms": 6207,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:31:58.674Z"
+    },
+    {
+      "result_id": "dc3dd37f-93c1-43c7-a503-67819f7ce07c",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "[\n  {\n    \"name\": \"wx_get_current\",\n    \"arguments\": {\n      \"location\": \"New York\"\n    }\n  },\n  {\n    \"name\": \"comm_send_message\",\n    \"arguments\": {\n      \"recipient\": \"user123\",\n      \"message\": \"Hello from the system!\"\n    }\n  },\n  {\n    \"name\": \"cal_find_free_time\",\n    \"arguments\": {\n      \"participants\": [\n        \"alice@example.com\",\n        \"bob@example.com\"\n      ],\n      \"duration_minutes\": 60,\n      \"start_date\": \"2023-10-01\",\n      \"end_date\": \"",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3919,
+        "output_tokens": 1024,
+        "total_latency_ms": 6259,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:05.041Z"
+    },
+    {
+      "result_id": "86e021b7-d291-4ca4-9e43-29b690554345",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3931,
+        "output_tokens": 442,
+        "total_latency_ms": 2745,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:07.891Z"
+    },
+    {
+      "result_id": "72a846bd-c612-46f0-83bd-d87db70484ed",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3917,
+        "output_tokens": 280,
+        "total_latency_ms": 1752,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:09.749Z"
+    },
+    {
+      "result_id": "397f3942-f7a1-40a6-b37b-7363cdae743d",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3960,
+        "output_tokens": 1024,
+        "total_latency_ms": 6288,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:16.147Z"
+    },
+    {
+      "result_id": "8d6ff02b-7489-4aa1-b6b6-0e1b9cfd568b",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3942,
+        "output_tokens": 520,
+        "total_latency_ms": 3193,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:19.442Z"
+    },
+    {
+      "result_id": "a5aa7d8a-c15e-4511-8746-d51bce2c97c7",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is exactly **299,792,458 meters per second** (approximately 186,282 miles per second). This value is a fundamental constant in physics and is defined as the speed at which light travels in a vacuum, with no variation. \n\nNo tool calls are needed for this factual response.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 240,
+        "total_latency_ms": 1499,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:21.053Z"
+    },
+    {
+      "result_id": "fdb9f33c-1b4a-43d5-bfd9-84147477eef7",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "The tools I have access to have several practical limitations based on their design and typical API constraints:\n\n1. **Rate Limits**: Most tools enforce request rate limits (e.g., 100 requests per minute) to prevent overuse.\n2. **Input Validation**: Tools require strict input formats (e.g., ISO 8601 dates, numeric values for amounts, specific enums for parameters like `units` or `role`).\n3. **Geographic Coverage**: Weather and location-based tools (e.g., `wx_get_air_quality`) may not support all regions or coordinates.\n4. **Data Freshness**: Real-time metrics (e.g., `ops_get_metrics`) might have slight latency (e.g., 1-5 seconds) before reflecting live data.\n5. **Pagination**: Tools like `store_list_files` require handling pagination via `offset`",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3905,
+        "output_tokens": 1024,
+        "total_latency_ms": 6275,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:27.444Z"
+    },
+    {
+      "result_id": "d5019686-2c4d-4257-8bb5-5cdd88466c08",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools that provide information about version control best practices or common mistakes. My capabilities are limited to the specific functions listed in the tools section (e.g., analytics, file operations, weather, payments, etc.). For version control questions, you'd need to consult Git documentation or resources like GitHub's guides.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 432,
+        "total_latency_ms": 2651,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:30.209Z"
+    },
+    {
+      "result_id": "2bdb0e6b-858a-4c26-8aa6-3669ee773842",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools that can analyze or provide historical trends in software architecture evolution. My capabilities are limited to the specific functions listed (e.g., analytics tracking, weather data, file operations, payment processing, etc.), but none of these tools can retrieve or analyze historical software architecture trends over time. Would you like help with something that matches one of the available tool capabilities?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 352,
+        "total_latency_ms": 2190,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:32.499Z"
+    },
+    {
+      "result_id": "20711440-0584-4a0f-91e7-2e559f9e7a8a",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I need the location (city name or coordinates) to check the air quality. Could you please specify where you'd like to get the air quality index and pollutant levels for?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3910,
+        "output_tokens": 281,
+        "total_latency_ms": 1752,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:34.364Z"
+    },
+    {
+      "result_id": "a88d493f-77e5-4deb-b993-ad5f1099ae00",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3912,
+        "output_tokens": 1024,
+        "total_latency_ms": 6216,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:40.681Z"
+    },
+    {
+      "result_id": "888c3e99-cf4b-4f3e-a204-34a0418a3ff7",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I need the order ID to look up real-time tracking information. Could you please provide the order identifier?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3909,
+        "output_tokens": 383,
+        "total_latency_ms": 2348,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:43.131Z"
+    },
+    {
+      "result_id": "e9506ab5-ca2d-483c-8959-df2592521891",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data",
+            "widgets": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3933,
+        "output_tokens": 289,
+        "total_latency_ms": 1793,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:45.029Z"
+    },
+    {
+      "result_id": "4f5c3362-fd1a-432f-900e-a9307c5c754f",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"sample_data\", \"metric\": \"latency_p99\"}}",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "sample_data",
+            "metric": "latency_p99"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 476,
+        "total_latency_ms": 2903,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:48.038Z"
+    },
+    {
+      "result_id": "e036a7bf-dd50-4b02-8dae-100d615c1861",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"test_input\", \"width\": 7.5}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "test_input",
+            "width": 7.5
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3929,
+        "output_tokens": 348,
+        "total_latency_ms": 2167,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:50.311Z"
+    },
+    {
+      "result_id": "892a1be1-d091-4943-a1fd-338f282a3eb9",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3928,
+        "output_tokens": 1024,
+        "total_latency_ms": 6297,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:32:56.720Z"
+    },
+    {
+      "result_id": "8304234e-1695-4c57-96a2-c37f0531287e",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"test_input\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 645,
+        "total_latency_ms": 3948,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:00.771Z"
+    },
+    {
+      "result_id": "58f45227-9e0e-4788-888b-83beba134ab1",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3914,
+        "output_tokens": 1024,
+        "total_latency_ms": 6308,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:07.190Z"
+    },
+    {
+      "result_id": "8e8601c7-5336-45f5-aa3c-cfc3f701533c",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3922,
+        "output_tokens": 1024,
+        "total_latency_ms": 6251,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:13.555Z"
+    },
+    {
+      "result_id": "ba323856-3ba2-4866-8288-05d07089ac90",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 1024,
+        "total_latency_ms": 6265,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:19.937Z"
+    },
+    {
+      "result_id": "4f4cd6e5-fd9a-4d6e-bd6e-eec05b62d799",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "[\n  {\n    \"name\": \"wx_get_current\",\n    \"arguments\": {\n      \"location\": \"New York\"\n    }\n  },\n  {\n    \"name\": \"comm_send_message\",\n    \"arguments\": {\n      \"recipient\": \"user123\",\n      \"message\": \"Hello from the system!\"\n    }\n  },\n  {\n    \"name\": \"cal_find_free_time\",\n    \"arguments\": {\n      \"participants\": [\n        \"alice@example.com\",\n        \"bob@example.com\"\n      ],\n      \"duration_minutes\": 60,\n      \"start_date\": \"2023-10-01\",\n      \"end_date\": \"",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3919,
+        "output_tokens": 1024,
+        "total_latency_ms": 6256,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:26.301Z"
+    },
+    {
+      "result_id": "6f16b041-5e69-4e02-abd4-4e1757742cee",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3931,
+        "output_tokens": 442,
+        "total_latency_ms": 2705,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:29.113Z"
+    },
+    {
+      "result_id": "8310c3b1-9cba-4393-b10a-3b06b41d8834",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3917,
+        "output_tokens": 280,
+        "total_latency_ms": 1742,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:30.964Z"
+    },
+    {
+      "result_id": "ee0f7009-f158-4481-8bb1-67c819a18b83",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3960,
+        "output_tokens": 1024,
+        "total_latency_ms": 6265,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:37.330Z"
+    },
+    {
+      "result_id": "695cd9fe-03ea-4c63-84d4-13a832fea4b3",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3942,
+        "output_tokens": 520,
+        "total_latency_ms": 3181,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:40.628Z"
+    },
+    {
+      "result_id": "2c2d63ea-2821-4820-904c-e3f80ebcee7b",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is exactly **299,792,458 meters per second** (approximately 186,282 miles per second). This value is a fundamental constant in physics and is defined as the speed at which light travels in a vacuum, with no variation. \n\nNo tool calls are needed for this factual response.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 240,
+        "total_latency_ms": 1496,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:42.226Z"
+    },
+    {
+      "result_id": "06d902c5-0232-49b6-9a83-d2cdf90dc235",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "The tools I have access to have several practical limitations based on their design and typical API constraints:\n\n1. **Rate Limits**: Most tools enforce request rate limits (e.g., 100 requests per minute) to prevent overuse.\n2. **Input Validation**: Tools require strict input formats (e.g., ISO 8601 dates, numeric values for amounts, specific enums for parameters like `units` or `role`).\n3. **Geographic Coverage**: Weather and location-based tools (e.g., `wx_get_air_quality`) may not support all regions or coordinates.\n4. **Data Freshness**: Real-time metrics (e.g., `ops_get_metrics`) might have slight latency (e.g., 1-5 seconds) before reflecting live data.\n5. **Pagination**: Tools like `store_list_files` require handling pagination via `offset`",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3905,
+        "output_tokens": 1024,
+        "total_latency_ms": 6284,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:48.618Z"
+    },
+    {
+      "result_id": "816bd819-53e1-4901-b9cc-f73f112fc10b",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools that provide information about version control best practices or common mistakes. My capabilities are limited to the specific functions listed in the tools section (e.g., analytics, file operations, weather, payments, etc.). For version control questions, you'd need to consult Git documentation or resources like GitHub's guides.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 432,
+        "total_latency_ms": 2677,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:51.397Z"
+    },
+    {
+      "result_id": "0f70d8ed-0c03-4e6c-86a7-e6222d304f60",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools that can analyze or provide historical trends in software architecture evolution. My capabilities are limited to the specific functions listed (e.g., analytics tracking, weather data, file operations, payment processing, etc.), but none of these tools can retrieve or analyze historical software architecture trends over time. Would you like help with something that matches one of the available tool capabilities?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 352,
+        "total_latency_ms": 2179,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:53.680Z"
+    },
+    {
+      "result_id": "e7cbc0b9-230f-42b8-8a5d-746aad733e20",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I need the location (city name or coordinates) to check the air quality. Could you please specify where you'd like to get the air quality index and pollutant levels for?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3910,
+        "output_tokens": 281,
+        "total_latency_ms": 1753,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:33:55.539Z"
+    },
+    {
+      "result_id": "c0c240ea-05fe-4c86-9d62-2cfb5b8c1cac",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3912,
+        "output_tokens": 1024,
+        "total_latency_ms": 6273,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:01.927Z"
+    },
+    {
+      "result_id": "abede6bd-9877-4bfb-af96-f072e090977d",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I need the order ID to look up real-time tracking information. Could you please provide the order identifier?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3909,
+        "output_tokens": 383,
+        "total_latency_ms": 2346,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:04.382Z"
+    },
+    {
+      "result_id": "6e4d6817-f4e3-4b5c-9997-4d5682bafa0f",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data",
+            "widgets": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3933,
+        "output_tokens": 289,
+        "total_latency_ms": 1801,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:06.294Z"
+    },
+    {
+      "result_id": "6aa518b8-0e5c-43f6-ac8f-b84dc6fd074a",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"ops_get_metrics\", \"arguments\": {\"service\": \"sample_data\", \"metric\": \"latency_p99\"}}",
+        "parsed_tool_call": {
+          "name": "ops_get_metrics",
+          "arguments": {
+            "service": "sample_data",
+            "metric": "latency_p99"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0.5,
+        "overall": 0.8
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 476,
+        "total_latency_ms": 2928,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:09.329Z"
+    },
+    {
+      "result_id": "877e868a-df2c-4a1d-8669-37d2738c1bbd",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"test_input\", \"width\": 7.5}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "test_input",
+            "width": 7.5
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3929,
+        "output_tokens": 348,
+        "total_latency_ms": 2155,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:11.588Z"
+    },
+    {
+      "result_id": "aed29a7f-751c-4dd4-8278-53e58d7ddaa0",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3928,
+        "output_tokens": 1024,
+        "total_latency_ms": 6205,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:17.910Z"
+    },
+    {
+      "result_id": "2e6da758-b1e5-4802-9555-a19be30304f2",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"test_input\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 645,
+        "total_latency_ms": 3910,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:21.925Z"
+    },
+    {
+      "result_id": "c0f57698-631b-444d-8331-065eb1b295cf",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3914,
+        "output_tokens": 1024,
+        "total_latency_ms": 6247,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:28.280Z"
+    },
+    {
+      "result_id": "a9699157-8210-48af-88af-7bf15ec8149e",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3922,
+        "output_tokens": 1024,
+        "total_latency_ms": 6229,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:34.611Z"
+    },
+    {
+      "result_id": "17970498-793c-49bd-9f89-b186e48f0fe4",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3926,
+        "output_tokens": 1024,
+        "total_latency_ms": 6248,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:40.976Z"
+    },
+    {
+      "result_id": "d635fed6-83ca-4f6c-b63d-a68ff5052c31",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "[\n  {\n    \"name\": \"wx_get_current\",\n    \"arguments\": {\n      \"location\": \"New York\"\n    }\n  },\n  {\n    \"name\": \"comm_send_message\",\n    \"arguments\": {\n      \"recipient\": \"user123\",\n      \"message\": \"Hello from the system!\"\n    }\n  },\n  {\n    \"name\": \"cal_find_free_time\",\n    \"arguments\": {\n      \"participants\": [\n        \"alice@example.com\",\n        \"bob@example.com\"\n      ],\n      \"duration_minutes\": 60,\n      \"start_date\": \"2023-10-01\",\n      \"end_date\": \"",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3919,
+        "output_tokens": 1024,
+        "total_latency_ms": 6236,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:47.326Z"
+    },
+    {
+      "result_id": "3bef76e7-7507-4af7-b3e4-74dce5240931",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"fin_process_payment\", \"arguments\": {\"amount\": 544.76, \"currency\": \"production\", \"recipient\": \"production\"}}",
+        "parsed_tool_call": {
+          "name": "fin_process_payment",
+          "arguments": {
+            "amount": 544.76,
+            "currency": "production",
+            "recipient": "production"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3931,
+        "output_tokens": 442,
+        "total_latency_ms": 2718,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:50.149Z"
+    },
+    {
+      "result_id": "239b740c-9731-4f28-915b-a6ebde1cfd9b",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"auth_update_permissions\", \"arguments\": {\"user_id\": \"quarterly-report\", \"role\": \"editor\"}}",
+        "parsed_tool_call": {
+          "name": "auth_update_permissions",
+          "arguments": {
+            "user_id": "quarterly-report",
+            "role": "editor"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3917,
+        "output_tokens": 280,
+        "total_latency_ms": 1752,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:52.024Z"
+    },
+    {
+      "result_id": "df0b0ce3-b71b-46e3-b4d2-345d667c7f29",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 3960,
+        "output_tokens": 1024,
+        "total_latency_ms": 6249,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:34:58.382Z"
+    },
+    {
+      "result_id": "48c8fbdf-9766-4e11-a26f-63fb65687e64",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 3942,
+        "output_tokens": 520,
+        "total_latency_ms": 3180,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:01.666Z"
+    },
+    {
+      "result_id": "b046616f-99b5-4dd8-ae98-93f6ac103845",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is exactly **299,792,458 meters per second** (approximately 186,282 miles per second). This value is a fundamental constant in physics and is defined as the speed at which light travels in a vacuum, with no variation. \n\nNo tool calls are needed for this factual response.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 240,
+        "total_latency_ms": 1511,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:03.283Z"
+    },
+    {
+      "result_id": "b03773b3-34f4-4681-90f1-a059814cf8ee",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "The tools I have access to have several practical limitations based on their design and typical API constraints:\n\n1. **Rate Limits**: Most tools enforce request rate limits (e.g., 100 requests per minute) to prevent overuse.\n2. **Input Validation**: Tools require strict input formats (e.g., ISO 8601 dates, numeric values for amounts, specific enums for parameters like `units` or `role`).\n3. **Geographic Coverage**: Weather and location-based tools (e.g., `wx_get_air_quality`) may not support all regions or coordinates.\n4. **Data Freshness**: Real-time metrics (e.g., `ops_get_metrics`) might have slight latency (e.g., 1-5 seconds) before reflecting live data.\n5. **Pagination**: Tools like `store_list_files` require handling pagination via `offset`",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3905,
+        "output_tokens": 1024,
+        "total_latency_ms": 6236,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:09.624Z"
+    },
+    {
+      "result_id": "c9b2372e-4260-4eaf-8041-9516e1a870de",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools that provide information about version control best practices or common mistakes. My capabilities are limited to the specific functions listed in the tools section (e.g., analytics, file operations, weather, payments, etc.). For version control questions, you'd need to consult Git documentation or resources like GitHub's guides.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 432,
+        "total_latency_ms": 2635,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:12.366Z"
+    },
+    {
+      "result_id": "0075245b-8abd-45c1-b943-4c396f3e1dd3",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools that can analyze or provide historical trends in software architecture evolution. My capabilities are limited to the specific functions listed (e.g., analytics tracking, weather data, file operations, payment processing, etc.), but none of these tools can retrieve or analyze historical software architecture trends over time. Would you like help with something that matches one of the available tool capabilities?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 3908,
+        "output_tokens": 352,
+        "total_latency_ms": 2182,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:14.649Z"
+    },
+    {
+      "result_id": "d0623b4b-086a-494e-af6a-b34416bbabd4",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "To get the air quality index and pollutant levels, I'll need the location details (e.g., city name, ZIP code, or coordinates). Could you please specify where you'd like to check the air quality?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1464,
+        "output_tokens": 301,
+        "total_latency_ms": 1865,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:16.623Z"
+    },
+    {
+      "result_id": "5afd201f-7e7f-4d64-b689-7f7484344ac1",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "To create a new user account, I'll need the following details:\n- **Email address** (required)\n- **Display name** (required)\n- **Role** (must be one of: `admin`, `editor`, `viewer`, or `guest`)\n- **Password** (required for initial account setup)\n- *Optional*: `limit` (maximum number of results to return)\n\nPlease provide the missing information so I can proceed with creating the account!",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1466,
+        "output_tokens": 844,
+        "total_latency_ms": 4798,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:21.526Z"
+    },
+    {
+      "result_id": "bdbc166e-1a07-4304-a38f-3d6721e06b1a",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The request seems to be asking for real-time tracking information for an order (likely a typo for \"order\" instead of \"pla\"). To proceed, I'll need the **order ID** to look up the tracking details. Could you please provide the order identifier? \n\nFor example:  \n`shop_track_order(order_id=\"12345\")`",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1463,
+        "output_tokens": 654,
+        "total_latency_ms": 3679,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:25.310Z"
+    },
+    {
+      "result_id": "860869ba-1c58-4450-8c8d-03143b57bd71",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data",
+            "widgets": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1487,
+        "output_tokens": 360,
+        "total_latency_ms": 2057,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:27.475Z"
+    },
+    {
+      "result_id": "5425e9da-5d1c-4408-a017-60db19574ef5",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 1024,
+        "total_latency_ms": 5788,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:33.367Z"
+    },
+    {
+      "result_id": "461fe6fd-2b11-44bc-a300-61ec13652e03",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"test_input\", \"width\": 7.5}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "test_input",
+            "width": 7.5
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1483,
+        "output_tokens": 523,
+        "total_latency_ms": 2998,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:36.466Z"
+    },
+    {
+      "result_id": "5cd662e4-1b3e-4ae3-a66c-0304b1e457c1",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1482,
+        "output_tokens": 1024,
+        "total_latency_ms": 5799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:42.372Z"
+    },
+    {
+      "result_id": "7fb35f52-4f91-4ee4-9dbe-6698ba8862d2",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"test_input\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 719,
+        "total_latency_ms": 4094,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:46.568Z"
+    },
+    {
+      "result_id": "b639c583-f829-4b19-a95a-6ee19e4c8838",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1468,
+        "output_tokens": 1024,
+        "total_latency_ms": 5799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:52.471Z"
+    },
+    {
+      "result_id": "8e57d319-8fac-42f4-b9fd-834115c6f290",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1476,
+        "output_tokens": 1024,
+        "total_latency_ms": 5787,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:35:58.371Z"
+    },
+    {
+      "result_id": "c265dd63-a054-4e40-84b0-6952aefab7ea",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 1024,
+        "total_latency_ms": 5843,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:04.327Z"
+    },
+    {
+      "result_id": "759d7e16-c1e8-4617-81e5-a79aae8202dd",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1473,
+        "output_tokens": 1024,
+        "total_latency_ms": 5897,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:10.333Z"
+    },
+    {
+      "result_id": "fcfe6247-752e-4cc7-ae3b-5e54eda1bcda",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1485,
+        "output_tokens": 1024,
+        "total_latency_ms": 5826,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:16.263Z"
+    },
+    {
+      "result_id": "8ec973c8-a930-4ce8-a295-aeae21f6e3c9",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1471,
+        "output_tokens": 1024,
+        "total_latency_ms": 5852,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:22.226Z"
+    },
+    {
+      "result_id": "6717aaeb-74fe-40aa-8ab9-d5c0301b0e54",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1514,
+        "output_tokens": 1024,
+        "total_latency_ms": 5869,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:28.201Z"
+    },
+    {
+      "result_id": "b6d7a98f-7952-430a-b611-2677f4ef4de5",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1496,
+        "output_tokens": 914,
+        "total_latency_ms": 5266,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:33.580Z"
+    },
+    {
+      "result_id": "b9a458c7-2f08-4f98-81ea-01555bbd71f0",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is exactly **299,792,458 meters per second** (a defined constant in physics). This value is used as a fundamental constant in many scientific calculations and is exact by definition. \n\nNo tool calls were needed to answer this question.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 322,
+        "total_latency_ms": 1879,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:35.563Z"
+    },
+    {
+      "result_id": "627cca42-e61a-4c5d-9b4f-ee9dc80b2e63",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1459,
+        "output_tokens": 1024,
+        "total_latency_ms": 5855,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:41.519Z"
+    },
+    {
+      "result_id": "f1cfcb34-ef46-4c96-ad18-09c493e0da92",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "Common mistakes people make with version control (like Git) include:\n\n1. **Not committing frequently** – Leading to large, hard-to-track changes.\n2. **Ignoring branching strategies** – Working directly on `main` or `master` without proper branches.\n3. **Making unnecessary commits** – Small, frequent commits are better than infrequent large ones.\n4. **Failing to handle conflicts** – Not resolving merge conflicts properly.\n5. **Overusing `git push`** – Pushing directly to remote without testing locally first.\n6. **Not using meaningful commit messages** – Making messages vague or unstructured.\n7. **Ignoring version history** – Not understanding how to roll back changes or track history.\n8. **Forgetting to update local branches** – Leading to stale work and merge issues.\n9. **Not using tags** – Missing important version markers for releases.\n10. **Overcomplicating workflows** – Using too many tools or processes for simple tasks.\n\nNone of the provided tools can help answer this question, as they are focused on analytics, cloud storage, payments, and other systems—not version control best practices.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 424,
+        "total_latency_ms": 2435,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:44.054Z"
+    },
+    {
+      "result_id": "ad5df1ed-ce24-4438-ac6b-0eec281ea780",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 1,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide historical analysis of software architecture trends. My capabilities are limited to the specific operations listed in the tools (e.g., tracking events, running analytics reports, file management, etc.). For questions about software architecture evolution, you'd need to consult domain knowledge resources or specialized industry reports outside of my toolset.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 504,
+        "total_latency_ms": 2881,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:47.037Z"
+    },
+    {
+      "result_id": "13555951-bc41-4923-bdd3-3f6115c76785",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The tool `wx_get_air_quality` requires a location parameter (e.g., city name, ZIP code, or coordinates) to retrieve air quality data. Could you please specify the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1464,
+        "output_tokens": 356,
+        "total_latency_ms": 2048,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:49.200Z"
+    },
+    {
+      "result_id": "e7a621e9-b187-426f-bd8d-e2783c333c78",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "To create a new user account, I need the following details:\n- Email address\n- Display name\n- Role (admin, editor, viewer, or guest)\n- Initial password (will be hashed)\n- Optional: Maximum number of results to return (limit)\n\nCould you please provide these details so I can proceed with creating the account?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1466,
+        "output_tokens": 864,
+        "total_latency_ms": 4896,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:36:54.196Z"
+    },
+    {
+      "result_id": "778c5fa5-25e4-46cb-a808-b3b2cd9ff9c3",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Sure! To get real-time tracking information for your order, I'll need the order ID. Could you please provide that?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1463,
+        "output_tokens": 1024,
+        "total_latency_ms": 5814,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:00.116Z"
+    },
+    {
+      "result_id": "93c39a36-a7b6-4d77-95be-e120b9468db8",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data",
+            "widgets": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1487,
+        "output_tokens": 360,
+        "total_latency_ms": 2055,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:02.271Z"
+    },
+    {
+      "result_id": "1a6b01f6-f127-470b-b68a-95b8636f2aea",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 1024,
+        "total_latency_ms": 5795,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:08.179Z"
+    },
+    {
+      "result_id": "58d83fb2-6bba-4b17-b07c-62b4723e8b79",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"test_input\", \"width\": 7.5}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "test_input",
+            "width": 7.5
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1483,
+        "output_tokens": 523,
+        "total_latency_ms": 2967,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:11.248Z"
+    },
+    {
+      "result_id": "398d3740-77c5-481e-b2cd-f16b9e43bc95",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1482,
+        "output_tokens": 1024,
+        "total_latency_ms": 5834,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:17.183Z"
+    },
+    {
+      "result_id": "acde94ec-8c8c-4fef-ad73-c8420e3ff04a",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"test_input\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 719,
+        "total_latency_ms": 4122,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:21.407Z"
+    },
+    {
+      "result_id": "ae4faf28-ce69-4aa0-8eb8-05a42458288a",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1468,
+        "output_tokens": 1024,
+        "total_latency_ms": 5816,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:27.324Z"
+    },
+    {
+      "result_id": "9baad091-e836-41ef-bbe5-3efa1bc5c514",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1476,
+        "output_tokens": 1024,
+        "total_latency_ms": 5797,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:33.227Z"
+    },
+    {
+      "result_id": "490994b8-7b66-47c1-88d3-1111534b11a7",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 1024,
+        "total_latency_ms": 5822,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:39.151Z"
+    },
+    {
+      "result_id": "c740656c-e189-4621-ae7a-2e3e22e39235",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1473,
+        "output_tokens": 1024,
+        "total_latency_ms": 5852,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:45.104Z"
+    },
+    {
+      "result_id": "6060d666-b6cf-4dec-a041-81586b9c99ac",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1485,
+        "output_tokens": 1024,
+        "total_latency_ms": 5785,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:50.998Z"
+    },
+    {
+      "result_id": "0d34c6e5-9440-4d50-a8b6-a8675e942c3b",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1471,
+        "output_tokens": 1024,
+        "total_latency_ms": 5779,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:37:56.892Z"
+    },
+    {
+      "result_id": "0eb2407e-f64b-420f-8332-412890835ac2",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1514,
+        "output_tokens": 1024,
+        "total_latency_ms": 5813,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:02.812Z"
+    },
+    {
+      "result_id": "9f08bfc6-7ff5-4079-86e0-3f151bcecaf0",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1496,
+        "output_tokens": 914,
+        "total_latency_ms": 5146,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:08.060Z"
+    },
+    {
+      "result_id": "69d514fd-258e-4834-9f8c-ea5b916f37a8",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is exactly **299,792,458 meters per second** (a defined constant in physics). This value is used as a fundamental constant in many scientific calculations and is exact by definition. \n\nNo tool calls were needed to answer this question.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 322,
+        "total_latency_ms": 1842,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:10.003Z"
+    },
+    {
+      "result_id": "8f13d4ab-a6b6-4ed5-bf8e-f96d5e1b0753",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1459,
+        "output_tokens": 1024,
+        "total_latency_ms": 5803,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:15.912Z"
+    },
+    {
+      "result_id": "743e9149-c236-42fc-adda-e943e583332d",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "Common mistakes people make with version control (like Git) include:\n\n1. **Not committing frequently** – Leading to large, hard-to-track changes.\n2. **Ignoring branching strategies** – Working directly on `main` or `master` without proper branches.\n3. **Making unnecessary commits** – Small, frequent commits are better than infrequent large ones.\n4. **Failing to handle conflicts** – Not resolving merge conflicts properly.\n5. **Overusing `git push`** – Pushing directly to remote without testing locally first.\n6. **Not using meaningful commit messages** – Making messages vague or unstructured.\n7. **Ignoring version history** – Not understanding how to roll back changes or track history.\n8. **Forgetting to update local branches** – Leading to stale work and merge issues.\n9. **Not using tags** – Missing important version markers for releases.\n10. **Overcomplicating workflows** – Using too many tools or processes for simple tasks.\n\nNone of the provided tools can help answer this question, as they are focused on analytics, cloud storage, payments, and other systems—not version control best practices.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 424,
+        "total_latency_ms": 2428,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:18.444Z"
+    },
+    {
+      "result_id": "2e94835e-df3b-4d8b-a1fd-f267da7b209a",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 2,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide historical analysis of software architecture trends. My capabilities are limited to the specific operations listed in the tools (e.g., tracking events, running analytics reports, file management, etc.). For questions about software architecture evolution, you'd need to consult domain knowledge resources or specialized industry reports outside of my toolset.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 504,
+        "total_latency_ms": 2878,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:21.424Z"
+    },
+    {
+      "result_id": "b6f1a68b-8858-47d4-936c-272c8de9bd0d",
+      "task_id": "tab-D-ts-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The tool `wx_get_air_quality` requires a location parameter (e.g., city name, ZIP code, or coordinates) to retrieve air quality data. Could you please specify the location you'd like to check?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1464,
+        "output_tokens": 356,
+        "total_latency_ms": 2051,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:23.585Z"
+    },
+    {
+      "result_id": "d6f72781-cf82-45b5-b4ef-32df24480164",
+      "task_id": "tab-D-ts-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "To create a new user account, I need the following details:\n- Email address\n- Display name\n- Role (admin, editor, viewer, or guest)\n- Initial password (will be hashed)\n- Optional: Maximum number of results to return (limit)\n\nCould you please provide these details so I can proceed with creating the account?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1466,
+        "output_tokens": 864,
+        "total_latency_ms": 4871,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:28.569Z"
+    },
+    {
+      "result_id": "4ad26e7b-4aa1-41a3-bb6f-2268cf5f4628",
+      "task_id": "tab-D-ts-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Sure! To get real-time tracking information for your order, I'll need the order ID. Could you please provide that?",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1463,
+        "output_tokens": 1024,
+        "total_latency_ms": 5795,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:34.471Z"
+    },
+    {
+      "result_id": "6b9ff4a8-6e2a-41e8-b915-06f655a3321f",
+      "task_id": "tab-D-ts-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_create_dashboard\", \"arguments\": {\"name\": \"sample_data\", \"widgets\": [\"a\", \"b\", \"c\"]}}",
+        "parsed_tool_call": {
+          "name": "analytics_create_dashboard",
+          "arguments": {
+            "name": "sample_data",
+            "widgets": [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1487,
+        "output_tokens": 360,
+        "total_latency_ms": 2059,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:36.636Z"
+    },
+    {
+      "result_id": "5e18219a-eae4-41a4-b94f-c58dc2e29309",
+      "task_id": "tab-D-ts-005",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 1024,
+        "total_latency_ms": 5763,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:42.501Z"
+    },
+    {
+      "result_id": "03179db0-ac54-409d-8d5b-c1d5c5d0e1a9",
+      "task_id": "tab-D-ts-006",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_resize_image\", \"arguments\": {\"input_path\": \"test_input\", \"width\": 7.5}}",
+        "parsed_tool_call": {
+          "name": "media_resize_image",
+          "arguments": {
+            "input_path": "test_input",
+            "width": 7.5
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1483,
+        "output_tokens": 523,
+        "total_latency_ms": 2941,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:45.553Z"
+    },
+    {
+      "result_id": "53fde1be-bb1e-42fb-a8a6-e89a7bfac619",
+      "task_id": "tab-D-ts-007",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1482,
+        "output_tokens": 1024,
+        "total_latency_ms": 5784,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:51.440Z"
+    },
+    {
+      "result_id": "ceb255b7-634b-4706-bf31-377a0f691ef6",
+      "task_id": "tab-D-ts-008",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"media_generate_thumbnail\", \"arguments\": {\"input_path\": \"test_input\"}}",
+        "parsed_tool_call": {
+          "name": "media_generate_thumbnail",
+          "arguments": {
+            "input_path": "test_input"
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 0,
+        "overall": 0.6
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 719,
+        "total_latency_ms": 4049,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:38:55.592Z"
+    },
+    {
+      "result_id": "6248b62c-22c2-4346-a42a-4085196f6027",
+      "task_id": "tab-D-mt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1468,
+        "output_tokens": 1024,
+        "total_latency_ms": 5760,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:01.457Z"
+    },
+    {
+      "result_id": "6446e4e6-63dd-4b6c-9686-352489746966",
+      "task_id": "tab-D-mt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1476,
+        "output_tokens": 1024,
+        "total_latency_ms": 5799,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:07.360Z"
+    },
+    {
+      "result_id": "b316d541-d812-4971-9fd7-5a1e0b8ab90e",
+      "task_id": "tab-D-mt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1480,
+        "output_tokens": 1024,
+        "total_latency_ms": 5786,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:13.255Z"
+    },
+    {
+      "result_id": "0a4c68cf-43f4-49de-b798-f077efd5869a",
+      "task_id": "tab-D-mt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1473,
+        "output_tokens": 1024,
+        "total_latency_ms": 5771,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:19.126Z"
+    },
+    {
+      "result_id": "aba3074c-519d-405d-b11f-3a5f4dc5b2a1",
+      "task_id": "tab-D-pe-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1485,
+        "output_tokens": 1024,
+        "total_latency_ms": 5788,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:25.028Z"
+    },
+    {
+      "result_id": "6ba126aa-766e-4ba3-8f6f-c43f2b8357fe",
+      "task_id": "tab-D-pe-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1471,
+        "output_tokens": 1024,
+        "total_latency_ms": 5785,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:30.915Z"
+    },
+    {
+      "result_id": "60461026-9478-4647-9753-e536fc0527e0",
+      "task_id": "tab-D-pe-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 0,
+        "parameter_f1": 0,
+        "overall": 0
+      },
+      "metrics": {
+        "input_tokens": 1514,
+        "output_tokens": 1024,
+        "total_latency_ms": 5787,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:36.803Z"
+    },
+    {
+      "result_id": "9d5ac974-4aef-4e1f-ba8c-dfe19ddd1367",
+      "task_id": "tab-D-pe-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "{\"name\": \"analytics_run_report\", \"arguments\": {\"report_id\": \"quarterly-report\", \"date_range\": \"config.json\", \"filters\": {\"key\": \"value\"}}}",
+        "parsed_tool_call": {
+          "name": "analytics_run_report",
+          "arguments": {
+            "report_id": "quarterly-report",
+            "date_range": "config.json",
+            "filters": {
+              "key": "value"
+            }
+          }
+        },
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1
+      },
+      "metrics": {
+        "input_tokens": 1496,
+        "output_tokens": 914,
+        "total_latency_ms": 5154,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:42.072Z"
+    },
+    {
+      "result_id": "5a21823b-f6f1-457a-90e0-8bbe1b67d699",
+      "task_id": "tab-D-nt-001",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "The speed of light in a vacuum is exactly **299,792,458 meters per second** (a defined constant in physics). This value is used as a fundamental constant in many scientific calculations and is exact by definition. \n\nNo tool calls were needed to answer this question.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 322,
+        "total_latency_ms": 1852,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:44.036Z"
+    },
+    {
+      "result_id": "a40f5465-0f2e-4f6a-97cb-91900b0d56e5",
+      "task_id": "tab-D-nt-002",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1459,
+        "output_tokens": 1024,
+        "total_latency_ms": 5760,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:49.897Z"
+    },
+    {
+      "result_id": "da300e89-2c83-4adb-b1f2-11766d286ab5",
+      "task_id": "tab-D-nt-003",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "Common mistakes people make with version control (like Git) include:\n\n1. **Not committing frequently** – Leading to large, hard-to-track changes.\n2. **Ignoring branching strategies** – Working directly on `main` or `master` without proper branches.\n3. **Making unnecessary commits** – Small, frequent commits are better than infrequent large ones.\n4. **Failing to handle conflicts** – Not resolving merge conflicts properly.\n5. **Overusing `git push`** – Pushing directly to remote without testing locally first.\n6. **Not using meaningful commit messages** – Making messages vague or unstructured.\n7. **Ignoring version history** – Not understanding how to roll back changes or track history.\n8. **Forgetting to update local branches** – Leading to stale work and merge issues.\n9. **Not using tags** – Missing important version markers for releases.\n10. **Overcomplicating workflows** – Using too many tools or processes for simple tasks.\n\nNone of the provided tools can help answer this question, as they are focused on analytics, cloud storage, payments, and other systems—not version control best practices.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 424,
+        "total_latency_ms": 2411,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:52.424Z"
+    },
+    {
+      "result_id": "1aa082dc-6c5a-4509-9f61-e2c8baa557a0",
+      "task_id": "tab-D-nt-004",
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "run": 3,
+      "response": {
+        "raw_output": "I don't have access to tools that can provide historical analysis of software architecture trends. My capabilities are limited to the specific operations listed in the tools (e.g., tracking events, running analytics reports, file management, etc.). For questions about software architecture evolution, you'd need to consult domain knowledge resources or specialized industry reports outside of my toolset.",
+        "parse_success": true
+      },
+      "scores": {
+        "tool_selection_accuracy": 1,
+        "parameter_f1": 1,
+        "overall": 1,
+        "no_tool_correct": true
+      },
+      "metrics": {
+        "input_tokens": 1462,
+        "output_tokens": 504,
+        "total_latency_ms": 2850,
+        "cost_usd": 0
+      },
+      "timestamp": "2026-03-02T20:39:55.378Z"
+    }
+  ],
+  "aggregates": [
+    {
+      "model": "Qwen3 4B",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.4800000000000001,
+        "ci95": [
+          0.42491714548981496,
+          0.6690654614623918
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.55,
+        "ci95": [
+          0.42491714548981496,
+          0.6690654614623918
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.375,
+        "ci95": [
+          0.2856930300376551,
+          0.5263417560579315
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "Qwen3 4B",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.33999999999999997,
+        "ci95": [
+          0.2856930300376551,
+          0.5263417560579315
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.4,
+        "ci95": [
+          0.2856930300376551,
+          0.5263417560579315
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.25,
+        "ci95": [
+          0.1577638557841185,
+          0.372323109454848
+        ]
+      },
+      "arr": 0.7083333333333331,
+      "token_savings_pct": 62.371705787104915,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "scenario": "D",
+    "models": [
+      "GPT-5.2"
+    ],
+    "conditions": [
+      "natural",
+      "tscg",
+      "tscg_sad"
+    ],
+    "runs_per_condition": 3,
+    "total_tasks": 20,
+    "total_api_calls": 180,
+    "start_time": "2026-03-03T14:27:32.287Z",
+    "end_time": "2026-03-03T14:36:09.901Z",
+    "duration_ms": 517613
+  },
+  "aggregates": [
+    {
+      "model": "GPT-5.2",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.6193333333333334,
+        "ci95": [
+          0.5068276736679673,
+          0.7437926115379172
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.6333333333333333,
+        "ci95": [
+          0.5068276736679673,
+          0.7437926115379172
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.5983333333333334,
+        "ci95": [
+          0.5068276736679673,
+          0.7437926115379172
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 60
+    },
+    {
+      "model": "GPT-5.2",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.8935555555555557,
+        "ci95": [
+          0.8407442010623228,
+          0.973771725856802
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.9333333333333333,
+        "ci95": [
+          0.8407442010623228,
+          0.973771725856802
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.8616666666666666,
+        "ci95": [
+          0.7985030550748896,
+          0.9533578005427642
+        ]
+      },
+      "arr": 1.4427700035880875,
+      "token_savings_pct": 8.291587493522197,
+      "cost_savings_pct": 9.23453556890322,
+      "n_tasks": 60
+    },
+    {
+      "model": "GPT-5.2",
+      "condition": "tscg_sad",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.8762222222222221,
+        "ci95": [
+          0.8193083153188752,
+          0.9638800759495141
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.9166666666666666,
+        "ci95": [
+          0.8193083153188752,
+          0.9638800759495141
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.8433333333333333,
+        "ci95": [
+          0.7985030550748896,
+          0.9533578005427642
+        ]
+      },
+      "arr": 1.414782920703265,
+      "token_savings_pct": 6.90965624460183,
+      "cost_savings_pct": 7.609097896324971,
+      "n_tasks": 60
+    }
+  ]
+}

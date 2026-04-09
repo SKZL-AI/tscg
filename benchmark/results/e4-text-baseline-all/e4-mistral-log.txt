@@ -1,0 +1,514 @@
+
+================================================================================
+  E4: TEXT-BASELINE REGRESSION — All Small Models
+  Models: mistral-7b
+  Catalog sizes: 3, 5, 10, 15, 20, 30, 50
+  Conditions: natural_text, tscg, naive_truncation
+  Baseline: renderNaturalSchema() (human-readable text, NOT JSON)
+================================================================================
+
+  Ollama: connected
+
+  ===== Model: mistral-7b =====
+
+  ====== Catalog Size: 3 tools ======
+  Text: 269 | TSCG: 210 (21.9%) | Naive: 29 (89.2%)
+
+  --- mistral-7b / 3 tools / natural_text ---
+  [1/20] mistral-7b     3    natural_text       | tab-C-ts-001 ... + 1.00 (wx_get_air_quality) 2808ms
+  [2/20] mistral-7b     3    natural_text       | tab-C-ts-002 ... + 1.00 (analytics_run_report) 198ms
+  [3/20] mistral-7b     3    natural_text       | tab-C-ts-003 ... + 1.00 (analytics_track_event) 194ms
+  [4/20] mistral-7b     3    natural_text       | tab-C-ts-004 ... + 1.00 (wx_get_air_quality) 190ms
+  [5/20] mistral-7b     3    natural_text       | tab-C-ts-005 ... + 1.00 (analytics_run_report) 197ms
+  [6/20] mistral-7b     3    natural_text       | tab-C-ts-006 ... + 1.00 (analytics_track_event) 196ms
+  [7/20] mistral-7b     3    natural_text       | tab-C-ts-007 ... + 1.00 (wx_get_air_quality) 190ms
+  [8/20] mistral-7b     3    natural_text       | tab-C-ts-008 ... + 1.00 (analytics_run_report) 198ms
+  [9/20] mistral-7b     3    natural_text       | tab-C-mt-001 ... + 1.00 (analytics_track_event) 364ms
+  [10/20] mistral-7b     3    natural_text       | tab-C-mt-002 ... + 1.00 (analytics_run_report) 368ms
+  [11/20] mistral-7b     3    natural_text       | tab-C-mt-003 ... - 0.33 (analytics_track_event) 633ms
+  [12/20] mistral-7b     3    natural_text       | tab-C-mt-004 ... + 0.56 (wx_get_air_quality) 818ms
+  [13/20] mistral-7b     3    natural_text       | tab-C-pe-001 ... + 1.00 (analytics_run_report) 195ms
+  [14/20] mistral-7b     3    natural_text       | tab-C-pe-002 ... + 1.00 (analytics_track_event) 209ms
+  [15/20] mistral-7b     3    natural_text       | tab-C-pe-003 ... + 1.00 (wx_get_air_quality) 328ms
+  [16/20] mistral-7b     3    natural_text       | tab-C-pe-004 ... + 1.00 (analytics_run_report) 331ms
+  [17/20] mistral-7b     3    natural_text       | tab-C-nt-001 ... - 0.00 (math_sqrt) 155ms
+  [18/20] mistral-7b     3    natural_text       | tab-C-nt-002 ... - 0.00 (math_calculate) 536ms
+  [19/20] mistral-7b     3    natural_text       | tab-C-nt-003 ... - 0.00 (analytics_track_event) 501ms
+  [20/20] mistral-7b     3    natural_text       | tab-C-nt-004 ... - 0.00 (analytics_track_event) 465ms
+
+  --- mistral-7b / 3 tools / tscg ---
+  [1/20] mistral-7b     3    tscg               | tab-C-ts-001 ... + 0.87 (wx_get_air_quality) 268ms
+  [2/20] mistral-7b     3    tscg               | tab-C-ts-002 ... + 0.87 (analytics_run_report) 235ms
+  [3/20] mistral-7b     3    tscg               | tab-C-ts-003 ... + 1.00 (analytics_track_event) 196ms
+  [4/20] mistral-7b     3    tscg               | tab-C-ts-004 ... + 1.00 (wx_get_air_quality) 189ms
+  [5/20] mistral-7b     3    tscg               | tab-C-ts-005 ... + 1.00 (analytics_run_report) 195ms
+  [6/20] mistral-7b     3    tscg               | tab-C-ts-006 ... + 1.00 (analytics_track_event) 196ms
+  [7/20] mistral-7b     3    tscg               | tab-C-ts-007 ... + 0.87 (wx_get_air_quality) 242ms
+  [8/20] mistral-7b     3    tscg               | tab-C-ts-008 ... + 0.87 (analytics_run_report) 236ms
+  [9/20] mistral-7b     3    tscg               | tab-C-mt-001 ... + 0.50 (analytics_track_event) 649ms
+  [10/20] mistral-7b     3    tscg               | tab-C-mt-002 ... + 0.67 (analytics_run_report) 598ms
+  [11/20] mistral-7b     3    tscg               | tab-C-mt-003 ... - 0.33 (analytics_track_event) 572ms
+  [12/20] mistral-7b     3    tscg               | tab-C-mt-004 ... - 0.17 (wx_get_air_quality) 1959ms
+  [13/20] mistral-7b     3    tscg               | tab-C-pe-001 ... + 1.00 (analytics_run_report) 195ms
+  [14/20] mistral-7b     3    tscg               | tab-C-pe-002 ... + 1.00 (analytics_track_event) 207ms
+  [15/20] mistral-7b     3    tscg               | tab-C-pe-003 ... + 1.00 (wx_get_air_quality) 330ms
+  [16/20] mistral-7b     3    tscg               | tab-C-pe-004 ... + 1.00 (analytics_run_report) 329ms
+  [17/20] mistral-7b     3    tscg               | tab-C-nt-001 ... - 0.00 (math_sqrt) 154ms
+  [18/20] mistral-7b     3    tscg               | tab-C-nt-002 ... - 0.00 (analytics_run_report) 294ms
+  [19/20] mistral-7b     3    tscg               | tab-C-nt-003 ... - 0.00 (analytics_run_report) 358ms
+  [20/20] mistral-7b     3    tscg               | tab-C-nt-004 ... - 0.00 (analytics_track_event) 553ms
+
+  --- mistral-7b / 3 tools / naive_truncation ---
+  [1/20] mistral-7b     3    naive_truncation   | tab-C-ts-001 ... + 1.00 (wx_get_air_quality) 190ms
+  [2/20] mistral-7b     3    naive_truncation   | tab-C-ts-002 ... + 1.00 (analytics_run_report) 194ms
+  [3/20] mistral-7b     3    naive_truncation   | tab-C-ts-003 ... + 1.00 (analytics_track_event) 193ms
+  [4/20] mistral-7b     3    naive_truncation   | tab-C-ts-004 ... + 1.00 (wx_get_air_quality) 187ms
+  [5/20] mistral-7b     3    naive_truncation   | tab-C-ts-005 ... + 1.00 (analytics_run_report) 195ms
+  [6/20] mistral-7b     3    naive_truncation   | tab-C-ts-006 ... + 1.00 (analytics_track_event) 193ms
+  [7/20] mistral-7b     3    naive_truncation   | tab-C-ts-007 ... + 1.00 (wx_get_air_quality) 189ms
+  [8/20] mistral-7b     3    naive_truncation   | tab-C-ts-008 ... + 1.00 (analytics_run_report) 198ms
+  [9/20] mistral-7b     3    naive_truncation   | tab-C-mt-001 ... + 1.00 (analytics_track_event) 365ms
+  [10/20] mistral-7b     3    naive_truncation   | tab-C-mt-002 ... + 1.00 (analytics_run_report) 363ms
+  [11/20] mistral-7b     3    naive_truncation   | tab-C-mt-003 ... - 0.33 (analytics_track_event) 507ms
+  [12/20] mistral-7b     3    naive_truncation   | tab-C-mt-004 ... + 0.67 (wx_get_air_quality) 557ms
+  [13/20] mistral-7b     3    naive_truncation   | tab-C-pe-001 ... + 1.00 (analytics_run_report) 194ms
+  [14/20] mistral-7b     3    naive_truncation   | tab-C-pe-002 ... + 1.00 (analytics_track_event) 206ms
+  [15/20] mistral-7b     3    naive_truncation   | tab-C-pe-003 ... + 1.00 (wx_get_air_quality) 325ms
+  [16/20] mistral-7b     3    naive_truncation   | tab-C-pe-004 ... + 1.00 (analytics_run_report) 327ms
+  [17/20] mistral-7b     3    naive_truncation   | tab-C-nt-001 ... - 0.00 (math_sqrt) 153ms
+  [18/20] mistral-7b     3    naive_truncation   | tab-C-nt-002 ... - 0.00 (analytics_fetch_data) 231ms
+  [19/20] mistral-7b     3    naive_truncation   | tab-C-nt-003 ... - 0.00 (analytics_compare_approaches) 109ms
+  [20/20] mistral-7b     3    naive_truncation   | tab-C-nt-004 ... - 0.00 (analytics_track_event) 452ms
+
+  ====== Catalog Size: 5 tools ======
+  Text: 430 | TSCG: 332 (22.8%) | Naive: 47 (89.1%)
+
+  --- mistral-7b / 5 tools / natural_text ---
+  [1/20] mistral-7b     5    natural_text       | tab-C-ts-001 ... + 1.00 (auth_list_users) 155ms
+  [2/20] mistral-7b     5    natural_text       | tab-C-ts-002 ... + 1.00 (analytics_run_report) 198ms
+  [3/20] mistral-7b     5    natural_text       | tab-C-ts-003 ... + 1.00 (analytics_create_dashboard) 257ms
+  [4/20] mistral-7b     5    natural_text       | tab-C-ts-004 ... + 1.00 (wx_get_air_quality) 193ms
+  [5/20] mistral-7b     5    natural_text       | tab-C-ts-005 ... + 1.00 (analytics_track_event) 198ms
+  [6/20] mistral-7b     5    natural_text       | tab-C-ts-006 ... + 1.00 (auth_list_users) 98ms
+  [7/20] mistral-7b     5    natural_text       | tab-C-ts-007 ... + 1.00 (analytics_run_report) 200ms
+  [8/20] mistral-7b     5    natural_text       | tab-C-ts-008 ... + 1.00 (analytics_create_dashboard) 259ms
+  [9/20] mistral-7b     5    natural_text       | tab-C-mt-001 ... + 1.00 (auth_list_users) 261ms
+  [10/20] mistral-7b     5    natural_text       | tab-C-mt-002 ... + 1.00 (auth_list_users) 267ms
+  [11/20] mistral-7b     5    natural_text       | tab-C-mt-003 ... + 1.00 (auth_list_users) 504ms
+  [12/20] mistral-7b     5    natural_text       | tab-C-mt-004 ... + 1.00 (wx_get_air_quality) 540ms
+  [13/20] mistral-7b     5    natural_text       | tab-C-pe-001 ... + 1.00 (analytics_run_report) 182ms
+  [14/20] mistral-7b     5    natural_text       | tab-C-pe-002 ... + 1.00 (analytics_track_event) 196ms
+  [15/20] mistral-7b     5    natural_text       | tab-C-pe-003 ... + 1.00 (auth_list_users) 213ms
+  [16/20] mistral-7b     5    natural_text       | tab-C-pe-004 ... + 1.00 (analytics_create_dashboard) 306ms
+  [17/20] mistral-7b     5    natural_text       | tab-C-nt-001 ... - 0.00 (analytics_run_report) 222ms
+  [18/20] mistral-7b     5    natural_text       | tab-C-nt-002 ... - 0.00 (analytics_track_event) 368ms
+  [19/20] mistral-7b     5    natural_text       | tab-C-nt-003 ... - 0.00 (analytics_run_report) 215ms
+  [20/20] mistral-7b     5    natural_text       | tab-C-nt-004 ... - 0.00 (analytics_run_report) 235ms
+
+  --- mistral-7b / 5 tools / tscg ---
+  [1/20] mistral-7b     5    tscg               | tab-C-ts-001 ... + 1.00 (auth_list_users) 140ms
+  [2/20] mistral-7b     5    tscg               | tab-C-ts-002 ... + 0.80 (analytics_run_report) 308ms
+  [3/20] mistral-7b     5    tscg               | tab-C-ts-003 ... + 1.00 (analytics_create_dashboard) 256ms
+  [4/20] mistral-7b     5    tscg               | tab-C-ts-004 ... + 1.00 (wx_get_air_quality) 192ms
+  [5/20] mistral-7b     5    tscg               | tab-C-ts-005 ... + 1.00 (analytics_track_event) 198ms
+  [6/20] mistral-7b     5    tscg               | tab-C-ts-006 ... + 1.00 (auth_list_users) 98ms
+  [7/20] mistral-7b     5    tscg               | tab-C-ts-007 ... + 0.87 (analytics_run_report) 238ms
+  [8/20] mistral-7b     5    tscg               | tab-C-ts-008 ... + 1.00 (analytics_create_dashboard) 258ms
+  [9/20] mistral-7b     5    tscg               | tab-C-mt-001 ... + 1.00 (auth_list_users) 263ms
+  [10/20] mistral-7b     5    tscg               | tab-C-mt-002 ... + 1.00 (auth_list_users) 267ms
+  [11/20] mistral-7b     5    tscg               | tab-C-mt-003 ... + 1.00 (auth_list_users) 501ms
+  [12/20] mistral-7b     5    tscg               | tab-C-mt-004 ... + 1.00 (wx_get_air_quality) 533ms
+  [13/20] mistral-7b     5    tscg               | tab-C-pe-001 ... + 0.80 (analytics_run_report) 293ms
+  [14/20] mistral-7b     5    tscg               | tab-C-pe-002 ... + 1.00 (analytics_track_event) 194ms
+  [15/20] mistral-7b     5    tscg               | tab-C-pe-003 ... + 1.00 (auth_list_users) 211ms
+  [16/20] mistral-7b     5    tscg               | tab-C-pe-004 ... + 1.00 (analytics_create_dashboard) 303ms
+  [17/20] mistral-7b     5    tscg               | tab-C-nt-001 ... - 0.00 (analytics_track_event) 216ms
+  [18/20] mistral-7b     5    tscg               | tab-C-nt-002 ... - 0.00 (analytics_track_event) 291ms
+  [19/20] mistral-7b     5    tscg               | tab-C-nt-003 ... - 0.00 (analytics_run_report) 1043ms
+  [20/20] mistral-7b     5    tscg               | tab-C-nt-004 ... - 0.00 (analytics_run_report) 333ms
+
+  --- mistral-7b / 5 tools / naive_truncation ---
+  [1/20] mistral-7b     5    naive_truncation   | tab-C-ts-001 ... + 1.00 (auth_list_users) 103ms
+  [2/20] mistral-7b     5    naive_truncation   | tab-C-ts-002 ... + 1.00 (analytics_run_report) 193ms
+  [3/20] mistral-7b     5    naive_truncation   | tab-C-ts-003 ... + 1.00 (analytics_create_dashboard) 251ms
+  [4/20] mistral-7b     5    naive_truncation   | tab-C-ts-004 ... + 1.00 (wx_get_air_quality) 188ms
+  [5/20] mistral-7b     5    naive_truncation   | tab-C-ts-005 ... + 1.00 (analytics_track_event) 193ms
+  [6/20] mistral-7b     5    naive_truncation   | tab-C-ts-006 ... + 1.00 (auth_list_users) 95ms
+  [7/20] mistral-7b     5    naive_truncation   | tab-C-ts-007 ... + 1.00 (analytics_run_report) 195ms
+  [8/20] mistral-7b     5    naive_truncation   | tab-C-ts-008 ... + 1.00 (analytics_create_dashboard) 251ms
+  [9/20] mistral-7b     5    naive_truncation   | tab-C-mt-001 ... + 1.00 (auth_list_users) 258ms
+  [10/20] mistral-7b     5    naive_truncation   | tab-C-mt-002 ... + 1.00 (auth_list_users) 263ms
+  [11/20] mistral-7b     5    naive_truncation   | tab-C-mt-003 ... + 1.00 (auth_list_users) 498ms
+  [12/20] mistral-7b     5    naive_truncation   | tab-C-mt-004 ... + 1.00 (wx_get_air_quality) 531ms
+  [13/20] mistral-7b     5    naive_truncation   | tab-C-pe-001 ... + 1.00 (analytics_run_report) 178ms
+  [14/20] mistral-7b     5    naive_truncation   | tab-C-pe-002 ... + 1.00 (analytics_track_event) 191ms
+  [15/20] mistral-7b     5    naive_truncation   | tab-C-pe-003 ... + 0.60 (auth_list_users) 96ms
+  [16/20] mistral-7b     5    naive_truncation   | tab-C-pe-004 ... + 1.00 (analytics_create_dashboard) 300ms
+  [17/20] mistral-7b     5    naive_truncation   | tab-C-nt-001 ... - 0.00 (analytics_track_event) 214ms
+  [18/20] mistral-7b     5    naive_truncation   | tab-C-nt-002 ... - 0.00 (none) 282ms
+  [19/20] mistral-7b     5    naive_truncation   | tab-C-nt-003 ... - 0.00 (analytics_track_event) 211ms
+  [20/20] mistral-7b     5    naive_truncation   | tab-C-nt-004 ... - 0.00 (analytics_track_event) 230ms
+
+  ====== Catalog Size: 10 tools ======
+  Text: 847 | TSCG: 649 (23.4%) | Naive: 97 (88.5%)
+
+  --- mistral-7b / 10 tools / natural_text ---
+  [1/20] mistral-7b     10   natural_text       | tab-C-ts-001 ... + 1.00 (auth_list_users) 219ms
+  [2/20] mistral-7b     10   natural_text       | tab-C-ts-002 ... + 1.00 (analytics_run_report) 199ms
+  [3/20] mistral-7b     10   natural_text       | tab-C-ts-003 ... + 1.00 (shop_track_order) 193ms
+  [4/20] mistral-7b     10   natural_text       | tab-C-ts-004 ... + 1.00 (analytics_track_event) 200ms
+  [5/20] mistral-7b     10   natural_text       | tab-C-ts-005 ... + 1.00 (wx_get_air_quality) 193ms
+  [6/20] mistral-7b     10   natural_text       | tab-C-ts-006 ... + 1.00 (comm_send_message) 249ms
+  [7/20] mistral-7b     10   natural_text       | tab-C-ts-007 ... + 1.00 (media_generate_thumbnail) 204ms
+  [8/20] mistral-7b     10   natural_text       | tab-C-ts-008 ... + 0.80 (analytics_create_dashboard) 264ms
+  [9/20] mistral-7b     10   natural_text       | tab-C-mt-001 ... + 1.00 (comm_send_message) 324ms
+  [10/20] mistral-7b     10   natural_text       | tab-C-mt-002 ... + 0.50 (shop_track_order) 383ms
+  [11/20] mistral-7b     10   natural_text       | tab-C-mt-003 ... + 1.00 (shop_track_order) 583ms
+  [12/20] mistral-7b     10   natural_text       | tab-C-mt-004 ... + 0.83 (media_generate_thumbnail) 612ms
+  [13/20] mistral-7b     10   natural_text       | tab-C-pe-001 ... + 1.00 (auth_list_users) 221ms
+  [14/20] mistral-7b     10   natural_text       | tab-C-pe-002 ... + 1.00 (media_resize_image) 262ms
+  [15/20] mistral-7b     10   natural_text       | tab-C-pe-003 ... + 0.76 (analytics_track_event) 284ms
+  [16/20] mistral-7b     10   natural_text       | tab-C-pe-004 ... + 1.00 (wx_get_air_quality) 337ms
+  [17/20] mistral-7b     10   natural_text       | tab-C-nt-001 ... - 0.00 (math_subtract) 146ms
+  [18/20] mistral-7b     10   natural_text       | tab-C-nt-002 ... - 0.00 (math_sqrt) 151ms
+  [19/20] mistral-7b     10   natural_text       | tab-C-nt-003 ... + 1.00 (none) 2624ms
+  [20/20] mistral-7b     10   natural_text       | tab-C-nt-004 ... - 0.00 (monolithic) 2640ms
+
+  --- mistral-7b / 10 tools / tscg ---
+  [1/20] mistral-7b     10   tscg               | tab-C-ts-001 ... + 1.00 (auth_list_users) 195ms
+  [2/20] mistral-7b     10   tscg               | tab-C-ts-002 ... + 0.87 (analytics_run_report) 239ms
+  [3/20] mistral-7b     10   tscg               | tab-C-ts-003 ... + 0.87 (shop_track_order) 233ms
+  [4/20] mistral-7b     10   tscg               | tab-C-ts-004 ... + 1.00 (analytics_track_event) 199ms
+  [5/20] mistral-7b     10   tscg               | tab-C-ts-005 ... + 1.00 (wx_get_air_quality) 193ms
+  [6/20] mistral-7b     10   tscg               | tab-C-ts-006 ... + 1.00 (comm_send_message) 245ms
+  [7/20] mistral-7b     10   tscg               | tab-C-ts-007 ... + 0.80 (media_generate_thumbnail) 333ms
+  [8/20] mistral-7b     10   tscg               | tab-C-ts-008 ... + 0.80 (analytics_create_dashboard) 260ms
+  [9/20] mistral-7b     10   tscg               | tab-C-mt-001 ... + 0.50 (comm_send_message) 451ms
+  [10/20] mistral-7b     10   tscg               | tab-C-mt-002 ... + 1.00 (shop_track_order) 366ms
+  [11/20] mistral-7b     10   tscg               | tab-C-mt-003 ... + 1.00 (shop_track_order) 580ms
+  [12/20] mistral-7b     10   tscg               | tab-C-mt-004 ... + 0.67 (media_generate_thumbnail) 716ms
+  [13/20] mistral-7b     10   tscg               | tab-C-pe-001 ... + 1.00 (auth_list_users) 220ms
+  [14/20] mistral-7b     10   tscg               | tab-C-pe-002 ... + 1.00 (media_resize_image) 259ms
+  [15/20] mistral-7b     10   tscg               | tab-C-pe-003 ... + 1.00 (analytics_track_event) 313ms
+  [16/20] mistral-7b     10   tscg               | tab-C-pe-004 ... + 1.00 (wx_get_air_quality) 334ms
+  [17/20] mistral-7b     10   tscg               | tab-C-nt-001 ... - 0.00 (math_operation) 516ms
+  [18/20] mistral-7b     10   tscg               | tab-C-nt-002 ... - 0.00 (math_sqrt) 158ms
+  [19/20] mistral-7b     10   tscg               | tab-C-nt-003 ... - 0.00 (analytics_compare_approaches) 2579ms
+  [20/20] mistral-7b     10   tscg               | tab-C-nt-004 ... - 0.00 (analytics_run_report) 927ms
+
+  --- mistral-7b / 10 tools / naive_truncation ---
+  [1/20] mistral-7b     10   naive_truncation   | tab-C-ts-001 ... + 1.00 (auth_list_users) 113ms
+  [2/20] mistral-7b     10   naive_truncation   | tab-C-ts-002 ... + 1.00 (analytics_run_report) 194ms
+  [3/20] mistral-7b     10   naive_truncation   | tab-C-ts-003 ... + 1.00 (shop_track_order) 186ms
+  [4/20] mistral-7b     10   naive_truncation   | tab-C-ts-004 ... + 1.00 (analytics_track_event) 194ms
+  [5/20] mistral-7b     10   naive_truncation   | tab-C-ts-005 ... + 1.00 (wx_get_air_quality) 188ms
+  [6/20] mistral-7b     10   naive_truncation   | tab-C-ts-006 ... + 1.00 (comm_send_message) 241ms
+  [7/20] mistral-7b     10   naive_truncation   | tab-C-ts-007 ... + 1.00 (media_generate_thumbnail) 197ms
+  [8/20] mistral-7b     10   naive_truncation   | tab-C-ts-008 ... + 0.80 (analytics_create_dashboard) 256ms
+  [9/20] mistral-7b     10   naive_truncation   | tab-C-mt-001 ... + 1.00 (comm_send_message) 314ms
+  [10/20] mistral-7b     10   naive_truncation   | tab-C-mt-002 ... + 1.00 (shop_track_order) 360ms
+  [11/20] mistral-7b     10   naive_truncation   | tab-C-mt-003 ... + 1.00 (shop_track_order) 568ms
+  [12/20] mistral-7b     10   naive_truncation   | tab-C-mt-004 ... + 1.00 (media_generate_thumbnail) 574ms
+  [13/20] mistral-7b     10   naive_truncation   | tab-C-pe-001 ... - 0.00 (auth_list_users) 468ms
+  [14/20] mistral-7b     10   naive_truncation   | tab-C-pe-002 ... + 1.00 (media_resize_image) 253ms
+  [15/20] mistral-7b     10   naive_truncation   | tab-C-pe-003 ... + 0.80 (analytics_track_event) 196ms
+  [16/20] mistral-7b     10   naive_truncation   | tab-C-pe-004 ... + 1.00 (wx_get_air_quality) 326ms
+  [17/20] mistral-7b     10   naive_truncation   | tab-C-nt-001 ... - 0.00 (math) 157ms
+  [18/20] mistral-7b     10   naive_truncation   | tab-C-nt-002 ... - 0.00 (math_sqrt) 147ms
+  [19/20] mistral-7b     10   naive_truncation   | tab-C-nt-003 ... - 0.00 (analytics_compare_approaches) 109ms
+  [20/20] mistral-7b     10   naive_truncation   | tab-C-nt-004 ... - 0.00 (analytics_run_report) 233ms
+
+  ====== Catalog Size: 15 tools ======
+  Text: 1343 | TSCG: 1026 (23.6%) | Naive: 161 (88.0%)
+
+  --- mistral-7b / 15 tools / natural_text ---
+  [1/20] mistral-7b     15   natural_text       | tab-C-ts-001 ... + 1.00 (media_transcode_video) 469ms
+  [2/20] mistral-7b     15   natural_text       | tab-C-ts-002 ... + 1.00 (fin_process_payment) 303ms
+  [3/20] mistral-7b     15   natural_text       | tab-C-ts-003 ... + 1.00 (analytics_create_dashboard) 269ms
+  [4/20] mistral-7b     15   natural_text       | tab-C-ts-004 ... + 1.00 (auth_create_user) 242ms
+  [5/20] mistral-7b     15   natural_text       | tab-C-ts-005 ... + 1.00 (auth_update_permissions) 249ms
+  [6/20] mistral-7b     15   natural_text       | tab-C-ts-006 ... + 1.00 (wx_get_current) 184ms
+  [7/20] mistral-7b     15   natural_text       | tab-C-ts-007 ... + 1.00 (analytics_run_report) 209ms
+  [8/20] mistral-7b     15   natural_text       | tab-C-ts-008 ... + 1.00 (comm_send_message) 256ms
+  [9/20] mistral-7b     15   natural_text       | tab-C-mt-001 ... - 0.25 (store_list_files) 446ms
+  [10/20] mistral-7b     15   natural_text       | tab-C-mt-002 ... + 0.50 (wx_get_current) 349ms
+  [11/20] mistral-7b     15   natural_text       | tab-C-mt-003 ... - 0.13 (store_list_files) 790ms
+  [12/20] mistral-7b     15   natural_text       | tab-C-mt-004 ... + 1.00 (wx_get_air_quality) 601ms
+  [13/20] mistral-7b     15   natural_text       | tab-C-pe-001 ... + 1.00 (analytics_track_event) 219ms
+  [14/20] mistral-7b     15   natural_text       | tab-C-pe-002 ... + 1.00 (auth_create_user) 246ms
+  [15/20] mistral-7b     15   natural_text       | tab-C-pe-003 ... + 0.73 (analytics_run_report) 359ms
+  [16/20] mistral-7b     15   natural_text       | tab-C-pe-004 ... + 1.00 (auth_list_users) 217ms
+  [17/20] mistral-7b     15   natural_text       | tab-C-nt-001 ... - 0.00 (analytics_run_report) 317ms
+  [18/20] mistral-7b     15   natural_text       | tab-C-nt-002 ... - 0.00 (knowledge_provide_answer) 249ms
+  [19/20] mistral-7b     15   natural_text       | tab-C-nt-003 ... - 0.00 (analytics_track_event) 2353ms
+  [20/20] mistral-7b     15   natural_text       | tab-C-nt-004 ... - 0.00 (analytics_run_report) 679ms
+
+  --- mistral-7b / 15 tools / tscg ---
+  [1/20] mistral-7b     15   tscg               | tab-C-ts-001 ... + 1.00 (media_transcode_video) 421ms
+  [2/20] mistral-7b     15   tscg               | tab-C-ts-002 ... + 1.00 (fin_process_payment) 297ms
+  [3/20] mistral-7b     15   tscg               | tab-C-ts-003 ... + 1.00 (analytics_create_dashboard) 260ms
+  [4/20] mistral-7b     15   tscg               | tab-C-ts-004 ... + 1.00 (auth_create_user) 240ms
+  [5/20] mistral-7b     15   tscg               | tab-C-ts-005 ... + 1.00 (auth_update_permissions) 245ms
+  [6/20] mistral-7b     15   tscg               | tab-C-ts-006 ... + 1.00 (wx_get_current) 181ms
+  [7/20] mistral-7b     15   tscg               | tab-C-ts-007 ... + 0.87 (analytics_run_report) 245ms
+  [8/20] mistral-7b     15   tscg               | tab-C-ts-008 ... + 1.00 (comm_send_message) 252ms
+  [9/20] mistral-7b     15   tscg               | tab-C-mt-001 ... - 0.25 (store_list_files) 441ms
+  [10/20] mistral-7b     15   tscg               | tab-C-mt-002 ... + 0.50 (wx_get_current) 417ms
+  [11/20] mistral-7b     15   tscg               | tab-C-mt-003 ... - 0.17 (store_list_files) 828ms
+  [12/20] mistral-7b     15   tscg               | tab-C-mt-004 ... + 1.00 (wx_get_air_quality) 588ms
+  [13/20] mistral-7b     15   tscg               | tab-C-pe-001 ... + 1.00 (analytics_track_event) 214ms
+  [14/20] mistral-7b     15   tscg               | tab-C-pe-002 ... + 0.83 (auth_create_user) 384ms
+  [15/20] mistral-7b     15   tscg               | tab-C-pe-003 ... + 0.73 (analytics_run_report) 342ms
+  [16/20] mistral-7b     15   tscg               | tab-C-pe-004 ... + 1.00 (auth_list_users) 210ms
+  [17/20] mistral-7b     15   tscg               | tab-C-nt-001 ... - 0.00 (analytics_run_report) 294ms
+  [18/20] mistral-7b     15   tscg               | tab-C-nt-002 ... - 0.00 (analytics_run_report) 277ms
+  [19/20] mistral-7b     15   tscg               | tab-C-nt-003 ... - 0.00 (analytics_run_report) 319ms
+  [20/20] mistral-7b     15   tscg               | tab-C-nt-004 ... - 0.00 (analytics_run_report) 859ms
+
+  --- mistral-7b / 15 tools / naive_truncation ---
+  [1/20] mistral-7b     15   naive_truncation   | tab-C-ts-001 ... + 1.00 (media_transcode_video) 283ms
+  [2/20] mistral-7b     15   naive_truncation   | tab-C-ts-002 ... + 1.00 (fin_process_payment) 288ms
+  [3/20] mistral-7b     15   naive_truncation   | tab-C-ts-003 ... + 1.00 (analytics_create_dashboard) 256ms
+  [4/20] mistral-7b     15   naive_truncation   | tab-C-ts-004 ... + 1.00 (auth_create_user) 229ms
+  [5/20] mistral-7b     15   naive_truncation   | tab-C-ts-005 ... + 1.00 (auth_update_permissions) 237ms
+  [6/20] mistral-7b     15   naive_truncation   | tab-C-ts-006 ... - 0.00 (wx_get_air_quality) 189ms
+  [7/20] mistral-7b     15   naive_truncation   | tab-C-ts-007 ... + 1.00 (analytics_run_report) 195ms
+  [8/20] mistral-7b     15   naive_truncation   | tab-C-ts-008 ... + 1.00 (comm_send_message) 242ms
+  [9/20] mistral-7b     15   naive_truncation   | tab-C-mt-001 ... + 1.00 (store_list_files) 320ms
+  [10/20] mistral-7b     15   naive_truncation   | tab-C-mt-002 ... + 1.00 (wx_get_current) 248ms
+  [11/20] mistral-7b     15   naive_truncation   | tab-C-mt-003 ... + 0.83 (store_list_files) 872ms
+  [12/20] mistral-7b     15   naive_truncation   | tab-C-mt-004 ... + 1.00 (wx_get_air_quality) 550ms
+  [13/20] mistral-7b     15   naive_truncation   | tab-C-pe-001 ... + 1.00 (analytics_track_event) 211ms
+  [14/20] mistral-7b     15   naive_truncation   | tab-C-pe-002 ... + 1.00 (auth_create_user) 232ms
+  [15/20] mistral-7b     15   naive_truncation   | tab-C-pe-003 ... + 0.87 (analytics_run_report) 294ms
+  [16/20] mistral-7b     15   naive_truncation   | tab-C-pe-004 ... + 0.60 (auth_list_users) 96ms
+  [17/20] mistral-7b     15   naive_truncation   | tab-C-nt-001 ... - 0.00 (analytics_run_report) 200ms
+  [18/20] mistral-7b     15   naive_truncation   | tab-C-nt-002 ... - 0.00 (analytics_track_event) 423ms
+  [19/20] mistral-7b     15   naive_truncation   | tab-C-nt-003 ... - 0.00 (analytics_track_event) 233ms
+  [20/20] mistral-7b     15   naive_truncation   | tab-C-nt-004 ... - 0.00 (analytics_run_report) 213ms
+
+  ====== Catalog Size: 20 tools ======
+  Text: 1863 | TSCG: 1435 (23.0%) | Naive: 233 (87.5%)
+
+  --- mistral-7b / 20 tools / natural_text ---
+  [1/20] mistral-7b     20   natural_text       | tab-C-ts-001 ... + 1.00 (wx_get_air_quality) 488ms
+  [2/20] mistral-7b     20   natural_text       | tab-C-ts-002 ... + 1.00 (auth_create_user) 245ms
+  [3/20] mistral-7b     20   natural_text       | tab-C-ts-003 ... + 1.00 (shop_track_order) 203ms
+  [4/20] mistral-7b     20   natural_text       | tab-C-ts-004 ... + 1.00 (analytics_create_dashboard) 276ms
+  [5/20] mistral-7b     20   natural_text       | tab-C-ts-005 ... + 1.00 (ops_get_metrics) 266ms
+  [6/20] mistral-7b     20   natural_text       | tab-C-ts-006 ... + 1.00 (media_resize_image) 247ms
+  [7/20] mistral-7b     20   natural_text       | tab-C-ts-007 ... + 1.00 (analytics_track_event) 214ms
+  [8/20] mistral-7b     20   natural_text       | tab-C-ts-008 ... + 1.00 (media_generate_thumbnail) 211ms
+  [9/20] mistral-7b     20   natural_text       | tab-C-mt-001 ... + 0.50 (comm_send_message) 468ms
+  [10/20] mistral-7b     20   natural_text       | tab-C-mt-002 ... + 1.00 (auth_update_permissions) 506ms
+  [11/20] mistral-7b     20   natural_text       | tab-C-mt-003 ... - 0.17 (store_list_files) 507ms
+  [12/20] mistral-7b     20   natural_text       | tab-C-mt-004 ... + 1.00 (wx_get_current) 832ms
+  [13/20] mistral-7b     20   natural_text       | tab-C-pe-001 ... + 1.00 (fin_process_payment) 311ms
+  [14/20] mistral-7b     20   natural_text       | tab-C-pe-002 ... + 1.00 (auth_update_permissions) 269ms
+  [15/20] mistral-7b     20   natural_text       | tab-C-pe-003 ... + 1.00 (cal_create_event) 462ms
+  [16/20] mistral-7b     20   natural_text       | tab-C-pe-004 ... + 1.00 (analytics_run_report) 353ms
+  [17/20] mistral-7b     20   natural_text       | tab-C-nt-001 ... - 0.00 (ops_get_metrics) 255ms
+  [18/20] mistral-7b     20   natural_text       | tab-C-nt-002 ... + 1.00 (none) 1475ms
+  [19/20] mistral-7b     20   natural_text       | tab-C-nt-003 ... - 0.00 (knowledge_base_search) 329ms
+  [20/20] mistral-7b     20   natural_text       | tab-C-nt-004 ... - 0.00 (analytics_run_report) 311ms
+
+  --- mistral-7b / 20 tools / tscg ---
+  [1/20] mistral-7b     20   tscg               | tab-C-ts-001 ... + 1.00 (wx_get_air_quality) 428ms
+  [2/20] mistral-7b     20   tscg               | tab-C-ts-002 ... + 1.00 (auth_create_user) 240ms
+  [3/20] mistral-7b     20   tscg               | tab-C-ts-003 ... + 1.00 (shop_track_order) 199ms
+  [4/20] mistral-7b     20   tscg               | tab-C-ts-004 ... + 1.00 (analytics_create_dashboard) 270ms
+  [5/20] mistral-7b     20   tscg               | tab-C-ts-005 ... + 0.76 (ops_get_metrics) 297ms
+  [6/20] mistral-7b     20   tscg               | tab-C-ts-006 ... + 1.00 (media_resize_image) 243ms
+  [7/20] mistral-7b     20   tscg               | tab-C-ts-007 ... + 1.00 (analytics_track_event) 208ms
+  [8/20] mistral-7b     20   tscg               | tab-C-ts-008 ... + 1.00 (media_generate_thumbnail) 208ms
+  [9/20] mistral-7b     20   tscg               | tab-C-mt-001 ... - 0.33 (comm_send_message) 803ms
+  [10/20] mistral-7b     20   tscg               | tab-C-mt-002 ... + 1.00 (auth_update_permissions) 500ms
+  [11/20] mistral-7b     20   tscg               | tab-C-mt-003 ... + 0.60 (store_list_files) 617ms
+  [12/20] mistral-7b     20   tscg               | tab-C-mt-004 ... + 1.00 (wx_get_current) 830ms
+  [13/20] mistral-7b     20   tscg               | tab-C-pe-001 ... + 1.00 (fin_process_payment) 305ms
+  [14/20] mistral-7b     20   tscg               | tab-C-pe-002 ... + 1.00 (auth_update_permissions) 263ms
+  [15/20] mistral-7b     20   tscg               | tab-C-pe-003 ... + 1.00 (cal_create_event) 447ms
+  [16/20] mistral-7b     20   tscg               | tab-C-pe-004 ... + 1.00 (analytics_run_report) 348ms
+  [17/20] mistral-7b     20   tscg               | tab-C-nt-001 ... - 0.00 (cal_constant) 186ms
+  [18/20] mistral-7b     20   tscg               | tab-C-nt-002 ... + 1.00 (none) 3910ms
+  [19/20] mistral-7b     20   tscg               | tab-C-nt-003 ... - 0.00 (analytics_track_event) 302ms
+  [20/20] mistral-7b     20   tscg               | tab-C-nt-004 ... - 0.00 (analytics_run_report) 330ms
+
+  --- mistral-7b / 20 tools / naive_truncation ---
+  [1/20] mistral-7b     20   naive_truncation   | tab-C-ts-001 ... + 1.00 (wx_get_air_quality) 228ms
+  [2/20] mistral-7b     20   naive_truncation   | tab-C-ts-002 ... + 1.00 (auth_create_user) 229ms
+  [3/20] mistral-7b     20   naive_truncation   | tab-C-ts-003 ... + 1.00 (shop_track_order) 188ms
+  [4/20] mistral-7b     20   naive_truncation   | tab-C-ts-004 ... + 1.00 (analytics_create_dashboard) 256ms
+  [5/20] mistral-7b     20   naive_truncation   | tab-C-ts-005 ... + 1.00 (ops_get_metrics) 249ms
+  [6/20] mistral-7b     20   naive_truncation   | tab-C-ts-006 ... + 1.00 (media_resize_image) 234ms
+  [7/20] mistral-7b     20   naive_truncation   | tab-C-ts-007 ... + 1.00 (analytics_track_event) 198ms
+  [8/20] mistral-7b     20   naive_truncation   | tab-C-ts-008 ... + 1.00 (media_generate_thumbnail) 196ms
+  [9/20] mistral-7b     20   naive_truncation   | tab-C-mt-001 ... - 0.20 (comm_send_message) 1713ms
+  [10/20] mistral-7b     20   naive_truncation   | tab-C-mt-002 ... + 1.00 (auth_update_permissions) 479ms
+  [11/20] mistral-7b     20   naive_truncation   | tab-C-mt-003 ... + 1.00 (store_list_files) 483ms
+  [12/20] mistral-7b     20   naive_truncation   | tab-C-mt-004 ... + 1.00 (wx_get_current) 797ms
+  [13/20] mistral-7b     20   naive_truncation   | tab-C-pe-001 ... + 1.00 (fin_process_payment) 293ms
+  [14/20] mistral-7b     20   naive_truncation   | tab-C-pe-002 ... + 1.00 (auth_update_permissions) 247ms
+  [15/20] mistral-7b     20   naive_truncation   | tab-C-pe-003 ... + 1.00 (cal_create_event) 424ms
+  [16/20] mistral-7b     20   naive_truncation   | tab-C-pe-004 ... + 0.80 (analytics_run_report) 211ms
+  [17/20] mistral-7b     20   naive_truncation   | tab-C-nt-001 ... - 0.00 (ops_get_metrics) 232ms
+  [18/20] mistral-7b     20   naive_truncation   | tab-C-nt-002 ... - 0.00 (analytics_track_event) 383ms
+  [19/20] mistral-7b     20   naive_truncation   | tab-C-nt-003 ... - 0.00 (analytics_track_event) 232ms
+  [20/20] mistral-7b     20   naive_truncation   | tab-C-nt-004 ... - 0.00 (analytics_run_report) 232ms
+
+  ====== Catalog Size: 30 tools ======
+  Text: 2783 | TSCG: 2147 (22.9%) | Naive: 350 (87.4%)
+
+  --- mistral-7b / 30 tools / natural_text ---
+  [1/20] mistral-7b     30   natural_text       | tab-C-ts-001 ... + 1.00 (auth_update_permissions) 684ms
+  [2/20] mistral-7b     30   natural_text       | tab-C-ts-002 ... + 0.60 (store_list_files) 192ms
+  [3/20] mistral-7b     30   natural_text       | tab-C-ts-003 ... + 1.00 (store_generate_signed_url) 208ms
+  [4/20] mistral-7b     30   natural_text       | tab-C-ts-004 ... + 1.00 (fin_process_payment) 316ms
+  [5/20] mistral-7b     30   natural_text       | tab-C-ts-005 ... + 1.00 (cal_update_event) 208ms
+  [6/20] mistral-7b     30   natural_text       | tab-C-ts-006 ... + 1.00 (fin_get_account_balance) 223ms
+  [7/20] mistral-7b     30   natural_text       | tab-C-ts-007 ... + 1.00 (wx_get_current) 196ms
+  [8/20] mistral-7b     30   natural_text       | tab-C-ts-008 ... + 1.00 (media_text_to_speech) 220ms
+  [9/20] mistral-7b     30   natural_text       | tab-C-mt-001 ... + 0.50 (auth_revoke_token) 366ms
+  [10/20] mistral-7b     30   natural_text       | tab-C-mt-002 ... + 1.00 (media_text_to_speech) 474ms
+  [11/20] mistral-7b     30   natural_text       | tab-C-mt-003 ... + 1.00 (shop_track_order) 569ms
+  [12/20] mistral-7b     30   natural_text       | tab-C-mt-004 ... + 1.00 (fin_get_stock_price) 877ms
+  [13/20] mistral-7b     30   natural_text       | tab-C-pe-001 ... + 1.00 (analytics_run_report) 207ms
+  [14/20] mistral-7b     30   natural_text       | tab-C-pe-002 ... + 1.00 (auth_create_user) 236ms
+  [15/20] mistral-7b     30   natural_text       | tab-C-pe-003 ... + 1.00 (media_transcode_video) 412ms
+  [16/20] mistral-7b     30   natural_text       | tab-C-pe-004 ... + 1.00 (cal_create_event) 412ms
+  [17/20] mistral-7b     30   natural_text       | tab-C-nt-001 ... - 0.00 (analytics_track_event) 320ms
+  [18/20] mistral-7b     30   natural_text       | tab-C-nt-002 ... - 0.00 (knowledge_query) 107ms
+  [19/20] mistral-7b     30   natural_text       | tab-C-nt-003 ... - 0.00 (auth_list_users) 111ms
+  [20/20] mistral-7b     30   natural_text       | tab-C-nt-004 ... - 0.00 (store_list_files) 196ms
+
+  --- mistral-7b / 30 tools / tscg ---
+  [1/20] mistral-7b     30   tscg               | tab-C-ts-001 ... + 1.00 (auth_update_permissions) 595ms
+  [2/20] mistral-7b     30   tscg               | tab-C-ts-002 ... + 0.60 (store_list_files) 245ms
+  [3/20] mistral-7b     30   tscg               | tab-C-ts-003 ... + 0.87 (store_generate_signed_url) 287ms
+  [4/20] mistral-7b     30   tscg               | tab-C-ts-004 ... + 1.00 (fin_process_payment) 311ms
+  [5/20] mistral-7b     30   tscg               | tab-C-ts-005 ... + 0.76 (cal_update_event) 371ms
+  [6/20] mistral-7b     30   tscg               | tab-C-ts-006 ... + 1.00 (fin_get_account_balance) 219ms
+  [7/20] mistral-7b     30   tscg               | tab-C-ts-007 ... + 1.00 (wx_get_current) 190ms
+  [8/20] mistral-7b     30   tscg               | tab-C-ts-008 ... + 1.00 (media_text_to_speech) 215ms
+  [9/20] mistral-7b     30   tscg               | tab-C-mt-001 ... - 0.33 (auth_revoke_token) 671ms
+  [10/20] mistral-7b     30   tscg               | tab-C-mt-002 ... + 1.00 (media_text_to_speech) 463ms
+  [11/20] mistral-7b     30   tscg               | tab-C-mt-003 ... + 0.67 (shop_track_order) 583ms
+  [12/20] mistral-7b     30   tscg               | tab-C-mt-004 ... - 0.00 (none) 1139ms
+  [13/20] mistral-7b     30   tscg               | tab-C-pe-001 ... + 0.87 (analytics_run_report) 246ms
+  [14/20] mistral-7b     30   tscg               | tab-C-pe-002 ... + 0.83 (auth_create_user) 379ms
+  [15/20] mistral-7b     30   tscg               | tab-C-pe-003 ... + 1.00 (media_transcode_video) 405ms
+  [16/20] mistral-7b     30   tscg               | tab-C-pe-004 ... + 1.00 (cal_create_event) 404ms
+  [17/20] mistral-7b     30   tscg               | tab-C-nt-001 ... - 0.00 (analytics_track_event) 315ms
+  [18/20] mistral-7b     30   tscg               | tab-C-nt-002 ... - 0.00 (analytics_run_report) 310ms
+  [19/20] mistral-7b     30   tscg               | tab-C-nt-003 ... - 0.00 (analytics_run_report) 315ms
+  [20/20] mistral-7b     30   tscg               | tab-C-nt-004 ... - 0.00 (store_list_files) 261ms
+
+  --- mistral-7b / 30 tools / naive_truncation ---
+  [1/20] mistral-7b     30   naive_truncation   | tab-C-ts-001 ... + 1.00 (auth_update_permissions) 296ms
+  [2/20] mistral-7b     30   naive_truncation   | tab-C-ts-002 ... + 1.00 (store_list_files) 97ms
+  [3/20] mistral-7b     30   naive_truncation   | tab-C-ts-003 ... + 1.00 (store_generate_signed_url) 189ms
+  [4/20] mistral-7b     30   naive_truncation   | tab-C-ts-004 ... + 1.00 (fin_process_payment) 291ms
+  [5/20] mistral-7b     30   naive_truncation   | tab-C-ts-005 ... + 1.00 (cal_update_event) 190ms
+  [6/20] mistral-7b     30   naive_truncation   | tab-C-ts-006 ... + 1.00 (fin_get_account_balance) 203ms
+  [7/20] mistral-7b     30   naive_truncation   | tab-C-ts-007 ... + 1.00 (wx_get_current) 177ms
+  [8/20] mistral-7b     30   naive_truncation   | tab-C-ts-008 ... + 1.00 (media_text_to_speech) 199ms
+  [9/20] mistral-7b     30   naive_truncation   | tab-C-mt-001 ... + 1.00 (auth_revoke_token) 349ms
+  [10/20] mistral-7b     30   naive_truncation   | tab-C-mt-002 ... + 1.00 (media_text_to_speech) 437ms
+  [11/20] mistral-7b     30   naive_truncation   | tab-C-mt-003 ... + 1.00 (shop_track_order) 520ms
+  [12/20] mistral-7b     30   naive_truncation   | tab-C-mt-004 ... + 1.00 (fin_get_stock_price) 811ms
+  [13/20] mistral-7b     30   naive_truncation   | tab-C-pe-001 ... + 1.00 (analytics_run_report) 188ms
+  [14/20] mistral-7b     30   naive_truncation   | tab-C-pe-002 ... + 1.00 (auth_create_user) 217ms
+  [15/20] mistral-7b     30   naive_truncation   | tab-C-pe-003 ... + 0.94 (media_transcode_video) 306ms
+  [16/20] mistral-7b     30   naive_truncation   | tab-C-pe-004 ... + 1.00 (cal_create_event) 381ms
+  [17/20] mistral-7b     30   naive_truncation   | tab-C-nt-001 ... - 0.00 (analytics_track_event) 234ms
+  [18/20] mistral-7b     30   naive_truncation   | tab-C-nt-002 ... - 0.00 (analytics_track_event) 420ms
+  [19/20] mistral-7b     30   naive_truncation   | tab-C-nt-003 ... - 0.00 (auth_list_users) 97ms
+  [20/20] mistral-7b     30   naive_truncation   | tab-C-nt-004 ... - 0.00 (ops_get_metrics) 204ms
+
+  ====== Catalog Size: 50 tools ======
+  Text: 4666 | TSCG: 3592 (23.0%) | Naive: 590 (87.4%)
+
+  --- mistral-7b / 50 tools / natural_text ---
+  [1/20] mistral-7b     50   natural_text       | tab-C-ts-001 ... + 1.00 (cal_find_free_time) 1227ms
+  [2/20] mistral-7b     50   natural_text       | tab-C-ts-002 ... + 1.00 (fin_convert_currency_v2) 341ms
+  [3/20] mistral-7b     50   natural_text       | tab-C-ts-003 ... + 1.00 (ops_get_metrics) 252ms
+  [4/20] mistral-7b     50   natural_text       | tab-C-ts-004 ... + 1.00 (store_upload_file) 266ms
+  [5/20] mistral-7b     50   natural_text       | tab-C-ts-005 ... + 1.00 (comm_send_message) 282ms
+  [6/20] mistral-7b     50   natural_text       | tab-C-ts-006 ... + 1.00 (media_resize_image) 268ms
+  [7/20] mistral-7b     50   natural_text       | tab-C-ts-007 ... + 1.00 (auth_verify_token) 207ms
+  [8/20] mistral-7b     50   natural_text       | tab-C-ts-008 ... - 0.00 (fin_create_invoice) 1928ms
+  [9/20] mistral-7b     50   natural_text       | tab-C-mt-001 ... + 1.00 (shop_search_products) 400ms
+  [10/20] mistral-7b     50   natural_text       | tab-C-mt-002 ... + 0.67 (analytics_track_event) 829ms
+  [11/20] mistral-7b     50   natural_text       | tab-C-mt-003 ... + 1.00 (auth_verify_token) 592ms
+  [12/20] mistral-7b     50   natural_text       | tab-C-mt-004 ... - 0.33 (ops_scale_service) 710ms
+  [13/20] mistral-7b     50   natural_text       | tab-C-pe-001 ... + 1.00 (media_transcode_video) 313ms
+  [14/20] mistral-7b     50   natural_text       | tab-C-pe-002 ... + 1.00 (analytics_create_dashboard) 265ms
+  [15/20] mistral-7b     50   natural_text       | tab-C-pe-003 ... + 1.00 (analytics_query_metrics) 494ms
+  [16/20] mistral-7b     50   natural_text       | tab-C-pe-004 ... + 1.00 (wx_get_forecast) 335ms
+  [17/20] mistral-7b     50   natural_text       | tab-C-nt-001 ... - 0.00 (wx_get_current) 293ms
+  [18/20] mistral-7b     50   natural_text       | tab-C-nt-002 ... - 0.00 (math_power) 238ms
+  [19/20] mistral-7b     50   natural_text       | tab-C-nt-003 ... - 0.00 (analytics_query_metrics) 1169ms
+  [20/20] mistral-7b     50   natural_text       | tab-C-nt-004 ... + 1.00 (none) 1624ms
+
+  --- mistral-7b / 50 tools / tscg ---
+  [1/20] mistral-7b     50   tscg               | tab-C-ts-001 ... + 1.00 (cal_find_free_time) 1053ms
+  [2/20] mistral-7b     50   tscg               | tab-C-ts-002 ... + 1.00 (fin_convert_currency_v2) 334ms
+  [3/20] mistral-7b     50   tscg               | tab-C-ts-003 ... - 0.00 (analytics_run_report) 430ms
+  [4/20] mistral-7b     50   tscg               | tab-C-ts-004 ... + 1.00 (store_upload_file) 260ms
+  [5/20] mistral-7b     50   tscg               | tab-C-ts-005 ... + 1.00 (comm_send_message) 273ms
+  [6/20] mistral-7b     50   tscg               | tab-C-ts-006 ... + 1.00 (media_resize_image) 259ms
+  [7/20] mistral-7b     50   tscg               | tab-C-ts-007 ... + 1.00 (auth_verify_token) 201ms
+  [8/20] mistral-7b     50   tscg               | tab-C-ts-008 ... + 1.00 (fin_create_invoice) 300ms
+  [9/20] mistral-7b     50   tscg               | tab-C-mt-001 ... + 1.00 (shop_search_products) 390ms
+  [10/20] mistral-7b     50   tscg               | tab-C-mt-002 ... - 0.40 (fin_create_invoice) 1738ms
+  [11/20] mistral-7b     50   tscg               | tab-C-mt-003 ... + 1.00 (auth_verify_token) 581ms
+  [12/20] mistral-7b     50   tscg               | tab-C-mt-004 ... - 0.33 (ops_scale_service) 748ms
+  [13/20] mistral-7b     50   tscg               | tab-C-pe-001 ... - 0.00 (store_list_files) 488ms
+  [14/20] mistral-7b     50   tscg               | tab-C-pe-002 ... + 1.00 (analytics_create_dashboard) 257ms
+  [15/20] mistral-7b     50   tscg               | tab-C-pe-003 ... + 1.00 (analytics_query_metrics) 483ms
+  [16/20] mistral-7b     50   tscg               | tab-C-pe-004 ... + 1.00 (wx_get_forecast) 327ms
+  [17/20] mistral-7b     50   tscg               | tab-C-nt-001 ... - 0.00 (analytics_query_metrics) 753ms
+  [18/20] mistral-7b     50   tscg               | tab-C-nt-002 ... - 0.00 (math_calculate) 199ms
+  [19/20] mistral-7b     50   tscg               | tab-C-nt-003 ... - 0.00 (analytics_query_metrics) 1383ms
+  [20/20] mistral-7b     50   tscg               | tab-C-nt-004 ... - 0.00 (analytics_run_report) 690ms
+
+  --- mistral-7b / 50 tools / naive_truncation ---
+  [1/20] mistral-7b     50   naive_truncation   | tab-C-ts-001 ... + 1.00 (cal_find_free_time) 531ms
+  [2/20] mistral-7b     50   naive_truncation   | tab-C-ts-002 ... + 1.00 (fin_convert_currency_v2) 298ms
+  [3/20] mistral-7b     50   naive_truncation   | tab-C-ts-003 ... + 1.00 (ops_get_metrics) 218ms
+  [4/20] mistral-7b     50   naive_truncation   | tab-C-ts-004 ... + 1.00 (store_upload_file) 234ms
+  [5/20] mistral-7b     50   naive_truncation   | tab-C-ts-005 ... + 1.00 (comm_send_message) 247ms
+  [6/20] mistral-7b     50   naive_truncation   | tab-C-ts-006 ... + 1.00 (media_resize_image) 234ms
+  [7/20] mistral-7b     50   naive_truncation   | tab-C-ts-007 ... + 1.00 (auth_verify_token) 180ms
+  [8/20] mistral-7b     50   naive_truncation   | tab-C-ts-008 ... + 1.00 (fin_create_invoice) 267ms
+  [9/20] mistral-7b     50   naive_truncation   | tab-C-mt-001 ... + 1.00 (shop_search_products) 351ms
+  [10/20] mistral-7b     50   naive_truncation   | tab-C-mt-002 ... + 1.00 (fin_create_invoice) 475ms
+  [11/20] mistral-7b     50   naive_truncation   | tab-C-mt-003 ... + 1.00 (auth_verify_token) 529ms
+  [12/20] mistral-7b     50   naive_truncation   | tab-C-mt-004 ... + 0.67 (ops_scale_service) 657ms
+  [13/20] mistral-7b     50   naive_truncation   | tab-C-pe-001 ... + 1.00 (media_transcode_video) 271ms
+  [14/20] mistral-7b     50   naive_truncation   | tab-C-pe-002 ... + 1.00 (analytics_create_dashboard) 230ms
+  [15/20] mistral-7b     50   naive_truncation   | tab-C-pe-003 ... + 1.00 (analytics_query_metrics) 440ms
+  [16/20] mistral-7b     50   naive_truncation   | tab-C-pe-004 ... + 1.00 (wx_get_forecast) 286ms
+  [17/20] mistral-7b     50   naive_truncation   | tab-C-nt-001 ... - 0.00 (ops_get_metrics) 230ms
+  [18/20] mistral-7b     50   naive_truncation   | tab-C-nt-002 ... - 0.00 (math_calculate) 177ms
+  [19/20] mistral-7b     50   naive_truncation   | tab-C-nt-003 ... - 0.00 (analytics_query_metrics) 715ms
+  [20/20] mistral-7b     50   naive_truncation   | tab-C-nt-004 ... - 0.00 (store_list_files) 385ms
+
+================================================================================
+  E4 RESULTS — TEXT-BASELINE REGRESSION
+================================================================================
+
+  Model          | Tools | Natural-Text | TSCG     | Naive    | Text>TSCG?
+  ---------------|-------|-------------|----------|----------|----------
+  mistral-7b     |     3 |  74.4%      |  65.7%   |  75.0%   | TEXT
+  mistral-7b     |     5 |  80.0%      |  77.3%   |  78.0%   | TEXT
+  mistral-7b     |    10 |  79.5%      |  72.5%   |  73.0%   | TEXT
+  mistral-7b     |    15 |  68.0%      |  66.7%   |  71.5%   | TEXT
+  mistral-7b     |    20 |  78.3%      |  78.5%   |  75.0%   | TSCG
+  mistral-7b     |    30 |  75.5%      |  64.6%   |  79.7%   | TEXT
+  mistral-7b     |    50 |  75.0%      |  63.7%   |  78.3%   | TEXT
+
+  Results saved to: D:\0_TSCG\benchmark\results\e4-text-baseline-all\e4-text-baseline-results.json
+  Duration: 207.7s | Total: 420 results
+================================================================================
+

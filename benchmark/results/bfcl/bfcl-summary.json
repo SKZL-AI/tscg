@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-03-03T12:13:14.224Z",
+  "collection": {
+    "total_tools": 15,
+    "categories": {
+      "simple_function": 5,
+      "multiple_function": 5,
+      "relevance_detection": 5
+    }
+  },
+  "compression": {
+    "natural_tokens": 3653,
+    "tscg_tokens": 1252,
+    "tscg_sad_tokens": 1271,
+    "tscg_savings_pct": 65.7,
+    "tscg_sad_savings_pct": 65.2,
+    "applied_principles": {
+      "tscg": [
+        "SDM",
+        "CAS",
+        "DRO",
+        "TAS"
+      ],
+      "tscg_sad": [
+        "SDM",
+        "CAS",
+        "DRO",
+        "TAS",
+        "SAD"
+      ]
+    },
+    "compression_time_ms": {
+      "tscg": 1.9662999999999897,
+      "tscg_sad": 0.4864000000000033
+    }
+  },
+  "tasks": {
+    "total": 20,
+    "by_category": {
+      "single_tool": 8,
+      "multi_tool": 4,
+      "parameter_extraction": 4,
+      "no_tool": 4
+    }
+  },
+  "arr_analysis": [
+    {
+      "model": "claude-sonnet-4",
+      "condition": "tscg",
+      "accuracy_natural": 0.8566666666666667,
+      "accuracy_condition": 0.9316666666666666,
+      "arr": 1.0875486381322956,
+      "arr_pct": 108.75486381322956,
+      "meets_target": true,
+      "token_savings_pct": 46.80217116550558,
+      "cost_savings_pct": 43.85579833050651
+    },
+    {
+      "model": "claude-sonnet-4",
+      "condition": "tscg_sad",
+      "accuracy_natural": 0.8566666666666667,
+      "accuracy_condition": 0.89,
+      "arr": 1.038910505836576,
+      "arr_pct": 103.8910505836576,
+      "meets_target": true,
+      "token_savings_pct": 45.95959287593951,
+      "cost_savings_pct": 43.226293809951386
+    }
+  ],
+  "target_metrics": {
+    "arr_target": 99.5,
+    "token_savings_target": 71.7,
+    "arr_met": true,
+    "savings_met": false
+  }
+}

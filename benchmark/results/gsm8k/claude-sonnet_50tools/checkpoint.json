@@ -1,0 +1,2402 @@
+[
+  {
+    "result_id": "733bba56-2102-4735-8f8b-e32896400d49",
+    "task_id": "tab-gsm-50t-gsm8k_001",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how much Janet makes daily at the farmers' market by calculating how many eggs she has left to sell after eating and baking.\n\nGiven information:\n- Ducks lay 16 eggs per day\n- Janet eats 3 eggs for breakfast\n- Janet uses 4 eggs for baking muffins\n- She sells remaining eggs for $2 each\n\nStep 1: Calculate eggs used daily.\nEggs eaten for breakfast: 3\nEggs used for baking: 4\nTotal eggs used: 3 + 4 = 7\n\nStep 2: Calculate eggs remaining for sale.\nTotal eggs laid: 16\nEggs used: 7\nEggs remaining: 16 - 7 = 9\n\nStep 3: Calculate daily earnings.\nEggs sold: 9\nPrice per egg: $2\nDaily earnings: 9 × $2 = $18\n\n18",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 95,
+      "output_tokens": 208,
+      "total_latency_ms": 4427,
+      "cost_usd": 0.003405
+    },
+    "timestamp": "2026-03-03T12:21:03.631Z"
+  },
+  {
+    "result_id": "8f68b70e-6aa9-4bbc-a983-de6e203d6977",
+    "task_id": "tab-gsm-50t-gsm8k_002",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of bolts needed for a robe.\n\nGiven information:\n- Blue fiber: 2 bolts\n- White fiber: half as much as blue fiber\n\nFirst, I'll calculate the white fiber needed:\nWhite fiber = 1/2 × 2 bolts = 1 bolt\n\nNow I'll find the total:\nTotal bolts = Blue fiber + White fiber\nTotal bolts = 2 bolts + 1 bolt = 3 bolts\n\n3",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 57,
+      "output_tokens": 116,
+      "total_latency_ms": 2351,
+      "cost_usd": 0.001911
+    },
+    "timestamp": "2026-03-03T12:21:06.484Z"
+  },
+  {
+    "result_id": "52e6201d-00d6-4d3c-b5ce-321b7048bd9c",
+    "task_id": "tab-gsm-50t-gsm8k_003",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find Josh's profit from flipping the house.\n\nFirst, let me calculate his total investment:\n- Purchase price: $80,000\n- Repairs: $50,000\n- Total investment: $80,000 + $50,000 = $130,000\n\nNext, I need to find the house's value after repairs:\n- The repairs increased the house value by 150%\n- This means the house is now worth 150% MORE than its original value\n- Original value: $80,000\n- Increase: 150% of $80,000 = 1.5 × $80,000 = $120,000\n- New value: $80,000 + $120,000 = $200,000\n\nFinally, I can calculate the profit:\n- Selling price: $200,000\n- Total investment: $130,000\n- Profit: $200,000 - $130,000 = $70,000\n\n70000",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 78,
+      "output_tokens": 221,
+      "total_latency_ms": 3853,
+      "cost_usd": 0.0035489999999999996
+    },
+    "timestamp": "2026-03-03T12:21:10.839Z"
+  },
+  {
+    "result_id": "78f7765e-2461-4406-b473-1acd2f990582",
+    "task_id": "tab-gsm-50t-gsm8k_004",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total pages James writes in a year.\n\nGiven information:\n- James writes a 3-page letter\n- He writes to 2 different friends\n- He does this twice a week\n- I need to find the total pages per year\n\nStep 1: Calculate pages per letter session.\n- 3 pages per letter × 2 friends = 6 pages per session\n\nStep 2: Calculate pages per week.\n- 6 pages per session × 2 sessions per week = 12 pages per week\n\nStep 3: Calculate pages per year.\n- 12 pages per week × 52 weeks per year = 624 pages per year\n\n624",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 55,
+      "output_tokens": 156,
+      "total_latency_ms": 3225,
+      "cost_usd": 0.0025050000000000003
+    },
+    "timestamp": "2026-03-03T12:21:14.566Z"
+  },
+  {
+    "result_id": "cd631864-415f-4877-9c99-a37630da002a",
+    "task_id": "tab-gsm-50t-gsm8k_005",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of chickens Wendi has.\n\nFirst, let me find the total amount of feed given per day:\n- Morning: 15 cups\n- Afternoon: 25 cups  \n- Evening: 65 cups\n- Total daily feed = 15 + 25 + 65 = 105 cups\n\nSince each chicken gets 3 cups of feed per day, I can find the number of chickens by dividing the total daily feed by the feed per chicken:\n\nNumber of chickens = Total daily feed ÷ Feed per chicken\nNumber of chickens = 105 ÷ 3 = 35\n\n35",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 138,
+      "output_tokens": 153,
+      "total_latency_ms": 3222,
+      "cost_usd": 0.0027089999999999996
+    },
+    "timestamp": "2026-03-03T12:21:18.301Z"
+  },
+  {
+    "result_id": "f4044c88-152a-4606-9d84-bfc17a9ceef9",
+    "task_id": "tab-gsm-50t-gsm8k_006",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total cost of Kylar's purchases.\n\nFirst, let me find the cost of the water:\n- 4 gallons of water at $2 per gallon\n- 4 × $2 = $8\n\nNext, let me find the cost of the crackers:\n- 5 boxes of crackers at $3 per box\n- 5 × $3 = $15\n\nNow I'll add both costs together:\n- Total cost = $8 + $15 = $23\n\n23",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 96,
+      "output_tokens": 123,
+      "total_latency_ms": 2647,
+      "cost_usd": 0.002133
+    },
+    "timestamp": "2026-03-03T12:21:21.455Z"
+  },
+  {
+    "result_id": "bce47f01-3fd5-471b-8369-7a2704fcfaa8",
+    "task_id": "tab-gsm-50t-gsm8k_007",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of sheep across all three cities.\n\nGiven information:\n- Seattle has 20 sheep\n- Charleston has 4 times as many sheep as Seattle\n- Toulouse has twice as many sheep as Charleston\n\nLet me work through this step by step:\n\nStep 1: Find how many sheep Charleston has.\nCharleston = 4 × Seattle\nCharleston = 4 × 20 = 80 sheep\n\nStep 2: Find how many sheep Toulouse has.\nToulouse = 2 × Charleston\nToulouse = 2 × 80 = 160 sheep\n\nStep 3: Find the total number of sheep.\nTotal = Seattle + Charleston + Toulouse\nTotal = 20 + 80 + 160 = 260 sheep\n\n260",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 178,
+      "total_latency_ms": 2808,
+      "cost_usd": 0.0028829999999999997
+    },
+    "timestamp": "2026-03-03T12:21:24.767Z"
+  },
+  {
+    "result_id": "b006c3c0-437f-4c1e-be2f-5413d522351d",
+    "task_id": "tab-gsm-50t-gsm8k_008",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total time it takes for Carla to download the 200 GB file, including the interruption.\n\nLet me break this down step by step:\n\nFirst attempt:\n- File size: 200 GB\n- Download speed: 2 GB/minute\n- She downloads 40% of the file before the restart\n- 40% of 200 GB = 0.4 × 200 = 80 GB\n\nTime for first attempt (partial):\n- Time to download 80 GB = 80 GB ÷ 2 GB/minute = 40 minutes\n\nRestart time:\n- Windows restart takes 20 minutes\n\nSecond attempt (complete download):\n- She has to restart from the beginning\n- Full file size: 200 GB\n- Time to download 200 GB = 200 GB ÷ 2 GB/minute = 100 minutes\n\nTotal time:\n- First partial download: 40 minutes\n- Restart time: 20 minutes  \n- Complete download: 100 minutes\n- Total: 40 + 20 + 100 = 160 minutes\n\n160",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 103,
+      "output_tokens": 264,
+      "total_latency_ms": 5245,
+      "cost_usd": 0.004269
+    },
+    "timestamp": "2026-03-03T12:21:30.516Z"
+  },
+  {
+    "result_id": "06ec7c94-5e66-4748-9db8-dbb4d6b81154",
+    "task_id": "tab-gsm-50t-gsm8k_009",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to track John's position relative to his starting point (home).\n\nInitial journey away from home:\n- Time: 3 hours\n- Speed: 60 mph\n- Distance from home: 3 × 60 = 180 miles\n\nNow he turns around to go back home. He has 4 hours to get back.\n\nReturn journey:\n- First 2 hours: standstill traffic (0 mph)\n- Distance covered: 0 miles\n- Remaining distance from home: 180 miles\n\n- Next 2 hours: driving at 30 mph\n- Distance covered: 2 × 30 = 60 miles\n- Distance remaining from home: 180 - 60 = 120 miles\n\n120",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 101,
+      "output_tokens": 173,
+      "total_latency_ms": 4059,
+      "cost_usd": 0.0028979999999999995
+    },
+    "timestamp": "2026-03-03T12:21:35.079Z"
+  },
+  {
+    "result_id": "de349b74-47f6-4402-88ad-3a4166e938d7",
+    "task_id": "tab-gsm-50t-gsm8k_010",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the cost per slice of bread.\n\nFirst, let me find the total number of slices:\n- 5 loaves × 15 slices per loaf = 75 slices\n\nNext, let me find the total cost:\n- 5 loaves × $2 per loaf = $10\n\nNow I can find the cost per slice:\n- $10 ÷ 75 slices = $0.1333... per slice\n\nConverting to cents:\n- $0.1333... × 100 = 13.333... cents\n\nSince we typically round money to the nearest cent:\n- 13.33 cents per slice\n\nBut let me check if this gives an exact answer:\n$10 = 1000 cents\n1000 cents ÷ 75 slices = 13.333... cents\n\nThis gives us 13⅓ cents, or approximately 13.33 cents.\n\n13.33",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 75,
+      "output_tokens": 222,
+      "total_latency_ms": 4204,
+      "cost_usd": 0.003555
+    },
+    "timestamp": "2026-03-03T12:21:39.788Z"
+  },
+  {
+    "result_id": "dacc9391-a05e-4a3c-86b7-31e40e4488dc",
+    "task_id": "tab-gsm-50t-gsm8k_011",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the profit the merchant made by choosing jewelry over electronic gadgets.\n\nFirst, let me calculate what happened with the jewelry:\n- Initial value: $5,000\n- Gain: 2.5%\n- Final value: $5,000 × (1 + 0.025) = $5,000 × 1.025 = $5,125\n- Profit from jewelry: $5,125 - $5,000 = $125\n\nNext, let me calculate what would have happened with electronic gadgets:\n- Initial value: $8,000\n- Loss: 1.2%\n- Final value: $8,000 × (1 - 0.012) = $8,000 × 0.988 = $7,904\n- Loss from electronic gadgets: $7,904 - $8,000 = -$96\n\nNow I need to compare the outcomes:\n- By choosing jewelry, the merchant gained $125\n- If he had chosen electronic gadgets, he would have lost $96\n\nThe total benefit from following the advisor's advice is:\n$125 - (-$96) = $125 + $96 = $221\n\n221",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 124,
+      "output_tokens": 272,
+      "total_latency_ms": 4198,
+      "cost_usd": 0.004452
+    },
+    "timestamp": "2026-03-03T12:21:44.494Z"
+  },
+  {
+    "result_id": "46f0d6f2-3e33-45d7-9ae1-d471bc335ebe",
+    "task_id": "tab-gsm-50t-gsm8k_012",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the distance from San Rafael to the destination.\n\nLet me define variables:\n- Let d = distance from San Rafael to the destination\n- Slower train speed = 10 mph\n- Faster train speed = 40 mph\n\nWhen the faster train reaches the destination, it has traveled distance d.\n\nTime taken for faster train to reach destination = d/40 hours\n\nIn this same time, the slower train travels at 10 mph.\nDistance traveled by slower train = 10 × (d/40) = d/4 miles\n\nSince the slower train is 100 miles away from the destination when the faster train arrives:\nDistance traveled by slower train + 100 = Total distance to destination\n\nSo: d/4 + 100 = d\n\nSolving for d:\nd/4 + 100 = d\n100 = d - d/4\n100 = 4d/4 - d/4\n100 = 3d/4\n400 = 3d\nd = 400/3 = 133⅓ miles\n\nLet me verify: \n- Faster train takes 133⅓/40 = 10/3 hours to reach destination\n- In 10/3 hours, slower train travels 10 × 10/3 = 100/3 = 33⅓ miles\n- Distance remaining for slower train = 133⅓ - 33⅓ = 100 miles ✓\n\n133.33",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 100,
+      "output_tokens": 343,
+      "total_latency_ms": 5347,
+      "cost_usd": 0.005445
+    },
+    "timestamp": "2026-03-03T12:21:50.346Z"
+  },
+  {
+    "result_id": "83e29a73-f205-4d7e-99cf-19cb318968a2",
+    "task_id": "tab-gsm-50t-gsm8k_013",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Jill's total monthly earnings from both jobs.\n\nTeaching earnings:\n- Rate: $20 per hour\n- Hours: 50 hours per month\n- Teaching earnings = $20 × 50 = $1,000\n\nPersonal trainer earnings:\n- Rate: $30 per hour\n- Hours: 20 hours per month\n- Personal trainer earnings = $30 × 20 = $600\n\nTotal monthly earnings:\n$1,000 + $600 = $1,600\n\n1600",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 82,
+      "output_tokens": 121,
+      "total_latency_ms": 2334,
+      "cost_usd": 0.002061
+    },
+    "timestamp": "2026-03-03T12:21:53.185Z"
+  },
+  {
+    "result_id": "b52282c2-5e8b-4bfa-a02c-76a7b09ee99e",
+    "task_id": "tab-gsm-50t-gsm8k_014",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many dozens of eggs Claire needs for 4 weeks of omelets.\n\nFirst, let me calculate how many eggs she uses per day:\n- 3 eggs per omelet\n- 1 omelet per day\n- So 3 eggs per day\n\nNext, let me calculate how many days are in 4 weeks:\n- 4 weeks × 7 days per week = 28 days\n\nNow I can find the total number of eggs needed:\n- 3 eggs per day × 28 days = 84 eggs\n\nFinally, I need to convert eggs to dozens:\n- 1 dozen = 12 eggs\n- 84 eggs ÷ 12 eggs per dozen = 7 dozens\n\n7",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 63,
+      "output_tokens": 174,
+      "total_latency_ms": 2834,
+      "cost_usd": 0.002799
+    },
+    "timestamp": "2026-03-03T12:21:56.524Z"
+  },
+  {
+    "result_id": "45e194d9-b527-4e55-a455-89570ee2e12b",
+    "task_id": "tab-gsm-50t-gsm8k_015",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total time Marissa took to complete the 12-mile trail.\n\nLet me break this down by sections:\n\nFirst 4 miles: 1 hour\n\nNext 4 miles: 2 hours\n\nLast 4 miles: Half the time she spent on the first 4 miles\n- Time for first 4 miles = 1 hour\n- Time for last 4 miles = 1/2 × 1 hour = 0.5 hours\n\nTotal time = 1 hour + 2 hours + 0.5 hours = 3.5 hours\n\nConverting to minutes:\n3.5 hours × 60 minutes/hour = 210 minutes\n\n210",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 101,
+      "output_tokens": 166,
+      "total_latency_ms": 3215,
+      "cost_usd": 0.002793
+    },
+    "timestamp": "2026-03-03T12:22:00.240Z"
+  },
+  {
+    "result_id": "ab997120-9ad2-468e-a722-205b69321e0e",
+    "task_id": "tab-gsm-50t-gsm8k_016",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate how much money Tobias has saved and then find the difference between what he has and what he needs.\n\nLet me calculate his total savings:\n\nMonthly allowance for 3 months:\n$5 × 3 = $15\n\nMoney from mowing lawns:\n4 times × $15 each = $60\n\nMoney from selling lemonade:\n18 cups × $0.50 each = $9\n\nTotal money saved:\n$15 + $60 + $9 = $84\n\nAmount needed for shoes: $95\nAmount he has: $84\nAmount still needed: $95 - $84 = $11\n\n11",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 116,
+      "output_tokens": 152,
+      "total_latency_ms": 3240,
+      "cost_usd": 0.002628
+    },
+    "timestamp": "2026-03-03T12:22:03.985Z"
+  },
+  {
+    "result_id": "364e2c22-fdd7-4a94-85dc-480317c11d1b",
+    "task_id": "tab-gsm-50t-gsm8k_017",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of trees Randy has on his farm.\n\nFirst, let me find the number of mango trees:\n- Randy has 60 mango trees\n\nNext, let me find the number of coconut trees:\n- He has 5 less than half as many coconut trees as mango trees\n- Half of the mango trees = 60 ÷ 2 = 30\n- 5 less than half = 30 - 5 = 25 coconut trees\n\nNow I can find the total number of trees:\n- Total trees = mango trees + coconut trees\n- Total trees = 60 + 25 = 85\n\n85",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 158,
+      "total_latency_ms": 2817,
+      "cost_usd": 0.0025830000000000002
+    },
+    "timestamp": "2026-03-03T12:22:07.306Z"
+  },
+  {
+    "result_id": "e51dbdc9-bd1d-42ba-88fb-2b7ec09fbb6d",
+    "task_id": "tab-gsm-50t-gsm8k_018",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how long it takes Joy to read 120 pages.\n\nFirst, let me find Joy's reading rate:\n- Joy reads 8 pages in 20 minutes\n- Her rate is 8 pages ÷ 20 minutes = 0.4 pages per minute\n\nNow I can find how long it takes to read 120 pages:\n- Time needed = 120 pages ÷ 0.4 pages per minute = 300 minutes\n\nFinally, I'll convert minutes to hours:\n- 300 minutes ÷ 60 minutes per hour = 5 hours\n\n5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 58,
+      "output_tokens": 144,
+      "total_latency_ms": 2666,
+      "cost_usd": 0.0023339999999999997
+    },
+    "timestamp": "2026-03-03T12:22:10.474Z"
+  },
+  {
+    "result_id": "de911f26-896b-45f1-a05c-db071a1850ab",
+    "task_id": "tab-gsm-50t-gsm8k_019",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many trees the grove workers planted today.\n\nGiven information:\n- There were 15 trees in the grove initially\n- After planting, there will be 21 trees total\n\nTo find how many trees were planted:\nTrees planted = Final number of trees - Initial number of trees\nTrees planted = 21 - 15\nTrees planted = 6\n\n6",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 86,
+      "total_latency_ms": 2229,
+      "cost_usd": 0.001503
+    },
+    "timestamp": "2026-03-03T12:22:13.210Z"
+  },
+  {
+    "result_id": "2b274728-4d78-4f77-bb54-675c97283c31",
+    "task_id": "tab-gsm-50t-gsm8k_020",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of flowers in Mark's garden.\n\nGiven information:\n- Yellow flowers: 10\n- Red flowers: 80% more than yellow\n- Blue flowers: 25% of red flowers\n\nStep 1: Calculate the number of red flowers.\nRed flowers = Yellow flowers + 80% of yellow flowers\nRed flowers = 10 + (0.80 × 10)\nRed flowers = 10 + 8 = 18\n\nStep 2: Calculate the number of blue flowers.\nBlue flowers = 25% of red flowers\nBlue flowers = 0.25 × 18 = 4.5\n\nSince we can't have half a flower, I'll assume this should be 4 or 5 flowers. Let me recalculate to make sure I understood correctly.\n\nActually, let me verify: Blue flowers = 25% of red flowers = 0.25 × 18 = 4.5\n\nThis seems unusual for a word problem. Let me re-read... The problem states \"Blue flowers make up only 25% of red flowers\" which would indeed be 4.5. Since this is likely meant to be a whole number, I'll round to 5 blue flowers (or the problem may have intended different numbers).\n\nHowever, working with the exact calculation:\nBlue flowers = 4.5\n\nStep 3: Calculate the total number of flowers.\nTotal flowers = Yellow + Red + Blue\nTotal flowers = 10 + 18 + 4.5 = 32.5\n\nSince we typically deal with whole flowers, this suggests there might be an error in the problem setup. But following the math exactly as stated:\n\n32.5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 84,
+      "output_tokens": 378,
+      "total_latency_ms": 7267,
+      "cost_usd": 0.005921999999999999
+    },
+    "timestamp": "2026-03-03T12:22:20.982Z"
+  },
+  {
+    "result_id": "89d8cfcf-d993-4d5a-af2e-7624803c07fb",
+    "task_id": "tab-gsm-50t-gsm8k_021",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total number of pizza slices Albert eats.\n\nFirst, let me find the number of slices from the large pizzas:\n- 2 large pizzas × 16 slices per large pizza = 32 slices\n\nNext, let me find the number of slices from the small pizzas:\n- 2 small pizzas × 8 slices per small pizza = 16 slices\n\nNow I'll add the total slices together:\n- 32 slices + 16 slices = 48 slices\n\n48",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 94,
+      "output_tokens": 130,
+      "total_latency_ms": 2680,
+      "cost_usd": 0.002232
+    },
+    "timestamp": "2026-03-03T12:22:24.162Z"
+  },
+  {
+    "result_id": "7a6e6ba7-48a8-4a0f-ab40-6ff859304a65",
+    "task_id": "tab-gsm-50t-gsm8k_022",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total weight of the care package by adding up all the components.\n\nStarting weight of the box: 2 pounds\n\nWeight of the cans:\n- 8 cans, each weighing 0.5 pounds\n- 8 × 0.5 = 4 pounds\n\nWeight of the bags of chips:\n- 2 bags, each weighing 1/4 pound (0.25 pounds)\n- 2 × 0.25 = 0.5 pounds\n\nTotal weight = Box weight + Cans weight + Chips weight\nTotal weight = 2 + 4 + 0.5 = 6.5 pounds\n\n6.5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 112,
+      "output_tokens": 164,
+      "total_latency_ms": 3131,
+      "cost_usd": 0.002796
+    },
+    "timestamp": "2026-03-03T12:22:27.799Z"
+  },
+  {
+    "result_id": "6a41ca82-fc97-448b-a41a-358d65fe53e8",
+    "task_id": "tab-gsm-50t-gsm8k_023",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many of Alexis' friends are girls who like to play soccer.\n\nFirst, let me find how many friends are boys and how many are girls.\n- Total friends: 100\n- Boys: 25% of 100 = 0.25 × 100 = 25 boys\n- Girls: 100 - 25 = 75 girls\n\nNext, I need to find how many girls like basketball and how many like soccer.\n- Girls who like basketball: 55% of 75 = 0.55 × 75 = 41.25\n\nSince we can't have a fraction of a person, I'll assume this rounds to 41 girls who like basketball.\n\n- Girls who like soccer: 75 - 41 = 34 girls\n\nWait, let me recalculate more carefully:\n- Girls who like basketball: 55% of 75 = 0.55 × 75 = 41.25\n\nSince the problem states \"the rest like to play soccer,\" I should work with the exact percentage:\n- Girls who like soccer: 45% of 75 = 0.45 × 75 = 33.75\n\nThis suggests there might be a rounding issue. Let me work with the given percentages exactly:\n- 55% like basketball, so 45% like soccer\n- Girls who like soccer: 45% of 75 = 0.45 × 75 = 33.75\n\nSince we need a whole number of people, and the problem asks for an exact answer, I'll round to 34.\n\nActually, let me recalculate: 0.55 × 75 = 41.25, which would typically round to 41.\nSo girls who like soccer = 75 - 41 = 34.\n\n34",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 87,
+      "output_tokens": 415,
+      "total_latency_ms": 6928,
+      "cost_usd": 0.006486
+    },
+    "timestamp": "2026-03-03T12:22:35.228Z"
+  },
+  {
+    "result_id": "728a07ff-4ae5-43a2-b9dc-7d7cb44addef",
+    "task_id": "tab-gsm-50t-gsm8k_024",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total pounds of feed the farmer buys for his 4 horses.\n\nLet me break down each type of feed:\n\n**Sugar cubes:**\n- 2 boxes of 1 pound each = 2 pounds\n\n**Carrots:**\n- 4 horses × 4 pounds per horse = 16 pounds\n\n**Oats:**\n- 42 pounds (given)\n\n**Hay:**\n- 40% more than oats\n- 40% of 42 = 0.40 × 42 = 16.8 pounds\n- Total hay = 42 + 16.8 = 58.8 pounds\n\n**Total feed:**\nSugar cubes + Carrots + Oats + Hay\n= 2 + 16 + 42 + 58.8\n= 118.8 pounds\n\n118.8",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 144,
+      "output_tokens": 206,
+      "total_latency_ms": 3263,
+      "cost_usd": 0.003522
+    },
+    "timestamp": "2026-03-03T12:22:38.994Z"
+  },
+  {
+    "result_id": "0ac6e2f8-52bb-4b34-94cf-44cd5338cd5a",
+    "task_id": "tab-gsm-50t-gsm8k_025",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the cost of each type of jar and then calculate the total cost.\n\nGiven information:\n- A gallon jar costs $2 more than a half-gallon jar\n- A gallon jar costs $5\n- Cecelia bought 10 gallon jars and 16 half-gallon jars\n\nFirst, let me find the cost of a half-gallon jar:\n- Gallon jar = Half-gallon jar + $2\n- $5 = Half-gallon jar + $2\n- Half-gallon jar = $5 - $2 = $3\n\nNow I can calculate the total cost:\n- Cost of 10 gallon jars = 10 × $5 = $50\n- Cost of 16 half-gallon jars = 16 × $3 = $48\n- Total cost = $50 + $48 = $98\n\n98",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 93,
+      "output_tokens": 210,
+      "total_latency_ms": 2983,
+      "cost_usd": 0.0034289999999999998
+    },
+    "timestamp": "2026-03-03T12:22:42.479Z"
+  },
+  {
+    "result_id": "81bea00c-af6e-4356-bb3e-646d682580d3",
+    "task_id": "tab-gsm-50t-gsm8k_026",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Sam's total cost, total revenue, and then find his profit.\n\n**Step 1: Calculate total cost**\n- Sam bought 12 boxes at $10 each\n- Total cost = 12 × $10 = $120\n\n**Step 2: Calculate total highlighters**\n- Each box contains 30 highlighters\n- Total highlighters = 12 × 30 = 360 highlighters\n\n**Step 3: Calculate revenue from packaged highlighters**\n- Sam rearranged 5 boxes into packages of 6 highlighters each\n- Highlighters from 5 boxes = 5 × 30 = 150 highlighters\n- Number of packages = 150 ÷ 6 = 25 packages\n- Revenue from packages = 25 × $3 = $75\n\n**Step 4: Calculate revenue from individual highlighters**\n- Remaining highlighters = 360 - 150 = 210 highlighters\n- These are sold at 3 pens for $2\n- Number of groups of 3 = 210 ÷ 3 = 70 groups\n- Revenue from individual sales = 70 × $2 = $140\n\n**Step 5: Calculate total profit**\n- Total revenue = $75 + $140 = $215\n- Total profit = Total revenue - Total cost = $215 - $120 = $95\n\n95",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 110,
+      "output_tokens": 331,
+      "total_latency_ms": 5225,
+      "cost_usd": 0.005294999999999999
+    },
+    "timestamp": "2026-03-03T12:22:48.207Z"
+  },
+  {
+    "result_id": "04924032-f82f-446c-b06c-18e218df82c6",
+    "task_id": "tab-gsm-50t-gsm8k_027",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the percentage of students enrolled in hip-hop dance.\n\nGiven information:\n- Total students: 20\n- Contemporary dance: 20% of students\n- Jazz dance: 25% of students\n- Hip-hop dance: the rest of the students\n\nFirst, I'll find the percentage enrolled in contemporary and jazz dance combined:\nContemporary + Jazz = 20% + 25% = 45%\n\nSince the rest are enrolled in hip-hop dance:\nHip-hop percentage = 100% - 45% = 55%\n\n55",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 76,
+      "output_tokens": 124,
+      "total_latency_ms": 2563,
+      "cost_usd": 0.002088
+    },
+    "timestamp": "2026-03-03T12:22:51.271Z"
+  },
+  {
+    "result_id": "326d6601-e8fb-4682-9a7d-58290dd7d853",
+    "task_id": "tab-gsm-50t-gsm8k_028",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the selling price when the original price is increased by 10%.\n\nGiven information:\n- Original price = $200\n- Markup = 10% above original price\n\nStep 1: Calculate the markup amount.\nMarkup amount = 10% of $200\nMarkup amount = 0.10 × $200 = $20\n\nStep 2: Calculate the selling price.\nSelling price = Original price + Markup amount\nSelling price = $200 + $20 = $220\n\n220",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 61,
+      "output_tokens": 118,
+      "total_latency_ms": 2437,
+      "cost_usd": 0.0019529999999999999
+    },
+    "timestamp": "2026-03-03T12:22:54.208Z"
+  },
+  {
+    "result_id": "68abe31c-87e1-405b-bbb6-8453597839b7",
+    "task_id": "tab-gsm-50t-gsm8k_029",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to count the total number of animals across all 5 houses.\n\nHouse 1 (red): 3 cats\nHouse 2 (blue): 2 dogs\nHouse 3 (green): 4 birds\nHouse 4 (yellow): 1 fish\nHouse 5 (white): 5 hamsters\n\nTotal animals = 3 + 2 + 4 + 1 + 5 = 15\n\n15",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 124,
+      "output_tokens": 108,
+      "total_latency_ms": 2542,
+      "cost_usd": 0.001992
+    },
+    "timestamp": "2026-03-03T12:22:57.255Z"
+  },
+  {
+    "result_id": "b3efe81d-2a97-428e-a2bf-141af45fd861",
+    "task_id": "tab-gsm-50t-gsm8k_030",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of sweet treats and divide by the number of students.\n\nFirst, let me calculate the total number of sweet treats:\n- Cookies: 20\n- Cupcakes: 25\n- Brownies: 35\n\nTotal sweet treats = 20 + 25 + 35 = 80\n\nNow I'll divide the total by the number of students:\nSweet treats per student = 80 ÷ 20 = 4\n\n4",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 86,
+      "output_tokens": 111,
+      "total_latency_ms": 2335,
+      "cost_usd": 0.001923
+    },
+    "timestamp": "2026-03-03T12:23:00.100Z"
+  },
+  {
+    "result_id": "4f55d283-55a6-448c-a187-8aa12c0ec735",
+    "task_id": "tab-gsm-50t-gsm8k_031",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many pages Maria has left to read after two weeks.\n\nInitial pages: 500\n\nFirst week:\n- Maria reads half of 500 pages\n- Pages read in first week = 500 ÷ 2 = 250 pages\n- Pages remaining after first week = 500 - 250 = 250 pages\n\nSecond week:\n- Maria reads half of the remaining 250 pages\n- Pages read in second week = 250 ÷ 2 = 125 pages\n- Pages remaining after second week = 250 - 125 = 125 pages\n\n125",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 67,
+      "output_tokens": 143,
+      "total_latency_ms": 2655,
+      "cost_usd": 0.002346
+    },
+    "timestamp": "2026-03-03T12:23:03.255Z"
+  },
+  {
+    "result_id": "d19b12a2-7260-413b-87d5-152d00b5a6ee",
+    "task_id": "tab-gsm-50t-gsm8k_032",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the cost of 6 notebooks with the bulk discount applied.\n\nFirst, let me identify the key information:\n- Regular price: $3 per notebook\n- Discount: 25% off when buying 4 or more notebooks\n- Sarah is buying 6 notebooks\n\nSince Sarah is buying 6 notebooks (which is 4 or more), she qualifies for the 25% discount.\n\nStep 1: Calculate the regular total cost\n6 notebooks × $3 = $18\n\nStep 2: Calculate the discount amount\n25% of $18 = 0.25 × $18 = $4.50\n\nStep 3: Calculate the final amount after discount\n$18 - $4.50 = $13.50\n\n13.50",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 69,
+      "output_tokens": 176,
+      "total_latency_ms": 3418,
+      "cost_usd": 0.0028469999999999997
+    },
+    "timestamp": "2026-03-03T12:23:07.179Z"
+  },
+  {
+    "result_id": "29f497dc-6466-42b8-8012-8a8c3d2a145a",
+    "task_id": "tab-gsm-50t-gsm8k_033",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total time for Tom's trip across the 3-mile lake.\n\nFirst, let me find how long it takes to swim each mile:\n- Swimming speed: 2 miles per hour\n- Time per mile: 1 mile ÷ 2 mph = 0.5 hours = 30 minutes\n\nNow I'll break down the trip:\n- Mile 1: 30 minutes swimming + 15 minutes break = 45 minutes\n- Mile 2: 30 minutes swimming + 15 minutes break = 45 minutes  \n- Mile 3: 30 minutes swimming + 0 minutes break (trip is complete) = 30 minutes\n\nTotal time: 45 + 45 + 30 = 120 minutes\n\n120",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 75,
+      "output_tokens": 181,
+      "total_latency_ms": 3494,
+      "cost_usd": 0.00294
+    },
+    "timestamp": "2026-03-03T12:23:11.179Z"
+  },
+  {
+    "result_id": "bfce5729-dd76-4008-a6fb-dd5723b5e27b",
+    "task_id": "tab-gsm-50t-gsm8k_034",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many empty spaces there are on Tuesday.\n\nFirst, let me find how many cars were in the parking lot on Monday:\n- Total spaces: 300\n- Monday was 80% full\n- Cars on Monday: 300 × 0.80 = 240 cars\n\nNext, let me find how many cars are there on Tuesday:\n- Cars that left on Tuesday: 1/4 of Monday's cars = 1/4 × 240 = 60 cars\n- Cars remaining from Monday: 240 - 60 = 180 cars\n- New cars that arrived: 40 cars\n- Total cars on Tuesday: 180 + 40 = 220 cars\n\nFinally, let me find the number of empty spaces on Tuesday:\n- Total spaces: 300\n- Occupied spaces on Tuesday: 220\n- Empty spaces on Tuesday: 300 - 220 = 80\n\n80",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 78,
+      "output_tokens": 213,
+      "total_latency_ms": 3844,
+      "cost_usd": 0.0034289999999999998
+    },
+    "timestamp": "2026-03-03T12:23:15.533Z"
+  },
+  {
+    "result_id": "e0eb2b02-9dbd-4e7e-98c0-0d6ad4c02452",
+    "task_id": "tab-gsm-50t-gsm8k_035",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Lisa's weekly earnings first, then find 30% of that amount.\n\nStep 1: Calculate daily earnings\n$12/hour × 8 hours/day = $96/day\n\nStep 2: Calculate weekly earnings\n$96/day × 5 days/week = $480/week\n\nStep 3: Calculate weekly savings\n30% of $480 = 0.30 × $480 = $144\n\n144",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 102,
+      "total_latency_ms": 2245,
+      "cost_usd": 0.0017429999999999998
+    },
+    "timestamp": "2026-03-03T12:23:18.280Z"
+  },
+  {
+    "result_id": "5c6c1106-322d-4cfb-880a-f880e0700c2d",
+    "task_id": "tab-gsm-50t-gsm8k_036",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total annual payroll by calculating the number of employees in each department and their respective salaries.\n\nFirst, let me find the number of employees in each department:\n- Total employees: 120\n- Engineers: 40% of 120 = 0.40 × 120 = 48 employees\n- Remaining employees: 120 - 48 = 72 employees\n- Sales and marketing split equally: 72 ÷ 2 = 36 employees each\n- Salespeople: 36 employees\n- Marketers: 36 employees\n\nNow I'll calculate the total salary for each department:\n- Engineers: 48 × $90,000 = $4,320,000\n- Salespeople: 36 × $70,000 = $2,520,000\n- Marketers: 36 × $65,000 = $2,340,000\n\nTotal annual payroll:\n$4,320,000 + $2,520,000 + $2,340,000 = $9,180,000\n\n9180000",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 96,
+      "output_tokens": 253,
+      "total_latency_ms": 4008,
+      "cost_usd": 0.004083
+    },
+    "timestamp": "2026-03-03T12:23:22.791Z"
+  },
+  {
+    "result_id": "be861209-2120-4177-b4d8-b33faa4ca874",
+    "task_id": "tab-gsm-50t-gsm8k_037",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many tennis balls Ralph did not hit out of the total 175 balls.\n\nFirst, let me calculate how many balls he hit from the first 100 balls:\n- He hit 2/5 of the first 100 balls\n- 2/5 × 100 = 40 balls hit\n\nNext, let me calculate how many balls he hit from the next 75 balls:\n- He hit 1/3 of the next 75 balls\n- 1/3 × 75 = 25 balls hit\n\nNow I'll find the total number of balls he hit:\n- Total balls hit = 40 + 25 = 65 balls\n\nFinally, I'll calculate how many balls he did not hit:\n- Total balls = 175\n- Balls not hit = 175 - 65 = 110 balls\n\n110",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 116,
+      "output_tokens": 201,
+      "total_latency_ms": 3115,
+      "cost_usd": 0.0033629999999999997
+    },
+    "timestamp": "2026-03-03T12:23:26.407Z"
+  },
+  {
+    "result_id": "5d801c0b-18ea-4570-9fd4-7f0cf867f0fd",
+    "task_id": "tab-gsm-50t-gsm8k_038",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of clips Natalia sold in April and May.\n\nGiven information:\n- In April: Natalia sold clips to 48 friends\n- In May: She sold half as many clips as in April\n\nFirst, let me find how many clips she sold in May:\nMay sales = Half of April sales = 48 ÷ 2 = 24 clips\n\nNow I can find the total clips sold in both months:\nTotal clips = April clips + May clips\nTotal clips = 48 + 24 = 72\n\n72",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 68,
+      "output_tokens": 130,
+      "total_latency_ms": 2777,
+      "cost_usd": 0.002154
+    },
+    "timestamp": "2026-03-03T12:23:29.688Z"
+  },
+  {
+    "result_id": "435539eb-c366-4d37-92f4-ad44cd890757",
+    "task_id": "tab-gsm-50t-gsm8k_039",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Weng's earnings for 50 minutes of babysitting at $12 per hour.\n\nFirst, I'll convert 50 minutes to hours:\n50 minutes ÷ 60 minutes per hour = 50/60 = 5/6 hours\n\nNow I'll calculate her earnings:\nEarnings = hourly rate × hours worked\nEarnings = $12 × 5/6\nEarnings = $12 × 5 ÷ 6\nEarnings = $60 ÷ 6\nEarnings = $10\n\n10",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 63,
+      "output_tokens": 136,
+      "total_latency_ms": 2755,
+      "cost_usd": 0.002229
+    },
+    "timestamp": "2026-03-03T12:23:32.956Z"
+  },
+  {
+    "result_id": "3ce1e0ab-a0a5-4175-afa2-4454448641b1",
+    "task_id": "tab-gsm-50t-gsm8k_040",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how much more money Betty needs for the $100 wallet.\n\nLet me work through this step by step:\n\n1) Betty has half of what she needs:\n   Betty has = $100 ÷ 2 = $50\n\n2) Her parents give her $15\n\n3) Her grandparents give her twice as much as her parents:\n   Grandparents give = 2 × $15 = $30\n\n4) Total money Betty will have:\n   $50 + $15 + $30 = $95\n\n5) Money still needed:\n   $100 - $95 = $5\n\n5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 88,
+      "output_tokens": 148,
+      "total_latency_ms": 2564,
+      "cost_usd": 0.0024839999999999997
+    },
+    "timestamp": "2026-03-03T12:23:36.023Z"
+  },
+  {
+    "result_id": "d8e1a6cc-5f0a-43b8-aa31-cc8341c830bd",
+    "task_id": "tab-gsm-50t-gsm8k_041",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many pages Julie should read tomorrow.\n\nLet me track Julie's reading progress:\n\nYesterday: Julie read 12 pages\n\nToday: She read twice as many pages as yesterday\nToday: 2 × 12 = 24 pages\n\nTotal pages read so far: 12 + 24 = 36 pages\n\nRemaining pages: 120 - 36 = 84 pages\n\nTomorrow: She wants to read half of the remaining pages\nTomorrow: 84 ÷ 2 = 42 pages\n\n42",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 80,
+      "output_tokens": 127,
+      "total_latency_ms": 2908,
+      "cost_usd": 0.002145
+    },
+    "timestamp": "2026-03-03T12:23:39.434Z"
+  },
+  {
+    "result_id": "4359331f-bb56-4059-92e6-60c09ee7db85",
+    "task_id": "tab-gsm-50t-gsm8k_042",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total amount James pays for his plane ticket after applying the discount, tax, and booking fee.\n\nStep 1: Calculate the discounted price.\nOriginal price: $6000\nDiscount: 30%\nDiscount amount: $6000 × 0.30 = $1800\nDiscounted price: $6000 - $1800 = $4200\n\nStep 2: Calculate the tax on the discounted price.\nTax rate: 12%\nTax amount: $4200 × 0.12 = $504\n\nStep 3: Calculate the total amount paid.\nDiscounted price: $4200\nTax: $504\nBooking fee: $150\nTotal: $4200 + $504 + $150 = $4854\n\n4854",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 75,
+      "output_tokens": 182,
+      "total_latency_ms": 3013,
+      "cost_usd": 0.0029549999999999997
+    },
+    "timestamp": "2026-03-03T12:23:42.949Z"
+  },
+  {
+    "result_id": "178501ef-e9c5-44d9-87fc-569ee2ea6c13",
+    "task_id": "tab-gsm-50t-gsm8k_043",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the baker's profit by finding his revenue minus his costs.\n\nFirst, let me find the total flour needed:\n- 40 loaves × 2 cups per loaf = 80 cups of flour\n\nNext, let me calculate the cost:\n- Cost = 80 cups × $1.50 per cup = $120\n\nNow let me find how the bread is distributed:\n- Bread for sandwiches = 3/4 × 40 = 30 loaves\n- Bread for toast = 40 - 30 = 10 loaves\n\nNow let me calculate the revenue:\n- Revenue from sandwiches = 30 loaves × $6 = $180\n- Revenue from toast = 10 loaves × $3 = $30\n- Total revenue = $180 + $30 = $210\n\nFinally, let me calculate the profit:\n- Profit = Revenue - Cost = $210 - $120 = $90\n\n90",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 100,
+      "output_tokens": 226,
+      "total_latency_ms": 3639,
+      "cost_usd": 0.0036899999999999997
+    },
+    "timestamp": "2026-03-03T12:23:47.089Z"
+  },
+  {
+    "result_id": "54800ff4-33cd-4484-84e4-02dd42e2c177",
+    "task_id": "tab-gsm-50t-gsm8k_044",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how much each person invested, then calculate Charlie's share of the profit based on his proportional investment.\n\nFirst, let me find each person's investment:\n- Alice invests: $3000\n- Bob invests twice as much as Alice: 2 × $3000 = $6000\n- Charlie invests half as much as Bob: $6000 ÷ 2 = $3000\n\nNow I'll find the total investment:\nTotal investment = $3000 + $6000 + $3000 = $12000\n\nCharlie's proportion of the total investment:\nCharlie's proportion = $3000 ÷ $12000 = 1/4 = 0.25\n\nCharlie's share of the $1800 profit:\nCharlie's profit = 0.25 × $1800 = $450\n\n450",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 85,
+      "output_tokens": 197,
+      "total_latency_ms": 3553,
+      "cost_usd": 0.00321
+    },
+    "timestamp": "2026-03-03T12:23:51.143Z"
+  },
+  {
+    "result_id": "a629fdb0-dc2f-4402-9bcd-44c8e02a65a1",
+    "task_id": "tab-gsm-50t-gsm8k_045",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how long it takes for the tank to fill from 30 gallons to 50 gallons.\n\nGiven information:\n- Tank capacity: 50 gallons\n- Current amount: 30 gallons\n- Water flows in: 3 gallons per minute\n- Water drains out: 1 gallon per minute\n\nFirst, I'll find the net rate of water increase:\nNet rate = Inflow rate - Outflow rate\nNet rate = 3 - 1 = 2 gallons per minute\n\nNext, I'll find how many more gallons are needed:\nGallons needed = Tank capacity - Current amount\nGallons needed = 50 - 30 = 20 gallons\n\nFinally, I'll calculate the time needed:\nTime = Gallons needed ÷ Net rate\nTime = 20 ÷ 2 = 10 minutes\n\n10",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 80,
+      "output_tokens": 212,
+      "total_latency_ms": 3341,
+      "cost_usd": 0.00342
+    },
+    "timestamp": "2026-03-03T12:23:54.988Z"
+  },
+  {
+    "result_id": "dc812f4d-1c6d-4a0a-805f-ca8cb659dbbb",
+    "task_id": "tab-gsm-50t-gsm8k_046",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to solve this step by step.\n\nStarting amount: 240 stickers\n\nStep 1: Emma gives 1/4 to her sister\nAmount given to sister = 1/4 × 240 = 60 stickers\nRemaining after giving to sister = 240 - 60 = 180 stickers\n\nStep 2: Emma gives 1/3 of the remainder to her friend\nAmount given to friend = 1/3 × 180 = 60 stickers\nRemaining after giving to friend = 180 - 60 = 120 stickers\n\nStep 3: Emma buys 50 more stickers\nFinal amount = 120 + 50 = 170 stickers\n\n170",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 82,
+      "output_tokens": 171,
+      "total_latency_ms": 2716,
+      "cost_usd": 0.002811
+    },
+    "timestamp": "2026-03-03T12:23:58.210Z"
+  },
+  {
+    "result_id": "1400fbc6-76af-4744-bc8e-250d7bdbce4b",
+    "task_id": "tab-gsm-50t-gsm8k_047",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the area of the path around a rectangular garden.\n\nGiven information:\n- Garden dimensions: 15m long × 10m wide\n- Path width: 2m around the entire garden\n\nFirst, I'll find the dimensions of the garden including the path:\n- The path adds 2m on each side, so it adds 4m total to each dimension\n- Length with path: 15m + 4m = 19m\n- Width with path: 10m + 4m = 14m\n\nNow I'll calculate the areas:\n- Area of garden only: 15m × 10m = 150 m²\n- Area of garden plus path: 19m × 14m = 266 m²\n\nThe area of the path is the difference:\nArea of path = Total area - Garden area\nArea of path = 266 m² - 150 m² = 116 m²\n\n116",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 64,
+      "output_tokens": 211,
+      "total_latency_ms": 3953,
+      "cost_usd": 0.0033569999999999997
+    },
+    "timestamp": "2026-03-03T12:24:02.669Z"
+  },
+  {
+    "result_id": "47232121-283a-4ab1-b830-4fc4c57a0e8d",
+    "task_id": "tab-gsm-50t-gsm8k_048",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Mike's total weekly earnings from both jobs, then find 40% of that amount.\n\nFirst job earnings:\n$15/hour × 20 hours/week = $300/week\n\nSecond job earnings:\n$12/hour × 15 hours/week = $180/week\n\nTotal weekly earnings:\n$300 + $180 = $480/week\n\nAmount spent on rent (40% of total earnings):\n$480 × 0.40 = $192/week\n\n$192",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 97,
+      "output_tokens": 117,
+      "total_latency_ms": 2396,
+      "cost_usd": 0.002046
+    },
+    "timestamp": "2026-03-03T12:24:05.566Z"
+  },
+  {
+    "result_id": "3aa363a1-982e-4892-9091-0743b8421626",
+    "task_id": "tab-gsm-50t-gsm8k_049",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of students who play sports.\n\nFirst, let me find the number of girls and boys:\n- Total students: 600\n- Girls: 55% of 600 = 0.55 × 600 = 330 girls\n- Boys: 600 - 330 = 270 boys\n\nNext, let me find how many girls and boys play sports:\n- Girls who play sports: 30% of 330 = 0.30 × 330 = 99 girls\n- Boys who play sports: 40% of 270 = 0.40 × 270 = 108 boys\n\nTotal students who play sports:\n99 + 108 = 207\n\n207",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 64,
+      "output_tokens": 169,
+      "total_latency_ms": 4191,
+      "cost_usd": 0.002727
+    },
+    "timestamp": "2026-03-03T12:24:10.264Z"
+  },
+  {
+    "result_id": "9a07cae6-69c8-48fb-9e23-f2999496b4ca",
+    "task_id": "tab-gsm-50t-gsm8k_050",
+    "model": "Claude Sonnet 4",
+    "condition": "natural",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the average speed for the entire round trip.\n\nGiven information:\n- Distance from A to B: 240 km\n- Speed from A to B: 80 km/h\n- Speed from B to A: 120 km/h\n\nFirst, I'll calculate the time for each leg of the journey.\n\nTime from A to B:\nTime = Distance ÷ Speed = 240 km ÷ 80 km/h = 3 hours\n\nTime from B to A:\nTime = Distance ÷ Speed = 240 km ÷ 120 km/h = 2 hours\n\nTotal time for round trip:\nTotal time = 3 hours + 2 hours = 5 hours\n\nTotal distance for round trip:\nTotal distance = 240 km + 240 km = 480 km\n\nAverage speed for entire round trip:\nAverage speed = Total distance ÷ Total time = 480 km ÷ 5 hours = 96 km/h\n\n96",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 80,
+      "output_tokens": 239,
+      "total_latency_ms": 3401,
+      "cost_usd": 0.003825
+    },
+    "timestamp": "2026-03-03T12:24:14.169Z"
+  },
+  {
+    "result_id": "34c60c0b-52ff-4013-bbb9-ca59a0475980",
+    "task_id": "tab-gsm-50t-gsm8k_001",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how much Janet makes daily at the farmers' market by calculating how many eggs she has left to sell after eating and baking.\n\nGiven information:\n- Ducks lay 16 eggs per day\n- Janet eats 3 eggs for breakfast\n- Janet uses 4 eggs for baking muffins\n- She sells remaining eggs for $2 each\n\nStep 1: Calculate eggs used daily.\nEggs eaten for breakfast: 3\nEggs used for baking: 4\nTotal eggs used: 3 + 4 = 7\n\nStep 2: Calculate eggs remaining for sale.\nTotal eggs laid: 16\nEggs used: 7\nEggs remaining: 16 - 7 = 9\n\nStep 3: Calculate daily earnings.\nEggs sold: 9\nPrice per egg: $2\nDaily earnings: 9 × $2 = $18\n\n18",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 95,
+      "output_tokens": 208,
+      "total_latency_ms": 4083,
+      "cost_usd": 0.003405
+    },
+    "timestamp": "2026-03-03T12:24:18.754Z"
+  },
+  {
+    "result_id": "fb4dc6b6-0cff-4aa5-9413-da49cca90a87",
+    "task_id": "tab-gsm-50t-gsm8k_002",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of bolts needed for a robe.\n\nGiven information:\n- Blue fiber: 2 bolts\n- White fiber: half as much as blue fiber\n\nFirst, I'll calculate the white fiber needed:\nWhite fiber = 1/2 × 2 bolts = 1 bolt\n\nNow I'll find the total:\nTotal bolts = Blue fiber + White fiber\nTotal bolts = 2 bolts + 1 bolt = 3 bolts\n\n3",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 57,
+      "output_tokens": 116,
+      "total_latency_ms": 2379,
+      "cost_usd": 0.001911
+    },
+    "timestamp": "2026-03-03T12:24:21.636Z"
+  },
+  {
+    "result_id": "195b8b23-dc25-45a1-9b80-101c4d9448e1",
+    "task_id": "tab-gsm-50t-gsm8k_003",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find Josh's profit from flipping the house.\n\nFirst, let me calculate his total investment:\n- Purchase price: $80,000\n- Repairs: $50,000\n- Total investment: $80,000 + $50,000 = $130,000\n\nNext, I need to find the house's value after repairs:\n- The repairs increased the house value by 150%\n- This means the house is now worth 150% MORE than its original value\n- Original value: $80,000\n- Increase: 150% of $80,000 = 1.5 × $80,000 = $120,000\n- New value: $80,000 + $120,000 = $200,000\n\nFinally, I can calculate the profit:\n- Selling price: $200,000\n- Total investment: $130,000\n- Profit: $200,000 - $130,000 = $70,000\n\n70000",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 78,
+      "output_tokens": 221,
+      "total_latency_ms": 3847,
+      "cost_usd": 0.0035489999999999996
+    },
+    "timestamp": "2026-03-03T12:24:25.984Z"
+  },
+  {
+    "result_id": "324ec4c8-7fc4-4c7b-90bb-afedb9f758b9",
+    "task_id": "tab-gsm-50t-gsm8k_004",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total pages James writes in a year.\n\nGiven information:\n- James writes a 3-page letter\n- He writes to 2 different friends\n- He does this twice a week\n- I need to find the total pages per year\n\nStep 1: Calculate pages per letter session.\n- 3 pages per letter × 2 friends = 6 pages per session\n\nStep 2: Calculate pages per week.\n- 6 pages per session × 2 sessions per week = 12 pages per week\n\nStep 3: Calculate pages per year.\n- 12 pages per week × 52 weeks per year = 624 pages per year\n\n624",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 55,
+      "output_tokens": 156,
+      "total_latency_ms": 2876,
+      "cost_usd": 0.0025050000000000003
+    },
+    "timestamp": "2026-03-03T12:24:29.373Z"
+  },
+  {
+    "result_id": "3c6566bb-2d5f-4054-8c46-1dd6a1238607",
+    "task_id": "tab-gsm-50t-gsm8k_005",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of chickens Wendi has.\n\nFirst, let me find the total amount of feed given per day:\n- Morning: 15 cups\n- Afternoon: 25 cups  \n- Evening: 65 cups\n- Total daily feed = 15 + 25 + 65 = 105 cups\n\nSince each chicken gets 3 cups of feed per day, I can find the number of chickens by dividing the total daily feed by the feed per chicken:\n\nNumber of chickens = Total daily feed ÷ Feed per chicken\nNumber of chickens = 105 ÷ 3 = 35\n\n35",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 138,
+      "output_tokens": 153,
+      "total_latency_ms": 3169,
+      "cost_usd": 0.0027089999999999996
+    },
+    "timestamp": "2026-03-03T12:24:33.044Z"
+  },
+  {
+    "result_id": "9cadc25b-9f5a-43a2-95d7-4c4f712c49e5",
+    "task_id": "tab-gsm-50t-gsm8k_006",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total cost of Kylar's purchases.\n\nFirst, let me find the cost of the water:\n- 4 gallons of water at $2 per gallon\n- 4 × $2 = $8\n\nNext, let me find the cost of the crackers:\n- 5 boxes of crackers at $3 per box\n- 5 × $3 = $15\n\nNow I'll add both costs together:\n- Total cost = $8 + $15 = $23\n\n23",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 96,
+      "output_tokens": 123,
+      "total_latency_ms": 2568,
+      "cost_usd": 0.002133
+    },
+    "timestamp": "2026-03-03T12:24:36.117Z"
+  },
+  {
+    "result_id": "07cb9d11-b3ce-4996-84fb-31f69c803ceb",
+    "task_id": "tab-gsm-50t-gsm8k_007",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of sheep across all three cities.\n\nGiven information:\n- Seattle has 20 sheep\n- Charleston has 4 times as many sheep as Seattle\n- Toulouse has twice as many sheep as Charleston\n\nLet me work through this step by step:\n\nStep 1: Find how many sheep Charleston has.\nCharleston = 4 × Seattle\nCharleston = 4 × 20 = 80 sheep\n\nStep 2: Find how many sheep Toulouse has.\nToulouse = 2 × Charleston\nToulouse = 2 × 80 = 160 sheep\n\nStep 3: Find the total number of sheep.\nTotal = Seattle + Charleston + Toulouse\nTotal = 20 + 80 + 160 = 260 sheep\n\n260",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 178,
+      "total_latency_ms": 3173,
+      "cost_usd": 0.0028829999999999997
+    },
+    "timestamp": "2026-03-03T12:24:39.791Z"
+  },
+  {
+    "result_id": "712bc630-eeec-42fc-8da6-364cee30297f",
+    "task_id": "tab-gsm-50t-gsm8k_008",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total time it takes for Carla to download the 200 GB file, including the interruption.\n\nLet me break this down step by step:\n\nFirst attempt:\n- File size: 200 GB\n- Download speed: 2 GB/minute\n- She downloads 40% of the file before the restart\n- 40% of 200 GB = 0.4 × 200 = 80 GB\n\nTime for first attempt (partial):\n- Time to download 80 GB = 80 GB ÷ 2 GB/minute = 40 minutes\n\nRestart time:\n- Windows restart takes 20 minutes\n\nSecond attempt (complete download):\n- She has to restart from the beginning\n- Full file size: 200 GB\n- Time to download 200 GB = 200 GB ÷ 2 GB/minute = 100 minutes\n\nTotal time:\n- First partial download: 40 minutes\n- Restart time: 20 minutes  \n- Complete download: 100 minutes\n- Total: 40 + 20 + 100 = 160 minutes\n\n160",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 103,
+      "output_tokens": 264,
+      "total_latency_ms": 5087,
+      "cost_usd": 0.004269
+    },
+    "timestamp": "2026-03-03T12:24:45.388Z"
+  },
+  {
+    "result_id": "6fb1f6d2-0ac0-48bd-9d4b-df9ada006bbe",
+    "task_id": "tab-gsm-50t-gsm8k_009",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to track John's position relative to his starting point (home).\n\nInitial journey away from home:\n- Time: 3 hours\n- Speed: 60 mph\n- Distance from home: 3 × 60 = 180 miles\n\nNow he turns around to go back home. He has 4 hours to get back.\n\nReturn journey:\n- First 2 hours: standstill traffic (0 mph)\n- Distance covered: 0 miles\n- Remaining distance from home: 180 miles\n\n- Next 2 hours: driving at 30 mph\n- Distance covered: 2 × 30 = 60 miles\n- Distance remaining from home: 180 - 60 = 120 miles\n\n120",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 101,
+      "output_tokens": 173,
+      "total_latency_ms": 4164,
+      "cost_usd": 0.0028979999999999995
+    },
+    "timestamp": "2026-03-03T12:24:50.057Z"
+  },
+  {
+    "result_id": "2e131746-bb2f-4c9c-a032-697879995164",
+    "task_id": "tab-gsm-50t-gsm8k_010",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the cost per slice of bread.\n\nFirst, let me find the total number of slices:\n- 5 loaves × 15 slices per loaf = 75 slices\n\nNext, let me find the total cost:\n- 5 loaves × $2 per loaf = $10\n\nNow I can find the cost per slice:\n- $10 ÷ 75 slices = $0.1333... per slice\n\nConverting to cents:\n- $0.1333... × 100 = 13.333... cents\n\nSince we typically round money to the nearest cent:\n- 13.33 cents per slice\n\nBut let me check if this gives an exact answer:\n$10 = 1000 cents\n1000 cents ÷ 75 slices = 13.333... cents\n\nThis gives us 13⅓ cents, or approximately 13.33 cents.\n\n13.33",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 75,
+      "output_tokens": 222,
+      "total_latency_ms": 4186,
+      "cost_usd": 0.003555
+    },
+    "timestamp": "2026-03-03T12:24:54.748Z"
+  },
+  {
+    "result_id": "2edbeffe-a3b0-4276-8f7e-9847d571dab7",
+    "task_id": "tab-gsm-50t-gsm8k_011",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the profit the merchant made by choosing jewelry over electronic gadgets.\n\nFirst, let me calculate what happened with the jewelry:\n- Initial value: $5,000\n- Gain: 2.5%\n- Final value: $5,000 × (1 + 0.025) = $5,000 × 1.025 = $5,125\n- Profit from jewelry: $5,125 - $5,000 = $125\n\nNext, let me calculate what would have happened with electronic gadgets:\n- Initial value: $8,000\n- Loss: 1.2%\n- Final value: $8,000 × (1 - 0.012) = $8,000 × 0.988 = $7,904\n- Loss from electronic gadgets: $7,904 - $8,000 = -$96\n\nNow I need to compare the outcomes:\n- By choosing jewelry, the merchant gained $125\n- If he had chosen electronic gadgets, he would have lost $96\n\nThe total benefit from following the advisor's advice is:\n$125 - (-$96) = $125 + $96 = $221\n\n221",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 124,
+      "output_tokens": 272,
+      "total_latency_ms": 4609,
+      "cost_usd": 0.004452
+    },
+    "timestamp": "2026-03-03T12:24:59.861Z"
+  },
+  {
+    "result_id": "b5409da6-4d6b-417d-ba1a-0d6566f02cb9",
+    "task_id": "tab-gsm-50t-gsm8k_012",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the distance from San Rafael to the destination.\n\nLet me define variables:\n- Let d = distance from San Rafael to the destination\n- Slower train speed = 10 mph\n- Faster train speed = 40 mph\n\nWhen the faster train reaches the destination, it has traveled distance d.\n\nTime taken for faster train to reach destination = d/40 hours\n\nIn this same time, the slower train travels at 10 mph.\nDistance traveled by slower train = 10 × (d/40) = d/4 miles\n\nSince the slower train is 100 miles away from the destination when the faster train arrives:\nDistance traveled by slower train + 100 = Total distance to destination\n\nSo: d/4 + 100 = d\n\nSolving for d:\nd/4 + 100 = d\n100 = d - d/4\n100 = 4d/4 - d/4\n100 = 3d/4\n400 = 3d\nd = 400/3 = 133⅓ miles\n\nLet me verify: \n- Faster train takes 133⅓/40 = 10/3 hours to reach destination\n- In 10/3 hours, slower train travels 10 × 10/3 = 100/3 = 33⅓ miles\n- Distance remaining for slower train = 133⅓ - 33⅓ = 100 miles ✓\n\n133.33",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 100,
+      "output_tokens": 343,
+      "total_latency_ms": 5354,
+      "cost_usd": 0.005445
+    },
+    "timestamp": "2026-03-03T12:25:05.720Z"
+  },
+  {
+    "result_id": "906e984e-e24b-4799-95a6-892ae76d3553",
+    "task_id": "tab-gsm-50t-gsm8k_013",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Jill's total monthly earnings from both jobs.\n\nTeaching earnings:\n- Rate: $20 per hour\n- Hours: 50 hours per month\n- Teaching earnings = $20 × 50 = $1,000\n\nPersonal trainer earnings:\n- Rate: $30 per hour\n- Hours: 20 hours per month\n- Personal trainer earnings = $30 × 20 = $600\n\nTotal monthly earnings:\n$1,000 + $600 = $1,600\n\n1600",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 82,
+      "output_tokens": 121,
+      "total_latency_ms": 2466,
+      "cost_usd": 0.002061
+    },
+    "timestamp": "2026-03-03T12:25:08.691Z"
+  },
+  {
+    "result_id": "b60ffdef-e090-4e9f-a7e3-5efb91f5d0da",
+    "task_id": "tab-gsm-50t-gsm8k_014",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many dozens of eggs Claire needs for 4 weeks of omelets.\n\nFirst, let me calculate how many eggs she uses per day:\n- 3 eggs per omelet\n- 1 omelet per day\n- So 3 eggs per day\n\nNext, let me calculate how many days are in 4 weeks:\n- 4 weeks × 7 days per week = 28 days\n\nNow I can find the total number of eggs needed:\n- 3 eggs per day × 28 days = 84 eggs\n\nFinally, I need to convert eggs to dozens:\n- 1 dozen = 12 eggs\n- 84 eggs ÷ 12 eggs per dozen = 7 dozens\n\n7",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 63,
+      "output_tokens": 174,
+      "total_latency_ms": 2956,
+      "cost_usd": 0.002799
+    },
+    "timestamp": "2026-03-03T12:25:12.152Z"
+  },
+  {
+    "result_id": "4528b053-764d-43b3-8358-98522b31c722",
+    "task_id": "tab-gsm-50t-gsm8k_015",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total time Marissa took to complete the 12-mile trail.\n\nLet me break this down by sections:\n\nFirst 4 miles: 1 hour\n\nNext 4 miles: 2 hours\n\nLast 4 miles: Half the time she spent on the first 4 miles\n- Time for first 4 miles = 1 hour\n- Time for last 4 miles = 1/2 × 1 hour = 0.5 hours\n\nTotal time = 1 hour + 2 hours + 0.5 hours = 3.5 hours\n\nConverting to minutes:\n3.5 hours × 60 minutes/hour = 210 minutes\n\n210",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 101,
+      "output_tokens": 166,
+      "total_latency_ms": 2984,
+      "cost_usd": 0.002793
+    },
+    "timestamp": "2026-03-03T12:25:15.638Z"
+  },
+  {
+    "result_id": "da897968-74ea-4e11-a5e8-6e1da2c9ca2c",
+    "task_id": "tab-gsm-50t-gsm8k_016",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate how much money Tobias has saved and then find the difference between what he has and what he needs.\n\nLet me calculate his total savings:\n\nMonthly allowance for 3 months:\n$5 × 3 = $15\n\nMoney from mowing lawns:\n4 times × $15 each = $60\n\nMoney from selling lemonade:\n18 cups × $0.50 each = $9\n\nTotal money saved:\n$15 + $60 + $9 = $84\n\nAmount needed for shoes: $95\nAmount he has: $84\nAmount still needed: $95 - $84 = $11\n\n11",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 116,
+      "output_tokens": 152,
+      "total_latency_ms": 3371,
+      "cost_usd": 0.002628
+    },
+    "timestamp": "2026-03-03T12:25:19.511Z"
+  },
+  {
+    "result_id": "78286b44-c3ac-41ef-a8e7-4c2e306dbd1c",
+    "task_id": "tab-gsm-50t-gsm8k_017",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of trees Randy has on his farm.\n\nFirst, let me find the number of mango trees:\n- Randy has 60 mango trees\n\nNext, let me find the number of coconut trees:\n- He has 5 less than half as many coconut trees as mango trees\n- Half of the mango trees = 60 ÷ 2 = 30\n- 5 less than half = 30 - 5 = 25 coconut trees\n\nNow I can find the total number of trees:\n- Total trees = mango trees + coconut trees\n- Total trees = 60 + 25 = 85\n\n85",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 158,
+      "total_latency_ms": 3030,
+      "cost_usd": 0.0025830000000000002
+    },
+    "timestamp": "2026-03-03T12:25:23.046Z"
+  },
+  {
+    "result_id": "ef1942aa-0848-442c-bf6e-ee31bd811397",
+    "task_id": "tab-gsm-50t-gsm8k_018",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how long it takes Joy to read 120 pages.\n\nFirst, let me find Joy's reading rate:\n- Joy reads 8 pages in 20 minutes\n- Her rate is 8 pages ÷ 20 minutes = 0.4 pages per minute\n\nNow I can find how long it takes to read 120 pages:\n- Time needed = 120 pages ÷ 0.4 pages per minute = 300 minutes\n\nFinally, I'll convert minutes to hours:\n- 300 minutes ÷ 60 minutes per hour = 5 hours\n\n5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 58,
+      "output_tokens": 144,
+      "total_latency_ms": 2739,
+      "cost_usd": 0.0023339999999999997
+    },
+    "timestamp": "2026-03-03T12:25:26.290Z"
+  },
+  {
+    "result_id": "345e1555-36ab-4989-87cb-9e9bba44d85b",
+    "task_id": "tab-gsm-50t-gsm8k_019",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many trees the grove workers planted today.\n\nGiven information:\n- There were 15 trees in the grove initially\n- After planting, there will be 21 trees total\n\nTo find how many trees were planted:\nTrees planted = Final number of trees - Initial number of trees\nTrees planted = 21 - 15\nTrees planted = 6\n\n6",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 86,
+      "total_latency_ms": 2400,
+      "cost_usd": 0.001503
+    },
+    "timestamp": "2026-03-03T12:25:29.194Z"
+  },
+  {
+    "result_id": "3097b098-68f6-42e5-aa28-7a1a9492bf30",
+    "task_id": "tab-gsm-50t-gsm8k_020",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of flowers in Mark's garden.\n\nGiven information:\n- Yellow flowers: 10\n- Red flowers: 80% more than yellow\n- Blue flowers: 25% of red flowers\n\nStep 1: Calculate the number of red flowers.\nRed flowers = Yellow flowers + 80% of yellow flowers\nRed flowers = 10 + (0.80 × 10)\nRed flowers = 10 + 8 = 18\n\nStep 2: Calculate the number of blue flowers.\nBlue flowers = 25% of red flowers\nBlue flowers = 0.25 × 18 = 4.5\n\nSince we can't have half a flower, I'll assume this should be 4 or 5 flowers. Let me recalculate to make sure I understood correctly.\n\nActually, let me verify: Blue flowers = 25% of red flowers = 0.25 × 18 = 4.5\n\nThis seems unusual for a word problem. Let me re-read... The problem states \"Blue flowers make up only 25% of red flowers\" which would indeed be 4.5. Since this is likely meant to be a whole number, I'll round to 5 blue flowers (or the problem may have intended different numbers).\n\nHowever, working with the exact calculation:\nBlue flowers = 4.5\n\nStep 3: Calculate the total number of flowers.\nTotal flowers = Yellow + Red + Blue\nTotal flowers = 10 + 18 + 4.5 = 32.5\n\nSince we typically deal with whole flowers, this suggests there might be an error in the problem setup. But following the math exactly as stated:\n\n32.5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 84,
+      "output_tokens": 378,
+      "total_latency_ms": 7219,
+      "cost_usd": 0.005921999999999999
+    },
+    "timestamp": "2026-03-03T12:25:36.925Z"
+  },
+  {
+    "result_id": "9877427c-c594-4f49-80d6-cceda9f69759",
+    "task_id": "tab-gsm-50t-gsm8k_021",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total number of pizza slices Albert eats.\n\nFirst, let me find the number of slices from the large pizzas:\n- 2 large pizzas × 16 slices per large pizza = 32 slices\n\nNext, let me find the number of slices from the small pizzas:\n- 2 small pizzas × 8 slices per small pizza = 16 slices\n\nNow I'll add the total slices together:\n- 32 slices + 16 slices = 48 slices\n\n48",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 94,
+      "output_tokens": 130,
+      "total_latency_ms": 2841,
+      "cost_usd": 0.002232
+    },
+    "timestamp": "2026-03-03T12:25:40.280Z"
+  },
+  {
+    "result_id": "eba716ef-34fc-4d9d-a633-5d5afe340a5b",
+    "task_id": "tab-gsm-50t-gsm8k_022",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total weight of the care package by adding up all the components.\n\nStarting weight of the box: 2 pounds\n\nWeight of the cans:\n- 8 cans, each weighing 0.5 pounds\n- 8 × 0.5 = 4 pounds\n\nWeight of the bags of chips:\n- 2 bags, each weighing 1/4 pound (0.25 pounds)\n- 2 × 0.25 = 0.5 pounds\n\nTotal weight = Box weight + Cans weight + Chips weight\nTotal weight = 2 + 4 + 0.5 = 6.5 pounds\n\n6.5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 112,
+      "output_tokens": 164,
+      "total_latency_ms": 3405,
+      "cost_usd": 0.002796
+    },
+    "timestamp": "2026-03-03T12:25:44.196Z"
+  },
+  {
+    "result_id": "cbb42796-7b18-4a01-9d68-328288b63ce4",
+    "task_id": "tab-gsm-50t-gsm8k_023",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many of Alexis' friends are girls who like to play soccer.\n\nFirst, let me find how many friends are boys and how many are girls.\n- Total friends: 100\n- Boys: 25% of 100 = 0.25 × 100 = 25 boys\n- Girls: 100 - 25 = 75 girls\n\nNext, I need to find how many girls like basketball and how many like soccer.\n- Girls who like basketball: 55% of 75 = 0.55 × 75 = 41.25\n\nSince we can't have a fraction of a person, I'll assume this rounds to 41 girls who like basketball.\n\n- Girls who like soccer: 75 - 41 = 34 girls\n\nWait, let me recalculate more carefully:\n- Girls who like basketball: 55% of 75 = 0.55 × 75 = 41.25\n\nSince the problem states \"the rest like to play soccer,\" I should work with the exact percentage:\n- Girls who like soccer: 45% of 75 = 0.45 × 75 = 33.75\n\nThis suggests there might be an issue with the numbers, but following the logic:\nIf 55% like basketball, then 45% like soccer.\nGirls who like soccer = 45% of 75 = 0.45 × 75 = 33.75\n\nSince we need a whole number of people, this would be 34 girls who like soccer.\n\n34",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 87,
+      "output_tokens": 355,
+      "total_latency_ms": 6089,
+      "cost_usd": 0.005586
+    },
+    "timestamp": "2026-03-03T12:25:50.786Z"
+  },
+  {
+    "result_id": "54714686-efda-486d-8f17-1e99cd3a1958",
+    "task_id": "tab-gsm-50t-gsm8k_024",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total pounds of feed the farmer buys for his 4 horses.\n\nLet me break down each type of feed:\n\n**Sugar cubes:**\n- 2 boxes of 1 pound each = 2 pounds\n\n**Carrots:**\n- 4 horses × 4 pounds per horse = 16 pounds\n\n**Oats:**\n- 42 pounds (given)\n\n**Hay:**\n- 40% more than oats\n- 40% of 42 = 0.40 × 42 = 16.8 pounds\n- Total hay = 42 + 16.8 = 58.8 pounds\n\n**Total feed:**\nSugar cubes + Carrots + Oats + Hay\n= 2 + 16 + 42 + 58.8\n= 118.8 pounds\n\n118.8",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 144,
+      "output_tokens": 206,
+      "total_latency_ms": 3463,
+      "cost_usd": 0.003522
+    },
+    "timestamp": "2026-03-03T12:25:54.749Z"
+  },
+  {
+    "result_id": "f62578ec-15ef-4cd2-be6e-b9ec132f5fdd",
+    "task_id": "tab-gsm-50t-gsm8k_025",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the cost of each type of jar and then calculate the total cost.\n\nGiven information:\n- A gallon jar costs $2 more than a half-gallon jar\n- A gallon jar costs $5\n- Cecelia bought 10 gallon jars and 16 half-gallon jars\n\nFirst, let me find the cost of a half-gallon jar:\n- Gallon jar = Half-gallon jar + $2\n- $5 = Half-gallon jar + $2\n- Half-gallon jar = $5 - $2 = $3\n\nNow I can calculate the total cost:\n- Cost of 10 gallon jars = 10 × $5 = $50\n- Cost of 16 half-gallon jars = 16 × $3 = $48\n- Total cost = $50 + $48 = $98\n\n98",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 93,
+      "output_tokens": 210,
+      "total_latency_ms": 3220,
+      "cost_usd": 0.0034289999999999998
+    },
+    "timestamp": "2026-03-03T12:25:58.472Z"
+  },
+  {
+    "result_id": "17f0a4b2-b836-4beb-827b-43237f17f2d9",
+    "task_id": "tab-gsm-50t-gsm8k_026",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Sam's total cost, total revenue, and then find his profit.\n\n**Step 1: Calculate total cost**\n- Sam bought 12 boxes at $10 each\n- Total cost = 12 × $10 = $120\n\n**Step 2: Calculate total highlighters**\n- Each box contains 30 highlighters\n- Total highlighters = 12 × 30 = 360 highlighters\n\n**Step 3: Calculate revenue from packaged highlighters**\n- Sam rearranged 5 boxes into packages of 6 highlighters each\n- Highlighters from 5 boxes = 5 × 30 = 150 highlighters\n- Number of packages = 150 ÷ 6 = 25 packages\n- Revenue from packages = 25 × $3 = $75\n\n**Step 4: Calculate revenue from individual highlighters**\n- Remaining highlighters = 360 - 150 = 210 highlighters\n- These are sold at 3 pens for $2\n- Number of groups of 3 = 210 ÷ 3 = 70 groups\n- Revenue from individual sales = 70 × $2 = $140\n\n**Step 5: Calculate total profit**\n- Total revenue = $75 + $140 = $215\n- Total profit = Total revenue - Total cost = $215 - $120 = $95\n\n95",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 110,
+      "output_tokens": 331,
+      "total_latency_ms": 5717,
+      "cost_usd": 0.005294999999999999
+    },
+    "timestamp": "2026-03-03T12:26:04.692Z"
+  },
+  {
+    "result_id": "10ff02ec-9c59-4544-bd4d-7b723067c1b2",
+    "task_id": "tab-gsm-50t-gsm8k_027",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the percentage of students enrolled in hip-hop dance.\n\nGiven information:\n- Total students: 20\n- Contemporary dance: 20% of students\n- Jazz dance: 25% of students\n- Hip-hop dance: the rest of the students\n\nFirst, I'll find the percentage enrolled in contemporary and jazz dance combined:\nContemporary + Jazz = 20% + 25% = 45%\n\nSince the rest are enrolled in hip-hop dance:\nHip-hop percentage = 100% - 45% = 55%\n\n55",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 76,
+      "output_tokens": 124,
+      "total_latency_ms": 2814,
+      "cost_usd": 0.002088
+    },
+    "timestamp": "2026-03-03T12:26:08.010Z"
+  },
+  {
+    "result_id": "5c1590a6-db3c-4edd-8b4e-ff2c5de3702e",
+    "task_id": "tab-gsm-50t-gsm8k_028",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the selling price when the original price is increased by 10%.\n\nGiven information:\n- Original price = $200\n- Markup = 10% above original price\n\nStep 1: Calculate the markup amount.\nMarkup amount = 10% of $200\nMarkup amount = 0.10 × $200 = $20\n\nStep 2: Calculate the selling price.\nSelling price = Original price + Markup amount\nSelling price = $200 + $20 = $220\n\n220",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 61,
+      "output_tokens": 118,
+      "total_latency_ms": 2615,
+      "cost_usd": 0.0019529999999999999
+    },
+    "timestamp": "2026-03-03T12:26:11.128Z"
+  },
+  {
+    "result_id": "bbd34b81-d693-4c42-96d4-cf0d93b4e347",
+    "task_id": "tab-gsm-50t-gsm8k_029",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to count the total number of animals across all 5 houses.\n\nHouse 1 (red): 3 cats\nHouse 2 (blue): 2 dogs\nHouse 3 (green): 4 birds\nHouse 4 (yellow): 1 fish\nHouse 5 (white): 5 hamsters\n\nTotal animals = 3 + 2 + 4 + 1 + 5 = 15\n\n15",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 124,
+      "output_tokens": 108,
+      "total_latency_ms": 3167,
+      "cost_usd": 0.001992
+    },
+    "timestamp": "2026-03-03T12:26:14.799Z"
+  },
+  {
+    "result_id": "3593fa93-451a-46fb-a1de-53c45998641a",
+    "task_id": "tab-gsm-50t-gsm8k_030",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of sweet treats and divide by the number of students.\n\nFirst, let me calculate the total number of sweet treats:\n- Cookies: 20\n- Cupcakes: 25\n- Brownies: 35\n\nTotal sweet treats = 20 + 25 + 35 = 80\n\nNow I'll divide the total by the number of students:\nSweet treats per student = 80 ÷ 20 = 4\n\n4",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 86,
+      "output_tokens": 111,
+      "total_latency_ms": 2367,
+      "cost_usd": 0.001923
+    },
+    "timestamp": "2026-03-03T12:26:17.679Z"
+  },
+  {
+    "result_id": "ccde990b-8592-40d6-838d-cea30b41be79",
+    "task_id": "tab-gsm-50t-gsm8k_031",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many pages Maria has left to read after two weeks.\n\nInitial pages: 500\n\nFirst week:\n- Maria reads half of 500 pages\n- Pages read in first week = 500 ÷ 2 = 250 pages\n- Pages remaining after first week = 500 - 250 = 250 pages\n\nSecond week:\n- Maria reads half of the remaining 250 pages\n- Pages read in second week = 250 ÷ 2 = 125 pages\n- Pages remaining after second week = 250 - 125 = 125 pages\n\n125",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 67,
+      "output_tokens": 143,
+      "total_latency_ms": 2807,
+      "cost_usd": 0.002346
+    },
+    "timestamp": "2026-03-03T12:26:20.994Z"
+  },
+  {
+    "result_id": "5fd9bcea-f1c7-464c-b847-8c88d67efe5f",
+    "task_id": "tab-gsm-50t-gsm8k_032",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the cost of 6 notebooks with the bulk discount applied.\n\nFirst, let me identify the key information:\n- Regular price: $3 per notebook\n- Discount: 25% off when buying 4 or more notebooks\n- Sarah is buying 6 notebooks\n\nSince Sarah is buying 6 notebooks (which is 4 or more), she qualifies for the 25% discount.\n\nStep 1: Calculate the regular total cost\n6 notebooks × $3 = $18\n\nStep 2: Calculate the discount amount\n25% of $18 = 0.25 × $18 = $4.50\n\nStep 3: Calculate the final amount after discount\n$18 - $4.50 = $13.50\n\n13.50",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 69,
+      "output_tokens": 176,
+      "total_latency_ms": 3344,
+      "cost_usd": 0.0028469999999999997
+    },
+    "timestamp": "2026-03-03T12:26:24.843Z"
+  },
+  {
+    "result_id": "cfcd5e54-627b-4a26-b0ba-3140c3edb01b",
+    "task_id": "tab-gsm-50t-gsm8k_033",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total time for Tom's trip across the 3-mile lake.\n\nFirst, let me find how long it takes to swim each mile:\n- Swimming speed: 2 miles per hour\n- Time per mile: 1 mile ÷ 2 mph = 0.5 hours = 30 minutes\n\nNow I'll break down the trip:\n- Mile 1: 30 minutes swimming + 15 minutes break = 45 minutes\n- Mile 2: 30 minutes swimming + 15 minutes break = 45 minutes  \n- Mile 3: 30 minutes swimming + 0 minutes break (trip is complete) = 30 minutes\n\nTotal time: 45 + 45 + 30 = 120 minutes\n\n120",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 75,
+      "output_tokens": 181,
+      "total_latency_ms": 3493,
+      "cost_usd": 0.00294
+    },
+    "timestamp": "2026-03-03T12:26:28.847Z"
+  },
+  {
+    "result_id": "7d94e704-d727-44c7-88d3-44b21fe07ef3",
+    "task_id": "tab-gsm-50t-gsm8k_034",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many empty spaces there are on Tuesday.\n\nFirst, let me find how many cars were in the parking lot on Monday:\n- Total spaces: 300\n- Monday was 80% full\n- Cars on Monday: 300 × 0.80 = 240 cars\n\nNext, let me find how many cars are there on Tuesday:\n- Cars that left on Tuesday: 1/4 of Monday's cars = 1/4 × 240 = 60 cars\n- Cars remaining from Monday: 240 - 60 = 180 cars\n- New cars that arrived: 40 cars\n- Total cars on Tuesday: 180 + 40 = 220 cars\n\nFinally, let me find the number of empty spaces on Tuesday:\n- Total spaces: 300\n- Occupied spaces on Tuesday: 220\n- Empty spaces on Tuesday: 300 - 220 = 80\n\n80",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 78,
+      "output_tokens": 213,
+      "total_latency_ms": 3793,
+      "cost_usd": 0.0034289999999999998
+    },
+    "timestamp": "2026-03-03T12:26:33.141Z"
+  },
+  {
+    "result_id": "020ab1d4-5501-4d40-8b70-b850ea5094e8",
+    "task_id": "tab-gsm-50t-gsm8k_035",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Lisa's weekly earnings first, then find 30% of that amount.\n\nStep 1: Calculate daily earnings\n$12/hour × 8 hours/day = $96/day\n\nStep 2: Calculate weekly earnings\n$96/day × 5 days/week = $480/week\n\nStep 3: Calculate weekly savings\n30% of $480 = 0.30 × $480 = $144\n\n144",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 71,
+      "output_tokens": 102,
+      "total_latency_ms": 2355,
+      "cost_usd": 0.0017429999999999998
+    },
+    "timestamp": "2026-03-03T12:26:35.996Z"
+  },
+  {
+    "result_id": "8627fe70-6ad6-47fe-b7cd-9de5f1a1fb8b",
+    "task_id": "tab-gsm-50t-gsm8k_036",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total annual payroll by calculating the number of employees in each department and their respective salaries.\n\nFirst, let me find the number of employees in each department:\n- Total employees: 120\n- Engineers: 40% of 120 = 0.40 × 120 = 48 employees\n- Remaining employees: 120 - 48 = 72 employees\n- Sales and marketing split equally: 72 ÷ 2 = 36 employees each\n- Salespeople: 36 employees\n- Marketers: 36 employees\n\nNow I'll calculate the total salary for each department:\n- Engineers: 48 × $90,000 = $4,320,000\n- Salespeople: 36 × $70,000 = $2,520,000\n- Marketers: 36 × $65,000 = $2,340,000\n\nTotal annual payroll:\n$4,320,000 + $2,520,000 + $2,340,000 = $9,180,000\n\n9180000",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 96,
+      "output_tokens": 253,
+      "total_latency_ms": 3987,
+      "cost_usd": 0.004083
+    },
+    "timestamp": "2026-03-03T12:26:40.488Z"
+  },
+  {
+    "result_id": "5d317bf7-332d-4dd7-a8cb-e179aca4f808",
+    "task_id": "tab-gsm-50t-gsm8k_037",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many tennis balls Ralph did not hit out of the total 175 balls.\n\nFirst, let me calculate how many balls he hit from the first 100 balls:\n- He hit 2/5 of the first 100 balls\n- 2/5 × 100 = 40 balls hit\n\nNext, let me calculate how many balls he hit from the next 75 balls:\n- He hit 1/3 of the next 75 balls\n- 1/3 × 75 = 25 balls hit\n\nNow I'll find the total number of balls he hit:\n- Total balls hit = 40 + 25 = 65 balls\n\nFinally, I'll calculate how many balls he did not hit:\n- Total balls = 175\n- Balls not hit = 175 - 65 = 110 balls\n\n110",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 116,
+      "output_tokens": 201,
+      "total_latency_ms": 3224,
+      "cost_usd": 0.0033629999999999997
+    },
+    "timestamp": "2026-03-03T12:26:44.213Z"
+  },
+  {
+    "result_id": "f4b7805e-f201-4773-b649-d18c070cf7d8",
+    "task_id": "tab-gsm-50t-gsm8k_038",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of clips Natalia sold in April and May.\n\nGiven information:\n- In April: Natalia sold clips to 48 friends\n- In May: She sold half as many clips as in April\n\nFirst, let me find how many clips she sold in May:\nMay sales = Half of April sales = 48 ÷ 2 = 24 clips\n\nNow I can find the total clips sold in both months:\nTotal clips = April clips + May clips\nTotal clips = 48 + 24 = 72\n\n72",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 68,
+      "output_tokens": 130,
+      "total_latency_ms": 2767,
+      "cost_usd": 0.002154
+    },
+    "timestamp": "2026-03-03T12:26:47.485Z"
+  },
+  {
+    "result_id": "4d390bc1-48aa-4772-af09-c147013f4189",
+    "task_id": "tab-gsm-50t-gsm8k_039",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Weng's earnings for 50 minutes of babysitting at $12 per hour.\n\nFirst, I'll convert 50 minutes to hours:\n50 minutes ÷ 60 minutes per hour = 50/60 = 5/6 hours\n\nNow I'll calculate her earnings:\nEarnings = hourly rate × hours worked\nEarnings = $12 × 5/6\nEarnings = $12 × 5 ÷ 6\nEarnings = $60 ÷ 6\nEarnings = $10\n\n10",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 63,
+      "output_tokens": 136,
+      "total_latency_ms": 3040,
+      "cost_usd": 0.002229
+    },
+    "timestamp": "2026-03-03T12:26:51.029Z"
+  },
+  {
+    "result_id": "23679c1b-2a9f-4435-a9a1-acb6dae251b1",
+    "task_id": "tab-gsm-50t-gsm8k_040",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how much more money Betty needs for the $100 wallet.\n\nLet me work through this step by step:\n\n1) Betty has half of what she needs:\n   Betty has = $100 ÷ 2 = $50\n\n2) Her parents give her $15\n\n3) Her grandparents give her twice as much as her parents:\n   Grandparents give = 2 × $15 = $30\n\n4) Total money Betty will have:\n   $50 + $15 + $30 = $95\n\n5) Money still needed:\n   $100 - $95 = $5\n\n5",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 88,
+      "output_tokens": 148,
+      "total_latency_ms": 2654,
+      "cost_usd": 0.0024839999999999997
+    },
+    "timestamp": "2026-03-03T12:26:54.185Z"
+  },
+  {
+    "result_id": "e52ce43c-2413-4fd8-be0f-52ac7db1d351",
+    "task_id": "tab-gsm-50t-gsm8k_041",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how many pages Julie should read tomorrow.\n\nLet me track Julie's reading progress:\n\nYesterday: Julie read 12 pages\n\nToday: She read twice as many pages as yesterday\nToday: 2 × 12 = 24 pages\n\nTotal pages read so far: 12 + 24 = 36 pages\n\nRemaining pages: 120 - 36 = 84 pages\n\nTomorrow: She wants to read half of the remaining pages\nTomorrow: 84 ÷ 2 = 42 pages\n\n42",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 80,
+      "output_tokens": 127,
+      "total_latency_ms": 2551,
+      "cost_usd": 0.002145
+    },
+    "timestamp": "2026-03-03T12:26:57.241Z"
+  },
+  {
+    "result_id": "2b9d5ee5-a843-4438-a78d-6c3ac0561ad8",
+    "task_id": "tab-gsm-50t-gsm8k_042",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the total amount James pays for his plane ticket after applying the discount, tax, and booking fee.\n\nStep 1: Calculate the discounted price.\nOriginal price: $6000\nDiscount: 30%\nDiscount amount: $6000 × 0.30 = $1800\nDiscounted price: $6000 - $1800 = $4200\n\nStep 2: Calculate the tax on the discounted price.\nTax rate: 12%\nTax amount: $4200 × 0.12 = $504\n\nStep 3: Calculate the total amount paid.\nDiscounted price: $4200\nTax: $504\nBooking fee: $150\nTotal: $4200 + $504 + $150 = $4854\n\n4854",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 75,
+      "output_tokens": 182,
+      "total_latency_ms": 2912,
+      "cost_usd": 0.0029549999999999997
+    },
+    "timestamp": "2026-03-03T12:27:00.663Z"
+  },
+  {
+    "result_id": "51c94a45-1923-4e05-8c72-35a33d00fb6d",
+    "task_id": "tab-gsm-50t-gsm8k_043",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate the baker's profit by finding his revenue minus his costs.\n\nFirst, let me find the total flour needed:\n- 40 loaves × 2 cups per loaf = 80 cups of flour\n\nNext, let me calculate the cost:\n- Cost = 80 cups × $1.50 per cup = $120\n\nNow let me find how the bread is distributed:\n- Bread for sandwiches = 3/4 × 40 = 30 loaves\n- Bread for toast = 40 - 30 = 10 loaves\n\nNow let me calculate the revenue:\n- Revenue from sandwiches = 30 loaves × $6 = $180\n- Revenue from toast = 10 loaves × $3 = $30\n- Total revenue = $180 + $30 = $210\n\nFinally, let me calculate the profit:\n- Profit = Revenue - Cost = $210 - $120 = $90\n\n90",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 100,
+      "output_tokens": 226,
+      "total_latency_ms": 3879,
+      "cost_usd": 0.0036899999999999997
+    },
+    "timestamp": "2026-03-03T12:27:05.047Z"
+  },
+  {
+    "result_id": "95d53355-36dc-4104-9953-b7a381efc911",
+    "task_id": "tab-gsm-50t-gsm8k_044",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how much each person invested, then calculate Charlie's share of the profit based on his proportional investment.\n\nFirst, let me find each person's investment:\n- Alice invests: $3000\n- Bob invests twice as much as Alice: 2 × $3000 = $6000\n- Charlie invests half as much as Bob: $6000 ÷ 2 = $3000\n\nNow I'll find the total investment:\nTotal investment = $3000 + $6000 + $3000 = $12000\n\nCharlie's proportion of the total investment:\nCharlie's proportion = $3000 ÷ $12000 = 1/4 = 0.25\n\nCharlie's share of the $1800 profit:\nCharlie's profit = 0.25 × $1800 = $450\n\n450",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 85,
+      "output_tokens": 197,
+      "total_latency_ms": 3618,
+      "cost_usd": 0.00321
+    },
+    "timestamp": "2026-03-03T12:27:09.170Z"
+  },
+  {
+    "result_id": "25b2618f-5b6d-4a9b-9ac5-cdd71a03c5f6",
+    "task_id": "tab-gsm-50t-gsm8k_045",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find how long it takes for the tank to fill from 30 gallons to 50 gallons.\n\nGiven information:\n- Tank capacity: 50 gallons\n- Current amount: 30 gallons\n- Water flows in: 3 gallons per minute\n- Water drains out: 1 gallon per minute\n\nFirst, I'll find the net rate of water increase:\nNet rate = Inflow rate - Outflow rate\nNet rate = 3 - 1 = 2 gallons per minute\n\nNext, I'll find how many more gallons are needed:\nGallons needed = Tank capacity - Current amount\nGallons needed = 50 - 30 = 20 gallons\n\nFinally, I'll calculate the time needed:\nTime = Gallons needed ÷ Net rate\nTime = 20 ÷ 2 = 10 minutes\n\n10",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 80,
+      "output_tokens": 212,
+      "total_latency_ms": 3653,
+      "cost_usd": 0.00342
+    },
+    "timestamp": "2026-03-03T12:27:13.324Z"
+  },
+  {
+    "result_id": "9aa1cdc6-f159-4842-a68c-af1fbd13ece9",
+    "task_id": "tab-gsm-50t-gsm8k_046",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to solve this step by step.\n\nStarting amount: 240 stickers\n\nStep 1: Emma gives 1/4 to her sister\nAmount given to sister = 1/4 × 240 = 60 stickers\nRemaining after giving to sister = 240 - 60 = 180 stickers\n\nStep 2: Emma gives 1/3 of the remainder to her friend\nAmount given to friend = 1/3 × 180 = 60 stickers\nRemaining after giving to friend = 180 - 60 = 120 stickers\n\nStep 3: Emma buys 50 more stickers\nFinal amount = 120 + 50 = 170 stickers\n\n170",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 82,
+      "output_tokens": 171,
+      "total_latency_ms": 2829,
+      "cost_usd": 0.002811
+    },
+    "timestamp": "2026-03-03T12:27:16.654Z"
+  },
+  {
+    "result_id": "a9b2fdeb-fe5e-4b08-9deb-37dc9d6d5235",
+    "task_id": "tab-gsm-50t-gsm8k_047",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the area of the path around a rectangular garden.\n\nGiven information:\n- Garden dimensions: 15m long × 10m wide\n- Path width: 2m around the entire garden\n\nFirst, I'll find the dimensions of the garden including the path:\n- The path adds 2m on each side, so it adds 4m total to each dimension\n- Length with path: 15m + 4m = 19m\n- Width with path: 10m + 4m = 14m\n\nNow I'll calculate the areas:\n- Area of garden only: 15m × 10m = 150 m²\n- Area of garden plus path: 19m × 14m = 266 m²\n\nThe area of the path is the difference:\nArea of path = Total area - Garden area\nArea of path = 266 m² - 150 m² = 116 m²\n\n116",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 0,
+      "gsm8k_correct": false
+    },
+    "metrics": {
+      "input_tokens": 64,
+      "output_tokens": 211,
+      "total_latency_ms": 3709,
+      "cost_usd": 0.0033569999999999997
+    },
+    "timestamp": "2026-03-03T12:27:20.868Z"
+  },
+  {
+    "result_id": "10f9963f-b71d-4a16-b3fc-a5e9d55d7df7",
+    "task_id": "tab-gsm-50t-gsm8k_048",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to calculate Mike's total weekly earnings from both jobs, then find 40% of that amount.\n\nFirst job earnings:\n$15/hour × 20 hours/week = $300/week\n\nSecond job earnings:\n$12/hour × 15 hours/week = $180/week\n\nTotal weekly earnings:\n$300 + $180 = $480/week\n\nAmount spent on rent (40% of total earnings):\n$480 × 0.40 = $192/week\n\n$192",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 97,
+      "output_tokens": 117,
+      "total_latency_ms": 2556,
+      "cost_usd": 0.002046
+    },
+    "timestamp": "2026-03-03T12:27:23.925Z"
+  },
+  {
+    "result_id": "c9ba54c5-59c8-4219-885e-a1d1004dacfb",
+    "task_id": "tab-gsm-50t-gsm8k_049",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the total number of students who play sports.\n\nFirst, let me find the number of girls and boys:\n- Total students: 600\n- Girls: 55% of 600 = 0.55 × 600 = 330 girls\n- Boys: 600 - 330 = 270 boys\n\nNext, let me find how many girls and boys play sports:\n- Girls who play sports: 30% of 330 = 0.30 × 330 = 99 girls\n- Boys who play sports: 40% of 270 = 0.40 × 270 = 108 boys\n\nTotal students who play sports:\n99 + 108 = 207\n\n207",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 64,
+      "output_tokens": 169,
+      "total_latency_ms": 2740,
+      "cost_usd": 0.002727
+    },
+    "timestamp": "2026-03-03T12:27:27.170Z"
+  },
+  {
+    "result_id": "80f3fdca-c8d9-402a-a575-7af9fffc01ec",
+    "task_id": "tab-gsm-50t-gsm8k_050",
+    "model": "Claude Sonnet 4",
+    "condition": "tscg",
+    "run": 1,
+    "response": {
+      "raw_output": "I need to find the average speed for the entire round trip.\n\nGiven information:\n- Distance from A to B: 240 km\n- Speed from A to B: 80 km/h\n- Speed from B to A: 120 km/h\n\nFirst, I'll calculate the time for each leg of the journey.\n\nTime from A to B:\nTime = Distance ÷ Speed = 240 km ÷ 80 km/h = 3 hours\n\nTime from B to A:\nTime = Distance ÷ Speed = 240 km ÷ 120 km/h = 2 hours\n\nTotal time for round trip:\nTotal time = 3 hours + 2 hours = 5 hours\n\nTotal distance for round trip:\nTotal distance = 240 km + 240 km = 480 km\n\nAverage speed for entire round trip:\nAverage speed = Total distance ÷ Total time = 480 km ÷ 5 hours = 96 km/h\n\n96",
+      "parse_success": true
+    },
+    "scores": {
+      "tool_selection_accuracy": 0,
+      "parameter_f1": 0,
+      "overall": 1,
+      "gsm8k_correct": true
+    },
+    "metrics": {
+      "input_tokens": 80,
+      "output_tokens": 239,
+      "total_latency_ms": 3444,
+      "cost_usd": 0.003825
+    },
+    "timestamp": "2026-03-03T12:27:31.117Z"
+  }
+]

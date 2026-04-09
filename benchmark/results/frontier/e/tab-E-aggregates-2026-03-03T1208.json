@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "scenario": "E",
+    "models": [
+      "claude-sonnet-4-6",
+      "gpt-5.2"
+    ],
+    "conditions": [
+      "natural",
+      "tscg"
+    ],
+    "runs_per_condition": 1,
+    "total_tasks": 120,
+    "total_api_calls": 480,
+    "start_time": "2026-03-03T12:08:05.075Z",
+    "end_time": "2026-03-03T12:08:06.758Z",
+    "duration_ms": 1683
+  },
+  "aggregates": [
+    {
+      "model": "claude-sonnet-4-6",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5733333333333335,
+        "ci95": [
+          0.5105585981828253,
+          0.6832373476059888
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.6,
+        "ci95": [
+          0.5105585981828253,
+          0.6832373476059888
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.5333333333333333,
+        "ci95": [
+          0.46081381811060756,
+          0.6360841547837995
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 120
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.7916666666666664,
+        "ci95": [
+          0.7753231505975375,
+          0.9029626596633118
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.85,
+        "ci95": [
+          0.7753231505975375,
+          0.9029626596633118
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.7416666666666668,
+        "ci95": [
+          0.7196316465662729,
+          0.8617561908001696
+        ]
+      },
+      "arr": 1.3808139534883712,
+      "token_savings_pct": 50.0929584011155,
+      "cost_savings_pct": 19.554491577380098,
+      "n_tasks": 120
+    },
+    {
+      "model": "gpt-5.2",
+      "condition": "natural",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.5216666666666668,
+        "ci95": [
+          0.5105585981828253,
+          0.6832373476059888
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.6,
+        "ci95": [
+          0.5105585981828253,
+          0.6832373476059888
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.4041666666666666,
+        "ci95": [
+          0.3639158452162006,
+          0.5391861818893925
+        ]
+      },
+      "arr": 0,
+      "token_savings_pct": 0,
+      "cost_savings_pct": 0,
+      "n_tasks": 120
+    },
+    {
+      "model": "gpt-5.2",
+      "condition": "tscg",
+      "scenario": "A",
+      "accuracy": {
+        "mean": 0.7861111111111103,
+        "ci95": [
+          0.8333168001483641,
+          0.9418669830068925
+        ]
+      },
+      "tool_selection_accuracy": {
+        "mean": 0.9,
+        "ci95": [
+          0.8333168001483641,
+          0.9418669830068925
+        ]
+      },
+      "parameter_f1": {
+        "mean": 0.6486111111111109,
+        "ci95": [
+          0.6655869783172575,
+          0.8189028861547777
+        ]
+      },
+      "arr": 1.5069222577209778,
+      "token_savings_pct": 11.388637246020448,
+      "cost_savings_pct": 12.509765116400207,
+      "n_tasks": 120
+    }
+  ]
+}
