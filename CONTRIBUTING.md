@@ -18,16 +18,18 @@ npm test
 
 ```
 src/
-  optimizer/     # Core transforms (SDM, DRO, CAS, TAS, CFL, CFO, CCP, SAD-F)
+  optimizer/     # Core transforms (TAS, CFL, CFO, SDM, DRO, CCP, CAS, SAD-F)
   compiler/      # NL-to-TSCG compilation
   core/          # Types, providers, rate-limiter
-  benchmark/     # Test cases and runner
+  benchmark/     # Test case generators and runner
 cli/             # Unified CLI entry point
 packages/
   core/          # @tscg/core npm package
   tool-optimizer/# @tscg/tool-optimizer npm package
-paper/           # Academic paper (LaTeX)
-benchmark/       # Benchmark data and analysis
+benchmark/       # TAB benchmark harness and analysis code
+integrations/    # Framework integration examples
+tests/           # 459 tests across 14 test files
+docs/            # Technical documentation
 ```
 
 ## Running Tests

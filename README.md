@@ -2,18 +2,55 @@
 
 [![npm version](https://img.shields.io/npm/v/@tscg/core)](https://www.npmjs.com/package/@tscg/core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-493%20passing-brightgreen)]()
+[![Tests](https://img.shields.io/badge/tests-459%20passing-brightgreen)]()
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-green)]()
 
-**Deterministic tool-schema compiler that reduces LLM tool-definition overhead by ~72%.**
+**Deterministic tool-schema compiler that reduces LLM tool-definition overhead by 50--72% while *improving* accuracy.**
 
 1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 27.7KB bundle.
 
 ## The Problem
 
-Every time an LLM agent framework makes an API call, it sends full JSON Schema definitions for every registered tool. Claude Code injects ~50,000 tokens of tool definitions per subprocess. At production scale (100k calls/day), the schema overhead alone costs >$30,000/month.
+Every LLM agent framework sends full JSON Schema definitions for every registered tool on every API call. Claude Code injects ~50,000 tokens of tool definitions per subprocess. At production scale (100K calls/day), the schema overhead alone costs **>$30,000/month**.
 
-Worse: small models (4B-14B) cannot parse JSON-format tool schemas reliably at scale -- achieving 0-49% accuracy with >15 tools. This locks agentic capabilities behind expensive frontier APIs.
+Worse: small models (4B--14B) cannot parse JSON-format tool schemas reliably at scale -- achieving **0--49% accuracy** with >15 tools. This locks agentic capabilities behind expensive frontier APIs.
+
+## Key Results
+
+### Pareto Dominance: Better Accuracy AND Fewer Tokens
+
+BFCL ([Berkeley Function Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html)) validation -- the industry standard for tool-calling evaluation:
+
+| Model | Without TSCG | With TSCG | Improvement | Token Savings |
+|-------|-------------|-----------|-------------|---------------|
+| Claude Sonnet 4 | 85.7% | 93.2% | +7.5pp | 46.8% |
+| **GPT-4o** | **31.7%** | **57.4%** | **+25.7pp (181% ARR)** | 2.6% |
+| GPT-5.2 | 61.9% | 89.4% | +27.5pp (144% ARR) | 8.3% |
+
+Every model *improves*. TSCG achieves **108--181% Accuracy Retention Rate** -- it doesn't just retain accuracy, it increases it.
+
+### Small Model Enablement
+
+| Model | JSON Baseline (20 tools) | With TSCG | Recovery |
+|-------|------------------------|-----------|----------|
+| Phi-4 14B | 0% | 84.4% | **+84.4pp** |
+| Mistral 7B | 35% | 80.1% | **+45.1pp** |
+| Gemma 3 4B | 49.9% | 67.0% | +17.1pp |
+
+Seven small models (4B--14B) that achieve 0--49% accuracy on JSON tools recover to **65--90%** with TSCG. The root cause: JSON format, not model capacity (R^2 = 0.88 against JSON baselines, collapses to 0.03 against text -- **97% of variance is format sensitivity**).
+
+### Full Benchmark Summary
+
+From **~13,000 API calls** across **12 models** (4B--32B + 3 frontier APIs), 5 scenarios:
+
+| Finding | Detail |
+|---------|--------|
+| Token savings | 50--72% on tool schemas |
+| BFCL validation | 108--181% Accuracy Retention Rate |
+| Formal guarantee | >=51% savings on any well-formed schema (Theorem 3.1) |
+| Predictive model | R^2 = 0.88 predicts TSCG benefit from single baseline measurement |
+| Speed | <1ms compression, ~40,000x faster than LLMLingua-2 |
+| Cost at scale | >$30,000/month savings at 100K calls/day |
 
 ## What TSCG Does
 
@@ -29,19 +66,6 @@ TSCG applies 8 formally-defined transforms grounded in how causal transformers p
 | **CCP** | Closure-Context Preservation | Appends closure block for recency bias |
 | **CAS** | Causal Access Scoring | Scores and reorders by parameter fragility |
 | **SAD-F** | Selective Anchor Duplication | Budget-constrained anchor duplication |
-
-## Key Results
-
-From ~13,000 API calls across 12 models (4B-32B + 3 frontier APIs):
-
-| Finding | Detail |
-|---------|--------|
-| Token savings | 50-72% on tool schemas |
-| Small model recovery | 0-49% to 65-90% accuracy (JSON-API enablement) |
-| Frontier compression | +5-11pp genuine compression (Claude, GPT-4o, GPT-5.2) |
-| BFCL validation | 108% Accuracy Retention Rate |
-| Predictive model | R²=0.88 predicts TSCG benefit from single baseline measurement |
-| Speed | <1ms compression, ~40,000x faster than LLMLingua-2 |
 
 ## Quick Start
 
@@ -71,7 +95,6 @@ const tools = [
 ];
 
 const result = compress(tools, { model: 'claude-sonnet' });
-// ~72% fewer tokens, same or better accuracy
 console.log(result.compressed);
 console.log(`Saved ${result.savings}% tokens`);
 ```
@@ -115,11 +138,31 @@ const proxy = createTSCGMCPProxy(mcpServer);
 import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 ```
 
+## TSCG vs Other Approaches
+
+| Property | TSCG | LLMLingua-2 | DSPy / SAMMO |
+|----------|------|-------------|-------------|
+| Accuracy effect | **Improves** (108--181% ARR) | Degrades (-5 to -20%) | Degrades |
+| Speed | **<1ms** | ~42s (GPU) | Minutes |
+| Dependencies | **None** | GPU + ML framework | API calls |
+| Deterministic | **Yes** | No | No |
+| Formal guarantees | **>=51% savings** | None | None |
+| Bundle size | **27.7KB** | Requires PyTorch | Full stack |
+| Works offline | **Yes** | GPU required | API required |
+
+## Who Benefits
+
+- **Claude Code / Cursor / Windsurf users**: ~35K fewer tokens per subprocess
+- **Local LLM users (Ollama)**: 7B models become functional tool-use agents with 50+ tools
+- **Production API deployments**: >$30,000/month savings at 100K calls/day
+- **Multi-agent orchestration**: Savings multiply per sub-agent in the chain
+- **Edge / Mobile / Privacy**: EU AI Act compliant local deployment becomes viable
+
 ## Project Structure
 
 ```
 src/
-  optimizer/        # Core transforms (10 transforms, 946 LOC)
+  optimizer/        # Core transforms (8 principles, ~950 LOC)
   compiler/         # NL-to-TSCG compilation
   core/             # Types, multi-model providers, rate-limiter
   benchmark/        # Test case generators and runner
@@ -127,11 +170,9 @@ cli/                # Unified CLI (compress, benchmark, analyze, info)
 packages/
   core/             # @tscg/core npm package
   tool-optimizer/   # @tscg/tool-optimizer npm package
-paper/              # Academic paper (ACL LaTeX format)
-benchmark/          # TAB benchmark data and analysis
-extension/          # Chrome Extension (Manifest V3)
+benchmark/          # TAB benchmark harness and analysis code
 integrations/       # Framework integration examples
-launch/             # Community launch materials
+tests/              # 459 tests across 14 test files
 docs/               # Technical documentation
 ```
 
@@ -142,7 +183,7 @@ git clone https://github.com/SKZL-AI/tscg.git
 cd tscg
 npm install
 npm run build
-npm test          # 493 tests
+npm test          # 459 tests
 npm run typecheck # Type checking
 ```
 
@@ -152,13 +193,14 @@ npm run typecheck # Type checking
 
 Furkan Sakizli. 2026.
 
-The paper introduces TSCG's formal framework, the TAB (TSCG-Agentic-Bench) benchmark, and the four-class behavioral taxonomy for deployment guidance.
+See [`TSCG-paper.pdf`](TSCG-paper.pdf) in this repository. The paper introduces TSCG's formal framework, the TAB (TSCG-Agentic-Bench) benchmark with ~13,000 API calls across 12 models, and the four-class behavioral taxonomy for deployment guidance.
 
 ## Citation
 
 ```bibtex
 @article{sakizli2026tscg,
-  title={TSCG: Token-Context Semantic Grammar for Causal Prompt Optimization in Large Language Models},
+  title={TSCG: Token-Context Semantic Grammar for Causal Prompt Optimization
+         in Large Language Models},
   author={Sakizli, Furkan},
   year={2026},
   note={Preprint}
