@@ -96,7 +96,32 @@ const tools = [
 
 const result = compress(tools, { model: 'claude-sonnet' });
 console.log(result.compressed);
-console.log(`Saved ${result.savings}% tokens`);
+console.log(`Saved ${result.metrics.tokens.savingsPercent}% tokens`);
+// => "get_weather(location:str units?:str[celsius|fahrenheit])|Get current weather"
+// => "Saved 62.3% tokens"
+```
+
+### Result Object
+
+```typescript
+const result = compress(tools, { model: 'claude-sonnet', profile: 'balanced' });
+
+result.compressed                        // string — compressed tool definitions
+result.metrics.tokens.original           // number — original token count
+result.metrics.tokens.compressed         // number — compressed token count
+result.metrics.tokens.savingsPercent     // number — e.g. 62.3
+result.metrics.compressionTimeMs         // number — e.g. 0.9
+result.appliedPrinciples                 // string[] — e.g. ['SDM', 'CAS', 'DRO', 'TAS']
+result.metrics.perTool                   // { name, originalTokens, compressedTokens, savingsPercent }[]
+```
+
+### Options
+
+```typescript
+compress(tools, {
+  model: 'claude-sonnet',   // Target model: 'claude-sonnet' | 'gpt-4o' | 'gpt-4' | ...
+  profile: 'balanced',      // Profile: 'minimal' | 'balanced' | 'max_compress' | 'max_accuracy' | 'full'
+});
 ```
 
 ## Packages
