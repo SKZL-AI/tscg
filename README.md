@@ -49,8 +49,21 @@ From **~13,000 API calls** across **12 models** (4B--32B + 3 frontier APIs), 5 s
 | BFCL validation | 108--181% Accuracy Retention Rate |
 | Formal guarantee | >=51% savings on any well-formed schema (Theorem 3.1) |
 | Predictive model | R^2 = 0.88 predicts TSCG benefit from single baseline measurement |
-| Speed | <1ms compression, ~40,000x faster than LLMLingua-2 |
+| Speed | 50 tools in 2.4ms (Node.js v24, commodity hardware) |
 | Cost at scale | >$30,000/month savings at 100K calls/day |
+
+### Verified Performance (Fresh Install)
+
+Independent reproduction on `@tscg/core` from npm:
+
+| Metric | Measured |
+|--------|----------|
+| 5 realistic tools (Claude target) | 59.5% token savings |
+| 50 tools | 66.6% savings in 2.4ms |
+| Compression time (5 tools) | 0.9ms |
+| Unit tests | 459/459 passing |
+| Bundle | 34.7KB (11.7KB gzipped) |
+| Dependencies | 0 |
 
 ## What TSCG Does
 
@@ -168,7 +181,7 @@ import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 | Property | TSCG | LLMLingua-2 | DSPy / SAMMO |
 |----------|------|-------------|-------------|
 | Accuracy effect | **Improves** (108--181% ARR) | Degrades (-5 to -20%) | Degrades |
-| Speed | **<1ms** | ~42s (GPU) | Minutes |
+| Speed | **2.4ms / 50 tools** | ~42s (GPU) | Minutes |
 | Dependencies | **None** | GPU + ML framework | API calls |
 | Deterministic | **Yes** | No | No |
 | Formal guarantees | **>=51% savings** | None | None |

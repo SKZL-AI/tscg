@@ -2,7 +2,7 @@
 
 Deterministic prompt compiler for tool-schema compression. Reduces LLM tool-definition overhead by **71.7%** with zero accuracy loss.
 
-Zero runtime dependencies. <1ms compression time. 14.9KB ESM bundle.
+Zero runtime dependencies. 50 tools in 2.4ms. 34.7KB bundle (11.7KB gzipped).
 
 ## Installation
 

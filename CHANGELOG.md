@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - MCP aggregation (50 tools from 5 servers)
   - BFCL accuracy retention (Berkeley Function-Calling Leaderboard tasks)
 - **npm packages:**
-  - `@tscg/core` -- Deterministic prompt compiler (14.9KB ESM, zero dependencies)
+  - `@tscg/core` -- Deterministic prompt compiler (34.7KB ESM, zero dependencies)
   - `@tscg/tool-optimizer` -- LangChain, MCP, and Vercel AI SDK integrations
 - **Statistical analysis suite:** Paired t-test, McNemar, bootstrap CI, Cohen's d, Hedges' g
 - **Publication-quality output:** LaTeX tables and pgfplots figure data generators
@@ -107,7 +107,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   7. CSP -- Context-Sensitive Pruning
   8. SAD -- Selective Anchor Duplication
 - **10 composable transforms** implemented in ~1,200 lines of TypeScript
-- **Browser-compatible bundle:** 27.7KB (10KB gzipped)
+- **Browser-compatible bundle:** 34.7KB (11.7KB gzipped)
 - **Zero external dependencies**
 - **Benchmark suite:** 19 core tasks + 25 hard tests + 82 domain-specific tests
   - 7 categories, 5 extended categories, 3 specialized domains
