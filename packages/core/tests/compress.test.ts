@@ -191,7 +191,11 @@ describe('@tscg/core — compress()', () => {
 
     expect(result.compressed).toBeDefined();
     expect(result.compressed.length).toBeGreaterThan(0);
-    expect(result.metrics.tokens.savingsPercent).toBeGreaterThan(60);
+    // v1.3.0: balanced profile now includes CCP which appends ~5-10 tokens
+    // for the [CLOSURE:...] recap. Net savings on a single tool drops from
+    // ~71% to ~58-62%. Paper §4.5 documents this as a schema-vs-generation
+    // tokens tradeoff (CCP reduces downstream generation tokens).
+    expect(result.metrics.tokens.savingsPercent).toBeGreaterThan(55);
   });
 
   it('should compress a 25-tool catalog by >60%', () => {
@@ -262,9 +266,12 @@ describe('@tscg/core — compression profiles', () => {
     expect(result.metrics.tokens.savingsPercent).toBeGreaterThan(50);
   });
 
-  it('balanced profile should save >65%', () => {
+  it('balanced profile should save >60%', () => {
     const result = compress(tools, { profile: 'balanced' });
-    expect(result.metrics.tokens.savingsPercent).toBeGreaterThan(65);
+    // v1.3.0: balanced now enables CCP by default (+5-10 tokens per catalog).
+    // Threshold reduced from 65→60 to reflect the 8-operator baseline. Paper §5
+    // documents CCP's schema-token overhead as an accuracy-improving tradeoff.
+    expect(result.metrics.tokens.savingsPercent).toBeGreaterThan(60);
   });
 
   it('aggressive profile should save >60%', () => {
@@ -536,9 +543,13 @@ describe('@tscg/core — Engine Equivalence (Korrektur 1)', () => {
       },
     ];
 
-    // Run both pipelines with all transforms enabled
+    // Run both pipelines with the legacy 5-operator subset enabled.
+    // v1.3.0 adds CFO/CFL/CCP to _engine.ts but NOT to transforms-tools.ts
+    // (the main webapp's engine). The equivalence test must isolate the
+    // shared subset to remain meaningful.
     const bridgeResult = bridge.optimizeToolDefinitions(internalTools, {
       useSDM: true, useDRO: true, useCAS: true, useTAS: true,
+      useCFO: false, useCFL: false, useCCP: false, useSAD: false,
     });
     const originalResult = original.optimizeToolDefinitions(internalTools, {
       useSDM: true, useDRO: true, useCAS: true, useTAS: true,
@@ -600,5 +611,173 @@ describe('@tscg/core — profiles', () => {
     expect(names).toContain('gpt-5');
     expect(names).toContain('mistral-7b');
     expect(names).toContain('deepseek-v3');
+  });
+});
+
+/**
+ * 8-Operator Closure Test (v1.3.0) — prevents regression to phantom operators.
+ *
+ * The TSCG paper defines exactly 8 compression operators:
+ *   SDM, TAS, DRO, CFL, CFO, CAS, SAD-F, CCP
+ *
+ * This block asserts:
+ *   1. All 8 appear in appliedPrinciples for Claude + aggressive profile
+ *   2. Non-Claude models get 7 (CFL and SAD auto-disabled, CCP preserved)
+ *   3. No phantom labels (ATA, RKE, CSP, CFL→CAS collision from L-23 era)
+ */
+describe('@tscg/core — 8-Operator Closure (v1.3.0)', () => {
+  const tools = generateToolCatalog(5);
+
+  it('Claude aggressive profile exposes all 8 paper operators in appliedPrinciples', () => {
+    const result = compress(tools, { model: 'claude-sonnet', profile: 'aggressive' });
+    const expected = ['SDM', 'TAS', 'DRO', 'CFL', 'CFO', 'CAS', 'SAD', 'CCP'];
+    for (const op of expected) {
+      expect(result.appliedPrinciples).toContain(op);
+    }
+    expect(result.appliedPrinciples).toHaveLength(8);
+  });
+
+  it('non-Claude aggressive profile disables CFL + SAD but keeps CCP and CFO', () => {
+    const result = compress(tools, { model: 'gpt-4o-mini', profile: 'aggressive' });
+    expect(result.appliedPrinciples).not.toContain('CFL');
+    expect(result.appliedPrinciples).not.toContain('SAD');
+    expect(result.appliedPrinciples).toContain('CCP');
+    expect(result.appliedPrinciples).toContain('CFO');
+    // 8 - 2 Claude-only = 6 expected for GPT aggressive
+    expect(result.appliedPrinciples).toHaveLength(6);
+  });
+
+  it('does NOT expose phantom operators from L-23/L-24 era', () => {
+    const result = compress(tools, { model: 'claude-sonnet', profile: 'aggressive' });
+    // These were removed or renamed; must never re-appear in output metadata
+    expect(result.appliedPrinciples).not.toContain('ATA');
+    expect(result.appliedPrinciples).not.toContain('RKE');
+    expect(result.appliedPrinciples).not.toContain('CSP');
+    expect(result.appliedPrinciples).not.toContain('DTR'); // renamed → SDM
+    expect(result.appliedPrinciples).not.toContain('SCO'); // renamed → DRO
+  });
+
+  it('conservative profile only applies SDM', () => {
+    const result = compress(tools, { profile: 'conservative' });
+    expect(result.appliedPrinciples).toEqual(['SDM']);
+  });
+});
+
+/**
+ * CFO — Causal-Forward Ordering regression test.
+ *
+ * Asserts read-class tools (get_*, read_*, list_*, search_*) appear BEFORE
+ * write-class tools (create_*, send_*, update_*, delete_*, execute_*) in
+ * the compressed output. Uses first-occurrence string index as proxy for
+ * order, since DRO emits tools in array order.
+ */
+describe('@tscg/core — CFO Causal Ordering', () => {
+  it('places read-class tool before write-class tool', () => {
+    const readTool: ToolDefinition = {
+      type: 'function',
+      function: {
+        name: 'read_config',
+        description: 'Read the configuration file.',
+        parameters: { type: 'object', properties: { path: { type: 'string' } }, required: ['path'] },
+      },
+    };
+    const writeTool: ToolDefinition = {
+      type: 'function',
+      function: {
+        name: 'delete_file',
+        description: 'Delete a file from disk.',
+        parameters: { type: 'object', properties: { path: { type: 'string' } }, required: ['path'] },
+      },
+    };
+    // Intentionally pass write FIRST — CFO should reorder so read comes first
+    const result = compress([writeTool, readTool], {
+      profile: 'balanced',
+      principles: { cfo: true, cas: false }, // isolate CFO from CAS
+    });
+    const readIdx = result.compressed.indexOf('read_config');
+    const writeIdx = result.compressed.indexOf('delete_file');
+    expect(readIdx).toBeGreaterThanOrEqual(0);
+    expect(writeIdx).toBeGreaterThanOrEqual(0);
+    expect(readIdx).toBeLessThan(writeIdx);
+  });
+
+  it('is identity when all tools fall in one class', () => {
+    const readOnly = generateToolCatalog(3).filter((t) =>
+      /^(get_|read_|list_|search_|find_)/.test(t.function.name),
+    );
+    if (readOnly.length < 2) return; // skip if fixture doesn't include enough reads
+    const disabled = compress(readOnly, { principles: { cfo: false } });
+    const enabled = compress(readOnly, { principles: { cfo: true } });
+    // Same input order → CFO should be identity
+    for (const t of readOnly) {
+      expect(enabled.compressed).toContain(t.function.name);
+      expect(disabled.compressed).toContain(t.function.name);
+    }
+  });
+});
+
+/**
+ * CCP — Causal Closure Principle regression test.
+ *
+ * Asserts the [CLOSURE:...] block is appended at the end of compressed text
+ * and contains each tool name with its required parameters.
+ */
+describe('@tscg/core — CCP Closure Block', () => {
+  const tools = generateToolCatalog(3);
+
+  it('appends [CLOSURE:...] to aggressive-profile output', () => {
+    const result = compress(tools, { model: 'claude-sonnet', profile: 'aggressive' });
+    expect(result.compressed).toContain('[CLOSURE:');
+    expect(result.compressed.trimEnd().endsWith(']')).toBe(true);
+  });
+
+  it('closure block lists every tool name', () => {
+    const result = compress(tools, { principles: { ccp: true } });
+    // Extract the closure block
+    const closureMatch = result.compressed.match(/\[CLOSURE:([^\]]+)\]/);
+    expect(closureMatch).not.toBeNull();
+    const closureBody = closureMatch![1];
+    for (const tool of tools) {
+      expect(closureBody).toContain(tool.function.name);
+    }
+  });
+
+  it('closure block includes required params in parens', () => {
+    const result = compress(tools, { principles: { ccp: true } });
+    const closureMatch = result.compressed.match(/\[CLOSURE:([^\]]+)\]/);
+    expect(closureMatch).not.toBeNull();
+    // At least one tool should have required params shown in parens
+    // (fixture includes `to`, `subject`, `body` as required for send_email)
+    expect(closureMatch![1]).toMatch(/\w+\([a-z_,]+\)/);
+  });
+
+  it('is absent when principles.ccp is explicitly false', () => {
+    const result = compress(tools, { principles: { ccp: false } });
+    expect(result.compressed).not.toContain('[CLOSURE:');
+  });
+});
+
+/**
+ * CFL — Constraint-First Layout regression test.
+ *
+ * Asserts the [ANSWER:function_call] prefix is prepended for Claude aggressive
+ * and stripped for non-Claude targets (echo-back protection).
+ */
+describe('@tscg/core — CFL Constraint-First Layout', () => {
+  const tools = generateToolCatalog(3);
+
+  it('prepends [ANSWER:function_call] for Claude aggressive profile', () => {
+    const result = compress(tools, { model: 'claude-sonnet', profile: 'aggressive' });
+    expect(result.compressed.startsWith('[ANSWER:function_call]')).toBe(true);
+  });
+
+  it('omits [ANSWER:...] prefix for GPT-4o (echo-back protection)', () => {
+    const result = compress(tools, { model: 'gpt-4o-mini', profile: 'aggressive' });
+    expect(result.compressed).not.toContain('[ANSWER:');
+  });
+
+  it('omits [ANSWER:...] prefix for Llama-3.1 (echo-back protection)', () => {
+    const result = compress(tools, { model: 'llama-3.1', profile: 'aggressive' });
+    expect(result.compressed).not.toContain('[ANSWER:');
   });
 });

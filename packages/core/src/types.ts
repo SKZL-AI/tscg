@@ -80,13 +80,16 @@ export interface CompilerOptions {
   /** Compression aggressiveness */
   profile?: 'conservative' | 'balanced' | 'aggressive';
 
-  /** Toggle individual TSCG principles (only implemented transforms) */
+  /** Toggle individual TSCG principles. All 8 paper operators are implemented. */
   principles?: {
-    sdm?: boolean;  // Semantic Description Minimization
-    cas?: boolean;  // Context-Aware Sorting (U-shape tool ordering)
-    dro?: boolean;  // Dense Representation Operators (structural compression)
-    tas?: boolean;  // Type Abbreviation System
-    sad?: boolean;  // Selective Anchor Duplication (Claude-specific)
+    sdm?: boolean;  // Semantic Density Maximization (strip filler)
+    cas?: boolean;  // Causal Access Score (U-shape frequency reorder)
+    cfo?: boolean;  // Causal-Forward Ordering (read → transform → write)
+    dro?: boolean;  // Delimiter-Role Optimization (compact params)
+    tas?: boolean;  // Tokenizer-Aligned Syntax (BPE delimiters)
+    cfl?: boolean;  // Constraint-First Layout (Claude-only; [ANSWER:...] prepend)
+    sad?: boolean;  // Selective Anchor Duplication (Claude-only; [ANCHOR:...] append)
+    ccp?: boolean;  // Causal Closure Principle ([CLOSURE:tool(req)...] append)
   };
 
   /** Output format for compressed result */

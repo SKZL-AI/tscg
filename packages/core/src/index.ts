@@ -43,12 +43,18 @@ export { getTokenizerProfile, listProfiles } from './profiles.js';
 export { estimateTokens, formatSavings } from './utils.js';
 
 // === Re-export individual transforms from engine bridge ===
-// These allow advanced users to apply specific TSCG principles directly
+// These allow advanced users to apply specific TSCG principles directly.
+// All 8 paper operators are exported (v1.3.0):
+//   SDM, TAS, DRO, CFL, CFO, CAS, SAD, CCP
 export {
   applyToolSDM,
-  applyToolDRO,
-  applyToolCAS,
   applyToolTAS,
+  applyToolDRO,
+  applyToolCFL,
+  applyToolCFO,
+  applyToolCAS,
+  applyToolSAD,
+  applyToolCCP,
   optimizeToolDefinitions,
 } from './_engine.js';
 

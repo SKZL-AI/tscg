@@ -35,36 +35,39 @@ import {
 /**
  * TSCG Principle Configuration
  *
- * Implemented transforms (mapped to _engine.ts):
- *   SDM  → useSDM  (Semantic Description Minimization)
- *   CAS  → useCAS  (Context-Aware Sorting — U-shape tool ordering)
- *   DRO  → useDRO  (Dense Representation Operators — structural compression)
- *   TAS  → useTAS  (Type Abbreviation System)
- *   SAD  → useSAD  (Selective Anchor Duplication — Claude-specific)
- *
- * NOT yet implemented (future work):
- *   CFL  (Constraint-First Layout — parameter reordering by required/optional)
- *   ATA  (Adaptive Token Allocation)
- *   RKE  (Redundant Knowledge Elimination)
- *   CSP  (Context-Sensitive Pruning)
+ * All 8 paper operators are implemented (v1.3.0):
+ *   SDM  → useSDM  (Semantic Density Maximization — strip filler)
+ *   CAS  → useCAS  (Causal Access Score — U-shape frequency reorder)
+ *   CFO  → useCFO  (Causal-Forward Ordering — read → transform → write)
+ *   DRO  → useDRO  (Delimiter-Role Optimization — compact parameter format)
+ *   TAS  → useTAS  (Tokenizer-Aligned Syntax — BPE-optimal delimiters)
+ *   CFL  → useCFL  (Constraint-First Layout — [ANSWER:...] prepend, Claude-only)
+ *   SAD  → useSAD  (Selective Anchor Duplication — [ANCHOR:...] append, Claude-only)
+ *   CCP  → useCCP  (Causal Closure Principle — [CLOSURE:...] append)
  */
 interface PrincipleConfig {
-  sdm: boolean;   // SDM: Semantic Description Minimization (was: dtr)
-  cas: boolean;   // CAS: Context-Aware Sorting (was: cfl — L-23 FIX)
-  dro: boolean;   // DRO: Dense Representation Operators (was: sco)
-  tas: boolean;   // TAS: Type Abbreviation System
-  sad: boolean;   // SAD: Selective Anchor Duplication
+  sdm: boolean;   // SDM: Semantic Density Maximization
+  cas: boolean;   // CAS: Causal Access Score (U-shape)
+  cfo: boolean;   // CFO: Causal-Forward Ordering
+  dro: boolean;   // DRO: Delimiter-Role Optimization
+  tas: boolean;   // TAS: Tokenizer-Aligned Syntax
+  cfl: boolean;   // CFL: Constraint-First Layout (Claude-only)
+  sad: boolean;   // SAD: Selective Anchor Duplication (Claude-only)
+  ccp: boolean;   // CCP: Causal Closure Principle
 }
 
 const PROFILE_DEFAULTS: Record<string, Partial<PrincipleConfig>> = {
   conservative: {
-    sdm: true, cas: false, dro: false, tas: false, sad: false,
+    sdm: true, cas: false, cfo: false, dro: false, tas: false,
+    cfl: false, sad: false, ccp: false,
   },
   balanced: {
-    sdm: true, cas: true, dro: true, tas: true, sad: false,
+    sdm: true, cas: true, cfo: true, dro: true, tas: true,
+    cfl: false, sad: false, ccp: true,
   },
   aggressive: {
-    sdm: true, cas: true, dro: true, tas: true, sad: true,
+    sdm: true, cas: true, cfo: true, dro: true, tas: true,
+    cfl: true, sad: true, ccp: true,
   },
 };
 
@@ -154,9 +157,12 @@ export class TSCGCompiler {
     this.principles = {
       sdm: true,
       cas: true,
+      cfo: true,
       dro: true,
       tas: true,
+      cfl: false,
       sad: false,
+      ccp: true,
       ...profileDefaults,
       ...options?.principles,
     };
@@ -173,6 +179,13 @@ export class TSCGCompiler {
 
     if (!isClaudeModel && this.principles.sad) {
       this.principles.sad = false;
+    }
+
+    // CFL (Constraint-First Layout) is also Claude-only.
+    // Non-Claude models echo-back the [ANSWER:...] tag into their completions,
+    // causing accuracy degradation. Force-disable for non-Claude targets.
+    if (!isClaudeModel && this.principles.cfl) {
+      this.principles.cfl = false;
     }
 
     this.options = {
@@ -206,9 +219,12 @@ export class TSCGCompiler {
     const pipelineResult = optimizeToolDefinitions(internal, {
       useSDM: this.principles.sdm,
       useCAS: this.principles.cas,
+      useCFO: this.principles.cfo,
       useDRO: this.principles.dro,
       useTAS: this.principles.tas,
+      useCFL: this.principles.cfl,
       useSAD: this.principles.sad,
+      useCCP: this.principles.ccp,
     });
 
     const elapsed = performance.now() - start;
@@ -252,15 +268,20 @@ export class TSCGCompiler {
       compressionTimeMs: elapsed,
     };
 
-    // Step 4: Determine which principles were applied
-    // L-24 FIX: Only report transforms that have actual implementations.
-    // Removed phantom principles (ATA, RKE, CSP) that had no backing code.
+    // Step 4: Determine which principles were applied.
+    // Listed in paper Figure 1 composition order (not execution order):
+    //   SDM → TAS → DRO → CFL → CFO → CAS → SAD-F → CCP
+    // All 8 paper operators now have backing implementations (v1.3.0).
+    // Phantom principles (ATA, RKE, CSP) were removed in L-24.
     const appliedPrinciples: string[] = [];
     if (this.principles.sdm) appliedPrinciples.push('SDM');
-    if (this.principles.cas) appliedPrinciples.push('CAS');
-    if (this.principles.dro) appliedPrinciples.push('DRO');
     if (this.principles.tas) appliedPrinciples.push('TAS');
+    if (this.principles.dro) appliedPrinciples.push('DRO');
+    if (this.principles.cfl) appliedPrinciples.push('CFL');
+    if (this.principles.cfo) appliedPrinciples.push('CFO');
+    if (this.principles.cas) appliedPrinciples.push('CAS');
     if (this.principles.sad) appliedPrinciples.push('SAD');
+    if (this.principles.ccp) appliedPrinciples.push('CCP');
 
     return {
       compressed: pipelineResult.text,

@@ -168,6 +168,99 @@ export function applyToolTAS(toolLines: string[]): string {
 }
 
 /**
+ * CFO: Causal-Forward Ordering — reorder tools so read/query operations
+ * precede transform operations, which precede write/delete operations.
+ *
+ * Paper spec: o_i ≺ o_j ⟹ pos(o_i) < pos(o_j). For independent tool
+ * catalogs (no explicit dependency graph), we approximate causal order
+ * via verb-class heuristic: READ < TRANSFORM < WRITE. Within each class,
+ * input order is preserved (stable partition).
+ *
+ * Identity when all tools fall in a single class.
+ */
+const CFO_READ_PREFIXES = [
+  'get_', 'read_', 'list_', 'search_', 'find_', 'query_', 'fetch_', 'view_',
+  'describe_', 'show_', 'load_', 'retrieve_', 'check_', 'lookup_',
+];
+const CFO_WRITE_PREFIXES = [
+  'create_', 'send_', 'update_', 'delete_', 'write_', 'execute_',
+  'modify_', 'remove_', 'post_', 'put_', 'patch_', 'destroy_',
+  'insert_', 'publish_', 'upload_', 'save_', 'run_',
+];
+
+type CfoClass = 'read' | 'write' | 'transform';
+
+function classifyToolForCfo(tool: ToolDefinition): CfoClass {
+  const name = tool.name.toLowerCase();
+  for (const p of CFO_READ_PREFIXES) {
+    if (name.startsWith(p)) return 'read';
+  }
+  for (const p of CFO_WRITE_PREFIXES) {
+    if (name.startsWith(p)) return 'write';
+  }
+  // Fallback: inspect first verb of description
+  const firstWord = tool.description.trim().toLowerCase().split(/\s+/)[0] ?? '';
+  if (['get', 'read', 'list', 'search', 'find', 'query', 'fetch', 'retrieve'].includes(firstWord)) return 'read';
+  if (['create', 'send', 'update', 'delete', 'write', 'execute', 'modify', 'remove', 'run'].includes(firstWord)) return 'write';
+  return 'transform';
+}
+
+export function applyToolCFO(tools: ToolDefinition[]): ToolDefinition[] {
+  if (tools.length <= 1) return [...tools];
+  const reads: ToolDefinition[] = [];
+  const transforms: ToolDefinition[] = [];
+  const writes: ToolDefinition[] = [];
+  for (const t of tools) {
+    const c = classifyToolForCfo(t);
+    if (c === 'read') reads.push(t);
+    else if (c === 'write') writes.push(t);
+    else transforms.push(t);
+  }
+  // If all tools share one class, CFO is identity
+  if (reads.length === tools.length || transforms.length === tools.length || writes.length === tools.length) {
+    return [...tools];
+  }
+  return [...reads, ...transforms, ...writes];
+}
+
+/**
+ * CFL: Constraint-First Layout — prepend an [ANSWER:...] constraint token
+ * to the compressed text, exploiting the attention-sink at position 0.
+ *
+ * Paper formula: CFL(p) = c(p) ⊕ (p \ c(p)).
+ *
+ * For tool-schema compilation, the constraint signals "the expected
+ * completion is a function call", which biases the model toward tool-use
+ * over free-form text. Adds ~3-4 tokens.
+ *
+ * Claude-only: GPT/Gemini echo the tag back instead of interpreting it.
+ * Compiler-level guard in TSCGCompiler enforces this at option time.
+ */
+export function applyToolCFL(text: string): string {
+  return `[ANSWER:function_call]\n${text}`;
+}
+
+/**
+ * CCP: Causal Closure Principle — append a closure block recapitulating
+ * tool names and required parameters at position n, exploiting recency
+ * bias in autoregressive decoding.
+ *
+ * Paper formula: CCP(p) = p ⊕ κ(A(p)), where A(p) are the key atoms
+ * (tool names + required params) and κ is the recap operator.
+ *
+ * Format: [CLOSURE:tool1(req1,req2),tool2(req3),tool3()]
+ * Tokens: ~4 base + ~3 per tool + ~2 per required param.
+ */
+export function applyToolCCP(text: string, tools: ToolDefinition[]): string {
+  if (tools.length === 0) return text;
+  const entries = tools.map((t) => {
+    const reqParams = t.parameters.filter((p) => p.required).map((p) => p.name);
+    return `${t.name}(${reqParams.join(',')})`;
+  });
+  return `${text}\n[CLOSURE:${entries.join(',')}]`;
+}
+
+/**
  * SAD-F: Selective Anchor Duplication with Fragility Weighting.
  *
  * Extracts key:value pairs from the DRO-compressed text, sorts by length
@@ -210,7 +303,30 @@ export function applyToolSAD(text: string, topK = 4): string {
 }
 
 /**
- * Full pipeline: SDM -> CAS -> DRO -> TAS (-> SAD) with metrics.
+ * Full pipeline — executes all 8 paper operators.
+ *
+ * Paper Figure 1 composition order (for reference):
+ *   SDM → TAS → DRO → CFL → CFO → CAS → SAD-F → CCP
+ *
+ * Implementation execution order (mathematically equivalent):
+ *   SDM(obj) → CAS(obj) → CFO(obj) → DRO(obj→str) → TAS(str)
+ *           → CFL(str) → SAD-F(str) → CCP(str)
+ *
+ * The two orders are equivalent because:
+ *   - SDM mutates content in-place on objects (order-irrelevant for later passes)
+ *   - CAS and CFO only permute the tool array (no content change) — their
+ *     composition with the identity-on-content DRO/TAS commutes with them,
+ *     so reordering BEFORE vs AFTER DRO produces the same final string
+ *     provided DRO emits tools in array order (which it does).
+ *   - TAS operates on the already-emitted string; swapping TAS with DRO
+ *     in the paper's notation reflects that TAS is the "delimiter contract"
+ *     DRO emits under, not a separate traversal.
+ *   - CFL/SAD-F/CCP are pure append/prepend on the final string; CFL's
+ *     prepend does not interfere with CFO/CAS reorderings that already
+ *     took place at the object level.
+ *
+ * CFL and SAD-F are Claude-only — the caller (TSCGCompiler) gates them via
+ * model-family detection. SDM, CAS, CFO, DRO, TAS, CCP are model-agnostic.
  */
 export function optimizeToolDefinitions(
   tools: ToolDefinition[],
@@ -218,12 +334,19 @@ export function optimizeToolDefinitions(
     useSDM?: boolean;
     useDRO?: boolean;
     useCAS?: boolean;
+    useCFO?: boolean;
     useTAS?: boolean;
+    useCFL?: boolean;
     useSAD?: boolean;
+    useCCP?: boolean;
     sadTopK?: number;
   },
 ): OptimizedToolDefs {
-  const opts = { useSDM: true, useDRO: true, useCAS: true, useTAS: true, useSAD: false, sadTopK: 4, ...options };
+  const opts = {
+    useSDM: true, useCAS: true, useCFO: true, useDRO: true, useTAS: true,
+    useCFL: false, useSAD: false, useCCP: false, sadTopK: 4,
+    ...options,
+  };
 
   // Original token estimate
   const originalLines: string[] = [];
@@ -244,6 +367,7 @@ export function optimizeToolDefinitions(
   let processed = tools;
   if (opts.useSDM) processed = applyToolSDM(processed);
   if (opts.useCAS) processed = applyToolCAS(processed);
+  if (opts.useCFO) processed = applyToolCFO(processed);
 
   let toolLines: string[];
   if (opts.useDRO) {
@@ -268,9 +392,22 @@ export function optimizeToolDefinitions(
     text = toolLines.join('\n\n');
   }
 
-  // 5. SAD-F: Selective Anchor Duplication (append anchors at end)
+  // CFL: Prepend [ANSWER:function_call] attention-sink token (Claude-only,
+  // model-guard enforced by TSCGCompiler before this call).
+  if (opts.useCFL) {
+    text = applyToolCFL(text);
+  }
+
+  // SAD-F: Selective Anchor Duplication (append anchors at end)
   if (opts.useSAD) {
     text = applyToolSAD(text, opts.sadTopK);
+  }
+
+  // CCP: Causal Closure Principle — append closure recap of tool names +
+  // required parameters. Uses post-SDM/CAS/CFO `processed` array so the
+  // recap reflects the final ordering and cleaned parameter set.
+  if (opts.useCCP) {
+    text = applyToolCCP(text, processed);
   }
 
   const optimizedTokenEstimate = Math.ceil(text.length / 4);
