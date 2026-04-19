@@ -91,6 +91,17 @@ const FILLER_PATTERNS: Array<[RegExp, string]> = [
   [/^\s*,\s*/g, ''],
 ];
 
+/**
+ * Apply SDM (Semantic Density Maximization) to an individual text string.
+ * Strips filler patterns and normalizes the result.
+ *
+ * Public export enabling description-only compression mode to apply SDM
+ * to individual description fields without going through the full pipeline.
+ */
+export function applySDMToText(text: string): string {
+  return stripFiller(text);
+}
+
 function stripFiller(text: string): string {
   let result = text;
   for (const [pattern, replacement] of FILLER_PATTERNS) {

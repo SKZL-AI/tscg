@@ -12,7 +12,7 @@
 export { TSCGCompiler } from './compiler.js';
 
 // === Convenience Functions ===
-export { compress, compressToolSchema, compressBatch } from './compress.js';
+export { compress, compressToolSchema, compressBatch, compressDescriptions } from './compress.js';
 
 // === Types ===
 export type {
@@ -34,6 +34,12 @@ export type {
 
   // Tokenizer
   TokenizerProfile,
+
+  // Description-only mode
+  CompilationMode,
+  DescriptionOnlyResult,
+  DescriptionOnlyMetrics,
+  PerToolDescriptionMetric,
 } from './types.js';
 
 // === Tokenizer Profiles ===
@@ -46,6 +52,9 @@ export { estimateTokens, formatSavings } from './utils.js';
 // These allow advanced users to apply specific TSCG principles directly.
 // All 8 paper operators are exported (v1.3.0):
 //   SDM, TAS, DRO, CFL, CFO, CAS, SAD, CCP
+// === SDM Text Helper (for description-only compression) ===
+export { applySDMToText } from './_engine.js';
+
 export {
   applyToolSDM,
   applyToolTAS,

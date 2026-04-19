@@ -2,12 +2,12 @@
 
 [![npm version](https://img.shields.io/npm/v/@tscg/core)](https://www.npmjs.com/package/@tscg/core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-459%20passing-brightgreen)]()
+[![Tests](https://img.shields.io/badge/tests-47%20passing-brightgreen)]()
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-green)]()
 
 **Deterministic tool-schema compiler that reduces LLM tool-definition overhead by 50--72% while *improving* accuracy.**
 
-1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 34.7KB bundle (11.7KB gzipped).
+1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 23KB ESM bundle.
 
 ## The Problem
 
@@ -133,15 +133,36 @@ result.metrics.perTool                   // { name, originalTokens, compressedTo
 ```typescript
 compress(tools, {
   model: 'claude-sonnet',   // Target model: 'claude-sonnet' | 'gpt-4o' | 'gpt-4' | ...
-  profile: 'balanced',      // Profile: 'conservative' | 'balanced' | 'aggressive'
+  profile: 'balanced',      // Profile: 'conservative' | 'balanced' | 'aggressive' | 'auto'
 });
+```
+
+### Description-Only Mode (v1.4.0)
+
+Compress only `.description` fields while preserving the full JSON Schema structure -- compatible with native tool-calling APIs (OpenAI, Anthropic, Google):
+
+```typescript
+import { compressDescriptions } from '@tscg/core';
+
+const result = compressDescriptions(tools, { model: 'claude-sonnet' });
+console.log(result.tools);              // Tools with compressed descriptions
+console.log(result.metrics.descriptions.savingsPercent); // ~25-40% description savings
+```
+
+### Auto Profile (v1.4.0)
+
+The `auto` profile selects compression principles based on catalog size. At >=30 tools, CFL/CFO are automatically disabled (they become harmful at scale per our 100-tool benchmark findings):
+
+```typescript
+compress(tools, { model: 'claude-sonnet', profile: 'auto' });
 ```
 
 ## Packages
 
 | Package | Description | Install |
 |---------|-------------|---------|
-| [`@tscg/core`](packages/core/) | Core compression engine | `npm i @tscg/core` |
+| [`@tscg/core`](packages/core/) | Core compression engine (8 operators) | `npm i @tscg/core` |
+| [`@tscg/mcp-proxy`](packages/mcp-proxy/) | MCP stdio proxy -- transparent TSCG compression for any MCP server | `npm i @tscg/mcp-proxy` |
 | [`@tscg/tool-optimizer`](packages/tool-optimizer/) | LangChain, MCP, Vercel AI SDK integrations | `npm i @tscg/tool-optimizer` |
 
 ## CLI
@@ -157,18 +178,37 @@ npx tsx cli/tscg.ts benchmark --model claude-sonnet
 npx tsx cli/tscg.ts info
 ```
 
+## MCP Proxy
+
+`@tscg/mcp-proxy` sits between Claude Code (or any MCP client) and your MCP tool servers, transparently compressing tool descriptions:
+
+```bash
+npm install @tscg/mcp-proxy
+```
+
+Add to `.claude/settings.json`:
+```json
+{
+  "mcpServers": {
+    "tscg-proxy": {
+      "command": "npx",
+      "args": ["@tscg/mcp-proxy"],
+      "env": {
+        "TSCG_MODE": "description-only",
+        "TSCG_PROFILE": "balanced",
+        "TSCG_DOWNSTREAM_SERVERS": "[{\"id\":\"fs\",\"command\":\"npx\",\"args\":[\"-y\",\"@modelcontextprotocol/server-filesystem\",\"/tmp\"]}]"
+      }
+    }
+  }
+}
+```
+
 ## Integrations
 
 **LangChain:**
 ```typescript
 import { withTSCG } from '@tscg/tool-optimizer/langchain';
 const optimizedAgent = withTSCG(agent);
-```
-
-**MCP Proxy:**
-```typescript
-import { createTSCGMCPProxy } from '@tscg/tool-optimizer/mcp';
-const proxy = createTSCGMCPProxy(mcpServer);
 ```
 
 **Vercel AI SDK:**
@@ -199,18 +239,14 @@ import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 ## Project Structure
 
 ```
-src/
-  optimizer/        # Core transforms (8 principles, ~950 LOC)
-  compiler/         # NL-to-TSCG compilation
-  core/             # Types, multi-model providers, rate-limiter
-  benchmark/        # Test case generators and runner
-cli/                # Unified CLI (compress, benchmark, analyze, info)
 packages/
-  core/             # @tscg/core npm package
-  tool-optimizer/   # @tscg/tool-optimizer npm package
+  core/             # @tscg/core — compression engine (8 operators, 47 tests)
+  mcp-proxy/        # @tscg/mcp-proxy — stdio proxy for MCP servers (49 tests)
+  tool-optimizer/   # @tscg/tool-optimizer — LangChain, Vercel AI SDK integrations
+paper/              # LaTeX source (ArXiv + EMNLP versions)
+cli/                # Unified CLI (compress, benchmark, analyze, info)
 benchmark/          # TAB benchmark harness and analysis code
 integrations/       # Framework integration examples
-tests/              # 459 tests across 14 test files
 docs/               # Technical documentation
 ```
 
@@ -231,7 +267,12 @@ npm run typecheck # Type checking
 
 Furkan Sakizli. 2026.
 
-See [`TSCG-paper.pdf`](TSCG-paper.pdf) in this repository. The paper introduces TSCG's formal framework, the TAB (TSCG-Agentic-Bench) benchmark with ~13,000 API calls across 12 models, and the four-class behavioral taxonomy for deployment guidance.
+| Version | Description | File |
+|---------|-------------|------|
+| ArXiv (full) | Full findings, 12 models, ~15,000 API calls, 4-class taxonomy | [`TSCG-paper.pdf`](TSCG-paper.pdf) |
+| EMNLP (submission) | Anonymized, trimmed to 16 pages, ACL format | [`TSCG-paper-emnlp.pdf`](TSCG-paper-emnlp.pdf) |
+
+LaTeX source is available in [`paper/`](paper/).
 
 ## Citation
 
@@ -241,7 +282,7 @@ See [`TSCG-paper.pdf`](TSCG-paper.pdf) in this repository. The paper introduces 
          in Large Language Models},
   author={Sakizli, Furkan},
   year={2026},
-  note={Preprint}
+  note={Preprint -- arXiv}
 }
 ```
 

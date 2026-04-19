@@ -5,6 +5,37 @@ All notable changes to the TSCG project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-04-20
+
+### Added
+
+- **Description-Only Mode:** `compressDescriptions()` compresses `.description` fields while preserving full JSON Schema structure -- compatible with native tool-calling APIs (OpenAI, Anthropic, Google)
+- **Auto Profile:** `profile: 'auto'` selects compression principles based on catalog size
+  - <=20 tools: conservative profile
+  - 21-40 tools: balanced without CFL/CFO
+  - >40 tools: conservative (safety default)
+- **Auto-disable CFL/CFO at scale:** CFL and CFO are automatically disabled at >=30 tools in balanced profile (harmful at scale per 100-tool benchmark)
+- **`@tscg/mcp-proxy` package:** stdio-based MCP proxy that transparently compresses tool descriptions between MCP clients (Claude Code, Cursor) and downstream tool servers
+  - Supports `description-only` and `full` compression modes
+  - Multi-server routing, per-tool metrics, ENV-based configuration
+  - 49 tests (router, compressor, config/metrics/autoprofile)
+- **New exports:** `compressDescriptions`, `applySDMToText`, `CompilationMode`, `DescriptionOnlyResult`, `DescriptionOnlyMetrics`, `PerToolDescriptionMetric`
+
+### Changed
+
+- Paper updated with findings from Sessions 1-5: 100-tool scaling, Opus 4.7 ablation, multi-agent experiments (~15,000 total API calls across 12 models)
+- ArXiv version: full findings with 4-class behavioral taxonomy
+- EMNLP version: anonymized, trimmed to 16 pages, ACL format
+
+### Technical Details
+
+- `applySDMToText()` public API wrapping internal `stripFiller()` for description-only use
+- Double-cast pattern (`as unknown as Record<string, boolean>`) for PrincipleConfig iteration
+- Auto-profile logic in `compile()` with user-override re-application
+- MCP Proxy uses `@modelcontextprotocol/sdk` subpath exports (`types.js`, `server/stdio.js`)
+
+---
+
 ## [2.0.0] - 2026-03-02
 
 ### Added

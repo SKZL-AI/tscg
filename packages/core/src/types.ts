@@ -78,7 +78,7 @@ export interface CompilerOptions {
   model?: ModelTarget;
 
   /** Compression aggressiveness */
-  profile?: 'conservative' | 'balanced' | 'aggressive';
+  profile?: 'conservative' | 'balanced' | 'aggressive' | 'auto';
 
   /** Toggle individual TSCG principles. All 8 paper operators are implemented. */
   principles?: {
@@ -144,6 +144,52 @@ export interface PerToolMetric {
   originalTokens: number;
   compressedTokens: number;
   savingsPercent: number;
+}
+
+// ============================================================
+// Compilation Mode (description-only vs full)
+// ============================================================
+
+/** Compilation mode: 'full' for complete TSCG, 'description-only' for JSON-preserving */
+export type CompilationMode = 'full' | 'description-only';
+
+/** Result of description-only compression */
+export interface DescriptionOnlyResult {
+  /** Tools with compressed descriptions (JSON structure preserved) */
+  tools: AnyToolDefinition[];
+  /** Compression metrics specific to description-only mode */
+  metrics: DescriptionOnlyMetrics;
+  /** Which TSCG principles were applied */
+  appliedPrinciples: string[];
+}
+
+export interface DescriptionOnlyMetrics {
+  /** Description-level token savings */
+  descriptions: {
+    originalTokens: number;
+    compressedTokens: number;
+    savings: number;
+    savingsPercent: number;
+  };
+  /** Total schema token impact (descriptions + JSON overhead) */
+  totalSchema: {
+    originalTokens: number;
+    compressedTokens: number;
+    savings: number;
+    savingsPercent: number;
+  };
+  /** Per-tool breakdown */
+  perTool: PerToolDescriptionMetric[];
+  /** Compression time in ms */
+  compressionTimeMs: number;
+}
+
+export interface PerToolDescriptionMetric {
+  name: string;
+  originalDescriptionTokens: number;
+  compressedDescriptionTokens: number;
+  savingsPercent: number;
+  paramDescriptionsCompressed: number;
 }
 
 // ============================================================

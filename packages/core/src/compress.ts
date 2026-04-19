@@ -10,6 +10,7 @@ import type {
   AnyToolDefinition,
   CompilerOptions,
   CompressedResult,
+  DescriptionOnlyResult,
   ModelTarget,
 } from './types.js';
 
@@ -62,6 +63,34 @@ export function compressToolSchema(
 ): CompressedResult {
   const compiler = new TSCGCompiler(options);
   return compiler.compile(tool);
+}
+
+/**
+ * Compress only the description fields of tool definitions.
+ *
+ * Preserves JSON tool-calling structure for 100% native API compatibility
+ * (OpenAI, Anthropic, MCP, Ollama). Only applies SDM filler stripping
+ * to `.description` and parameter `.description` fields.
+ *
+ * @param tools   - Array of tool definitions (OpenAI or Anthropic format)
+ * @param options - Compression options (mode is forced to description-only)
+ * @returns Description-only result with tools and metrics
+ *
+ * @example
+ * ```ts
+ * import { compressDescriptions } from '@tscg/core';
+ *
+ * const result = compressDescriptions(mcpTools);
+ * // result.tools — same JSON structure, shorter descriptions
+ * // result.metrics.descriptions.savingsPercent — e.g. 28%
+ * ```
+ */
+export function compressDescriptions(
+  tools: AnyToolDefinition[],
+  options?: Omit<CompilerOptions, 'mode'>,
+): DescriptionOnlyResult {
+  const compiler = new TSCGCompiler(options);
+  return compiler.compileDescriptions(tools);
 }
 
 /**
