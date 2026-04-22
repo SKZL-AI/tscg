@@ -247,6 +247,31 @@ interface CompilerOptions {
 | `balanced` | All except SAD | Best accuracy/savings tradeoff (~71%) |
 | `aggressive` | All including SAD | Maximum compression, Claude-only for SAD (~75%) |
 
+### Principles Behavior
+
+The `principles` option is **additive** over profile defaults. User-specified principles add to (rather than override) the active operators of the selected profile. This delivers more compression than strict operator specification would.
+
+```typescript
+// Additive: CAS=true merges with balanced defaults → 6 operators active
+compress(tools, { principles: { cas: true } });
+// Result: SDM + TAS + DRO + CFO + CAS + CCP (~57% token savings)
+```
+
+If you need exact operator control (e.g., for research benchmarks measuring per-operator contribution), pass all 8 operator keys explicitly:
+
+```typescript
+// Exact: all 8 keys specified → no merging, exact configuration applied
+compress(tools, {
+  principles: {
+    sdm: true, tas: true, dro: true, cfl: false,
+    cfo: false, cas: false, sad: false, ccp: false,
+  },
+});
+// Result: only SDM + TAS + DRO active
+```
+
+When all 8 keys are specified, the exact configuration is applied with no merging.
+
 ### Supported Models
 
 | Model Target | Family |
