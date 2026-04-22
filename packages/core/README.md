@@ -2,7 +2,39 @@
 
 Deterministic prompt compiler for tool-schema compression. Reduces LLM tool-definition overhead by **71.7%** with zero accuracy loss.
 
-Zero runtime dependencies. 50 tools in 2.4ms. 34.7KB bundle (11.7KB gzipped).
+Zero runtime dependencies. <1ms compression time. 14.9KB ESM bundle.
+
+## Latest Benchmarks -- April 2026
+
+720-call E2E validation on Claude Sonnet 4 and Claude Opus 4.7 across 16, 43, and 50 MCP tools. Balanced profile with all 7 operators active (SDM, TAS, DRO, CFL, CFO, CAS, CCP).
+
+### Claude Opus 4.7 -- Accuracy Improvement + 55-59% Token Reduction
+
+| Tool Count | Baseline | TSCG Balanced | Delta Accuracy | Char Savings |
+|------------|----------|---------------|----------------|--------------|
+| 16 tools   | 70.0%    | **77.5%**     | **+7.5pp**     | 55.7%        |
+| 43 tools   | 77.5%    | **80.0%**     | **+2.5pp**     | 58.7%        |
+| 50 tools   | 72.5%    | **80.0%**     | **+7.5pp**     | 58.2%        |
+
+### Claude Sonnet 4 -- Consistent 55-59% Savings
+
+| Tool Count | Baseline | TSCG Balanced | Delta Accuracy | Char Savings |
+|------------|----------|---------------|----------------|--------------|
+| 16 tools   | 77.5%    | 80.0%         | +2.5pp         | 55.7%        |
+| 43 tools   | 85.0%    | 80.0%         | -5.0pp         | 58.7%        |
+| 50 tools   | 77.5%    | 77.5%         | +/-0.0pp       | 58.2%        |
+
+Benchmark config: n=40 per cell (20 tasks x 2 seeds), deterministic tokenizer-aware compression, <2ms per call. Total: 720 calls, $17.69.
+
+### Three Frontier-Model Operator Archetypes
+
+TSCG compression response is model-specific. Three distinct archetypes observed:
+
+- **Claude Opus 4.7 -- Operator-HUNGRY:** Every operator contributes positively. CCP alone +20pp. CFL+CFO synergistic +17.5pp (super-additive). All 8 operators optimal. Conservative (SDM-only) *hurts* accuracy by -2.5 to -15pp.
+- **Claude Sonnet 4 -- Operator-ROBUST:** Config-agnostic. 6 of 7 configs produce identical accuracy. Balanced safe default.
+- **GPT-5.2 -- Operator-SENSITIVE:** CFL helps +2.5pp, CFO hurts -5pp, all-8 worst case (-10pp). Best config: balanced with CFO disabled.
+
+See [paper](https://github.com/SKZL-AI/tscg) for methodology and per-operator isolation experiments.
 
 ## Installation
 
@@ -334,7 +366,10 @@ TSCG applies 8 compression principles grounded in transformer architecture:
 
 ## Related Packages
 
+- [`@tscg/mcp-proxy`](https://www.npmjs.com/package/@tscg/mcp-proxy) -- Transparent MCP middleware with per-model target optimization
 - [`@tscg/tool-optimizer`](https://www.npmjs.com/package/@tscg/tool-optimizer) -- High-level integrations for LangChain, MCP, and Vercel AI SDK
+
+All three `@tscg/*` packages use umbrella versioning (same version, released together).
 
 ## License
 

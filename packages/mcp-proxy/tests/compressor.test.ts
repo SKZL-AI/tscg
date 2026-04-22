@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { compressMCPTools } from '../src/compressor.js';
+import { compressMCPTools, compressMCPToolsFull } from '../src/compressor.js';
 import type { MCPToolDefinition, CompressionResult } from '../src/compressor.js';
 import type { ProxyConfig } from '../src/types.js';
 
@@ -194,5 +194,42 @@ describe('compressMCPTools', () => {
 
     expect(result.tools.length).toBe(25);
     expect(elapsed).toBeLessThan(50);
+  });
+});
+
+// ============================================================
+// Integration Tests — compressMCPToolsFull (v1.4.1)
+// ============================================================
+
+describe('compressMCPToolsFull', () => {
+  it('Opus target produces >40% savings on verbose tools', () => {
+    const tools: MCPToolDefinition[] = [];
+    for (let i = 0; i < 10; i++) {
+      tools.push(mkTool(
+        `tool_${i}`,
+        verboseDesc(`perform complex operation ${i} on the provided input data`),
+        {
+          input: { type: 'string', description: 'The input data to process and transform' },
+          output: { type: 'string', description: 'The expected output format specification' },
+        },
+      ));
+    }
+
+    const r = compressMCPToolsFull(tools, {
+      target: 'claude-opus-4-7',
+      mode: 'full',
+    });
+
+    expect(r.savingsPercent).toBeGreaterThan(40);
+    expect(r.compressionTimeMs).toBeLessThan(50);
+    expect(r.archetype).toBe('hungry');
+    expect(r.appliedPrinciples.length).toBeGreaterThan(0);
+  });
+
+  it('empty tools returns zero-cost result', () => {
+    const r = compressMCPToolsFull([], { target: 'claude-opus-4-7' });
+    expect(r.tools).toEqual([]);
+    expect(r.savingsPercent).toBe(0);
+    expect(r.archetype).toBe('safe-fallback');
   });
 });

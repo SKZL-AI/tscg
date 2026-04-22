@@ -1,6 +1,6 @@
 {
   "name": "@tscg/mcp-proxy",
-  "version": "1.0.1",
+  "version": "1.4.1",
   "description": "TSCG MCP Proxy — transparent tool-schema compression for MCP servers. Sits between Claude Code and downstream MCP servers, compressing tool descriptions using TSCG.",
   "license": "MIT",
   "type": "module",
@@ -28,11 +28,6 @@
     "claude-code",
     "proxy"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SKZL-AI/tscg",
-    "directory": "packages/mcp-proxy"
-  },
   "engines": {
     "node": ">=18.0.0"
   },
@@ -47,7 +42,7 @@
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "peerDependencies": {
-    "@tscg/core": "^1.4.0"
+    "@tscg/core": "^1.4.1"
   },
   "devDependencies": {
     "@tscg/core": "workspace:*",

@@ -5,6 +5,27 @@ All notable changes to the TSCG project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.1] - 2026-04-20
+
+### Added
+
+- **Serialization Format Comparison:** 6-format benchmark (JSON-text, YAML, Markdown-list, Key-Value, Minified-JSON, TSCG) across 16/43/50 tool counts
+- **External Validation:** ToolBench-style and API-Bank-style schema collections with independent task sets
+- **E2E Call Validity:** 6-stage validation pipeline (parseable, toolExists, requiredComplete, typesCorrect, noHallucination, executable)
+- **Scaling Sweep:** Format comparison at 3 tool-count tiers (16, 43, 50) demonstrating token savings scale with catalog size
+- **Power Replication:** Additional seed runs for tighter bootstrap confidence intervals
+- **Paper: MCP Infrastructure Positioning:** TSCG framed as transparent compression layer in the MCP protocol stack
+
+### Changed
+
+- Paper title: "TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments"
+- ArXiv version: 3 new tables, expanded discussion with infrastructure positioning
+- EMNLP version: 3 new appendices, infrastructure paragraph in discussion
+- Total API calls: ~13,000 -> ~16,000 across 12 models and 5 scenarios
+- Repository URL harmonized to `https://github.com/SKZL-AI/tscg`
+
+---
+
 ## [1.4.0] - 2026-04-20
 
 ### Added

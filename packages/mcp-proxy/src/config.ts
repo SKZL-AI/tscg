@@ -12,11 +12,13 @@ import type { ProxyConfig, DownstreamConfig, CompressionMode, TSCGProfile } from
  *
  * ENV variables:
  *   TSCG_DOWNSTREAM_SERVERS — JSON array of DownstreamConfig
- *   TSCG_MODE               — description-only | full-text (default: description-only)
+ *   TSCG_MODE               — full | description-only | off (default: auto-resolved)
  *   TSCG_PROFILE            — conservative | balanced | aggressive | auto (default: auto)
- *   TSCG_MODEL              — Model target (default: auto)
+ *   TSCG_MODEL              — Model target for tokenizer alignment (default: auto)
  *   TSCG_AUTO_DISABLE_THRESHOLD — Tool count threshold for CFL/CFO disable (default: 30)
  *   TSCG_LOG_LEVEL          — silent | info | debug (default: info)
+ *   MCP_PROXY_TARGET        — Per-model target (claude-opus-4-7, claude-sonnet-4, gpt-5.2, auto)
+ *   MCP_PROXY_MODE          — Compression mode override (full, description-only, off)
  */
 export function parseConfig(env: Record<string, string | undefined> = process.env): ProxyConfig {
   // Parse downstream servers
@@ -38,9 +40,11 @@ export function parseConfig(env: Record<string, string | undefined> = process.en
     if (!ds.args) ds.args = [];
   }
 
-  const mode = (env['TSCG_MODE'] || 'description-only') as CompressionMode;
-  if (mode !== 'description-only' && mode !== 'full-text') {
-    throw new Error(`Invalid TSCG_MODE: ${mode}. Must be 'description-only' or 'full-text'.`);
+  // Mode: MCP_PROXY_MODE takes priority over TSCG_MODE
+  const modeRaw = env['MCP_PROXY_MODE'] || env['TSCG_MODE'] || 'description-only';
+  const mode = modeRaw as CompressionMode;
+  if (!['full', 'description-only', 'off', 'full-text'].includes(mode)) {
+    throw new Error(`Invalid mode: ${mode}. Must be 'full', 'description-only', 'off', or 'full-text' (deprecated).`);
   }
 
   const profile = (env['TSCG_PROFILE'] || 'auto') as TSCGProfile;
@@ -54,6 +58,9 @@ export function parseConfig(env: Record<string, string | undefined> = process.en
 
   const logLevel = (env['TSCG_LOG_LEVEL'] || 'info') as 'silent' | 'info' | 'debug';
 
+  // Per-model target (new in v1.4.1)
+  const target = env['MCP_PROXY_TARGET'];
+
   return {
     downstreams,
     mode,
@@ -62,5 +69,6 @@ export function parseConfig(env: Record<string, string | undefined> = process.en
     autoDisableThreshold: threshold,
     metrics: true,
     logLevel,
+    target,
   };
 }

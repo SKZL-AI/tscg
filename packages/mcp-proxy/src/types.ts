@@ -4,8 +4,14 @@
 
 import type { ModelTarget } from '@tscg/core';
 
-/** Compression mode */
-export type CompressionMode = 'description-only' | 'full-text';
+/**
+ * Compression mode.
+ * - 'full': Full @tscg/core compress() pipeline (recommended with target)
+ * - 'description-only': Legacy v1.0.x behavior -- only compress descriptions
+ * - 'off': Pass-through, no compression (for A/B debugging)
+ * - 'full-text': @deprecated -- use 'full'. Kept for backward compatibility with v1.0.x.
+ */
+export type CompressionMode = 'full' | 'description-only' | 'off' | 'full-text';
 
 /** TSCG profile with auto-selection */
 export type TSCGProfile = 'conservative' | 'balanced' | 'aggressive' | 'auto';
@@ -38,6 +44,15 @@ export interface ProxyConfig {
   metrics: boolean;
   /** Log level */
   logLevel: 'silent' | 'info' | 'debug';
+
+  /**
+   * Target model identifier for per-model optimization.
+   * When set to a known value (claude-opus-4-7, claude-sonnet-4, gpt-5.2),
+   * automatically enables mode='full' with optimized per-model profile.
+   *
+   * Default: undefined (legacy description-only behavior)
+   */
+  target?: string;
 }
 
 /** Per-server metrics snapshot */

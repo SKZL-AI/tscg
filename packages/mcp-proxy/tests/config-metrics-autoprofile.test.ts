@@ -64,7 +64,7 @@ describe('parseConfig', () => {
   });
 
   it('should throw on invalid mode', () => {
-    expect(() => parseConfig({ TSCG_MODE: 'invalid' })).toThrow('Invalid TSCG_MODE');
+    expect(() => parseConfig({ TSCG_MODE: 'invalid' })).toThrow('Invalid mode');
   });
 
   it('should parse TSCG_PROFILE', () => {

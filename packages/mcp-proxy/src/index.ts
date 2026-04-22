@@ -15,8 +15,8 @@ export { TSCGMCPProxyServer } from './server.js';
 export { parseConfig } from './config.js';
 
 // === Compressor ===
-export { compressMCPTools } from './compressor.js';
-export type { MCPToolDefinition, CompressionResult } from './compressor.js';
+export { compressMCPTools, compressMCPToolsFull } from './compressor.js';
+export type { MCPToolDefinition, CompressionResult, FullCompressionResult } from './compressor.js';
 
 // === Router ===
 export { ToolRouter } from './router.js';
@@ -26,6 +26,14 @@ export { MetricsCollector } from './metrics.js';
 
 // === Auto-Profile ===
 export { resolveProfile } from './auto-profile.js';
+
+// === Model Profiles (v1.4.1) ===
+export { resolveModelProfile, MODEL_PROFILES } from './model-profiles.js';
+export type { ModelProfile } from './model-profiles.js';
+
+// === Mode Resolver (v1.4.1) ===
+export { resolveEffectiveMode } from './mode-resolver.js';
+export type { EffectiveMode } from './mode-resolver.js';
 
 // === Types ===
 export type {

@@ -156,8 +156,11 @@ function normalizeToInternal(tool: AnyToolDefinition): InternalToolDef {
 export class TSCGCompiler {
   private readonly options: Required<CompilerOptions>;
   private readonly principles: PrincipleConfig;
+  private readonly hasExplicitPrinciples: boolean;
 
   constructor(options?: CompilerOptions) {
+    this.hasExplicitPrinciples = !!(options?.principles &&
+      Object.keys(options.principles).length > 0);
     const profile = options?.profile ?? 'balanced';
     const profileDefaults = PROFILE_DEFAULTS[profile] || PROFILE_DEFAULTS['balanced'];
     const model = options?.model ?? 'auto';
@@ -251,8 +254,10 @@ export class TSCGCompiler {
     }
 
     // Auto-disable CFL/CFO for large catalogs (v1.4.0 finding: harmful at >=43 tools)
-    if (tools.length >= 30 && this.options.profile === 'balanced') {
-      // Temporarily disable scale-sensitive operators
+    // ONLY apply when user did NOT explicitly pass principles overrides.
+    // Explicit principles take precedence — frontier models (GPT-5.2, Claude)
+    // benefit from CFO at scale, while small models do not.
+    if (tools.length >= 30 && this.options.profile === 'balanced' && !this.hasExplicitPrinciples) {
       principleConfig.cfl = false;
       principleConfig.cfo = false;
     }

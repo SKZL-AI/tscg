@@ -2,6 +2,12 @@
 
 High-level tool-schema optimizer for LLM agent frameworks. Drop-in integration for **LangChain**, **MCP** (Model Context Protocol), and **Vercel AI SDK**.
 
+> **Note on versioning:** As of v1.4.1, all `@tscg/*` packages (core, mcp-proxy, tool-optimizer) share the same version number under umbrella versioning. Install matching versions for guaranteed compatibility:
+>
+> ```bash
+> npm i @tscg/core@1.4.1 @tscg/mcp-proxy@1.4.1 @tscg/tool-optimizer@1.4.1
+> ```
+
 Built on top of [`@tscg/core`](https://www.npmjs.com/package/@tscg/core) -- the deterministic prompt compiler that reduces tool-definition overhead by 71.7%.
 
 ## Installation
@@ -14,7 +20,7 @@ npm install @tscg/tool-optimizer @tscg/core
 pnpm add @tscg/tool-optimizer @tscg/core
 ```
 
-**Peer dependency:** `@tscg/core ^1.0.0` is required and must be installed alongside this package.
+**Peer dependency:** `@tscg/core ^1.4.1` is required and must be installed alongside this package.
 
 **Requirements:** Node.js >= 18.0.0
 
@@ -213,7 +219,10 @@ import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 
 ## Related Packages
 
-- [`@tscg/core`](https://www.npmjs.com/package/@tscg/core) -- The core compression engine (required peer dependency)
+- [`@tscg/core`](https://www.npmjs.com/package/@tscg/core) -- Core compression engine (8 operators)
+- [`@tscg/mcp-proxy`](https://www.npmjs.com/package/@tscg/mcp-proxy) -- Transparent MCP middleware with per-model target resolution
+
+All three `@tscg/*` packages use umbrella versioning (same version, released together).
 
 ## License
 
