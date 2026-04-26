@@ -1,0 +1,33 @@
+{
+  "id": "tscg-openclaw",
+  "name": "TSCG Tool-Schema Compressor",
+  "description": "Deterministic tool-schema compression for OpenClaw agents. Recovers small-model tool accuracy from 0% to 90% via format translation. Reduces token overhead by 56-72% on frontier models.",
+  "version": "1.4.2",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Master toggle for TSCG compression"
+      },
+      "logCompression": {
+        "type": "boolean",
+        "default": true,
+        "description": "Log per-request compression stats to console + tscg-stats.jsonl"
+      },
+      "minTools": {
+        "type": "integer",
+        "default": 3,
+        "minimum": 0,
+        "description": "Skip compression below this tool count (overhead not worth it)"
+      }
+    }
+  },
+  "uiHints": {
+    "enabled": { "label": "Enable TSCG Compression" },
+    "logCompression": { "label": "Log Compression Stats" },
+    "minTools": { "label": "Minimum Tool Count", "placeholder": "3" }
+  }
+}

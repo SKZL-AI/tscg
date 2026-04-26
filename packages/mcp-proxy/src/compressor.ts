@@ -151,10 +151,15 @@ export interface FullCompressionResult {
  * This is the recommended path for known model targets (claude-opus-4-7, etc.).
  * Uses resolveModelProfile() to select the optimal operator set for the target model,
  * based on 720-call E2E benchmark data.
+ *
+ * @param tools - MCP tool definitions to compress
+ * @param config - Configuration with target model and mode
+ * @param cacheReader - Optional adaptive profile reader from @tscg/openclaw cache
  */
 export function compressMCPToolsFull(
   tools: MCPToolDefinition[],
   config: { target?: string; mode?: string },
+  cacheReader?: (modelId: string) => import('./model-profiles.js').ModelProfile | null,
 ): FullCompressionResult {
   if (tools.length === 0) {
     return {
@@ -171,7 +176,7 @@ export function compressMCPToolsFull(
     };
   }
 
-  const modelProfile = resolveModelProfile(config.target);
+  const modelProfile = resolveModelProfile(config.target, cacheReader);
   const anyTools = tools.map(mcpToAnyTool);
 
   const t0 = performance.now();

@@ -1,0 +1,74 @@
+{
+  "name": "@tscg/openclaw",
+  "version": "1.4.2",
+  "description": "TSCG OpenClaw Plugin — self-tuning tool-schema compression for OpenClaw agents. Four-tier profile resolution, per-model benchmarking, and multi-LLM support.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "bin": {
+    "tscg-openclaw": "dist/bin/tscg-openclaw.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    },
+    "./benchmark": {
+      "types": "./dist/src/benchmark-harness.d.ts",
+      "import": "./dist/src/benchmark-harness.js"
+    }
+  },
+  "files": [
+    "dist/src/index.js",
+    "dist/src/index.d.ts",
+    "dist/src/cli.js",
+    "dist/src/cli.d.ts",
+    "dist/src/benchmark-harness.js",
+    "dist/src/benchmark-harness.d.ts",
+    "dist/*.d.ts",
+    "dist/bin",
+    "skill",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "tscg",
+    "openclaw",
+    "tool-compression",
+    "self-tuning",
+    "benchmark",
+    "multi-llm",
+    "plugin"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./dist/src/index.js"
+    ],
+    "minHostVersion": "2026.0.0",
+    "pluginApi": "1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "TSCG_INTEGRATION=1 vitest run tests/integration.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "dependencies": {
+    "@tscg/core": "file:../core"
+  },
+  "devDependencies": {
+    "@tscg/core": "file:../core",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  }
+}

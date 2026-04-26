@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.2] - 2026-04-26
+
+### Changed — Umbrella Version Sync
+- Synchronized release with @tscg/mcp-proxy@1.4.2, @tscg/tool-optimizer@1.4.2, @tscg/openclaw@1.4.2
+- No functional changes to @tscg/core in this release
+
 ## [1.4.1] - 2026-04-21
 
 ### Fixed

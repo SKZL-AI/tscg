@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.4.2] - 2026-04-26
+
+### Added — Adaptive Profile Resolution
+- **NEW:** `cacheReader` parameter on `resolveModelProfile()` and `compressMCPToolsFull()` — allows @tscg/openclaw adaptive profiles (from `tune --sweep`) to override static profiles at runtime
+- **NEW:** GPT-5.4 static profile: config-robust archetype, SDM excluded, CFO enabled (+15pp), derived from 440-call Step 5.8/5.8.1 benchmark
+- **NEW:** GPT-5.5 static profile: combination-fragile archetype, SDM-only conservative, derived from 440-call Step 5.8/5.8.1 benchmark
+
+### Profile Resolution Order (v1.4.2)
+1. `cacheReader` adaptive profile (from openclaw sweep cache)
+2. Exact match in MODEL_PROFILES (static)
+3. Loose alias resolution
+4. `auto` safe fallback (SDM-only)
+
+### Backward Compatibility
+The `cacheReader` parameter is optional. Existing callers without it behave identically to v1.4.1.
+
 ## [1.4.1] - 2026-04-21
 
 ### Major Feature -- Per-Model Target Resolution
