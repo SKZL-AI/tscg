@@ -94,11 +94,11 @@ function writeStatsLine(entry: {
 
 const plugin: OpenClawPlugin = {
   name: '@tscg/openclaw',
-  version: '1.4.2',
+  version: '1.4.3',
 
   async init(context: OpenClawPluginContext): Promise<void> {
     logger = context.logger;
-    logger.info('[tscg] @tscg/openclaw v1.4.2 initializing...');
+    logger.info('[tscg] @tscg/openclaw v1.4.3 initializing...');
 
     // Read configSchema values (defaults match openclaw.plugin.json)
     pluginEnabled = context.config.enabled !== false;

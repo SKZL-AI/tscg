@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.4.3] - 2026-04-27
+
+### Fixed
+- Hotfix release: v1.4.2 published with `workspace:*` dependency refs. v1.4.3 has clean npm refs.
+
 ## [1.4.2] - 2026-04-26
 
 ### Changed — Umbrella Version Sync

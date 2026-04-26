@@ -38,7 +38,7 @@ function getLogs(ctx: OpenClawPluginContext): string[] {
 describe('plugin', () => {
   it('has correct name and version', () => {
     expect(plugin.name).toBe('@tscg/openclaw');
-    expect(plugin.version).toBe('1.4.2');
+    expect(plugin.version).toBe('1.4.3');
   });
 });
 

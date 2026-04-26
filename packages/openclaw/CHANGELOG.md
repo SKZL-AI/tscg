@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.3] - 2026-04-27
+
+### Fixed — Dependency Metadata Hotfix
+- Replaced `workspace:*` and `file:../core` dependency refs with proper npm version refs (`^1.4.3`)
+- v1.4.2 published with workspace refs which broke `npm install` for end users
+- All hardcoded version strings updated to 1.4.3
+
+### Migration
+Drop-in replacement for v1.4.2. No code changes, only dependency metadata fixes.
+
 ## [1.4.2] - 2026-04-26
 
 ### Added — Per-Operator Adaptive Sweep

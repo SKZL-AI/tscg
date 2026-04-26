@@ -62,7 +62,7 @@ export interface CachedProfile {
 /*  Constants                                                          */
 /* ------------------------------------------------------------------ */
 
-export const CURRENT_SCHEMA_VERSION = '1.4.2';
+export const CURRENT_SCHEMA_VERSION = '1.4.3';
 
 const DEFAULT_CACHE_DIR = join(homedir(), '.openclaw', 'tscg-profiles');
 

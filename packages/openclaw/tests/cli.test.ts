@@ -150,13 +150,13 @@ describe('parseArgs', () => {
 describe('main - version', () => {
   it('outputs version string', async () => {
     const output = await captureStdout(() => main(['--version']));
-    expect(output).toContain('1.4.2');
+    expect(output).toContain('1.4.3');
     expect(output).toContain('@tscg/openclaw');
   });
 
   it('outputs version for -v shorthand', async () => {
     const output = await captureStdout(() => main(['-v']));
-    expect(output).toContain('1.4.2');
+    expect(output).toContain('1.4.3');
   });
 });
 

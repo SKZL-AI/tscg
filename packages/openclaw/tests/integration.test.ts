@@ -54,11 +54,11 @@ describe('Smoke: module imports', () => {
     // Constants
     expect(mod.STATIC_PROFILES).toBeDefined();
     expect(mod.CONDITION_TO_OPERATORS).toBeDefined();
-    expect(mod.CURRENT_SCHEMA_VERSION).toBe('1.4.2');
+    expect(mod.CURRENT_SCHEMA_VERSION).toBe('1.4.3');
 
     // Default export (plugin)
     expect(mod.default.name).toBe('@tscg/openclaw');
-    expect(mod.default.version).toBe('1.4.2');
+    expect(mod.default.version).toBe('1.4.3');
 
     // Benchmark-harness should NOT be on the plugin entry (safety scanner)
     expect(mod.estimateCost).toBeUndefined();
