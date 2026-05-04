@@ -327,7 +327,7 @@ npm run typecheck # Type checking
 
 **TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments**
 
-Furkan Sakizli. 2026.
+Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-5014)). 2026.
 
 [TSCG-paper.pdf](./TSCG-paper.pdf) -- arXiv preprint (full version, 12 models, ~19,000 API calls, 4-class taxonomy)
 
@@ -340,7 +340,8 @@ LaTeX source is available in [`paper/`](paper/).
   title={TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments},
   author={Sakizli, Furkan},
   year={2026},
-  note={arXiv preprint}
+  note={arXiv preprint},
+  orcid={0009-0009-5975-5014}
 }
 ```
 
