@@ -5,6 +5,20 @@ All notable changes to the TSCG project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - Paper 2 Integration (May 2026)
+
+### Added
+
+- **Agentic RAG Benchmark (Paper 2):** 6,566 API calls, 14 models (1.5B--32B + 1 frontier API model), 3 context budgets
+  - Binary enablement at 8K: JSON overflow -> TSCG restores RAG (+20.5pp EM avg)
+  - HotpotQA external validation: +48pp EM (Phi-4, 8K, 28 tools)
+  - Frontier scaling: JSON overflows at ~494 tools, TSCG operational beyond 800
+  - Balanced profile ablation: conservative ~ balanced (delta EM = +0.8pp, n=400)
+  - TAB Scenario C cross-validation confirms stable compression at 25--100 tools
+- `paper2-rag-benchmark/` directory with full benchmark code, data, and analysis scripts
+
+---
+
 ## [1.4.1] - 2026-04-20
 
 ### Added

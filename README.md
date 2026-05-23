@@ -11,7 +11,31 @@
 
 1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 23KB ESM bundle.
 
-## Latest Findings (April 2026)
+## Paper 2: Agentic RAG Enablement (May 2026)
+
+### 6,566-Call Agentic RAG Benchmark
+
+TSCG enables agentic RAG under constrained context budgets. We evaluate 14 models (1.5B--32B local models plus one frontier API model) across 6,566 API calls at three context budgets (8K, 16K, 32K) with 28 tool definitions:
+
+| Condition | JSON EM | TSCG EM | Delta |
+|-----------|---------|---------|-------|
+| 8K, 28 tools (avg 8 models) | 2.6% | 23.1% | **+20.5pp** |
+| HotpotQA (Phi-4, 8K) | 0% | 48% | **+48pp** |
+| 32K ceiling control | -- | -- | 4 of 5 models: \|Delta\| <= 1pp |
+| Frontier: 500 tools, 200K | 0% | 90% | **+90pp** |
+
+**Key finding:** At 8K context with 28 tools, JSON schemas overflow the context window entirely (near-zero accuracy, 2.6% avg EM). TSCG compression restores RAG functionality -- a categorical enablement, not incremental improvement.
+
+- 14 models tested (1.5B--32B + one frontier API model), $107 total cost
+- Frontier scaling: JSON overflows at ~494 tools, TSCG operational beyond 800
+- External validation on HotpotQA confirms generalizability
+- TAB Scenario C (25--100 tools) cross-validates stable compression at scale
+- Balanced profile ablation (n=400): equivalent accuracy to conservative (delta = +0.8pp)
+- Paper: [TSCG-RAG-Benchmark-Paper.pdf](./TSCG-RAG-Benchmark-Paper.pdf)
+
+---
+
+## Paper 1 Findings (April 2026)
 
 ### 720-Call E2E Benchmark on Claude Models
 
@@ -323,21 +347,35 @@ npm test          # 459 tests
 npm run typecheck # Type checking
 ```
 
-## Paper
+## Papers
 
-**TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments**
+### Paper 1: TSCG -- Deterministic Tool-Schema Compilation for Agentic LLM Deployments
 
-Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-5014)). 2026.
+Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-5014)). April 2026.
 
 [TSCG-paper.pdf](./TSCG-paper.pdf) -- arXiv preprint (full version, 12 models, ~19,000 API calls, 4-class taxonomy)
 
 LaTeX source is available in [`paper/`](paper/).
+
+### Paper 2: Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets
+
+Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-5014)). May 2026.
+
+[TSCG-RAG-Benchmark-Paper.pdf](./TSCG-RAG-Benchmark-Paper.pdf) -- 14 models, 6,566 API calls, binary enablement at 8K
 
 ## Citation
 
 ```bibtex
 @article{sakizli2026tscg,
   title={TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments},
+  author={Sakizli, Furkan},
+  year={2026},
+  note={arXiv preprint},
+  orcid={0009-0009-5975-5014}
+}
+
+@article{sakizli2026tscgrag,
+  title={Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets},
   author={Sakizli, Furkan},
   year={2026},
   note={arXiv preprint},
