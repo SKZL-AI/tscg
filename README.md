@@ -326,14 +326,15 @@ import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 
 ```
 packages/
-  core/             # @tscg/core — compression engine (8 operators, 47 tests)
-  mcp-proxy/        # @tscg/mcp-proxy — stdio proxy for MCP servers (61 tests)
-  tool-optimizer/   # @tscg/tool-optimizer — LangChain, Vercel AI SDK integrations
+  core/             # @tscg/core - compression engine (8 operators, 47 tests)
+  mcp-proxy/        # @tscg/mcp-proxy - stdio proxy for MCP servers (61 tests)
+  tool-optimizer/   # @tscg/tool-optimizer - LangChain, Vercel AI SDK integrations
 paper/              # LaTeX source (arXiv version)
 cli/                # Unified CLI (compress, benchmark, analyze, info)
 benchmark/          # TAB benchmark harness, analysis code, raw data
 integrations/       # Framework integration examples
 docs/               # Technical documentation
+docs/website/       # Website concept, research harmonization, Claude design brief
 ```
 
 ## Development
