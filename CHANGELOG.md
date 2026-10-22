@@ -1,9 +1,21 @@
 # Changelog
 
+> **Research-claim correction (22 October 2026):** Release entries below are historical software notes. Current measurements, baseline definitions, and corrections are in [the published-results guide](docs/PUBLISHED-RESULTS.md). BFCL ARR is a ratio, not accuracy; the detailed published BFCL table reports Sonnet 4 only.
+
 All notable changes to the TSCG project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased] - Published-paper documentation reconciliation (22 October 2026)
+
+### Corrected
+
+- Source current research claims to arXiv:2605.04107v1 and arXiv:2605.26165v1 with exact table, metric, baseline, and catalog scope.
+- Remove unsupported GPT BFCL rows and ARR-as-accuracy tables; use published TAB A/B values for GPT comparisons and Sonnet 4 Table 4 for detailed BFCL validation.
+- Explain Phi-4 14B native-tool limitations, application-side text enablement, and why its TAB zero baseline is not a BFCL leaderboard or native-FC score.
+- Reconcile findings and package summaries; mark earlier development reports and release benchmark notes as historical. Remove unsupported production/competitor measurements from current findings.
+- Add versioned paper links, complete arXiv citations, RAG control results, and explicit manuscript inconsistencies. Runtime behavior and published artifacts are unchanged.
 
 ## [Unreleased] - Paper 2 Integration (May 2026)
 
@@ -15,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Frontier scaling: JSON overflows at ~494 tools, TSCG operational beyond 800
   - Balanced profile ablation: conservative ~ balanced (delta EM = +0.8pp, n=400)
   - TAB Scenario C cross-validation confirms stable compression at 25--100 tools
-- `paper2-rag-benchmark/` directory with full benchmark code, data, and analysis scripts
+- Historical integration note referenced `paper2-rag-benchmark/`; that directory is not present in this checkout. Use the published arXiv paper for methodology; source/data availability is not established by this entry.
 
 ---
 

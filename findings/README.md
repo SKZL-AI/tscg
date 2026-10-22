@@ -1,26 +1,17 @@
-# TSCG Empirical Findings
+# TSCG published findings
 
-Consolidated empirical results from 20,000+ API calls across 13+ language models, 4 external validation suites, and production deployment benchmarks.
+Current research summaries reconciled against the two published arXiv papers on 22 October 2026.
 
-## Documents
+1. Furkan Sakizli. **TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments**. [arXiv:2605.04107v1](https://arxiv.org/html/2605.04107v1), submitted 4 May 2026. [PDF](https://arxiv.org/pdf/2605.04107v1).
+2. Furkan Sakizli. **Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets**. [arXiv:2605.26165v1](https://arxiv.org/html/2605.26165v1), submitted 24 May 2026. [PDF](https://arxiv.org/pdf/2605.26165v1).
 
-| Document | Focus | API Calls | Key Finding |
-|----------|-------|-----------|-------------|
-| [Master Report](./tscg-master-empirical-report-v1.4.2.md) | Complete overview | 20,000+ | All findings consolidated |
-| [GPT-5.x Characterization](./gpt-5x-empirical-characterization-v1.4.2.md) | Per-operator sweep, GPT-4o to GPT-5.5 | 2,000+ | Non-monotonic operator sensitivity, combination-fragile discovery |
-| [Small-Model Enablement](./small-model-enablement-v1.4.2.md) | Sub-15B models (Phi-4, Gemma, Qwen, Llama, Mistral) | 5,000+ | 0% JSON -> 85% TSCG enablement, equalizer effect |
-| [Production Deployment](./production-deployment-metrics-v1.4.2.md) | MCP-Proxy, latency, multi-agent, RAG | ~1,500 | $18,902/month savings, -20.7% latency at 43 tools |
-| [External Validation](./external-validation-bfcl-toolbench-v1.4.2.md) | BFCL, ToolBench, API-Bank, LLMLingua-2 | ~2,000 | 108-181% BFCL ARR, Pareto dominance over LLMLingua-2 |
+| Document | Published evidence |
+|----------|--------------------|
+| [Full measurement provenance](../docs/PUBLISHED-RESULTS.md) | Source tables, metrics, baselines, corrections, and manuscript inconsistencies |
+| [Research overview](tscg-master-empirical-report-v1.4.2.md) | TAB, BFCL, model-specific effects, and RAG |
+| [Small-model enablement](small-model-enablement-v1.4.2.md) | Paper 1 Tables 3, 13, 14; Phi-4 native-support explanation |
+| [External validation](external-validation-bfcl-toolbench-v1.4.2.md) | Paper 1 Table 4; Paper 2 Table 3 |
+| [Deployment and context budgets](production-deployment-metrics-v1.4.2.md) | Paper 1 Table 16; Paper 2 Tables 1–5 |
+| [Operator characterization](gpt-5x-empirical-characterization-v1.4.2.md) | Paper 1 Table 15; boundaries of post-freeze development observations |
 
-## Models Tested
-
-**Frontier (API):** Claude Sonnet 4, Claude Opus 4.7, GPT-4o, GPT-5.2, GPT-5.4, GPT-5.5
-**Local (Ollama):** Gemma 3 (4B, 12B), Phi-4, Llama 3.1 8B, Mistral 7B, Qwen 3 (4B, 14B)
-
-## TSCG Version
-
-All findings produced with TSCG v1.4.1 and v1.4.2. See [CHANGELOG](../packages/core/CHANGELOG.md).
-
-## Author
-
-Furkan Sakizli, [SKZL-AI](https://github.com/SKZL-AI)
+The historical `v1.4.2` filenames are retained for incoming links. They do not mean that both papers evaluated that software version. The former untraceable aggregate tables are superseded by these source-linked summaries. Software profile availability does not establish a published measurement for a model.

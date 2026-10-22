@@ -7,32 +7,20 @@ Transparent MCP middleware -- compiles tool schemas into token-efficient represe
 ## Quick Start -- Zero-Config for Claude Models (Recommended)
 
 ```bash
-# Opus 4.7 -- auto-optimized, 55-59% savings, +2.5 to +7.5pp accuracy
+# Opus 4.7 target profile
 npx @tscg/mcp-proxy --target=claude-opus-4-7 --server=<your-mcp-command>
 
-# Sonnet 4 -- auto-optimized, 55-59% savings
+# Sonnet 4 target profile
 npx @tscg/mcp-proxy --target=claude-sonnet-4 --server=<your-mcp-command>
 ```
 
 **Setting `--target` automatically activates the full compression pipeline** (`mode=full`, `profile=balanced`, all operators). No other flags needed.
 
-Validated by 720-call E2E benchmark (April 2026):
+## Published evidence
 
-### Claude Opus 4.7
-| Tool Count | Baseline | TSCG | Delta Accuracy | Token Savings |
-|------------|----------|------|----------------|---------------|
-| 16 | 70.0% | **77.5%** | +7.5pp | 55.7% |
-| 43 | 77.5% | **80.0%** | +2.5pp | 58.7% |
-| 50 | 72.5% | **80.0%** | +7.5pp | 58.2% |
+See [Paper 1 and Paper 2 with exact measurement provenance](../../docs/PUBLISHED-RESULTS.md). Paper 1 Table 16 reports Opus 4.7 on 43 heavy production MCP schemas at 75.0% → 80.0%, +5.0 pp, 56.6% token savings. This is a `json-text` vs `v13-smart` experiment, not a measurement of every proxy invocation. The former 720-call software benchmark tables are not established by the published tables and have been removed from the current research summary.
 
-### Claude Sonnet 4
-| Tool Count | Baseline | TSCG | Delta Accuracy | Token Savings |
-|------------|----------|------|----------------|---------------|
-| 16 | 77.5% | 80.0% | +2.5pp | 55.7% |
-| 43 | 85.0% | 80.0% | -5.0pp | 58.7% |
-| 50 | 77.5% | 77.5% | +/-0.0pp | 58.2% |
-
-n=40 per cell, 2 seeds, deterministic tokenizer-aware compression.
+Description-only mode preserves native tool schemas and requires existing model/provider tool support. Phi-4 14B lacks native tool calling in the tested Ollama deployment: its TAB enablement uses compiled text plus host-side parsing and execution. It is not a Phi-4 BFCL score or a guarantee that an MCP proxy alone adds native tool calling.
 
 ## Supported Targets
 
@@ -49,7 +37,7 @@ n=40 per cell, 2 seeds, deterministic tokenizer-aware compression.
 npx @tscg/mcp-proxy --server=<your-mcp-command>
 ```
 
-Without `--target`: runs in safe default (description-only compression, conservative profile, zero regression guarantee). Identical behavior to v1.0.1.
+Without `--target`: runs in default (description-only compression, conservative profile). Identical behavior to v1.0.1.
 
 ## Programmatic Usage
 

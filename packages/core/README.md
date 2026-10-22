@@ -1,40 +1,12 @@
 # @tscg/core
 
-Deterministic prompt compiler for tool-schema compression. Reduces LLM tool-definition overhead by **71.7%** with zero accuracy loss.
+Deterministic tool-schema compilation with no runtime dependencies. Full compilation produces compact text; description-only compression preserves JSON schemas for native tool-calling APIs. Accuracy and savings depend on the model, profile, tokenizer, and catalog.
 
-Zero runtime dependencies. <1ms compression time. 14.9KB ESM bundle.
+## Published evidence
 
-## Latest Benchmarks -- April 2026
+See [the two arXiv papers and source-linked measurements](../../docs/PUBLISHED-RESULTS.md). Paper 1 Table 4: Sonnet 4 BFCL-schema accuracy 85.7% → 93.2%, +7.5 pp, 46.8% token savings. These are the author's validation results, not official leaderboard scores.
 
-720-call E2E validation on Claude Sonnet 4 and Claude Opus 4.7 across 16, 43, and 50 MCP tools. Balanced profile with all 7 operators active (SDM, TAS, DRO, CFL, CFO, CAS, CCP).
-
-### Claude Opus 4.7 -- Accuracy Improvement + 55-59% Token Reduction
-
-| Tool Count | Baseline | TSCG Balanced | Delta Accuracy | Char Savings |
-|------------|----------|---------------|----------------|--------------|
-| 16 tools   | 70.0%    | **77.5%**     | **+7.5pp**     | 55.7%        |
-| 43 tools   | 77.5%    | **80.0%**     | **+2.5pp**     | 58.7%        |
-| 50 tools   | 72.5%    | **80.0%**     | **+7.5pp**     | 58.2%        |
-
-### Claude Sonnet 4 -- Consistent 55-59% Savings
-
-| Tool Count | Baseline | TSCG Balanced | Delta Accuracy | Char Savings |
-|------------|----------|---------------|----------------|--------------|
-| 16 tools   | 77.5%    | 80.0%         | +2.5pp         | 55.7%        |
-| 43 tools   | 85.0%    | 80.0%         | -5.0pp         | 58.7%        |
-| 50 tools   | 77.5%    | 77.5%         | +/-0.0pp       | 58.2%        |
-
-Benchmark config: n=40 per cell (20 tasks x 2 seeds), deterministic tokenizer-aware compression, <2ms per call. Total: 720 calls, $17.69.
-
-### Three Frontier-Model Operator Archetypes
-
-TSCG compression response is model-specific. Three distinct archetypes observed:
-
-- **Claude Opus 4.7 -- Operator-HUNGRY:** Every operator contributes positively. CCP alone +20pp. CFL+CFO synergistic +17.5pp (super-additive). All 8 operators optimal. Conservative (SDM-only) *hurts* accuracy by -2.5 to -15pp.
-- **Claude Sonnet 4 -- Operator-ROBUST:** Config-agnostic. 6 of 7 configs produce identical accuracy. Balanced safe default.
-- **GPT-5.2 -- Operator-SENSITIVE:** CFL helps +2.5pp, CFO hurts -5pp, all-8 worst case (-10pp). Best config: balanced with CFO disabled.
-
-See [paper](https://github.com/SKZL-AI/tscg) for methodology and per-operator isolation experiments.
+Phi-4 14B lacks native tool calling in the tested Ollama deployment. Full TSCG text plus application-side parsing and execution enables tool use: TAB D reports 0.0% → 84.4% at 20 tools and 0.0% → 90.3% at 50 tools (Table 13). These are not BFCL scores; Table 13 labels the zero baseline `json-text`. Missing native support is unsupported/N/A, not a measured zero reasoning score. See [the baseline explanation](../../docs/PUBLISHED-RESULTS.md#paper-1-small-model-enablement-and-phi-4).
 
 ## Installation
 
@@ -355,39 +327,30 @@ For advanced users, TSCG exports individual transform functions from the engine:
 
 ```typescript
 import {
-  applyToolSDM,   // Schema Description Minimization
-  applyToolDRO,   // Description Redundancy Optimization
-  applyToolCAS,   // Context-Aware Sorting
-  applyToolTAS,   // Tokenizer Alignment Scoring
+  applyToolSDM,   // Semantic Density Maximization
+  applyToolDRO,   // Delimiter-Role Optimization
+  applyToolCAS,   // Causal Access Score
+  applyToolTAS,   // Tokenizer-Aligned Syntax
   optimizeToolDefinitions,  // Full pipeline
 } from '@tscg/core';
 ```
 
-## Benchmark Results
+## Benchmark results and operators
 
-Tested across 6 scenarios in the TAB (Tool-Aware Benchmark):
+[Published measurements](../../docs/PUBLISHED-RESULTS.md) distinguish TAB, BFCL-schema validation, and RAG EM. The old six-scenario table, universal zero-loss headline, and 99.5% BFCL ARR are superseded by those published tables. Compression can reduce accuracy for some model/profile combinations.
 
-| Scenario | Token Savings | Accuracy |
-|----------|:------------:|:--------:|
-| Frontier Models (Claude 4, GPT-5.2, Gemini 2.5) | 71.7% | 100% |
-| Small Models (7B-8B, 50 tools) | 71.2% | Significant improvement |
-| Claude Code Simulation (77 tools) | 71.7% | 100% |
-| GSM8K Reasoning + 50 tools | 71.5% | Improved reasoning |
-| MCP Aggregation (50 tools, 5 servers) | 72.1% | 100% |
-| BFCL Accuracy Retention | 71.7% | 99.5% ARR |
+| Operator | Published name |
+|----------|----------------|
+| TAS | Tokenizer-Aligned Syntax |
+| CFL | Constraint-First Layout |
+| CFO | Causal-Forward Ordering |
+| SDM | Semantic Density Maximization |
+| DRO | Delimiter-Role Optimization |
+| CCP | Causal Closure Principle |
+| CAS | Causal Access Score |
+| SAD-F | Selective Anchor Duplication with Fragility |
 
-## How It Works
-
-TSCG applies 8 compression principles grounded in transformer architecture:
-
-1. **ATA** -- Abbreviated Type Annotations: `string` -> `str`, `integer` -> `int`
-2. **DTR** -- Description Text Reduction: Remove redundant words from descriptions
-3. **RKE** -- Redundant Key Elimination: Remove JSON keys the model can infer
-4. **SCO** -- Structural Compression Operators: Flatten nested schemas
-5. **CFL** -- Constraint-First Layout: Place constraints where causal attention processes them
-6. **TAS** -- Tokenizer Alignment Scoring: Optimize for BPE token boundaries
-7. **CSP** -- Context-Sensitive Pruning: Remove derivable information
-8. **SAD** -- Selective Anchor Duplication: Reinforce critical parameters (Claude-only)
+The software principle key for SAD-F is `sad`. Paper 1's profile definitions and Paper 2's conservative schema rendering are experiment-specific; do not infer an identical deployed configuration from a shared label alone.
 
 ## Related Packages
 

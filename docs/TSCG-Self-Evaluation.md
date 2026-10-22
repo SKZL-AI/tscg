@@ -1,5 +1,7 @@
 # TSCG Self-Evaluation: Strengths, Weaknesses, and Honest Assessment
 
+> **Historical development document — superseded for current research claims (22 October 2026).** Figures, planned scenarios, and publication-readiness assessments below describe earlier development stages. Use [the published arXiv results and corrections](PUBLISHED-RESULTS.md) for current measurements. Older BFCL-derived tasks are not official leaderboard scores; final TAB Scenario D is the small-model study and BFCL is separate external validation.
+
 **Document Version:** 3.0
 **Date:** 2026-02-27
 **Author:** SAI Sakizli / TSCG Research

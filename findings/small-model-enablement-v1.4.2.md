@@ -1,121 +1,56 @@
-# Small-Model Tool-Use Enablement via TSCG — 7 Models, 5,000+ Calls
+# Small-model tool-use enablement
 
-**Author:** Furkan Sakizli, SKZL-AI
-**Date:** April 2026
-**Total benchmark calls:** 5,000+ (across 7 local models)
-**Repository:** [github.com/SKZL-AI/tscg](https://github.com/SKZL-AI/tscg)
+Source: [Paper 1](https://arxiv.org/html/2605.04107v1), Tables 3, 13, and 14; Sections 6.1, 6.2, and 7.2. Updated 22 October 2026. [Measurement provenance](../docs/PUBLISHED-RESULTS.md).
 
----
+## Phi-4: enablement without native tool calling
 
-## Executive Summary
+**Phi-4 14B has no native tool calling in the tested Ollama deployment.** TSCG enables tool use through a text interface: compile the schemas, include the resulting text in the prompt, parse the model's generated tool name and arguments, then validate and execute the call in the host application. Native tool-calling support is not required for this path. `compress()` alone does not execute tools or add a native API interface to the model.
 
-TSCG enables tool use on sub-15B parameter models that achieve 0-25% accuracy with standard JSON schemas. Across 7 local models tested via Ollama (4B to 14B parameters), TSCG compression lifts accuracy from an average of 16.4% to 82.9% — a +66.4pp improvement. This is not incremental optimization; it is categorical enablement of a capability these models cannot perform without schema compression.
+An unsupported native-FC path should be reported as **unsupported / N/A**, rather than interpreted as a measured reasoning score of zero. The published **0.0% → 84.4% (20 tools)** and **0.0% → 90.3% (50 tools)** results are **TAB Scenario D**, not Phi-4 BFCL leaderboard scores. Table 13 labels its baseline `json-text`; those published zeros must also not be silently relabelled as native-FC measurements or attributed solely to missing native support. The paper's E4 control identifies format translation as the dominant enablement mechanism (+92.0 pp format effect, -7.0 pp additional compression effect for Phi-4, Table 14).
 
-The practical implication: a free, locally-hosted 4B model with TSCG achieves 85% tool selection accuracy — comparable to GPT-4o's 85% with native function calling, at zero API cost.
+## Published TAB D results
 
----
+Table 13 reports:
 
-## Results by Model
+| Model | JSON baseline, 20 tools | TSCG, 20 tools | JSON baseline, 50 tools | TSCG, 50 tools |
+|-------|-------------------------|----------------|-------------------------|----------------|
+| Phi-4 14B | 0.0% | 84.4% | 0.0% | 90.3% |
+| Mistral 7B | 35.0% | 80.1% | 30.0% | 65.0% |
+| Gemma 3 4B | 49.9% | 67.0% | 24.3% | 87.4% |
+| Gemma 3 12B | 85.0% | 95.0% | 85.0% | 98.0% |
+| Llama 3.1 8B | 78.4% | 81.0% | 75.1% | 86.3% |
+| Qwen3 4B | 44.3% | 69.3% | 90.0% | 75.0% |
+| Qwen3 14B | 90.2% | 84.1% | 94.6% | 89.6% |
 
-### Accuracy (Tool Selection @ 43 Tools)
+These values preserve the published table's labels and catalog sizes; they are not the old report's unsupported 43-tool table. Section 5.1 defines the TAB composite score; Table 13's caption instead calls these tool-selection accuracy. This manuscript label inconsistency is documented in the provenance guide.
 
-| Model | Parameters | JSON Baseline | TSCG (small-model) | Delta | Token Savings |
-|-------|-----------|---------------|---------------------|-------|---------------|
-| Phi-4 | 14B | 0% | 90% | **+90pp** | 52.1% |
-| Gemma 3 | 4B | 5% | 85% | **+80pp** | 48.7% |
-| Gemma 3 | 12B | 15% | 85% | **+70pp** | 51.3% |
-| Qwen 3 | 4B | 10% | 80% | **+70pp** | 47.2% |
-| Qwen 3 | 14B | 45% | 85% | **+40pp** | 53.8% |
-| Llama 3.1 | 8B | 20% | 80% | **+60pp** | 49.6% |
-| Mistral | 7B | 25% | 75% | **+50pp** | 46.9% |
+## Format translation versus additional compression
 
-### Why JSON Fails for Small Models
+Table 14's E4 decomposition reports:
 
-Small models fail at JSON-schema tool use for three compounding reasons:
+| Model | Format effect | Additional compression effect |
+|-------|---------------|-------------------------------|
+| Phi-4 14B | +92.0 pp | -7.0 pp |
+| Mistral 7B | +44.6 pp | -7.4 pp |
+| Gemma 3 4B | +47.3 pp | -8.9 pp |
+| Qwen3 4B | +16.7 pp | -23.4 pp |
+| Llama 3.1 8B | +5.6 pp | +0.3 pp |
+| Gemma 3 12B | +9.2 pp | -0.9 pp |
 
-1. **Token overhead:** A 43-tool JSON schema consumes 8,000-12,000 tokens — a significant fraction of the model's context window. After the schema, little capacity remains for reasoning.
-2. **Structural complexity:** Nested JSON objects with `type`, `properties`, `required`, `description`, `enum`, `default` fields create a complex parsing task that small models haven't been trained on at scale.
-3. **Format confusion:** Small models sometimes generate valid JSON that doesn't match the schema structure, or mix up field names due to the repetitive nature of JSON schemas.
+This supports format-driven enablement for the first four models. It does not show that additional compression always improves a working text interface. The regression R² falls from approximately 0.88 against the JSON baseline to 0.03 against the text baseline; it is not a universal percentage of causal accuracy variance explained.
 
-### Why TSCG Works
+## Profiles and negative results
 
-TSCG addresses all three failure modes:
+Paper 1 Table 3, at 20 tools:
 
-1. **Token reduction (47-54%):** Compressed schemas use 4,000-6,000 fewer tokens, freeing context for reasoning.
-2. **Structural simplification:** SDM removes filler words, TAS simplifies types, DRO removes defaults — the schema becomes a clean, readable specification.
-3. **Format clarity:** CCP removes redundant context, making each tool's purpose unambiguous in text form.
+| Model | Natural | Conservative | Balanced |
+|-------|---------|--------------|----------|
+| Mistral 7B | 35.0% | 80.0% | 80.1% |
+| Gemma 3 4B | 49.9% | 87.3% | 67.0% |
+| Qwen3 14B | 90.2% | 99.3% | 84.1% |
 
----
+Conservative is SDM-only in Paper 1's implementation description; the OpenClaw `small-model` preset is a separate software configuration, not the same experimental condition. At 10 tools, Mistral conservative regresses from 83.5% to 76.0%. Do not promise zero accuracy loss, a universal parameter-size rule, or frontier-model equivalence from these experiments.
 
-## The Equalizer Effect
+## Separate RAG result
 
-### Pre-TSCG Accuracy Spread (13 Models)
-
-- **Best:** Claude Opus 4.7 at 90%
-- **Worst:** Phi-4 at 0%
-- **Spread:** 90pp
-- **Standard deviation:** 31.2pp
-
-### Post-TSCG Accuracy Spread (13 Models)
-
-- **Best:** Claude Opus 4.7 at 100%
-- **Worst:** Mistral 7B at 75%
-- **Spread:** 25pp
-- **Standard deviation:** 7.8pp
-
-**Variance reduction: 75%**
-
-This "equalizer effect" means TSCG makes model selection less critical — a $0 local model with TSCG approaches the performance of a $20/M frontier model without it.
-
----
-
-## Profile Recommendations by Size
-
-### Small-Model Profile (< 40B)
-
-Operators: SDM + TAS + DRO + CCP only
-
-| Operator | Status | Rationale |
-|----------|--------|-----------|
-| SDM | ON | Safe across all sizes, biggest impact |
-| TAS | ON | Type simplification helps small models parse |
-| DRO | ON | Removing defaults reduces confusion |
-| CFL | OFF | Cross-field linking too complex for small models |
-| CFO | OFF | Reordering confuses models with limited reasoning |
-| CAS | OFF | Constraint simplification marginal at this scale |
-| SAD | OFF | Abbreviations can confuse models not trained on them |
-| CCP | ON | Redundancy removal always beneficial |
-
-### How to Tune
-
-```bash
-# Run per-model sweep to verify (recommended, ~$0 for local models)
-npx tscg-openclaw tune --sweep --model ollama/your-model
-
-# Quick benchmark
-npx tscg-openclaw tune --model ollama/your-model
-```
-
-Local models via Ollama are always free to benchmark.
-
----
-
-## Deployment Pattern: Local Model + TSCG
-
-For organizations that need tool-use capabilities without API costs or data privacy concerns:
-
-1. Install Ollama and pull a 12-14B model (Gemma 3 12B or Qwen 3 14B recommended)
-2. Install TSCG: `npm install @tscg/core @tscg/openclaw`
-3. Run tune: `npx tscg-openclaw tune --sweep --model ollama/gemma3:12b`
-4. Use in your application with the tuned profile
-
-**Expected results:** 80-90% tool selection accuracy at 50%+ token savings with zero API cost.
-
----
-
-## Citation
-
-```
-Sakizli, F. (2026). Tool-Schema Compression Grammar: Deterministic Schema Optimization
-for LLM Tool Use. TSCG v1.4.2 Empirical Report. https://github.com/SKZL-AI/tscg
-```
+[Paper 2](https://arxiv.org/html/2605.26165v1) reports Phi-4 at 8K/28 tools: NovaTech-28 EM **2% → 33%** (Table 1), versus **0% → 48%** on HotpotQA (Table 3). These are answer-EM measurements, distinct from the TAB values above.

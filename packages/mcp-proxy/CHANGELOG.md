@@ -1,5 +1,7 @@
 # Changelog
 
+> **Research-claim correction (22 October 2026):** Release entries below are historical software notes. Current measurements, baseline definitions, and corrections are in [the published-results guide](../../docs/PUBLISHED-RESULTS.md). BFCL ARR is a ratio, not accuracy; the detailed published BFCL table reports Sonnet 4 only.
+
 ## [1.4.3] - 2026-04-27
 
 ### Fixed
@@ -46,7 +48,7 @@ With `--target=claude-sonnet-4 --mode=full`:
 Version jump 1.0.1 -> 1.4.1 is intentional: synchronized release with @tscg/core@1.4.1 and @tscg/tool-optimizer@1.4.1 under new umbrella-versioning scheme. Versions 1.1-1.3 were not published for this package.
 
 ### Backward Compatibility -- Zero Breaking Changes
-`createProxy({})` and `npx @tscg/mcp-proxy` without any flags continues to work exactly as in v1.0.1 -- description-only mode, conservative profile, zero regression guarantee. The legacy `mode: 'full-text'` value is accepted and mapped to `'full'` at runtime.
+`createProxy({})` and `npx @tscg/mcp-proxy` without any flags continues to work exactly as in v1.0.1 -- description-only mode, conservative profile; accuracy remains deployment-dependent (see research correction above). The legacy `mode: 'full-text'` value is accepted and mapped to `'full'` at runtime.
 
 ## [1.0.1] - 2026-04-19
 

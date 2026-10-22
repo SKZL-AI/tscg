@@ -1,111 +1,25 @@
-# External Validation — BFCL, ToolBench, API-Bank, LLMLingua-2
+# External validation: published evidence
 
-**Author:** Furkan Sakizli, SKZL-AI
-**Date:** April 2026
-**Total benchmark calls:** ~2,000
-**Repository:** [github.com/SKZL-AI/tscg](https://github.com/SKZL-AI/tscg)
+Updated 22 October 2026. Source: [Paper 1](https://arxiv.org/html/2605.04107v1), Table 4 and Section 6.6; [Paper 2](https://arxiv.org/html/2605.26165v1), Table 3. See [measurement definitions and correction history](../docs/PUBLISHED-RESULTS.md).
 
----
+## BFCL: Sonnet 4
 
-## Executive Summary
+Twenty tasks × three runs (`n=60` per condition), evaluated using BFCL schemas. This is the author's external-schema validation experiment, not an official full-suite leaderboard submission or independent replication.
 
-TSCG's accuracy and savings claims were validated against 4 independent external benchmarks. On BFCL (Berkeley Function Calling Leaderboard), TSCG-compressed schemas actually *outperform* uncompressed schemas (108-181% ARR), confirming the text-mode advantage. On API-Bank and ToolBench, TSCG achieves parity at 48-51% token savings. Against LLMLingua-2 (the strongest prompt compression baseline), TSCG Pareto-dominates: same accuracy with +24pp additional savings.
+| Condition | Accuracy | Tool selection | Parameter F1 | Token savings |
+|-----------|----------|----------------|--------------|---------------|
+| Natural | 85.7% | 86.7% | 84.2% | — |
+| TSCG | 93.2% | 95.0% | 91.7% | 46.8% |
+| TSCG+SAD | 89.0% | 90.0% | 87.5% | 46.0% |
 
----
+Accuracy improves by +7.5 pp. ARR is approximately 108.8% calculated from the rounded values; the paper summarizes it as 108%. ARR above 100% means a ratio above one, never accuracy above 100%.
 
-## 1. BFCL (Berkeley Function Calling Leaderboard)
+The old normalized baseline of 100% and >100% accuracy entries were incorrect. The former GPT BFCL accuracy and token-saving rows are not supplied by the detailed published Table 4 and are withdrawn. The abstract's three-model ARR range is inconsistent with the detailed validation; [the source note](../docs/PUBLISHED-RESULTS.md#paper-1-bfcl-external-validation) records this explicitly. Phi-4's zero-baseline enablement is a TAB D result, not a BFCL score.
 
-### Results
+## HotpotQA: agentic RAG
 
-| Model | BFCL Baseline | BFCL + TSCG | ARR | Token Savings |
-|-------|--------------|-------------|-----|---------------|
-| Claude Sonnet 4 | 100% (reference) | 108.7% | 108.7% | 56.8% |
-| GPT-4o | 100% (reference) | 181.4% | 181.4% | 54.2% |
-| GPT-5.2 | 100% (reference) | 144.3% | 144.3% | 57.1% |
+Paper 2 Table 3: Phi-4 14B, 50 multi-hop questions, 28 tools, 8K context. JSON EM **0.0%**, TSCG EM **48.0%** (+48 pp); answer F1 **0.000 → 0.645**. This measures answer quality under context overflow, separately from BFCL tool selection and parameter extraction.
 
-**ARR (Accuracy Retention Ratio):** Values > 100% mean TSCG improves accuracy beyond the original benchmark score.
+## Withdrawn comparator claims
 
-### Interpretation
-
-The > 100% ARR confirms that TSCG's text-mode delivery is not just token-efficient but actually provides cleaner signal to the model. This is consistent with our hypothesis that native function-calling APIs apply opaque internal transformations that can be lossy, while TSCG's deterministic compression preserves full semantic structure.
-
----
-
-## 2. API-Bank
-
-### Conservative Profile Test
-
-| Metric | Value |
-|--------|-------|
-| Accuracy delta | **0pp** (exact parity) |
-| Token savings | **51.2%** |
-| Profile used | Conservative (SDM-only) |
-| Calls | 180 |
-
-API-Bank tests real-world API call scenarios with complex parameter extraction. The 0pp delta confirms that TSCG's conservative profile is completely safe for production use.
-
----
-
-## 3. ToolBench
-
-### Results
-
-| Scenario | Baseline | TSCG | Delta | Savings |
-|----------|----------|------|-------|---------|
-| Simple API calls | 88% | 87% | -1pp | 48.3% |
-| Complex parameter extraction | 72% | 73% | +1pp | 47.1% |
-| Multi-step workflows | 65% | 64% | -1pp | 49.8% |
-
-All deltas within 1pp — statistical parity at ~48% average token savings.
-
----
-
-## 4. LLMLingua-2 Comparison
-
-### Pareto Dominance
-
-| Method | Accuracy | Token Savings |
-|--------|----------|---------------|
-| No compression | 85.0% | 0% |
-| LLMLingua-2 | 84.5% | 32% |
-| **TSCG (balanced)** | **85.0%** | **56%** |
-
-TSCG achieves the same accuracy as uncompressed schemas while saving 56% of tokens. LLMLingua-2 loses 0.5pp of accuracy while only saving 32%.
-
-### Why TSCG Beats Text Compression
-
-LLMLingua-2 treats tool schemas as opaque text and applies general-purpose prompt compression (token importance scoring, selective pruning). TSCG understands JSON schema structure and applies semantic-aware transformations:
-
-1. **SDM** knows that "This parameter specifies the ..." can be reduced to the core description
-2. **TAS** knows that `"type": "string"` in context of a `name` field is redundant
-3. **CCP** knows that two tools sharing a `user_id` parameter can reference a common definition
-
-This structural awareness gives TSCG +24pp additional savings over text-level compression at the same accuracy.
-
----
-
-## 5. Methodology
-
-### Test Protocol
-
-For each external benchmark:
-1. Obtain the standard test set (tool definitions + queries)
-2. Run with original (uncompressed) schemas as baseline
-3. Run with TSCG-compressed schemas (balanced profile)
-4. Compare tool selection accuracy and token counts
-5. Calculate ARR (accuracy retention ratio) and token savings percentage
-
-### Statistical Rigor
-
-- All runs use fixed seeds for reproducibility
-- Bootstrap confidence intervals (10,000 iterations) where sample size permits
-- Per-call checkpoint data preserved for audit
-
----
-
-## Citation
-
-```
-Sakizli, F. (2026). Tool-Schema Compression Grammar: Deterministic Schema Optimization
-for LLM Tool Use. TSCG v1.4.2 Empirical Report. https://github.com/SKZL-AI/tscg
-```
+The previous API-Bank, ToolBench, and LLMLingua-2 numeric comparison tables are not established by either published manuscript. References to these systems in related work do not constitute a head-to-head evaluation. No parity, superiority, extra-savings, or production-safety conclusion is inferred from those removed tables. Paper 1 Section 8 explicitly leaves direct comparison with schema-replacement alternatives to future work.

@@ -54,13 +54,12 @@ const llm = new ChatOpenAI({ modelName: 'gpt-4' });
 
 | Principle | What It Does |
 |-----------|-------------|
-| DTR (Description Text Reduction) | Removes filler words and redundant phrases |
-| SCO (Structural Compression Operators) | Replaces verbose patterns with compact operators |
+| SDM (Semantic Density Maximization) | Removes filler words and redundant phrases |
+| DRO (Delimiter-Role Optimization) | Uses compact delimiters for tool signatures |
 | CFL (Constraint-First Layout) | Moves constraints to the front of descriptions |
-| TAS (Tokenizer Alignment Scoring) | Uses BPE-optimal delimiters for the target model |
+| TAS (Tokenizer-Aligned Syntax) | Uses BPE-optimal delimiters for the target model |
 
-The compressed descriptions are semantically equivalent -- LLMs understand them
-just as well (99.5%+ accuracy retention), but they use far fewer tokens.
+Compressed descriptions target the same tool semantics. Accuracy depends on the model and profile. See the [published results and baselines](../../docs/PUBLISHED-RESULTS.md) before comparing savings or accuracy.
 
 ## API
 

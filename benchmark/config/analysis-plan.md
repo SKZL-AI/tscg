@@ -1,6 +1,6 @@
 # TAB v1.0 — Analysis Plan
 
-Single Source of Truth for how benchmark results are interpreted and reported.
+Historical TAB v1.0 analysis plan. For current published metric definitions and reported results, use [the published-results guide](../../docs/PUBLISHED-RESULTS.md). The published TAB overall score is 0.6 × tool-selection accuracy + 0.4 × parameter F1; the binary endpoints below describe the earlier plan and must not be substituted for published composite scores. ARR is a ratio; a zero baseline makes it undefined. Unsupported native tool calling is N/A, not a measured zero reasoning score.
 Created as part of FIX-01 (Luecken-Analyse Plan 5.1).
 
 ## Primary Endpoint

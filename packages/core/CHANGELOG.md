@@ -1,5 +1,7 @@
 # Changelog
 
+> **Research-claim correction (22 October 2026):** Release entries below are historical software notes. Current measurements, baseline definitions, and corrections are in [the published-results guide](../../docs/PUBLISHED-RESULTS.md). BFCL ARR is a ratio, not accuracy; the detailed published BFCL table reports Sonnet 4 only.
+
 ## [1.4.3] - 2026-04-27
 
 ### Fixed
@@ -39,7 +41,7 @@ Users on @tscg/core@1.4.0 who relied on balanced profile's auto-disable safety a
 ### Added
 - TAB (Tool-Aware Benchmark) harness
 - 6-scenario evaluation across 12 models (4B-32B + 3 frontier APIs)
-- BFCL accuracy retention validation (108-181% ARR)
+- BFCL-schema validation (see the published-results correction above; Paper 1 Table 4 reports Sonnet 4)
 
 ## [1.2.0] - 2026-03-28
 

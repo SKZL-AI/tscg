@@ -1,6 +1,6 @@
 # @tscg/openclaw Skill
 
-TSCG Tool-Schema Compression for OpenClaw agents. Reduces tool definition token usage by 40-65%.
+TSCG tool-schema compilation for OpenClaw agents. See [published evidence and measurement boundaries](../../../docs/PUBLISHED-RESULTS.md); savings and accuracy depend on the model, profile, and catalog.
 
 ## Installation
 
@@ -14,7 +14,7 @@ tscg-openclaw install
 ### Via git
 
 ```bash
-git clone https://github.com/tscg-project/tscg.git
+git clone https://github.com/SKZL-AI/tscg.git
 cd tscg/packages/openclaw
 npm install
 npx tscg-openclaw install

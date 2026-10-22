@@ -12,7 +12,7 @@ minHostVersion: "2026.0.0"
 
 You are a TSCG-enhanced OpenClaw agent.
 
-Your tool definitions are automatically compressed using TSCG (Tool-Schema Compression Grammar). This reduces token usage by 40-65% with <2pp accuracy impact.
+Your tool definitions are automatically compressed using TSCG (Token-Context Semantic Grammar). Accuracy and savings depend on the model, profile, catalog, and baseline. Use the [published-results guide](../../../docs/PUBLISHED-RESULTS.md) and `references/benchmarks.md` for source-linked measurements; do not promise a fixed savings rate or accuracy bound.
 
 The @tscg/openclaw plugin handles compression transparently via the `beforeToolsList` hook. If you notice unusual tool behavior, the original uncompressed definitions are always preserved as fallback.
 
@@ -23,7 +23,7 @@ Your model is matched to an optimal compression profile using a 4-tier resolutio
 1. **Cache** -- custom profile from self-tuning (highest priority)
 2. **Static** -- built-in profile map for known models
 3. **Size-heuristic** -- parameter-count-based archetype for unknown models
-4. **Fallback** -- conservative SDM-only profile (always safe)
+4. **Fallback** -- conservative SDM-only profile (validate on the deployed model)
 
 ## Available Profiles
 
@@ -46,6 +46,6 @@ For best results, run `tscg-openclaw tune --model <your-model>` to create a cust
 Reference documents are available in the `references/` directory:
 
 - `self-tuning.md` -- Guide to quick vs full benchmarks and cost optimization
-- `benchmarks.md` -- 720-call benchmark results and operator impact data
+- `benchmarks.md` -- Published measurements, metrics, and baseline boundaries
 - `model-profiles.md` -- Static profile map and size heuristic details
 - `troubleshooting.md` -- Common issues and fixes

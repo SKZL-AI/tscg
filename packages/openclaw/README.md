@@ -1,6 +1,6 @@
 # @tscg/openclaw
 
-OpenClaw plugin for automatic TSCG (Tool-Schema Compression Grammar) optimization. Reduces tool definition token usage by 40-65% with <2pp accuracy impact.
+OpenClaw plugin for automatic TSCG (Token-Context Semantic Grammar) tool-schema optimization. Tuning and static profiles are software features; they do not guarantee accuracy or savings. See [published results and evidence boundaries](../../docs/PUBLISHED-RESULTS.md).
 
 ## Features
 
@@ -173,11 +173,11 @@ TSCG uses 8 compression operators:
 
 | Archetype | Operators | Best For |
 |-----------|-----------|----------|
-| hungry | All 8 ON | Claude Opus, large models (>=100B) |
-| robust | 6/8 ON | Claude Sonnet, Llama 70B, GPT-5 |
+| hungry | All 8 ON | Static preset; published Opus 4.7 response is experiment-specific |
+| robust | 6/8 ON | Static preset; validate the deployed model |
 | balanced | 5/8 ON | Claude Haiku |
 | sensitive | 6/8 (CFO/SAD OFF) | GPT-4 family |
-| small-model | SDM+TAS+DRO+CCP | Models <40B (Qwen, Phi, Gemma) |
+| small-model | SDM+TAS+DRO+CCP | Software heuristic; distinct from Paper 1 conservative (SDM-only) |
 | conservative | SDM only | DeepSeek, unknown models |
 
 ## Configuration

@@ -1,5 +1,7 @@
 # Changelog
 
+> **Research-claim correction (22 October 2026):** Release entries below are historical software notes. Current measurements, baseline definitions, and corrections are in [the published-results guide](../../docs/PUBLISHED-RESULTS.md). BFCL ARR is a ratio, not accuracy; the detailed published BFCL table reports Sonnet 4 only.
+
 ## [1.4.3] - 2026-04-27
 
 ### Fixed

@@ -2,13 +2,13 @@
 
 High-level tool-schema optimizer for LLM agent frameworks. Drop-in integration for **LangChain**, **MCP** (Model Context Protocol), and **Vercel AI SDK**.
 
-> **Note on versioning:** As of v1.4.1, all `@tscg/*` packages (core, mcp-proxy, tool-optimizer) share the same version number under umbrella versioning. Install matching versions for guaranteed compatibility:
+> **Note on versioning:** As of v1.4.1, all `@tscg/*` packages (core, mcp-proxy, tool-optimizer) share the same version number under umbrella versioning. Install matching versions:
 >
 > ```bash
 > npm i @tscg/core@1.4.1 @tscg/mcp-proxy@1.4.1 @tscg/tool-optimizer@1.4.1
 > ```
 
-Built on top of [`@tscg/core`](https://www.npmjs.com/package/@tscg/core) -- the deterministic prompt compiler that reduces tool-definition overhead by 71.7%.
+Built on top of [`@tscg/core`](https://www.npmjs.com/package/@tscg/core) -- the deterministic tool-schema compiler. See [published measurements and baselines](../../docs/PUBLISHED-RESULTS.md); savings and accuracy depend on the experiment.
 
 ## Installation
 
@@ -190,14 +190,14 @@ All integration functions accept the same `CompilerOptions` from `@tscg/core`:
   model: 'claude-sonnet',    // Target model for tokenizer optimization
   profile: 'balanced',       // 'conservative' | 'balanced' | 'aggressive'
   principles: {              // Toggle individual TSCG principles
-    ata: true,               // Abbreviated Type Annotations
-    dtr: true,               // Description Text Reduction
-    rke: true,               // Redundant Key Elimination
-    sco: true,               // Structural Compression Operators
-    cfl: true,               // Constraint-First Layout
-    tas: true,               // Tokenizer Alignment Scoring
-    csp: true,               // Context-Sensitive Pruning
-    sad: false,              // Selective Anchor Duplication (Claude-only)
+    sdm: true,               // Semantic Density Maximization
+    cas: true,               // Causal Access Score
+    cfo: false,              // Causal-Forward Ordering (model-specific)
+    dro: true,               // Delimiter-Role Optimization
+    tas: true,               // Tokenizer-Aligned Syntax
+    cfl: false,              // Constraint-First Layout
+    sad: false,              // Selective Anchor Duplication with Fragility
+    ccp: true,               // Causal Closure Principle
   },
   preserveToolNames: true,   // Keep tool names unchanged
 }

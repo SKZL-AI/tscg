@@ -1,29 +1,11 @@
-# Benchmark Data
+# Published benchmark evidence
 
-## 720-Call Full Benchmark Results (TSCG v1.4.0)
+Sources: [Paper 1](https://arxiv.org/html/2605.04107v1) and [Paper 2](https://arxiv.org/html/2605.26165v1). See [the repository provenance guide](../../../../docs/PUBLISHED-RESULTS.md) for exact tables, baselines, metrics, and manuscript inconsistencies.
 
-### Per-Model Archetypes
+- **BFCL schemas, Sonnet 4:** 85.7% → 93.2% accuracy, +7.5 pp, 46.8% token savings; Paper 1 Table 4, n=60 per condition. This is external-schema validation, not an official full-suite leaderboard score.
+- **Phi-4 14B, TAB D:** 0.0% → 84.4% at 20 tools; 0.0% → 90.3% at 50 tools; Paper 1 Table 13. Phi-4 lacks native tool calling in the tested Ollama deployment. TSCG text plus host-side parsing and execution enables tool use without native support. The published zero baseline is labelled `json-text`, not a Phi-4 BFCL or native-FC score.
+- **GPT-4o, TAB A/B:** native FC 55.5% / 70.0%; TSCG 56.5% / 79.7%; Paper 1 Tables 1 and 8. Do not relabel these as BFCL results.
+- **RAG at 8K, 28 tools:** mean answer EM 2.6% → 23.1% across eight models; Paper 2 Table 1. The whole study covers 14 models and 6,566 calls.
+- **HotpotQA, Phi-4, 8K:** 0% → 48% answer EM; Paper 2 Table 3, 50 questions.
 
-| Model Family | Archetype | Avg Savings | Accuracy Delta | Recommended Profile |
-|-------------|-----------|-------------|----------------|-------------------|
-| Claude Opus | hungry | 62% | +1.2pp | All 8 operators ON |
-| Claude Sonnet | robust | 58% | -0.8pp | 6/8 operators |
-| Claude Haiku | balanced | 52% | -1.5pp | 5/8 operators |
-| GPT-4o | sensitive | 48% | -2.1pp | CFO/SAD OFF |
-| GPT-4o-mini | sensitive | 45% | -2.8pp | CFO/SAD OFF |
-| Qwen3 14B | small-model | 41% | -1.9pp | SDM+TAS+DRO+CCP |
-| Phi-4 14B | small-model | 39% | -2.3pp | SDM+TAS+DRO+CCP |
-| Llama 3.1 70B | robust | 55% | -1.1pp | 6/8 operators |
-
-### Operator Impact Summary
-
-| Operator | Avg Savings Contribution | Risk Level |
-|----------|------------------------|------------|
-| SDM | 15-20% | Low (safe for all models) |
-| TAS | 8-12% | Low |
-| DRO | 5-8% | Low |
-| CFL | 3-5% | Medium (can cause echo in non-Claude) |
-| CFO | 4-7% | Medium (some models lose type info) |
-| CAS | 3-5% | Low |
-| SAD | 5-10% | High (only safe for Claude models) |
-| CCP | 2-4% | Low |
+Static archetypes and `small-model` presets describe implementation choices. They do not establish a published accuracy delta, operator savings contribution, or universal model-size rule. The former per-family 720-call table and additive operator-saving percentages were not supported by these published tables and are superseded. Conservative is not a universal zero-regression guarantee.

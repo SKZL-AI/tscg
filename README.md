@@ -1,176 +1,95 @@
-# TSCG -- Tool-Schema Compression Grammar
+# TSCG — Deterministic Tool-Schema Compilation
 
 [![npm @tscg/core](https://img.shields.io/npm/v/@tscg/core?label=%40tscg%2Fcore)](https://www.npmjs.com/package/@tscg/core)
 [![npm @tscg/mcp-proxy](https://img.shields.io/npm/v/@tscg/mcp-proxy?label=%40tscg%2Fmcp-proxy)](https://www.npmjs.com/package/@tscg/mcp-proxy)
 [![npm @tscg/tool-optimizer](https://img.shields.io/npm/v/@tscg/tool-optimizer?label=%40tscg%2Ftool-optimizer)](https://www.npmjs.com/package/@tscg/tool-optimizer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-108%20passing-brightgreen)]()
-[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-green)]()
 
-**Deterministic tool-schema compiler that reduces LLM tool-definition overhead by 50--72% while *improving* accuracy.**
+**TSCG (Token-Context Semantic Grammar) compiles JSON tool schemas into compact structured text for LLM agents.** Deterministic TypeScript transforms require no model calls or fine-tuning. Accuracy effects depend on the model, profile, baseline, and context budget.
 
-1,200 LOC TypeScript. Zero dependencies. Sub-millisecond. 23KB ESM bundle.
+## Published papers
 
-## Paper 2: Agentic RAG Enablement (May 2026)
+1. Furkan Sakizli. **TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments**. [arXiv:2605.04107v1](https://arxiv.org/html/2605.04107v1), submitted 4 May 2026. [PDF](https://arxiv.org/pdf/2605.04107v1).
+2. Furkan Sakizli. **Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets**. [arXiv:2605.26165v1](https://arxiv.org/html/2605.26165v1), submitted 24 May 2026. [PDF](https://arxiv.org/pdf/2605.26165v1).
 
-### 6,566-Call Agentic RAG Benchmark
+All current benchmark claims below are tied to those published versions. See [measurement provenance, complete tables, and corrections](docs/PUBLISHED-RESULTS.md). TAB is the author's benchmark; the BFCL experiment is external-schema validation, not an official leaderboard score or independent replication.
 
-TSCG enables agentic RAG under constrained context budgets. We evaluate 14 models (1.5B--32B local models plus one frontier API model) across 6,566 API calls at three context budgets (8K, 16K, 32K) with 28 tool definitions:
+## Paper 1: TAB frontier results
 
-| Condition | JSON EM | TSCG EM | Delta |
-|-----------|---------|---------|-------|
-| 8K, 28 tools (avg 8 models) | 2.6% | 23.1% | **+20.5pp** |
-| HotpotQA (Phi-4, 8K) | 0% | 48% | **+48pp** |
-| 32K ceiling control | -- | -- | 4 of 5 models: \|Delta\| <= 1pp |
-| Frontier: 500 tools, 200K | 0% | 90% | **+90pp** |
+Tables 1 and 8 distinguish native function calling, uncompressed JSON in text, and TSCG in text. TAB overall accuracy is `0.6 × tool-selection accuracy + 0.4 × parameter F1`.
 
-**Key finding:** At 8K context with 28 tools, JSON schemas overflow the context window entirely (near-zero accuracy, 2.6% avg EM). TSCG compression restores RAG functionality -- a categorical enablement, not incremental improvement.
+| Model | TAB scenario | Native FC | JSON as text | TSCG text | Delta vs native FC | Token savings vs native FC |
+|-------|--------------|-----------|--------------|-----------|--------------------|----------------------------|
+| Claude Sonnet 4 | A: 16 tools | 74.0% | 51.1% | 85.2% | +11.2 pp | 50.1% |
+| Claude Sonnet 4 | B: 43 tools | 90.0% | 70.0% | 95.0% | +5.0 pp | 50.1% |
+| GPT-4o | A: 16 tools | 55.5% | 45.7% | 56.5% | +1.0 pp | 6.2% |
+| GPT-4o | B: 43 tools | 70.0% | 55.0% | 79.7% | +9.7 pp | 6.2% |
+| GPT-5.2 | A: 16 tools | 51.9% | 78.3% | 81.6% | +29.7 pp | 11.4% |
+| GPT-5.2 | B: 43 tools | 82.4% | 98.2% | 91.6% | +9.2 pp | 11.4% |
 
-- 14 models tested (1.5B--32B + one frontier API model), $107 total cost
-- Frontier scaling: JSON overflows at ~494 tools, TSCG operational beyond 800
-- External validation on HotpotQA confirms generalizability
-- TAB Scenario C (25--100 tools) cross-validates stable compression at scale
-- Balanced profile ablation (n=400): equivalent accuracy to conservative (delta = +0.8pp)
-- Paper: [TSCG-RAG-Benchmark-Paper.pdf](./TSCG-RAG-Benchmark-Paper.pdf)
+Scenario A uses 20 tasks × 3 runs; B uses 100 tasks × 3 runs. These are **TAB results**, not BFCL scores. GPT-5.2 in B improves over native FC but regresses against JSON-as-text. The paper reports approximately 19,000 calls; its model-count convention and limitations are documented in [the evidence guide](docs/PUBLISHED-RESULTS.md).
 
----
+## Paper 1: BFCL external validation
 
-## Paper 1 Findings (April 2026)
+The detailed published BFCL table (**Table 4**, Sonnet 4, 20 tasks × 3 runs) reports:
 
-### 720-Call E2E Benchmark on Claude Models
+| Condition | Accuracy | Tool selection | Parameter F1 | Token savings |
+|-----------|----------|----------------|--------------|---------------|
+| Natural | 85.7% | 86.7% | 84.2% | — |
+| TSCG | 93.2% | 95.0% | 91.7% | 46.8% |
+| TSCG+SAD | 89.0% | 90.0% | 87.5% | 46.0% |
 
-**Claude Opus 4.7** -- matches-or-beats baseline with 57-63% token savings:
+TSCG: **+7.5 pp accuracy**, **46.8% token savings**. ARR is a ratio (about 108.8% from the rounded table values; summarized as 108% in the paper), not accuracy above 100%. The old GPT BFCL rows are withdrawn: they are not supported by the detailed published table. The abstract's broader ARR claim and this table are inconsistent; see [the explicit source note](docs/PUBLISHED-RESULTS.md#paper-1-bfcl-external-validation).
 
-| Tool Count | Baseline | TSCG Balanced | Δ Accuracy | Savings |
-|------------|----------|---------------|------------|---------|
-| 16 | 70.0% | **77.5%** | **+7.5pp** | 56.9% |
-| 43 | 77.5% | **80.0%** | **+2.5pp** | 63.0% |
-| 50 | 72.5% | **80.0%** | **+7.5pp** | 62.8% |
+## Paper 1: Phi-4 and small-model tool-use enablement
 
-**Claude Sonnet 4** -- consistent 57-63% compression with robust accuracy:
+**Phi-4 14B has no native tool calling in the tested Ollama deployment.** TSCG enables tool use through a text interface: compile the schemas, include the resulting text in the prompt, parse the model's generated tool name and arguments, then validate and execute the call in the host application. Native tool-calling support is not required for this path. `compress()` alone does not execute tools or add a native API interface to the model.
 
-| Tool Count | Baseline | TSCG Balanced | Δ Accuracy | Savings |
-|------------|----------|---------------|------------|---------|
-| 16 | 77.5% | 80.0% | +2.5pp | 56.9% |
-| 43 | 85.0% | 80.0% | -5.0pp | 63.0% |
-| 50 | 77.5% | 77.5% | ±0.0pp | 62.8% |
+An unsupported native-FC path should be reported as **unsupported / N/A**, rather than interpreted as a measured reasoning score of zero. The published **0.0% → 84.4% (20 tools)** and **0.0% → 90.3% (50 tools)** results are **TAB Scenario D**, not Phi-4 BFCL leaderboard scores. Table 13 labels its baseline `json-text`; those published zeros must also not be silently relabelled as native-FC measurements or attributed solely to missing native support. The paper's E4 control identifies format translation as the dominant enablement mechanism (+92.0 pp format effect, -7.0 pp additional compression effect for Phi-4, Table 14).
 
-### 480-Call MCP Proxy Benchmark (v1.4.1)
+| Model | Tools | Published JSON baseline | TSCG | Source |
+|-------|-------|-------------------------|------|--------|
+| Phi-4 14B | 20 | 0.0% | 84.4% | Table 13, TAB D |
+| Phi-4 14B | 50 | 0.0% | 90.3% | Table 13, TAB D |
+| Mistral 7B | 20 | 35.0% | 80.1% | Table 13, TAB D |
+| Gemma 3 4B | 20 | 49.9% | 67.0% | Table 13, TAB D |
 
-**480-call extended proxy benchmark** (n=40 per cell, 2 seeds, 2 models x 3 tool counts):
+The paper separates format enablement from additional compression: gains against a failing JSON baseline do not imply gains against an already working text baseline. Conservative and balanced profiles can differ materially; [full small-model results](findings/small-model-enablement-v1.4.2.md) include regressions.
 
-| Model | Tools | Baseline | TSCG Proxy | Δ Accuracy | Token Savings |
-|-------|-------|----------|------------|------------|---------------|
-| **Opus 4.7** | 16 | 70.0% | **75.0%** | **+5.0pp** | 53.1% |
-| **Opus 4.7** | 43 | 75.0% | 75.0% | ±0.0pp | 55.8% |
-| **Opus 4.7** | 50 | 77.5% | 77.5% | ±0.0pp | 55.5% |
-| Sonnet 4 | 16 | 80.0% | 77.5% | -2.5pp | 53.1% |
-| Sonnet 4 | 43 | 85.0% | 82.5% | -2.5pp | 55.8% |
-| Sonnet 4 | 50 | 77.5% | 77.5% | ±0.0pp | 55.5% |
+## Paper 2: agentic RAG enablement
 
-Opus 4.7 matches-or-beats baseline in all conditions; Sonnet 4 within expected CI (max -2.5pp). Both achieve 53-56% token savings.
+The second study evaluates **14 models, 6,566 API calls, 28 tools**, and 8K/16K/32K budgets, using conservative compression (**44–50% schema-token savings**).
 
-**Tool-Optimizer E2E validation** (`@tscg/tool-optimizer` `withTSCG()` wrapper, 30 calls, Sonnet 4 @ 16 tools): withTSCG **86.7%** vs baseline 80.0% (**+6.7pp**), 36.6% character savings.
+| Experiment | JSON | TSCG | Result | Paper 2 source |
+|------------|------|------|--------|----------------|
+| NovaTech-28, 8K, eight-model mean EM | 2.6% | 23.1% | +20.5 pp | Table 1 |
+| Phi-4, NovaTech-28, 8K EM | 2% | 33% | +31 pp | Tables 1 and 5 |
+| Phi-4, HotpotQA, 8K EM | 0% | 48% | +48 pp; 50 questions | Table 3 |
+| 16K retrieval budget | 2,832 tokens / 9 chunks | 8,457 tokens / 26 chunks | More context; no general accuracy gain | Table 2; Section 4.2 |
+| Sonnet 4, 200K, 500 tools EM | 0% | 90% | +90 pp | Table 4 |
 
-### Three Frontier-Model Operator Archetypes
+At 8K, the uncompressed schemas overflow the budget; TSCG restores room for retrieval. At 32K, four of five tested models are within ±1 pp; Qwen2.5-Coder 32B is the +12 pp exception. The approximately 494-tool JSON overflow threshold and operation beyond 800 tools apply to Sonnet 4 at 200K with the tested catalog. RAG answer EM is a different metric from TAB tool-use accuracy.
 
-TSCG compression response is model-specific. Three distinct archetypes observed:
+## Operators and deployment
 
-- **Opus 4.7 -- Operator-HUNGRY** -- every operator contributes; balanced (all-8) is optimal
-- **Sonnet 4 -- Operator-ROBUST** -- config-agnostic; 6 of 7 configs near-identical accuracy
-- **GPT-5.2 -- Operator-SENSITIVE** -- CFL helps, CFO hurts; custom config optimal
+| Operator | Published name |
+|----------|----------------|
+| TAS | Tokenizer-Aligned Syntax |
+| CFL | Constraint-First Layout |
+| CFO | Causal-Forward Ordering |
+| SDM | Semantic Density Maximization |
+| DRO | Delimiter-Role Optimization |
+| CCP | Causal Closure Principle |
+| CAS | Causal Access Score |
+| SAD-F | Selective Anchor Duplication with Fragility |
 
-### External Validation -- 4 Independent Benchmarks
+Paper 1 Table 15 finds different operator responses for Opus 4.7, Sonnet 4, and GPT-5.2; Table 3 shows why local-model profiles also need validation. Conservative is a starting point, not a zero-regression guarantee. The formal compression bound applies under Theorem 3.1's assumptions, not to every request or profile.
 
-TSCG's internal benchmark (TAB -- Tool-Agentic Bench, ~19,000 calls) is **independently corroborated** by four external benchmarks, including industry-standard evaluation suites:
-
-| Benchmark | Type | Result | Significance |
-|-----------|------|--------|--------------|
-| **BFCL** ([Berkeley Function Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html)) | Industry standard | **108--181% ARR** across 3 frontier models | Sonnet 4: 85.7%→93.2% (+7.5pp), GPT-4o: 31.7%→57.4% (+25.7pp), GPT-5.2: 61.9%→89.4% (+27.5pp) |
-| **ToolBench** (Qin et al.) | Academic benchmark | **+5.0pp** (75.0%→80.0%) | Real-world tool catalog, 20 tools |
-| **API-Bank** (Li et al.) | Academic benchmark | -5.0pp (80.0%→75.0%) | Honest negative result -- not all benchmarks improve |
-| **Real MCP Server** (@modelcontextprotocol/server-filesystem) | Production endpoint | **100% syntactic validity** | 30 tasks on live MCP server, server-acceptance 90--97% |
-
-**TAB → Real MCP Transfer (0.1pp):** The internal TAB benchmark is not merely a self-constructed evaluation -- it demonstrably **predicts real-world MCP behavior within 0.1 accuracy points**. Sonnet 4 on 43-tool MCP: synthetic TAB delta = -1.6pp vs real MCP delta = -1.7pp. This tight transfer validates TAB as a reliable proxy for production MCP deployments.
-
-Mean across the 3 external catalog benchmarks: **+2.5pp** (80.2%→82.7%).
-
-See [paper](./TSCG-paper.pdf) for full methodology and per-benchmark analysis.
-
-## The Problem
-
-Every LLM agent framework sends full JSON Schema definitions for every registered tool on every API call. Claude Code injects ~50,000 tokens of tool definitions per subprocess. At production scale (100K calls/day), the schema overhead alone costs **>$30,000/month**.
-
-Worse: small models (4B--14B) cannot parse JSON-format tool schemas reliably at scale -- achieving **0--49% accuracy** with >15 tools. This locks agentic capabilities behind expensive frontier APIs.
-
-## Key Results
-
-### Pareto Dominance: Better Accuracy AND Fewer Tokens
-
-BFCL ([Berkeley Function Calling Leaderboard](https://gorilla.cs.berkeley.edu/leaderboard.html)) validation -- the industry standard for tool-calling evaluation:
-
-| Model | Without TSCG | With TSCG | Improvement | Token Savings |
-|-------|-------------|-----------|-------------|---------------|
-| Claude Sonnet 4 | 85.7% | 93.2% | +7.5pp | 46.8% |
-| **GPT-4o** | **31.7%** | **57.4%** | **+25.7pp (181% ARR)** | 2.6% |
-| GPT-5.2 | 61.9% | 89.4% | +27.5pp (144% ARR) | 8.3% |
-
-Every model *improves*. TSCG achieves **108--181% Accuracy Retention Rate** -- it doesn't just retain accuracy, it increases it.
-
-### Small Model Enablement
-
-| Model | JSON Baseline (20 tools) | With TSCG | Recovery |
-|-------|------------------------|-----------|----------|
-| Phi-4 14B | 0% | 84.4% | **+84.4pp** |
-| Mistral 7B | 35% | 80.1% | **+45.1pp** |
-| Gemma 3 4B | 49.9% | 67.0% | +17.1pp |
-
-Seven small models (4B--14B) that achieve 0--49% accuracy on JSON tools recover to **65--90%** with TSCG. The root cause: JSON format, not model capacity (R^2 = 0.88 against JSON baselines, collapses to 0.03 against text -- **97% of variance is format sensitivity**).
-
-### Full Benchmark Summary
-
-From **~19,000 API calls** across **12 models** (4B--32B + 3 frontier APIs), 5 scenarios:
-
-| Finding | Detail |
-|---------|--------|
-| Token savings | 50--72% on tool schemas |
-| BFCL validation | 108--181% Accuracy Retention Rate |
-| Formal guarantee | >=51% savings on any well-formed schema (Theorem 3.1) |
-| Predictive model | R^2 = 0.88 predicts TSCG benefit from single baseline measurement |
-| Speed | 50 tools in 2.4ms (Node.js v24, commodity hardware) |
-| Cost at scale | >$30,000/month savings at 100K calls/day |
-
-### Verified Performance (Fresh Install)
-
-Independent reproduction on `@tscg/core` from npm:
-
-| Metric | Measured |
-|--------|----------|
-| 5 realistic tools (Claude target) | 59.5% token savings |
-| 50 tools | 66.6% savings in 2.4ms |
-| Compression time (5 tools) | 0.9ms |
-| Unit tests | 108 passing (core 47 + proxy 61) |
-| Bundle | 34.7KB (11.7KB gzipped) |
-| Dependencies | 0 |
-
-## What TSCG Does
-
-TSCG applies 8 formally-defined transforms grounded in how causal transformers process tokens:
-
-| Principle | Full Name | What It Does |
-|-----------|-----------|-------------|
-| **TAS** | Tokenizer-Aligned Syntax | Optimizes for BPE boundaries |
-| **CFL** | Constraint-First Layout | Exploits the attention sink at position 0 |
-| **CFO** | Causal-Flow Ordering | Orders operations into causal chains |
-| **SDM** | Semantic Density Maximization | Removes 104+ filler patterns |
-| **DRO** | Delimiter-Role Optimization | Converts verbose phrases to compact delimiters |
-| **CCP** | Closure-Context Preservation | Appends closure block for recency bias |
-| **CAS** | Causal Access Scoring | Scores and reorders by parameter fragility |
-| **SAD-F** | Selective Anchor Duplication | Budget-constrained anchor duplication |
+Full text-mode compilation can support models without native tool calling when the application supplies prompting, output parsing, validation, and execution. Description-only compression preserves native JSON schemas and relies on the model/provider's existing native tool support.
 
 ## Quick Start
 
-All three `@tscg/*` packages use umbrella versioning -- same version number, released together.
+The core, proxy, and tool-optimizer `@tscg/*` packages use umbrella versioning -- same version number, released together.
 
 ```bash
 npm install @tscg/core                # Core compression engine
@@ -224,7 +143,7 @@ result.metrics.perTool                   // { name, originalTokens, compressedTo
 
 ```typescript
 compress(tools, {
-  model: 'claude-sonnet',   // Target model: 'claude-sonnet' | 'gpt-4o' | 'gpt-4' | ...
+  model: 'claude-sonnet',   // Target model: 'claude-sonnet' | 'gpt-4' | 'gpt-5' | ...
   profile: 'balanced',      // Profile: 'conservative' | 'balanced' | 'aggressive' | 'auto'
 });
 ```
@@ -275,14 +194,14 @@ npx tsx cli/tscg.ts info
 `@tscg/mcp-proxy` sits between Claude Code (or any MCP client) and your MCP tool servers, transparently compressing tool schemas:
 
 ```bash
-# Opus 4.7 -- 57-63% savings, +2.5 to +7.5pp accuracy
+# Opus 4.7 target profile
 npx @tscg/mcp-proxy --target=claude-opus-4-7 --server=<your-mcp-command>
 
-# Sonnet 4 -- 57-63% savings, robust accuracy
+# Sonnet 4 target profile
 npx @tscg/mcp-proxy --target=claude-sonnet-4 --server=<your-mcp-command>
 ```
 
-Setting `--target` automatically enables the full compression pipeline validated by our 720-call benchmark. No other flags required.
+Setting `--target` selects a model profile. The paper experiments have specific versions, profiles, and baselines; a proxy invocation does not guarantee the same accuracy or token savings. See [published results](docs/PUBLISHED-RESULTS.md).
 
 **Legacy mode** (backward compatible with v1.0.x):
 ```bash
@@ -302,40 +221,22 @@ const optimizedAgent = withTSCG(agent);
 import { tscgMiddleware } from '@tscg/tool-optimizer/vercel';
 ```
 
-## TSCG vs Other Approaches
 
-| Property | TSCG | LLMLingua-2 | DSPy / SAMMO |
-|----------|------|-------------|-------------|
-| Accuracy effect | **Improves** (108--181% ARR) | Degrades (-5 to -20%) | Degrades |
-| Speed | **2.4ms / 50 tools** | ~42s (GPU) | Minutes |
-| Dependencies | **None** | GPU + ML framework | API calls |
-| Deterministic | **Yes** | No | No |
-| Formal guarantees | **>=51% savings** | None | None |
-| Bundle size | **34.7KB** | Requires PyTorch | Full stack |
-| Works offline | **Yes** | GPU required | API required |
+## Project structure
 
-## Who Benefits
-
-- **Claude Code / Cursor / Windsurf users**: ~35K fewer tokens per subprocess
-- **Local LLM users (Ollama)**: 7B models become functional tool-use agents with 50+ tools
-- **Production API deployments**: >$30,000/month savings at 100K calls/day
-- **Multi-agent orchestration**: Savings multiply per sub-agent in the chain
-- **Edge / Mobile / Privacy**: EU AI Act compliant local deployment becomes viable
-
-## Project Structure
-
-```
+```text
 packages/
-  core/             # @tscg/core - compression engine (8 operators, 47 tests)
-  mcp-proxy/        # @tscg/mcp-proxy - stdio proxy for MCP servers (61 tests)
-  tool-optimizer/   # @tscg/tool-optimizer - LangChain, Vercel AI SDK integrations
-paper/              # LaTeX source (arXiv version)
-cli/                # Unified CLI (compress, benchmark, analyze, info)
-benchmark/          # TAB benchmark harness, analysis code, raw data
-integrations/       # Framework integration examples
-docs/               # Technical documentation
-docs/website/       # Website concept, research harmonization, Claude design brief
+  core/             # Compiler and description-only compression
+  mcp-proxy/        # MCP stdio proxy
+  tool-optimizer/   # LangChain, MCP, Vercel AI SDK integrations
+  openclaw/         # OpenClaw integration and profile tuning
+cli/                # CLI entry point
+benchmark/          # TAB harness, task generators, and experiment scripts
+docs/               # Published result provenance and historical design notes
+findings/           # Paper-backed research summaries
 ```
+
+This checkout does not contain `paper/`, `paper2-rag-benchmark/`, or tracked per-call result checkpoints. Use the published arXiv versions for the manuscripts; repository PDFs are snapshots.
 
 ## Development
 
@@ -344,25 +245,9 @@ git clone https://github.com/SKZL-AI/tscg.git
 cd tscg
 npm install
 npm run build
-npm test          # 459 tests
-npm run typecheck # Type checking
+npm test
+npm run typecheck
 ```
-
-## Papers
-
-### Paper 1: TSCG -- Deterministic Tool-Schema Compilation for Agentic LLM Deployments
-
-Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-5014)). April 2026.
-
-[TSCG-paper.pdf](./TSCG-paper.pdf) -- arXiv preprint (full version, 12 models, ~19,000 API calls, 4-class taxonomy)
-
-LaTeX source is available in [`paper/`](paper/).
-
-### Paper 2: Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets
-
-Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-5014)). May 2026.
-
-[TSCG-RAG-Benchmark-Paper.pdf](./TSCG-RAG-Benchmark-Paper.pdf) -- 14 models, 6,566 API calls, binary enablement at 8K
 
 ## Citation
 
@@ -371,22 +256,28 @@ Furkan Sakizli ([ORCID: 0009-0009-5975-5014](https://orcid.org/0009-0009-5975-50
   title={TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments},
   author={Sakizli, Furkan},
   year={2026},
-  note={arXiv preprint},
-  orcid={0009-0009-5975-5014}
+  eprint={2605.04107},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE},
+  doi={10.48550/arXiv.2605.04107},
+  url={https://arxiv.org/abs/2605.04107}
 }
 
 @article{sakizli2026tscgrag,
   title={Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets},
   author={Sakizli, Furkan},
   year={2026},
-  note={arXiv preprint},
-  orcid={0009-0009-5975-5014}
+  eprint={2605.26165},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE},
+  doi={10.48550/arXiv.2605.26165},
+  url={https://arxiv.org/abs/2605.26165}
 }
 ```
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, code style, and PR guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
